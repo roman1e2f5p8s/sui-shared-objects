@@ -6,15 +6,23 @@ use sui_sdk::rpc_types::SuiTransactionBlockData;
 use sui_sdk::rpc_types::SuiTransactionBlockKind;
 use sui_sdk::rpc_types::SuiCallArg;
 use sui_sdk::rpc_types::SuiObjectArg;
+use sui_sdk::rpc_types::SuiTransactionBlockResponseQuery;
 
 // One of mainnet, testnet, devnet
 const NETWORK: &str = "mainnet";
-// TX digest as string
+// TX digest as string (to test for one TX)
 const TX_DIGEST: &str = "E2hjN5qEWHFuW1wYSL2KqFpWKbfgYPGoxUHzxYgbkzLV";
+// whether execution status is important for us or not
+const TX_STATUS_NEEDED: bool = true;
+// how many TXs to query
+const LIMIT: usize = 10;
+// from which TX to start to query;
+// the corresponding TX won't be included!
+const CURSOR: &str = "CutJJwAGNNBDwDyjHyc4VgCRbzoujGUFh72muh94pP1J";
 
 // print type of variable
 // fn print_type_of<T>(_: &T) {
-// println!("{}", std::any::type_name::<T>())
+//    println!("{}", std::any::type_name::<T>())
 // }
 
 #[tokio::main]
@@ -26,6 +34,47 @@ async fn main() -> Result<(), anyhow::Error> {
         .await
         .unwrap();
     println!("\nSui {} version: {}\n", NETWORK, sui.api_version());
+
+
+    let mut txs_options = SuiTransactionBlockResponseOptions::new();
+    // txs_options.show_input = true;
+    if TX_STATUS_NEEDED == true {
+        // effects are needed to get exec status
+        txs_options.show_effects = true;
+    }
+    let query = SuiTransactionBlockResponseQuery::new(None, Some(txs_options));
+    let cursor = TransactionDigest::from_str(CURSOR)?;
+
+    // The result will have type of sui_json_rpc_types::Page<
+    // sui_json_rpc_types::sui_transaction::SuiTransactionBlockResponse,
+    // sui_types::digests::TransactionDigest>
+    let txs_blocks = sui
+        .read_api()
+        .query_transaction_blocks(query, Some(cursor), Some(LIMIT), true)
+        .await?;
+    // println!("{:?}", txs_blocks);
+    println!("Number of TXs: {}", txs_blocks.data.len());
+    println!("Has next page: {}", txs_blocks.has_next_page);
+    println!("Next cursor: {:?}", txs_blocks.next_cursor.unwrap());
+    println!();
+
+    for tx in txs_blocks.data.iter() {
+        // skip TXs whose execution status is false
+        if TX_STATUS_NEEDED == true && tx.status_ok().clone().unwrap() == false {
+            continue;
+        }
+        println!("Digest: {:?}", tx.digest);
+        // println!("TX: {:?}", tx.transaction);
+        println!("Checkpoint: {:?}", tx.checkpoint.unwrap_or_default());
+        println!("Timestamp: {:?}", tx.timestamp_ms.unwrap_or_default());
+        // Sui execution status
+        if TX_STATUS_NEEDED == true {
+            println!("Status OK: {:?}", tx.status_ok().unwrap());
+        }
+        println!();
+        // break;
+    }
+
 
     // Convert TX digest from string to the corresponding struct
     let tx_digest = TransactionDigest::from_str(TX_DIGEST)?;
@@ -47,7 +96,7 @@ async fn main() -> Result<(), anyhow::Error> {
         .read_api()
         .get_transaction_with_options(tx_digest, tx_options)
         .await?;
-    println!("TX data:\n{:?}\n", tx);
+    // println!("TX data:\n{:?}\n", tx);
 
     // We need to get into the 'transaction' field of SuiTransactionBlockResponse,
     // then unwrap Some, and get the 'data' field of SuiTransactionBlock.
@@ -61,7 +110,7 @@ async fn main() -> Result<(), anyhow::Error> {
     if let SuiTransactionBlockKind::ProgrammableTransaction(prog_tx) = tx_data_v1.transaction {
         // Finally, get the list of TX inputs
         let inputs = prog_tx.inputs;
-        println!("Number of inputs: {}\n", inputs.len());
+        // println!("Number of inputs: {}\n", inputs.len());
 
         // count the number of shared mutable objects
         let mut count = 0;
@@ -80,12 +129,12 @@ async fn main() -> Result<(), anyhow::Error> {
                 if let SuiObjectArg::SharedObject{object_id, mutable, ..} = obj {
                     if *mutable == true {
                         count = count + 1;
-                        println!("Shared mutable object ID: {}", object_id);
+                        // println!("Shared mutable object ID: {}", object_id);
                     }
                 }
             }
         }
-        println!("\nNumber of shared objects touched by TX: {}\n", count);
+        // println!("\nNumber of shared objects touched by TX: {}\n", count);
     }
 
     Ok(())
