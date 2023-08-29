@@ -1,0 +1,11 @@
+[package]
+name = "shared_obj_tx_density"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sui-sdk = { git = "https://github.com/mystenlabs/sui", package = "sui-sdk", branch = "mainnet" }
+tokio = { version = "1.2", features = ["full"] }
+anyhow = "1.0"
