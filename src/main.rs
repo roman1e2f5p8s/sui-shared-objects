@@ -23,7 +23,7 @@ use sui_sdk::rpc_types::SuiTransactionBlockResponseQuery;
 
 // from which TX to start to query;
 // the corresponding TX won't be included!
-const CURSOR: &str = "FvjbaNmSG9CRAkM1Pwt1m4W3UqouPZAi2ypc3i1gvyRT";
+// const CURSOR: &str = "CP5xMb2EdVzbBjAeoTQypSg5ADeRHJ9qtpyszKBnH56H";
 // 9oG3Haf35Ew6wbWumt7xbPG3vcqnpQTaMMadQWNJEWcY";
 
 /// Estimate how often Sui transactions operate with shared objects
@@ -35,8 +35,13 @@ struct Args {
     network: NetworkType,
 
     /// Number of TXs to scan, >= 0
-    #[arg(short, long, default_value_t = 100)]
+    #[arg(short, long, default_value_t = 1000)]
     tx_number: usize,
+
+    /// Digest of TX from which to start scanning.
+    /// Note that the corresponding TX won't be scaned!
+    #[arg(short, long)]
+    cursor: String,
 }
 
 #[derive(ValueEnum, Debug, Clone)]
@@ -146,7 +151,7 @@ async fn main() -> Result<(), anyhow::Error> {
     // from which TX to start the query.
     // The response will not include this TX.
     // Set to None to get the latest TXs
-    let mut cursor = Some(TransactionDigest::from_str(CURSOR)?);
+    let mut cursor = TransactionDigest::from_str(&args.cursor)?;
 
     // count the numebr of TX analyzed
     let mut tx_count = 0;
@@ -179,13 +184,8 @@ async fn main() -> Result<(), anyhow::Error> {
         // sui_types::digests::TransactionDigest>
         let txs_blocks = sui
             .read_api()
-            .query_transaction_blocks(query.clone(), cursor, None, true)
+            .query_transaction_blocks(query.clone(), Some(cursor), Some(args.tx_number), true)
             .await?;
-
-        if tx_count == 0 {
-            // store the start cursor: to reproduce the results
-            println!("Start cursor: {}", txs_blocks.data[0].digest.to_string());
-        }
 
         // println!("Number of TXs: {}", txs_blocks.data.len());
         // println!("Has next page: {}", txs_blocks.has_next_page);
@@ -234,13 +234,17 @@ async fn main() -> Result<(), anyhow::Error> {
         // exit(0);
 
         tx_count = tx_count + txs_blocks.data.len();
-        cursor = txs_blocks.next_cursor;
-        print!("\rNumber of TX analyzed : {}/{}", tx_count, args.tx_number);
+        cursor = txs_blocks.next_cursor.unwrap();
+        print!("\rNumber of TX analyzed : {}/{} ...", tx_count, args.tx_number);
         let _ = std::io::stdout().flush();
         // break;
     }
     println!();
-    println!("End cursor: {:?}", cursor);
+
+    // store the start and the end cursor: to reproduce the results
+    // and to continue scanning if necessary
+    println!("Start cursor: {}", args.cursor);
+    println!("End   cursor: {}", cursor.to_string());
 
     // save data to disk
     let dir = Path::new("data");
@@ -248,7 +252,7 @@ async fn main() -> Result<(), anyhow::Error> {
     fs::write(dir.join("data.json"), serde_json::to_string_pretty(&data).unwrap())?;
 
     println!();
-    println!("{:#?}", data);
+    // println!("{:#?}", data);
     for (checkpoint, obj_map) in data.into_iter() {
         println!("Checkpoint: {}", checkpoint);
         let mut txs = HashSet::new();
@@ -258,7 +262,7 @@ async fn main() -> Result<(), anyhow::Error> {
                 txs.insert(tx.tx_id.clone());
             }
         }
-        println!("TX count: {}", txs.len());
+        println!("Shared-object TX count: {}", txs.len());
         println!();
     }
 
