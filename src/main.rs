@@ -1,8 +1,14 @@
+use std::fs;
+use std::path::Path;
+use serde_json;
+use clap::{Parser, ValueEnum};
 use std::io::Write;
+use serde::Serialize;
 use std::str::FromStr;
-use std::process::exit;
+// use std::process::exit;
 use std::collections::HashSet;
 use std::collections::HashMap;
+
 use sui_sdk::SuiClientBuilder;
 use sui_sdk::types::base_types::TransactionDigest;
 use sui_sdk::rpc_types::SuiTransactionBlockResponseOptions;
@@ -14,20 +20,31 @@ use sui_sdk::rpc_types::SuiTransactionBlock;
 // use sui_sdk::rpc_types::SuiTransactionBlockResponse;
 use sui_sdk::rpc_types::SuiTransactionBlockResponseQuery;
 // use sui_sdk::rpc_types::SuiObjectDataOptions;
-use std::fs;
-use serde::Serialize;
-use serde_json;
-
-// One of mainnet, testnet, devnet
-const NETWORK: &str = "mainnet";
-
-// how many TXs to query
-const TX_LIMIT: usize = 100;
 
 // from which TX to start to query;
 // the corresponding TX won't be included!
 const CURSOR: &str = "FvjbaNmSG9CRAkM1Pwt1m4W3UqouPZAi2ypc3i1gvyRT";
 // 9oG3Haf35Ew6wbWumt7xbPG3vcqnpQTaMMadQWNJEWcY";
+
+/// Estimate how often Sui transactions operate with shared objects
+#[derive(Parser, Debug)]
+#[command(author = "Roman Overko", version, about, long_about = None)]
+struct Args {
+    /// Which network to use
+    #[arg(short, long, value_enum, default_value_t = NetworkType::Mainnet)]
+    network: NetworkType,
+
+    /// Number of TXs to scan, >= 0
+    #[arg(short, long, default_value_t = 100)]
+    tx_number: usize,
+}
+
+#[derive(ValueEnum, Debug, Clone)]
+enum NetworkType {
+    Mainnet,
+    Testnet,
+    Devnet,
+}
 
 #[derive(Debug)]
 struct SharedObjInfo {
@@ -111,13 +128,14 @@ fn process_tx_inputs(tx_block: &Option<SuiTransactionBlock>) -> TxInfo {
 
 #[tokio::main]
 async fn main() -> Result<(), anyhow::Error> {
+    let args = Args::parse();
 
     // Create a Sui client builder for connecting to the Sui network
     let sui = SuiClientBuilder::default()
-        .build(format!("https://fullnode.{}.sui.io:443", NETWORK))
+        .build(format!("https://fullnode.{:?}.sui.io:443", args.network))
         .await
         .unwrap();
-    println!("\nSui {} version: {}\n", NETWORK, sui.api_version());
+    println!("\nSui {:?} version: {}\n", args.network, sui.api_version());
 
     // TX options indicate what info to be included in the response
     let mut txs_options = SuiTransactionBlockResponseOptions::new();
@@ -155,7 +173,7 @@ async fn main() -> Result<(), anyhow::Error> {
     // }
     let mut data: HashMap<u64, HashMap<String, Vec<TxMutInfo>>> = HashMap::new();
 
-    while tx_count < TX_LIMIT {
+    while tx_count < args.tx_number {
         // The result will have type of sui_json_rpc_types::Page<
         // sui_json_rpc_types::sui_transaction::SuiTransactionBlockResponse,
         // sui_types::digests::TransactionDigest>
@@ -217,14 +235,17 @@ async fn main() -> Result<(), anyhow::Error> {
 
         tx_count = tx_count + txs_blocks.data.len();
         cursor = txs_blocks.next_cursor;
-        print!("\rNumber of TX analyzed : {}/{}", tx_count, TX_LIMIT);
+        print!("\rNumber of TX analyzed : {}/{}", tx_count, args.tx_number);
         let _ = std::io::stdout().flush();
         // break;
     }
+    println!();
     println!("End cursor: {:?}", cursor);
-    // TODO: check if data dir exists
-    fs::create_dir_all("/data")?;
-    fs::write("data/data.json", serde_json::to_string_pretty(&data).unwrap())?;
+
+    // save data to disk
+    let dir = Path::new("data");
+    fs::create_dir_all(dir)?;
+    fs::write(dir.join("data.json"), serde_json::to_string_pretty(&data).unwrap())?;
 
     println!();
     println!("{:#?}", data);
@@ -242,7 +263,7 @@ async fn main() -> Result<(), anyhow::Error> {
     }
 
     println!("Total number of TX analyzed : {}", tx_count);
-    println!("Total number of TX requested: {}", TX_LIMIT);
+    println!("Total number of TX requested: {}", args.tx_number);
     println!("Total number of TX touching 0 shared objects: {}", tx_0shared_count);
     println!("Total number of TX touching 0 objects: {}", tx_0total_count);
 
