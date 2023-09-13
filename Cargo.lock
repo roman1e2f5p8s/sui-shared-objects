@@ -9396,6 +9396,8 @@ name = "shared_obj_tx_density"
 version = "0.1.0"
 dependencies = [
  "anyhow",
+ "serde",
+ "serde_json",
  "sui-sdk",
  "tokio",
 ]

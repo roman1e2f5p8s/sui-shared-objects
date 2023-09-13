@@ -1,5 +1,7 @@
+use std::io::Write;
 use std::str::FromStr;
 use std::process::exit;
+use std::collections::HashSet;
 use std::collections::HashMap;
 use sui_sdk::SuiClientBuilder;
 use sui_sdk::types::base_types::TransactionDigest;
@@ -12,6 +14,9 @@ use sui_sdk::rpc_types::SuiTransactionBlock;
 // use sui_sdk::rpc_types::SuiTransactionBlockResponse;
 use sui_sdk::rpc_types::SuiTransactionBlockResponseQuery;
 // use sui_sdk::rpc_types::SuiObjectDataOptions;
+use std::fs;
+use serde::Serialize;
+use serde_json;
 
 // One of mainnet, testnet, devnet
 const NETWORK: &str = "mainnet";
@@ -21,7 +26,8 @@ const TX_LIMIT: usize = 1000000;
 
 // from which TX to start to query;
 // the corresponding TX won't be included!
-const CURSOR: &str = "9oG3Haf35Ew6wbWumt7xbPG3vcqnpQTaMMadQWNJEWcY";
+const CURSOR: &str = "FvjbaNmSG9CRAkM1Pwt1m4W3UqouPZAi2ypc3i1gvyRT";
+// 9oG3Haf35Ew6wbWumt7xbPG3vcqnpQTaMMadQWNJEWcY";
 
 #[derive(Debug)]
 struct SharedObjInfo {
@@ -36,7 +42,7 @@ struct TxInfo {
     shared_objects: Vec<SharedObjInfo>
 }
 
-#[derive(Debug)]
+#[derive(Debug, Serialize)]
 struct TxMutInfo {
     tx_id: String,
     mutable: bool
@@ -165,8 +171,8 @@ async fn main() -> Result<(), anyhow::Error> {
 
         // println!("Number of TXs: {}", txs_blocks.data.len());
         // println!("Has next page: {}", txs_blocks.has_next_page);
-        println!("Next cursor: {}", txs_blocks.next_cursor.unwrap().to_string());
-        println!();
+        // println!("Next cursor: {}", txs_blocks.next_cursor.unwrap().to_string());
+        // println!();
 
         for tx in txs_blocks.data.iter() {
             // println!("TX: {}", tx.digest.to_string());
@@ -206,12 +212,32 @@ async fn main() -> Result<(), anyhow::Error> {
             // println!("Timestamp: {:?}", tx.timestamp_ms.unwrap_or_default());
             // println!();
         }
-        println!("{:?}", data);
-        exit(0);
+
+        // exit(0);
 
         tx_count = tx_count + txs_blocks.data.len();
         cursor = txs_blocks.next_cursor;
-        println!("Number of TX analyzed : {}", tx_count);
+        print!("\rNumber of TX analyzed : {}/{}", tx_count, TX_LIMIT);
+        let _ = std::io::stdout().flush();
+        // break;
+    }
+    println!("End cursor: {:?}", cursor);
+    // TODO: check if data dir exists
+    let _ = fs::write("data/data.json", serde_json::to_string_pretty(&data).unwrap());
+
+    println!();
+    println!("{:#?}", data);
+    for (checkpoint, obj_map) in data.into_iter() {
+        println!("Checkpoint: {}", checkpoint);
+        let mut txs = HashSet::new();
+        for (obj_id, tx_list) in obj_map.into_iter() {
+            println!("Obj {} touched by {} TXs", obj_id, tx_list.len());
+            for tx in tx_list.iter() {
+                txs.insert(tx.tx_id.clone());
+            }
+        }
+        println!("TX count: {}", txs.len());
+        println!();
     }
 
     println!("Total number of TX analyzed : {}", tx_count);
