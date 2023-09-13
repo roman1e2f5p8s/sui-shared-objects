@@ -22,7 +22,7 @@ use serde_json;
 const NETWORK: &str = "mainnet";
 
 // how many TXs to query
-const TX_LIMIT: usize = 1000000;
+const TX_LIMIT: usize = 100;
 
 // from which TX to start to query;
 // the corresponding TX won't be included!
@@ -223,7 +223,8 @@ async fn main() -> Result<(), anyhow::Error> {
     }
     println!("End cursor: {:?}", cursor);
     // TODO: check if data dir exists
-    let _ = fs::write("data/data.json", serde_json::to_string_pretty(&data).unwrap());
+    fs::create_dir_all("/data")?;
+    fs::write("data/data.json", serde_json::to_string_pretty(&data).unwrap())?;
 
     println!();
     println!("{:#?}", data);
