@@ -7,7 +7,7 @@ use serde::Serialize;
 use std::str::FromStr;
 // use std::process::exit;
 use std::collections::HashSet;
-use std::collections::HashMap;
+use std::collections::{HashMap, BTreeMap};
 
 use sui_sdk::SuiClientBuilder;
 use sui_sdk::types::base_types::TransactionDigest;
@@ -42,6 +42,10 @@ struct Args {
     /// Note that the corresponding TX won't be scaned!
     #[arg(short, long)]
     cursor: String,
+
+    /// Scan TXs in descending order, boolean
+    #[arg(short, long, default_value_t = false)]
+    descending: bool,
 }
 
 #[derive(ValueEnum, Debug, Clone)]
@@ -67,7 +71,15 @@ struct TxInfo {
 #[derive(Debug, Serialize)]
 struct TxMutInfo {
     tx_id: String,
-    mutable: bool
+    mutates: bool
+}
+
+#[derive(Debug, Serialize)]
+struct ResultData {
+    start_cursor: String,
+    end_cursor: String,
+    descending: bool,
+    checkpoints: BTreeMap<u64, HashMap<String, Vec<TxMutInfo>>>,
 }
 
 
@@ -162,21 +174,32 @@ async fn main() -> Result<(), anyhow::Error> {
     // count the number of TX touching 0 objects
     let mut tx_0total_count = 0;
 
-    // Map for storing data we are interested in.
-    // It has the following structure:
+    // Map (sorted by key) for storing data we are interested in.
+    // result.checkpints has the following structure:
     // {
     //      checkpoint:
     //      {
     //          SharedObjID:
     //          [
-    //              (TX_ID, mutable),
+    //              (TX_ID, mutates),
     //              ...
     //          ]
     //          ...
     //      ...
     //      }
     // }
-    let mut data: HashMap<u64, HashMap<String, Vec<TxMutInfo>>> = HashMap::new();
+    let mut result = ResultData {
+        start_cursor: args.cursor.clone(),
+        end_cursor: String::from(""),
+        descending: args.descending,
+        checkpoints: BTreeMap::new(),
+    };
+
+    // let checkpoints = sui
+    //     .read_api()
+    //     .get_checkpoints(Some(10.into()), Some(2), false)
+    //     .await?;
+    // println!("{:?}", checkpoints);
 
     while tx_count < args.tx_number {
         // The result will have type of sui_json_rpc_types::Page<
@@ -184,7 +207,8 @@ async fn main() -> Result<(), anyhow::Error> {
         // sui_types::digests::TransactionDigest>
         let txs_blocks = sui
             .read_api()
-            .query_transaction_blocks(query.clone(), Some(cursor), Some(args.tx_number), true)
+            .query_transaction_blocks(query.clone(), Some(cursor), 
+                                      Some(args.tx_number), args.descending)
             .await?;
 
         // println!("Number of TXs: {}", txs_blocks.data.len());
@@ -200,12 +224,12 @@ async fn main() -> Result<(), anyhow::Error> {
             } else {
                 for shared_obj in tx_info.shared_objects.iter() {
                     // insert a new checkpoint if it does not exist already
-                    data.
+                    result.checkpoints.
                         entry(tx.checkpoint.unwrap_or_default()).
                         or_insert(HashMap::new());
 
                     // insert a new shared object ID if it does not exist already
-                    let _ = *data.
+                    let _ = *result.checkpoints.
                         get_mut(&tx.checkpoint.unwrap_or_default()).
                         unwrap().
                         entry(shared_obj.id.clone()).
@@ -213,14 +237,14 @@ async fn main() -> Result<(), anyhow::Error> {
 
                     // both checkpoint and shared object ID keys must now exist,
                     // so we can update the list of TX operating with that shared object
-                    let _ = data.
+                    let _ = result.checkpoints.
                         get_mut(&tx.checkpoint.unwrap_or_default()).
                         unwrap().
                         get_mut(&shared_obj.id).
                         unwrap().
                         push(TxMutInfo {
                             tx_id: tx.digest.to_string(),
-                            mutable: shared_obj.mutable
+                            mutates: shared_obj.mutable
                         });
                 }
             }
@@ -236,7 +260,7 @@ async fn main() -> Result<(), anyhow::Error> {
         tx_count = tx_count + txs_blocks.data.len();
         cursor = txs_blocks.next_cursor.unwrap();
         print!("\rNumber of TX analyzed : {}/{} ...", tx_count, args.tx_number);
-        let _ = std::io::stdout().flush();
+        std::io::stdout().flush()?;
         // break;
     }
     println!();
@@ -245,15 +269,17 @@ async fn main() -> Result<(), anyhow::Error> {
     // and to continue scanning if necessary
     println!("Start cursor: {}", args.cursor);
     println!("End   cursor: {}", cursor.to_string());
+    result.end_cursor = cursor.to_string();
 
     // save data to disk
     let dir = Path::new("data");
     fs::create_dir_all(dir)?;
-    fs::write(dir.join("data.json"), serde_json::to_string_pretty(&data).unwrap())?;
+    fs::write(dir.join(format!("{}.json", args.cursor)), serde_json::to_string_pretty(&result).
+            unwrap())?;
 
     println!();
-    // println!("{:#?}", data);
-    for (checkpoint, obj_map) in data.into_iter() {
+    // println!("{:#?}", result);
+    for (checkpoint, obj_map) in result.checkpoints.into_iter() {
         println!("Checkpoint: {}", checkpoint);
         let mut txs = HashSet::new();
         for (obj_id, tx_list) in obj_map.into_iter() {
