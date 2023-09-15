@@ -39,13 +39,19 @@ struct Args {
     tx_number: usize,
 
     /// Digest of TX from which to start scanning.
-    /// Note that the corresponding TX won't be scaned!
-    #[arg(short, long)]
+    /// The corresponding TX won't be scaned!
+    /// If empty: if --descending, scans the latest TXs;
+    /// otherwise, scans the first TXs
+    #[arg(short, long, default_value_t = String::from(""))]
     cursor: String,
 
-    /// Scan TXs in descending order, boolean
+    /// Scan TXs in descending order
     #[arg(short, long, default_value_t = false)]
     descending: bool,
+
+    /// Print detailed output
+    #[arg(short, long, default_value_t = false)]
+    verbose: bool,
 }
 
 #[derive(ValueEnum, Debug, Clone)]
@@ -75,11 +81,21 @@ struct TxMutInfo {
 }
 
 #[derive(Debug, Serialize)]
+struct CheckpointData {
+    num_txs_total: usize,
+    num_txs_touching_shared_objs: usize,
+    shared_objects: HashMap<String, Vec<TxMutInfo>>
+}
+
+#[derive(Debug, Serialize)]
 struct ResultData {
     start_cursor: String,
     end_cursor: String,
     descending: bool,
-    checkpoints: BTreeMap<u64, HashMap<String, Vec<TxMutInfo>>>,
+    num_txs_scanned: usize,
+    num_txs_touching_0_shared_objs: usize,
+    num_txs_touching_0_objs: usize,
+    checkpoints: BTreeMap<u64, CheckpointData>
 }
 
 
@@ -163,10 +179,16 @@ async fn main() -> Result<(), anyhow::Error> {
     // from which TX to start the query.
     // The response will not include this TX.
     // Set to None to get the latest TXs
-    let mut cursor = TransactionDigest::from_str(&args.cursor)?;
+    let mut cursor = None;
+    if !args.cursor.is_empty() {
+        cursor = Some(TransactionDigest::from_str(&args.cursor)?);
+    }
 
     // count the numebr of TX analyzed
     let mut tx_count = 0;
+
+    // number of TXs left to scan
+    let mut tx_to_scan = args.tx_number;
 
     // count the number of TX touching 0 shared objects
     let mut tx_0shared_count = 0;
@@ -179,12 +201,16 @@ async fn main() -> Result<(), anyhow::Error> {
     // {
     //      checkpoint:
     //      {
-    //          SharedObjID:
-    //          [
-    //              (TX_ID, mutates),
+    //          num_txs_total: ...,
+    //          num_txs_touching_shared_objs: ...,
+    //          shared_objects: {
+    //              SharedObjID:
+    //              [
+    //                  (TX_ID, mutates),
+    //                  ...
+    //              ]
     //              ...
-    //          ]
-    //          ...
+    //          }
     //      ...
     //      }
     // }
@@ -192,6 +218,9 @@ async fn main() -> Result<(), anyhow::Error> {
         start_cursor: args.cursor.clone(),
         end_cursor: String::from(""),
         descending: args.descending,
+        num_txs_scanned: 0,
+        num_txs_touching_0_shared_objs: 0,
+        num_txs_touching_0_objs: 0,
         checkpoints: BTreeMap::new(),
     };
 
@@ -201,37 +230,52 @@ async fn main() -> Result<(), anyhow::Error> {
     //     .await?;
     // println!("{:?}", checkpoints);
 
-    while tx_count < args.tx_number {
+    while {
         // The result will have type of sui_json_rpc_types::Page<
         // sui_json_rpc_types::sui_transaction::SuiTransactionBlockResponse,
         // sui_types::digests::TransactionDigest>
         let txs_blocks = sui
             .read_api()
-            .query_transaction_blocks(query.clone(), Some(cursor), 
-                                      Some(args.tx_number), args.descending)
+            .query_transaction_blocks(query.clone(), cursor, 
+                                      Some(tx_to_scan), args.descending)
             .await?;
 
         // println!("Number of TXs: {}", txs_blocks.data.len());
         // println!("Has next page: {}", txs_blocks.has_next_page);
         // println!("Next cursor: {}", txs_blocks.next_cursor.unwrap().to_string());
         // println!();
+        // println!("{:?}", txs_blocks);
 
         for tx in txs_blocks.data.iter() {
             // println!("TX: {}", tx.digest.to_string());
             let tx_info = process_tx_inputs(&tx.transaction);
+
+            // insert a new checkpoint if it does not exist already
+            result.checkpoints.
+                entry(tx.checkpoint.unwrap_or_default()).
+                or_insert(CheckpointData {
+                    num_txs_total: 0,
+                    num_txs_touching_shared_objs: 0,
+                    shared_objects: HashMap::new()
+                });
+            result.checkpoints.
+                get_mut(&tx.checkpoint.unwrap_or_default()).
+                unwrap().
+                num_txs_total += 1;
+
             if tx_info.num_shared == 0 {
                 tx_0shared_count = tx_0shared_count + 1;
             } else {
+                result.checkpoints.
+                    get_mut(&tx.checkpoint.unwrap_or_default()).
+                    unwrap().
+                    num_txs_touching_shared_objs += 1;
                 for shared_obj in tx_info.shared_objects.iter() {
-                    // insert a new checkpoint if it does not exist already
-                    result.checkpoints.
-                        entry(tx.checkpoint.unwrap_or_default()).
-                        or_insert(HashMap::new());
-
                     // insert a new shared object ID if it does not exist already
                     let _ = *result.checkpoints.
                         get_mut(&tx.checkpoint.unwrap_or_default()).
                         unwrap().
+                        shared_objects.
                         entry(shared_obj.id.clone()).
                         or_insert(Vec::new());
 
@@ -240,6 +284,7 @@ async fn main() -> Result<(), anyhow::Error> {
                     let _ = result.checkpoints.
                         get_mut(&tx.checkpoint.unwrap_or_default()).
                         unwrap().
+                        shared_objects.
                         get_mut(&shared_obj.id).
                         unwrap().
                         push(TxMutInfo {
@@ -257,45 +302,63 @@ async fn main() -> Result<(), anyhow::Error> {
 
         // exit(0);
 
+        tx_to_scan = tx_to_scan - txs_blocks.data.len();
         tx_count = tx_count + txs_blocks.data.len();
-        cursor = txs_blocks.next_cursor.unwrap();
+        cursor = txs_blocks.next_cursor;
         print!("\rNumber of TX analyzed : {}/{} ...", tx_count, args.tx_number);
         std::io::stdout().flush()?;
         // break;
-    }
+
+        // condition to break the loop
+        tx_count < args.tx_number && txs_blocks.has_next_page == true
+    } { }
     println!();
 
     // store the start and the end cursor: to reproduce the results
     // and to continue scanning if necessary
     println!("Start cursor: {}", args.cursor);
-    println!("End   cursor: {}", cursor.to_string());
-    result.end_cursor = cursor.to_string();
+    println!("End   cursor: {}", cursor.unwrap().to_string());
+    result.end_cursor = cursor.unwrap().to_string();
+    result.num_txs_scanned = tx_count;
+    result.num_txs_touching_0_shared_objs = tx_0shared_count;
+    result.num_txs_touching_0_objs = tx_0total_count;
 
     // save data to disk
     let dir = Path::new("data");
     fs::create_dir_all(dir)?;
-    fs::write(dir.join(format!("{}.json", args.cursor)), serde_json::to_string_pretty(&result).
+    fs::write(dir.join(format!("{}.json", if !args.cursor.is_empty() {
+                args.cursor
+            } else {
+                if !args.descending {
+                    String::from("ascending")
+                } else {
+                    String::from("descending")
+                }
+            })),
+            serde_json::to_string_pretty(&result).
             unwrap())?;
 
     println!();
     // println!("{:#?}", result);
-    for (checkpoint, obj_map) in result.checkpoints.into_iter() {
-        println!("Checkpoint: {}", checkpoint);
-        let mut txs = HashSet::new();
-        for (obj_id, tx_list) in obj_map.into_iter() {
-            println!("Obj {} touched by {} TXs", obj_id, tx_list.len());
-            for tx in tx_list.iter() {
-                txs.insert(tx.tx_id.clone());
+    if args.verbose == true {
+        for (checkpoint, obj_map) in result.checkpoints.into_iter() {
+            println!("Checkpoint: {}", checkpoint);
+            let mut txs = HashSet::new();
+            for (obj_id, tx_list) in obj_map.shared_objects.into_iter() {
+                println!("Obj {} touched by {} TXs", obj_id, tx_list.len());
+                for tx in tx_list.iter() {
+                    txs.insert(tx.tx_id.clone());
+                }
             }
+            println!("Shared-object TX count: {}", txs.len());
+            println!();
         }
-        println!("Shared-object TX count: {}", txs.len());
-        println!();
     }
 
-    println!("Total number of TX analyzed : {}", tx_count);
-    println!("Total number of TX requested: {}", args.tx_number);
-    println!("Total number of TX touching 0 shared objects: {}", tx_0shared_count);
-    println!("Total number of TX touching 0 objects: {}", tx_0total_count);
+    println!("Total number of TXs scanned  : {}", tx_count);
+    println!("Total number of TXs requested: {}", args.tx_number);
+    println!("Total number of TXs touching 0 shared objects: {}", tx_0shared_count);
+    println!("Total number of TXs touching 0        objects: {}", tx_0total_count);
 
     Ok(())
 }
