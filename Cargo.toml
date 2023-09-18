@@ -3,6 +3,14 @@ name = "shared_obj_tx_density"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "query"
+path = "src/query/bin/main.rs"
+
+[[bin]]
+name = "plot"
+path = "src/plot/bin/main.rs"
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
