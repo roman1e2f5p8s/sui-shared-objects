@@ -242,5 +242,80 @@
   "60": {
     "start_checkpoint": 4861544,
     "end_checkpoint": 4947195
-  }
+  },
+  "61": {
+    "start_checkpoint": 4947196,
+    "end_checkpoint": 5032820
+  },
+  "62": {
+    "start_checkpoint": 5032821,
+    "end_checkpoint": 5118242
+  },
+  "63": {
+    "start_checkpoint": 5118243,
+    "end_checkpoint": 5202725
+  },
+  "64": {
+    "start_checkpoint": 5202726,
+    "end_checkpoint": 5288609
+  },
+  "65": {
+    "start_checkpoint": 5288610,
+    "end_checkpoint": 5372921
+  },
+  "66": {
+    "start_checkpoint": 5372922,
+    "end_checkpoint": 5457660
+  },
+  "67": {
+    "start_checkpoint": 5457661,
+    "end_checkpoint": 5542432
+  },
+  "68": {
+    "start_checkpoint": 5542433,
+    "end_checkpoint": 5626760
+  },
+  "69": {
+    "start_checkpoint": 5626761,
+    "end_checkpoint": 5711370
+  },
+  "70": {
+    "start_checkpoint": 5711371,
+    "end_checkpoint": 5797373
+  },
+  "71": {
+    "start_checkpoint": 5797374,
+    "end_checkpoint": 5879574
+  },
+  "72": {
+    "start_checkpoint": 5879575,
+    "end_checkpoint": 5963033
+  },
+  "73": {
+    "start_checkpoint": 5963034,
+    "end_checkpoint": 6046743
+  },
+  "74": {
+    "start_checkpoint": 6046744,
+    "end_checkpoint": 6131062
+  },
+  "75": {
+    "start_checkpoint": 6131063,
+    "end_checkpoint": 6214826
+  },
+  "76": {
+    "start_checkpoint": 6214827,
+    "end_checkpoint": 6299220
+  },
+  "77": {
+    "start_checkpoint": 6299221,
+    "end_checkpoint": 6384698
+  },
+  "78": {
+    "start_checkpoint": 6384699,
+    "end_checkpoint": 6470176
+  },
+  "79": {
+    "start_checkpoint": 6470177,
+    "end_checkpoint": 6555788
 }
