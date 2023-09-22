@@ -10,8 +10,7 @@ objects to the total number of transactions for a given time interval.
 ## Table of Contents
 
 - [Background](#background)
-- [Requirements](#requirements)
-    - [Dependencies](#dependencies)
+    - [Motivation](#motivation)
 - [Getting Started](#getting-started)
     - [Install](#install)
 - [Query](#query-usage)
@@ -56,3 +55,10 @@ knowing the density stems from the fact that transactions with shared object inp
 require sequencing via the consensus protocol. Therefore, understanding how many apps require
 operating with shared objects and what those use cases are is one of the first key steps in 
 designing an efficient smart contract architecture.
+
+## Getting Started
+
+Before you start, please refer to [Sui Rust SDK Documentation](https://docs.sui.io/build/rust-sdk)
+and 
+[Sui Rust SDK source code](https://github.com/MystenLabs/sui/blob/main/crates/sui-sdk/src/apis.rs)
+if you need more information about Sui Rust SDK and available API methods it contains.
