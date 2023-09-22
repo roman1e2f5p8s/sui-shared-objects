@@ -420,10 +420,192 @@
     "contention_level": 0.23563714297389923
   },
   "60": {
-    "num_txs_total": 303534,
-    "num_txs_touching_shared_objs": 35599,
+    "num_txs_total": 351013,
+    "num_txs_touching_shared_objs": 45413,
+    "density": 0.12937697464196482,
+    "num_checkpoints": 85838,
+    "contention_level": 0.4025578957216225
+  },
+  "61": {
+    "num_txs_total": 195392,
+    "num_txs_touching_shared_objs": 37765,
+    "density": 0.1932781280707501,
+    "num_checkpoints": 85625,
+    "contention_level": 0.35529658214326276
+  },
+  "62": {
+    "num_txs_total": 141073,
+    "num_txs_touching_shared_objs": 27525,
+    "density": 0.19511175065391675,
+    "num_checkpoints": 85422,
+    "contention_level": 0.276620530715799
+  },
+  "63": {
+    "num_txs_total": 137527,
+    "num_txs_touching_shared_objs": 29664,
+    "density": 0.2156958270012434,
+    "num_checkpoints": 84483,
+    "contention_level": 0.29291234430940777
+  },
+  "64": {
+    "num_txs_total": 148703,
+    "num_txs_touching_shared_objs": 25573,
+    "density": 0.17197366562880373,
+    "num_checkpoints": 85884,
+    "contention_level": 0.257373804264088
+  },
+  "65": {
+    "num_txs_total": 144582,
+    "num_txs_touching_shared_objs": 25262,
+    "density": 0.17472437786169787,
+    "num_checkpoints": 84312,
+    "contention_level": 0.25662867008138307
+  },
+  "66": {
+    "num_txs_total": 129411,
+    "num_txs_touching_shared_objs": 18954,
+    "density": 0.14646359273941165,
+    "num_checkpoints": 84739,
+    "contention_level": 0.1980967917980567
+  },
+  "67": {
+    "num_txs_total": 132169,
+    "num_txs_touching_shared_objs": 23104,
+    "density": 0.1748064977415279,
+    "num_checkpoints": 84853,
+    "contention_level": 0.23870874969248737
+  },
+  "68": {
+    "num_txs_total": 134618,
+    "num_txs_touching_shared_objs": 21761,
+    "density": 0.16165000222852813,
+    "num_checkpoints": 84328,
+    "contention_level": 0.2264185952934917
+  },
+  "69": {
+    "num_txs_total": 270536,
+    "num_txs_touching_shared_objs": 27658,
+    "density": 0.10223408344915279,
+    "num_checkpoints": 84610,
+    "contention_level": 0.27843600684155295
+  },
+  "70": {
+    "num_txs_total": 237382,
+    "num_txs_touching_shared_objs": 31740,
+    "density": 0.13370853729431886,
+    "num_checkpoints": 86003,
+    "contention_level": 0.3057863389216765
+  },
+  "71": {
+    "num_txs_total": 252178,
+    "num_txs_touching_shared_objs": 50125,
+    "density": 0.1987683303063709,
+    "num_checkpoints": 82201,
+    "contention_level": 0.4870488122097315
+  },
+  "72": {
+    "num_txs_total": 250956,
+    "num_txs_touching_shared_objs": 47225,
+    "density": 0.18818039815744592,
+    "num_checkpoints": 83539,
+    "contention_level": 0.46281452576403587
+  },
+  "73": {
+    "num_txs_total": 281325,
+    "num_txs_touching_shared_objs": 46075,
+    "density": 0.16377854794277083,
+    "num_checkpoints": 83710,
+    "contention_level": 0.45378911196410643
+  },
+  "74": {
+    "num_txs_total": 374112,
+    "num_txs_touching_shared_objs": 69123,
+    "density": 0.18476552476263794,
+    "num_checkpoints": 84319,
+    "contention_level": 0.5751797368584153
+  },
+  "75": {
+    "num_txs_total": 402594,
+    "num_txs_touching_shared_objs": 58170,
+    "density": 0.14448799535015425,
+    "num_checkpoints": 83961,
+    "contention_level": 0.5206766945746334
+  },
+  "76": {
+    "num_txs_total": 156894,
+    "num_txs_touching_shared_objs": 45134,
+    "density": 0.287671931367675,
+    "num_checkpoints": 84394,
+    "contention_level": 0.41742311108255015
+  },
+  "77": {
+    "num_txs_total": 240810,
+    "num_txs_touching_shared_objs": 138157,
+    "density": 0.5737178688592667,
+    "num_checkpoints": 85478,
+    "contention_level": 1.084397615412217
+  },
+  "78": {
+    "num_txs_total": 324958,
+    "num_txs_touching_shared_objs": 191954,
+    "density": 0.5907040294438051,
+    "num_checkpoints": 85597,
+    "contention_level": 1.1090103935506785
+  },
+  "79": {
+    "num_txs_total": 413556,
+    "num_txs_touching_shared_objs": 298403,
+    "density": 0.7215540337946977,
+    "num_checkpoints": 85612,
+    "contention_level": 1.4294351582250406
+  },
+  "80": {
+    "num_txs_total": 416272,
+    "num_txs_touching_shared_objs": 310272,
+    "density": 0.7453588038590152,
+    "num_checkpoints": 85973,
+    "contention_level": 1.4931375549571786
+  },
+  "81": {
+    "num_txs_total": 433567,
+    "num_txs_touching_shared_objs": 312776,
+    "density": 0.7214017672009171,
+    "num_checkpoints": 86113,
+    "contention_level": 1.5008471475258809
+  },
+  "82": {
+    "num_txs_total": 428122,
+    "num_txs_touching_shared_objs": 311834,
+    "density": 0.7283764908133663,
+    "num_checkpoints": 85924,
+    "contention_level": 1.4965580801984326
+  },
+  "83": {
+    "num_txs_total": 415140,
+    "num_txs_touching_shared_objs": 307698,
+    "density": 0.7411909235438647,
+    "num_checkpoints": 85781,
+    "contention_level": 1.5032791185148564
+  },
+  "84": {
+    "num_txs_total": 466091,
+    "num_txs_touching_shared_objs": 343056,
+    "density": 0.7360279430411658,
+    "num_checkpoints": 86237,
+    "contention_level": 1.4914031701523054
+  },
+  "85": {
+    "num_txs_total": 4811595,
+    "num_txs_touching_shared_objs": 555391,
+    "density": 0.11542762846831456,
+    "num_checkpoints": 86649,
+    "contention_level": 1.419885063149941
+  },
+  "86": {
+    "num_txs_total": 612958,
+    "num_txs_touching_shared_objs": 14081,
     "density": 0.0,
-    "num_checkpoints": 74758,
-    "contention_level": 27672.43385703284
+    "num_checkpoints": 5151,
+    "contention_level": 6210.869247838502
   }
 }
