@@ -58,7 +58,20 @@ designing an efficient smart contract architecture.
 
 ## Getting Started
 
-Before you start, please refer to [Sui Rust SDK Documentation](https://docs.sui.io/build/rust-sdk)
+Before you start, please refer to [Sui Rust SDK documentation](https://docs.sui.io/build/rust-sdk)
 and 
 [Sui Rust SDK source code](https://github.com/MystenLabs/sui/blob/main/crates/sui-sdk/src/apis.rs)
 if you need more information about Sui Rust SDK and available API methods it contains.
+
+### Install
+
+This project assumes `Rust` and `Cargo` are installed, and that there is an available 
+internet connection. Please refer to the 
+[Rust documentation](https://doc.rust-lang.org/cargo/getting-started/installation.html) i
+for the installation instructions.
+
+- Clone the project:
+```
+git clone https://github.com/roman1e2f5p8s/sui-shared-object-density.git
+cd sui-shared-object-density
+```
