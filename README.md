@@ -78,5 +78,26 @@ cd sui-shared-object-density
 
 - Build the project:
 ```bash
-cargo build
+cargo build --release
 ```
+
+### Run
+Building the project shall create two executable files in:
+
+- UNIX-like
+```bash
+./target/release/query
+./target/release/plot
+```
+
+- Windows
+```bash
+.\target\release\query.exe
+.\target\release\plot.exe
+```
+
+A more detailed description of how to use these executables is given in the next sections.
+
+## Query Usage
+
+## Plot Usage
