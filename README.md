@@ -38,7 +38,7 @@ require consensus to sequence (order) reads and writes.
 
 Owned objects are the most common case in Sui. Additionally, according to the 
 [Sui documentation](https://docs.sui.io/learn/how-sui-works#transactions-on-single-owner-objects), 
-many transactions (e.g., asset transfers, NFT minting, and smart contract publishing) 
+many transactions (e.g., asset transfers, NFT minting, smart contract publishing) 
 can be realized involving only owned objects. See this 
 [list](https://docs.sui.io/learn/single-writer-apps), provided by Sui, of potential 
 single-writer real-world applications.
@@ -67,11 +67,16 @@ if you need more information about Sui Rust SDK and available API methods it con
 
 This project assumes `Rust` and `Cargo` are installed, and that there is an available 
 internet connection. Please refer to the 
-[Rust documentation](https://doc.rust-lang.org/cargo/getting-started/installation.html) i
+[Rust documentation](https://doc.rust-lang.org/cargo/getting-started/installation.html) 
 for the installation instructions.
 
 - Clone the project:
-```
+```bash
 git clone https://github.com/roman1e2f5p8s/sui-shared-object-density.git
 cd sui-shared-object-density
+```
+
+- Build the project:
+```bash
+cargo build
 ```
