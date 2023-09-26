@@ -602,10 +602,10 @@
     "contention_level": 1.419885063149941
   },
   "86": {
-    "num_txs_total": 612958,
-    "num_txs_touching_shared_objs": 14081,
+    "num_txs_total": 11612958,
+    "num_txs_touching_shared_objs": 367473,
     "density": 0.0,
-    "num_checkpoints": 5151,
-    "contention_level": 6210.869247838502
+    "num_checkpoints": 84026,
+    "contention_level": 108334.30497185915
   }
 }

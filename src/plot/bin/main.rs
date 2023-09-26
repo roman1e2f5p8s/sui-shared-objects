@@ -1,8 +1,14 @@
+mod args;
+
 use std::fs;
 use std::path::Path;
 use std::collections::{HashMap, BTreeMap};
 use serde_json;
 use serde::{Serialize, Deserialize};
+
+use crate::args::*;
+
+const EVERY_N_CHECKPOINTS: u64 = 60;
 
 #[derive(Debug, Deserialize)]
 struct Epoch {
@@ -69,6 +75,10 @@ fn main() {
         contention_level: 0.0,
     });
 
+    // variables to calculate contention level
+    let mut num_txs = 0;
+    let mut num_obj = 0;
+
     for data_file in data_files {
         let  file = fs::File::open(data_file.path()).
             expect("File not found!");
@@ -82,12 +92,16 @@ fn main() {
         for (checkpoint, checkpoint_data) in json.checkpoints.into_iter() {
             if checkpoint > epoch2checkpoint_json.
                     get(&epoch).unwrap().end_checkpoint.try_into().unwrap() {
-                // the epoech ends: calculate density per epoch
+                // the epoch ends: calculate metrics per epoch
                 epochs_data.get_mut(&epoch).unwrap().density = 
                     epochs_data.get(&epoch).unwrap().num_txs_touching_shared_objs as f64 /
                     epochs_data.get(&epoch).unwrap().num_txs_total as f64;
                 epochs_data.get_mut(&epoch).unwrap().contention_level /= 
-                    epochs_data.get(&epoch).unwrap().num_checkpoints as f64;
+                    (epochs_data.get(&epoch).unwrap().num_checkpoints as f64 / 
+                     EVERY_N_CHECKPOINTS as f64);
+                // update contention level counters at the end of epoch
+                num_txs = 0;
+                num_obj = 0;
 
                 // proceed to the next epoch
                 epoch += 1;
@@ -105,15 +119,20 @@ fn main() {
                 checkpoint_data.num_txs_touching_shared_objs;
             epochs_data.get_mut(&epoch).unwrap().num_checkpoints += 1;
 
-            let mut num_txs = 0;
-            let mut num_obj = 0;
             for (_, tx_list) in checkpoint_data.shared_objects.into_iter() {
                 num_txs += tx_list.len();
                 num_obj += 1;
             }
-            let x: f64 = num_txs as f64 / num_obj as f64;
-            if !x.is_nan() {
-                epochs_data.get_mut(&epoch).unwrap().contention_level += x;
+
+            // do this every EVERY_N_CHECKPOINTS checkpoints
+            if (checkpoint + 1) % EVERY_N_CHECKPOINTS == 0 {
+                let x: f64 = num_txs as f64 / num_obj as f64;
+                if !x.is_nan() {
+                    epochs_data.get_mut(&epoch).unwrap().contention_level += x;
+                }
+                // renew counters
+                num_txs = 0;
+                num_obj = 0;
             }
         }
     }
