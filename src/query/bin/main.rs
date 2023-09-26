@@ -1,7 +1,9 @@
+mod args;
+
 use std::fs;
 use std::path::Path;
+use clap::Parser;
 use serde_json;
-use clap::{Parser, ValueEnum};
 use std::io::Write;
 use serde::Serialize;
 use std::str::FromStr;
@@ -20,46 +22,12 @@ use sui_sdk::rpc_types::SuiTransactionBlock;
 // use sui_sdk::rpc_types::SuiTransactionBlockResponse;
 use sui_sdk::rpc_types::SuiTransactionBlockResponseQuery;
 // use sui_sdk::rpc_types::SuiObjectDataOptions;
+use crate::args::Args;
 
 // from which TX to start to query;
 // the corresponding TX won't be included!
 // const CURSOR: &str = "CP5xMb2EdVzbBjAeoTQypSg5ADeRHJ9qtpyszKBnH56H";
 // 9oG3Haf35Ew6wbWumt7xbPG3vcqnpQTaMMadQWNJEWcY";
-
-/// Estimate how often Sui transactions operate with shared objects
-#[derive(Parser, Debug)]
-#[command(author = "Roman Overko", version, about, long_about = None)]
-struct Args {
-    /// Which network to use
-    #[arg(short, long, value_enum, default_value_t = NetworkType::Mainnet)]
-    network: NetworkType,
-
-    /// Number of TXs to scan, >= 0
-    #[arg(short, long, default_value_t = 1000)]
-    tx_number: usize,
-
-    /// Digest of TX from which to start scanning.
-    /// The corresponding TX won't be scaned!
-    /// If empty: if --descending, scans the latest TXs;
-    /// otherwise, scans the first TXs
-    #[arg(short, long, default_value_t = String::from(""))]
-    cursor: String,
-
-    /// Scan TXs in descending order
-    #[arg(short, long, default_value_t = false)]
-    descending: bool,
-
-    /// Print detailed output
-    #[arg(short, long, default_value_t = false)]
-    verbose: bool,
-}
-
-#[derive(ValueEnum, Debug, Clone)]
-enum NetworkType {
-    Mainnet,
-    Testnet,
-    Devnet,
-}
 
 #[derive(Debug)]
 struct SharedObjInfo {
