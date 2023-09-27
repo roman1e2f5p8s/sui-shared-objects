@@ -1,5 +1,3 @@
-mod args;
-
 use std::fs;
 use std::path::Path;
 use clap::Parser;
@@ -22,7 +20,8 @@ use sui_sdk::rpc_types::SuiTransactionBlock;
 // use sui_sdk::rpc_types::SuiTransactionBlockResponse;
 use sui_sdk::rpc_types::SuiTransactionBlockResponseQuery;
 // use sui_sdk::rpc_types::SuiObjectDataOptions;
-use crate::args::Args;
+
+use shared_object_density::args::query::Args;
 
 // from which TX to start to query;
 // the corresponding TX won't be included!

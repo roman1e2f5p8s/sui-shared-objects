@@ -1,12 +1,10 @@
-mod args;
-
 use std::fs;
 use std::path::Path;
 use std::collections::{HashMap, BTreeMap};
 use serde_json;
 use serde::{Serialize, Deserialize};
 
-use crate::args::*;
+use shared_object_density::args::plot::*;
 
 const EVERY_N_CHECKPOINTS: u64 = 60;
 

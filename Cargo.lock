@@ -9321,6 +9321,18 @@ dependencies = [
 ]
 
 [[package]]
+name = "shared_object_density"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "clap",
+ "serde",
+ "serde_json",
+ "sui-sdk",
+ "tokio",
+]
+
+[[package]]
 name = "shell-words"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -10280,18 +10292,6 @@ dependencies = [
  "tokio",
  "tracing",
  "workspace-hack",
-]
-
-[[package]]
-name = "sui-shared-object-density"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "clap",
- "serde",
- "serde_json",
- "sui-sdk",
- "tokio",
 ]
 
 [[package]]
