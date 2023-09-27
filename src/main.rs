@@ -3,7 +3,6 @@ use std::path::Path;
 use clap::Parser;
 use serde_json;
 use std::io::Write;
-use serde::Serialize;
 use std::str::FromStr;
 // use std::process::exit;
 use std::collections::HashSet;
@@ -22,48 +21,13 @@ use sui_sdk::rpc_types::SuiTransactionBlockResponseQuery;
 // use sui_sdk::rpc_types::SuiObjectDataOptions;
 
 use shared_object_density::args::query::Args;
+use shared_object_density::types::*;
 
 // from which TX to start to query;
 // the corresponding TX won't be included!
 // const CURSOR: &str = "CP5xMb2EdVzbBjAeoTQypSg5ADeRHJ9qtpyszKBnH56H";
 // 9oG3Haf35Ew6wbWumt7xbPG3vcqnpQTaMMadQWNJEWcY";
 
-#[derive(Debug)]
-struct SharedObjInfo {
-    id: String,
-    mutable: bool
-}
-
-#[derive(Debug)]
-struct TxInfo {
-    num_total: usize,
-    num_shared: usize,
-    shared_objects: Vec<SharedObjInfo>
-}
-
-#[derive(Debug, Serialize)]
-struct TxMutInfo {
-    tx_id: String,
-    mutates: bool
-}
-
-#[derive(Debug, Serialize)]
-struct CheckpointData {
-    num_txs_total: usize,
-    num_txs_touching_shared_objs: usize,
-    shared_objects: HashMap<String, Vec<TxMutInfo>>
-}
-
-#[derive(Debug, Serialize)]
-struct ResultData {
-    start_cursor: String,
-    end_cursor: String,
-    descending: bool,
-    num_txs_scanned: usize,
-    num_txs_touching_0_shared_objs: usize,
-    num_txs_touching_0_objs: usize,
-    checkpoints: BTreeMap<u64, CheckpointData>
-}
 
 
 // print type of variable

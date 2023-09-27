@@ -1,51 +1,12 @@
 use std::fs;
 use std::path::Path;
-use std::collections::{HashMap, BTreeMap};
+use std::collections::BTreeMap;
 use serde_json;
-use serde::{Serialize, Deserialize};
 
 use shared_object_density::args::plot::*;
+use shared_object_density::types::*;
 
 const EVERY_N_CHECKPOINTS: u64 = 60;
-
-#[derive(Debug, Deserialize)]
-struct Epoch {
-    start_checkpoint: usize,
-    end_checkpoint: usize
-}
-
-#[derive(Debug, Deserialize)]
-struct TxMutInfo {
-    tx_id: String,
-    mutates: bool
-}
-
-#[derive(Debug, Deserialize)]
-struct CheckpointData {
-    num_txs_total: usize,
-    num_txs_touching_shared_objs: usize,
-    shared_objects: HashMap<String, Vec<TxMutInfo>>
-}
-
-#[derive(Debug, Deserialize)]
-struct ResultData {
-    start_cursor: String,
-    end_cursor: String,
-    descending: bool,
-    num_txs_scanned: usize,
-    num_txs_touching_0_shared_objs: usize,
-    num_txs_touching_0_objs: usize,
-    checkpoints: BTreeMap<u64, CheckpointData>
-}
-
-#[derive(Debug, Serialize)]
-struct EpochData {
-    num_txs_total: usize,
-    num_txs_touching_shared_objs: usize,
-    density: f64,
-    num_checkpoints: usize,
-    contention_level: f64,
-}
 
 fn main() {
     let results_dir = Path::new("results");
@@ -95,8 +56,8 @@ fn main() {
                     epochs_data.get(&epoch).unwrap().num_txs_touching_shared_objs as f64 /
                     epochs_data.get(&epoch).unwrap().num_txs_total as f64;
                 epochs_data.get_mut(&epoch).unwrap().contention_level /= 
-                    (epochs_data.get(&epoch).unwrap().num_checkpoints as f64 / 
-                     EVERY_N_CHECKPOINTS as f64);
+                    epochs_data.get(&epoch).unwrap().num_checkpoints as f64 / 
+                     EVERY_N_CHECKPOINTS as f64;
                 // update contention level counters at the end of epoch
                 num_txs = 0;
                 num_obj = 0;
