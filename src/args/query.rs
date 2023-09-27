@@ -1,6 +1,6 @@
 use clap::{Parser, ValueEnum};
 
-/// Estimate how often Sui transactions operate with shared objects
+/// Estimate how often Sui transactions operate with shared objects: query TXs
 #[derive(Parser, Debug)]
 #[command(author = "Roman Overko", version, about, long_about = None)]
 pub struct Args {
@@ -34,4 +34,3 @@ pub enum NetworkType {
     Testnet,
     Devnet,
 }
-

@@ -29,13 +29,6 @@ use shared_object_density::types::*;
 // 9oG3Haf35Ew6wbWumt7xbPG3vcqnpQTaMMadQWNJEWcY";
 
 
-
-// print type of variable
-fn _print_type_of<T>(_: &T) {
-    println!("{}", std::any::type_name::<T>())
-}
-
-
 // Given Option<sui_json_rpc_types::sui_transaction::SuiTransactionBlock>
 // for TX, return its inputs
 fn process_tx_inputs(tx_block: &Option<SuiTransactionBlock>) -> TxInfo {

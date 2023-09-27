@@ -44,12 +44,18 @@ pub struct Epoch {
     pub end_checkpoint: usize
 }
 
-
 #[derive(Debug, Serialize)]
 pub struct EpochData {
     pub num_txs_total: usize,
     pub num_txs_touching_shared_objs: usize,
     pub density: f64,
     pub num_checkpoints: usize,
-    pub contention_level: f64,
+    pub contention_degree: BTreeMap<u64, f64>,
 }
+
+// Counts for different checkpoint intervals 
+pub struct IntervalCounts {
+    pub num_txs: u64,
+    pub num_obj: u64,
+}
+
