@@ -10,77 +10,12 @@ use std::collections::{HashMap, BTreeMap};
 
 use sui_sdk::SuiClientBuilder;
 use sui_sdk::types::base_types::TransactionDigest;
-use sui_sdk::rpc_types::SuiTransactionBlockResponseOptions;
-use sui_sdk::rpc_types::SuiTransactionBlockData;
-use sui_sdk::rpc_types::SuiTransactionBlockKind;
-use sui_sdk::rpc_types::SuiCallArg;
-use sui_sdk::rpc_types::SuiObjectArg;
-use sui_sdk::rpc_types::SuiTransactionBlock;
-// use sui_sdk::rpc_types::SuiTransactionBlockResponse;
 use sui_sdk::rpc_types::SuiTransactionBlockResponseQuery;
-// use sui_sdk::rpc_types::SuiObjectDataOptions;
+use sui_sdk::rpc_types::SuiTransactionBlockResponseOptions;
 
 use shared_object_density::args::query::Args;
-use shared_object_density::types::*;
-
-// from which TX to start to query;
-// the corresponding TX won't be included!
-// const CURSOR: &str = "CP5xMb2EdVzbBjAeoTQypSg5ADeRHJ9qtpyszKBnH56H";
-// 9oG3Haf35Ew6wbWumt7xbPG3vcqnpQTaMMadQWNJEWcY";
-
-
-// Given Option<sui_json_rpc_types::sui_transaction::SuiTransactionBlock>
-// for TX, return its inputs
-fn process_tx_inputs(tx_block: &Option<SuiTransactionBlock>) -> TxInfo {
-    // `tx_block` should have structure like this:
-    // Some(SuiTransactionBlock {
-    //  data: V1(SuiTransactionBlockDataV1 { 
-    //      transaction: ProgrammableTransaction(SuiProgrammableTransactionBlock { 
-    //      inputs: [
-    // So, we need to unwrap Some, and get the `data` field of SuiTransactionBlock.
-    // Then, we access the V1 variant of the SuiTransactionBlockData enum.
-    // There is only one variant, so we don't need `if let`
-    let SuiTransactionBlockData::V1(tx_data_v1) = &tx_block.as_ref().unwrap().data;
-
-    // Now, get the `transaction` field of the SuiTransactionBlockDataV1 struct,
-    // then access the ProgrammableTransaction variant of 
-    // the SuiTransactionBlockKind enum
-    if let SuiTransactionBlockKind::ProgrammableTransaction(prog_tx) = &tx_data_v1.transaction {
-        // to count the number of shared mutable objects
-        let mut count = 0;
-        let mut shared_objects: Vec<SharedObjInfo> = Vec::new();
-
-        for input in prog_tx.inputs.iter() {
-            // input has type of sui_sdk::rpc_types::SuiCallArg;
-            // the sui_sdk::rpc_types::SuiCallArg enum has two variants:
-            // Object and Pure. We need only Objects.
-            if let SuiCallArg::Object(obj) = input {
-                // obj has type of sui_sdk::rpc_types::SuiObjectArg;
-                // sui_sdk::rpc_types::SuiObjectArg enum has two variants:
-                // ImmOrOwnedObject and SharedObject. We need only SharedObject
-                if let SuiObjectArg::SharedObject{object_id, mutable, ..} = obj {
-                    count = count + 1;
-                    shared_objects.push(SharedObjInfo {
-                        id: object_id.to_string(),
-                        mutable: *mutable
-                    })
-                }
-            }
-        }
-        // println!("Total: {}, Owned: {}, Shared: {}",
-        //          prog_tx.inputs.len(), prog_tx.inputs.len() - count, count);
-        return TxInfo {
-            num_total: prog_tx.inputs.len(),
-            num_shared: count,
-            shared_objects: shared_objects
-        };
-    }
-    TxInfo {
-        num_total: 0,
-        num_shared: 0,
-        shared_objects: Vec::new()
-    }
-}
+use shared_object_density::utils::process_tx_inputs;
+use shared_object_density::types::{TxMutInfo, CheckpointData, ResultData};
 
 
 #[tokio::main]
@@ -148,27 +83,23 @@ async fn main() -> Result<(), anyhow::Error> {
         checkpoints: BTreeMap::new(),
     };
 
-    // let checkpoints = sui
-    //     .read_api()
-    //     .get_checkpoints(Some(10.into()), Some(2), false)
-    //     .await?;
-    // println!("{:?}", checkpoints);
-
-    while {
-        // The result will have type of sui_json_rpc_types::Page<
+    'outer: while {
+        // If Ok, the result will have type of sui_json_rpc_types::Page<
         // sui_json_rpc_types::sui_transaction::SuiTransactionBlockResponse,
         // sui_types::digests::TransactionDigest>
-        let txs_blocks = sui
-            .read_api()
-            .query_transaction_blocks(query.clone(), cursor, 
-                                      Some(tx_to_scan), args.descending)
-            .await?;
 
-        // println!("Number of TXs: {}", txs_blocks.data.len());
-        // println!("Has next page: {}", txs_blocks.has_next_page);
+        let txs_blocks = match sui.read_api().query_transaction_blocks(
+                query.clone(), cursor, Some(tx_to_scan), args.descending).await {
+            Ok(blocks) => blocks,
+            Err(error) => {
+                println!("\nERROR: {:?}, saving data and stopping query", error);
+                break 'outer;
+            },
+        };
+
         // println!("Next cursor: {}", txs_blocks.next_cursor.unwrap().to_string());
-        // println!();
         // println!("{:?}", txs_blocks);
+        //exit(0);
 
         for tx in txs_blocks.data.iter() {
             // println!("TX: {}", tx.digest.to_string());
@@ -220,18 +151,13 @@ async fn main() -> Result<(), anyhow::Error> {
             if tx_info.num_total == 0 {
                 tx_0total_count = tx_0total_count + 1;
             }
-            // println!("Timestamp: {:?}", tx.timestamp_ms.unwrap_or_default());
-            // println!();
         }
-
-        // exit(0);
 
         tx_to_scan = tx_to_scan - txs_blocks.data.len();
         tx_count = tx_count + txs_blocks.data.len();
         cursor = txs_blocks.next_cursor;
         print!("\rNumber of TX analyzed : {}/{} ...", tx_count, args.tx_number);
         std::io::stdout().flush()?;
-        // break;
 
         // condition to break the loop
         tx_count < args.tx_number && txs_blocks.has_next_page == true
@@ -263,7 +189,6 @@ async fn main() -> Result<(), anyhow::Error> {
             unwrap())?;
 
     println!();
-    // println!("{:#?}", result);
     if args.verbose == true {
         for (checkpoint, obj_map) in result.checkpoints.into_iter() {
             println!("Checkpoint: {}", checkpoint);
