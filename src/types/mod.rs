@@ -49,13 +49,21 @@ pub struct EpochData {
     pub num_txs_total: usize,
     pub num_txs_touching_shared_objs: usize,
     pub density: f64,
+    pub num_shared_objects: usize,
     pub num_checkpoints: usize,
-    pub contention_degree: BTreeMap<u64, f64>,
+    pub avg_interval_data: BTreeMap<u64, AvgIntervalData>,
 }
 
 // Counts for different checkpoint intervals 
 pub struct IntervalCounts {
     pub num_txs: u64,
     pub num_obj: u64,
+    pub num_obj_touched_by_more_than_one_tx: u64,
 }
 
+// Data for a given interval of checkpoints
+#[derive(Debug, Serialize)]
+pub struct AvgIntervalData {
+    pub contention_degree: f64,
+    pub obj_touchability: f64,
+}
