@@ -4,9 +4,11 @@ use clap::Parser;
 use serde_json;
 use std::io::Write;
 use std::str::FromStr;
+use colored::Colorize;
 // use std::process::exit;
 use std::collections::HashSet;
 use std::collections::{HashMap, BTreeMap};
+use tokio::time::{sleep, Duration};
 
 use sui_sdk::SuiClientBuilder;
 use sui_sdk::types::base_types::TransactionDigest;
@@ -27,7 +29,7 @@ async fn main() -> Result<(), anyhow::Error> {
         .build(format!("https://fullnode.{:?}.sui.io:443", args.network))
         .await
         .unwrap();
-    println!("\nSui {:?} version: {}\n", args.network, sui.api_version());
+    println!("{}", format!("\n --- Sui {:?} version: {} --- \n", args.network, sui.api_version()).green());
 
     // TX options indicate what info to be included in the response
     let mut txs_options = SuiTransactionBlockResponseOptions::new();
@@ -83,24 +85,44 @@ async fn main() -> Result<(), anyhow::Error> {
         checkpoints: BTreeMap::new(),
     };
 
+    // If this number exceeds args.retry_number, terminate the program and save data.
+    // Otherwise, sleep some time and retry query.
+    let mut retry_number = 0;
+
     'outer: while {
         // If Ok, the result will have type of sui_json_rpc_types::Page<
         // sui_json_rpc_types::sui_transaction::SuiTransactionBlockResponse,
         // sui_types::digests::TransactionDigest>
-
         let txs_blocks = match sui.read_api().query_transaction_blocks(
                 query.clone(), cursor, Some(tx_to_scan), args.descending).await {
-            Ok(blocks) => blocks,
+            Ok(blocks) => {
+                retry_number = 0;
+                blocks
+            },
             Err(error) => {
-                println!("\nERROR: {:?}, saving data and stopping query", error);
-                break 'outer;
+                println!("\n  {}: {:?}", "ERROR".red(), error);
+                if retry_number < args.retry_number {
+                    for i in 0..args.retry_sleep {
+                        print!("{}", format!("\r    Retrying query #{} starting at cursor {} in {} s..", retry_number + 1,
+                            cursor.unwrap().to_string(), args.retry_sleep - i).yellow());
+                        std::io::stdout().flush()?;
+                        sleep(Duration::from_secs(1)).await;
+                    }
+                    print!("{}", format!("\r    Retrying query #{} starting at cursor {} in {} s   ", retry_number + 1,
+                        cursor.unwrap().to_string(), 0).yellow());
+                    retry_number += 1;
+                    println!();
+                    continue 'outer;
+                } else {
+                    println!("{}", format!("\t    Retry number is reached, saving data and terminating the program").yellow());
+                    break 'outer;
+                }
             },
         };
 
         // println!("Next cursor: {}", txs_blocks.next_cursor.unwrap().to_string());
         // println!("{:?}", txs_blocks);
         //exit(0);
-
         for tx in txs_blocks.data.iter() {
             // println!("TX: {}", tx.digest.to_string());
             let tx_info = process_tx_inputs(&tx.transaction);
@@ -156,7 +178,8 @@ async fn main() -> Result<(), anyhow::Error> {
         tx_to_scan = tx_to_scan - txs_blocks.data.len();
         tx_count = tx_count + txs_blocks.data.len();
         cursor = txs_blocks.next_cursor;
-        print!("\rNumber of TX analyzed : {}/{} ...", tx_count, args.tx_number);
+
+        print!("\rNumber of TX analyzed : {}...", format!("{}/{}", tx_count, args.tx_number).blue());
         std::io::stdout().flush()?;
 
         // condition to break the loop
@@ -166,8 +189,8 @@ async fn main() -> Result<(), anyhow::Error> {
 
     // store the start and the end cursor: to reproduce the results
     // and to continue scanning if necessary
-    println!("Start cursor: {}", args.cursor);
-    println!("End   cursor: {}", cursor.unwrap().to_string());
+    println!("{}", format!("Start cursor: {}", args.cursor).green());
+    println!("{}", format!("End   cursor: {}", cursor.unwrap().to_string()).green());
     result.end_cursor = cursor.unwrap().to_string();
     result.num_txs_scanned = tx_count;
     result.num_txs_touching_0_shared_objs = tx_0shared_count;
@@ -204,10 +227,10 @@ async fn main() -> Result<(), anyhow::Error> {
         }
     }
 
-    println!("Total number of TXs scanned  : {}", tx_count);
-    println!("Total number of TXs requested: {}", args.tx_number);
-    println!("Total number of TXs touching 0 shared objects: {}", tx_0shared_count);
-    println!("Total number of TXs touching 0        objects: {}", tx_0total_count);
+    println!("{}", format!("Total number of TXs scanned  : {}", tx_count).green());
+    println!("{}", format!("Total number of TXs requested: {}", args.tx_number).green());
+    println!("{}", format!("Total number of TXs touching 0 shared objects: {}", tx_0shared_count).green());
+    println!("{}", format!("Total number of TXs touching 0        objects: {}", tx_0total_count).green());
 
     Ok(())
 }

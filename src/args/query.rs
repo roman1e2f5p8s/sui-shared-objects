@@ -12,6 +12,14 @@ pub struct Args {
     #[arg(short, long, default_value_t = 1000)]
     pub tx_number: usize,
 
+    /// Number of query retries, >= 0
+    #[arg(short, long, default_value_t = 10)]
+    pub retry_number: usize,
+
+    /// Sleep time between reties in whole seconds, >= 0
+    #[arg(short, long, default_value_t = 10)]
+    pub retry_sleep: u64,
+
     /// Digest of TX from which to start scanning.
     /// The corresponding TX won't be scaned!
     /// If empty: if --descending, scans the latest TXs;
