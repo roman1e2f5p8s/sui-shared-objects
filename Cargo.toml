@@ -25,3 +25,4 @@ serde = { version = "1.0.188", features = ["derive"] }
 serde_json = "1.0.105"
 clap = { version = "4.4.3", features = ["derive"] }
 colored = { version = "2.0.4" }
+memmap = "0.7.0"

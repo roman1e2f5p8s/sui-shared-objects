@@ -1,4 +1,5 @@
 use std::fs;
+use memmap;
 use clap::Parser;
 use std::io::Write;
 use std::path::Path;
@@ -52,15 +53,19 @@ fn main() {
         .collect();
 
     for (i, data_file) in data_files.iter().enumerate() {
-        let file = fs::File::open(data_file.path())
-            .expect("File not found!");
 
         print!("\rWorking on file {}/{}...", i + 1, data_files.len());
         let _ = std::io::stdout().flush();
 
-        let json: ResultData = 
-            serde_json::from_reader(file).
-            expect("JSON was not properly formatted!");
+        let file = fs::File::open(data_file.path())
+            .expect("File not found!");
+        let mmap = unsafe {memmap::Mmap::map(&file)}.unwrap();
+        let content = std::str::from_utf8(&mmap).unwrap();
+        let json: ResultData = serde_json::from_str(content).unwrap();
+
+        // let json: ResultData = 
+        //     serde_json::from_reader(file).
+        //     expect("JSON was not properly formatted!");
         
         for (checkpoint, checkpoint_data) in json.checkpoints.into_iter() {
             if checkpoint > epoch2checkpoint_json.
