@@ -17,6 +17,7 @@ objects to the total number of transactions for a given time interval.
 - [Query Usage](#query-usage)
 - [Plot Usage](#plot-usage)
 - [Examples](#examples)
+- [Results](#results)
 - [Contribute](#contribute)
 - [License](#license)
 
@@ -102,3 +103,20 @@ A more detailed description of how to use these executables is given in the next
 ## Query Usage
 
 ## Plot Usage
+
+## Results
+We plot the following characteristics:
+- **Total number of transactions** is the total number of Sui transactions per epoch.
+- **Number of transactions touching shared objects** is the number (per epoch) of Sui transactions 
+that have at least one shared object in their inputs.
+- **Density** is the percentage of Sui transactions that touch shared objects, i.e.,
+the ratio (multiplied by 100%) of the number of transactions touching shared objects 
+(per epoch) to the total number of transactions on Sui (per epoch).
+- **Number of shared objects** is the number of shared objects with unique IDs within an epoch.
+- **Average contention degree** is the ratio (averaged over intervals within an epoch) of 
+the number of transactions touching shared objects to the number of unique shared objects
+touched by those transactions within an interval. In other words, this metrics 
+tells us how many transactions touch the same shared object on average.
+- **Object touchability** is the ratio (averaged over intervals within an epoch) of
+the number of shared objects touched by more than one transaction to
+the number of unique shared objects. 

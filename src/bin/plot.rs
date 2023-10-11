@@ -3,7 +3,10 @@ use memmap;
 use clap::Parser;
 use std::io::Write;
 use std::path::Path;
-use std::collections::BTreeMap;
+use std::collections::{
+    HashSet,
+    BTreeMap
+};
 use serde_json;
 
 use shared_object_density::args::plot::*;
@@ -27,8 +30,9 @@ fn main() {
         collect();
     data_files.sort_by_key(|f| f.metadata().unwrap().modified().unwrap());
 
-    let mut epochs_data: BTreeMap<usize, EpochData> = BTreeMap::new();
     let mut epoch: usize = 0;
+    let mut unique_shared_objects_per_epoch = HashSet::new();
+    let mut epochs_data: BTreeMap<usize, EpochData> = BTreeMap::new();
     epochs_data.insert(epoch, EpochData {
         num_txs_total: 0,
         num_txs_touching_shared_objs: 0,
@@ -47,8 +51,8 @@ fn main() {
         .iter()
         .map(|i| (*i, IntervalCounts {
             num_txs: 0,
-            num_obj: 0,
-            num_obj_touched_by_more_than_one_tx: 0,
+            unique_shared_objects_per_interval: HashSet::new(),
+            unique_shared_objects_touched_by_more_than_1tx_per_interval: HashSet::new(),
         }))
         .collect();
 
@@ -109,15 +113,19 @@ fn main() {
                     counts_per_interval
                         .get_mut(&interval)
                         .unwrap()
-                        .num_obj = 0;
+                        .unique_shared_objects_per_interval.clear();
                     counts_per_interval
                         .get_mut(&interval)
                         .unwrap()
-                        .num_obj_touched_by_more_than_one_tx = 0;
+                        .unique_shared_objects_touched_by_more_than_1tx_per_interval.clear();
                 }
+
+                // Update the number of shared objects
+                epochs_data.get_mut(&epoch).unwrap().num_shared_objects = unique_shared_objects_per_epoch.len();
 
                 // proceed to the next epoch
                 epoch += 1;
+                unique_shared_objects_per_epoch.clear();
                 epochs_data.insert(epoch, EpochData {
                     num_txs_total: 0,
                     num_txs_touching_shared_objs: 0,
@@ -142,10 +150,10 @@ fn main() {
             // Update the number of checkpoints
             epochs_data.get_mut(&epoch).unwrap().num_checkpoints += 1;
 
-            // Update the number of shared objects
-            epochs_data.get_mut(&epoch).unwrap().num_shared_objects += checkpoint_data.shared_objects.len();
+            for (obj_id, tx_list) in checkpoint_data.shared_objects.into_iter() {
+                // collect unique shared objects
+                unique_shared_objects_per_epoch.insert(obj_id.clone());
 
-            for (_, tx_list) in checkpoint_data.shared_objects.into_iter() {
                 for interval in &args.intervals {
                     counts_per_interval
                         .get_mut(&interval)
@@ -154,12 +162,12 @@ fn main() {
                     counts_per_interval
                         .get_mut(&interval)
                         .unwrap()
-                        .num_obj += 1;
+                        .unique_shared_objects_per_interval.insert(obj_id.clone());
                     if tx_list.len() > 1 {
                         counts_per_interval
                             .get_mut(&interval)
                             .unwrap()
-                            .num_obj_touched_by_more_than_one_tx += 1;
+                            .unique_shared_objects_touched_by_more_than_1tx_per_interval.insert(obj_id.clone());
                     }
                 }
             }
@@ -168,12 +176,13 @@ fn main() {
                 // do this every `interval` checkpoints
                 if (checkpoint + 1) % interval == 0 {
                     // Calculate contention degree as the number of TXs touching shared
-                    // objects divided by the number of touched shared objects
+                    // objects divided by the number of unique touched shared objects
                     let x: f64 = counts_per_interval.get(&interval).unwrap().num_txs as f64 / 
-                        counts_per_interval.get(&interval).unwrap().num_obj as f64;
+                        counts_per_interval.get(&interval).unwrap().unique_shared_objects_per_interval.len() as f64;
 
                     if !x.is_nan() {
-                        // Sum up contention degree
+                        // Sum up interval contention degree to the epoch contention degree,
+                        // which will be averaged when epoch ends
                         epochs_data
                             .get_mut(&epoch)
                             .unwrap()
@@ -187,11 +196,12 @@ fn main() {
                     // Calculate object touchability as the number of objects touched by
                     // more than one TX divided by the number of shared objects
                     let y: f64 = counts_per_interval.get(&interval).unwrap()
-                        .num_obj_touched_by_more_than_one_tx as f64 / 
-                        counts_per_interval.get(&interval).unwrap().num_obj as f64;
+                        .unique_shared_objects_touched_by_more_than_1tx_per_interval.len() as f64 /
+                        counts_per_interval.get(&interval).unwrap().unique_shared_objects_per_interval.len() as f64;
 
                     if !y.is_nan() {
-                        // Sum up contention degree
+                        // Sum up interval object touchability to the epoch object touchability,
+                        // which will be averaged when epoch ends
                         epochs_data
                             .get_mut(&epoch)
                             .unwrap()
@@ -202,7 +212,8 @@ fn main() {
                                 += y;
                     }
 
-                    // renew counters needed for contention degree
+                    // renew counters and clear sets needed for contention degree
+                    // and object touchability calculations
                     counts_per_interval
                         .get_mut(&interval)
                         .unwrap()
@@ -210,11 +221,11 @@ fn main() {
                     counts_per_interval
                         .get_mut(&interval)
                         .unwrap()
-                        .num_obj = 0;
+                        .unique_shared_objects_per_interval.clear();
                     counts_per_interval
                         .get_mut(&interval)
                         .unwrap()
-                        .num_obj_touched_by_more_than_one_tx = 0;
+                        .unique_shared_objects_touched_by_more_than_1tx_per_interval.clear();
                 }
             }
         }
