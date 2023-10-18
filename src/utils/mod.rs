@@ -25,6 +25,14 @@ pub fn process_tx_inputs(tx_block: &Option<SuiTransactionBlock>) -> TxInfo {
     // Then, we access the V1 variant of the SuiTransactionBlockData enum.
     // There is only one variant, so we don't need `if let`
     let SuiTransactionBlockData::V1(tx_data_v1) = &tx_block.as_ref().unwrap().data;
+    // let SuiTransactionBlockData::V1(tx_data_v1) = match &tx_block.as_ref() {
+    //     Ok(block) => {
+    //         block.data
+    //     }
+    //     Err(error) => {
+    //         println!("\n  {}: {:?}", "ERROR", error);
+    //     }
+    // };
 
     // Now, get the `transaction` field of the SuiTransactionBlockDataV1 struct,
     // then access the ProgrammableTransaction variant of 

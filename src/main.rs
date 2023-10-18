@@ -5,7 +5,7 @@ use serde_json;
 use std::io::Write;
 use std::str::FromStr;
 use colored::Colorize;
-// use std::process::exit;
+use std::process::exit;
 use std::collections::HashSet;
 use std::collections::{HashMap, BTreeMap};
 use tokio::time::{sleep, Duration};
@@ -89,7 +89,14 @@ async fn main() -> Result<(), anyhow::Error> {
     // Otherwise, sleep some time and retry query.
     let mut retry_number = 0;
 
+    let mut b = false;
+
     'outer: while {
+        if b == true {
+            println!("Last cursor: {:?}", cursor);
+            b = false;
+        }
+
         // If Ok, the result will have type of sui_json_rpc_types::Page<
         // sui_json_rpc_types::sui_transaction::SuiTransactionBlockResponse,
         // sui_types::digests::TransactionDigest>
@@ -120,13 +127,25 @@ async fn main() -> Result<(), anyhow::Error> {
             },
         };
 
+        // Check if there is no block with transaction: None.
+        // If exists, repeat query for the same cursor
+        for tx in txs_blocks.data.iter() {
+            println!("{:?}", tx.checkpoint);
+            if tx.transaction.as_ref() == None {
+                println!("\n{}: {:?}", "Empty TX block".red(), tx);
+                println!("{} {:?}\n", "Repeating query again for cursor:".red(), cursor);
+                b = true;
+                break;
+            }
+        }
+        if b == true {
+            continue 'outer;
+        }
+
         // println!("Next cursor: {}", txs_blocks.next_cursor.unwrap().to_string());
         // println!("{:?}", txs_blocks);
-        //exit(0);
+        exit(0);
         for tx in txs_blocks.data.iter() {
-            // println!("TX: {}", tx.digest.to_string());
-            let tx_info = process_tx_inputs(&tx.transaction);
-
             // insert a new checkpoint if it does not exist already
             result.checkpoints.
                 entry(tx.checkpoint.unwrap_or_default()).
@@ -139,6 +158,17 @@ async fn main() -> Result<(), anyhow::Error> {
                 get_mut(&tx.checkpoint.unwrap_or_default()).
                 unwrap().
                 num_txs_total += 1;
+
+            // println!("TX: {}", tx.digest.to_string());
+            // if tx.transaction.as_ref() == None {
+            //     println!("{}: {:#?}\n", "Empty TX block".red(), tx);
+            //     println!("{:?}\n", cursor);
+            //     println!("{:?}\n", txs_blocks);
+            //     tx_0total_count = tx_0total_count + 1;
+            //     exit(0);
+            //     continue;
+            // }
+            let tx_info = process_tx_inputs(&tx.transaction);
 
             if tx_info.num_shared == 0 {
                 tx_0shared_count = tx_0shared_count + 1;
