@@ -130,7 +130,7 @@ async fn main() -> Result<(), anyhow::Error> {
         // Check if there is no block with transaction: None.
         // If exists, repeat query for the same cursor
         for tx in txs_blocks.data.iter() {
-            println!("{:?}", tx.checkpoint);
+            // println!("{:?}", tx.checkpoint);
             if tx.transaction.as_ref() == None {
                 println!("\n{}: {:?}", "Empty TX block".red(), tx);
                 println!("{} {:?}\n", "Repeating query again for cursor:".red(), cursor);
@@ -144,7 +144,7 @@ async fn main() -> Result<(), anyhow::Error> {
 
         // println!("Next cursor: {}", txs_blocks.next_cursor.unwrap().to_string());
         // println!("{:?}", txs_blocks);
-        exit(0);
+        // exit(0);
         for tx in txs_blocks.data.iter() {
             // insert a new checkpoint if it does not exist already
             result.checkpoints.
