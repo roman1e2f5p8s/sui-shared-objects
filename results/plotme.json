@@ -628,11 +628,11 @@
         "obj_touchability": 0.2596101274912932
       },
       "30": {
-        "contention_degree": 6.934858090902286,
+        "contention_degree": 6.934933183218903,
         "obj_touchability": 0.24185672427976243
       },
       "60": {
-        "contention_degree": 10.024572793410583,
+        "contention_degree": 10.024682543719484,
         "obj_touchability": 0.22087633256129252
       }
     }
@@ -657,12 +657,12 @@
         "obj_touchability": 0.17730667594150182
       },
       "30": {
-        "contention_degree": 4.317590827791182,
-        "obj_touchability": 0.1470524573397577
+        "contention_degree": 4.318299265038115,
+        "obj_touchability": 0.14705858602099633
       },
       "60": {
-        "contention_degree": 5.844562775712101,
-        "obj_touchability": 0.13464941964770935
+        "contention_degree": 5.848663629545926,
+        "obj_touchability": 0.1346363962000772
       }
     }
   },
@@ -682,16 +682,16 @@
         "obj_touchability": 0.1968224616701244
       },
       "10": {
-        "contention_degree": 2.8822323658173663,
-        "obj_touchability": 0.17084320284076526
+        "contention_degree": 2.8822704158004098,
+        "obj_touchability": 0.170839505676421
       },
       "30": {
-        "contention_degree": 4.379262830789008,
-        "obj_touchability": 0.13756484171003716
+        "contention_degree": 4.381561779166614,
+        "obj_touchability": 0.13752182993182271
       },
       "60": {
-        "contention_degree": 5.969313290798212,
-        "obj_touchability": 0.12544569134933853
+        "contention_degree": 5.976110131320401,
+        "obj_touchability": 0.1252848647003628
       }
     }
   },
@@ -719,8 +719,8 @@
         "obj_touchability": 0.11978976686498796
       },
       "60": {
-        "contention_degree": 4.401933336258305,
-        "obj_touchability": 0.11759815979221969
+        "contention_degree": 4.40572222477421,
+        "obj_touchability": 0.11763072436906458
       }
     }
   },
@@ -736,20 +736,20 @@
         "obj_touchability": 0.08570452672752263
       },
       "5": {
-        "contention_degree": 1.9746901816193871,
-        "obj_touchability": 0.1262640579232306
+        "contention_degree": 1.9746913640972967,
+        "obj_touchability": 0.12626350610020598
       },
       "10": {
-        "contention_degree": 2.5770018259741376,
-        "obj_touchability": 0.13110497068448332
+        "contention_degree": 2.577058111922648,
+        "obj_touchability": 0.13110386703843407
       },
       "30": {
-        "contention_degree": 4.147003198049159,
-        "obj_touchability": 0.1327605802131286
+        "contention_degree": 4.147510480184535,
+        "obj_touchability": 0.13274200746622244
       },
       "60": {
-        "contention_degree": 5.771981675295962,
-        "obj_touchability": 0.13154484092741284
+        "contention_degree": 5.772630089422808,
+        "obj_touchability": 0.13153053767461478
       }
     }
   },
@@ -769,16 +769,16 @@
         "obj_touchability": 0.12266847836290286
       },
       "10": {
-        "contention_degree": 2.1476627461508526,
-        "obj_touchability": 0.12198732944006323
+        "contention_degree": 2.1476892011971684,
+        "obj_touchability": 0.12198303943255251
       },
       "30": {
-        "contention_degree": 3.356414440860312,
-        "obj_touchability": 0.12014278110833143
+        "contention_degree": 3.3562296398492717,
+        "obj_touchability": 0.12012255936582035
       },
       "60": {
-        "contention_degree": 4.580854161872764,
-        "obj_touchability": 0.11904384456317704
+        "contention_degree": 4.580197603442044,
+        "obj_touchability": 0.11900875404861734
       }
     }
   },
@@ -802,12 +802,12 @@
         "obj_touchability": 0.1645940792651316
       },
       "30": {
-        "contention_degree": 6.145285679708076,
-        "obj_touchability": 0.14682807521946964
+        "contention_degree": 6.145662937758997,
+        "obj_touchability": 0.14686220481849036
       },
       "60": {
-        "contention_degree": 8.635721710272726,
-        "obj_touchability": 0.1387204492775357
+        "contention_degree": 8.636305106240098,
+        "obj_touchability": 0.13877499680048502
       }
     }
   },
@@ -827,16 +827,16 @@
         "obj_touchability": 0.09162910067429617
       },
       "10": {
-        "contention_degree": 2.0397368759006262,
-        "obj_touchability": 0.09708550814530457
+        "contention_degree": 2.0397712720066705,
+        "obj_touchability": 0.09708429058402869
       },
       "30": {
-        "contention_degree": 3.1151871176287345,
-        "obj_touchability": 0.10246027288771925
+        "contention_degree": 3.1155306103963776,
+        "obj_touchability": 0.10245121142206974
       },
       "60": {
-        "contention_degree": 4.234942470523273,
-        "obj_touchability": 0.10491646186052865
+        "contention_degree": 4.234963348118092,
+        "obj_touchability": 0.10491514880425072
       }
     }
   },
@@ -852,20 +852,20 @@
         "obj_touchability": 0.07273143072088167
       },
       "5": {
-        "contention_degree": 1.6744060820919664,
-        "obj_touchability": 0.11866676397293124
+        "contention_degree": 1.674428725798849,
+        "obj_touchability": 0.1186652944698297
       },
       "10": {
-        "contention_degree": 2.1811030062091,
-        "obj_touchability": 0.1259707840589654
+        "contention_degree": 2.181139082123396,
+        "obj_touchability": 0.12596874377589468
       },
       "30": {
-        "contention_degree": 3.3761505910790763,
-        "obj_touchability": 0.12713223350563949
+        "contention_degree": 3.376215065000323,
+        "obj_touchability": 0.1271294752630193
       },
       "60": {
-        "contention_degree": 4.590134105991345,
-        "obj_touchability": 0.12451410365625394
+        "contention_degree": 4.5902173847758005,
+        "obj_touchability": 0.12451076694368814
       }
     }
   },
@@ -881,20 +881,20 @@
         "obj_touchability": 0.06607685895536607
       },
       "5": {
-        "contention_degree": 1.4957394923064506,
-        "obj_touchability": 0.09003197032027802
+        "contention_degree": 1.4957560646731893,
+        "obj_touchability": 0.09003129297558841
       },
       "10": {
-        "contention_degree": 1.8444587402789194,
-        "obj_touchability": 0.0874886695369798
+        "contention_degree": 1.844547091229967,
+        "obj_touchability": 0.08748547709069082
       },
       "30": {
-        "contention_degree": 2.661631461275986,
-        "obj_touchability": 0.08793193073199125
+        "contention_degree": 2.6618991099934455,
+        "obj_touchability": 0.0879199910122533
       },
       "60": {
-        "contention_degree": 3.5368544837555573,
-        "obj_touchability": 0.09035292338218692
+        "contention_degree": 3.538310232683233,
+        "obj_touchability": 0.09030835963950298
       }
     }
   },
@@ -918,12 +918,12 @@
         "obj_touchability": 0.08901469326946963
       },
       "30": {
-        "contention_degree": 2.481791731850432,
-        "obj_touchability": 0.09362790047808095
+        "contention_degree": 2.4819014821791585,
+        "obj_touchability": 0.09359527200197316
       },
       "60": {
-        "contention_degree": 3.2965145327073913,
-        "obj_touchability": 0.0987165715373191
+        "contention_degree": 3.296710323121566,
+        "obj_touchability": 0.09867048003136647
       }
     }
   },
@@ -939,20 +939,20 @@
         "obj_touchability": 0.11337010103966469
       },
       "5": {
-        "contention_degree": 2.32265499124061,
+        "contention_degree": 2.32272157622969,
         "obj_touchability": 0.11908106848779056
       },
       "10": {
-        "contention_degree": 2.9719543900268373,
-        "obj_touchability": 0.11273726313540829
+        "contention_degree": 2.972139348329837,
+        "obj_touchability": 0.11274466146752829
       },
       "30": {
-        "contention_degree": 4.516812278936126,
-        "obj_touchability": 0.10610473798518404
+        "contention_degree": 4.517806614773054,
+        "obj_touchability": 0.10614912797790409
       },
       "60": {
-        "contention_degree": 6.1816086279085205,
-        "obj_touchability": 0.10664284945467709
+        "contention_degree": 6.181993933045331,
+        "obj_touchability": 0.10658484653085623
       }
     }
   },
@@ -972,16 +972,16 @@
         "obj_touchability": 0.0876359733567117
       },
       "10": {
-        "contention_degree": 2.4098502638884467,
-        "obj_touchability": 0.09298554837918943
+        "contention_degree": 2.409876680634053,
+        "obj_touchability": 0.09298453832715155
       },
       "30": {
-        "contention_degree": 3.702582586249675,
-        "obj_touchability": 0.09524453757752474
+        "contention_degree": 3.702807996957857,
+        "obj_touchability": 0.09521601846116103
       },
       "60": {
-        "contention_degree": 5.0297381625859074,
-        "obj_touchability": 0.09831629315448077
+        "contention_degree": 5.030535213030809,
+        "obj_touchability": 0.09820691190940292
       }
     }
   },
@@ -997,20 +997,20 @@
         "obj_touchability": 0.023934682682630184
       },
       "5": {
-        "contention_degree": 1.205397883021956,
-        "obj_touchability": 0.05317608911286975
+        "contention_degree": 1.2053923387500207,
+        "obj_touchability": 0.0531742410222246
       },
       "10": {
-        "contention_degree": 1.4959100744022207,
-        "obj_touchability": 0.06410781387712364
+        "contention_degree": 1.495901989005648,
+        "obj_touchability": 0.06410261612218415
       },
       "30": {
-        "contention_degree": 2.1170301628010777,
-        "obj_touchability": 0.07272847518627824
+        "contention_degree": 2.1170318428834825,
+        "obj_touchability": 0.0726780727141378
       },
       "60": {
-        "contention_degree": 2.711676342397112,
-        "obj_touchability": 0.07432544753667934
+        "contention_degree": 2.711966109062418,
+        "obj_touchability": 0.0741999168513484
       }
     }
   },
@@ -1030,16 +1030,16 @@
         "obj_touchability": 0.03947234641019626
       },
       "10": {
-        "contention_degree": 1.374542106975692,
-        "obj_touchability": 0.049509701175825496
+        "contention_degree": 1.3745658879057643,
+        "obj_touchability": 0.04951445736183993
       },
       "30": {
-        "contention_degree": 1.9880825862311668,
-        "obj_touchability": 0.061212788835130455
+        "contention_degree": 1.9883358531364357,
+        "obj_touchability": 0.06120832991074193
       },
       "60": {
-        "contention_degree": 2.541742976348542,
-        "obj_touchability": 0.06517040425485025
+        "contention_degree": 2.542045213708303,
+        "obj_touchability": 0.06517717535659644
       }
     }
   },
@@ -1059,16 +1059,16 @@
         "obj_touchability": 0.13712326177992518
       },
       "10": {
-        "contention_degree": 3.921603945812241,
-        "obj_touchability": 0.1351015039180329
+        "contention_degree": 3.9216243778635493,
+        "obj_touchability": 0.13509630932871713
       },
       "30": {
-        "contention_degree": 6.169975821391246,
-        "obj_touchability": 0.13094730491285486
+        "contention_degree": 6.170044188889336,
+        "obj_touchability": 0.13094385200891084
       },
       "60": {
-        "contention_degree": 8.217778762955973,
-        "obj_touchability": 0.12344280903155384
+        "contention_degree": 8.217830658451174,
+        "obj_touchability": 0.1234379132301197
       }
     }
   },
@@ -1088,16 +1088,16 @@
         "obj_touchability": 0.19262732668087243
       },
       "10": {
-        "contention_degree": 3.791776032938474,
-        "obj_touchability": 0.17902735009082646
+        "contention_degree": 3.7917883826959558,
+        "obj_touchability": 0.17902558583975764
       },
       "30": {
-        "contention_degree": 6.181332658889113,
-        "obj_touchability": 0.13410595590396826
+        "contention_degree": 6.181533603584898,
+        "obj_touchability": 0.13410252095190361
       },
       "60": {
-        "contention_degree": 8.296239339878952,
-        "obj_touchability": 0.11094960670740849
+        "contention_degree": 8.29649772179128,
+        "obj_touchability": 0.11094404346049236
       }
     }
   },
@@ -1121,12 +1121,12 @@
         "obj_touchability": 0.06482196443235495
       },
       "30": {
-        "contention_degree": 4.677849392001202,
-        "obj_touchability": 0.08281092210706867
+        "contention_degree": 4.679763074934467,
+        "obj_touchability": 0.0828084148251384
       },
       "60": {
-        "contention_degree": 6.175911965223377,
-        "obj_touchability": 0.0842460145576706
+        "contention_degree": 6.184912524264157,
+        "obj_touchability": 0.08420636451784337
       }
     }
   },
@@ -1142,20 +1142,20 @@
         "obj_touchability": 0.013191002498706162
       },
       "5": {
-        "contention_degree": 1.1816882171858971,
+        "contention_degree": 1.181747232340989,
         "obj_touchability": 0.03382051432191869
       },
       "10": {
-        "contention_degree": 1.6026005045713603,
+        "contention_degree": 1.6026280449770698,
         "obj_touchability": 0.04504676319070289
       },
       "30": {
-        "contention_degree": 2.333839887418178,
-        "obj_touchability": 0.05759671876749824
+        "contention_degree": 2.3339756893375654,
+        "obj_touchability": 0.05760778410907796
       },
       "60": {
-        "contention_degree": 2.9801479246072393,
-        "obj_touchability": 0.06346321914064411
+        "contention_degree": 2.981174430638231,
+        "obj_touchability": 0.063502562577372
       }
     }
   },
@@ -1171,20 +1171,20 @@
         "obj_touchability": 0.01965154025098082
       },
       "5": {
-        "contention_degree": 1.096787351677369,
-        "obj_touchability": 0.0435225007083047
+        "contention_degree": 1.096801240720581,
+        "obj_touchability": 0.04352713038937523
       },
       "10": {
-        "contention_degree": 1.437479390882476,
-        "obj_touchability": 0.05232875811269734
+        "contention_degree": 1.4375019605776949,
+        "obj_touchability": 0.05233628134443694
       },
       "30": {
-        "contention_degree": 2.0928740477956183,
-        "obj_touchability": 0.06266901046732531
+        "contention_degree": 2.0929084397121422,
+        "obj_touchability": 0.0626819074360218
       },
       "60": {
-        "contention_degree": 2.6785149338702405,
-        "obj_touchability": 0.06629701526480952
+        "contention_degree": 2.6788427546915754,
+        "obj_touchability": 0.06631238186580958
       }
     }
   },
@@ -1200,20 +1200,20 @@
         "obj_touchability": 0.02198454869677324
       },
       "5": {
-        "contention_degree": 1.1343124665069386,
-        "obj_touchability": 0.05245292489422785
+        "contention_degree": 1.134306492577168,
+        "obj_touchability": 0.05244993792934261
       },
       "10": {
-        "contention_degree": 1.4886564592807836,
-        "obj_touchability": 0.06428431362157115
+        "contention_degree": 1.4886498215810384,
+        "obj_touchability": 0.06428298608162217
       },
       "30": {
-        "contention_degree": 2.225630365440786,
-        "obj_touchability": 0.07645771768597966
+        "contention_degree": 2.2258172422182216,
+        "obj_touchability": 0.07644546347106586
       },
       "60": {
-        "contention_degree": 2.905602973598009,
-        "obj_touchability": 0.08066977213177842
+        "contention_degree": 2.906228813859679,
+        "obj_touchability": 0.08062425647638427
       }
     }
   },
@@ -1237,12 +1237,12 @@
         "obj_touchability": 0.04731925691133941
       },
       "30": {
-        "contention_degree": 2.010167753653092,
-        "obj_touchability": 0.058240459398800744
+        "contention_degree": 2.0103298807607444,
+        "obj_touchability": 0.05822940527782445
       },
       "60": {
-        "contention_degree": 2.567419091828919,
-        "obj_touchability": 0.06333373200767135
+        "contention_degree": 2.567854454131986,
+        "obj_touchability": 0.06329971932774428
       }
     }
   },
@@ -1266,12 +1266,12 @@
         "obj_touchability": 0.037915786263945574
       },
       "30": {
-        "contention_degree": 1.8106167008914047,
-        "obj_touchability": 0.05046453173076794
+        "contention_degree": 1.8106490522906442,
+        "obj_touchability": 0.05044213460821752
       },
       "60": {
-        "contention_degree": 2.304802341897863,
-        "obj_touchability": 0.056549436193744515
+        "contention_degree": 2.3048610466065425,
+        "obj_touchability": 0.05653029335395784
       }
     }
   },
@@ -1287,20 +1287,20 @@
         "obj_touchability": 0.01633852056939689
       },
       "5": {
-        "contention_degree": 1.0159930802784527,
-        "obj_touchability": 0.035201403800556065
+        "contention_degree": 1.0159971064634716,
+        "obj_touchability": 0.03519979332654847
       },
       "10": {
-        "contention_degree": 1.4000041294479584,
-        "obj_touchability": 0.041479586830169245
+        "contention_degree": 1.4000379494021178,
+        "obj_touchability": 0.04146992398612369
       },
       "30": {
-        "contention_degree": 2.0505077267046516,
-        "obj_touchability": 0.051546327047356434
+        "contention_degree": 2.050577968147906,
+        "obj_touchability": 0.05148612009599562
       },
       "60": {
-        "contention_degree": 2.673500955386634,
-        "obj_touchability": 0.0580381029324842
+        "contention_degree": 2.673635240498738,
+        "obj_touchability": 0.05799973575759741
       }
     }
   },
@@ -1316,20 +1316,20 @@
         "obj_touchability": 0.008526117130542602
       },
       "5": {
-        "contention_degree": 0.8528205914416644,
-        "obj_touchability": 0.025223624645182352
+        "contention_degree": 0.8528186589400798,
+        "obj_touchability": 0.025221692143597697
       },
       "10": {
-        "contention_degree": 1.194886822982023,
-        "obj_touchability": 0.03375052331060315
+        "contention_degree": 1.1948829579788538,
+        "obj_touchability": 0.03374665830743385
       },
       "30": {
-        "contention_degree": 1.8069679831175989,
-        "obj_touchability": 0.04577949830964402
+        "contention_degree": 1.8070404519270231,
+        "obj_touchability": 0.04577535723481977
       },
       "60": {
-        "contention_degree": 2.3532975066374746,
-        "obj_touchability": 0.05364043425025528
+        "contention_degree": 2.3536266552944736,
+        "obj_touchability": 0.053619060960839786
       }
     }
   },
@@ -1345,20 +1345,20 @@
         "obj_touchability": 0.02322622814454384
       },
       "5": {
-        "contention_degree": 1.33298553733354,
-        "obj_touchability": 0.04281298952986369
+        "contention_degree": 1.3329874649180453,
+        "obj_touchability": 0.04281009815310573
       },
       "10": {
-        "contention_degree": 1.768855594494463,
-        "obj_touchability": 0.050476333630294544
+        "contention_degree": 1.7688642686247367,
+        "obj_touchability": 0.05047392414966292
       },
       "30": {
-        "contention_degree": 2.636428088458686,
-        "obj_touchability": 0.062240402690447914
+        "contention_degree": 2.6365750384303843,
+        "obj_touchability": 0.06222679621158693
       },
       "60": {
-        "contention_degree": 3.2994024470378,
-        "obj_touchability": 0.06764948311883881
+        "contention_degree": 3.2996603578446098,
+        "obj_touchability": 0.0676437003653229
       }
     }
   },
@@ -1382,12 +1382,12 @@
         "obj_touchability": 0.022871246804272626
       },
       "30": {
-        "contention_degree": 1.6203394324284268,
-        "obj_touchability": 0.034365357862692965
+        "contention_degree": 1.6206085566033763,
+        "obj_touchability": 0.034338973139658675
       },
       "60": {
-        "contention_degree": 2.0922800381423685,
-        "obj_touchability": 0.043569399700791614
+        "contention_degree": 2.092520516046595,
+        "obj_touchability": 0.043519645651641244
       }
     }
   },
@@ -1436,16 +1436,16 @@
         "obj_touchability": 0.03036444311133276
       },
       "10": {
-        "contention_degree": 1.4410017259093841,
-        "obj_touchability": 0.03211291115695711
+        "contention_degree": 1.4409984988437363,
+        "obj_touchability": 0.032111421742042734
       },
       "30": {
-        "contention_degree": 1.9790319611894818,
-        "obj_touchability": 0.036597706373207056
+        "contention_degree": 1.9791029842154915,
+        "obj_touchability": 0.036585639354224805
       },
       "60": {
-        "contention_degree": 2.5247005356847447,
-        "obj_touchability": 0.041225021683763866
+        "contention_degree": 2.5251473601590586,
+        "obj_touchability": 0.041206403997334114
       }
     }
   },
@@ -1465,16 +1465,16 @@
         "obj_touchability": 0.044485745575951745
       },
       "10": {
-        "contention_degree": 1.408211231051702,
+        "contention_degree": 1.408219163782148,
         "obj_touchability": 0.05518274602023173
       },
       "30": {
-        "contention_degree": 2.0664416630104436,
-        "obj_touchability": 0.06378786540686542
+        "contention_degree": 2.0665401009837034,
+        "obj_touchability": 0.06378029325507623
       },
       "60": {
-        "contention_degree": 2.714747516441282,
-        "obj_touchability": 0.06506992024446999
+        "contention_degree": 2.7148640937883,
+        "obj_touchability": 0.06506629982996633
       }
     }
   },
@@ -1494,16 +1494,16 @@
         "obj_touchability": 0.05332810015677933
       },
       "10": {
-        "contention_degree": 1.8393565466197015,
-        "obj_touchability": 0.07344233229697963
+        "contention_degree": 1.8393525851097323,
+        "obj_touchability": 0.07343639003202591
       },
       "30": {
-        "contention_degree": 2.958632073093274,
-        "obj_touchability": 0.09528351849643825
+        "contention_degree": 2.9586625407063094,
+        "obj_touchability": 0.09527768427266553
       },
       "60": {
-        "contention_degree": 3.97477548259613,
-        "obj_touchability": 0.09973001416645191
+        "contention_degree": 3.9747574093478835,
+        "obj_touchability": 0.0997226205648966
       }
     }
   },
@@ -1519,20 +1519,20 @@
         "obj_touchability": 0.10656569760214006
       },
       "5": {
-        "contention_degree": 2.8165460795224084,
+        "contention_degree": 2.8165726776722404,
         "obj_touchability": 0.21498780968592418
       },
       "10": {
-        "contention_degree": 4.064094038873919,
-        "obj_touchability": 0.22562428751409963
+        "contention_degree": 4.064184472583351,
+        "obj_touchability": 0.2256083286242
       },
       "30": {
-        "contention_degree": 6.684696487846546,
-        "obj_touchability": 0.18914961241121697
+        "contention_degree": 6.685237950182426,
+        "obj_touchability": 0.18908121716879006
       },
       "60": {
-        "contention_degree": 9.087107208281257,
-        "obj_touchability": 0.15109570849496207
+        "contention_degree": 9.087524775162905,
+        "obj_touchability": 0.15103721663605393
       }
     }
   },
@@ -1548,20 +1548,20 @@
         "obj_touchability": 0.10911605572069522
       },
       "5": {
-        "contention_degree": 2.3381300019262814,
+        "contention_degree": 2.338138499460297,
         "obj_touchability": 0.25193468484575926
       },
       "10": {
-        "contention_degree": 3.426191051547424,
+        "contention_degree": 3.4262029480950456,
         "obj_touchability": 0.27763219412776885
       },
       "30": {
-        "contention_degree": 5.517792943382434,
-        "obj_touchability": 0.233241741072236
+        "contention_degree": 5.518215728382535,
+        "obj_touchability": 0.23323075964366197
       },
       "60": {
-        "contention_degree": 7.2252723069326255,
-        "obj_touchability": 0.18026865523274563
+        "contention_degree": 7.225986099789938,
+        "obj_touchability": 0.18026165726355628
       }
     }
   },
@@ -1585,12 +1585,12 @@
         "obj_touchability": 0.24799838035266722
       },
       "30": {
-        "contention_degree": 4.685732790040708,
-        "obj_touchability": 0.22999840844150604
+        "contention_degree": 4.685932439020587,
+        "obj_touchability": 0.22998935634670042
       },
       "60": {
-        "contention_degree": 6.18678405260626,
-        "obj_touchability": 0.1863900560678174
+        "contention_degree": 6.186956865325276,
+        "obj_touchability": 0.18637725512566805
       }
     }
   },
@@ -1618,8 +1618,8 @@
         "obj_touchability": 0.24312408084772189
       },
       "60": {
-        "contention_degree": 6.795005691734742,
-        "obj_touchability": 0.20126487193022422
+        "contention_degree": 6.796415848100122,
+        "obj_touchability": 0.20121405548462498
       }
     }
   },
@@ -1635,19 +1635,19 @@
         "obj_touchability": 0.19900772867168928
       },
       "5": {
-        "contention_degree": 3.2744921897970753,
+        "contention_degree": 3.2745512258563,
         "obj_touchability": 0.357132445003511
       },
       "10": {
-        "contention_degree": 4.734154893804661,
+        "contention_degree": 4.7341942511774775,
         "obj_touchability": 0.3533910096369263
       },
       "30": {
-        "contention_degree": 7.683884272551062,
-        "obj_touchability": 0.27238253008091085
+        "contention_degree": 7.684296591589206,
+        "obj_touchability": 0.27237622979000536
       },
       "60": {
-        "contention_degree": 10.085010469413527,
+        "contention_degree": 10.085936881419828,
         "obj_touchability": 0.20983891903047336
       }
     }
@@ -1672,11 +1672,11 @@
         "obj_touchability": 0.08108546872363091
       },
       "30": {
-        "contention_degree": 2.126202107200343,
+        "contention_degree": 2.1262732048604405,
         "obj_touchability": 0.09317615791878886
       },
       "60": {
-        "contention_degree": 2.775584482338112,
+        "contention_degree": 2.776175765908616,
         "obj_touchability": 0.09261426724329051
       }
     }
@@ -1697,16 +1697,16 @@
         "obj_touchability": 0.06175140578766143
       },
       "10": {
-        "contention_degree": 1.433240543238679,
-        "obj_touchability": 0.08001796799471549
+        "contention_degree": 1.4332642151428225,
+        "obj_touchability": 0.08001307035937544
       },
       "30": {
-        "contention_degree": 2.3042457058510046,
-        "obj_touchability": 0.10431011945168298
+        "contention_degree": 2.3045462247554696,
+        "obj_touchability": 0.10427064451084232
       },
       "60": {
-        "contention_degree": 3.072130292322708,
-        "obj_touchability": 0.114181040428419
+        "contention_degree": 3.071983749217465,
+        "obj_touchability": 0.11413441307675108
       }
     }
   },
@@ -1726,16 +1726,16 @@
         "obj_touchability": 0.029772892558610525
       },
       "10": {
-        "contention_degree": 1.1386393006243285,
+        "contention_degree": 1.1386726835312786,
         "obj_touchability": 0.04164214983339248
       },
       "30": {
-        "contention_degree": 1.807654501378932,
-        "obj_touchability": 0.06360901912369722
+        "contention_degree": 1.8077108788057048,
+        "obj_touchability": 0.06360411673876049
       },
       "60": {
-        "contention_degree": 2.432125647757302,
-        "obj_touchability": 0.07840336282918055
+        "contention_degree": 2.4322000005955093,
+        "obj_touchability": 0.07840032801945782
       }
     }
   },
@@ -1759,11 +1759,11 @@
         "obj_touchability": 0.08108087710673849
       },
       "30": {
-        "contention_degree": 2.386022515210892,
+        "contention_degree": 2.386057464767032,
         "obj_touchability": 0.10196580240111178
       },
       "60": {
-        "contention_degree": 3.332699306211192,
+        "contention_degree": 3.3330120127661345,
         "obj_touchability": 0.11503528280434366
       }
     }
@@ -1784,16 +1784,16 @@
         "obj_touchability": 0.0494114441372848
       },
       "10": {
-        "contention_degree": 1.403963570087205,
-        "obj_touchability": 0.0644217695973237
+        "contention_degree": 1.4039614232430662,
+        "obj_touchability": 0.06442048149084023
       },
       "30": {
-        "contention_degree": 2.130049729747739,
-        "obj_touchability": 0.0898076801999808
+        "contention_degree": 2.1300840396808014,
+        "obj_touchability": 0.08980404738353893
       },
       "60": {
-        "contention_degree": 2.8818888671391805,
-        "obj_touchability": 0.10246293827493624
+        "contention_degree": 2.8819318074916103,
+        "obj_touchability": 0.10245939923490087
       }
     }
   },
@@ -1817,12 +1817,12 @@
         "obj_touchability": 0.03568310023453372
       },
       "30": {
-        "contention_degree": 1.811378064593949,
-        "obj_touchability": 0.04971518271994417
+        "contention_degree": 1.8116759554016033,
+        "obj_touchability": 0.04969950425638343
       },
       "60": {
-        "contention_degree": 2.344498155542822,
-        "obj_touchability": 0.05919222466816838
+        "contention_degree": 2.344873912398174,
+        "obj_touchability": 0.059177489105213386
       }
     }
   },
@@ -1838,19 +1838,19 @@
         "obj_touchability": 0.01215158767139297
       },
       "5": {
-        "contention_degree": 0.9208845870999239,
-        "obj_touchability": 0.03290026122196242
+        "contention_degree": 0.9208828609143798,
+        "obj_touchability": 0.03289952142815776
       },
       "10": {
-        "contention_degree": 1.2960234465516116,
-        "obj_touchability": 0.04353170556524828
+        "contention_degree": 1.2960195299961752,
+        "obj_touchability": 0.04353040004676945
       },
       "30": {
-        "contention_degree": 1.9755184778819672,
-        "obj_touchability": 0.060402784643668196
+        "contention_degree": 1.9755045523515264,
+        "obj_touchability": 0.06039930326105798
       },
       "60": {
-        "contention_degree": 2.6105541488060746,
+        "contention_degree": 2.6105804525857965,
         "obj_touchability": 0.07133740410323804
       }
     }
@@ -1908,8 +1908,8 @@
         "obj_touchability": 0.04601861687917002
       },
       "60": {
-        "contention_degree": 2.3456415339852708,
-        "obj_touchability": 0.057200491311136144
+        "contention_degree": 2.346669461998681,
+        "obj_touchability": 0.057358634082430075
       }
     }
   },
@@ -1933,12 +1933,12 @@
         "obj_touchability": 0.02701387970522905
       },
       "30": {
-        "contention_degree": 1.6676710084754605,
-        "obj_touchability": 0.040629751576322065
+        "contention_degree": 1.6677134918656351,
+        "obj_touchability": 0.04062424447018833
       },
       "60": {
-        "contention_degree": 2.1518630575781934,
-        "obj_touchability": 0.05102902892462313
+        "contention_degree": 2.151885898110545,
+        "obj_touchability": 0.05101253298459119
       }
     }
   },
@@ -1991,11 +1991,11 @@
         "obj_touchability": 0.043163288224080824
       },
       "30": {
-        "contention_degree": 1.8532944105483977,
+        "contention_degree": 1.8533833489792868,
         "obj_touchability": 0.06350072706869575
       },
       "60": {
-        "contention_degree": 2.4132279030033006,
+        "contention_degree": 2.4134371698995096,
         "obj_touchability": 0.07569830829408186
       }
     }
@@ -2020,12 +2020,12 @@
         "obj_touchability": 0.05787531685053921
       },
       "30": {
-        "contention_degree": 1.9726252747090627,
-        "obj_touchability": 0.07411016089429052
+        "contention_degree": 1.9731860317374745,
+        "obj_touchability": 0.0741140148944858
       },
       "60": {
-        "contention_degree": 2.551187377295525,
-        "obj_touchability": 0.0838933276931672
+        "contention_degree": 2.5521244499144315,
+        "obj_touchability": 0.08391021188449885
       }
     }
   },
@@ -2053,8 +2053,8 @@
         "obj_touchability": 0.07643305699585366
       },
       "60": {
-        "contention_degree": 2.6715507054965215,
-        "obj_touchability": 0.0870638038807234
+        "contention_degree": 2.6721751754999663,
+        "obj_touchability": 0.08702477450550808
       }
     }
   },
@@ -2070,20 +2070,20 @@
         "obj_touchability": 0.014959215453467027
       },
       "5": {
-        "contention_degree": 1.543125394459283,
+        "contention_degree": 1.5431862209699094,
         "obj_touchability": 0.0292614356849758
       },
       "10": {
-        "contention_degree": 2.6607461906994447,
-        "obj_touchability": 0.043097093077935786
+        "contention_degree": 2.6607479285997484,
+        "obj_touchability": 0.04309361727732856
       },
       "30": {
-        "contention_degree": 5.668897270663024,
-        "obj_touchability": 0.06891342164630107
+        "contention_degree": 5.668945931871525,
+        "obj_touchability": 0.06889430474296136
       },
       "60": {
-        "contention_degree": 8.405187530597537,
-        "obj_touchability": 0.08366157442433642
+        "contention_degree": 8.405812016106633,
+        "obj_touchability": 0.083629133618669
       }
     }
   },
@@ -2107,12 +2107,12 @@
         "obj_touchability": 0.043061249949988493
       },
       "30": {
-        "contention_degree": 5.813689831742848,
-        "obj_touchability": 0.07214051453536238
+        "contention_degree": 5.813674868671708,
+        "obj_touchability": 0.07212555146422196
       },
       "60": {
-        "contention_degree": 8.79526869081858,
-        "obj_touchability": 0.09078654326957802
+        "contention_degree": 8.795508099956827,
+        "obj_touchability": 0.09073866144192867
       }
     }
   },
@@ -2128,20 +2128,20 @@
         "obj_touchability": 0.013207953957261083
       },
       "5": {
-        "contention_degree": 1.4926934482975112,
+        "contention_degree": 1.4927571603191732,
         "obj_touchability": 0.024309660221083086
       },
       "10": {
-        "contention_degree": 2.6815609161196963,
+        "contention_degree": 2.681651933293499,
         "obj_touchability": 0.037272391548186894
       },
       "30": {
-        "contention_degree": 6.057562678248546,
-        "obj_touchability": 0.06636309626157547
+        "contention_degree": 6.059374375093095,
+        "obj_touchability": 0.06644091594517702
       },
       "60": {
-        "contention_degree": 9.340206054993818,
-        "obj_touchability": 0.0858433356674005
+        "contention_degree": 9.34654597000653,
+        "obj_touchability": 0.08597132856806095
       }
     }
   },
@@ -2157,19 +2157,19 @@
         "obj_touchability": 0.03274337978519004
       },
       "5": {
-        "contention_degree": 1.5822796711624731,
+        "contention_degree": 1.5823389697784436,
         "obj_touchability": 0.05674409263075931
       },
       "10": {
-        "contention_degree": 2.752924792097927,
+        "contention_degree": 2.7530433893298674,
         "obj_touchability": 0.08008567815808026
       },
       "30": {
-        "contention_degree": 6.069130334018108,
+        "contention_degree": 6.069308229866019,
         "obj_touchability": 0.11457588258025113
       },
       "60": {
-        "contention_degree": 9.261806962176685,
+        "contention_degree": 9.262106576236324,
         "obj_touchability": 0.12747102117869008
       }
     }
@@ -2186,20 +2186,20 @@
         "obj_touchability": 0.03761547829076433
       },
       "5": {
-        "contention_degree": 1.2804232077765083,
+        "contention_degree": 1.2804430582626467,
         "obj_touchability": 0.06992354582045758
       },
       "10": {
-        "contention_degree": 1.8885067350417368,
+        "contention_degree": 1.8885420247948719,
         "obj_touchability": 0.08082129420171745
       },
       "30": {
-        "contention_degree": 3.3057354397189154,
-        "obj_touchability": 0.09640664677364016
+        "contention_degree": 3.306512822566545,
+        "obj_touchability": 0.09640362193765717
       },
       "60": {
-        "contention_degree": 4.518728243542452,
-        "obj_touchability": 0.10297261736189958
+        "contention_degree": 4.51965491601927,
+        "obj_touchability": 0.10296795681298011
       }
     }
   },
@@ -2219,15 +2219,15 @@
         "obj_touchability": 0.044208558683028934
       },
       "10": {
-        "contention_degree": 1.5706202788441532,
+        "contention_degree": 1.5706795247621095,
         "obj_touchability": 0.055354174565868094
       },
       "30": {
-        "contention_degree": 2.823322661952897,
+        "contention_degree": 2.823559645624722,
         "obj_touchability": 0.07378814449293883
       },
       "60": {
-        "contention_degree": 3.8809303691272485,
+        "contention_degree": 3.8811199560647087,
         "obj_touchability": 0.0829807303648945
       }
     }
@@ -2273,20 +2273,20 @@
         "obj_touchability": 0.1348086918087132
       },
       "5": {
-        "contention_degree": 3.334881978221193,
+        "contention_degree": 3.335033852702776,
         "obj_touchability": 0.32353636934357766
       },
       "10": {
-        "contention_degree": 4.831946484448655,
-        "obj_touchability": 0.32973804248845284
+        "contention_degree": 4.832696121312875,
+        "obj_touchability": 0.3298159268379823
       },
       "30": {
-        "contention_degree": 8.023097960512485,
-        "obj_touchability": 0.2553212730793383
+        "contention_degree": 8.023498615579776,
+        "obj_touchability": 0.25531802789810787
       },
       "60": {
-        "contention_degree": 10.51229388929032,
-        "obj_touchability": 0.19276060916855817
+        "contention_degree": 10.514502680884254,
+        "obj_touchability": 0.19272556121126994
       }
     }
   },
@@ -2306,16 +2306,16 @@
         "obj_touchability": 0.48328150847015217
       },
       "10": {
-        "contention_degree": 9.149100164544537,
-        "obj_touchability": 0.5267760072585531
+        "contention_degree": 9.149225503869452,
+        "obj_touchability": 0.5267730150730776
       },
       "30": {
-        "contention_degree": 19.11153918542986,
-        "obj_touchability": 0.4627178640069772
+        "contention_degree": 19.112092412529513,
+        "obj_touchability": 0.4627024880453415
       },
       "60": {
-        "contention_degree": 28.114827996356983,
-        "obj_touchability": 0.36591037964869405
+        "contention_degree": 28.115550247665304,
+        "obj_touchability": 0.3659016408015917
       }
     }
   },
@@ -2331,20 +2331,20 @@
         "obj_touchability": 0.29937452040931745
       },
       "5": {
-        "contention_degree": 5.85384812528738,
-        "obj_touchability": 0.5253978428050894
+        "contention_degree": 5.854084177508973,
+        "obj_touchability": 0.5254252111786076
       },
       "10": {
-        "contention_degree": 10.314835989513181,
-        "obj_touchability": 0.5927480975982926
+        "contention_degree": 10.315974657895605,
+        "obj_touchability": 0.5928215600745781
       },
       "30": {
-        "contention_degree": 23.406996718950648,
-        "obj_touchability": 0.5591490384358824
+        "contention_degree": 23.40865524238584,
+        "obj_touchability": 0.5591440534821345
       },
       "60": {
-        "contention_degree": 36.152559764840504,
-        "obj_touchability": 0.4587204959488716
+        "contention_degree": 36.15502055441158,
+        "obj_touchability": 0.45871392662997895
       }
     }
   },
@@ -2389,19 +2389,19 @@
         "obj_touchability": 0.29930474964278475
       },
       "5": {
-        "contention_degree": 5.8249923502422245,
+        "contention_degree": 5.825059493656977,
         "obj_touchability": 0.5291558157140849
       },
       "10": {
-        "contention_degree": 10.265062296402647,
+        "contention_degree": 10.26515417686494,
         "obj_touchability": 0.5973538647314945
       },
       "30": {
-        "contention_degree": 23.233557101966095,
+        "contention_degree": 23.233784805720468,
         "obj_touchability": 0.5620078502735415
       },
       "60": {
-        "contention_degree": 36.84336919656412,
+        "contention_degree": 36.84370171633242,
         "obj_touchability": 0.4742477736496471
       }
     }
@@ -2422,15 +2422,15 @@
         "obj_touchability": 0.5431025277112683
       },
       "10": {
-        "contention_degree": 10.185848849842067,
+        "contention_degree": 10.186531651727933,
         "obj_touchability": 0.5998167019722682
       },
       "30": {
-        "contention_degree": 21.89374631990267,
+        "contention_degree": 21.89513394954169,
         "obj_touchability": 0.5247223072548343
       },
       "60": {
-        "contention_degree": 35.90467211805897,
+        "contention_degree": 35.90654240148547,
         "obj_touchability": 0.4526519905518945
       }
     }
@@ -2447,19 +2447,19 @@
         "obj_touchability": 0.2981398023360391
       },
       "5": {
-        "contention_degree": 5.387370660082767,
-        "obj_touchability": 0.5032568234943218
+        "contention_degree": 5.387442282131172,
+        "obj_touchability": 0.50328410808419
       },
       "10": {
-        "contention_degree": 9.097556156970604,
+        "contention_degree": 9.097694416382726,
         "obj_touchability": 0.542839403311254
       },
       "30": {
-        "contention_degree": 18.71601984353507,
+        "contention_degree": 18.716337026892287,
         "obj_touchability": 0.45992533827044674
       },
       "60": {
-        "contention_degree": 29.912084740281003,
+        "contention_degree": 29.912543643861657,
         "obj_touchability": 0.390537060600533
       }
     }
@@ -2484,12 +2484,12 @@
         "obj_touchability": 0.2901922930884638
       },
       "30": {
-        "contention_degree": 8.815549719823244,
-        "obj_touchability": 0.23329073898359795
+        "contention_degree": 8.818083003891203,
+        "obj_touchability": 0.2332550612854708
       },
       "60": {
-        "contention_degree": 12.28207675323448,
-        "obj_touchability": 0.1933057311738142
+        "contention_degree": 12.285100227297312,
+        "obj_touchability": 0.19328922192629003
       }
     }
   },
@@ -2505,20 +2505,20 @@
         "obj_touchability": 0.1838515756147842
       },
       "5": {
-        "contention_degree": 1.8307190763759964,
-        "obj_touchability": 0.12639995971682846
+        "contention_degree": 1.830793064100611,
+        "obj_touchability": 0.12640818057511893
       },
       "10": {
-        "contention_degree": 2.2156799789225836,
-        "obj_touchability": 0.09969066638194969
+        "contention_degree": 2.215683815323119,
+        "obj_touchability": 0.09968830552008165
       },
       "30": {
-        "contention_degree": 2.82986919812826,
-        "obj_touchability": 0.06554098584409145
+        "contention_degree": 2.829842026165802,
+        "obj_touchability": 0.0655352220944792
       },
       "60": {
-        "contention_degree": 3.4816535846855787,
-        "obj_touchability": 0.05386449143090826
+        "contention_degree": 3.481586247073013,
+        "obj_touchability": 0.053859807075251495
       }
     }
   },
@@ -2542,12 +2542,12 @@
         "obj_touchability": 0.45153696628190043
       },
       "30": {
-        "contention_degree": 17.503821244404648,
-        "obj_touchability": 0.4111657831202125
+        "contention_degree": 17.504115558073863,
+        "obj_touchability": 0.4111454517805096
       },
       "60": {
-        "contention_degree": 28.556784928201076,
-        "obj_touchability": 0.36463378467279
+        "contention_degree": 28.55788015908404,
+        "obj_touchability": 0.36457351819023537
       }
     }
   },
@@ -2567,16 +2567,16 @@
         "obj_touchability": 0.20849900335014435
       },
       "10": {
-        "contention_degree": 4.1100777554293675,
+        "contention_degree": 4.11032999574376,
         "obj_touchability": 0.2344605187052308
       },
       "30": {
-        "contention_degree": 9.11907075904206,
-        "obj_touchability": 0.26791081189521165
+        "contention_degree": 9.122219558966725,
+        "obj_touchability": 0.26790436575384385
       },
       "60": {
-        "contention_degree": 14.895158419188707,
-        "obj_touchability": 0.2927450917234993
+        "contention_degree": 14.900449990807378,
+        "obj_touchability": 0.2927360971076372
       }
     }
   },
@@ -2596,16 +2596,16 @@
         "obj_touchability": 0.17136878751510567
       },
       "10": {
-        "contention_degree": 3.3493359432103036,
+        "contention_degree": 3.349440922739295,
         "obj_touchability": 0.177538035691371
       },
       "30": {
-        "contention_degree": 6.441977384821199,
+        "contention_degree": 6.442202340954754,
         "obj_touchability": 0.18663538143775293
       },
       "60": {
-        "contention_degree": 9.81716828274122,
-        "obj_touchability": 0.2010347777963445
+        "contention_degree": 9.821940607951756,
+        "obj_touchability": 0.20102780241235832
       }
     }
   },
@@ -2621,20 +2621,20 @@
         "obj_touchability": 0.11217893565134136
       },
       "5": {
-        "contention_degree": 1.905395588877857,
+        "contention_degree": 1.9054163632897647,
         "obj_touchability": 0.1569613430585067
       },
       "10": {
-        "contention_degree": 2.9032362216381924,
-        "obj_touchability": 0.16676330625877758
+        "contention_degree": 2.9033723298541383,
+        "obj_touchability": 0.16675814847375223
       },
       "30": {
-        "contention_degree": 5.476139018897734,
-        "obj_touchability": 0.16612737204405023
+        "contention_degree": 5.478002988969376,
+        "obj_touchability": 0.16606673322010385
       },
       "60": {
-        "contention_degree": 8.664521721775078,
-        "obj_touchability": 0.17227104157587192
+        "contention_degree": 8.667763410687076,
+        "obj_touchability": 0.1722594575831452
       }
     }
   },
@@ -2658,11 +2658,11 @@
         "obj_touchability": 0.24510768750567807
       },
       "30": {
-        "contention_degree": 8.97218633592823,
-        "obj_touchability": 0.2225741490722646
+        "contention_degree": 8.972381473581681,
+        "obj_touchability": 0.22257368390503351
       },
       "60": {
-        "contention_degree": 14.85780780757542,
+        "contention_degree": 14.858183831849875,
         "obj_touchability": 0.20683957698104616
       }
     }
@@ -2687,41 +2687,41 @@
         "obj_touchability": 0.156090520474017
       },
       "30": {
-        "contention_degree": 4.018585516453084,
-        "obj_touchability": 0.11084628201641382
+        "contention_degree": 4.018964853793782,
+        "obj_touchability": 0.11083365302973214
       },
       "60": {
-        "contention_degree": 5.3572242219593065,
-        "obj_touchability": 0.09388767157699303
+        "contention_degree": 5.359631501112938,
+        "obj_touchability": 0.09388130311362364
       }
     }
   },
   "93": {
-    "num_txs_total": 7796030,
-    "num_txs_touching_shared_objs": 136088,
-    "density": 0.0,
-    "num_shared_objects": 0,
-    "num_checkpoints": 30195,
+    "num_txs_total": 6683730,
+    "num_txs_touching_shared_objs": 135003,
+    "density": 0.02019875129605774,
+    "num_shared_objects": 58049,
+    "num_checkpoints": 30160,
     "avg_interval_data": {
       "1": {
-        "contention_degree": 40873.891473935626,
-        "obj_touchability": 6371.842443037872
+        "contention_degree": 1.3540975447654542,
+        "obj_touchability": 0.21120214617878505
       },
       "5": {
-        "contention_degree": 10976.025568847732,
-        "obj_touchability": 868.1275605242331
+        "contention_degree": 1.8162863601783037,
+        "obj_touchability": 0.14381554072931835
       },
       "10": {
-        "contention_degree": 6273.5393989894,
-        "obj_touchability": 308.76370254700225
+        "contention_degree": 2.074758780609273,
+        "obj_touchability": 0.10219756364191922
       },
       "30": {
-        "contention_degree": 2586.0471362625203,
-        "obj_touchability": 58.58767377324348
+        "contention_degree": 2.55986525701283,
+        "obj_touchability": 0.0577999661611836
       },
       "60": {
-        "contention_degree": 1545.7875004299297,
-        "obj_touchability": 22.150631817777537
+        "contention_degree": 3.0497677447438494,
+        "obj_touchability": 0.04312752253010849
       }
     }
   }

@@ -139,6 +139,7 @@ async fn main() -> Result<(), anyhow::Error> {
             }
         }
         if b == true {
+            sleep(Duration::from_secs(1)).await;
             continue 'outer;
         }
 
