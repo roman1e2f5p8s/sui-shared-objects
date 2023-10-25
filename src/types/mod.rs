@@ -45,7 +45,8 @@ pub struct ResultData {
 #[derive(Debug, Deserialize)]
 pub struct Epoch {
     pub start_checkpoint: usize,
-    pub end_checkpoint: usize
+    pub end_checkpoint: usize,
+    pub tx_number: usize
 }
 
 #[derive(Debug, Serialize)]

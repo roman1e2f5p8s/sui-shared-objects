@@ -58,8 +58,8 @@ fn main() {
 
     for (i, data_file) in data_files.iter().enumerate() {
 
-        print!("\rWorking on file {}/{}...", i + 1, data_files.len());
-        let _ = std::io::stdout().flush();
+        //print!("\rWorking on file {}/{}...", i + 1, data_files.len());
+        //let _ = std::io::stdout().flush();
 
         let file = fs::File::open(data_file.path())
             .expect("File not found!");
@@ -75,6 +75,13 @@ fn main() {
             if checkpoint > epoch2checkpoint_json.
                     get(&epoch).unwrap().end_checkpoint.try_into().unwrap() {
                 // The epoch ends: calculate metrics per epoch
+                //
+                // TODO: delete this test later
+                if epochs_data.get(&epoch).unwrap().num_txs_total as u64 - 
+                         epoch2checkpoint_json.get(&epoch).unwrap().tx_number as u64 != 0 {
+                    println!("Epoch {:2}: {}", epoch, epochs_data.get(&epoch).unwrap().num_txs_total as u64 - 
+                         epoch2checkpoint_json.get(&epoch).unwrap().tx_number as u64);
+                }
 
                 // Calculate density as the ratio of the number of TXs touching
                 // shared objects to the total number of TXs per epoch
@@ -234,5 +241,5 @@ fn main() {
 
     let _ = fs::write(results_dir.join("plotme.json"), serde_json::to_string_pretty(&epochs_data).
             unwrap());
-    println!("{:#?}", epochs_data);
+    //println!("{:#?}", epochs_data);
 }

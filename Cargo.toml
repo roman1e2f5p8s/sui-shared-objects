@@ -18,7 +18,7 @@ path = "src/lib.rs"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-sui-sdk = { git = "https://github.com/mystenlabs/sui", package = "sui-sdk", branch = "mainnet" }
+sui-sdk = { git = "https://github.com/mystenlabs/sui", package = "sui-sdk" }
 tokio = { version = "1.2", features = ["full"] }
 anyhow = "1.0"
 serde = { version = "1.0.188", features = ["derive"] }
