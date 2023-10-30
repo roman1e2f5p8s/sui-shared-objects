@@ -36,7 +36,7 @@ fn main() {
     let args = Args::parse();
 
     let results_dir = Path::new("results");
-    let  epoch2checkpoint_file = fs::File::open(results_dir.join("epoch2checkpoint.json")).
+    let epoch2checkpoint_file = fs::File::open(results_dir.join("epoch2checkpoint.json")).
         expect("File not found!");
 
     let epoch2checkpoint_json: BTreeMap<usize, Epoch> = 

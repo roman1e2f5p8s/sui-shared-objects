@@ -27,16 +27,23 @@ pub struct TxInfo {
 pub struct CheckpointData {
     pub num_txs_total: usize,
     pub num_txs_touching_shared_objs: usize,
-    pub shared_objects: BTreeMap<String, BTreeMap<String, bool>>
+    pub shared_objects: BTreeMap<
+        String,     // object ID
+        BTreeMap<
+            String, // TX ID
+            bool,   // whether this TX mutates obj or not
+            >
+        >
 }
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct ResultData {
     pub network: String,
     pub version: String,
-    pub start_cursor: String,
-    pub end_cursor: String,
-    pub descending: bool,
+    pub epoch: usize,
+    pub start_checkpoint: usize,
+    pub end_checkpoint: usize,
+    pub num_txs_in_epoch: usize,
     pub num_txs_scanned: usize,
     pub num_txs_touching_0_shared_objs: usize,
     pub num_txs_touching_0_objs: usize,

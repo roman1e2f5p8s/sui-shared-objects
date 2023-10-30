@@ -3,23 +3,28 @@ use std::path::Path;
 use clap::Parser;
 use serde_json;
 use std::io::Write;
-use std::str::FromStr;
 use colored::Colorize;
 use std::collections::{
     HashSet,
     BTreeMap,
 };
-use tokio::time::{sleep, Duration};
-//use std::process::exit;
+use tokio::time::{
+    sleep,
+    Duration,
+};
+// use std::process::exit;
 
 use sui_sdk::SuiClientBuilder;
-use sui_sdk::types::base_types::TransactionDigest;
-use sui_sdk::rpc_types::SuiTransactionBlockResponseQuery;
-use sui_sdk::rpc_types::SuiTransactionBlockResponseOptions;
+use sui_sdk::rpc_types::{
+    TransactionFilter,
+    SuiTransactionBlockResponseQuery,
+    SuiTransactionBlockResponseOptions,
+};
 
 use shared_object_density::args::query::Args;
 use shared_object_density::utils::process_tx_inputs;
 use shared_object_density::types::{
+    Epoch,
     CheckpointData,
     ResultData,
 };
@@ -40,27 +45,43 @@ async fn main() -> Result<(), anyhow::Error> {
     let mut txs_options = SuiTransactionBlockResponseOptions::new();
     txs_options.show_input = true;
 
-    let query = SuiTransactionBlockResponseQuery::new(None, Some(txs_options));
+    let query = SuiTransactionBlockResponseQuery::new(None, Some(txs_options.clone()));
 
     // from which TX to start the query.
     // The response will not include this TX.
-    // Set to None to get the latest TXs
     let mut cursor = None;
-    if !args.cursor.is_empty() {
-        cursor = Some(TransactionDigest::from_str(&args.cursor)?);
-    }
 
     // count the numebr of TX analyzed
     let mut tx_count = 0;
-
-    // number of TXs left to scan
-    let mut tx_to_scan = args.tx_number;
 
     // count the number of TX touching 0 shared objects
     let mut tx_0shared_count = 0;
 
     // count the number of TX touching 0 objects
     let mut tx_0total_count = 0;
+
+    // If this number exceeds args.retry_number, terminate the program and save data.
+    // Otherwise, sleep some time and retry query.
+    let mut retry_number = 0;
+    
+    // repeat query is transaction or checkpoint field is None
+    let mut repeat_query_on_none = false;
+
+    // to query by epoch
+    let results_dir = Path::new("results");
+    let epoch2checkpoint_file = fs::File::open(results_dir.join("epoch2checkpoint.json"))
+        .expect("File not found!");
+    let epoch2checkpoint_json: BTreeMap<usize, Epoch> = 
+        serde_json::from_reader(epoch2checkpoint_file)
+        .expect("JSON was not properly formatted!");
+    let epoch_data = epoch2checkpoint_json
+        .get(&args.epoch)
+        .unwrap();
+    let checkpoint_query = SuiTransactionBlockResponseQuery::new(
+        Some(TransactionFilter::Checkpoint(epoch_data.start_checkpoint as u64)), Some(txs_options));
+
+    // number of TXs left to scan
+    let mut tx_to_scan = epoch_data.tx_number; //args.tx_number;
 
     // Map (sorted by key) for storing data we are interested in.
     // result.checkpints has the following structure:
@@ -71,10 +92,10 @@ async fn main() -> Result<(), anyhow::Error> {
     //          num_txs_touching_shared_objs: ...,
     //          shared_objects: {
     //              SharedObjID:
-    //              [
-    //                  (TX_ID, mutates),
+    //              {
+    //                  TX_ID: mutates,
     //                  ...
-    //              ]
+    //              }
     //              ...
     //          }
     //      ...
@@ -83,32 +104,146 @@ async fn main() -> Result<(), anyhow::Error> {
     let mut result = ResultData {
         network: args.network.to_string(),
         version: sui.api_version().to_string(),
-        start_cursor: args.cursor.clone(),
-        end_cursor: String::from(""),
-        descending: args.descending,
+        epoch: args.epoch,
+        num_txs_in_epoch: epoch_data.tx_number,
+        start_checkpoint: epoch_data.start_checkpoint,
+        end_checkpoint: epoch_data.end_checkpoint,
         num_txs_scanned: 0,
         num_txs_touching_0_shared_objs: 0,
         num_txs_touching_0_objs: 0,
         checkpoints: BTreeMap::new(),
     };
 
-    // If this number exceeds args.retry_number, terminate the program and save data.
-    // Otherwise, sleep some time and retry query.
-    let mut retry_number = 0;
+    'outer: while {
+        if repeat_query_on_none == true {
+            repeat_query_on_none = false;
+        }
 
-    let mut b = false;
+        let tx_block = match sui.read_api().query_transaction_blocks(
+                checkpoint_query.clone(), None, Some(1), false).await {
+            Ok(block) => {
+                retry_number = 0;
+                block
+            },
+            Err(error) => {
+                println!("\n  {}: {:?}", "ERROR".red(), error);
+                if retry_number < args.retry_number {
+                    for i in 0..args.retry_sleep {
+                        print!("{}", format!("\r    Retrying query #{} for the 1st checkpoint ({}) of epoch {} in {} s..", retry_number + 1,
+                            epoch_data.start_checkpoint, args.epoch, args.retry_sleep - i).yellow());
+                        std::io::stdout().flush()?;
+                        sleep(Duration::from_secs(1)).await;
+                    }
+                    print!("{}", format!("\r    Retrying query #{} for the 1st checkpoint ({}) of epoch {} in {} s..", retry_number + 1,
+                        epoch_data.start_checkpoint, args.epoch, 0).yellow());
+                    retry_number += 1;
+                    println!();
+                    continue 'outer;
+                } else {
+                    println!("{}", format!("\t    Retry number is reached, terminating the program").yellow());
+                    break 'outer;
+                }
+            },
+        };
+
+        assert_eq!(tx_block.data.len(), 1);
+
+        // Check if there is no block with transaction: None.
+        // If exists, repeat query for the same checkpoint
+        for tx in tx_block.data.iter() {
+            if tx.transaction.as_ref() == None {
+                println!("\n{}: {:?}", "Empty TX block".red(), tx);
+                println!("{}\n", format!("Repeating query again for the 1st checkpoint ({}) of epoch {}:", epoch_data.start_checkpoint, args.epoch).red());
+                repeat_query_on_none = true;
+                break;
+            }
+            if tx.checkpoint.is_none() {
+                println!("\n{}: {:?}", "None TX checkpoint".red(), tx);
+                println!("{}\n", format!("Repeating query again for the 1st checkpoint ({}) of epoch {}:", epoch_data.start_checkpoint, args.epoch).red());
+                repeat_query_on_none = true;
+                break;
+            }
+        }
+        if repeat_query_on_none == true {
+            sleep(Duration::from_secs(1)).await;
+            continue 'outer;
+        }
+
+        for tx in tx_block.data.iter() {
+            // insert a new checkpoint if it does not exist already
+            result.checkpoints.
+                entry(tx.checkpoint.unwrap_or_default()).
+                or_insert(CheckpointData {
+                    num_txs_total: 0,
+                    num_txs_touching_shared_objs: 0,
+                    shared_objects: BTreeMap::new()
+                });
+            result.checkpoints.
+                get_mut(&tx.checkpoint.unwrap_or_default()).
+                unwrap().
+                num_txs_total += 1;
+
+            let tx_info = process_tx_inputs(&tx.transaction);
+
+            if tx_info.num_shared == 0 {
+                tx_0shared_count = tx_0shared_count + 1;
+            } else {
+                result.checkpoints.
+                    get_mut(&tx.checkpoint.unwrap_or_default()).
+                    unwrap().
+                    num_txs_touching_shared_objs += 1;
+                for shared_obj in tx_info.shared_objects.iter() {
+                    // insert a new shared object ID if it does not exist already
+                    let _ = *result.checkpoints.
+                        get_mut(&tx.checkpoint.unwrap_or_default()).
+                        unwrap().
+                        shared_objects.
+                        entry(shared_obj.id.clone()).
+                        or_insert(BTreeMap::new());
+
+                    // both checkpoint and shared object ID keys must now exist,
+                    // so we can update the list of TX operating with that shared object
+                    let _ = result.checkpoints
+                        .get_mut(&tx.checkpoint.unwrap_or_default())
+                        .unwrap()
+                        .shared_objects
+                        .get_mut(&shared_obj.id)
+                        .unwrap()
+                        .entry(tx.digest.to_string())
+                        .or_insert(shared_obj.mutable);
+                }
+            }
+            if tx_info.num_total == 0 {
+                tx_0total_count = tx_0total_count + 1;
+            }
+        }
+
+        tx_to_scan = tx_to_scan - 1;
+        tx_count = tx_count + 1;
+        cursor = tx_block.next_cursor;
+
+        print!("\rNumber of TX analyzed : {}...", format!("{}/{}", tx_count, epoch_data.tx_number).blue());
+        std::io::stdout().flush()?;
+
+        // condition to break the loop
+        false
+    } { }
+
+    // continue querying for the rest of the epoch
+    retry_number = 0;
+    repeat_query_on_none = false;
 
     'outer: while {
-        if b == true {
+        if repeat_query_on_none == true {
             println!("Last cursor: {:?}", cursor);
-            b = false;
+            repeat_query_on_none = false;
         }
 
         // If Ok, the result will have type of sui_json_rpc_types::Page<
         // sui_json_rpc_types::sui_transaction::SuiTransactionBlockResponse,
         // sui_types::digests::TransactionDigest>
         let txs_blocks = match sui.read_api().query_transaction_blocks(
-                query.clone(), cursor, Some(tx_to_scan), args.descending).await {
+                query.clone(), cursor, Some(tx_to_scan), false).await {
             Ok(blocks) => {
                 retry_number = 0;
                 blocks
@@ -141,17 +276,17 @@ async fn main() -> Result<(), anyhow::Error> {
             if tx.transaction.as_ref() == None {
                 println!("\n{}: {:?}", "Empty TX block".red(), tx);
                 println!("{} {:?}\n", "Repeating query again for cursor:".red(), cursor);
-                b = true;
+                repeat_query_on_none = true;
                 break;
             }
             if tx.checkpoint.is_none() {
                 println!("\n{}: {:?}", "None TX checkpoint".red(), tx);
                 println!("{} {:?}\n", "Repeating query again for cursor:".red(), cursor);
-                b = true;
+                repeat_query_on_none = true;
                 break;
             }
         }
-        if b == true {
+        if repeat_query_on_none == true {
             sleep(Duration::from_secs(1)).await;
             continue 'outer;
         }
@@ -173,15 +308,6 @@ async fn main() -> Result<(), anyhow::Error> {
                 unwrap().
                 num_txs_total += 1;
 
-            // println!("TX: {}", tx.digest.to_string());
-            // if tx.transaction.as_ref() == None {
-            //     println!("{}: {:#?}\n", "Empty TX block".red(), tx);
-            //     println!("{:?}\n", cursor);
-            //     println!("{:?}\n", txs_blocks);
-            //     tx_0total_count = tx_0total_count + 1;
-            //     exit(0);
-            //     continue;
-            // }
             let tx_info = process_tx_inputs(&tx.transaction);
 
             if tx_info.num_shared == 0 {
@@ -221,19 +347,16 @@ async fn main() -> Result<(), anyhow::Error> {
         tx_count = tx_count + txs_blocks.data.len();
         cursor = txs_blocks.next_cursor;
 
-        print!("\rNumber of TX analyzed : {}...", format!("{}/{}", tx_count, args.tx_number).blue());
+        print!("\rNumber of TX analyzed : {}...", format!("{}/{}", tx_count, epoch_data.tx_number).blue());
         std::io::stdout().flush()?;
 
         // condition to break the loop
-        tx_count < args.tx_number && txs_blocks.has_next_page == true
+        tx_count < epoch_data.tx_number
     } { }
     println!();
 
-    // store the start and the end cursor: to reproduce the results
-    // and to continue scanning if necessary
-    println!("{}", format!("Start cursor: {}", args.cursor).green());
-    println!("{}", format!("End   cursor: {}", cursor.unwrap().to_string()).green());
-    result.end_cursor = cursor.unwrap().to_string();
+    assert_eq!(tx_count, epoch_data.tx_number);
+
     result.num_txs_scanned = tx_count;
     result.num_txs_touching_0_shared_objs = tx_0shared_count;
     result.num_txs_touching_0_objs = tx_0total_count;
@@ -241,15 +364,11 @@ async fn main() -> Result<(), anyhow::Error> {
     // save data to disk
     let dir = Path::new("data");
     fs::create_dir_all(dir)?;
-    fs::write(dir.join(format!("{}.json", if !args.cursor.is_empty() {
-                args.cursor
-            } else {
-                if !args.descending {
-                    String::from("ascending")
-                } else {
-                    String::from("descending")
-                }
-            })),
+    fs::write(dir.join(format!("epoch={:0>3}_{}-{}.json",
+                args.epoch,
+                epoch_data.start_checkpoint,
+                epoch_data.end_checkpoint
+            )),
             serde_json::to_string_pretty(&result).
             unwrap())?;
 
@@ -269,8 +388,8 @@ async fn main() -> Result<(), anyhow::Error> {
         }
     }
 
-    println!("{}", format!("Total number of TXs scanned  : {}", tx_count).green());
-    println!("{}", format!("Total number of TXs requested: {}", args.tx_number).green());
+    println!("{}", format!("Total number of TXs in epoch {:>3}: {}", args.epoch, epoch_data.tx_number).green());
+    println!("{}", format!("Total number of TXs scanned     : {}", tx_count).green());
     println!("{}", format!("Total number of TXs touching 0 shared objects: {}", tx_0shared_count).green());
     println!("{}", format!("Total number of TXs touching 0        objects: {}", tx_0total_count).green());
 
