@@ -5,8 +5,10 @@ use serde_json;
 use std::io::Write;
 use std::str::FromStr;
 use colored::Colorize;
-use std::collections::HashSet;
-use std::collections::{HashMap, BTreeMap};
+use std::collections::{
+    HashSet,
+    BTreeMap,
+};
 use tokio::time::{sleep, Duration};
 //use std::process::exit;
 
@@ -17,7 +19,10 @@ use sui_sdk::rpc_types::SuiTransactionBlockResponseOptions;
 
 use shared_object_density::args::query::Args;
 use shared_object_density::utils::process_tx_inputs;
-use shared_object_density::types::{TxMutInfo, CheckpointData, ResultData};
+use shared_object_density::types::{
+    CheckpointData,
+    ResultData,
+};
 
 
 #[tokio::main]
@@ -161,7 +166,7 @@ async fn main() -> Result<(), anyhow::Error> {
                 or_insert(CheckpointData {
                     num_txs_total: 0,
                     num_txs_touching_shared_objs: 0,
-                    shared_objects: HashMap::new()
+                    shared_objects: BTreeMap::new()
                 });
             result.checkpoints.
                 get_mut(&tx.checkpoint.unwrap_or_default()).
@@ -193,20 +198,18 @@ async fn main() -> Result<(), anyhow::Error> {
                         unwrap().
                         shared_objects.
                         entry(shared_obj.id.clone()).
-                        or_insert(Vec::new());
+                        or_insert(BTreeMap::new());
 
                     // both checkpoint and shared object ID keys must now exist,
                     // so we can update the list of TX operating with that shared object
-                    let _ = result.checkpoints.
-                        get_mut(&tx.checkpoint.unwrap_or_default()).
-                        unwrap().
-                        shared_objects.
-                        get_mut(&shared_obj.id).
-                        unwrap().
-                        push(TxMutInfo {
-                            tx_id: tx.digest.to_string(),
-                            mutates: shared_obj.mutable
-                        });
+                    let _ = result.checkpoints
+                        .get_mut(&tx.checkpoint.unwrap_or_default())
+                        .unwrap()
+                        .shared_objects
+                        .get_mut(&shared_obj.id)
+                        .unwrap()
+                        .entry(tx.digest.to_string())
+                        .or_insert(shared_obj.mutable);
                 }
             }
             if tx_info.num_total == 0 {
@@ -257,8 +260,8 @@ async fn main() -> Result<(), anyhow::Error> {
             let mut txs = HashSet::new();
             for (obj_id, tx_list) in obj_map.shared_objects.into_iter() {
                 println!("Obj {} touched by {} TXs", obj_id, tx_list.len());
-                for tx in tx_list.iter() {
-                    txs.insert(tx.tx_id.clone());
+                for (tx_id, _) in tx_list.into_iter() {
+                    txs.insert(tx_id);
                 }
             }
             println!("Shared-object TX count: {}", txs.len());

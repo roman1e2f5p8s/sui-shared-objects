@@ -1,7 +1,6 @@
 use serde::{Serialize, Deserialize};
 use std::collections::{
     HashSet,
-    HashMap,
     BTreeMap
 };
 
@@ -18,17 +17,17 @@ pub struct TxInfo {
     pub shared_objects: Vec<SharedObjInfo>
 }
 
-#[derive(Debug, Serialize, Deserialize)]
-pub struct TxMutInfo {
-    pub tx_id: String,
-    pub mutates: bool
-}
+// #[derive(Debug, Serialize, Deserialize)]
+// pub struct TxMutInfo {
+//     pub tx_id: String,
+//     pub mutates: bool
+// }
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct CheckpointData {
     pub num_txs_total: usize,
     pub num_txs_touching_shared_objs: usize,
-    pub shared_objects: HashMap<String, Vec<TxMutInfo>>
+    pub shared_objects: BTreeMap<String, BTreeMap<String, bool>>
 }
 
 #[derive(Debug, Serialize, Deserialize)]
