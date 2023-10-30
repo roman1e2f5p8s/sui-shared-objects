@@ -12,7 +12,7 @@ async fn main() -> Result<(), anyhow::Error> {
         .build("https://fullnode.mainnet.sui.io:443")
         .await
         .unwrap();
-    println!(" --- Sui mainnet version: {} --- ", sui.api_version());
+    println!("\n --- Sui mainnet version: {} --- \n", sui.api_version());
 
     let tx_digest = TransactionDigest::from_str(TX_DIGEST_STR)?;
     let options = SuiTransactionBlockResponseOptions::new().with_input();

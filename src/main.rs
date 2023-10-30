@@ -137,6 +137,12 @@ async fn main() -> Result<(), anyhow::Error> {
                 b = true;
                 break;
             }
+            if tx.checkpoint.is_none() {
+                println!("\n{}: {:?}", "None TX checkpoint".red(), tx);
+                println!("{} {:?}\n", "Repeating query again for cursor:".red(), cursor);
+                b = true;
+                break;
+            }
         }
         if b == true {
             sleep(Duration::from_secs(1)).await;
@@ -159,6 +165,12 @@ async fn main() -> Result<(), anyhow::Error> {
                 get_mut(&tx.checkpoint.unwrap_or_default()).
                 unwrap().
                 num_txs_total += 1;
+
+            // TODO
+            if tx.checkpoint.unwrap_or_default() == 0 {
+                println!("\n{:#?}\n", tx);
+                exit(0);
+            }
 
             // println!("TX: {}", tx.digest.to_string());
             // if tx.transaction.as_ref() == None {
