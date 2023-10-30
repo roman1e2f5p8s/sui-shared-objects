@@ -1,4 +1,5 @@
 use clap::{Parser, ValueEnum};
+use strum_macros::Display;
 
 /// Estimate how often Sui transactions operate with shared objects: query TXs
 #[derive(Parser, Debug)]
@@ -36,7 +37,7 @@ pub struct Args {
     pub verbose: bool,
 }
 
-#[derive(ValueEnum, Debug, Clone)]
+#[derive(ValueEnum, Debug, Clone, Display)]
 pub enum NetworkType {
     Mainnet,
     Testnet,

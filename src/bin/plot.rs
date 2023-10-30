@@ -65,7 +65,7 @@ fn main() {
         }))
         .collect();
     // TODO: delete
-    let mut x: HashSet<std::path::PathBuf> = HashSet::new();
+    let mut z: HashSet<std::path::PathBuf> = HashSet::new();
 
     for (i, data_file) in data_files.iter().enumerate() {
         print!("\rWorking on file {}/{}...", i + 1, data_files.len());
@@ -82,7 +82,7 @@ fn main() {
             epoch = checkpoint_to_epoch(&checkpoint, &epoch2checkpoint_json).unwrap();
             // TODO: delete
             if epoch == 23 {
-                x.insert(data_file.path());
+                z.insert(data_file.path());
             }
 
             // insert a new value for key "epoch" if it does not already exist
@@ -273,7 +273,7 @@ fn main() {
     }
     println!();
     // TODO: delete
-    println!("{:?}", x);
+    println!("{:?}", z);
 
     // Calculate metrics per epoch
     for (epoch, epoch_data) in epochs_data.iter_mut() {

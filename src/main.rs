@@ -5,10 +5,10 @@ use serde_json;
 use std::io::Write;
 use std::str::FromStr;
 use colored::Colorize;
-use std::process::exit;
 use std::collections::HashSet;
 use std::collections::{HashMap, BTreeMap};
 use tokio::time::{sleep, Duration};
+//use std::process::exit;
 
 use sui_sdk::SuiClientBuilder;
 use sui_sdk::types::base_types::TransactionDigest;
@@ -76,6 +76,8 @@ async fn main() -> Result<(), anyhow::Error> {
     //      }
     // }
     let mut result = ResultData {
+        network: args.network.to_string(),
+        version: sui.api_version().to_string(),
         start_cursor: args.cursor.clone(),
         end_cursor: String::from(""),
         descending: args.descending,
@@ -165,12 +167,6 @@ async fn main() -> Result<(), anyhow::Error> {
                 get_mut(&tx.checkpoint.unwrap_or_default()).
                 unwrap().
                 num_txs_total += 1;
-
-            // TODO
-            if tx.checkpoint.unwrap_or_default() == 0 {
-                println!("\n{:#?}\n", tx);
-                exit(0);
-            }
 
             // println!("TX: {}", tx.digest.to_string());
             // if tx.transaction.as_ref() == None {

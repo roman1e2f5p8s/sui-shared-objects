@@ -33,6 +33,8 @@ pub struct CheckpointData {
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct ResultData {
+    pub network: String,
+    pub version: String,
     pub start_cursor: String,
     pub end_cursor: String,
     pub descending: bool,
