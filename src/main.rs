@@ -126,18 +126,24 @@ async fn main() -> Result<(), anyhow::Error> {
                 block
             },
             Err(error) => {
-                println!("\n  {}: {:?}", "ERROR".red(), error);
+                if args.verbose == true {
+                    println!("\n  {}: {:?}", "ERROR".red(), error);
+                }
                 if retry_number < args.retry_number {
                     for i in 0..args.retry_sleep {
-                        print!("{}", format!("\r    Retrying query #{} for the 1st checkpoint ({}) of epoch {} in {} s..", retry_number + 1,
-                            epoch_data.start_checkpoint, args.epoch, args.retry_sleep - i).yellow());
-                        std::io::stdout().flush()?;
+                        if args.verbose == true {
+                            print!("{}", format!("\r    Retrying query #{} for the 1st checkpoint ({}) of epoch {} in {} s..", retry_number + 1,
+                                epoch_data.start_checkpoint, args.epoch, args.retry_sleep - i).yellow());
+                            std::io::stdout().flush()?;
+                        }
                         sleep(Duration::from_secs(1)).await;
                     }
-                    print!("{}", format!("\r    Retrying query #{} for the 1st checkpoint ({}) of epoch {} in {} s..", retry_number + 1,
-                        epoch_data.start_checkpoint, args.epoch, 0).yellow());
+                    if args.verbose == true {
+                        print!("{}", format!("\r    Retrying query #{} for the 1st checkpoint ({}) of epoch {} in {} s..", retry_number + 1,
+                            epoch_data.start_checkpoint, args.epoch, 0).yellow());
+                        println!();
+                    }
                     retry_number += 1;
-                    println!();
                     continue 'outer;
                 } else {
                     println!("{}", format!("\t    Retry number is reached, terminating the program").yellow());
@@ -152,14 +158,18 @@ async fn main() -> Result<(), anyhow::Error> {
         // If exists, repeat query for the same checkpoint
         for tx in tx_block.data.iter() {
             if tx.transaction.as_ref() == None {
-                println!("\n{}: {:?}", "Empty TX block".red(), tx);
-                println!("{}\n", format!("Repeating query again for the 1st checkpoint ({}) of epoch {}:", epoch_data.start_checkpoint, args.epoch).red());
+                if args.verbose == true {
+                    println!("\n{}: {:?}", "Empty TX block".red(), tx);
+                    println!("{}\n", format!("Repeating query again for the 1st checkpoint ({}) of epoch {}:", epoch_data.start_checkpoint, args.epoch).red());
+                }
                 repeat_query_on_none = true;
                 break;
             }
             if tx.checkpoint.is_none() {
-                println!("\n{}: {:?}", "None TX checkpoint".red(), tx);
-                println!("{}\n", format!("Repeating query again for the 1st checkpoint ({}) of epoch {}:", epoch_data.start_checkpoint, args.epoch).red());
+                if args.verbose == true {
+                    println!("\n{}: {:?}", "None TX checkpoint".red(), tx);
+                    println!("{}\n", format!("Repeating query again for the 1st checkpoint ({}) of epoch {}:", epoch_data.start_checkpoint, args.epoch).red());
+                }
                 repeat_query_on_none = true;
                 break;
             }
@@ -235,7 +245,9 @@ async fn main() -> Result<(), anyhow::Error> {
 
     'outer: while {
         if repeat_query_on_none == true {
-            println!("Last cursor: {:?}", cursor);
+            if args.verbose == true {
+                println!("Last cursor: {:?}", cursor);
+            }
             repeat_query_on_none = false;
         }
 
@@ -249,18 +261,24 @@ async fn main() -> Result<(), anyhow::Error> {
                 blocks
             },
             Err(error) => {
-                println!("\n  {}: {:?}", "ERROR".red(), error);
+                if args.verbose == true {
+                    println!("\n  {}: {:?}", "ERROR".red(), error);
+                }
                 if retry_number < args.retry_number {
                     for i in 0..args.retry_sleep {
-                        print!("{}", format!("\r    Retrying query #{} starting at cursor {} in {} s..", retry_number + 1,
-                            cursor.unwrap().to_string(), args.retry_sleep - i).yellow());
-                        std::io::stdout().flush()?;
+                        if args.verbose == true {
+                            print!("{}", format!("\r    Retrying query #{} starting at cursor {} in {} s..", retry_number + 1,
+                                cursor.unwrap().to_string(), args.retry_sleep - i).yellow());
+                            std::io::stdout().flush()?;
+                        }
                         sleep(Duration::from_secs(1)).await;
                     }
-                    print!("{}", format!("\r    Retrying query #{} starting at cursor {} in {} s   ", retry_number + 1,
-                        cursor.unwrap().to_string(), 0).yellow());
+                    if args.verbose == true {
+                        print!("{}", format!("\r    Retrying query #{} starting at cursor {} in {} s   ", retry_number + 1,
+                            cursor.unwrap().to_string(), 0).yellow());
+                        println!();
+                    }
                     retry_number += 1;
-                    println!();
                     continue 'outer;
                 } else {
                     println!("{}", format!("\t    Retry number is reached, saving data and terminating the program").yellow());
@@ -274,14 +292,18 @@ async fn main() -> Result<(), anyhow::Error> {
         for tx in txs_blocks.data.iter() {
             // println!("{:?}", tx.checkpoint);
             if tx.transaction.as_ref() == None {
-                println!("\n{}: {:?}", "Empty TX block".red(), tx);
-                println!("{} {:?}\n", "Repeating query again for cursor:".red(), cursor);
+                if args.verbose == true {
+                    println!("\n{}: {:?}", "Empty TX block".red(), tx);
+                    println!("{} {:?}\n", "Repeating query again for cursor:".red(), cursor);
+                }
                 repeat_query_on_none = true;
                 break;
             }
             if tx.checkpoint.is_none() {
-                println!("\n{}: {:?}", "None TX checkpoint".red(), tx);
-                println!("{} {:?}\n", "Repeating query again for cursor:".red(), cursor);
+                if args.verbose == true {
+                    println!("\n{}: {:?}", "None TX checkpoint".red(), tx);
+                    println!("{} {:?}\n", "Repeating query again for cursor:".red(), cursor);
+                }
                 repeat_query_on_none = true;
                 break;
             }
