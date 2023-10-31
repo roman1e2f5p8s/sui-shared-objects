@@ -141,9 +141,9 @@ async fn main() -> Result<(), anyhow::Error> {
                     if args.verbose == true {
                         print!("{}", format!("\r    Retrying query #{} for the 1st checkpoint ({}) of epoch {} in {} s..", retry_number + 1,
                             epoch_data.start_checkpoint, args.epoch, 0).yellow());
-                        println!();
                     }
                     retry_number += 1;
+                    println!();
                     continue 'outer;
                 } else {
                     println!("{}", format!("\t    Retry number is reached, terminating the program").yellow());
@@ -276,9 +276,9 @@ async fn main() -> Result<(), anyhow::Error> {
                     if args.verbose == true {
                         print!("{}", format!("\r    Retrying query #{} starting at cursor {} in {} s   ", retry_number + 1,
                             cursor.unwrap().to_string(), 0).yellow());
-                        println!();
                     }
                     retry_number += 1;
+                    println!();
                     continue 'outer;
                 } else {
                     println!("{}", format!("\t    Retry number is reached, saving data and terminating the program").yellow());

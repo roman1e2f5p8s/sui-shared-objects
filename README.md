@@ -58,6 +58,23 @@ require sequencing via the consensus protocol. Therefore, understanding how many
 operating with shared objects and what those use cases are is one of the first key steps in 
 designing an efficient smart contract architecture.
 
+## Shared Object Analysis Rationale
+
+To analyse a given Sui shared object, different object data options might be used, as specified in
+[SuiObjectDataOptions](https://github.com/MystenLabs/sui/blob/2456e2888c15fd843be3370d395f18cafb753563/crates/sui-json-rpc-types/src/sui_object.rs#L326).
+With the `show_content` option, a query returns the module name, the object name, the 
+`has_public_transfer` field (which indicates where the object has the 
+[`store`](https://github.com/MystenLabs/sui/blob/284bf584b46bc3704d0c48cf478923987749a665/sui-execution/latest/sui-adapter/src/programmable_transactions/context.rs#L119)
+ability), among others.
+
+The module name and the object name can be used to determine which applications use
+Sui shared objects.
+The `has_public_transfer` field can be used to determine which shared objects 
+are resources. Recall that a [resource in Move](https://move-book.com/resources/what-is-resource.html) 
+is a struct that has only `key` and `store` abilities. Therefore, a shared object with 
+`has_public_transfer: true` is a shared resource, while shared objects with `has_public_transfer: false`
+ are not (they might be Sui system/"protocol" shared objects).
+
 ## Getting Started
 
 Before you start, please refer to [Sui Rust SDK documentation](https://docs.sui.io/build/rust-sdk)
