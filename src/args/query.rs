@@ -1,7 +1,7 @@
 use clap::{Parser, ValueEnum};
 use strum_macros::Display;
 
-/// Estimate how often Sui transactions operate with shared objects: query TXs
+/// Sui shared objects analysis: query TXs touching shared objects
 #[derive(Parser, Debug)]
 #[command(author = "Roman Overko", version, about, long_about = None)]
 pub struct Args {
@@ -12,6 +12,11 @@ pub struct Args {
     /// Epoch to scan all TXs from it >= 0
     #[arg(short, long)]
     pub epoch: usize,
+
+    /// Where to store data files.
+    /// This should be a directory in the "data" folder
+    #[arg(short, long, default_value_t = String::from("data"))]
+    pub workspace: String,
 
     /// Number of query retries, >= 0
     #[arg(short, long, default_value_t = 10)]
