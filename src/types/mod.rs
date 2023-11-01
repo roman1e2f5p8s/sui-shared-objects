@@ -43,6 +43,7 @@ pub struct ResultData {
     pub epoch: usize,
     pub start_checkpoint: usize,
     pub end_checkpoint: usize,
+    pub last_cursor: String,
     pub num_txs_in_epoch: usize,
     pub num_txs_scanned: usize,
     pub num_txs_touching_0_shared_objs: usize,
