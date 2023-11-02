@@ -9,30 +9,11 @@ use std::collections::{
     BTreeMap,
 };
 use serde_json;
-use colored::Colorize;
+//use colored::Colorize;
 //use std::process::exit;
 
 use shared_object_density::args::plot::*;
 use shared_object_density::types::*;
-
-fn _checkpoint_to_epoch(checkpoint: &u64, epoch2checkpoint: &BTreeMap<usize, Epoch>) -> Result<usize, String> {
-    let mut found = false;
-    let mut result: usize = 0;
-
-    for (epoch, epoch_data) in epoch2checkpoint.into_iter() {
-        if *checkpoint >= epoch_data.start_checkpoint as u64 && *checkpoint <= epoch_data.end_checkpoint as u64 {
-            found = true;
-            result = *epoch;
-            break;
-        }
-    }
-
-    if found == false {
-        panic!("{}", format!("Could not convert checkpoint {} into epoch", *checkpoint).red());
-    } else {
-        Ok(result)
-    }
-}
 
 fn main() {
     let args = Args::parse();

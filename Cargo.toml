@@ -3,6 +3,7 @@ name = "shared_object_density"
 version = "0.1.0"
 edition = "2021"
 
+# TODO: rename query to query_txs
 [[bin]]
 name = "query"
 path = "src/main.rs"
@@ -10,6 +11,10 @@ path = "src/main.rs"
 [[bin]]
 name = "plot"
 path = "src/bin/plot.rs"
+
+[[bin]]
+name = "query_obj"
+path = "src/bin/query_obj.rs"
 
 [lib]
 name = "shared_object_density"
