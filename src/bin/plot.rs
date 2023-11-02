@@ -86,7 +86,7 @@ fn main() {
             });
 
         // Update the number of checkpoints
-        epochs_data.get_mut(&epoch).unwrap().num_checkpoints = result.end_checkpoint - result.start_checkpoint;
+        epochs_data.get_mut(&epoch).unwrap().num_checkpoints = result.end_checkpoint - result.start_checkpoint + 1;
 
         for (checkpoint, checkpoint_data) in result.checkpoints.into_iter() {
             // Update the total number of TXs
