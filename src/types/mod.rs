@@ -69,10 +69,11 @@ pub struct EpochData {
 }
 
 // Counts for different checkpoint intervals 
+#[derive(Debug)]
 pub struct IntervalCounts {
     pub num_txs: u64,
-    pub unique_shared_objects_per_interval: HashSet<String>,
-    pub unique_shared_objects_touched_by_more_than_1tx_per_interval: HashSet<String>,
+    pub unique_shared_objects: HashSet<String>,
+    pub unique_shared_objects_touched_by_more_than_1tx: HashSet<String>,
 }
 
 // Data for a given interval of checkpoints

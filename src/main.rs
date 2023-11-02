@@ -13,7 +13,7 @@ use tokio::time::{
     sleep,
     Duration,
 };
-use std::process::exit;
+//use std::process::exit;
 
 use sui_sdk::SuiClientBuilder;
 use sui_sdk::types::base_types::TransactionDigest;
