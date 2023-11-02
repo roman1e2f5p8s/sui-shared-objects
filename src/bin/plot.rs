@@ -5,7 +5,8 @@ use std::io::Write;
 use std::path::Path;
 use std::collections::{
     HashSet,
-    BTreeMap
+    BTreeSet,
+    BTreeMap,
 };
 use serde_json;
 use colored::Colorize;
@@ -44,7 +45,7 @@ fn main() {
     epoch_data_files.sort_by_key(|f| f.path());
 
     let mut unique_shared_objects_per_epoch: BTreeMap<usize, HashSet<String>> = BTreeMap::new();
-    let mut unique_shared_objects_total: HashSet<String> = HashSet::new();
+    let mut unique_shared_objects_total: BTreeSet<String> = BTreeSet::new();
     let mut epochs_data: BTreeMap<usize, EpochData> = BTreeMap::new();
 
     // auxiliary variables to calculate contention level
@@ -263,5 +264,7 @@ fn main() {
 
     let results_dir = Path::new("results");
     let _ = fs::write(results_dir.join("plotme.json"), serde_json::to_string_pretty(&epochs_data).
+            unwrap());
+    let _ = fs::write(results_dir.join("shared_objects_set.json"), serde_json::to_string_pretty(&unique_shared_objects_total).
             unwrap());
 }
