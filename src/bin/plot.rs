@@ -44,6 +44,7 @@ fn main() {
     epoch_data_files.sort_by_key(|f| f.path());
 
     let mut unique_shared_objects_per_epoch: BTreeMap<usize, HashSet<String>> = BTreeMap::new();
+    let mut unique_shared_objects_total: HashSet<String> = HashSet::new();
     let mut epochs_data: BTreeMap<usize, EpochData> = BTreeMap::new();
 
     // auxiliary variables to calculate contention level
@@ -77,7 +78,8 @@ fn main() {
                 num_txs_total: 0,
                 num_txs_touching_shared_objs: 0,
                 density: 0.0,
-                num_shared_objects: 0,
+                num_shared_objects_per_epoch: 0,
+                num_shared_objects_total: 0,
                 num_checkpoints: 0,
                 avg_interval_data: args.intervals.iter().map(|i| (*i, AvgIntervalData{
                     contention_degree: 0.0,
@@ -108,10 +110,14 @@ fn main() {
             }
 
             for (obj_id, tx_list) in checkpoint_data.shared_objects.into_iter() {
-                // collect unique shared objects
+                // collect unique shared objects per epoch
                 unique_shared_objects_per_epoch
                     .get_mut(&epoch)
                     .unwrap()
+                    .insert(obj_id.clone());
+                
+                // collect unique shared in the Sui network
+                unique_shared_objects_total
                     .insert(obj_id.clone());
                 
                 // for every interval, update the sets of unique shared objects
@@ -241,9 +247,16 @@ fn main() {
         epochs_data
             .get_mut(&epoch)
             .unwrap()
-            .num_shared_objects = unique_shared_objects_per_epoch
+            .num_shared_objects_per_epoch = unique_shared_objects_per_epoch
                 .get(&epoch)
                 .unwrap()
+                .len();
+        //
+        // Calculate the number of unique shared in the Sui network
+        epochs_data
+            .get_mut(&epoch)
+            .unwrap()
+            .num_shared_objects_total = unique_shared_objects_total
                 .len();
     } // end of iteration over epoch data files
     println!();

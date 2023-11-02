@@ -63,7 +63,8 @@ pub struct EpochData {
     pub num_txs_total: usize,
     pub num_txs_touching_shared_objs: usize,
     pub density: f64,
-    pub num_shared_objects: usize,
+    pub num_shared_objects_per_epoch: usize,
+    pub num_shared_objects_total: usize,
     pub num_checkpoints: usize,
     pub avg_interval_data: BTreeMap<u64, AvgIntervalData>,
 }
