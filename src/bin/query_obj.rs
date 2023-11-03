@@ -5,6 +5,7 @@ use std::path::Path;
 use std::str::FromStr;
 use std::collections::{
     BTreeSet,
+    BTreeMap,
 };
 use serde_json;
 use clap::Parser;
@@ -18,6 +19,7 @@ use colored::Colorize;
 use sui_sdk::SuiClientBuilder;
 use sui_sdk::types::base_types::ObjectID;
 use sui_sdk::rpc_types::SuiObjectDataOptions;
+use sui_sdk::rpc_types::SuiParsedData;
 
 use shared_object_density::args::query_obj::Args;
 use shared_object_density::consts::{
@@ -25,6 +27,7 @@ use shared_object_density::consts::{
     QUERY_MAX_RESULT_LIMIT,
     SHARED_OBJECTS_SET_FILENAME,
 };
+use shared_object_density::types::SharedObjectData;
 
 #[tokio::main]
 async fn main() -> Result<(), anyhow::Error> {
@@ -75,6 +78,9 @@ async fn main() -> Result<(), anyhow::Error> {
     
     // repeat query is transaction or checkpoint field is None
     let mut repeat_query_on_none = false;
+
+    // map of shared object ID to data about it
+    let mut shared_objects_data: BTreeMap<String, SharedObjectData> = BTreeMap::new();
 
     'outer: while {
         if repeat_query_on_none == true {
@@ -142,7 +148,21 @@ async fn main() -> Result<(), anyhow::Error> {
         };
         //println!("{:#?}", objects);
 
-        // TODO: process objects here
+        // process objects here
+        for object in &objects {
+            // Get to SuiObjectResponse {data: Some(SuiObjectData {...
+            let sui_obj_data = object.data.as_ref().unwrap();
+
+            // Get to SuiObjectData {content: Some(MoveObject(SuiParsedMoveObject {...
+            if let SuiParsedData::MoveObject(sui_parsed_move_object) = sui_obj_data.content.as_ref().unwrap() {
+                shared_objects_data
+                    .insert(sui_obj_data.object_id.to_string(), SharedObjectData {
+                        module: sui_parsed_move_object.type_.module.to_string(),
+                        name: sui_parsed_move_object.type_.name.to_string(),
+                        is_resource: sui_parsed_move_object.has_public_transfer,
+                    });
+            }
+        }
 
         // update count of scanned shared objects
         scanned_objects_count += objects.len();
@@ -164,6 +184,10 @@ async fn main() -> Result<(), anyhow::Error> {
 
     // number of scanned objects must be equal to the number of objects in datafile
     assert_eq!(scanned_objects_count, num_objects);
+
+    // save data to disk
+    let shared_objects_data_file = results_dir.join("shared_objects_data.json");
+    fs::write(shared_objects_data_file, serde_json::to_string_pretty(&shared_objects_data).unwrap())?;
 
     println!("{}", "Done!".green());
     Ok(())

@@ -83,3 +83,11 @@ pub struct AvgIntervalData {
     pub contention_degree: f64,
     pub obj_touchability: f64,
 }
+
+// stores data of interest about shared objects 
+#[derive(Debug, Serialize)]
+pub struct SharedObjectData {
+    pub module: String,
+    pub name: String,
+    pub is_resource: bool,
+}
