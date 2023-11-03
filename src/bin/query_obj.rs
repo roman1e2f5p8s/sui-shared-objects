@@ -27,7 +27,13 @@ use shared_object_density::consts::{
     QUERY_MAX_RESULT_LIMIT,
     SHARED_OBJECTS_SET_FILENAME,
 };
-use shared_object_density::types::SharedObjectData;
+use shared_object_density::types::{
+    SharedObjectData,
+    SharedObjectsData,
+    ModuleAndNameData,
+    PackageData,
+    PackagesData,
+};
 
 #[tokio::main]
 async fn main() -> Result<(), anyhow::Error> {
@@ -80,7 +86,19 @@ async fn main() -> Result<(), anyhow::Error> {
     let mut repeat_query_on_none = false;
 
     // map of shared object ID to data about it
-    let mut shared_objects_data: BTreeMap<String, SharedObjectData> = BTreeMap::new();
+    let mut shared_objects_data = SharedObjectsData {
+        num_shared_objects: num_objects,
+        num_resources: 0,
+        shared_objects: BTreeMap::new()
+    };
+
+    // map of packages to data about it
+    let mut packages_data = PackagesData {
+        num_packages: 0,
+        num_types: 0,
+        num_resources: 0,
+        packages: BTreeMap::new(),
+    };
 
     'outer: while {
         if repeat_query_on_none == true {
@@ -155,15 +173,60 @@ async fn main() -> Result<(), anyhow::Error> {
 
             // Get to SuiObjectData {content: Some(MoveObject(SuiParsedMoveObject {...
             if let SuiParsedData::MoveObject(sui_parsed_move_object) = sui_obj_data.content.as_ref().unwrap() {
+                // temporarily variables
+                let object_id = sui_obj_data.object_id.to_string();
+                let address = sui_parsed_move_object.type_.address.to_string();
+                let module = sui_parsed_move_object.type_.module.to_string();
+                let name = sui_parsed_move_object.type_.name.to_string();
+                let is_resource = sui_parsed_move_object.has_public_transfer;
+                let type_ = module.clone() + &String::from(".") + &name;
+
+                // update shared objects data
                 shared_objects_data
-                    .insert(sui_obj_data.object_id.to_string(), SharedObjectData {
-                        address: sui_parsed_move_object.type_.address.to_string(),
-                        module: sui_parsed_move_object.type_.module.to_string(),
-                        name: sui_parsed_move_object.type_.name.to_string(),
-                        is_resource: sui_parsed_move_object.has_public_transfer,
+                    .shared_objects
+                    .insert(object_id, SharedObjectData {
+                        address: address.clone(),
+                        module: module,
+                        name: name,
+                        is_resource: is_resource,
                     });
-            }
-        }
+
+                // update the number of resources
+                if is_resource {
+                    shared_objects_data.num_resources += 1;
+                }
+
+                // insert a new entry for package if it does not exist already
+                packages_data
+                    .packages
+                    .entry(address.clone())
+                    .or_insert(PackageData {
+                        types: BTreeMap::new(),
+                    });
+
+                // insert a new entry for "types" if it does not exist already
+                packages_data
+                    .packages
+                    .get_mut(&address)
+                    .unwrap()
+                    .types
+                    .entry(type_.clone())
+                    .or_insert(ModuleAndNameData {
+                        is_resource: is_resource,
+                        num_instances: 0,
+                    });
+
+                // update data for that type
+                packages_data
+                    .packages
+                    .get_mut(&address)
+                    .unwrap()
+                    .types
+                    .get_mut(&type_)
+                    .unwrap()
+                    .num_instances += 1;
+            } // end of unpacking MoveObject enum
+        } // end iterating over objects
 
         // update count of scanned shared objects
         scanned_objects_count += objects.len();
@@ -187,9 +250,31 @@ async fn main() -> Result<(), anyhow::Error> {
     // TODO: adapt it to handle connection error and read incomplete file
     assert_eq!(scanned_objects_count, num_objects);
 
+    // The number of instances across all packages must be equal 
+    // the total number of shared objects: check it.
+    // Also, calculate the number of types and how many of them are resources
+    let mut num_instances_total = 0;
+    for (_, package) in &packages_data.packages {
+        // calculate the number of types
+        packages_data.num_types += package.types.len();
+        for (_, type_) in &package.types {
+            num_instances_total += type_.num_instances;
+            // calculate the number of resources
+            if type_.is_resource {
+                packages_data.num_resources += 1;
+            }
+        }
+    }
+    assert_eq!(num_instances_total, num_objects);
+
+    // calculate the number of packages implementing shared objects
+    packages_data.num_packages = packages_data.packages.len();
+
     // save data to disk
     let shared_objects_data_file = results_dir.join("shared_objects_data.json");
+    let packages_data_file = results_dir.join("packages_data.json");
     fs::write(shared_objects_data_file, serde_json::to_string_pretty(&shared_objects_data).unwrap())?;
+    fs::write(packages_data_file, serde_json::to_string_pretty(&packages_data).unwrap())?;
 
     println!("{}", "Done!".green());
     Ok(())

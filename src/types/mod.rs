@@ -92,3 +92,34 @@ pub struct SharedObjectData {
     pub name: String,
     pub is_resource: bool,
 }
+
+// stores data of interest about all shared objects
+#[derive(Debug, Serialize)]
+pub struct SharedObjectsData {
+    pub num_shared_objects: usize,
+    pub num_resources: usize,
+    pub shared_objects: BTreeMap<String, SharedObjectData>,
+}
+
+// stores data of interest about shared objects
+// based on their type (i.e., module and name)
+#[derive(Debug, Serialize)]
+pub struct ModuleAndNameData {
+    pub is_resource: bool,
+    pub num_instances: usize,
+}
+
+// stores data of interest about a package
+#[derive(Debug, Serialize)]
+pub struct PackageData {
+    pub types: BTreeMap<String, ModuleAndNameData>,
+}
+
+// stores data of interest about all package
+#[derive(Debug, Serialize)]
+pub struct PackagesData {
+    pub num_packages: usize,
+    pub num_types: usize,
+    pub num_resources: usize,
+    pub packages: BTreeMap<String, PackageData>,
+}
