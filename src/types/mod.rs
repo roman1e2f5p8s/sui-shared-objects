@@ -87,6 +87,7 @@ pub struct AvgIntervalData {
 // stores data of interest about shared objects 
 #[derive(Debug, Serialize)]
 pub struct SharedObjectData {
+    pub address: String,
     pub module: String,
     pub name: String,
     pub is_resource: bool,

@@ -157,6 +157,7 @@ async fn main() -> Result<(), anyhow::Error> {
             if let SuiParsedData::MoveObject(sui_parsed_move_object) = sui_obj_data.content.as_ref().unwrap() {
                 shared_objects_data
                     .insert(sui_obj_data.object_id.to_string(), SharedObjectData {
+                        address: sui_parsed_move_object.type_.address.to_string(),
                         module: sui_parsed_move_object.type_.module.to_string(),
                         name: sui_parsed_move_object.type_.name.to_string(),
                         is_resource: sui_parsed_move_object.has_public_transfer,
@@ -183,6 +184,7 @@ async fn main() -> Result<(), anyhow::Error> {
     println!();
 
     // number of scanned objects must be equal to the number of objects in datafile
+    // TODO: adapt it to handle connection error and read incomplete file
     assert_eq!(scanned_objects_count, num_objects);
 
     // save data to disk
