@@ -3,6 +3,7 @@ use std::path::Path;
 use std::str::FromStr;
 use clap::Parser;
 use serde_json;
+use memmap;
 use std::io::Write;
 use colored::Colorize;
 use std::collections::{
@@ -145,8 +146,9 @@ async fn main() -> Result<(), anyhow::Error> {
         println!("{}", format!("File \"{}\" already exists.", epoch_data_file.display()).yellow());
 
         // read it
-        result = serde_json::from_reader(fs::File::open(epoch_data_file.clone()).unwrap())
-            .expect("JSON was not properly formatted!");
+        let mmap = unsafe {memmap::Mmap::map(&fs::File::open(epoch_data_file.clone()).unwrap())}.unwrap();
+        let content = std::str::from_utf8(&mmap).unwrap();
+        result = serde_json::from_str(content).unwrap();
 
         // check if  this epoch data file is complete, i.e., if all TXs for 
         // the epoch of interest were scanned
