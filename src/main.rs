@@ -26,6 +26,10 @@ use sui_sdk::rpc_types::{
 
 use shared_object_density::args::query::Args;
 use shared_object_density::utils::process_tx_inputs;
+use shared_object_density::consts::{
+    RESULTS_DIR,
+    EPOCH_TO_CHECKPOINTS_FILENAME,
+};
 use shared_object_density::types::{
     Epoch,
     CheckpointData,
@@ -72,9 +76,8 @@ async fn main() -> Result<(), anyhow::Error> {
     let mut repeat_query_on_none = false;
 
     // get information about the epoch of interest
-    // TODO: save all constants into separate file
-    let results_dir = Path::new("results");
-    let epoch2checkpoint_file = fs::File::open(results_dir.join("epoch2checkpoint.json"))
+    let results_dir = Path::new(RESULTS_DIR);
+    let epoch2checkpoint_file = fs::File::open(results_dir.join(EPOCH_TO_CHECKPOINTS_FILENAME))
         .expect("File not found!");
     let epoch2checkpoint_json: BTreeMap<usize, Epoch> = 
         serde_json::from_reader(epoch2checkpoint_file)

@@ -1,7 +1,7 @@
 {
-  "num_packages": 1445,
-  "num_types": 1880,
-  "num_resources": 759,
+  "num_packages": 1480,
+  "num_types": 1929,
+  "num_resources": 776,
   "packages": {
     "0000000000000000000000000000000000000000000000000000000000000002": {
       "types": {
@@ -11,7 +11,7 @@
         },
         "coin.CoinMetadata": {
           "is_resource": true,
-          "num_instances": 175
+          "num_instances": 176
         },
         "coin.TreasuryCap": {
           "is_resource": true,
@@ -19,11 +19,11 @@
         },
         "kiosk.Kiosk": {
           "is_resource": true,
-          "num_instances": 63012
+          "num_instances": 83331
         },
         "transfer_policy.TransferPolicy": {
           "is_resource": true,
-          "num_instances": 150
+          "num_instances": 154
         }
       }
     },
@@ -39,7 +39,7 @@
       "types": {
         "clob_v2.Pool": {
           "is_resource": false,
-          "num_instances": 3
+          "num_instances": 5
         }
       }
     },
@@ -179,6 +179,18 @@
         }
       }
     },
+    "026fbd4a604bbbbc154009db14583c0592c97d0409f850aa173d7f1d4b1d4b16": {
+      "types": {
+        "coinflip_bigwin.Game": {
+          "is_resource": false,
+          "num_instances": 40
+        },
+        "coinflip_bigwin.HouseData": {
+          "is_resource": false,
+          "num_instances": 1
+        }
+      }
+    },
     "02be8c4a1a3cea4d3255d870d367c87838a8cc2bfe4f216a6b67b153027087a7": {
       "types": {
         "keepsake_marketplace.Marketplace": {
@@ -199,7 +211,7 @@
         },
         "transfer_policy.TransferPolicy": {
           "is_resource": true,
-          "num_instances": 199
+          "num_instances": 202
         }
       }
     },
@@ -255,6 +267,18 @@
       "types": {
         "dreamgame_collection.InfoCollection": {
           "is_resource": true,
+          "num_instances": 1
+        }
+      }
+    },
+    "03e5506a9d7ac23931ff53cf9f0758f41386cd1522ab6150b88298d405ac9c68": {
+      "types": {
+        "coinflip_bigwin.Game": {
+          "is_resource": false,
+          "num_instances": 51
+        },
+        "coinflip_bigwin.HouseData": {
+          "is_resource": false,
           "num_instances": 1
         }
       }
@@ -447,6 +471,18 @@
         }
       }
     },
+    "07b2e215185ef4d1369137310dab8cbd575d90148aaf59b882e57e5b6ebd0140": {
+      "types": {
+        "stake_pool.StakePool": {
+          "is_resource": true,
+          "num_instances": 2
+        },
+        "staking.Fees": {
+          "is_resource": true,
+          "num_instances": 1
+        }
+      }
+    },
     "07b4846a5c698669073c546df3bab1c41fa47bef20b81570eb11c8b17d4ec4a4": {
       "types": {
         "nft_sale.Collection": {
@@ -611,6 +647,18 @@
         }
       }
     },
+    "0b84523e53fd111c218b26d25f1c9a7aa4b17aec9490eb670a32a511386e39c0": {
+      "types": {
+        "tocen_coin_flip.Game": {
+          "is_resource": false,
+          "num_instances": 30
+        },
+        "tocen_coin_flip.HouseData": {
+          "is_resource": false,
+          "num_instances": 1
+        }
+      }
+    },
     "0bb48359a59b9345e998e8e58aaeb0222d79dd1080df3dfd6d766149b5b95553": {
       "types": {
         "my_minter.Minter": {
@@ -759,7 +807,7 @@
       "types": {
         "releap_badge.Badge": {
           "is_resource": true,
-          "num_instances": 121
+          "num_instances": 129
         },
         "releap_badge.BadgeStore": {
           "is_resource": true,
@@ -1087,6 +1135,14 @@
         }
       }
     },
+    "18780726960496c795d9915819aff97766fd22e485902b4a6f3c818e27508f57": {
+      "types": {
+        "my_minter.Minter": {
+          "is_resource": false,
+          "num_instances": 1
+        }
+      }
+    },
     "187f2c9e2e23f23c04f6c76440263cfd983275e87cd73a2a7b14e3ab108b74ad": {
       "types": {
         "my_minter.Minter": {
@@ -1250,6 +1306,14 @@
     "1b089c63a8cfe583ba10a11258d5e83960e76a4c64adb37538cd2ac1546651af": {
       "types": {
         "fair_launch.Storage": {
+          "is_resource": false,
+          "num_instances": 1
+        }
+      }
+    },
+    "1b6bfd607780bc9307ff21d7891f4331e082bffcf9b369f8286358d827a6d676": {
+      "types": {
+        "ticket.Global": {
           "is_resource": false,
           "num_instances": 1
         }
@@ -1471,7 +1535,7 @@
         },
         "pool.Pool": {
           "is_resource": true,
-          "num_instances": 131
+          "num_instances": 132
         },
         "rewarder.RewarderGlobalVault": {
           "is_resource": true,
@@ -2463,7 +2527,7 @@
       "types": {
         "coin_flip.Game": {
           "is_resource": false,
-          "num_instances": 74552
+          "num_instances": 76521
         },
         "coin_flip.HouseData": {
           "is_resource": false,
@@ -2683,7 +2747,7 @@
         },
         "obligation.Obligation": {
           "is_resource": true,
-          "num_instances": 5
+          "num_instances": 7
         },
         "version.Version": {
           "is_resource": true,
@@ -2755,6 +2819,14 @@
         }
       }
     },
+    "3103068491333afb610a65ad8c5746dd7a74dc480ed3a01428a0a47a52d61008": {
+      "types": {
+        "my_minter.Minter": {
+          "is_resource": false,
+          "num_instances": 1
+        }
+      }
+    },
     "31363086e130d0495bd41284c04d1b4700c08b67e448f068b9cab483a2f682f3": {
       "types": {
         "boho_collection.InfoCollection": {
@@ -2787,7 +2859,7 @@
       "types": {
         "Market.Listing": {
           "is_resource": true,
-          "num_instances": 31579
+          "num_instances": 31636
         },
         "marketplace.MarketPlace": {
           "is_resource": true,
@@ -3051,7 +3123,7 @@
       "types": {
         "launchpad_nft.Launchpad": {
           "is_resource": false,
-          "num_instances": 12
+          "num_instances": 13
         },
         "launchpad_nft.Marketplace": {
           "is_resource": false,
@@ -3160,6 +3232,14 @@
         "aifrens.AifrensPool": {
           "is_resource": false,
           "num_instances": 2
+        }
+      }
+    },
+    "3658f5650dd8943ee6de53465a6d1cdc58e015348e8650ff5e69ee8201350a45": {
+      "types": {
+        "x_oracle.XOracle": {
+          "is_resource": false,
+          "num_instances": 1
         }
       }
     },
@@ -3583,6 +3663,14 @@
         }
       }
     },
+    "3e3eb38f8b6ead403622e74be26e9a3acf198157843c69354b56a97f4dca74ec": {
+      "types": {
+        "cetus_staking.TokenRegistry": {
+          "is_resource": true,
+          "num_instances": 2
+        }
+      }
+    },
     "3e76f252ef9f61be2ce4515546c3e3e2a07ab97219229f72035db4fb78b68464": {
       "types": {
         "pool.Pool": {
@@ -3862,6 +3950,14 @@
     "43134f2d5e1323c51fe7450d59d96900b231728feb7d5f3482919e7b450aa455": {
       "types": {
         "sxr.Vault": {
+          "is_resource": false,
+          "num_instances": 1
+        }
+      }
+    },
+    "43500e7ce7759a144c2e39f8deae710a73637dee806e2bb0f0a5d0c26963eff5": {
+      "types": {
+        "my_minter.Minter": {
           "is_resource": false,
           "num_instances": 1
         }
@@ -4363,11 +4459,11 @@
       "types": {
         "bidding.Bid": {
           "is_resource": false,
-          "num_instances": 83
+          "num_instances": 167
         },
         "orderbook.Orderbook": {
           "is_resource": false,
-          "num_instances": 62
+          "num_instances": 65
         }
       }
     },
@@ -4391,6 +4487,14 @@
       "types": {
         "cetus_clmm_worker.WorkerInfo": {
           "is_resource": false,
+          "num_instances": 1
+        }
+      }
+    },
+    "4eb78d9ee46bd2bb7db23b7f9dab9d9240a4a43b2aa3dd1a3ee35de68a670f50": {
+      "types": {
+        "version.Version": {
+          "is_resource": true,
           "num_instances": 1
         }
       }
@@ -4419,6 +4523,14 @@
         },
         "storage.Storage": {
           "is_resource": true,
+          "num_instances": 1
+        }
+      }
+    },
+    "4ef629a3070fb1fa0655a59c0864576aa13c48f730df58da3b7c963a12134d24": {
+      "types": {
+        "dao.DaoHub": {
+          "is_resource": false,
           "num_instances": 1
         }
       }
@@ -4883,6 +4995,14 @@
         }
       }
     },
+    "583ffc51d8ceb08a5cdd1f681600e4affb4d05773effc4d5cb7c982c9e80d6d9": {
+      "types": {
+        "cetus_staking.TokenRegistry": {
+          "is_resource": true,
+          "num_instances": 1
+        }
+      }
+    },
     "585ffaf520ce52e21b5f7f6f5363e0392319f5df44f9aea306cfd0739e5d480c": {
       "types": {
         "airdrop.AirdropConfig": {
@@ -5015,6 +5135,14 @@
         }
       }
     },
+    "5b99c52956c1ea83749d3da059418493681b4ceb8e0f0d17ac0ca3f530f6c087": {
+      "types": {
+        "staking.FeesMysten": {
+          "is_resource": true,
+          "num_instances": 1
+        }
+      }
+    },
     "5bb5b3c9c95daa2a1c07f82e9df734ba88c40cdfb378c4bb41a0b84d63870c2f": {
       "types": {
         "my_minter.Minter": {
@@ -5032,6 +5160,14 @@
       }
     },
     "5bdf2a2c9308ebb74339d16fec974bccf57accfd3a61b197cff216c7f4ae760c": {
+      "types": {
+        "my_minter.Minter": {
+          "is_resource": false,
+          "num_instances": 1
+        }
+      }
+    },
+    "5be87ce5a664cbe942dd3bd546a3da5cafef76223cee0d68886318b9205dd0d3": {
       "types": {
         "my_minter.Minter": {
           "is_resource": false,
@@ -5671,7 +5807,7 @@
         },
         "nft.Registry": {
           "is_resource": false,
-          "num_instances": 1
+          "num_instances": 2
         },
         "nft.Wallet": {
           "is_resource": true,
@@ -5743,6 +5879,14 @@
         }
       }
     },
+    "69eb5c65317f88fa29b7d8c2f1a338a26f9c5d11c2b48fc483bebf9d0186c623": {
+      "types": {
+        "my_minter.Minter": {
+          "is_resource": false,
+          "num_instances": 1
+        }
+      }
+    },
     "69fb0270d7f988c90ca8926edb05189a0c2be60423e280b6a01591db282479f7": {
       "types": {
         "IDO.IDO": {
@@ -5776,6 +5920,14 @@
         "nft.Infomation": {
           "is_resource": false,
           "num_instances": 1
+        }
+      }
+    },
+    "6a4aee9f775b5c4e4affc472c98f3e2f2671efada0193f31d5438f648a2276a6": {
+      "types": {
+        "reward_staking.StakingPool": {
+          "is_resource": false,
+          "num_instances": 4
         }
       }
     },
@@ -5899,6 +6051,26 @@
       "types": {
         "nft_sale.Collection": {
           "is_resource": false,
+          "num_instances": 1
+        }
+      }
+    },
+    "6cef539ba34b9071f774f866d83dc839e0a87c6de82291d20aa5899b7290f9b2": {
+      "types": {
+        "incentive.Incentive": {
+          "is_resource": true,
+          "num_instances": 1
+        },
+        "incentive.IncentiveBal": {
+          "is_resource": true,
+          "num_instances": 2
+        },
+        "pool.Pool": {
+          "is_resource": true,
+          "num_instances": 5
+        },
+        "storage.Storage": {
+          "is_resource": true,
           "num_instances": 1
         }
       }
@@ -6059,7 +6231,7 @@
       "types": {
         "allowlist.Allowlist": {
           "is_resource": true,
-          "num_instances": 27
+          "num_instances": 28
         }
       }
     },
@@ -6110,6 +6282,14 @@
           "num_instances": 1
         },
         "pool.Ref": {
+          "is_resource": true,
+          "num_instances": 1
+        }
+      }
+    },
+    "71ec9ebe7278265b5e556938f4ec2355244423796875ff6a1a5bc53df97f0ab9": {
+      "types": {
+        "coin_decimals_registry.CoinDecimalsRegistry": {
           "is_resource": true,
           "num_instances": 1
         }
@@ -6179,7 +6359,7 @@
         },
         "leaderboard_8192.Leaderboard8192": {
           "is_resource": true,
-          "num_instances": 1
+          "num_instances": 4
         }
       }
     },
@@ -6215,6 +6395,18 @@
         },
         "staking.StakingPool": {
           "is_resource": true,
+          "num_instances": 1
+        }
+      }
+    },
+    "745a16ea148a7b3d1f6e68d0f16237f954e99197cd0ffb96e70c994c946d60d1": {
+      "types": {
+        "coin_flip.Game": {
+          "is_resource": false,
+          "num_instances": 107039
+        },
+        "coin_flip.HouseData": {
+          "is_resource": false,
           "num_instances": 1
         }
       }
@@ -6339,6 +6531,18 @@
         },
         "nft.Phaser": {
           "is_resource": true,
+          "num_instances": 1
+        }
+      }
+    },
+    "778ac7aea76a2efc8f88e2d897db530ffec1597a001587415bc121a2dfc5c258": {
+      "types": {
+        "coinflip_bigwin.Game": {
+          "is_resource": false,
+          "num_instances": 34
+        },
+        "coinflip_bigwin.HouseData": {
+          "is_resource": false,
           "num_instances": 1
         }
       }
@@ -6751,6 +6955,14 @@
         }
       }
     },
+    "81e8ae67d8d71ca0d253add5ae5c371fd4f1627d356d12576c5c758915faa188": {
+      "types": {
+        "cryptopedia.CryptopediaMetadata": {
+          "is_resource": true,
+          "num_instances": 1
+        }
+      }
+    },
     "81ea8e3d4f8bdeac83174028d66b993bf3bc35325583d5283f93bcd46338beff": {
       "types": {
         "coin_flip.Game": {
@@ -6783,7 +6995,7 @@
       "types": {
         "bet.Bet": {
           "is_resource": true,
-          "num_instances": 235
+          "num_instances": 680
         }
       }
     },
@@ -6902,6 +7114,14 @@
     "831670ef96975e01bda284ac6abe8fa80f6776f458e7afc8068aa5627dbacc56": {
       "types": {
         "my_minter.Minter": {
+          "is_resource": false,
+          "num_instances": 1
+        }
+      }
+    },
+    "8378b3bd39931aa74a6aa3a820304c1109d327426e4275183ed0b797eb6660a8": {
+      "types": {
+        "weather.WeatherOracle": {
           "is_resource": false,
           "num_instances": 1
         }
@@ -7202,6 +7422,14 @@
     "8adac900eb06316ec276279e512a9d458e136a395c2faa8e7a9916016b0696f0": {
       "types": {
         "my_minter.Minter": {
+          "is_resource": false,
+          "num_instances": 1
+        }
+      }
+    },
+    "8af0cc660aacf3c645c2fd0fcc48e988c6271c6d65de7ab463a3c51d3ea199f6": {
+      "types": {
+        "pyth_registry.PythRegistry": {
           "is_resource": false,
           "num_instances": 1
         }
@@ -7786,6 +8014,14 @@
     "94213ae15804927b7c46e7c2145f7ec6a8316c3b03348d4234b850c99f7ce221": {
       "types": {
         "sdog.Registry": {
+          "is_resource": false,
+          "num_instances": 1
+        }
+      }
+    },
+    "9421ccfcf4d538cbafbc84a9e96d738752217dc1abe14e987fa378712b89f031": {
+      "types": {
+        "tocen_coin_flip.HouseData": {
           "is_resource": false,
           "num_instances": 1
         }
@@ -8887,6 +9123,22 @@
         }
       }
     },
+    "a9cdb9d8e80465c75dcdad061cf1d462a9cf662da071412ca178d579d8df2855": {
+      "types": {
+        "market.Market": {
+          "is_resource": true,
+          "num_instances": 1
+        },
+        "obligation.Obligation": {
+          "is_resource": true,
+          "num_instances": 9
+        },
+        "version.Version": {
+          "is_resource": true,
+          "num_instances": 1
+        }
+      }
+    },
     "a9d40a8609332536c8a0e412837aeb3fabbb6eba7ae84ef1ce9752abc6a7dc7d": {
       "types": {
         "keepsake_ob_marketplace.Marketplace": {
@@ -9599,6 +9851,18 @@
         }
       }
     },
+    "b42dbb7413b79394e1a0175af6ae22b69a5c7cc5df259cd78072b6818217c027": {
+      "types": {
+        "biddings.Store": {
+          "is_resource": false,
+          "num_instances": 1
+        },
+        "listings.Store": {
+          "is_resource": false,
+          "num_instances": 1
+        }
+      }
+    },
     "b43c27cd2fc6d36952974cebb8f2bfc3353c43d7b73174145a88e0eaa5f4a32f": {
       "types": {
         "my_minter.Minter": {
@@ -9923,6 +10187,14 @@
         }
       }
     },
+    "ba9f1aa5b73cc00956073e165e4abd640497f5ac3ca3cefa02957330c72a9145": {
+      "types": {
+        "my_minter.Minter": {
+          "is_resource": false,
+          "num_instances": 1
+        }
+      }
+    },
     "baa6fa0d68f78087142f80b73ba1947402de93051f393f9799c9cbd37ea22b59": {
       "types": {
         "my_minter.Minter": {
@@ -9939,6 +10211,14 @@
         }
       }
     },
+    "bac34f02ec2d53a4eb5b79b4a1c3a5ea36b08ad9e65a6b7d1bffa02192172cf7": {
+      "types": {
+        "suifren_dao.Dao": {
+          "is_resource": false,
+          "num_instances": 1
+        }
+      }
+    },
     "bb1531504c9c3235d3cd637ed9573cbe18461255b4175a1cb1e1b07b8aa8e11b": {
       "types": {
         "showcase.Config": {
@@ -9947,7 +10227,7 @@
         },
         "suia.Medal": {
           "is_resource": true,
-          "num_instances": 6236
+          "num_instances": 6246
         },
         "suia.MedalStore": {
           "is_resource": true,
@@ -10007,7 +10287,7 @@
       "types": {
         "collection.Collection": {
           "is_resource": true,
-          "num_instances": 239
+          "num_instances": 242
         },
         "mint_cap.MintCap": {
           "is_resource": true,
@@ -10179,6 +10459,14 @@
       "types": {
         "biddings.Store": {
           "is_resource": false,
+          "num_instances": 1
+        }
+      }
+    },
+    "c03d737c81247c98b7b5bef774ee6e29e1f3113620e3c909e0be79be07bccc8b": {
+      "types": {
+        "router.FlowXFinanceRouterWrapper": {
+          "is_resource": true,
           "num_instances": 1
         }
       }
@@ -10887,6 +11175,14 @@
         }
       }
     },
+    "cef680bc2428b9ac37a3176630e241e2ecc39d8e1f2fc6f1d4e71f57f65a8d8b": {
+      "types": {
+        "my_minter.Minter": {
+          "is_resource": false,
+          "num_instances": 1
+        }
+      }
+    },
     "cf82c1ad5faa30acb2f18394f7cfaf5e5c0c2416d68ebcf01a78c83c385a682c": {
       "types": {
         "aifrens_lol.AifrensLolPool": {
@@ -11399,6 +11695,14 @@
         }
       }
     },
+    "da691d321641786d758d7435d0e230a7125777566c75b34c5742591163a252c3": {
+      "types": {
+        "oracle.PriceOracle": {
+          "is_resource": false,
+          "num_instances": 1
+        }
+      }
+    },
     "da97e03f7b33eed207e12939378285f5195f38715f8838213ad97a2d3bc50867": {
       "types": {
         "presale.PresaleStorage": {
@@ -11655,6 +11959,18 @@
       "types": {
         "sui_odyssey.SuiOdysseyMintGlobal": {
           "is_resource": true,
+          "num_instances": 1
+        }
+      }
+    },
+    "df5aa9f5293e08fd9ed5c86fb2ba4d1def79b931dc213da6be2dbd36aa4e9104": {
+      "types": {
+        "tocen_coin_flip.Game": {
+          "is_resource": false,
+          "num_instances": 1
+        },
+        "tocen_coin_flip.HouseData": {
+          "is_resource": false,
           "num_instances": 1
         }
       }
@@ -12187,6 +12503,18 @@
         }
       }
     },
+    "eaf6f31c453e72b2522037f1e16640ab8ce725c81ba561841df1b254014d49ff": {
+      "types": {
+        "puddle.PuddleStatistics": {
+          "is_resource": false,
+          "num_instances": 1
+        },
+        "puddle.Puddles": {
+          "is_resource": true,
+          "num_instances": 2
+        }
+      }
+    },
     "eaf802aea3c4eb542dc500e901c782469c00e6ed2580fa1aa702e102a4827b8f": {
       "types": {
         "my_minter.Minter": {
@@ -12683,11 +13011,11 @@
       "types": {
         "post.Post": {
           "is_resource": true,
-          "num_instances": 2853
+          "num_instances": 3114
         },
         "profile.Profile": {
           "is_resource": true,
-          "num_instances": 2375
+          "num_instances": 2581
         },
         "releap_social.Index": {
           "is_resource": false,
@@ -12962,6 +13290,14 @@
     "f85f7a7842c597e272c01d53866f30077d814eb587a56f1a52e58538c4739f80": {
       "types": {
         "bullshark_rewards.DropList": {
+          "is_resource": false,
+          "num_instances": 1
+        }
+      }
+    },
+    "f91b3c9e0b9cdd730004025e22ae85213535070d0dc60f0f1d5d937609a6e4d8": {
+      "types": {
+        "suifren_dao.Dao": {
           "is_resource": false,
           "num_instances": 1
         }

@@ -9,11 +9,16 @@ use std::collections::{
     BTreeMap,
 };
 use serde_json;
-//use colored::Colorize;
+use colored::Colorize;
 //use std::process::exit;
 
 use shared_object_density::args::plot::*;
 use shared_object_density::types::*;
+use shared_object_density::consts::{
+    RESULTS_DIR,
+    PLOT_FILENAME,
+    SHARED_OBJECTS_SET_FILENAME,
+};
 
 fn main() {
     let args = Args::parse();
@@ -40,8 +45,9 @@ fn main() {
         }))
         .collect();
 
+    println!();
     for (epoch, epoch_data_file) in epoch_data_files.iter().enumerate() {
-        print!("\rWorking on file {}/{}...", epoch + 1, epoch_data_files.len());
+        print!("\rWorking on file {}...", format!("{}/{}", epoch + 1, epoch_data_files.len()).blue());
         let _ = std::io::stdout().flush();
 
         let file = fs::File::open(epoch_data_file.path())
@@ -49,6 +55,12 @@ fn main() {
         let mmap = unsafe {memmap::Mmap::map(&file)}.unwrap();
         let content = std::str::from_utf8(&mmap).unwrap();
         let result: ResultData = serde_json::from_str(content).unwrap();
+
+        // ignore incomplete epoch data files
+        if result.num_txs_scanned != result.num_txs_in_epoch {
+            println!("{}", format!("\nIgnoring incomplete epoch data file {:?}\n", epoch_data_file.path()).yellow());
+            continue;
+        }
 
         // insert a new value for key "epoch"
         unique_shared_objects_per_epoch
@@ -243,9 +255,11 @@ fn main() {
     } // end of iteration over epoch data files
     println!();
 
-    let results_dir = Path::new("results");
-    let _ = fs::write(results_dir.join("plotme.json"), serde_json::to_string_pretty(&epochs_data).
+    let results_dir = Path::new(RESULTS_DIR);
+    let _ = fs::write(results_dir.join(PLOT_FILENAME), serde_json::to_string_pretty(&BTreeMap::from([("epochs", epochs_data)])).
             unwrap());
-    let _ = fs::write(results_dir.join("shared_objects_set.json"), serde_json::to_string_pretty(&unique_shared_objects_total).
+    let _ = fs::write(results_dir.join(SHARED_OBJECTS_SET_FILENAME), serde_json::to_string_pretty(&unique_shared_objects_total).
             unwrap());
+
+    println!("{}", "Done!".green());
 }

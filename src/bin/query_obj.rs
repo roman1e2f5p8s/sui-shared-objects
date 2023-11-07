@@ -26,6 +26,8 @@ use shared_object_density::consts::{
     RESULTS_DIR,
     QUERY_MAX_RESULT_LIMIT,
     SHARED_OBJECTS_SET_FILENAME,
+    SHARED_OBJECTS_DATA_FILENAME,
+    PACKAGES_DATA_FILENAME,
 };
 use shared_object_density::types::{
     SharedObjectData,
@@ -271,8 +273,8 @@ async fn main() -> Result<(), anyhow::Error> {
     packages_data.num_packages = packages_data.packages.len();
 
     // save data to disk
-    let shared_objects_data_file = results_dir.join("shared_objects_data.json");
-    let packages_data_file = results_dir.join("packages_data.json");
+    let shared_objects_data_file = results_dir.join(SHARED_OBJECTS_DATA_FILENAME);
+    let packages_data_file = results_dir.join(PACKAGES_DATA_FILENAME);
     fs::write(shared_objects_data_file, serde_json::to_string_pretty(&shared_objects_data).unwrap())?;
     fs::write(packages_data_file, serde_json::to_string_pretty(&packages_data).unwrap())?;
 

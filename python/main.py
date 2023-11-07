@@ -1,10 +1,15 @@
 import os
+import json
 import pandas as pd
 import matplotlib.pyplot as plt
 
 NUM_SUBPLOTS = 7
-FILE = './../results/plotme.json'
-main_df = pd.read_json(FILE, orient='index')
+FILE = './../results/epoch_density_data.json'
+with open(FILE, 'r') as f:
+    json_ = json.load(f);
+
+main_df = pd.DataFrame.from_dict(json_['epochs'], orient='index')
+main_df.index = main_df.index.astype(int);
 interval_df = pd.json_normalize(main_df['avg_interval_data'])
 
 plt.rcParams.update({'font.size': 14, 'font.family': 'sans-serif'})
