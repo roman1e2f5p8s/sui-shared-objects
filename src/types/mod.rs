@@ -58,6 +58,7 @@ pub struct Epoch {
     pub tx_number: usize
 }
 
+// contains data about a single epoch
 #[derive(Debug, Serialize)]
 pub struct EpochData {
     pub num_txs_total: usize,
@@ -84,13 +85,34 @@ pub struct AvgIntervalData {
     pub obj_touchability: f64,
 }
 
-// stores data of interest about shared objects 
+// stores data about all epochs
+#[derive(Debug, Serialize)]
+pub struct EpochsData {
+    pub epochs: BTreeMap<usize, EpochData>,
+}
+
+// stores data of interest about a shared object
+#[derive(Debug, Serialize, Deserialize)]
+pub struct SharedObjectSetData {
+    pub tx_count: usize,
+    pub mut_ref_count: usize,
+}
+
+// stores data of interest about the set of all shared objects
+#[derive(Debug, Serialize, Deserialize)]
+pub struct SharedObjectsSetData {
+    pub shared_objects: BTreeMap<String, SharedObjectSetData>,
+}
+
+// stores more data of interest about a single shared object 
 #[derive(Debug, Serialize)]
 pub struct SharedObjectData {
     pub address: String,
     pub module: String,
     pub name: String,
     pub is_resource: bool,
+    pub tx_count: usize,
+    pub mut_ref_count: usize,
 }
 
 // stores data of interest about all shared objects

@@ -3,10 +3,7 @@ use memmap;
 use std::io::Write;
 use std::path::Path;
 use std::str::FromStr;
-use std::collections::{
-    BTreeSet,
-    BTreeMap,
-};
+use std::collections::BTreeMap;
 use serde_json;
 use clap::Parser;
 use tokio::time::{
@@ -30,6 +27,7 @@ use shared_object_density::consts::{
     PACKAGES_DATA_FILENAME,
 };
 use shared_object_density::types::{
+    SharedObjectsSetData,
     SharedObjectData,
     SharedObjectsData,
     ModuleAndNameData,
@@ -47,7 +45,7 @@ async fn main() -> Result<(), anyhow::Error> {
         .expect("File not found!");
     let mmap = unsafe {memmap::Mmap::map(&file)}.unwrap();
     let content = std::str::from_utf8(&mmap).unwrap();
-    let shared_objects: BTreeSet<String> = serde_json::from_str(content).unwrap();
+    let shared_objects_set_data: SharedObjectsSetData = serde_json::from_str(content).unwrap();
 
     // Create a Sui client builder for connecting to the Sui network
     let sui = SuiClientBuilder::default()
@@ -62,11 +60,11 @@ async fn main() -> Result<(), anyhow::Error> {
     options.show_content = true;
 
     // store the total number of objects
-    let num_objects = shared_objects.len();
+    let num_objects = shared_objects_set_data.shared_objects.len();
 
     // convert the set of shared object to a vector of shared object IDs
-    let shared_objects_ids: Vec<ObjectID> = shared_objects
-        .into_iter()
+    let shared_objects_ids: Vec<ObjectID> = shared_objects_set_data.shared_objects
+        .keys()
         .map(|s| ObjectID::from_str(&s).unwrap())
         .collect();
 
@@ -186,11 +184,21 @@ async fn main() -> Result<(), anyhow::Error> {
                 // update shared objects data
                 shared_objects_data
                     .shared_objects
-                    .insert(object_id, SharedObjectData {
+                    .insert(object_id.clone(), SharedObjectData {
                         address: address.clone(),
                         module: module,
                         name: name,
                         is_resource: is_resource,
+                        tx_count: shared_objects_set_data
+                            .shared_objects
+                            .get(&object_id)
+                            .unwrap()
+                            .tx_count,
+                        mut_ref_count: shared_objects_set_data
+                            .shared_objects
+                            .get(&object_id)
+                            .unwrap()
+                            .mut_ref_count,
                     });
 
                 // update the number of resources
