@@ -41,7 +41,7 @@ async fn main() -> Result<(), anyhow::Error> {
     let args = Args::parse();
 
     // read the shared objects set data file
-    let results_dir = Path::new(RESULTS_DIR);
+    let results_dir = Path::new(RESULTS_DIR).join(args.workspace);
     let file = fs::File::open(results_dir.join(SHARED_OBJECTS_SET_FILENAME).as_path())
         .expect("File not found!");
     let mmap = unsafe {memmap::Mmap::map(&file)}.unwrap();

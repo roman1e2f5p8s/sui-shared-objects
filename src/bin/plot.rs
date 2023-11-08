@@ -14,6 +14,7 @@ use colored::Colorize;
 use shared_object_density::args::plot::*;
 use shared_object_density::types::*;
 use shared_object_density::consts::{
+    DATA_DIR,
     RESULTS_DIR,
     PLOT_FILENAME,
     SHARED_OBJECTS_SET_FILENAME,
@@ -22,7 +23,7 @@ use shared_object_density::consts::{
 fn main() {
     let args = Args::parse();
 
-    let workspace_dir = Path::new("data").join(args.workspace);
+    let workspace_dir = Path::new(DATA_DIR).join(args.workspace.clone());
     let mut epoch_data_files: Vec<_> = fs::read_dir(workspace_dir).
         expect("Couldn't access directory!").
         map(|f| f.unwrap()).
@@ -302,7 +303,18 @@ fn main() {
     } // end of iteration over epoch data files
     println!();
 
-    let results_dir = Path::new(RESULTS_DIR);
+    // save results 
+    let results_dir = Path::new(RESULTS_DIR).join(args.workspace);
+    if results_dir.exists() {
+        if args.verbose {
+            println!("{}", format!("Workspace \"{}\" already exists\n", results_dir.display()).green());
+        }
+    } else {
+        fs::create_dir_all(results_dir.clone()).unwrap();
+        if args.verbose {
+            println!("{}", format!("Created new workspace \"{}\"\n", results_dir.display()).blue());
+        }
+    }
     let _ = fs::write(results_dir.join(PLOT_FILENAME), serde_json::to_string_pretty(&epochs_data).
             unwrap());
     let _ = fs::write(results_dir.join(SHARED_OBJECTS_SET_FILENAME), serde_json::to_string_pretty(&unique_shared_objects_total).

@@ -5,6 +5,11 @@ use strum_macros::Display;
 #[derive(Parser, Debug)]
 #[command(author = "Roman Overko", version, about, long_about = None)]
 pub struct Args {
+    /// Where to store result files.
+    /// This should be a directory in the "result" folder
+    #[arg(short, long, default_value_t = String::from("workspace1"))]
+    pub workspace: String,
+
     /// Which network to use
     #[arg(short, long, value_enum, default_value_t = NetworkType::Mainnet)]
     pub network: NetworkType,

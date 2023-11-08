@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 NUM_SUBPLOTS = 7
-FILE = './../results/epoch_density_data.json'
+FILE = './../results/workspace1/epoch_density_data.json'
 with open(FILE, 'r') as f:
     json_ = json.load(f);
 
@@ -78,4 +78,4 @@ ax7.set_ylabel('Avg object touchability')
 ax7.minorticks_on()
 ax7.legend()
 
-plt.savefig('./../results/figure.png', format='png')
+plt.savefig('./../results/workspace1/figure.png', format='png')

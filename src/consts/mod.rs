@@ -6,6 +6,9 @@
 // and must be updated if it is changed there.
 pub const QUERY_MAX_RESULT_LIMIT: usize = 50;
 
+// Name of directory where the pre-processed data is stored
+pub const DATA_DIR: &str = "data";
+
 // Name of directory where the results (figures) are stored
 pub const RESULTS_DIR: &str = "results";
 

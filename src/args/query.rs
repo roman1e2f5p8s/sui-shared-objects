@@ -15,7 +15,7 @@ pub struct Args {
 
     /// Where to store data files.
     /// This should be a directory in the "data" folder
-    #[arg(short, long, default_value_t = String::from("data"))]
+    #[arg(short, long, default_value_t = String::from("workspace1"))]
     pub workspace: String,
 
     /// Number of query retries, >= 0

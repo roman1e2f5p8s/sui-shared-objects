@@ -1,5 +1,5 @@
 target
 data/*
-!data/.gitkeep
+!data/README.md
 python/.pyenv
 json_rpc_api
