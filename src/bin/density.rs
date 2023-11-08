@@ -11,7 +11,7 @@ use serde_json;
 use colored::Colorize;
 //use std::process::exit;
 
-use shared_object_density::args::plot::*;
+use shared_object_density::args::density::*;
 use shared_object_density::types::*;
 use shared_object_density::consts::{
     DATA_DIR,

@@ -59,6 +59,12 @@ pub struct Epoch {
     pub tx_number: usize
 }
 
+// defines epoch-to-checkpoint data file structure
+#[derive(Debug, Deserialize)]
+pub struct EpochToCheckpointData {
+    pub epochs: BTreeMap<usize, Epoch>,
+}
+
 // contains data about a single epoch
 #[derive(Debug, Serialize)]
 pub struct EpochData {

@@ -1,3 +1,3 @@
-pub mod query;
-pub mod plot;
+pub mod query_txs;
+pub mod density;
 pub mod query_obj;

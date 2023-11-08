@@ -148,13 +148,13 @@ async fn main() -> Result<(), anyhow::Error> {
                 println!("\n  {}: {:?}", "ERROR".red(), error);
                 if retry_number < args.retry_number {
                     for i in 0..args.retry_sleep {
-                        print!("{}", format!("\r    Retrying query #{} starting at index {} in {} s..", retry_number + 1,
-                            scanned_objects_count, args.retry_sleep - i).yellow());
+                        print!("{}", format!("\r    Retrying query #{}/{} starting at index {} in {} s..", args.retry_number,
+                            retry_number + 1, scanned_objects_count, args.retry_sleep - i).yellow());
                         std::io::stdout().flush()?;
                         sleep(Duration::from_secs(1)).await;
                     }
-                    print!("{}", format!("\r    Retrying query #{} starting at index {} in {} s   ", retry_number + 1,
-                        scanned_objects_count, 0).yellow());
+                    print!("{}", format!("\r    Retrying query #{}/{} starting at index {} in {} s   ", args.retry_number,
+                        retry_number + 1, scanned_objects_count, 0).yellow());
                     retry_number += 1;
                     println!();
                     continue 'outer;

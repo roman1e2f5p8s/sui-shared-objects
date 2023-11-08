@@ -1,6 +1,7 @@
 use clap::{Parser};
 
-/// Estimate how often Sui transactions operate with shared objects: plot the results
+/// Estimate how often Sui transactions operate with shared objects: calculate density and other
+/// parameters per epoch
 #[derive(Parser, Debug)]
 #[command(author = "Roman Overko", version, about, long_about = None)]
 pub struct Args {
