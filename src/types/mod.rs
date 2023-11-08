@@ -3,6 +3,7 @@ use std::collections::{
     HashSet,
     BTreeMap
 };
+use indexmap::IndexMap;
 
 #[derive(Debug)]
 pub struct SharedObjInfo {
@@ -120,7 +121,7 @@ pub struct SharedObjectData {
 pub struct SharedObjectsData {
     pub num_shared_objects: usize,
     pub num_resources: usize,
-    pub shared_objects: BTreeMap<String, SharedObjectData>,
+    pub shared_objects: IndexMap<String, SharedObjectData>,
 }
 
 // stores data of interest about shared objects
@@ -137,7 +138,7 @@ pub struct PackageData {
     pub types: BTreeMap<String, ModuleAndNameData>,
 }
 
-// stores data of interest about all package
+// stores data of interest about all packages
 #[derive(Debug, Serialize)]
 pub struct PackagesData {
     pub num_packages: usize,

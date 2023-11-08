@@ -4,6 +4,7 @@ use std::io::Write;
 use std::path::Path;
 use std::str::FromStr;
 use std::collections::BTreeMap;
+use indexmap::IndexMap;
 use serde_json;
 use clap::Parser;
 use tokio::time::{
@@ -89,7 +90,7 @@ async fn main() -> Result<(), anyhow::Error> {
     let mut shared_objects_data = SharedObjectsData {
         num_shared_objects: num_objects,
         num_resources: 0,
-        shared_objects: BTreeMap::new()
+        shared_objects: IndexMap::new()
     };
 
     // map of packages to data about it
@@ -280,11 +281,20 @@ async fn main() -> Result<(), anyhow::Error> {
     // calculate the number of packages implementing shared objects
     packages_data.num_packages = packages_data.packages.len();
 
+    // sort shared objects data by tx_count in descending order
+    let mut v = Vec::from_iter(shared_objects_data.shared_objects);
+    v.sort_by(|(_, a), (_, b)| b.tx_count.cmp(&a.tx_count));
+    let im: IndexMap<String, SharedObjectData> = v
+        .into_iter()
+        .collect();
+    shared_objects_data.shared_objects = im;
+
     // save data to disk
     let shared_objects_data_file = results_dir.join(SHARED_OBJECTS_DATA_FILENAME);
     let packages_data_file = results_dir.join(PACKAGES_DATA_FILENAME);
     fs::write(shared_objects_data_file, serde_json::to_string_pretty(&shared_objects_data).unwrap())?;
     fs::write(packages_data_file, serde_json::to_string_pretty(&packages_data).unwrap())?;
+
 
     println!("{}", "Done!".green());
     Ok(())
