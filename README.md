@@ -13,9 +13,7 @@ objects to the total number of transactions for a given time interval.
     - [Motivation](#motivation)
 - [Getting Started](#getting-started)
     - [Install](#install)
-    - [Run](#run)
-- [Query Usage](#query-usage)
-- [Plot Usage](#plot-usage)
+- [Usage](#usage)
 - [Examples](#examples)
 - [Results](#results)
 - [Contribute](#contribute)
@@ -100,26 +98,42 @@ cd sui-shared-object-density
 cargo build --release
 ```
 
-### Run
-Building the project shall create two executable files in:
+## Usage
+Building the project shall create three executable files:
+- `query_txs`;
+- `density`;
+- `query_obj`.
 
-- UNIX-like
+On UNIX-like systems they can be executed using `./target/release/<NAME>`, and
+on Windows - `.\target\release\<NAME>.exe`, where `<NAME>` is one of the three executables 
+listed above.
+
+A more detailed description of how to use these executables and what they do are given in the next sub-sections.
+
+### `query_txs`
+Use `query_txs` to query all the transactions for a given epoch, and pre-process them.
+
+For example,
 ```bash
-./target/release/query
-./target/release/plot
+./target/release/query_txs --epoch=0
 ```
+will query all transactions from epoch `0` and pre-process them according to the data
+structure specified in TODO.
 
-- Windows
-```bash
-.\target\release\query.exe
-.\target\release\plot.exe
-```
+By default, the requested and processed data will be saved in `data/workspace1/`, one file 
+per epoch. You can create another workspace using the `--workspace` command line
+argument for `query_txs`.
 
-A more detailed description of how to use these executables is given in the next sections.
+See `./target/release/query_txs --help` for more information and all arguments.
 
-## Query Usage
+See TODO for the description and explanation of which data about Sui transactions `query_txs`
+collects.
 
-## Plot Usage
+### `density`
+TODO
+
+### `query_obj`
+TODO
 
 ## Results
 We plot the following characteristics:
