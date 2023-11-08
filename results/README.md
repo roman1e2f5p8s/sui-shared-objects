@@ -18,24 +18,10 @@ The data file has the following structure:
 ```json
 {
   "epochs": {
-    "<EPOCH>": {
-      "start_checkpoint": <START_CHECKPOINT>,
-      "end_checkpoint": <END_CHECKPOINT>,
-      "tx_number": <TX_NUMBER>
-    },
-    ...
-}
-```
-
-Example:
-```json
-{
-  "epochs": {
     "0": {
       "start_checkpoint": 0,
       "end_checkpoint": 9769,
       "tx_number": 9771
     },
-    ...
 }
 ```
