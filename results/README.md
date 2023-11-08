@@ -14,7 +14,7 @@ on the [Sui Explorer](https://suiexplorer.com/recent?tab=epochs&network=mainnet)
 > :warning: This file is not machine-generated. It is human-generated from the 
 [Sui Explorer](https://suiexplorer.com/recent?tab=epochs&network=mainnet).
 
-The data file has the following structure:
+A snippet of this data file structure looks as follows:
 ```json
 {
   "epochs": {
