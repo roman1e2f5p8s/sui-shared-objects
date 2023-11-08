@@ -109,8 +109,7 @@ pub struct SharedObjectsSetData {
 #[derive(Debug, Serialize)]
 pub struct SharedObjectData {
     pub address: String,
-    pub module: String,
-    pub name: String,
+    pub type_: String,
     pub is_resource: bool,
     pub tx_count: usize,
     pub mut_ref_count: usize,

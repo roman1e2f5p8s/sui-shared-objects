@@ -177,18 +177,15 @@ async fn main() -> Result<(), anyhow::Error> {
                 // temporarily variables
                 let object_id = sui_obj_data.object_id.to_string();
                 let address = sui_parsed_move_object.type_.address.to_string();
-                let module = sui_parsed_move_object.type_.module.to_string();
-                let name = sui_parsed_move_object.type_.name.to_string();
                 let is_resource = sui_parsed_move_object.has_public_transfer;
-                let type_ = module.clone() + &String::from(".") + &name;
+                let type_ = sui_parsed_move_object.type_.module.to_string() + &String::from(".") + &sui_parsed_move_object.type_.name.to_string();
 
                 // update shared objects data
                 shared_objects_data
                     .shared_objects
                     .insert(object_id.clone(), SharedObjectData {
                         address: address.clone(),
-                        module: module,
-                        name: name,
+                        type_: type_.clone(),
                         is_resource: is_resource,
                         tx_count: shared_objects_set_data
                             .shared_objects
