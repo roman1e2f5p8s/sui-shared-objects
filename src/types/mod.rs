@@ -125,16 +125,23 @@ pub struct SharedObjectsData {
 
 // stores data of interest about shared objects
 // based on their type (i.e., module and name)
-#[derive(Debug, Serialize)]
+#[derive(Debug, Clone, Serialize)]
 pub struct ModuleAndNameData {
-    pub is_resource: bool,
+    pub tx_count: usize,
     pub num_instances: usize,
+    pub mut_ref_count: usize,
+    pub is_resource: bool,
 }
 
 // stores data of interest about a package
 #[derive(Debug, Serialize)]
 pub struct PackageData {
-    pub types: BTreeMap<String, ModuleAndNameData>,
+    pub tx_count: usize,
+    pub num_instances: usize,
+    pub mut_ref_count: usize,
+    pub num_types: usize,
+    pub num_resources: usize,
+    pub types: IndexMap<String, ModuleAndNameData>,
 }
 
 // stores data of interest about all packages
@@ -143,5 +150,5 @@ pub struct PackagesData {
     pub num_packages: usize,
     pub num_types: usize,
     pub num_resources: usize,
-    pub packages: BTreeMap<String, PackageData>,
+    pub packages: IndexMap<String, PackageData>,
 }

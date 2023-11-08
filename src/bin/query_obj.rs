@@ -3,7 +3,6 @@ use memmap;
 use std::io::Write;
 use std::path::Path;
 use std::str::FromStr;
-use std::collections::BTreeMap;
 use indexmap::IndexMap;
 use serde_json;
 use clap::Parser;
@@ -98,7 +97,7 @@ async fn main() -> Result<(), anyhow::Error> {
         num_packages: 0,
         num_types: 0,
         num_resources: 0,
-        packages: BTreeMap::new(),
+        packages: IndexMap::new(),
     };
 
     'outer: while {
@@ -209,7 +208,12 @@ async fn main() -> Result<(), anyhow::Error> {
                     .packages
                     .entry(address.clone())
                     .or_insert(PackageData {
-                        types: BTreeMap::new(),
+                        tx_count: 0,
+                        num_instances: 0,
+                        mut_ref_count: 0,
+                        num_types: 0,
+                        num_resources: 0,
+                        types: IndexMap::new(),
                     });
 
                 // insert a new entry for "types" if it does not exist already
@@ -220,8 +224,10 @@ async fn main() -> Result<(), anyhow::Error> {
                     .types
                     .entry(type_.clone())
                     .or_insert(ModuleAndNameData {
-                        is_resource: is_resource,
+                        tx_count: 0,
                         num_instances: 0,
+                        mut_ref_count: 0,
+                        is_resource: is_resource,
                     });
 
                 // update data for that type
@@ -233,6 +239,30 @@ async fn main() -> Result<(), anyhow::Error> {
                     .get_mut(&type_)
                     .unwrap()
                     .num_instances += 1;
+                packages_data
+                    .packages
+                    .get_mut(&address)
+                    .unwrap()
+                    .types
+                    .get_mut(&type_)
+                    .unwrap()
+                    .tx_count += shared_objects_set_data
+                        .shared_objects
+                        .get(&object_id)
+                        .unwrap()
+                        .tx_count;
+                packages_data
+                    .packages
+                    .get_mut(&address)
+                    .unwrap()
+                    .types
+                    .get_mut(&type_)
+                    .unwrap()
+                    .mut_ref_count += shared_objects_set_data
+                        .shared_objects
+                        .get(&object_id)
+                        .unwrap()
+                        .mut_ref_count;
             } // end of unpacking MoveObject enum
         } // end iterating over objects
 
@@ -260,38 +290,78 @@ async fn main() -> Result<(), anyhow::Error> {
 
     // The number of instances across all packages must be equal 
     // the total number of shared objects: check it.
-    // Also, calculate the number of types and how many of them are resources
+    // Also, calculate the rest of counts
     let mut num_instances_total = 0;
-    for (_, package) in &packages_data.packages {
-        // calculate the number of types
+    for (_, package) in packages_data.packages.iter_mut() {
+        // calculate the total number of shared object types for all packages
         packages_data.num_types += package.types.len();
+
+        // calculate the total number of shared object types per package
+        package.num_types = package.types.len();
+
         for (_, type_) in &package.types {
             num_instances_total += type_.num_instances;
-            // calculate the number of resources
+
+            // calculate the total number of instances per package
+            package.num_instances += type_.num_instances;
+            // calculate the total number of transactions per package
+            package.tx_count += type_.tx_count;
+            // calculate the total number of mut refs per package
+            package.mut_ref_count += type_.mut_ref_count;
+
+            // calculate the total number of resources
             if type_.is_resource {
+                // per package
+                package.num_resources += 1;
+                // for all packages
                 packages_data.num_resources += 1;
             }
+        } // end of iterating over types
+
+        // sort types data by tx_count in descending order
+        if package.types.len() > 1 {
+            let mut types_vec = Vec::from_iter(package.types.clone());
+            types_vec.sort_by(|(_, a), (_, b)| b.tx_count.cmp(&a.tx_count));
+            let sorted_types: IndexMap<String, ModuleAndNameData> = types_vec
+                .into_iter()
+                .collect();
+            package.types = sorted_types;
         }
-    }
+    } // end of iterating over packages
     assert_eq!(num_instances_total, num_objects);
 
     // calculate the number of packages implementing shared objects
     packages_data.num_packages = packages_data.packages.len();
 
     // sort shared objects data by tx_count in descending order
-    let mut v = Vec::from_iter(shared_objects_data.shared_objects);
-    v.sort_by(|(_, a), (_, b)| b.tx_count.cmp(&a.tx_count));
-    let im: IndexMap<String, SharedObjectData> = v
+    let mut shared_objects_vec = Vec::from_iter(shared_objects_data.shared_objects);
+    shared_objects_vec.sort_by(|(_, a), (_, b)| b.tx_count.cmp(&a.tx_count));
+    let sorted_shared_objects: IndexMap<String, SharedObjectData> = shared_objects_vec
         .into_iter()
         .collect();
-    shared_objects_data.shared_objects = im;
+    shared_objects_data.shared_objects = sorted_shared_objects;
+
+    // sort packages data by tx_count in descending order
+    let mut packages_vec = Vec::from_iter(packages_data.packages);
+    packages_vec.sort_by(|(_, a), (_, b)| b.tx_count.cmp(&a.tx_count));
+    let sorted_packages: IndexMap<String, PackageData> = packages_vec
+        .into_iter()
+        .collect();
+    packages_data.packages = sorted_packages;
 
     // save data to disk
-    let shared_objects_data_file = results_dir.join(SHARED_OBJECTS_DATA_FILENAME);
-    let packages_data_file = results_dir.join(PACKAGES_DATA_FILENAME);
-    fs::write(shared_objects_data_file, serde_json::to_string_pretty(&shared_objects_data).unwrap())?;
-    fs::write(packages_data_file, serde_json::to_string_pretty(&packages_data).unwrap())?;
-
+    fs::write(
+        results_dir
+            .join(SHARED_OBJECTS_DATA_FILENAME),
+        serde_json::to_string_pretty(&shared_objects_data)
+            .unwrap()
+    )?;
+    fs::write(
+        results_dir
+            .join(PACKAGES_DATA_FILENAME),
+        serde_json::to_string_pretty(&packages_data)
+            .unwrap()
+    )?;
 
     println!("{}", "Done!".green());
     Ok(())
