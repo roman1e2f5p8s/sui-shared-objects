@@ -148,6 +148,9 @@ fn main() {
                     .or_insert(SharedObjectSetData {
                         tx_count: 0,
                         mut_ref_count: 0,
+                        first_touched_at_epoch: epoch,
+                        first_touched_at_checkpoint: checkpoint,
+                        first_touched_by_txs: tx_list.clone(),
                     });
                 //
                 // update the total number of TXs that touched that object

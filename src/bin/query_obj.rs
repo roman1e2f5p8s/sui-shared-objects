@@ -196,6 +196,22 @@ async fn main() -> Result<(), anyhow::Error> {
                             .get(&object_id)
                             .unwrap()
                             .mut_ref_count,
+                        first_touched_at_epoch: shared_objects_set_data
+                            .shared_objects
+                            .get(&object_id)
+                            .unwrap()
+                            .first_touched_at_epoch,
+                        first_touched_at_checkpoint: shared_objects_set_data
+                            .shared_objects
+                            .get(&object_id)
+                            .unwrap()
+                            .first_touched_at_checkpoint,
+                        first_touched_by_txs: shared_objects_set_data
+                            .shared_objects
+                            .get(&object_id)
+                            .unwrap()
+                            .first_touched_by_txs
+                            .clone(),
                     });
 
                 // update the number of resources

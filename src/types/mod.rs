@@ -103,6 +103,9 @@ pub struct EpochsData {
 pub struct SharedObjectSetData {
     pub tx_count: usize,
     pub mut_ref_count: usize,
+    pub first_touched_at_epoch: usize,
+    pub first_touched_at_checkpoint: u64,
+    pub first_touched_by_txs: BTreeMap<String, bool>,
 }
 
 // stores data of interest about the set of all shared objects
@@ -119,6 +122,9 @@ pub struct SharedObjectData {
     pub is_resource: bool,
     pub tx_count: usize,
     pub mut_ref_count: usize,
+    pub first_touched_at_epoch: usize,
+    pub first_touched_at_checkpoint: u64,
+    pub first_touched_by_txs: BTreeMap<String, bool>,
 }
 
 // stores data of interest about all shared objects
