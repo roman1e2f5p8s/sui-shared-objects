@@ -1,112 +1,112 @@
 {
-  "num_packages": 1489,
-  "num_types": 1947,
+  "num_packages": 1490,
+  "num_types": 1948,
   "num_resources": 785,
   "packages": {
     "00b53b0f4174108627fbee72e2498b58d6a2714cded53fac537034c220d26302": {
-      "tx_count": 14261250,
+      "tx_count": 14261260,
       "num_instances": 21,
-      "mut_ref_count": 11758184,
+      "mut_ref_count": 11758193,
       "num_types": 2,
       "num_resources": 2,
       "types": {
         "price_info.PriceInfoObject": {
-          "tx_count": 11757448,
+          "tx_count": 11757453,
           "num_instances": 20,
-          "mut_ref_count": 11757402,
+          "mut_ref_count": 11757407,
           "is_resource": true
         },
         "state.State": {
-          "tx_count": 2503802,
+          "tx_count": 2503807,
           "num_instances": 1,
-          "mut_ref_count": 782,
+          "mut_ref_count": 786,
           "is_resource": true
         }
       }
     },
     "0000000000000000000000000000000000000000000000000000000000000002": {
-      "tx_count": 6579097,
-      "num_instances": 88637,
-      "mut_ref_count": 734791,
+      "tx_count": 6793487,
+      "num_instances": 101238,
+      "mut_ref_count": 740531,
       "num_types": 5,
       "num_resources": 4,
       "types": {
         "clock.Clock": {
-          "tx_count": 5580340,
+          "tx_count": 5649177,
           "num_instances": 1,
           "mut_ref_count": 0,
           "is_resource": false
         },
         "kiosk.Kiosk": {
-          "tx_count": 748904,
-          "num_instances": 88290,
-          "mut_ref_count": 561534,
+          "tx_count": 891924,
+          "num_instances": 100890,
+          "mut_ref_count": 565118,
           "is_resource": true
         },
         "transfer_policy.TransferPolicy": {
-          "tx_count": 246603,
+          "tx_count": 248884,
           "num_instances": 155,
-          "mut_ref_count": 170120,
+          "mut_ref_count": 172024,
           "is_resource": true
         },
         "coin.TreasuryCap": {
-          "tx_count": 2968,
+          "tx_count": 3219,
           "num_instances": 15,
-          "mut_ref_count": 2968,
+          "mut_ref_count": 3219,
           "is_resource": true
         },
         "coin.CoinMetadata": {
-          "tx_count": 282,
-          "num_instances": 176,
-          "mut_ref_count": 169,
+          "tx_count": 283,
+          "num_instances": 177,
+          "mut_ref_count": 170,
           "is_resource": true
         }
       }
     },
     "5306f64e312b581766351c07af79c72fcb1cd25147157fdc2f8ad76de9a3fb6a": {
-      "tx_count": 2526673,
+      "tx_count": 2526821,
       "num_instances": 1,
-      "mut_ref_count": 8429,
+      "mut_ref_count": 8503,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "state.State": {
-          "tx_count": 2526673,
+          "tx_count": 2526821,
           "num_instances": 1,
-          "mut_ref_count": 8429,
+          "mut_ref_count": 8503,
           "is_resource": true
         }
       }
     },
     "1eabed72c53feb3805120a081dc15963c204dc8d091542592abaf7a35689b2fb": {
-      "tx_count": 2368107,
+      "tx_count": 2385214,
       "num_instances": 139,
-      "mut_ref_count": 1486382,
+      "mut_ref_count": 1500488,
       "num_types": 6,
       "num_resources": 5,
       "types": {
         "pool.Pool": {
-          "tx_count": 1252083,
+          "tx_count": 1262128,
           "num_instances": 133,
-          "mut_ref_count": 1252077,
+          "mut_ref_count": 1262122,
           "is_resource": true
         },
         "config.GlobalConfig": {
-          "tx_count": 1019430,
+          "tx_count": 1025593,
           "num_instances": 1,
-          "mut_ref_count": 137756,
+          "mut_ref_count": 140918,
           "is_resource": true
         },
         "partner.Partner": {
-          "tx_count": 52264,
+          "tx_count": 52927,
           "num_instances": 2,
-          "mut_ref_count": 52264,
+          "mut_ref_count": 52927,
           "is_resource": true
         },
         "rewarder.RewarderGlobalVault": {
-          "tx_count": 44185,
+          "tx_count": 44421,
           "num_instances": 1,
-          "mut_ref_count": 44142,
+          "mut_ref_count": 44378,
           "is_resource": true
         },
         "factory.Pools": {
@@ -123,89 +123,110 @@
         }
       }
     },
-    "d5dd28cc24009752905689b2ba2bf90bfc8de4549b9123f93519bb8ba9bf9981": {
-      "tx_count": 622771,
-      "num_instances": 5,
-      "mut_ref_count": 622771,
-      "num_types": 5,
-      "num_resources": 5,
-      "types": {
-        "marketplace.MarketplaceConfig": {
-          "tx_count": 326325,
-          "num_instances": 1,
-          "mut_ref_count": 326325,
-          "is_resource": true
-        },
-        "marketplace.CreatorConfig": {
-          "tx_count": 100282,
-          "num_instances": 1,
-          "mut_ref_count": 100282,
-          "is_resource": true
-        },
-        "creator_bluemove_fee.RoyaltyCollection": {
-          "tx_count": 100252,
-          "num_instances": 1,
-          "mut_ref_count": 100252,
-          "is_resource": true
-        },
-        "offer_collection.OfferCollectionData": {
-          "tx_count": 74466,
-          "num_instances": 1,
-          "mut_ref_count": 74466,
-          "is_resource": true
-        },
-        "offer_item.OfferData": {
-          "tx_count": 21446,
-          "num_instances": 1,
-          "mut_ref_count": 21446,
-          "is_resource": true
-        }
-      }
-    },
     "745a16ea148a7b3d1f6e68d0f16237f954e99197cd0ffb96e70c994c946d60d1": {
-      "tx_count": 590835,
-      "num_instances": 227874,
-      "mut_ref_count": 590835,
+      "tx_count": 1042270,
+      "num_instances": 385464,
+      "mut_ref_count": 1042270,
       "num_types": 2,
       "num_resources": 0,
       "types": {
         "coin_flip.HouseData": {
-          "tx_count": 347131,
+          "tx_count": 555205,
           "num_instances": 1,
-          "mut_ref_count": 347131,
+          "mut_ref_count": 555205,
           "is_resource": false
         },
         "coin_flip.Game": {
-          "tx_count": 243704,
-          "num_instances": 227873,
-          "mut_ref_count": 243704,
+          "tx_count": 487065,
+          "num_instances": 385463,
+          "mut_ref_count": 487065,
           "is_resource": false
         }
       }
     },
+    "d5dd28cc24009752905689b2ba2bf90bfc8de4549b9123f93519bb8ba9bf9981": {
+      "tx_count": 625380,
+      "num_instances": 5,
+      "mut_ref_count": 625380,
+      "num_types": 5,
+      "num_resources": 5,
+      "types": {
+        "marketplace.MarketplaceConfig": {
+          "tx_count": 327525,
+          "num_instances": 1,
+          "mut_ref_count": 327525,
+          "is_resource": true
+        },
+        "marketplace.CreatorConfig": {
+          "tx_count": 100826,
+          "num_instances": 1,
+          "mut_ref_count": 100826,
+          "is_resource": true
+        },
+        "creator_bluemove_fee.RoyaltyCollection": {
+          "tx_count": 100795,
+          "num_instances": 1,
+          "mut_ref_count": 100795,
+          "is_resource": true
+        },
+        "offer_collection.OfferCollectionData": {
+          "tx_count": 74721,
+          "num_instances": 1,
+          "mut_ref_count": 74721,
+          "is_resource": true
+        },
+        "offer_item.OfferData": {
+          "tx_count": 21513,
+          "num_instances": 1,
+          "mut_ref_count": 21513,
+          "is_resource": true
+        }
+      }
+    },
+    "72f9c76421170b5a797432ba9e1b3b2e2b7cf6faa26eb955396c773af2479e1e": {
+      "tx_count": 456497,
+      "num_instances": 5,
+      "mut_ref_count": 456497,
+      "num_types": 2,
+      "num_resources": 1,
+      "types": {
+        "game_8192.Game8192Maintainer": {
+          "tx_count": 424137,
+          "num_instances": 1,
+          "mut_ref_count": 424137,
+          "is_resource": false
+        },
+        "leaderboard_8192.Leaderboard8192": {
+          "tx_count": 32360,
+          "num_instances": 4,
+          "mut_ref_count": 32360,
+          "is_resource": true
+        }
+      }
+    },
     "361dd589b98e8fcda9a7ee53b85efabef3569d00416640d2faa516e3801d7ffc": {
-      "tx_count": 412142,
+      "tx_count": 414503,
       "num_instances": 23,
-      "mut_ref_count": 408932,
+      "mut_ref_count": 411268,
       "num_types": 4,
       "num_resources": 0,
       "types": {
         "pool.Pool": {
-          "tx_count": 376967,
+          "tx_count": 379174,
           "num_instances": 20,
-          "mut_ref_count": 376959,
+          "mut_ref_count": 379166,
           "is_resource": false
         },
         "TOKEN.TokenFarm": {
-          "tx_count": 18308,
+          "tx_count": 18415,
           "num_instances": 1,
-          "mut_ref_count": 15106,
+          "mut_ref_count": 15188,
           "is_resource": false
         },
         "TOKEN.TokenBank": {
-          "tx_count": 16846,
+          "tx_count": 16893,
           "num_instances": 1,
-          "mut_ref_count": 16846,
+          "mut_ref_count": 16893,
           "is_resource": false
         },
         "pool.PoolRegistry": {
@@ -216,65 +237,59 @@
         }
       }
     },
-    "72f9c76421170b5a797432ba9e1b3b2e2b7cf6faa26eb955396c773af2479e1e": {
-      "tx_count": 385494,
-      "num_instances": 5,
-      "mut_ref_count": 385494,
-      "num_types": 2,
-      "num_resources": 1,
-      "types": {
-        "game_8192.Game8192Maintainer": {
-          "tx_count": 359903,
-          "num_instances": 1,
-          "mut_ref_count": 359903,
-          "is_resource": false
-        },
-        "leaderboard_8192.Leaderboard8192": {
-          "tx_count": 25591,
-          "num_instances": 4,
-          "mut_ref_count": 25591,
-          "is_resource": true
-        }
-      }
-    },
     "bb1531504c9c3235d3cd637ed9573cbe18461255b4175a1cb1e1b07b8aa8e11b": {
-      "tx_count": 328853,
-      "num_instances": 6251,
-      "mut_ref_count": 327480,
+      "tx_count": 329203,
+      "num_instances": 6262,
+      "mut_ref_count": 327828,
       "num_types": 3,
       "num_resources": 3,
       "types": {
         "suia.Medal": {
-          "tx_count": 319986,
-          "num_instances": 6249,
-          "mut_ref_count": 319986,
+          "tx_count": 320323,
+          "num_instances": 6260,
+          "mut_ref_count": 320323,
           "is_resource": true
         },
         "suia.MedalStore": {
-          "tx_count": 7493,
+          "tx_count": 7504,
           "num_instances": 1,
-          "mut_ref_count": 7493,
+          "mut_ref_count": 7504,
           "is_resource": true
         },
         "showcase.Config": {
-          "tx_count": 1374,
+          "tx_count": 1376,
           "num_instances": 1,
           "mut_ref_count": 1,
           "is_resource": true
         }
       }
     },
-    "b24b6789e088b876afabca733bed2299fbc9e2d6369be4d1acfa17d8145454d9": {
-      "tx_count": 296288,
+    "51179c2df7466220b513901c52412258942a1e041fccb973e92a53c29e1a09ed": {
+      "tx_count": 297836,
       "num_instances": 2,
-      "mut_ref_count": 296288,
+      "mut_ref_count": 297836,
+      "num_types": 1,
+      "num_resources": 1,
+      "types": {
+        "simple_oracle.SimpleOracle": {
+          "tx_count": 297836,
+          "num_instances": 2,
+          "mut_ref_count": 297836,
+          "is_resource": true
+        }
+      }
+    },
+    "b24b6789e088b876afabca733bed2299fbc9e2d6369be4d1acfa17d8145454d9": {
+      "tx_count": 296792,
+      "num_instances": 2,
+      "mut_ref_count": 296792,
       "num_types": 2,
       "num_resources": 2,
       "types": {
         "swap.Dex_Info": {
-          "tx_count": 291809,
+          "tx_count": 292313,
           "num_instances": 1,
-          "mut_ref_count": 291809,
+          "mut_ref_count": 292313,
           "is_resource": true
         },
         "stable_swap.Dex_Stable_Info": {
@@ -306,47 +321,32 @@
         }
       }
     },
-    "51179c2df7466220b513901c52412258942a1e041fccb973e92a53c29e1a09ed": {
-      "tx_count": 266341,
-      "num_instances": 2,
-      "mut_ref_count": 266341,
-      "num_types": 1,
-      "num_resources": 1,
-      "types": {
-        "simple_oracle.SimpleOracle": {
-          "tx_count": 266341,
-          "num_instances": 2,
-          "mut_ref_count": 266341,
-          "is_resource": true
-        }
-      }
-    },
     "8bdc95e99e393fea9b0e010353ef27109ca6b93d96c57090d7ab61fc9ca4d78d": {
-      "tx_count": 259351,
+      "tx_count": 264826,
       "num_instances": 1,
-      "mut_ref_count": 259351,
+      "mut_ref_count": 264826,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "utility.Config": {
-          "tx_count": 259351,
+          "tx_count": 264826,
           "num_instances": 1,
-          "mut_ref_count": 259351,
+          "mut_ref_count": 264826,
           "is_resource": true
         }
       }
     },
     "6b84da4f5dc051759382e60352377fea9d59bc6ec92dc60e0b6387e05274415f": {
-      "tx_count": 234908,
+      "tx_count": 234925,
       "num_instances": 1,
-      "mut_ref_count": 234908,
+      "mut_ref_count": 234925,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "implements.Global": {
-          "tx_count": 234908,
+          "tx_count": 234925,
           "num_instances": 1,
-          "mut_ref_count": 234908,
+          "mut_ref_count": 234925,
           "is_resource": false
         }
       }
@@ -373,16 +373,16 @@
       }
     },
     "4e0629fa51a62b0c1d7c7b9fc89237ec5b6f630d7798ad3f06d820afb93a995a": {
-      "tx_count": 189076,
+      "tx_count": 189500,
       "num_instances": 368,
-      "mut_ref_count": 189072,
+      "mut_ref_count": 189496,
       "num_types": 2,
       "num_resources": 0,
       "types": {
         "orderbook.Orderbook": {
-          "tx_count": 188758,
+          "tx_count": 189182,
           "num_instances": 66,
-          "mut_ref_count": 188754,
+          "mut_ref_count": 189178,
           "is_resource": false
         },
         "bidding.Bid": {
@@ -390,6 +390,21 @@
           "num_instances": 302,
           "mut_ref_count": 318,
           "is_resource": false
+        }
+      }
+    },
+    "5d8fbbf6f908a4af8c6d072669a462d53e03eb3c1d863bd0359dc818c69ea706": {
+      "tx_count": 187777,
+      "num_instances": 1,
+      "mut_ref_count": 187720,
+      "num_types": 1,
+      "num_resources": 1,
+      "types": {
+        "SupraSValueFeed.OracleHolder": {
+          "tx_count": 187777,
+          "num_instances": 1,
+          "mut_ref_count": 187720,
+          "is_resource": true
         }
       }
     },
@@ -420,32 +435,17 @@
         }
       }
     },
-    "5d8fbbf6f908a4af8c6d072669a462d53e03eb3c1d863bd0359dc818c69ea706": {
-      "tx_count": 174772,
-      "num_instances": 1,
-      "mut_ref_count": 174720,
-      "num_types": 1,
-      "num_resources": 1,
-      "types": {
-        "SupraSValueFeed.OracleHolder": {
-          "tx_count": 174772,
-          "num_instances": 1,
-          "mut_ref_count": 174720,
-          "is_resource": true
-        }
-      }
-    },
     "000000000000000000000000000000000000000000000000000000000000dee9": {
-      "tx_count": 125934,
+      "tx_count": 177250,
       "num_instances": 5,
-      "mut_ref_count": 125932,
+      "mut_ref_count": 177248,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "clob_v2.Pool": {
-          "tx_count": 125934,
+          "tx_count": 177250,
           "num_instances": 5,
-          "mut_ref_count": 125932,
+          "mut_ref_count": 177248,
           "is_resource": false
         }
       }
@@ -478,55 +478,55 @@
       }
     },
     "3164fcf73eb6b41ff3d2129346141bd68469964c2d95a5b1533e8d16e6ea6e13": {
-      "tx_count": 113644,
-      "num_instances": 31668,
-      "mut_ref_count": 84163,
+      "tx_count": 113714,
+      "num_instances": 31692,
+      "mut_ref_count": 84214,
       "num_types": 2,
       "num_resources": 2,
       "types": {
         "Market.Listing": {
-          "tx_count": 59365,
-          "num_instances": 31667,
-          "mut_ref_count": 59365,
+          "tx_count": 59398,
+          "num_instances": 31691,
+          "mut_ref_count": 59398,
           "is_resource": true
         },
         "marketplace.MarketPlace": {
-          "tx_count": 54279,
+          "tx_count": 54316,
           "num_instances": 1,
-          "mut_ref_count": 24798,
+          "mut_ref_count": 24816,
           "is_resource": true
         }
       }
     },
     "91bfbc386a41afcfd9b2533058d7e915a1d3829089cc268ff4333d54d6339ca1": {
-      "tx_count": 113042,
+      "tx_count": 113452,
       "num_instances": 19,
-      "mut_ref_count": 65188,
+      "mut_ref_count": 65397,
       "num_types": 5,
       "num_resources": 5,
       "types": {
         "pool.Pool": {
-          "tx_count": 53399,
+          "tx_count": 53603,
           "num_instances": 13,
-          "mut_ref_count": 53399,
+          "mut_ref_count": 53603,
           "is_resource": true
         },
         "pool.Versioned": {
-          "tx_count": 48499,
+          "tx_count": 48700,
           "num_instances": 1,
           "mut_ref_count": 645,
           "is_resource": true
         },
         "position_manager.Positions": {
-          "tx_count": 9280,
+          "tx_count": 9284,
           "num_instances": 1,
-          "mut_ref_count": 9280,
+          "mut_ref_count": 9284,
           "is_resource": true
         },
         "pool.PoolRewardVault": {
-          "tx_count": 1846,
+          "tx_count": 1847,
           "num_instances": 3,
-          "mut_ref_count": 1846,
+          "mut_ref_count": 1847,
           "is_resource": true
         },
         "pool_factory.PoolConfig": {
@@ -538,16 +538,16 @@
       }
     },
     "eb294b9401a7b6df0000b9f4cb67322d0fcdd12dd05ef9bd28529d41dbf07d22": {
-      "tx_count": 110775,
+      "tx_count": 110879,
       "num_instances": 2,
-      "mut_ref_count": 110775,
+      "mut_ref_count": 110879,
       "num_types": 2,
       "num_resources": 2,
       "types": {
         "tocen_marketplace.Marketplace": {
-          "tx_count": 110527,
+          "tx_count": 110631,
           "num_instances": 1,
-          "mut_ref_count": 110527,
+          "mut_ref_count": 110631,
           "is_resource": true
         },
         "tocen_marketplace.CollectionOffer": {
@@ -628,14 +628,14 @@
       }
     },
     "56714d6578dafaaec566c1483ac0fc5fb206b506455a8d59b043d67d243243eb": {
-      "tx_count": 96316,
+      "tx_count": 96363,
       "num_instances": 1,
       "mut_ref_count": 14,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "version.Version": {
-          "tx_count": 96316,
+          "tx_count": 96363,
           "num_instances": 1,
           "mut_ref_count": 14,
           "is_resource": false
@@ -643,16 +643,16 @@
       }
     },
     "57138e18b82cc8ea6e92c3d5737d6078b1304b655f59cf5ae9668cc44aad4ead": {
-      "tx_count": 86305,
+      "tx_count": 92015,
       "num_instances": 3,
-      "mut_ref_count": 86305,
+      "mut_ref_count": 92015,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "profile.Registry": {
-          "tx_count": 86305,
+          "tx_count": 92015,
           "num_instances": 3,
-          "mut_ref_count": 86305,
+          "mut_ref_count": 92015,
           "is_resource": false
         }
       }
@@ -679,46 +679,46 @@
       }
     },
     "826915f8ca6d11597dfe6599b8aa02a4c08bd8d39674855254a06ee83fe7220e": {
-      "tx_count": 70304,
+      "tx_count": 70423,
       "num_instances": 59,
-      "mut_ref_count": 54886,
+      "mut_ref_count": 54970,
       "num_types": 15,
       "num_resources": 5,
       "types": {
         "genesis.GovernanceGenesis": {
-          "tx_count": 14716,
+          "tx_count": 14742,
           "num_instances": 1,
           "mut_ref_count": 3,
           "is_resource": false
         },
         "user_manager.UserManagerInfo": {
-          "tx_count": 14298,
+          "tx_count": 14320,
           "num_instances": 1,
-          "mut_ref_count": 14298,
+          "mut_ref_count": 14320,
           "is_resource": true
         },
         "system_portal.SystemPortal": {
-          "tx_count": 7079,
+          "tx_count": 7080,
           "num_instances": 1,
-          "mut_ref_count": 7079,
+          "mut_ref_count": 7080,
           "is_resource": false
         },
         "oracle.PriceOracle": {
-          "tx_count": 6931,
+          "tx_count": 6947,
           "num_instances": 1,
-          "mut_ref_count": 6931,
+          "mut_ref_count": 6947,
           "is_resource": false
         },
         "pool_manager.PoolManagerInfo": {
-          "tx_count": 6522,
+          "tx_count": 6534,
           "num_instances": 1,
-          "mut_ref_count": 6522,
+          "mut_ref_count": 6534,
           "is_resource": true
         },
         "lending_core_storage.Storage": {
-          "tx_count": 6522,
+          "tx_count": 6534,
           "num_instances": 1,
-          "mut_ref_count": 6522,
+          "mut_ref_count": 6534,
           "is_resource": false
         },
         "lending_portal.LendingPortal": {
@@ -734,13 +734,13 @@
           "is_resource": true
         },
         "wormhole_adapter_core.CoreState": {
-          "tx_count": 1063,
+          "tx_count": 1084,
           "num_instances": 1,
-          "mut_ref_count": 1063,
+          "mut_ref_count": 1084,
           "is_resource": true
         },
         "system_core_storage.Storage": {
-          "tx_count": 702,
+          "tx_count": 711,
           "num_instances": 1,
           "mut_ref_count": 0,
           "is_resource": false
@@ -778,16 +778,16 @@
       }
     },
     "bc3df36be17f27ac98e3c839b2589db8475fa07b20657b08e8891e3aaf5ee5f9": {
-      "tx_count": 69117,
+      "tx_count": 69353,
       "num_instances": 302,
-      "mut_ref_count": 62215,
+      "mut_ref_count": 62421,
       "num_types": 3,
       "num_resources": 2,
       "types": {
         "royalty_strategy_bps.BpsRoyaltyStrategy": {
-          "tx_count": 51637,
+          "tx_count": 51787,
           "num_instances": 54,
-          "mut_ref_count": 51635,
+          "mut_ref_count": 51785,
           "is_resource": false
         },
         "mint_cap.MintCap": {
@@ -797,24 +797,24 @@
           "is_resource": true
         },
         "collection.Collection": {
-          "tx_count": 6330,
+          "tx_count": 6416,
           "num_instances": 242,
-          "mut_ref_count": 3284,
+          "mut_ref_count": 3340,
           "is_resource": true
         }
       }
     },
     "0000000000000000000000000000000000000000000000000000000000000003": {
-      "tx_count": 65081,
+      "tx_count": 65440,
       "num_instances": 1,
-      "mut_ref_count": 65076,
+      "mut_ref_count": 65435,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "sui_system.SuiSystemState": {
-          "tx_count": 65081,
+          "tx_count": 65440,
           "num_instances": 1,
-          "mut_ref_count": 65076,
+          "mut_ref_count": 65435,
           "is_resource": false
         }
       }
@@ -877,67 +877,67 @@
       }
     },
     "4cb43a298a78ab64a3181305e45cef6b4ecadf35e85c92496aa1590c11af5c70": {
-      "tx_count": 50578,
+      "tx_count": 50600,
       "num_instances": 1,
-      "mut_ref_count": 50578,
+      "mut_ref_count": 50600,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "nft.AdminCap": {
-          "tx_count": 50578,
+          "tx_count": 50600,
           "num_instances": 1,
-          "mut_ref_count": 50578,
+          "mut_ref_count": 50600,
           "is_resource": false
         }
       }
     },
     "70e34fcd390b767edbddaf7573450528698188c84c5395af8c4b12e3e37622fa": {
-      "tx_count": 48355,
+      "tx_count": 48449,
       "num_instances": 28,
-      "mut_ref_count": 3582,
+      "mut_ref_count": 3622,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "allowlist.Allowlist": {
-          "tx_count": 48355,
+          "tx_count": 48449,
           "num_instances": 28,
-          "mut_ref_count": 3582,
+          "mut_ref_count": 3622,
           "is_resource": true
         }
       }
     },
     "ea10b3c9a65427fe13194413ef9844e61acd5636ea8b007c142991f65b0aaf67": {
-      "tx_count": 44440,
+      "tx_count": 44467,
       "num_instances": 5,
-      "mut_ref_count": 44440,
+      "mut_ref_count": 44467,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "campaign.Campaign": {
-          "tx_count": 44440,
+          "tx_count": 44467,
           "num_instances": 5,
-          "mut_ref_count": 44440,
+          "mut_ref_count": 44467,
           "is_resource": true
         }
       }
     },
     "227f865230dd4fc947321619f56fee37dc7ac582eb22e3eab29816f717512d9d": {
-      "tx_count": 43297,
+      "tx_count": 43822,
       "num_instances": 2,
-      "mut_ref_count": 43297,
+      "mut_ref_count": 43822,
       "num_types": 2,
       "num_resources": 0,
       "types": {
         "liquidity_pool.GlobalStorage": {
-          "tx_count": 40729,
+          "tx_count": 41249,
           "num_instances": 1,
-          "mut_ref_count": 40729,
+          "mut_ref_count": 41249,
           "is_resource": false
         },
         "limit_order.GlobalStorage": {
-          "tx_count": 2568,
+          "tx_count": 2573,
           "num_instances": 1,
-          "mut_ref_count": 2568,
+          "mut_ref_count": 2573,
           "is_resource": false
         }
       }
@@ -958,17 +958,38 @@
       }
     },
     "62285e6bf9ce841f9bf98b7e3a8e4478e02219135cf2bc1ccaf409ec5883f7b6": {
-      "tx_count": 42560,
+      "tx_count": 43052,
       "num_instances": 1,
-      "mut_ref_count": 42560,
+      "mut_ref_count": 43052,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "vault.Vault": {
-          "tx_count": 42560,
+          "tx_count": 43052,
           "num_instances": 1,
-          "mut_ref_count": 42560,
+          "mut_ref_count": 43052,
           "is_resource": false
+        }
+      }
+    },
+    "c51203fb802e09f7bdb87e8433ea2fa4a19068164040f5fac284a032ee433e7a": {
+      "tx_count": 42658,
+      "num_instances": 2,
+      "mut_ref_count": 42658,
+      "num_types": 2,
+      "num_resources": 2,
+      "types": {
+        "kiosk_trade.Market": {
+          "tx_count": 42655,
+          "num_instances": 1,
+          "mut_ref_count": 42655,
+          "is_resource": true
+        },
+        "kiosk_offer_collection.CollectionOfferData": {
+          "tx_count": 3,
+          "num_instances": 1,
+          "mut_ref_count": 3,
+          "is_resource": true
         }
       }
     },
@@ -987,75 +1008,54 @@
         }
       }
     },
-    "c51203fb802e09f7bdb87e8433ea2fa4a19068164040f5fac284a032ee433e7a": {
-      "tx_count": 42056,
-      "num_instances": 2,
-      "mut_ref_count": 42056,
-      "num_types": 2,
-      "num_resources": 2,
-      "types": {
-        "kiosk_trade.Market": {
-          "tx_count": 42053,
-          "num_instances": 1,
-          "mut_ref_count": 42053,
-          "is_resource": true
-        },
-        "kiosk_offer_collection.CollectionOfferData": {
-          "tx_count": 3,
-          "num_instances": 1,
-          "mut_ref_count": 3,
-          "is_resource": true
-        }
-      }
-    },
     "f45f752bc45dadff2ebc867c69af682c7192686d2455f655e2c54c9c75e95cff": {
-      "tx_count": 41093,
-      "num_instances": 5871,
-      "mut_ref_count": 35217,
+      "tx_count": 41355,
+      "num_instances": 5897,
+      "mut_ref_count": 35469,
       "num_types": 4,
       "num_resources": 2,
       "types": {
         "profile.Profile": {
-          "tx_count": 23576,
-          "num_instances": 2618,
-          "mut_ref_count": 17700,
+          "tx_count": 23726,
+          "num_instances": 2622,
+          "mut_ref_count": 17840,
           "is_resource": true
         },
         "post.Post": {
-          "tx_count": 8743,
-          "num_instances": 3251,
-          "mut_ref_count": 8743,
+          "tx_count": 8770,
+          "num_instances": 3273,
+          "mut_ref_count": 8770,
           "is_resource": true
         },
         "releap_social.RecentPosts": {
-          "tx_count": 5607,
+          "tx_count": 5687,
           "num_instances": 1,
-          "mut_ref_count": 5607,
+          "mut_ref_count": 5687,
           "is_resource": false
         },
         "releap_social.Index": {
-          "tx_count": 3167,
+          "tx_count": 3172,
           "num_instances": 1,
-          "mut_ref_count": 3167,
+          "mut_ref_count": 3172,
           "is_resource": false
         }
       }
     },
     "02be8c4a1a3cea4d3255d870d367c87838a8cc2bfe4f216a6b67b153027087a7": {
-      "tx_count": 35817,
+      "tx_count": 35859,
       "num_instances": 290,
-      "mut_ref_count": 24990,
+      "mut_ref_count": 25014,
       "num_types": 5,
       "num_resources": 3,
       "types": {
         "keepsake_marketplace.Marketplace": {
-          "tx_count": 12882,
+          "tx_count": 12903,
           "num_instances": 1,
-          "mut_ref_count": 12882,
+          "mut_ref_count": 12903,
           "is_resource": false
         },
         "transfer_policy.TransferPolicy": {
-          "tx_count": 10786,
+          "tx_count": 10804,
           "num_instances": 202,
           "mut_ref_count": 194,
           "is_resource": true
@@ -1067,9 +1067,9 @@
           "is_resource": true
         },
         "keepsake_royalties.BpsRoyaltyStrategy": {
-          "tx_count": 3028,
+          "tx_count": 3031,
           "num_instances": 63,
-          "mut_ref_count": 3028,
+          "mut_ref_count": 3031,
           "is_resource": false
         },
         "transfer_policy.AdminList": {
@@ -1081,16 +1081,16 @@
       }
     },
     "5c45d10c26c5fb53bfaff819666da6bc7053d2190dfa29fec311cc666ff1f4b0": {
-      "tx_count": 34591,
+      "tx_count": 35310,
       "num_instances": 1,
-      "mut_ref_count": 34591,
+      "mut_ref_count": 35310,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "core.DEXStorage": {
-          "tx_count": 34591,
+          "tx_count": 35310,
           "num_instances": 1,
-          "mut_ref_count": 34591,
+          "mut_ref_count": 35310,
           "is_resource": false
         }
       }
@@ -1123,55 +1123,55 @@
       }
     },
     "fe038ab8e564341ce0601926550d5cfd76573e1d94c4256324c6f5b6a7297b06": {
-      "tx_count": 33807,
+      "tx_count": 33831,
       "num_instances": 4,
-      "mut_ref_count": 33807,
+      "mut_ref_count": 33831,
       "num_types": 4,
       "num_resources": 4,
       "types": {
         "farming.FarmingData": {
-          "tx_count": 8465,
+          "tx_count": 8471,
           "num_instances": 1,
-          "mut_ref_count": 8465,
+          "mut_ref_count": 8471,
           "is_resource": true
         },
         "farming.Reward": {
-          "tx_count": 8460,
+          "tx_count": 8466,
           "num_instances": 1,
-          "mut_ref_count": 8460,
+          "mut_ref_count": 8466,
           "is_resource": true
         },
         "farming.LPLocked": {
-          "tx_count": 8444,
+          "tx_count": 8450,
           "num_instances": 1,
-          "mut_ref_count": 8444,
+          "mut_ref_count": 8450,
           "is_resource": true
         },
         "farming.PoolUsers": {
-          "tx_count": 8438,
+          "tx_count": 8444,
           "num_instances": 1,
-          "mut_ref_count": 8438,
+          "mut_ref_count": 8444,
           "is_resource": true
         }
       }
     },
     "f0865c67c2bf2dfa10e131f939aea54e06ea7825d2cb66afc4e5652b6b727127": {
-      "tx_count": 32399,
+      "tx_count": 33805,
       "num_instances": 2,
-      "mut_ref_count": 32399,
+      "mut_ref_count": 33805,
       "num_types": 2,
       "num_resources": 1,
       "types": {
         "pool.Pool": {
-          "tx_count": 16201,
+          "tx_count": 16904,
           "num_instances": 1,
-          "mut_ref_count": 16201,
+          "mut_ref_count": 16904,
           "is_resource": false
         },
         "pool.AccessList": {
-          "tx_count": 16198,
+          "tx_count": 16901,
           "num_instances": 1,
-          "mut_ref_count": 16198,
+          "mut_ref_count": 16901,
           "is_resource": true
         }
       }
@@ -1213,16 +1213,37 @@
       }
     },
     "a8ddb49a989235f99c1100cad86e79685aca4cde696d1c4f084296917b2d0813": {
-      "tx_count": 29600,
+      "tx_count": 29876,
       "num_instances": 1,
-      "mut_ref_count": 29600,
+      "mut_ref_count": 29876,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "jk.AccessList": {
-          "tx_count": 29600,
+          "tx_count": 29876,
           "num_instances": 1,
-          "mut_ref_count": 29600,
+          "mut_ref_count": 29876,
+          "is_resource": true
+        }
+      }
+    },
+    "ee68a4f9a04b177ef65455c89e4c462ed5a4cd486ecac463407dd80e565c7420": {
+      "tx_count": 29605,
+      "num_instances": 2,
+      "mut_ref_count": 29605,
+      "num_types": 2,
+      "num_resources": 2,
+      "types": {
+        "kiosk_offer_collection_v2.BidderBagV2": {
+          "tx_count": 16053,
+          "num_instances": 1,
+          "mut_ref_count": 16053,
+          "is_resource": true
+        },
+        "kiosk_offer_collection_v2.CollectionOfferDataV2": {
+          "tx_count": 13552,
+          "num_instances": 1,
+          "mut_ref_count": 13552,
           "is_resource": true
         }
       }
@@ -1242,44 +1263,23 @@
         }
       }
     },
-    "ee68a4f9a04b177ef65455c89e4c462ed5a4cd486ecac463407dd80e565c7420": {
-      "tx_count": 29055,
-      "num_instances": 2,
-      "mut_ref_count": 29055,
-      "num_types": 2,
-      "num_resources": 2,
-      "types": {
-        "kiosk_offer_collection_v2.BidderBagV2": {
-          "tx_count": 15727,
-          "num_instances": 1,
-          "mut_ref_count": 15727,
-          "is_resource": true
-        },
-        "kiosk_offer_collection_v2.CollectionOfferDataV2": {
-          "tx_count": 13328,
-          "num_instances": 1,
-          "mut_ref_count": 13328,
-          "is_resource": true
-        }
-      }
-    },
     "81f077d146435758456c9962dffc03425af3c47f0b442869af63bf898b6c3ecf": {
-      "tx_count": 27682,
+      "tx_count": 28968,
       "num_instances": 3,
-      "mut_ref_count": 27682,
+      "mut_ref_count": 28968,
       "num_types": 3,
       "num_resources": 3,
       "types": {
         "vault.Vault": {
-          "tx_count": 12961,
+          "tx_count": 13604,
           "num_instances": 1,
-          "mut_ref_count": 12961,
+          "mut_ref_count": 13604,
           "is_resource": true
         },
         "game_controller.Controller": {
-          "tx_count": 12916,
+          "tx_count": 13559,
           "num_instances": 1,
-          "mut_ref_count": 12916,
+          "mut_ref_count": 13559,
           "is_resource": true
         },
         "xluck_reward.Reward": {
@@ -1291,14 +1291,14 @@
       }
     },
     "aa2a2cfcbf56c651088854c00b1bebac7ce8d6c81367569fe77a9513a021f9eb": {
-      "tx_count": 27629,
+      "tx_count": 27630,
       "num_instances": 46,
       "mut_ref_count": 620,
       "num_types": 2,
       "num_resources": 0,
       "types": {
         "minter.Config": {
-          "tx_count": 27017,
+          "tx_count": 27018,
           "num_instances": 1,
           "mut_ref_count": 8,
           "is_resource": false
@@ -1326,92 +1326,92 @@
         }
       }
     },
-    "b888907b2d86fc1c39ee7574777f603a708897c71f0ab815998f50760cccebef": {
-      "tx_count": 24798,
-      "num_instances": 1,
-      "mut_ref_count": 24798,
-      "num_types": 1,
-      "num_resources": 1,
-      "types": {
-        "ferret.AccessList": {
-          "tx_count": 24798,
-          "num_instances": 1,
-          "mut_ref_count": 24798,
-          "is_resource": true
-        }
-      }
-    },
     "6916b60ae826f14b3e2d7aa9c7eaf491a489379e2357c2819f48dde75a45ab58": {
-      "tx_count": 24030,
+      "tx_count": 26878,
       "num_instances": 7,
-      "mut_ref_count": 24025,
+      "mut_ref_count": 26873,
       "num_types": 4,
       "num_resources": 3,
       "types": {
         "nft.Phaser": {
-          "tx_count": 8737,
+          "tx_count": 9242,
           "num_instances": 2,
-          "mut_ref_count": 8737,
+          "mut_ref_count": 9242,
           "is_resource": true
         },
         "nft.Collection": {
-          "tx_count": 8725,
+          "tx_count": 9228,
           "num_instances": 1,
-          "mut_ref_count": 8720,
+          "mut_ref_count": 9223,
           "is_resource": true
         },
         "nft.Registry": {
-          "tx_count": 6517,
+          "tx_count": 8352,
           "num_instances": 3,
-          "mut_ref_count": 6517,
+          "mut_ref_count": 8352,
           "is_resource": false
         },
         "nft.Wallet": {
-          "tx_count": 51,
+          "tx_count": 56,
           "num_instances": 1,
-          "mut_ref_count": 51,
+          "mut_ref_count": 56,
           "is_resource": true
         }
       }
     },
-    "5711036356989c25395de76cacd0abf01dd4d6dd9f84a3e170ef16fd2258d180": {
-      "tx_count": 22949,
-      "num_instances": 9,
-      "mut_ref_count": 22949,
-      "num_types": 2,
+    "b888907b2d86fc1c39ee7574777f603a708897c71f0ab815998f50760cccebef": {
+      "tx_count": 24873,
+      "num_instances": 1,
+      "mut_ref_count": 24873,
+      "num_types": 1,
       "num_resources": 1,
       "types": {
-        "staking_nft.PoolInfo": {
-          "tx_count": 15030,
-          "num_instances": 8,
-          "mut_ref_count": 15030,
-          "is_resource": true
-        },
-        "staking_nft.NftStakingMetadata": {
-          "tx_count": 7919,
+        "ferret.AccessList": {
+          "tx_count": 24873,
           "num_instances": 1,
-          "mut_ref_count": 7919,
-          "is_resource": false
+          "mut_ref_count": 24873,
+          "is_resource": true
         }
       }
     },
     "a0eba10b173538c8fecca1dff298e488402cc9ff374f8a12ca7758eebe830b66": {
-      "tx_count": 22837,
+      "tx_count": 23303,
       "num_instances": 5,
-      "mut_ref_count": 22829,
+      "mut_ref_count": 23295,
       "num_types": 2,
       "num_resources": 0,
       "types": {
         "spot_dex.Pool": {
-          "tx_count": 22825,
+          "tx_count": 23291,
           "num_instances": 4,
-          "mut_ref_count": 22825,
+          "mut_ref_count": 23291,
           "is_resource": false
         },
         "spot_dex.ProtocolConfigs": {
           "tx_count": 12,
           "num_instances": 1,
           "mut_ref_count": 4,
+          "is_resource": false
+        }
+      }
+    },
+    "5711036356989c25395de76cacd0abf01dd4d6dd9f84a3e170ef16fd2258d180": {
+      "tx_count": 23076,
+      "num_instances": 9,
+      "mut_ref_count": 23076,
+      "num_types": 2,
+      "num_resources": 1,
+      "types": {
+        "staking_nft.PoolInfo": {
+          "tx_count": 15126,
+          "num_instances": 8,
+          "mut_ref_count": 15126,
+          "is_resource": true
+        },
+        "staking_nft.NftStakingMetadata": {
+          "tx_count": 7950,
+          "num_instances": 1,
+          "mut_ref_count": 7950,
           "is_resource": false
         }
       }
@@ -1444,37 +1444,37 @@
       }
     },
     "9e69acc50ca03bc943c4f7c5304c2a6002d507b51c11913b247159c60422c606": {
-      "tx_count": 22022,
+      "tx_count": 22126,
       "num_instances": 2,
-      "mut_ref_count": 21926,
+      "mut_ref_count": 22030,
       "num_types": 2,
       "num_resources": 0,
       "types": {
         "xcetus.XcetusManager": {
-          "tx_count": 11060,
+          "tx_count": 11112,
           "num_instances": 1,
-          "mut_ref_count": 10964,
+          "mut_ref_count": 11016,
           "is_resource": false
         },
         "locking.LockUpManager": {
-          "tx_count": 10962,
+          "tx_count": 11014,
           "num_instances": 1,
-          "mut_ref_count": 10962,
+          "mut_ref_count": 11014,
           "is_resource": false
         }
       }
     },
     "26efee2b51c911237888e5dc6702868abca3c7ac12c53f76ef8eba0697695e3d": {
-      "tx_count": 21741,
+      "tx_count": 21863,
       "num_instances": 1,
-      "mut_ref_count": 21739,
+      "mut_ref_count": 21861,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "state.State": {
-          "tx_count": 21741,
+          "tx_count": 21863,
           "num_instances": 1,
-          "mut_ref_count": 21739,
+          "mut_ref_count": 21861,
           "is_resource": true
         }
       }
@@ -1495,37 +1495,37 @@
       }
     },
     "d22b24490e0bae52676651b4f56660a5ff8022a2576e0089f79b3c88d44e08f0": {
-      "tx_count": 19992,
+      "tx_count": 20059,
       "num_instances": 2,
-      "mut_ref_count": 19992,
+      "mut_ref_count": 20059,
       "num_types": 2,
       "num_resources": 1,
       "types": {
         "auction.AuctionHouse": {
-          "tx_count": 12423,
+          "tx_count": 12457,
           "num_instances": 1,
-          "mut_ref_count": 12423,
+          "mut_ref_count": 12457,
           "is_resource": true
         },
         "suins.SuiNS": {
-          "tx_count": 7569,
+          "tx_count": 7602,
           "num_instances": 1,
-          "mut_ref_count": 7569,
+          "mut_ref_count": 7602,
           "is_resource": false
         }
       }
     },
     "88d362329ede856f5f67867929ed570bba06c975abec2fab7f0601c56f6a8cb1": {
-      "tx_count": 19129,
+      "tx_count": 19369,
       "num_instances": 1,
-      "mut_ref_count": 19129,
+      "mut_ref_count": 19369,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "animeswap.LiquidityPools": {
-          "tx_count": 19129,
+          "tx_count": 19369,
           "num_instances": 1,
-          "mut_ref_count": 19129,
+          "mut_ref_count": 19369,
           "is_resource": false
         }
       }
@@ -1569,6 +1569,21 @@
         }
       }
     },
+    "82eebf11a7d6c13c7b6edf5344cb262f61e4fe36ff3305482dce22f58b212224": {
+      "tx_count": 17779,
+      "num_instances": 1,
+      "mut_ref_count": 17779,
+      "num_types": 1,
+      "num_resources": 1,
+      "types": {
+        "arena.GemStash": {
+          "tx_count": 17779,
+          "num_instances": 1,
+          "mut_ref_count": 17779,
+          "is_resource": true
+        }
+      }
+    },
     "1abe7dac235220b3754ba1f69c304924ab88bdf2070f326597ff470feb750bcb": {
       "tx_count": 17105,
       "num_instances": 5,
@@ -1602,32 +1617,17 @@
         }
       }
     },
-    "82eebf11a7d6c13c7b6edf5344cb262f61e4fe36ff3305482dce22f58b212224": {
-      "tx_count": 15811,
-      "num_instances": 1,
-      "mut_ref_count": 15811,
-      "num_types": 1,
-      "num_resources": 1,
-      "types": {
-        "arena.GemStash": {
-          "tx_count": 15811,
-          "num_instances": 1,
-          "mut_ref_count": 15811,
-          "is_resource": true
-        }
-      }
-    },
     "7a30a0db7f20f942f60668db29ab3b522d17eb3473f30b03d873ea8926e281ee": {
-      "tx_count": 15313,
+      "tx_count": 15536,
       "num_instances": 1,
-      "mut_ref_count": 15313,
+      "mut_ref_count": 15536,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "executor.BasePool": {
-          "tx_count": 15313,
+          "tx_count": 15536,
           "num_instances": 1,
-          "mut_ref_count": 15313,
+          "mut_ref_count": 15536,
           "is_resource": false
         }
       }
@@ -1658,6 +1658,42 @@
           "tx_count": 14768,
           "num_instances": 1,
           "mut_ref_count": 7425,
+          "is_resource": true
+        }
+      }
+    },
+    "58156e414780a5a237db71afb0d852674eff8cd98f9572104cb79afeb4ad1e9d": {
+      "tx_count": 14628,
+      "num_instances": 2,
+      "mut_ref_count": 14628,
+      "num_types": 2,
+      "num_resources": 0,
+      "types": {
+        "suinet.MintConfig": {
+          "tx_count": 8404,
+          "num_instances": 1,
+          "mut_ref_count": 8404,
+          "is_resource": false
+        },
+        "suibridge.Bridge": {
+          "tx_count": 6224,
+          "num_instances": 1,
+          "mut_ref_count": 6224,
+          "is_resource": false
+        }
+      }
+    },
+    "a0b79c69d5fdc0172b468d070e4636f14ee6e0a820196d306a48c39a600ac5f5": {
+      "tx_count": 14480,
+      "num_instances": 1,
+      "mut_ref_count": 14480,
+      "num_types": 1,
+      "num_resources": 1,
+      "types": {
+        "jk.AccessList": {
+          "tx_count": 14480,
+          "num_instances": 1,
+          "mut_ref_count": 14480,
           "is_resource": true
         }
       }
@@ -1695,42 +1731,6 @@
         }
       }
     },
-    "58156e414780a5a237db71afb0d852674eff8cd98f9572104cb79afeb4ad1e9d": {
-      "tx_count": 14315,
-      "num_instances": 2,
-      "mut_ref_count": 14315,
-      "num_types": 2,
-      "num_resources": 0,
-      "types": {
-        "suinet.MintConfig": {
-          "tx_count": 8151,
-          "num_instances": 1,
-          "mut_ref_count": 8151,
-          "is_resource": false
-        },
-        "suibridge.Bridge": {
-          "tx_count": 6164,
-          "num_instances": 1,
-          "mut_ref_count": 6164,
-          "is_resource": false
-        }
-      }
-    },
-    "a0b79c69d5fdc0172b468d070e4636f14ee6e0a820196d306a48c39a600ac5f5": {
-      "tx_count": 14053,
-      "num_instances": 1,
-      "mut_ref_count": 14053,
-      "num_types": 1,
-      "num_resources": 1,
-      "types": {
-        "jk.AccessList": {
-          "tx_count": 14053,
-          "num_instances": 1,
-          "mut_ref_count": 14053,
-          "is_resource": true
-        }
-      }
-    },
     "8c07298654b9f84152c6d1849346cf1a6f2eca8d17c272c0454f04891a209bc9": {
       "tx_count": 13970,
       "num_instances": 1,
@@ -1747,16 +1747,16 @@
       }
     },
     "f5dba8346b5084d460f480698ff0305a8e847fdb08090e2e7b56cce738006743": {
-      "tx_count": 13293,
+      "tx_count": 13467,
       "num_instances": 1,
-      "mut_ref_count": 13293,
+      "mut_ref_count": 13467,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "stake.GlobalStorage": {
-          "tx_count": 13293,
+          "tx_count": 13467,
           "num_instances": 1,
-          "mut_ref_count": 13293,
+          "mut_ref_count": 13467,
           "is_resource": false
         }
       }
@@ -1777,16 +1777,16 @@
       }
     },
     "7bffb2b3f6296015dcea7e1dc41c602daff0508230db6360ff6014933ce000c7": {
-      "tx_count": 12673,
+      "tx_count": 12872,
       "num_instances": 1,
-      "mut_ref_count": 12673,
+      "mut_ref_count": 12872,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "s.Vault": {
-          "tx_count": 12673,
+          "tx_count": 12872,
           "num_instances": 1,
-          "mut_ref_count": 12673,
+          "mut_ref_count": 12872,
           "is_resource": false
         }
       }
@@ -1927,55 +1927,55 @@
       }
     },
     "3ac5d05edffefeaa7387c234de3a9f25a3a72f6d96b5efb560d81df77899cf74": {
-      "tx_count": 9480,
+      "tx_count": 9504,
       "num_instances": 4,
-      "mut_ref_count": 9480,
+      "mut_ref_count": 9504,
       "num_types": 4,
       "num_resources": 0,
       "types": {
         "master_chef.MasterChefBalanceStorage": {
-          "tx_count": 2419,
+          "tx_count": 2425,
           "num_instances": 1,
-          "mut_ref_count": 2419,
+          "mut_ref_count": 2425,
           "is_resource": false
         },
         "master_chef.MasterChefStorage": {
-          "tx_count": 2381,
+          "tx_count": 2387,
           "num_instances": 1,
-          "mut_ref_count": 2381,
+          "mut_ref_count": 2387,
           "is_resource": false
         },
         "master_chef.AccountStorage": {
-          "tx_count": 2381,
+          "tx_count": 2387,
           "num_instances": 1,
-          "mut_ref_count": 2381,
+          "mut_ref_count": 2387,
           "is_resource": false
         },
         "sip.SIPStorage": {
-          "tx_count": 2299,
+          "tx_count": 2305,
           "num_instances": 1,
-          "mut_ref_count": 2299,
+          "mut_ref_count": 2305,
           "is_resource": false
         }
       }
     },
     "3412f5d7819fddb9d504a422177e3cc62c029f08002a0d51c0f7cfd93cfdfbcc": {
-      "tx_count": 9398,
+      "tx_count": 9414,
       "num_instances": 2,
-      "mut_ref_count": 9398,
+      "mut_ref_count": 9414,
       "num_types": 2,
       "num_resources": 0,
       "types": {
         "staking.StakingPool": {
-          "tx_count": 4853,
+          "tx_count": 4861,
           "num_instances": 1,
-          "mut_ref_count": 4853,
+          "mut_ref_count": 4861,
           "is_resource": false
         },
         "staking.StakingHub": {
-          "tx_count": 4545,
+          "tx_count": 4553,
           "num_instances": 1,
-          "mut_ref_count": 4545,
+          "mut_ref_count": 4553,
           "is_resource": false
         }
       }
@@ -2017,49 +2017,49 @@
       }
     },
     "9996b50e2a84d87072c94d4eaee686fe73d7556f1015c83d054f3e05a6da4824": {
-      "tx_count": 8695,
+      "tx_count": 8699,
       "num_instances": 2,
-      "mut_ref_count": 8695,
+      "mut_ref_count": 8699,
       "num_types": 2,
       "num_resources": 0,
       "types": {
         "swap.RyuSwap": {
-          "tx_count": 4402,
+          "tx_count": 4404,
           "num_instances": 1,
-          "mut_ref_count": 4402,
+          "mut_ref_count": 4404,
           "is_resource": false
         },
         "dao_fee.DaoFeeInfo": {
-          "tx_count": 4293,
+          "tx_count": 4295,
           "num_instances": 1,
-          "mut_ref_count": 4293,
+          "mut_ref_count": 4295,
           "is_resource": false
         }
       }
     },
     "075a2c16938fba807c6e9ff14069bb55e3b7309d184e61e93f2cda22622a29b9": {
-      "tx_count": 8517,
+      "tx_count": 8525,
       "num_instances": 3,
-      "mut_ref_count": 4120,
+      "mut_ref_count": 4125,
       "num_types": 3,
       "num_resources": 3,
       "types": {
         "utils.Version": {
-          "tx_count": 3968,
+          "tx_count": 3971,
           "num_instances": 1,
           "mut_ref_count": 1,
           "is_resource": true
         },
         "port.Stake": {
-          "tx_count": 2698,
+          "tx_count": 2701,
           "num_instances": 1,
-          "mut_ref_count": 2268,
+          "mut_ref_count": 2271,
           "is_resource": true
         },
         "port.Plan": {
-          "tx_count": 1851,
+          "tx_count": 1853,
           "num_instances": 1,
-          "mut_ref_count": 1851,
+          "mut_ref_count": 1853,
           "is_resource": true
         }
       }
@@ -2136,33 +2136,33 @@
         }
       }
     },
-    "d0954759844416e4f5451a1a4798f6c1d43721e20fbd1c29fe86a20bf7fd2f52": {
-      "tx_count": 8264,
-      "num_instances": 1,
-      "mut_ref_count": 8264,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "factory.Global": {
-          "tx_count": 8264,
-          "num_instances": 1,
-          "mut_ref_count": 8264,
-          "is_resource": false
-        }
-      }
-    },
     "e2c7a6843cb13d9549a9d2dc1c266b572ead0b4b9f090e7c3c46de2714102b43": {
-      "tx_count": 8256,
+      "tx_count": 8286,
       "num_instances": 22,
       "mut_ref_count": 3,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "request.Policy": {
-          "tx_count": 8256,
+          "tx_count": 8286,
           "num_instances": 22,
           "mut_ref_count": 3,
           "is_resource": true
+        }
+      }
+    },
+    "d0954759844416e4f5451a1a4798f6c1d43721e20fbd1c29fe86a20bf7fd2f52": {
+      "tx_count": 8267,
+      "num_instances": 1,
+      "mut_ref_count": 8267,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "factory.Global": {
+          "tx_count": 8267,
+          "num_instances": 1,
+          "mut_ref_count": 8267,
+          "is_resource": false
         }
       }
     },
@@ -2182,61 +2182,82 @@
       }
     },
     "165f01c1cd0e30b65b43f14f86b947ce28e61cb37b04f2cedffbb806e222d3de": {
-      "tx_count": 8012,
+      "tx_count": 8017,
       "num_instances": 5,
-      "mut_ref_count": 8012,
+      "mut_ref_count": 8017,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "claim.Claim": {
-          "tx_count": 8012,
+          "tx_count": 8017,
           "num_instances": 5,
-          "mut_ref_count": 8012,
+          "mut_ref_count": 8017,
           "is_resource": true
         }
       }
     },
     "7aee872d77cade27e7d9b79bf9c67ac40bfb1b797e8b7438ee73f0af21bb4664": {
-      "tx_count": 7691,
+      "tx_count": 7729,
       "num_instances": 1,
-      "mut_ref_count": 7691,
+      "mut_ref_count": 7729,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "store.AccessoriesStore": {
-          "tx_count": 7691,
+          "tx_count": 7729,
           "num_instances": 1,
-          "mut_ref_count": 7691,
+          "mut_ref_count": 7729,
           "is_resource": false
         }
       }
     },
     "2f6caff123c91121d4cc31f23a284d04a01efd19b09ece313fd172d697657228": {
-      "tx_count": 7614,
+      "tx_count": 7685,
       "num_instances": 1,
       "mut_ref_count": 5136,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "tocen_event_ido.TocenIdoData": {
-          "tx_count": 7614,
+          "tx_count": 7685,
           "num_instances": 1,
           "mut_ref_count": 5136,
           "is_resource": true
         }
       }
     },
+    "0ef3cc840793aae2d62d5930224ec02ce0b0a1e5281abf0a717a31f3a80c4863": {
+      "tx_count": 7592,
+      "num_instances": 134,
+      "mut_ref_count": 7592,
+      "num_types": 2,
+      "num_resources": 2,
+      "types": {
+        "releap_badge.Badge": {
+          "tx_count": 7402,
+          "num_instances": 133,
+          "mut_ref_count": 7402,
+          "is_resource": true
+        },
+        "releap_badge.BadgeStore": {
+          "tx_count": 190,
+          "num_instances": 1,
+          "mut_ref_count": 190,
+          "is_resource": true
+        }
+      }
+    },
     "6c168cd5e4ba1bea8f0df82c9232d16b1fd9a4f9555d3392c24a3f9e27a10806": {
-      "tx_count": 7526,
+      "tx_count": 7527,
       "num_instances": 3,
-      "mut_ref_count": 7526,
+      "mut_ref_count": 7527,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "claim.Claim": {
-          "tx_count": 7526,
+          "tx_count": 7527,
           "num_instances": 3,
-          "mut_ref_count": 7526,
+          "mut_ref_count": 7527,
           "is_resource": true
         }
       }
@@ -2256,27 +2277,6 @@
         }
       }
     },
-    "0ef3cc840793aae2d62d5930224ec02ce0b0a1e5281abf0a717a31f3a80c4863": {
-      "tx_count": 7500,
-      "num_instances": 133,
-      "mut_ref_count": 7500,
-      "num_types": 2,
-      "num_resources": 2,
-      "types": {
-        "releap_badge.Badge": {
-          "tx_count": 7315,
-          "num_instances": 132,
-          "mut_ref_count": 7315,
-          "is_resource": true
-        },
-        "releap_badge.BadgeStore": {
-          "tx_count": 185,
-          "num_instances": 1,
-          "mut_ref_count": 185,
-          "is_resource": true
-        }
-      }
-    },
     "653f4b3af502f94e2de56c0136582bff171088c13c718e03cb15cb2564ad8189": {
       "tx_count": 7442,
       "num_instances": 1,
@@ -2289,6 +2289,27 @@
           "num_instances": 1,
           "mut_ref_count": 7442,
           "is_resource": true
+        }
+      }
+    },
+    "32c0363c8e9f4b8782dc66aa4acb6a3d885c818de5dec8348c8a206ae2f95c08": {
+      "tx_count": 7393,
+      "num_instances": 2,
+      "mut_ref_count": 5899,
+      "num_types": 2,
+      "num_resources": 0,
+      "types": {
+        "cubi.PublicKey": {
+          "tx_count": 3697,
+          "num_instances": 1,
+          "mut_ref_count": 2203,
+          "is_resource": false
+        },
+        "cubi.CubiRegistry": {
+          "tx_count": 3696,
+          "num_instances": 1,
+          "mut_ref_count": 3696,
+          "is_resource": false
         }
       }
     },
@@ -2322,38 +2343,17 @@
         }
       }
     },
-    "32c0363c8e9f4b8782dc66aa4acb6a3d885c818de5dec8348c8a206ae2f95c08": {
-      "tx_count": 7301,
-      "num_instances": 2,
-      "mut_ref_count": 5807,
-      "num_types": 2,
-      "num_resources": 0,
-      "types": {
-        "cubi.PublicKey": {
-          "tx_count": 3651,
-          "num_instances": 1,
-          "mut_ref_count": 2157,
-          "is_resource": false
-        },
-        "cubi.CubiRegistry": {
-          "tx_count": 3650,
-          "num_instances": 1,
-          "mut_ref_count": 3650,
-          "is_resource": false
-        }
-      }
-    },
     "1ba8029641e5511d284adcdbda5498ba0987bf75d8e58fac9d7e8b0d39184be7": {
-      "tx_count": 7217,
+      "tx_count": 7218,
       "num_instances": 3,
-      "mut_ref_count": 7215,
+      "mut_ref_count": 7216,
       "num_types": 3,
       "num_resources": 2,
       "types": {
         "nft.Registry": {
-          "tx_count": 3207,
+          "tx_count": 3208,
           "num_instances": 1,
-          "mut_ref_count": 3207,
+          "mut_ref_count": 3208,
           "is_resource": false
         },
         "nft.Phaser": {
@@ -2386,43 +2386,43 @@
       }
     },
     "e9c2eaa56289b9d2132066e5f59e5164ccb01f64edba90fb63a36ffb63ff1387": {
-      "tx_count": 6995,
+      "tx_count": 7012,
       "num_instances": 2,
-      "mut_ref_count": 6995,
+      "mut_ref_count": 7012,
       "num_types": 2,
       "num_resources": 0,
       "types": {
         "wsui.SupplyBag": {
-          "tx_count": 3648,
+          "tx_count": 3657,
           "num_instances": 1,
-          "mut_ref_count": 3648,
+          "mut_ref_count": 3657,
           "is_resource": false
         },
         "implements.Global": {
-          "tx_count": 3347,
+          "tx_count": 3355,
           "num_instances": 1,
-          "mut_ref_count": 3347,
+          "mut_ref_count": 3355,
           "is_resource": false
         }
       }
     },
     "3cf6e24398c526fd1e0c46e22d4c1f88e3f3c14ba3df6fdaa6dd6d4aab202736": {
-      "tx_count": 6785,
+      "tx_count": 6934,
       "num_instances": 2,
-      "mut_ref_count": 6785,
+      "mut_ref_count": 6934,
       "num_types": 2,
       "num_resources": 0,
       "types": {
         "staking.StakingVault": {
-          "tx_count": 4683,
+          "tx_count": 4766,
           "num_instances": 1,
-          "mut_ref_count": 4683,
+          "mut_ref_count": 4766,
           "is_resource": false
         },
         "storktoken.ProtocolTreasury": {
-          "tx_count": 2102,
+          "tx_count": 2168,
           "num_instances": 1,
-          "mut_ref_count": 2102,
+          "mut_ref_count": 2168,
           "is_resource": false
         }
       }
@@ -2442,38 +2442,59 @@
         }
       }
     },
+    "dfaf58e1270365cc4dec22e006899575eb66643f72c91d8160f2acedc8fcba56": {
+      "tx_count": 6638,
+      "num_instances": 2,
+      "mut_ref_count": 3317,
+      "num_types": 2,
+      "num_resources": 1,
+      "types": {
+        "navi_aggregator.NaviAggregator": {
+          "tx_count": 3321,
+          "num_instances": 1,
+          "mut_ref_count": 3316,
+          "is_resource": true
+        },
+        "navi_aggregator.NaviAggregatorCap": {
+          "tx_count": 3317,
+          "num_instances": 1,
+          "mut_ref_count": 1,
+          "is_resource": false
+        }
+      }
+    },
     "fd2e0f4383df3ec9106326dcd9a20510cdce72146754296deed15403fcd3df8b": {
-      "tx_count": 6122,
+      "tx_count": 6200,
       "num_instances": 4,
-      "mut_ref_count": 6122,
+      "mut_ref_count": 6200,
       "num_types": 2,
       "num_resources": 0,
       "types": {
         "oracle_queue.OracleQueue": {
-          "tx_count": 3070,
+          "tx_count": 3109,
           "num_instances": 2,
-          "mut_ref_count": 3070,
+          "mut_ref_count": 3109,
           "is_resource": false
         },
         "oracle.Oracle": {
-          "tx_count": 3052,
+          "tx_count": 3091,
           "num_instances": 2,
-          "mut_ref_count": 3052,
+          "mut_ref_count": 3091,
           "is_resource": false
         }
       }
     },
     "bb96386e0846c3375de22c6918c0ba7019c5ae42589ec9c841cc92041272b5eb": {
-      "tx_count": 6112,
+      "tx_count": 6113,
       "num_instances": 1,
-      "mut_ref_count": 6112,
+      "mut_ref_count": 6113,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "tocen_stake_nft.ShareObjectStake": {
-          "tx_count": 6112,
+          "tx_count": 6113,
           "num_instances": 1,
-          "mut_ref_count": 6112,
+          "mut_ref_count": 6113,
           "is_resource": false
         }
       }
@@ -2493,65 +2514,95 @@
         }
       }
     },
-    "694fddcdf757db2ddc951ba5c8c3076f9d0e48c6895ff57f6c0888896814ccf2": {
-      "tx_count": 5865,
+    "8378b3bd39931aa74a6aa3a820304c1109d327426e4275183ed0b797eb6660a8": {
+      "tx_count": 5946,
       "num_instances": 1,
-      "mut_ref_count": 5865,
+      "mut_ref_count": 5946,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "weather.WeatherOracle": {
+          "tx_count": 5946,
+          "num_instances": 1,
+          "mut_ref_count": 5946,
+          "is_resource": false
+        }
+      }
+    },
+    "694fddcdf757db2ddc951ba5c8c3076f9d0e48c6895ff57f6c0888896814ccf2": {
+      "tx_count": 5878,
+      "num_instances": 1,
+      "mut_ref_count": 5878,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "claim.Claim": {
-          "tx_count": 5865,
+          "tx_count": 5878,
           "num_instances": 1,
-          "mut_ref_count": 5865,
+          "mut_ref_count": 5878,
           "is_resource": true
         }
       }
     },
     "2d62336f06432989088ceeac7abe2a35b21ac179871ac5252fcbdf5261e7cb78": {
-      "tx_count": 5762,
+      "tx_count": 5796,
       "num_instances": 5,
-      "mut_ref_count": 5762,
+      "mut_ref_count": 5796,
       "num_types": 4,
       "num_resources": 4,
       "types": {
         "staking.Pool": {
-          "tx_count": 4824,
+          "tx_count": 4847,
           "num_instances": 1,
-          "mut_ref_count": 4824,
+          "mut_ref_count": 4847,
           "is_resource": true
         },
         "luck_vault.Vault": {
-          "tx_count": 599,
+          "tx_count": 606,
           "num_instances": 1,
-          "mut_ref_count": 599,
+          "mut_ref_count": 606,
           "is_resource": true
         },
         "vesting.Pool": {
-          "tx_count": 279,
+          "tx_count": 282,
           "num_instances": 2,
-          "mut_ref_count": 279,
+          "mut_ref_count": 282,
           "is_resource": true
         },
         "stake_lp.Pool": {
-          "tx_count": 60,
+          "tx_count": 61,
           "num_instances": 1,
-          "mut_ref_count": 60,
+          "mut_ref_count": 61,
           "is_resource": true
         }
       }
     },
-    "785248249ac457dfd378bdc6d2fbbfec9d1daf65e9d728b820eb4888c8da2c10": {
-      "tx_count": 5613,
+    "ba153169476e8c3114962261d1edc70de5ad9781b83cc617ecc8c1923191cae0": {
+      "tx_count": 5735,
       "num_instances": 1,
-      "mut_ref_count": 5613,
+      "mut_ref_count": 5735,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "factory.Container": {
+          "tx_count": 5735,
+          "num_instances": 1,
+          "mut_ref_count": 5735,
+          "is_resource": false
+        }
+      }
+    },
+    "785248249ac457dfd378bdc6d2fbbfec9d1daf65e9d728b820eb4888c8da2c10": {
+      "tx_count": 5652,
+      "num_instances": 1,
+      "mut_ref_count": 5652,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "dividend.DividendManager": {
-          "tx_count": 5613,
+          "tx_count": 5652,
           "num_instances": 1,
-          "mut_ref_count": 5613,
+          "mut_ref_count": 5652,
           "is_resource": false
         }
       }
@@ -2571,32 +2622,32 @@
         }
       }
     },
-    "ba153169476e8c3114962261d1edc70de5ad9781b83cc617ecc8c1923191cae0": {
-      "tx_count": 5445,
+    "bd971c49521f2e144ac79ad4dafcc56ecb3edba77ff34bc620707b9dd0267bdd": {
+      "tx_count": 5359,
       "num_instances": 1,
-      "mut_ref_count": 5445,
+      "mut_ref_count": 5359,
       "num_types": 1,
-      "num_resources": 0,
+      "num_resources": 1,
       "types": {
-        "factory.Container": {
-          "tx_count": 5445,
+        "xluck_reward.NewReward": {
+          "tx_count": 5359,
           "num_instances": 1,
-          "mut_ref_count": 5445,
-          "is_resource": false
+          "mut_ref_count": 5359,
+          "is_resource": true
         }
       }
     },
     "9ec6f17e19c5e64c8872779a635235497fd6c71f7b5c23b07f652b02a240c84a": {
-      "tx_count": 5295,
+      "tx_count": 5334,
       "num_instances": 1,
-      "mut_ref_count": 5295,
+      "mut_ref_count": 5334,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "global_storage.GlobalStorage": {
-          "tx_count": 5295,
+          "tx_count": 5334,
           "num_instances": 1,
-          "mut_ref_count": 5295,
+          "mut_ref_count": 5334,
           "is_resource": false
         }
       }
@@ -2616,38 +2667,44 @@
         }
       }
     },
-    "bd971c49521f2e144ac79ad4dafcc56ecb3edba77ff34bc620707b9dd0267bdd": {
-      "tx_count": 5063,
-      "num_instances": 1,
-      "mut_ref_count": 5063,
-      "num_types": 1,
-      "num_resources": 1,
+    "5ac3e7cc412366ce4476d41ccaf7885eb7b02668b6957ca224cfe4fa21b1afbe": {
+      "tx_count": 5101,
+      "num_instances": 4,
+      "mut_ref_count": 5101,
+      "num_types": 2,
+      "num_resources": 2,
       "types": {
-        "xluck_reward.NewReward": {
-          "tx_count": 5063,
+        "ido_claim_public.PoolClaim": {
+          "tx_count": 2552,
+          "num_instances": 3,
+          "mut_ref_count": 2552,
+          "is_resource": true
+        },
+        "ido_claim_public.TocenIdoDataClaim": {
+          "tx_count": 2549,
           "num_instances": 1,
-          "mut_ref_count": 5063,
+          "mut_ref_count": 2549,
           "is_resource": true
         }
       }
     },
     "55fab02e26a9eb86547661c802ad21516e2ce0b8d83a91824a05ffde8e699942": {
-      "tx_count": 5031,
+      "tx_count": 5035,
       "num_instances": 6,
-      "mut_ref_count": 5031,
+      "mut_ref_count": 5035,
       "num_types": 4,
       "num_resources": 1,
       "types": {
         "marketplace_module.Container": {
-          "tx_count": 2066,
+          "tx_count": 2068,
           "num_instances": 3,
-          "mut_ref_count": 2066,
+          "mut_ref_count": 2068,
           "is_resource": false
         },
         "marketplace_module.Marketplace": {
-          "tx_count": 1985,
+          "tx_count": 1987,
           "num_instances": 1,
-          "mut_ref_count": 1985,
+          "mut_ref_count": 1987,
           "is_resource": false
         },
         "marketplace_module.Admin": {
@@ -2676,42 +2733,6 @@
           "num_instances": 1,
           "mut_ref_count": 5018,
           "is_resource": true
-        }
-      }
-    },
-    "5ac3e7cc412366ce4476d41ccaf7885eb7b02668b6957ca224cfe4fa21b1afbe": {
-      "tx_count": 4959,
-      "num_instances": 4,
-      "mut_ref_count": 4959,
-      "num_types": 2,
-      "num_resources": 2,
-      "types": {
-        "ido_claim_public.PoolClaim": {
-          "tx_count": 2481,
-          "num_instances": 3,
-          "mut_ref_count": 2481,
-          "is_resource": true
-        },
-        "ido_claim_public.TocenIdoDataClaim": {
-          "tx_count": 2478,
-          "num_instances": 1,
-          "mut_ref_count": 2478,
-          "is_resource": true
-        }
-      }
-    },
-    "8378b3bd39931aa74a6aa3a820304c1109d327426e4275183ed0b797eb6660a8": {
-      "tx_count": 4751,
-      "num_instances": 1,
-      "mut_ref_count": 4751,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "weather.WeatherOracle": {
-          "tx_count": 4751,
-          "num_instances": 1,
-          "mut_ref_count": 4751,
-          "is_resource": false
         }
       }
     },
@@ -2814,6 +2835,21 @@
         }
       }
     },
+    "a3f091e9aac4747a85469298bb3e91f751a0c3b70a3aec5c1d425ffc2e673bab": {
+      "tx_count": 4252,
+      "num_instances": 1,
+      "mut_ref_count": 4252,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "marketplace.Marketplace": {
+          "tx_count": 4252,
+          "num_instances": 1,
+          "mut_ref_count": 4252,
+          "is_resource": false
+        }
+      }
+    },
     "cca18faec0dbe4b35ffc8e95308aa008c7b3eba38c2a9ddedf861b96cbc74ee2": {
       "tx_count": 4247,
       "num_instances": 1,
@@ -2826,21 +2862,6 @@
           "num_instances": 1,
           "mut_ref_count": 4247,
           "is_resource": true
-        }
-      }
-    },
-    "a3f091e9aac4747a85469298bb3e91f751a0c3b70a3aec5c1d425ffc2e673bab": {
-      "tx_count": 4149,
-      "num_instances": 1,
-      "mut_ref_count": 4149,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "marketplace.Marketplace": {
-          "tx_count": 4149,
-          "num_instances": 1,
-          "mut_ref_count": 4149,
-          "is_resource": false
         }
       }
     },
@@ -2904,17 +2925,32 @@
         }
       }
     },
+    "08d79f4d920b03d88faca1e421af023a87fbb1e4a6fd200248e6e9998d09e470": {
+      "tx_count": 3616,
+      "num_instances": 5,
+      "mut_ref_count": 2787,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "aggregator.Aggregator": {
+          "tx_count": 3616,
+          "num_instances": 5,
+          "mut_ref_count": 2787,
+          "is_resource": false
+        }
+      }
+    },
     "f1e7b4093872df432b2adb50533a1fa6f9e4b20856217657242fe7d9d4ac42e8": {
-      "tx_count": 3588,
+      "tx_count": 3595,
       "num_instances": 1,
-      "mut_ref_count": 3588,
+      "mut_ref_count": 3595,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "ethos_squad.EthosSquadMaintainer": {
-          "tx_count": 3588,
+          "tx_count": 3595,
           "num_instances": 1,
-          "mut_ref_count": 3588,
+          "mut_ref_count": 3595,
           "is_resource": false
         }
       }
@@ -2934,21 +2970,6 @@
         }
       }
     },
-    "08d79f4d920b03d88faca1e421af023a87fbb1e4a6fd200248e6e9998d09e470": {
-      "tx_count": 3566,
-      "num_instances": 5,
-      "mut_ref_count": 2750,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "aggregator.Aggregator": {
-          "tx_count": 3566,
-          "num_instances": 5,
-          "mut_ref_count": 2750,
-          "is_resource": false
-        }
-      }
-    },
     "449d6a4d13e5ddf4392d5fa395cb2a30eeadfe888fbd4656995fcfee142a3121": {
       "tx_count": 3566,
       "num_instances": 1,
@@ -2961,6 +2982,21 @@
           "num_instances": 1,
           "mut_ref_count": 3566,
           "is_resource": true
+        }
+      }
+    },
+    "da691d321641786d758d7435d0e230a7125777566c75b34c5742591163a252c3": {
+      "tx_count": 3501,
+      "num_instances": 1,
+      "mut_ref_count": 3316,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "oracle.PriceOracle": {
+          "tx_count": 3501,
+          "num_instances": 1,
+          "mut_ref_count": 3316,
+          "is_resource": false
         }
       }
     },
@@ -2986,22 +3022,22 @@
       }
     },
     "31ecfcd3da0c0a4271134828cabf295fbd8e4512c4ffd3d9269fad323080a39e": {
-      "tx_count": 3397,
+      "tx_count": 3399,
       "num_instances": 3,
-      "mut_ref_count": 3397,
+      "mut_ref_count": 3399,
       "num_types": 3,
       "num_resources": 0,
       "types": {
         "store.StoreHub": {
-          "tx_count": 2386,
+          "tx_count": 2387,
           "num_instances": 1,
-          "mut_ref_count": 2386,
+          "mut_ref_count": 2387,
           "is_resource": false
         },
         "item.ItemHub": {
-          "tx_count": 560,
+          "tx_count": 561,
           "num_instances": 1,
-          "mut_ref_count": 560,
+          "mut_ref_count": 561,
           "is_resource": false
         },
         "suimo.SuimoHub": {
@@ -3013,17 +3049,32 @@
       }
     },
     "1bf76666c5e087c5b4b68c7a966e60d22fa3211b27c42c50cf67071930677eb4": {
-      "tx_count": 3321,
+      "tx_count": 3323,
       "num_instances": 1,
       "mut_ref_count": 471,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "state.State": {
-          "tx_count": 3321,
+          "tx_count": 3323,
           "num_instances": 1,
           "mut_ref_count": 471,
           "is_resource": true
+        }
+      }
+    },
+    "9d9fad6087715ebc61ed247fb41a01eaaec4462e88a80a16994a800de0f22b0f": {
+      "tx_count": 3315,
+      "num_instances": 1,
+      "mut_ref_count": 5,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "adaptor.CenterRegistry": {
+          "tx_count": 3315,
+          "num_instances": 1,
+          "mut_ref_count": 5,
+          "is_resource": false
         }
       }
     },
@@ -3043,16 +3094,16 @@
       }
     },
     "7fe0ab2ed764705b4b833e14d96ff55130b52dd5a0706dacf06f617fc406bbba": {
-      "tx_count": 3253,
+      "tx_count": 3254,
       "num_instances": 1,
-      "mut_ref_count": 3253,
+      "mut_ref_count": 3254,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "marketplace.Marketplace": {
-          "tx_count": 3253,
+          "tx_count": 3254,
           "num_instances": 1,
-          "mut_ref_count": 3253,
+          "mut_ref_count": 3254,
           "is_resource": false
         }
       }
@@ -3087,6 +3138,21 @@
         }
       }
     },
+    "a76499eda1d37751473de5f30e106f35943ada2f6ea764861243e7f5aa5bcc97": {
+      "tx_count": 3057,
+      "num_instances": 1,
+      "mut_ref_count": 3004,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "typus_dov_single.Registry": {
+          "tx_count": 3057,
+          "num_instances": 1,
+          "mut_ref_count": 3004,
+          "is_resource": false
+        }
+      }
+    },
     "2b19c6682314d700fd355c8190e6b82f18fbc03fc1fe724cac723c1673b8275b": {
       "tx_count": 3055,
       "num_instances": 1,
@@ -3099,21 +3165,6 @@
           "num_instances": 1,
           "mut_ref_count": 3055,
           "is_resource": true
-        }
-      }
-    },
-    "a76499eda1d37751473de5f30e106f35943ada2f6ea764861243e7f5aa5bcc97": {
-      "tx_count": 3039,
-      "num_instances": 1,
-      "mut_ref_count": 2986,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "typus_dov_single.Registry": {
-          "tx_count": 3039,
-          "num_instances": 1,
-          "mut_ref_count": 2986,
-          "is_resource": false
         }
       }
     },
@@ -3190,16 +3241,16 @@
       }
     },
     "86fb9a85e3cfcc990f784ec8728bed55736adffea8c3b63f9dfb650957aabb40": {
-      "tx_count": 2842,
+      "tx_count": 2849,
       "num_instances": 1,
-      "mut_ref_count": 2842,
+      "mut_ref_count": 2849,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "staking.HominidsVault": {
-          "tx_count": 2842,
+          "tx_count": 2849,
           "num_instances": 1,
-          "mut_ref_count": 2842,
+          "mut_ref_count": 2849,
           "is_resource": false
         }
       }
@@ -3322,16 +3373,16 @@
       }
     },
     "713970501171e9d23d58857a59660bc6f91cc44919f313df581c3e83cca5d8c6": {
-      "tx_count": 2290,
+      "tx_count": 2296,
       "num_instances": 6,
-      "mut_ref_count": 2290,
+      "mut_ref_count": 2296,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "farm.Pool": {
-          "tx_count": 2290,
+          "tx_count": 2296,
           "num_instances": 6,
-          "mut_ref_count": 2290,
+          "mut_ref_count": 2296,
           "is_resource": false
         }
       }
@@ -3352,14 +3403,14 @@
       }
     },
     "10372c49ca2b98b44fa4d47194305d7bf2903b50256aab421da4dccefa120def": {
-      "tx_count": 2217,
+      "tx_count": 2235,
       "num_instances": 1,
       "mut_ref_count": 3,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "extension.Extension": {
-          "tx_count": 2217,
+          "tx_count": 2235,
           "num_instances": 1,
           "mut_ref_count": 3,
           "is_resource": true
@@ -3579,50 +3630,50 @@
         }
       }
     },
+    "6a11e0f3583b4bb8b22c3263f9c808f53dd12fdf36ebda5be4417a7d9e4a20dd": {
+      "tx_count": 1728,
+      "num_instances": 2,
+      "mut_ref_count": 1314,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "oracle.Oracle": {
+          "tx_count": 1728,
+          "num_instances": 2,
+          "mut_ref_count": 1314,
+          "is_resource": false
+        }
+      }
+    },
     "47989e1f044f37b797ed052aba94874872b5dfd2d0d2afb1278f967d0d895867": {
-      "tx_count": 1713,
+      "tx_count": 1726,
       "num_instances": 4,
-      "mut_ref_count": 1713,
+      "mut_ref_count": 1726,
       "num_types": 4,
       "num_resources": 0,
       "types": {
         "wormhole_facet.Storage": {
-          "tx_count": 720,
+          "tx_count": 725,
           "num_instances": 1,
-          "mut_ref_count": 720,
+          "mut_ref_count": 725,
           "is_resource": false
         },
         "wormhole_facet.WormholeFee": {
-          "tx_count": 714,
+          "tx_count": 719,
           "num_instances": 1,
-          "mut_ref_count": 714,
+          "mut_ref_count": 719,
           "is_resource": false
         },
         "so_fee_wormhole.PriceManager": {
-          "tx_count": 264,
+          "tx_count": 267,
           "num_instances": 1,
-          "mut_ref_count": 264,
+          "mut_ref_count": 267,
           "is_resource": false
         },
         "wormhole_facet.WormholeFacetManager": {
           "tx_count": 15,
           "num_instances": 1,
           "mut_ref_count": 15,
-          "is_resource": false
-        }
-      }
-    },
-    "6a11e0f3583b4bb8b22c3263f9c808f53dd12fdf36ebda5be4417a7d9e4a20dd": {
-      "tx_count": 1708,
-      "num_instances": 2,
-      "mut_ref_count": 1296,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "oracle.Oracle": {
-          "tx_count": 1708,
-          "num_instances": 2,
-          "mut_ref_count": 1296,
           "is_resource": false
         }
       }
@@ -3642,6 +3693,33 @@
         }
       }
     },
+    "7a9967b4baa1c107a357dea6243955a4dfc78386c7f958c4e11e447dd8ea2521": {
+      "tx_count": 1631,
+      "num_instances": 4,
+      "mut_ref_count": 1374,
+      "num_types": 3,
+      "num_resources": 3,
+      "types": {
+        "staking.StakingPool": {
+          "tx_count": 696,
+          "num_instances": 1,
+          "mut_ref_count": 439,
+          "is_resource": true
+        },
+        "campaign.Campaign": {
+          "tx_count": 679,
+          "num_instances": 2,
+          "mut_ref_count": 679,
+          "is_resource": true
+        },
+        "insurance.Fund": {
+          "tx_count": 256,
+          "num_instances": 1,
+          "mut_ref_count": 256,
+          "is_resource": true
+        }
+      }
+    },
     "019c4b99f3868bcd1dcc4287b128490ed0401727a40386408e5693298542c430": {
       "tx_count": 1629,
       "num_instances": 1,
@@ -3654,33 +3732,6 @@
           "num_instances": 1,
           "mut_ref_count": 1629,
           "is_resource": false
-        }
-      }
-    },
-    "7a9967b4baa1c107a357dea6243955a4dfc78386c7f958c4e11e447dd8ea2521": {
-      "tx_count": 1624,
-      "num_instances": 4,
-      "mut_ref_count": 1367,
-      "num_types": 3,
-      "num_resources": 3,
-      "types": {
-        "staking.StakingPool": {
-          "tx_count": 690,
-          "num_instances": 1,
-          "mut_ref_count": 433,
-          "is_resource": true
-        },
-        "campaign.Campaign": {
-          "tx_count": 678,
-          "num_instances": 2,
-          "mut_ref_count": 678,
-          "is_resource": true
-        },
-        "insurance.Fund": {
-          "tx_count": 256,
-          "num_instances": 1,
-          "mut_ref_count": 256,
-          "is_resource": true
         }
       }
     },
@@ -3711,6 +3762,39 @@
         }
       }
     },
+    "62fff363d8919c16c3354e452800afc92cc1815296475bb87b769b5e6468dc38": {
+      "tx_count": 1576,
+      "num_instances": 4,
+      "mut_ref_count": 628,
+      "num_types": 4,
+      "num_resources": 2,
+      "types": {
+        "APDomain.GlobalMap": {
+          "tx_count": 580,
+          "num_instances": 1,
+          "mut_ref_count": 130,
+          "is_resource": true
+        },
+        "APDomain.BaseConfig": {
+          "tx_count": 498,
+          "num_instances": 1,
+          "mut_ref_count": 0,
+          "is_resource": true
+        },
+        "APDomain.MintAPCTable": {
+          "tx_count": 450,
+          "num_instances": 1,
+          "mut_ref_count": 450,
+          "is_resource": false
+        },
+        "APDomain.ReferralMap": {
+          "tx_count": 48,
+          "num_instances": 1,
+          "mut_ref_count": 48,
+          "is_resource": false
+        }
+      }
+    },
     "752801e06ac3abe08e6f07fef075fc89a81510da0afdcb6050a2a4e4295508a1": {
       "tx_count": 1546,
       "num_instances": 1,
@@ -3726,36 +3810,18 @@
         }
       }
     },
-    "62fff363d8919c16c3354e452800afc92cc1815296475bb87b769b5e6468dc38": {
-      "tx_count": 1544,
-      "num_instances": 4,
-      "mut_ref_count": 616,
-      "num_types": 4,
-      "num_resources": 2,
+    "b067e68932c6199bb0ba6590c97d9c8e8f0672622dcf346aa4dba18cb81c4cf8": {
+      "tx_count": 1537,
+      "num_instances": 1,
+      "mut_ref_count": 1537,
+      "num_types": 1,
+      "num_resources": 1,
       "types": {
-        "APDomain.GlobalMap": {
-          "tx_count": 568,
+        "sensui_nft.NFTMintData": {
+          "tx_count": 1537,
           "num_instances": 1,
-          "mut_ref_count": 128,
+          "mut_ref_count": 1537,
           "is_resource": true
-        },
-        "APDomain.BaseConfig": {
-          "tx_count": 488,
-          "num_instances": 1,
-          "mut_ref_count": 0,
-          "is_resource": true
-        },
-        "APDomain.MintAPCTable": {
-          "tx_count": 440,
-          "num_instances": 1,
-          "mut_ref_count": 440,
-          "is_resource": false
-        },
-        "APDomain.ReferralMap": {
-          "tx_count": 48,
-          "num_instances": 1,
-          "mut_ref_count": 48,
-          "is_resource": false
         }
       }
     },
@@ -3785,21 +3851,6 @@
           "tx_count": 1531,
           "num_instances": 2,
           "mut_ref_count": 1531,
-          "is_resource": true
-        }
-      }
-    },
-    "b067e68932c6199bb0ba6590c97d9c8e8f0672622dcf346aa4dba18cb81c4cf8": {
-      "tx_count": 1528,
-      "num_instances": 1,
-      "mut_ref_count": 1528,
-      "num_types": 1,
-      "num_resources": 1,
-      "types": {
-        "sensui_nft.NFTMintData": {
-          "tx_count": 1528,
-          "num_instances": 1,
-          "mut_ref_count": 1528,
           "is_resource": true
         }
       }
@@ -3960,6 +4011,21 @@
         }
       }
     },
+    "8221cc562f8c58c922c6a40ecbc7e2f16b0159fb683470c22e96d21a0dc52beb": {
+      "tx_count": 1364,
+      "num_instances": 744,
+      "mut_ref_count": 1364,
+      "num_types": 1,
+      "num_resources": 1,
+      "types": {
+        "bet.Bet": {
+          "tx_count": 1364,
+          "num_instances": 744,
+          "mut_ref_count": 1364,
+          "is_resource": true
+        }
+      }
+    },
     "e2e26d007f9f9675bdd008dd3000c6b55fc9b4ea2e76fad75ba643256038b685": {
       "tx_count": 1337,
       "num_instances": 2,
@@ -3977,21 +4043,6 @@
           "tx_count": 667,
           "num_instances": 1,
           "mut_ref_count": 667,
-          "is_resource": true
-        }
-      }
-    },
-    "8221cc562f8c58c922c6a40ecbc7e2f16b0159fb683470c22e96d21a0dc52beb": {
-      "tx_count": 1327,
-      "num_instances": 725,
-      "mut_ref_count": 1327,
-      "num_types": 1,
-      "num_resources": 1,
-      "types": {
-        "bet.Bet": {
-          "tx_count": 1327,
-          "num_instances": 725,
-          "mut_ref_count": 1327,
           "is_resource": true
         }
       }
@@ -4026,27 +4077,6 @@
         }
       }
     },
-    "dfaf58e1270365cc4dec22e006899575eb66643f72c91d8160f2acedc8fcba56": {
-      "tx_count": 1284,
-      "num_instances": 2,
-      "mut_ref_count": 640,
-      "num_types": 2,
-      "num_resources": 1,
-      "types": {
-        "navi_aggregator.NaviAggregator": {
-          "tx_count": 644,
-          "num_instances": 1,
-          "mut_ref_count": 639,
-          "is_resource": true
-        },
-        "navi_aggregator.NaviAggregatorCap": {
-          "tx_count": 640,
-          "num_instances": 1,
-          "mut_ref_count": 1,
-          "is_resource": false
-        }
-      }
-    },
     "d63d530d6007b56d9b871821ccafa71c7f733660690834f99f44082cd3a7b9e7": {
       "tx_count": 1240,
       "num_instances": 1,
@@ -4063,28 +4093,28 @@
       }
     },
     "414abb429e44ddff03fe84d407ea3985c93fe55bd3ed79a8e2e57f50daf2e21c": {
-      "tx_count": 1223,
+      "tx_count": 1229,
       "num_instances": 5,
-      "mut_ref_count": 824,
+      "mut_ref_count": 828,
       "num_types": 3,
       "num_resources": 0,
       "types": {
         "aifrens_footie_superstar.AifrensSeason": {
-          "tx_count": 424,
+          "tx_count": 426,
           "num_instances": 2,
           "mut_ref_count": 25,
           "is_resource": false
         },
         "aifrens_footie_superstar.PriceGlobal": {
-          "tx_count": 400,
+          "tx_count": 402,
           "num_instances": 2,
-          "mut_ref_count": 400,
+          "mut_ref_count": 402,
           "is_resource": false
         },
         "aifrens_footie_superstar.AifrensSuperstarGlobal": {
-          "tx_count": 399,
+          "tx_count": 401,
           "num_instances": 1,
-          "mut_ref_count": 399,
+          "mut_ref_count": 401,
           "is_resource": false
         }
       }
@@ -4110,6 +4140,33 @@
         }
       }
     },
+    "1a75d4df4c66ba0a4629b949dbc94b12c300b72bced2694e28e9eb73684e4461": {
+      "tx_count": 1192,
+      "num_instances": 3,
+      "mut_ref_count": 1192,
+      "num_types": 3,
+      "num_resources": 3,
+      "types": {
+        "lock_lp.LPLocked": {
+          "tx_count": 400,
+          "num_instances": 1,
+          "mut_ref_count": 400,
+          "is_resource": true
+        },
+        "lock_lp.LPData": {
+          "tx_count": 400,
+          "num_instances": 1,
+          "mut_ref_count": 400,
+          "is_resource": true
+        },
+        "lock_lp.PoolUsers": {
+          "tx_count": 392,
+          "num_instances": 1,
+          "mut_ref_count": 392,
+          "is_resource": true
+        }
+      }
+    },
     "36bc5da93d59410944a37b07878e747f9a9bacb4dd3683b8a01fed3dbea9dfae": {
       "tx_count": 1187,
       "num_instances": 1,
@@ -4125,29 +4182,17 @@
         }
       }
     },
-    "1a75d4df4c66ba0a4629b949dbc94b12c300b72bced2694e28e9eb73684e4461": {
-      "tx_count": 1186,
-      "num_instances": 3,
-      "mut_ref_count": 1186,
-      "num_types": 3,
-      "num_resources": 3,
+    "38035f4c1e1772d43a3535535ea5b29c1c3ab2c0026d4ad639969831bd1d174d": {
+      "tx_count": 1180,
+      "num_instances": 1,
+      "mut_ref_count": 536,
+      "num_types": 1,
+      "num_resources": 1,
       "types": {
-        "lock_lp.LPLocked": {
-          "tx_count": 398,
+        "state.State": {
+          "tx_count": 1180,
           "num_instances": 1,
-          "mut_ref_count": 398,
-          "is_resource": true
-        },
-        "lock_lp.LPData": {
-          "tx_count": 398,
-          "num_instances": 1,
-          "mut_ref_count": 398,
-          "is_resource": true
-        },
-        "lock_lp.PoolUsers": {
-          "tx_count": 390,
-          "num_instances": 1,
-          "mut_ref_count": 390,
+          "mut_ref_count": 536,
           "is_resource": true
         }
       }
@@ -4197,21 +4242,6 @@
         }
       }
     },
-    "38035f4c1e1772d43a3535535ea5b29c1c3ab2c0026d4ad639969831bd1d174d": {
-      "tx_count": 1144,
-      "num_instances": 1,
-      "mut_ref_count": 514,
-      "num_types": 1,
-      "num_resources": 1,
-      "types": {
-        "state.State": {
-          "tx_count": 1144,
-          "num_instances": 1,
-          "mut_ref_count": 514,
-          "is_resource": true
-        }
-      }
-    },
     "07b4846a5c698669073c546df3bab1c41fa47bef20b81570eb11c8b17d4ec4a4": {
       "tx_count": 1115,
       "num_instances": 1,
@@ -4238,6 +4268,27 @@
           "tx_count": 1112,
           "num_instances": 1,
           "mut_ref_count": 1112,
+          "is_resource": true
+        }
+      }
+    },
+    "ecbf025a1651a8ab02053288c006299e659117befb74387b759b302c703ac605": {
+      "tx_count": 1102,
+      "num_instances": 5,
+      "mut_ref_count": 1102,
+      "num_types": 2,
+      "num_resources": 2,
+      "types": {
+        "tocen_stake_token.PoolStake": {
+          "tx_count": 826,
+          "num_instances": 4,
+          "mut_ref_count": 826,
+          "is_resource": true
+        },
+        "tocen_stake_token.Flexible": {
+          "tx_count": 276,
+          "num_instances": 1,
+          "mut_ref_count": 276,
           "is_resource": true
         }
       }
@@ -4317,27 +4368,6 @@
           "num_instances": 1,
           "mut_ref_count": 1083,
           "is_resource": false
-        }
-      }
-    },
-    "ecbf025a1651a8ab02053288c006299e659117befb74387b759b302c703ac605": {
-      "tx_count": 1080,
-      "num_instances": 5,
-      "mut_ref_count": 1080,
-      "num_types": 2,
-      "num_resources": 2,
-      "types": {
-        "tocen_stake_token.PoolStake": {
-          "tx_count": 810,
-          "num_instances": 4,
-          "mut_ref_count": 810,
-          "is_resource": true
-        },
-        "tocen_stake_token.Flexible": {
-          "tx_count": 270,
-          "num_instances": 1,
-          "mut_ref_count": 270,
-          "is_resource": true
         }
       }
     },
@@ -4689,6 +4719,39 @@
         }
       }
     },
+    "6cef539ba34b9071f774f866d83dc839e0a87c6de82291d20aa5899b7290f9b2": {
+      "tx_count": 866,
+      "num_instances": 9,
+      "mut_ref_count": 866,
+      "num_types": 4,
+      "num_resources": 4,
+      "types": {
+        "storage.Storage": {
+          "tx_count": 336,
+          "num_instances": 1,
+          "mut_ref_count": 336,
+          "is_resource": true
+        },
+        "pool.Pool": {
+          "tx_count": 326,
+          "num_instances": 5,
+          "mut_ref_count": 326,
+          "is_resource": true
+        },
+        "incentive.Incentive": {
+          "tx_count": 197,
+          "num_instances": 1,
+          "mut_ref_count": 197,
+          "is_resource": true
+        },
+        "incentive.IncentiveBal": {
+          "tx_count": 7,
+          "num_instances": 2,
+          "mut_ref_count": 7,
+          "is_resource": true
+        }
+      }
+    },
     "b06da3f54fa3ad6c924288bac33f85e6276f67c9e2769f4ce655cd7ebd9b025c": {
       "tx_count": 860,
       "num_instances": 1,
@@ -4722,6 +4785,33 @@
           "num_instances": 1,
           "mut_ref_count": 7,
           "is_resource": true
+        }
+      }
+    },
+    "6d9f9a7be0c37eda7542706bd0c950fd073b3c8b18b01c6414597a9df4f73348": {
+      "tx_count": 827,
+      "num_instances": 11,
+      "mut_ref_count": 689,
+      "num_types": 3,
+      "num_resources": 0,
+      "types": {
+        "bridge.BridgeSettings": {
+          "tx_count": 347,
+          "num_instances": 9,
+          "mut_ref_count": 347,
+          "is_resource": false
+        },
+        "liquidity_pool.LiquidityPool": {
+          "tx_count": 340,
+          "num_instances": 1,
+          "mut_ref_count": 340,
+          "is_resource": false
+        },
+        "bridge.RelayersHolder": {
+          "tx_count": 140,
+          "num_instances": 1,
+          "mut_ref_count": 2,
+          "is_resource": false
         }
       }
     },
@@ -4806,48 +4896,6 @@
         }
       }
     },
-    "da691d321641786d758d7435d0e230a7125777566c75b34c5742591163a252c3": {
-      "tx_count": 792,
-      "num_instances": 1,
-      "mut_ref_count": 639,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "oracle.PriceOracle": {
-          "tx_count": 792,
-          "num_instances": 1,
-          "mut_ref_count": 639,
-          "is_resource": false
-        }
-      }
-    },
-    "6d9f9a7be0c37eda7542706bd0c950fd073b3c8b18b01c6414597a9df4f73348": {
-      "tx_count": 791,
-      "num_instances": 11,
-      "mut_ref_count": 659,
-      "num_types": 3,
-      "num_resources": 0,
-      "types": {
-        "bridge.BridgeSettings": {
-          "tx_count": 332,
-          "num_instances": 9,
-          "mut_ref_count": 332,
-          "is_resource": false
-        },
-        "liquidity_pool.LiquidityPool": {
-          "tx_count": 325,
-          "num_instances": 1,
-          "mut_ref_count": 325,
-          "is_resource": false
-        },
-        "bridge.RelayersHolder": {
-          "tx_count": 134,
-          "num_instances": 1,
-          "mut_ref_count": 2,
-          "is_resource": false
-        }
-      }
-    },
     "5e93c351019084c0ece86dd35382a7c51a9a4073c70101d13b454eade8003bb0": {
       "tx_count": 778,
       "num_instances": 1,
@@ -4884,39 +4932,6 @@
         }
       }
     },
-    "6cef539ba34b9071f774f866d83dc839e0a87c6de82291d20aa5899b7290f9b2": {
-      "tx_count": 732,
-      "num_instances": 9,
-      "mut_ref_count": 732,
-      "num_types": 4,
-      "num_resources": 4,
-      "types": {
-        "storage.Storage": {
-          "tx_count": 292,
-          "num_instances": 1,
-          "mut_ref_count": 292,
-          "is_resource": true
-        },
-        "pool.Pool": {
-          "tx_count": 268,
-          "num_instances": 5,
-          "mut_ref_count": 268,
-          "is_resource": true
-        },
-        "incentive.Incentive": {
-          "tx_count": 167,
-          "num_instances": 1,
-          "mut_ref_count": 167,
-          "is_resource": true
-        },
-        "incentive.IncentiveBal": {
-          "tx_count": 5,
-          "num_instances": 2,
-          "mut_ref_count": 5,
-          "is_resource": true
-        }
-      }
-    },
     "d735282698c3093adf91c59ba5fa3294112d7dd713beb4f7753eac4637bd47a1": {
       "tx_count": 708,
       "num_instances": 2,
@@ -4939,16 +4954,16 @@
       }
     },
     "8e19b4b730e0c47c656f7479047e09776a35d7d3c06bef415fa27eca0c7291ea": {
-      "tx_count": 701,
+      "tx_count": 702,
       "num_instances": 1,
-      "mut_ref_count": 701,
+      "mut_ref_count": 702,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "lucky.MintState": {
-          "tx_count": 701,
+          "tx_count": 702,
           "num_instances": 1,
-          "mut_ref_count": 701,
+          "mut_ref_count": 702,
           "is_resource": true
         }
       }
@@ -4990,16 +5005,16 @@
       }
     },
     "d96d9bc7a8c2d6e18c5dfa07ea66f8bc290c63f4d26d2ab4bc030d315510f454": {
-      "tx_count": 684,
-      "num_instances": 105,
-      "mut_ref_count": 535,
+      "tx_count": 685,
+      "num_instances": 106,
+      "mut_ref_count": 536,
       "num_types": 2,
       "num_resources": 2,
       "types": {
         "Pool.Pool": {
-          "tx_count": 535,
-          "num_instances": 104,
-          "mut_ref_count": 535,
+          "tx_count": 536,
+          "num_instances": 105,
+          "mut_ref_count": 536,
           "is_resource": true
         },
         "Config.Config": {
@@ -5079,21 +5094,6 @@
           "num_instances": 24,
           "mut_ref_count": 311,
           "is_resource": true
-        }
-      }
-    },
-    "9d9fad6087715ebc61ed247fb41a01eaaec4462e88a80a16994a800de0f22b0f": {
-      "tx_count": 638,
-      "num_instances": 1,
-      "mut_ref_count": 5,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "adaptor.CenterRegistry": {
-          "tx_count": 638,
-          "num_instances": 1,
-          "mut_ref_count": 5,
-          "is_resource": false
         }
       }
     },
@@ -5257,16 +5257,16 @@
       }
     },
     "ae5e376b646e4d095b99e2eeaa222e40d5a6c26250419f00c4fc613a9cfb2e18": {
-      "tx_count": 571,
+      "tx_count": 573,
       "num_instances": 4,
-      "mut_ref_count": 571,
+      "mut_ref_count": 573,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "orderbook.Orderbook": {
-          "tx_count": 571,
+          "tx_count": 573,
           "num_instances": 4,
-          "mut_ref_count": 571,
+          "mut_ref_count": 573,
           "is_resource": false
         }
       }
@@ -5337,6 +5337,27 @@
         }
       }
     },
+    "ce7ff77a83ea0cb6fd39bd8748e2ec89a3f41e8efdc3f4eb123e0ca37b184db2": {
+      "tx_count": 551,
+      "num_instances": 2,
+      "mut_ref_count": 551,
+      "num_types": 2,
+      "num_resources": 0,
+      "types": {
+        "buck.BucketProtocol": {
+          "tx_count": 439,
+          "num_instances": 1,
+          "mut_ref_count": 439,
+          "is_resource": false
+        },
+        "bkt.BktTreasury": {
+          "tx_count": 112,
+          "num_instances": 1,
+          "mut_ref_count": 112,
+          "is_resource": false
+        }
+      }
+    },
     "f964124c31906804e1843039f5c4e989d158121d787a495cdc0e387170b3ad15": {
       "tx_count": 539,
       "num_instances": 2,
@@ -5373,27 +5394,6 @@
         }
       }
     },
-    "ce7ff77a83ea0cb6fd39bd8748e2ec89a3f41e8efdc3f4eb123e0ca37b184db2": {
-      "tx_count": 527,
-      "num_instances": 2,
-      "mut_ref_count": 527,
-      "num_types": 2,
-      "num_resources": 0,
-      "types": {
-        "buck.BucketProtocol": {
-          "tx_count": 420,
-          "num_instances": 1,
-          "mut_ref_count": 420,
-          "is_resource": false
-        },
-        "bkt.BktTreasury": {
-          "tx_count": 107,
-          "num_instances": 1,
-          "mut_ref_count": 107,
-          "is_resource": false
-        }
-      }
-    },
     "5b680466d7245c4915083965eb2e38186f679d6510350e46e8fa8653ae640739": {
       "tx_count": 515,
       "num_instances": 1,
@@ -5405,6 +5405,33 @@
           "tx_count": 515,
           "num_instances": 1,
           "mut_ref_count": 515,
+          "is_resource": true
+        }
+      }
+    },
+    "a9cdb9d8e80465c75dcdad061cf1d462a9cf662da071412ca178d579d8df2855": {
+      "tx_count": 512,
+      "num_instances": 13,
+      "mut_ref_count": 276,
+      "num_types": 3,
+      "num_resources": 3,
+      "types": {
+        "version.Version": {
+          "tx_count": 236,
+          "num_instances": 1,
+          "mut_ref_count": 0,
+          "is_resource": true
+        },
+        "market.Market": {
+          "tx_count": 232,
+          "num_instances": 1,
+          "mut_ref_count": 232,
+          "is_resource": true
+        },
+        "obligation.Obligation": {
+          "tx_count": 44,
+          "num_instances": 11,
+          "mut_ref_count": 44,
           "is_resource": true
         }
       }
@@ -5436,6 +5463,21 @@
           "num_instances": 1,
           "mut_ref_count": 511,
           "is_resource": true
+        }
+      }
+    },
+    "1b6bfd607780bc9307ff21d7891f4331e082bffcf9b369f8286358d827a6d676": {
+      "tx_count": 507,
+      "num_instances": 1,
+      "mut_ref_count": 507,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "ticket.Global": {
+          "tx_count": 507,
+          "num_instances": 1,
+          "mut_ref_count": 507,
+          "is_resource": false
         }
       }
     },
@@ -5520,21 +5562,6 @@
         }
       }
     },
-    "1b6bfd607780bc9307ff21d7891f4331e082bffcf9b369f8286358d827a6d676": {
-      "tx_count": 493,
-      "num_instances": 1,
-      "mut_ref_count": 493,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "ticket.Global": {
-          "tx_count": 493,
-          "num_instances": 1,
-          "mut_ref_count": 493,
-          "is_resource": false
-        }
-      }
-    },
     "abcfb562f26105ca94443d628d8d3d96f7c6dcb8983fb1bebfa5a539d204fcc0": {
       "tx_count": 488,
       "num_instances": 1,
@@ -5547,6 +5574,21 @@
           "num_instances": 1,
           "mut_ref_count": 488,
           "is_resource": false
+        }
+      }
+    },
+    "f9b06a5c963927fcc7e1ef4aca9dae7af140f372f9a968e3218666e2917d96c1": {
+      "tx_count": 481,
+      "num_instances": 1,
+      "mut_ref_count": 481,
+      "num_types": 1,
+      "num_resources": 1,
+      "types": {
+        "coinFlip.CoinFlip": {
+          "tx_count": 481,
+          "num_instances": 1,
+          "mut_ref_count": 481,
+          "is_resource": true
         }
       }
     },
@@ -5580,33 +5622,33 @@
         }
       }
     },
-    "f9b06a5c963927fcc7e1ef4aca9dae7af140f372f9a968e3218666e2917d96c1": {
-      "tx_count": 471,
-      "num_instances": 1,
-      "mut_ref_count": 471,
-      "num_types": 1,
-      "num_resources": 1,
-      "types": {
-        "coinFlip.CoinFlip": {
-          "tx_count": 471,
-          "num_instances": 1,
-          "mut_ref_count": 471,
-          "is_resource": true
-        }
-      }
-    },
     "d9f9b0b4f35276eecd1eea6985bfabe2a2bbd5575f9adb9162ccbdb4ddebde7f": {
-      "tx_count": 470,
+      "tx_count": 475,
       "num_instances": 1,
-      "mut_ref_count": 470,
+      "mut_ref_count": 475,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "bridge_sui.BridgeData": {
-          "tx_count": 470,
+          "tx_count": 475,
           "num_instances": 1,
-          "mut_ref_count": 470,
+          "mut_ref_count": 475,
           "is_resource": true
+        }
+      }
+    },
+    "98d2833e136af3f5f93176d31512d41bc251e744b49b37a47a77a81abe48f9a6": {
+      "tx_count": 466,
+      "num_instances": 1,
+      "mut_ref_count": 466,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "PFPData.Global": {
+          "tx_count": 466,
+          "num_instances": 1,
+          "mut_ref_count": 466,
+          "is_resource": false
         }
       }
     },
@@ -5640,21 +5682,6 @@
           "num_instances": 7,
           "mut_ref_count": 11,
           "is_resource": true
-        }
-      }
-    },
-    "98d2833e136af3f5f93176d31512d41bc251e744b49b37a47a77a81abe48f9a6": {
-      "tx_count": 464,
-      "num_instances": 1,
-      "mut_ref_count": 464,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "PFPData.Global": {
-          "tx_count": 464,
-          "num_instances": 1,
-          "mut_ref_count": 464,
-          "is_resource": false
         }
       }
     },
@@ -5944,16 +5971,16 @@
       }
     },
     "193a33b36a30444128353f8cefe2fab8fefac3f918f4c267c763f6adb44ead35": {
-      "tx_count": 356,
+      "tx_count": 361,
       "num_instances": 1,
-      "mut_ref_count": 356,
+      "mut_ref_count": 361,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "avatar.Metadata": {
-          "tx_count": 356,
+          "tx_count": 361,
           "num_instances": 1,
-          "mut_ref_count": 356,
+          "mut_ref_count": 361,
           "is_resource": true
         }
       }
@@ -5979,6 +6006,21 @@
         }
       }
     },
+    "371a30d40fcc357a37d412c4750a57303d58c9482e5f51886e46f7bf774028f3": {
+      "tx_count": 349,
+      "num_instances": 1,
+      "mut_ref_count": 349,
+      "num_types": 1,
+      "num_resources": 1,
+      "types": {
+        "MesonStates.GeneralStore": {
+          "tx_count": 349,
+          "num_instances": 1,
+          "mut_ref_count": 349,
+          "is_resource": true
+        }
+      }
+    },
     "5704c905eef581eb39379db4c53deeaca2ea2f7354ea7ce045bc3ead6f9f51e1": {
       "tx_count": 345,
       "num_instances": 1,
@@ -5990,21 +6032,6 @@
           "tx_count": 345,
           "num_instances": 1,
           "mut_ref_count": 345,
-          "is_resource": true
-        }
-      }
-    },
-    "371a30d40fcc357a37d412c4750a57303d58c9482e5f51886e46f7bf774028f3": {
-      "tx_count": 344,
-      "num_instances": 1,
-      "mut_ref_count": 344,
-      "num_types": 1,
-      "num_resources": 1,
-      "types": {
-        "MesonStates.GeneralStore": {
-          "tx_count": 344,
-          "num_instances": 1,
-          "mut_ref_count": 344,
           "is_resource": true
         }
       }
@@ -6067,16 +6094,46 @@
       }
     },
     "f54081a052d35027191bab1902034c57439e814ce96e3552f3d139585472686f": {
-      "tx_count": 305,
+      "tx_count": 317,
       "num_instances": 1,
-      "mut_ref_count": 133,
+      "mut_ref_count": 138,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "typus_dov_single.AdditionalConfigRegistry": {
-          "tx_count": 305,
+          "tx_count": 317,
           "num_instances": 1,
-          "mut_ref_count": 133,
+          "mut_ref_count": 138,
+          "is_resource": false
+        }
+      }
+    },
+    "6a4aee9f775b5c4e4affc472c98f3e2f2671efada0193f31d5438f648a2276a6": {
+      "tx_count": 295,
+      "num_instances": 4,
+      "mut_ref_count": 295,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "reward_staking.StakingPool": {
+          "tx_count": 295,
+          "num_instances": 4,
+          "mut_ref_count": 295,
+          "is_resource": false
+        }
+      }
+    },
+    "f145ee6d09aae034924f80672bc76db2415dfd1b1bed863ac289af9d94e2c4fc": {
+      "tx_count": 293,
+      "num_instances": 1,
+      "mut_ref_count": 293,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "bucket_oracle.BucketOracle": {
+          "tx_count": 293,
+          "num_instances": 1,
+          "mut_ref_count": 293,
           "is_resource": false
         }
       }
@@ -6117,21 +6174,6 @@
         }
       }
     },
-    "6a4aee9f775b5c4e4affc472c98f3e2f2671efada0193f31d5438f648a2276a6": {
-      "tx_count": 287,
-      "num_instances": 4,
-      "mut_ref_count": 287,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "reward_staking.StakingPool": {
-          "tx_count": 287,
-          "num_instances": 4,
-          "mut_ref_count": 287,
-          "is_resource": false
-        }
-      }
-    },
     "d68c8b01210eb7871748720e7105c3cfaa118d35e1a80294118bdced7f7bdfdc": {
       "tx_count": 283,
       "num_instances": 1,
@@ -6143,21 +6185,6 @@
           "tx_count": 283,
           "num_instances": 1,
           "mut_ref_count": 283,
-          "is_resource": false
-        }
-      }
-    },
-    "f145ee6d09aae034924f80672bc76db2415dfd1b1bed863ac289af9d94e2c4fc": {
-      "tx_count": 281,
-      "num_instances": 1,
-      "mut_ref_count": 281,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "bucket_oracle.BucketOracle": {
-          "tx_count": 281,
-          "num_instances": 1,
-          "mut_ref_count": 281,
           "is_resource": false
         }
       }
@@ -6302,33 +6329,6 @@
           "tx_count": 259,
           "num_instances": 1,
           "mut_ref_count": 259,
-          "is_resource": true
-        }
-      }
-    },
-    "a9cdb9d8e80465c75dcdad061cf1d462a9cf662da071412ca178d579d8df2855": {
-      "tx_count": 259,
-      "num_instances": 13,
-      "mut_ref_count": 148,
-      "num_types": 3,
-      "num_resources": 3,
-      "types": {
-        "version.Version": {
-          "tx_count": 111,
-          "num_instances": 1,
-          "mut_ref_count": 0,
-          "is_resource": true
-        },
-        "market.Market": {
-          "tx_count": 106,
-          "num_instances": 1,
-          "mut_ref_count": 106,
-          "is_resource": true
-        },
-        "obligation.Obligation": {
-          "tx_count": 42,
-          "num_instances": 11,
-          "mut_ref_count": 42,
           "is_resource": true
         }
       }
@@ -6531,6 +6531,33 @@
         }
       }
     },
+    "8f2d39a6994b80a54f37f3204b1a60393bbb1945470e414117ca0ab439f9df7e": {
+      "tx_count": 225,
+      "num_instances": 3,
+      "mut_ref_count": 225,
+      "num_types": 3,
+      "num_resources": 1,
+      "types": {
+        "nft_sale.Collection": {
+          "tx_count": 129,
+          "num_instances": 1,
+          "mut_ref_count": 129,
+          "is_resource": false
+        },
+        "nft_stake.Record": {
+          "tx_count": 48,
+          "num_instances": 1,
+          "mut_ref_count": 48,
+          "is_resource": false
+        },
+        "nft_stake.Collection": {
+          "tx_count": 48,
+          "num_instances": 1,
+          "mut_ref_count": 48,
+          "is_resource": true
+        }
+      }
+    },
     "0fd5914e90b89f374ba8eed9963c9017a8f933d5b6c277b73aa334cc1f814ab3": {
       "tx_count": 222,
       "num_instances": 1,
@@ -6576,6 +6603,21 @@
         }
       }
     },
+    "98f57a65905283297803d8089fae221d104316e257a13eaf10791c5082e65bc3": {
+      "tx_count": 210,
+      "num_instances": 1,
+      "mut_ref_count": 210,
+      "num_types": 1,
+      "num_resources": 1,
+      "types": {
+        "stakingmodule.StakingSeason": {
+          "tx_count": 210,
+          "num_instances": 1,
+          "mut_ref_count": 210,
+          "is_resource": true
+        }
+      }
+    },
     "7eb24b5e80056453550832532c78306212f9fa31d528fd2f73156e568b92a753": {
       "tx_count": 209,
       "num_instances": 1,
@@ -6606,30 +6648,24 @@
         }
       }
     },
-    "8f2d39a6994b80a54f37f3204b1a60393bbb1945470e414117ca0ab439f9df7e": {
-      "tx_count": 207,
-      "num_instances": 3,
-      "mut_ref_count": 207,
-      "num_types": 3,
-      "num_resources": 1,
+    "b42dbb7413b79394e1a0175af6ae22b69a5c7cc5df259cd78072b6818217c027": {
+      "tx_count": 205,
+      "num_instances": 2,
+      "mut_ref_count": 205,
+      "num_types": 2,
+      "num_resources": 0,
       "types": {
-        "nft_sale.Collection": {
-          "tx_count": 125,
+        "listings.Store": {
+          "tx_count": 126,
           "num_instances": 1,
-          "mut_ref_count": 125,
+          "mut_ref_count": 126,
           "is_resource": false
         },
-        "nft_stake.Record": {
-          "tx_count": 41,
+        "biddings.Store": {
+          "tx_count": 79,
           "num_instances": 1,
-          "mut_ref_count": 41,
+          "mut_ref_count": 79,
           "is_resource": false
-        },
-        "nft_stake.Collection": {
-          "tx_count": 41,
-          "num_instances": 1,
-          "mut_ref_count": 41,
-          "is_resource": true
         }
       }
     },
@@ -6702,21 +6738,6 @@
           "num_instances": 1,
           "mut_ref_count": 198,
           "is_resource": false
-        }
-      }
-    },
-    "98f57a65905283297803d8089fae221d104316e257a13eaf10791c5082e65bc3": {
-      "tx_count": 198,
-      "num_instances": 1,
-      "mut_ref_count": 198,
-      "num_types": 1,
-      "num_resources": 1,
-      "types": {
-        "stakingmodule.StakingSeason": {
-          "tx_count": 198,
-          "num_instances": 1,
-          "mut_ref_count": 198,
-          "is_resource": true
         }
       }
     },
@@ -6870,27 +6891,6 @@
         }
       }
     },
-    "b42dbb7413b79394e1a0175af6ae22b69a5c7cc5df259cd78072b6818217c027": {
-      "tx_count": 187,
-      "num_instances": 2,
-      "mut_ref_count": 187,
-      "num_types": 2,
-      "num_resources": 0,
-      "types": {
-        "listings.Store": {
-          "tx_count": 116,
-          "num_instances": 1,
-          "mut_ref_count": 116,
-          "is_resource": false
-        },
-        "biddings.Store": {
-          "tx_count": 71,
-          "num_instances": 1,
-          "mut_ref_count": 71,
-          "is_resource": false
-        }
-      }
-    },
     "e05504e91d30616d7e2a29e43454601a2ab69988fc259314b513a9e6d22f51d9": {
       "tx_count": 183,
       "num_instances": 6,
@@ -6978,6 +6978,21 @@
         }
       }
     },
+    "1454bd0be3db3c4be862104bde964913182de6d380aea24b88320505baba5e46": {
+      "tx_count": 171,
+      "num_instances": 1,
+      "mut_ref_count": 171,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "cetus_clmm_worker.WorkerInfo": {
+          "tx_count": 171,
+          "num_instances": 1,
+          "mut_ref_count": 171,
+          "is_resource": false
+        }
+      }
+    },
     "3a7ca3f1dba2bc62a6dd13017120adfadf5ab0a765fae3b0fe64d7519a1c7700": {
       "tx_count": 171,
       "num_instances": 1,
@@ -7017,21 +7032,6 @@
           "num_instances": 1,
           "mut_ref_count": 33,
           "is_resource": true
-        }
-      }
-    },
-    "1454bd0be3db3c4be862104bde964913182de6d380aea24b88320505baba5e46": {
-      "tx_count": 169,
-      "num_instances": 1,
-      "mut_ref_count": 169,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "cetus_clmm_worker.WorkerInfo": {
-          "tx_count": 169,
-          "num_instances": 1,
-          "mut_ref_count": 169,
-          "is_resource": false
         }
       }
     },
@@ -7383,6 +7383,21 @@
         }
       }
     },
+    "1b089c63a8cfe583ba10a11258d5e83960e76a4c64adb37538cd2ac1546651af": {
+      "tx_count": 131,
+      "num_instances": 1,
+      "mut_ref_count": 131,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "fair_launch.Storage": {
+          "tx_count": 131,
+          "num_instances": 1,
+          "mut_ref_count": 131,
+          "is_resource": false
+        }
+      }
+    },
     "f5bb0a4c972bbadba63a33973785b96ef9307f83ff797780177fe1bb85ab0df9": {
       "tx_count": 131,
       "num_instances": 1,
@@ -7409,21 +7424,6 @@
           "tx_count": 131,
           "num_instances": 1,
           "mut_ref_count": 131,
-          "is_resource": false
-        }
-      }
-    },
-    "1b089c63a8cfe583ba10a11258d5e83960e76a4c64adb37538cd2ac1546651af": {
-      "tx_count": 129,
-      "num_instances": 1,
-      "mut_ref_count": 129,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "fair_launch.Storage": {
-          "tx_count": 129,
-          "num_instances": 1,
-          "mut_ref_count": 129,
           "is_resource": false
         }
       }
@@ -7875,6 +7875,21 @@
         }
       }
     },
+    "ab9e3559d7c6b9553624c7dd746ab50713ca00539ec71791882e436d11857999": {
+      "tx_count": 105,
+      "num_instances": 1,
+      "mut_ref_count": 105,
+      "num_types": 1,
+      "num_resources": 1,
+      "types": {
+        "presale.Mint": {
+          "tx_count": 105,
+          "num_instances": 1,
+          "mut_ref_count": 105,
+          "is_resource": true
+        }
+      }
+    },
     "a8967d13e741d723f27e6045b072900719652555d8b91f2d01268c5ce23b2be8": {
       "tx_count": 104,
       "num_instances": 1,
@@ -7917,21 +7932,6 @@
           "num_instances": 1,
           "mut_ref_count": 104,
           "is_resource": false
-        }
-      }
-    },
-    "ab9e3559d7c6b9553624c7dd746ab50713ca00539ec71791882e436d11857999": {
-      "tx_count": 103,
-      "num_instances": 1,
-      "mut_ref_count": 103,
-      "num_types": 1,
-      "num_resources": 1,
-      "types": {
-        "presale.Mint": {
-          "tx_count": 103,
-          "num_instances": 1,
-          "mut_ref_count": 103,
-          "is_resource": true
         }
       }
     },
@@ -8865,6 +8865,21 @@
         }
       }
     },
+    "1f368e4f2f8969992027006d0a6eb45ce5090514de9bf82fcd8b44b00fc070b6": {
+      "tx_count": 65,
+      "num_instances": 1,
+      "mut_ref_count": 65,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "my_minter.Minter": {
+          "tx_count": 65,
+          "num_instances": 1,
+          "mut_ref_count": 65,
+          "is_resource": false
+        }
+      }
+    },
     "026349fad9723bf0d9eea4a1b5a7185e7d4fc4d740301789b7f51261bb85062f": {
       "tx_count": 65,
       "num_instances": 1,
@@ -8976,21 +8991,6 @@
           "num_instances": 1,
           "mut_ref_count": 1,
           "is_resource": true
-        }
-      }
-    },
-    "1f368e4f2f8969992027006d0a6eb45ce5090514de9bf82fcd8b44b00fc070b6": {
-      "tx_count": 64,
-      "num_instances": 1,
-      "mut_ref_count": 64,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "my_minter.Minter": {
-          "tx_count": 64,
-          "num_instances": 1,
-          "mut_ref_count": 64,
-          "is_resource": false
         }
       }
     },
@@ -9115,16 +9115,16 @@
       }
     },
     "334bed7f6426c1a3710ef7f4d66b1225df74146372b40a64e9d0cbfc76d76e67": {
-      "tx_count": 60,
+      "tx_count": 61,
       "num_instances": 1,
-      "mut_ref_count": 60,
+      "mut_ref_count": 61,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "cetus_clmm_worker.WorkerInfo": {
-          "tx_count": 60,
+          "tx_count": 61,
           "num_instances": 1,
-          "mut_ref_count": 60,
+          "mut_ref_count": 61,
           "is_resource": false
         }
       }
@@ -10605,6 +10605,36 @@
         }
       }
     },
+    "3658f5650dd8943ee6de53465a6d1cdc58e015348e8650ff5e69ee8201350a45": {
+      "tx_count": 29,
+      "num_instances": 1,
+      "mut_ref_count": 29,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "x_oracle.XOracle": {
+          "tx_count": 29,
+          "num_instances": 1,
+          "mut_ref_count": 29,
+          "is_resource": false
+        }
+      }
+    },
+    "8af0cc660aacf3c645c2fd0fcc48e988c6271c6d65de7ab463a3c51d3ea199f6": {
+      "tx_count": 29,
+      "num_instances": 1,
+      "mut_ref_count": 1,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "pyth_registry.PythRegistry": {
+          "tx_count": 29,
+          "num_instances": 1,
+          "mut_ref_count": 1,
+          "is_resource": false
+        }
+      }
+    },
     "93bb2ee9eebd6efff1632f19d59ee2f58b396399d9a4e4d1e4b04c0caba43394": {
       "tx_count": 28,
       "num_instances": 1,
@@ -10617,6 +10647,21 @@
           "num_instances": 1,
           "mut_ref_count": 28,
           "is_resource": false
+        }
+      }
+    },
+    "583ffc51d8ceb08a5cdd1f681600e4affb4d05773effc4d5cb7c982c9e80d6d9": {
+      "tx_count": 28,
+      "num_instances": 2,
+      "mut_ref_count": 28,
+      "num_types": 1,
+      "num_resources": 1,
+      "types": {
+        "cetus_staking.TokenRegistry": {
+          "tx_count": 28,
+          "num_instances": 2,
+          "mut_ref_count": 28,
+          "is_resource": true
         }
       }
     },
@@ -10635,21 +10680,6 @@
         }
       }
     },
-    "3658f5650dd8943ee6de53465a6d1cdc58e015348e8650ff5e69ee8201350a45": {
-      "tx_count": 28,
-      "num_instances": 1,
-      "mut_ref_count": 28,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "x_oracle.XOracle": {
-          "tx_count": 28,
-          "num_instances": 1,
-          "mut_ref_count": 28,
-          "is_resource": false
-        }
-      }
-    },
     "a7e66baca4aeeca4cf7f096e4b075c6cefcc87639501348eec255d31a87a015a": {
       "tx_count": 28,
       "num_instances": 1,
@@ -10662,21 +10692,6 @@
           "num_instances": 1,
           "mut_ref_count": 28,
           "is_resource": true
-        }
-      }
-    },
-    "8af0cc660aacf3c645c2fd0fcc48e988c6271c6d65de7ab463a3c51d3ea199f6": {
-      "tx_count": 28,
-      "num_instances": 1,
-      "mut_ref_count": 1,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "pyth_registry.PythRegistry": {
-          "tx_count": 28,
-          "num_instances": 1,
-          "mut_ref_count": 1,
-          "is_resource": false
         }
       }
     },
@@ -10869,6 +10884,21 @@
         }
       }
     },
+    "71ec9ebe7278265b5e556938f4ec2355244423796875ff6a1a5bc53df97f0ab9": {
+      "tx_count": 25,
+      "num_instances": 1,
+      "mut_ref_count": 1,
+      "num_types": 1,
+      "num_resources": 1,
+      "types": {
+        "coin_decimals_registry.CoinDecimalsRegistry": {
+          "tx_count": 25,
+          "num_instances": 1,
+          "mut_ref_count": 1,
+          "is_resource": true
+        }
+      }
+    },
     "94aabddcd74cf8eb813840b861320765cfd766efff27597da28ed7005da70772": {
       "tx_count": 25,
       "num_instances": 1,
@@ -10959,21 +10989,6 @@
           "num_instances": 1,
           "mut_ref_count": 24,
           "is_resource": false
-        }
-      }
-    },
-    "71ec9ebe7278265b5e556938f4ec2355244423796875ff6a1a5bc53df97f0ab9": {
-      "tx_count": 24,
-      "num_instances": 1,
-      "mut_ref_count": 1,
-      "num_types": 1,
-      "num_resources": 1,
-      "types": {
-        "coin_decimals_registry.CoinDecimalsRegistry": {
-          "tx_count": 24,
-          "num_instances": 1,
-          "mut_ref_count": 1,
-          "is_resource": true
         }
       }
     },
@@ -12150,21 +12165,6 @@
         }
       }
     },
-    "583ffc51d8ceb08a5cdd1f681600e4affb4d05773effc4d5cb7c982c9e80d6d9": {
-      "tx_count": 15,
-      "num_instances": 2,
-      "mut_ref_count": 15,
-      "num_types": 1,
-      "num_resources": 1,
-      "types": {
-        "cetus_staking.TokenRegistry": {
-          "tx_count": 15,
-          "num_instances": 2,
-          "mut_ref_count": 15,
-          "is_resource": true
-        }
-      }
-    },
     "709a7e85f340e32d0e2353c9aee17ce4ec5537227d1223e8dde74075c05d8f9c": {
       "tx_count": 15,
       "num_instances": 1,
@@ -12657,6 +12657,33 @@
         }
       }
     },
+    "5e3c893794e61cd06a37b7f2f5269ad8a1c60f0722cb1e7810be5d9d1858e664": {
+      "tx_count": 13,
+      "num_instances": 3,
+      "mut_ref_count": 13,
+      "num_types": 3,
+      "num_resources": 0,
+      "types": {
+        "suifren_dao.Dao": {
+          "tx_count": 9,
+          "num_instances": 1,
+          "mut_ref_count": 9,
+          "is_resource": false
+        },
+        "dao.Dao": {
+          "tx_count": 3,
+          "num_instances": 1,
+          "mut_ref_count": 3,
+          "is_resource": false
+        },
+        "dao.DaoHub": {
+          "tx_count": 1,
+          "num_instances": 1,
+          "mut_ref_count": 1,
+          "is_resource": false
+        }
+      }
+    },
     "9b6baa49a64db372ffd688476874a1f8aa079688fcc85af4847d82136362944c": {
       "tx_count": 13,
       "num_instances": 1,
@@ -12774,6 +12801,21 @@
           "num_instances": 4,
           "mut_ref_count": 13,
           "is_resource": true
+        }
+      }
+    },
+    "5e0cb19f50310f3e71aa68ce3e98bf9d291946ec21df391d3e6b3a805a2e6d5a": {
+      "tx_count": 13,
+      "num_instances": 1,
+      "mut_ref_count": 13,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "fuck_sui.Collection": {
+          "tx_count": 13,
+          "num_instances": 1,
+          "mut_ref_count": 13,
+          "is_resource": false
         }
       }
     },
@@ -13068,33 +13110,6 @@
         }
       }
     },
-    "5e3c893794e61cd06a37b7f2f5269ad8a1c60f0722cb1e7810be5d9d1858e664": {
-      "tx_count": 11,
-      "num_instances": 3,
-      "mut_ref_count": 11,
-      "num_types": 3,
-      "num_resources": 0,
-      "types": {
-        "suifren_dao.Dao": {
-          "tx_count": 7,
-          "num_instances": 1,
-          "mut_ref_count": 7,
-          "is_resource": false
-        },
-        "dao.Dao": {
-          "tx_count": 3,
-          "num_instances": 1,
-          "mut_ref_count": 3,
-          "is_resource": false
-        },
-        "dao.DaoHub": {
-          "tx_count": 1,
-          "num_instances": 1,
-          "mut_ref_count": 1,
-          "is_resource": false
-        }
-      }
-    },
     "9103a664d07f0cacf6711e8af2543e7311b6102a82cb972172c5b6cdc45473af": {
       "tx_count": 11,
       "num_instances": 1,
@@ -13188,21 +13203,6 @@
           "num_instances": 1,
           "mut_ref_count": 11,
           "is_resource": true
-        }
-      }
-    },
-    "5e0cb19f50310f3e71aa68ce3e98bf9d291946ec21df391d3e6b3a805a2e6d5a": {
-      "tx_count": 11,
-      "num_instances": 1,
-      "mut_ref_count": 11,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "fuck_sui.Collection": {
-          "tx_count": 11,
-          "num_instances": 1,
-          "mut_ref_count": 11,
-          "is_resource": false
         }
       }
     },
@@ -23823,6 +23823,21 @@
           "num_instances": 1,
           "mut_ref_count": 1,
           "is_resource": true
+        }
+      }
+    },
+    "41c29fff90d9148a70a2fa50379b07ed1d6664345c9f394f2a86cb19130041ce": {
+      "tx_count": 1,
+      "num_instances": 1,
+      "mut_ref_count": 1,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "farm.RewardPool": {
+          "tx_count": 1,
+          "num_instances": 1,
+          "mut_ref_count": 1,
+          "is_resource": false
         }
       }
     },

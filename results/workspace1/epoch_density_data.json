@@ -2789,6 +2789,36 @@
           "obj_touchability": 0.09262598800114773
         }
       }
+    },
+    "93": {
+      "num_txs_total": 22404419,
+      "num_txs_touching_shared_objs": 407880,
+      "density": 0.018205337081046376,
+      "num_shared_objects_per_epoch": 172814,
+      "num_shared_objects_total": 613420,
+      "num_checkpoints": 86318,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.878613232580237,
+          "obj_touchability": 0.20735372908563948
+        },
+        "5": {
+          "contention_degree": 0.9562105272729434,
+          "obj_touchability": 0.12924586437714883
+        },
+        "10": {
+          "contention_degree": 0.9733815300232995,
+          "obj_touchability": 0.0861681510457381
+        },
+        "30": {
+          "contention_degree": 1.1578772323148638,
+          "obj_touchability": 0.049475839933331975
+        },
+        "60": {
+          "contention_degree": 1.3207057319795321,
+          "obj_touchability": 0.03545121341915015
+        }
+      }
     }
   }
 }
