@@ -143,6 +143,9 @@ pub struct ModuleAndNameData {
     pub num_instances: usize,
     pub mut_ref_count: usize,
     pub is_resource: bool,
+    pub first_touched_at_epoch: usize,
+    pub first_touched_at_checkpoint: u64,
+    pub first_touched_by_txs: BTreeMap<String, bool>,
 }
 
 // stores data of interest about a package

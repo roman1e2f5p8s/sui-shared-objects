@@ -174,10 +174,44 @@ async fn main() -> Result<(), anyhow::Error> {
             // Get to SuiObjectData {content: Some(MoveObject(SuiParsedMoveObject {...
             if let SuiParsedData::MoveObject(sui_parsed_move_object) = sui_obj_data.content.as_ref().unwrap() {
                 // temporarily variables
-                let object_id = sui_obj_data.object_id.to_string();
-                let address = sui_parsed_move_object.type_.address.to_string();
-                let is_resource = sui_parsed_move_object.has_public_transfer;
-                let type_ = sui_parsed_move_object.type_.module.to_string() + &String::from(".") + &sui_parsed_move_object.type_.name.to_string();
+                let object_id = sui_obj_data
+                    .object_id
+                    .to_string();
+                let address = sui_parsed_move_object
+                    .type_
+                    .address
+                    .to_string();
+                let is_resource = sui_parsed_move_object
+                    .has_public_transfer;
+                let type_ = sui_parsed_move_object
+                    .type_
+                    .module
+                    .to_string() + &String::from(".") + &sui_parsed_move_object.type_.name.to_string();
+                let tx_count = shared_objects_set_data
+                    .shared_objects
+                    .get(&object_id)
+                    .unwrap()
+                    .tx_count;
+                let mut_ref_count = shared_objects_set_data
+                    .shared_objects
+                    .get(&object_id)
+                    .unwrap()
+                    .mut_ref_count;
+                let first_touched_at_epoch = shared_objects_set_data
+                    .shared_objects
+                    .get(&object_id)
+                    .unwrap()
+                    .first_touched_at_epoch;
+                let first_touched_at_checkpoint = shared_objects_set_data
+                    .shared_objects
+                    .get(&object_id)
+                    .unwrap()
+                    .first_touched_at_checkpoint;
+                let first_touched_by_txs = &shared_objects_set_data
+                    .shared_objects
+                    .get(&object_id)
+                    .unwrap()
+                    .first_touched_by_txs;
 
                 // update shared objects data
                 shared_objects_data
@@ -186,32 +220,11 @@ async fn main() -> Result<(), anyhow::Error> {
                         address: address.clone(),
                         type_: type_.clone(),
                         is_resource: is_resource,
-                        tx_count: shared_objects_set_data
-                            .shared_objects
-                            .get(&object_id)
-                            .unwrap()
-                            .tx_count,
-                        mut_ref_count: shared_objects_set_data
-                            .shared_objects
-                            .get(&object_id)
-                            .unwrap()
-                            .mut_ref_count,
-                        first_touched_at_epoch: shared_objects_set_data
-                            .shared_objects
-                            .get(&object_id)
-                            .unwrap()
-                            .first_touched_at_epoch,
-                        first_touched_at_checkpoint: shared_objects_set_data
-                            .shared_objects
-                            .get(&object_id)
-                            .unwrap()
-                            .first_touched_at_checkpoint,
-                        first_touched_by_txs: shared_objects_set_data
-                            .shared_objects
-                            .get(&object_id)
-                            .unwrap()
-                            .first_touched_by_txs
-                            .clone(),
+                        tx_count: tx_count,
+                        mut_ref_count: mut_ref_count,
+                        first_touched_at_epoch: first_touched_at_epoch,
+                        first_touched_at_checkpoint: first_touched_at_checkpoint,
+                        first_touched_by_txs: first_touched_by_txs.clone(),
                     });
 
                 // update the number of resources
@@ -244,6 +257,9 @@ async fn main() -> Result<(), anyhow::Error> {
                         num_instances: 0,
                         mut_ref_count: 0,
                         is_resource: is_resource,
+                        first_touched_at_epoch: first_touched_at_epoch,
+                        first_touched_at_checkpoint: first_touched_at_checkpoint,
+                        first_touched_by_txs: first_touched_by_txs.clone(),
                     });
 
                 // update data for that type
@@ -262,11 +278,7 @@ async fn main() -> Result<(), anyhow::Error> {
                     .types
                     .get_mut(&type_)
                     .unwrap()
-                    .tx_count += shared_objects_set_data
-                        .shared_objects
-                        .get(&object_id)
-                        .unwrap()
-                        .tx_count;
+                    .tx_count += tx_count;
                 packages_data
                     .packages
                     .get_mut(&address)
@@ -274,11 +286,42 @@ async fn main() -> Result<(), anyhow::Error> {
                     .types
                     .get_mut(&type_)
                     .unwrap()
-                    .mut_ref_count += shared_objects_set_data
-                        .shared_objects
-                        .get(&object_id)
+                    .mut_ref_count += mut_ref_count;
+                if first_touched_at_checkpoint <  packages_data
+                        .packages
+                        .get(&address)
                         .unwrap()
-                        .mut_ref_count;
+                        .types
+                        .get(&type_)
+                        .unwrap()
+                        .first_touched_at_checkpoint {
+                    // another shared object of that type was encountered earlier,
+                    // so we need to update accordingly
+                    packages_data
+                        .packages
+                        .get_mut(&address)
+                        .unwrap()
+                        .types
+                        .get_mut(&type_)
+                        .unwrap()
+                        .first_touched_at_epoch = first_touched_at_epoch;
+                    packages_data
+                        .packages
+                        .get_mut(&address)
+                        .unwrap()
+                        .types
+                        .get_mut(&type_)
+                        .unwrap()
+                        .first_touched_at_checkpoint = first_touched_at_checkpoint;
+                    packages_data
+                        .packages
+                        .get_mut(&address)
+                        .unwrap()
+                        .types
+                        .get_mut(&type_)
+                        .unwrap()
+                        .first_touched_by_txs = first_touched_by_txs.clone();
+                }
             } // end of unpacking MoveObject enum
         } // end iterating over objects
 
