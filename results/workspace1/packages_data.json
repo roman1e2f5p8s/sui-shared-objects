@@ -1,19 +1,19 @@
 {
-  "num_packages": 1490,
-  "num_types": 1948,
-  "num_resources": 785,
+  "num_packages": 1500,
+  "num_types": 1963,
+  "num_resources": 794,
   "packages": {
     "00b53b0f4174108627fbee72e2498b58d6a2714cded53fac537034c220d26302": {
-      "tx_count": 14261260,
+      "tx_count": 14475273,
       "num_instances": 21,
-      "mut_ref_count": 11758193,
+      "mut_ref_count": 11934442,
       "num_types": 2,
       "num_resources": 2,
       "types": {
         "price_info.PriceInfoObject": {
-          "tx_count": 11757453,
+          "tx_count": 11933693,
           "num_instances": 20,
-          "mut_ref_count": 11757407,
+          "mut_ref_count": 11933647,
           "is_resource": true,
           "first_touched_at_epoch": 31,
           "first_touched_at_checkpoint": 2458981,
@@ -22,9 +22,9 @@
           }
         },
         "state.State": {
-          "tx_count": 2503807,
+          "tx_count": 2541580,
           "num_instances": 1,
-          "mut_ref_count": 786,
+          "mut_ref_count": 795,
           "is_resource": true,
           "first_touched_at_epoch": 31,
           "first_touched_at_checkpoint": 2457966,
@@ -35,14 +35,14 @@
       }
     },
     "0000000000000000000000000000000000000000000000000000000000000002": {
-      "tx_count": 6793487,
-      "num_instances": 101238,
-      "mut_ref_count": 740531,
+      "tx_count": 7221974,
+      "num_instances": 112624,
+      "mut_ref_count": 746453,
       "num_types": 5,
       "num_resources": 4,
       "types": {
         "clock.Clock": {
-          "tx_count": 5649177,
+          "tx_count": 5745755,
           "num_instances": 1,
           "mut_ref_count": 0,
           "is_resource": false,
@@ -53,9 +53,9 @@
           }
         },
         "kiosk.Kiosk": {
-          "tx_count": 891924,
-          "num_instances": 100890,
-          "mut_ref_count": 565118,
+          "tx_count": 1221226,
+          "num_instances": 112276,
+          "mut_ref_count": 568880,
           "is_resource": true,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1574656,
@@ -64,9 +64,9 @@
           }
         },
         "transfer_policy.TransferPolicy": {
-          "tx_count": 248884,
+          "tx_count": 251398,
           "num_instances": 155,
-          "mut_ref_count": 172024,
+          "mut_ref_count": 174091,
           "is_resource": true,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1571891,
@@ -75,9 +75,9 @@
           }
         },
         "coin.TreasuryCap": {
-          "tx_count": 3219,
+          "tx_count": 3312,
           "num_instances": 15,
-          "mut_ref_count": 3219,
+          "mut_ref_count": 3312,
           "is_resource": true,
           "first_touched_at_epoch": 21,
           "first_touched_at_checkpoint": 1622535,
@@ -99,16 +99,16 @@
       }
     },
     "5306f64e312b581766351c07af79c72fcb1cd25147157fdc2f8ad76de9a3fb6a": {
-      "tx_count": 2526821,
+      "tx_count": 2564663,
       "num_instances": 1,
-      "mut_ref_count": 8503,
+      "mut_ref_count": 8549,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "state.State": {
-          "tx_count": 2526821,
+          "tx_count": 2564663,
           "num_instances": 1,
-          "mut_ref_count": 8503,
+          "mut_ref_count": 8549,
           "is_resource": true,
           "first_touched_at_epoch": 19,
           "first_touched_at_checkpoint": 1448275,
@@ -119,16 +119,16 @@
       }
     },
     "1eabed72c53feb3805120a081dc15963c204dc8d091542592abaf7a35689b2fb": {
-      "tx_count": 2385214,
+      "tx_count": 2393222,
       "num_instances": 139,
-      "mut_ref_count": 1500488,
+      "mut_ref_count": 1506492,
       "num_types": 6,
       "num_resources": 5,
       "types": {
         "pool.Pool": {
-          "tx_count": 1262128,
+          "tx_count": 1266417,
           "num_instances": 133,
-          "mut_ref_count": 1262122,
+          "mut_ref_count": 1266411,
           "is_resource": true,
           "first_touched_at_epoch": 21,
           "first_touched_at_checkpoint": 1584362,
@@ -137,9 +137,9 @@
           }
         },
         "config.GlobalConfig": {
-          "tx_count": 1025593,
+          "tx_count": 1028564,
           "num_instances": 1,
-          "mut_ref_count": 140918,
+          "mut_ref_count": 141885,
           "is_resource": true,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1580124,
@@ -148,9 +148,9 @@
           }
         },
         "partner.Partner": {
-          "tx_count": 52927,
+          "tx_count": 53439,
           "num_instances": 2,
-          "mut_ref_count": 52927,
+          "mut_ref_count": 53439,
           "is_resource": true,
           "first_touched_at_epoch": 41,
           "first_touched_at_checkpoint": 3302259,
@@ -159,9 +159,9 @@
           }
         },
         "rewarder.RewarderGlobalVault": {
-          "tx_count": 44421,
+          "tx_count": 44657,
           "num_instances": 1,
-          "mut_ref_count": 44378,
+          "mut_ref_count": 44614,
           "is_resource": true,
           "first_touched_at_epoch": 21,
           "first_touched_at_checkpoint": 1649691,
@@ -194,16 +194,16 @@
       }
     },
     "745a16ea148a7b3d1f6e68d0f16237f954e99197cd0ffb96e70c994c946d60d1": {
-      "tx_count": 1042270,
-      "num_instances": 385464,
-      "mut_ref_count": 1042270,
+      "tx_count": 1756610,
+      "num_instances": 726625,
+      "mut_ref_count": 1756610,
       "num_types": 2,
       "num_resources": 0,
       "types": {
         "coin_flip.HouseData": {
-          "tx_count": 555205,
+          "tx_count": 928234,
           "num_instances": 1,
-          "mut_ref_count": 555205,
+          "mut_ref_count": 928234,
           "is_resource": false,
           "first_touched_at_epoch": 86,
           "first_touched_at_checkpoint": 7084045,
@@ -212,9 +212,9 @@
           }
         },
         "coin_flip.Game": {
-          "tx_count": 487065,
-          "num_instances": 385463,
-          "mut_ref_count": 487065,
+          "tx_count": 828376,
+          "num_instances": 726624,
+          "mut_ref_count": 828376,
           "is_resource": false,
           "first_touched_at_epoch": 86,
           "first_touched_at_checkpoint": 7084600,
@@ -225,16 +225,16 @@
       }
     },
     "d5dd28cc24009752905689b2ba2bf90bfc8de4549b9123f93519bb8ba9bf9981": {
-      "tx_count": 625380,
+      "tx_count": 626899,
       "num_instances": 5,
-      "mut_ref_count": 625380,
+      "mut_ref_count": 626899,
       "num_types": 5,
       "num_resources": 5,
       "types": {
         "marketplace.MarketplaceConfig": {
-          "tx_count": 327525,
+          "tx_count": 328156,
           "num_instances": 1,
-          "mut_ref_count": 327525,
+          "mut_ref_count": 328156,
           "is_resource": true,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1576251,
@@ -243,9 +243,9 @@
           }
         },
         "marketplace.CreatorConfig": {
-          "tx_count": 100826,
+          "tx_count": 101096,
           "num_instances": 1,
-          "mut_ref_count": 100826,
+          "mut_ref_count": 101096,
           "is_resource": true,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1576355,
@@ -254,9 +254,9 @@
           }
         },
         "creator_bluemove_fee.RoyaltyCollection": {
-          "tx_count": 100795,
+          "tx_count": 101064,
           "num_instances": 1,
-          "mut_ref_count": 100795,
+          "mut_ref_count": 101064,
           "is_resource": true,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1576355,
@@ -265,9 +265,9 @@
           }
         },
         "offer_collection.OfferCollectionData": {
-          "tx_count": 74721,
+          "tx_count": 75029,
           "num_instances": 1,
-          "mut_ref_count": 74721,
+          "mut_ref_count": 75029,
           "is_resource": true,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1576931,
@@ -276,9 +276,9 @@
           }
         },
         "offer_item.OfferData": {
-          "tx_count": 21513,
+          "tx_count": 21554,
           "num_instances": 1,
-          "mut_ref_count": 21513,
+          "mut_ref_count": 21554,
           "is_resource": true,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1578565,
@@ -289,16 +289,16 @@
       }
     },
     "72f9c76421170b5a797432ba9e1b3b2e2b7cf6faa26eb955396c773af2479e1e": {
-      "tx_count": 456497,
+      "tx_count": 525637,
       "num_instances": 5,
-      "mut_ref_count": 456497,
+      "mut_ref_count": 525637,
       "num_types": 2,
       "num_resources": 1,
       "types": {
         "game_8192.Game8192Maintainer": {
-          "tx_count": 424137,
+          "tx_count": 491334,
           "num_instances": 1,
-          "mut_ref_count": 424137,
+          "mut_ref_count": 491334,
           "is_resource": false,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1518999,
@@ -307,9 +307,9 @@
           }
         },
         "leaderboard_8192.Leaderboard8192": {
-          "tx_count": 32360,
+          "tx_count": 34303,
           "num_instances": 4,
-          "mut_ref_count": 32360,
+          "mut_ref_count": 34303,
           "is_resource": true,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1519020,
@@ -320,16 +320,16 @@
       }
     },
     "361dd589b98e8fcda9a7ee53b85efabef3569d00416640d2faa516e3801d7ffc": {
-      "tx_count": 414503,
+      "tx_count": 416151,
       "num_instances": 23,
-      "mut_ref_count": 411268,
+      "mut_ref_count": 412876,
       "num_types": 4,
       "num_resources": 0,
       "types": {
         "pool.Pool": {
-          "tx_count": 379174,
+          "tx_count": 380626,
           "num_instances": 20,
-          "mut_ref_count": 379166,
+          "mut_ref_count": 380618,
           "is_resource": false,
           "first_touched_at_epoch": 28,
           "first_touched_at_checkpoint": 2250683,
@@ -338,9 +338,9 @@
           }
         },
         "TOKEN.TokenFarm": {
-          "tx_count": 18415,
+          "tx_count": 18554,
           "num_instances": 1,
-          "mut_ref_count": 15188,
+          "mut_ref_count": 15287,
           "is_resource": false,
           "first_touched_at_epoch": 28,
           "first_touched_at_checkpoint": 2248950,
@@ -349,9 +349,9 @@
           }
         },
         "TOKEN.TokenBank": {
-          "tx_count": 16893,
+          "tx_count": 16950,
           "num_instances": 1,
-          "mut_ref_count": 16893,
+          "mut_ref_count": 16950,
           "is_resource": false,
           "first_touched_at_epoch": 28,
           "first_touched_at_checkpoint": 2248915,
@@ -373,16 +373,16 @@
       }
     },
     "bb1531504c9c3235d3cd637ed9573cbe18461255b4175a1cb1e1b07b8aa8e11b": {
-      "tx_count": 329203,
-      "num_instances": 6262,
-      "mut_ref_count": 327828,
+      "tx_count": 329434,
+      "num_instances": 6265,
+      "mut_ref_count": 328059,
       "num_types": 3,
       "num_resources": 3,
       "types": {
         "suia.Medal": {
-          "tx_count": 320323,
-          "num_instances": 6260,
-          "mut_ref_count": 320323,
+          "tx_count": 320551,
+          "num_instances": 6263,
+          "mut_ref_count": 320551,
           "is_resource": true,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1565351,
@@ -391,9 +391,9 @@
           }
         },
         "suia.MedalStore": {
-          "tx_count": 7504,
+          "tx_count": 7507,
           "num_instances": 1,
-          "mut_ref_count": 7504,
+          "mut_ref_count": 7507,
           "is_resource": true,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1565249,
@@ -415,16 +415,16 @@
       }
     },
     "51179c2df7466220b513901c52412258942a1e041fccb973e92a53c29e1a09ed": {
-      "tx_count": 297836,
+      "tx_count": 328425,
       "num_instances": 2,
-      "mut_ref_count": 297836,
+      "mut_ref_count": 328425,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "simple_oracle.SimpleOracle": {
-          "tx_count": 297836,
+          "tx_count": 328425,
           "num_instances": 2,
-          "mut_ref_count": 297836,
+          "mut_ref_count": 328425,
           "is_resource": true,
           "first_touched_at_epoch": 84,
           "first_touched_at_checkpoint": 6938966,
@@ -435,16 +435,16 @@
       }
     },
     "b24b6789e088b876afabca733bed2299fbc9e2d6369be4d1acfa17d8145454d9": {
-      "tx_count": 296792,
+      "tx_count": 296974,
       "num_instances": 2,
-      "mut_ref_count": 296792,
+      "mut_ref_count": 296974,
       "num_types": 2,
       "num_resources": 2,
       "types": {
         "swap.Dex_Info": {
-          "tx_count": 292313,
+          "tx_count": 292486,
           "num_instances": 1,
-          "mut_ref_count": 292313,
+          "mut_ref_count": 292486,
           "is_resource": true,
           "first_touched_at_epoch": 21,
           "first_touched_at_checkpoint": 1644919,
@@ -453,9 +453,9 @@
           }
         },
         "stable_swap.Dex_Stable_Info": {
-          "tx_count": 4479,
+          "tx_count": 4488,
           "num_instances": 1,
-          "mut_ref_count": 4479,
+          "mut_ref_count": 4488,
           "is_resource": true,
           "first_touched_at_epoch": 21,
           "first_touched_at_checkpoint": 1656703,
@@ -497,16 +497,16 @@
       }
     },
     "8bdc95e99e393fea9b0e010353ef27109ca6b93d96c57090d7ab61fc9ca4d78d": {
-      "tx_count": 264826,
+      "tx_count": 270978,
       "num_instances": 1,
-      "mut_ref_count": 264826,
+      "mut_ref_count": 270978,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "utility.Config": {
-          "tx_count": 264826,
+          "tx_count": 270978,
           "num_instances": 1,
-          "mut_ref_count": 264826,
+          "mut_ref_count": 270978,
           "is_resource": true,
           "first_touched_at_epoch": 54,
           "first_touched_at_checkpoint": 4378511,
@@ -517,21 +517,41 @@
       }
     },
     "6b84da4f5dc051759382e60352377fea9d59bc6ec92dc60e0b6387e05274415f": {
-      "tx_count": 234925,
+      "tx_count": 234945,
       "num_instances": 1,
-      "mut_ref_count": 234925,
+      "mut_ref_count": 234945,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "implements.Global": {
-          "tx_count": 234925,
+          "tx_count": 234945,
           "num_instances": 1,
-          "mut_ref_count": 234925,
+          "mut_ref_count": 234945,
           "is_resource": false,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1566746,
           "first_touched_by_txs": {
             "3Q6yLXcT9jt8rCHnt2X7RyqA2dL8Hc2PufF3ZvwTSVdx": true
+          }
+        }
+      }
+    },
+    "000000000000000000000000000000000000000000000000000000000000dee9": {
+      "tx_count": 220881,
+      "num_instances": 5,
+      "mut_ref_count": 220879,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "clob_v2.Pool": {
+          "tx_count": 220881,
+          "num_instances": 5,
+          "mut_ref_count": 220879,
+          "is_resource": false,
+          "first_touched_at_epoch": 74,
+          "first_touched_at_checkpoint": 6065416,
+          "first_touched_by_txs": {
+            "83yB4cbavLC7drB2BfrNWr3wrwecU6hyMGVsSyCTfYCa": true
           }
         }
       }
@@ -567,17 +587,37 @@
         }
       }
     },
+    "5d8fbbf6f908a4af8c6d072669a462d53e03eb3c1d863bd0359dc818c69ea706": {
+      "tx_count": 200532,
+      "num_instances": 1,
+      "mut_ref_count": 200474,
+      "num_types": 1,
+      "num_resources": 1,
+      "types": {
+        "SupraSValueFeed.OracleHolder": {
+          "tx_count": 200532,
+          "num_instances": 1,
+          "mut_ref_count": 200474,
+          "is_resource": true,
+          "first_touched_at_epoch": 77,
+          "first_touched_at_checkpoint": 6354365,
+          "first_touched_by_txs": {
+            "Fvp5ZYjYTkbcgs3179yxWpsUsyycPcLW2Cyk2Fq5xd1p": true
+          }
+        }
+      }
+    },
     "4e0629fa51a62b0c1d7c7b9fc89237ec5b6f630d7798ad3f06d820afb93a995a": {
-      "tx_count": 189500,
+      "tx_count": 189901,
       "num_instances": 368,
-      "mut_ref_count": 189496,
+      "mut_ref_count": 189897,
       "num_types": 2,
       "num_resources": 0,
       "types": {
         "orderbook.Orderbook": {
-          "tx_count": 189182,
+          "tx_count": 189583,
           "num_instances": 66,
-          "mut_ref_count": 189178,
+          "mut_ref_count": 189579,
           "is_resource": false,
           "first_touched_at_epoch": 21,
           "first_touched_at_checkpoint": 1589083,
@@ -594,26 +634,6 @@
           "first_touched_at_checkpoint": 4359128,
           "first_touched_by_txs": {
             "2CBsr2BY586uFyBgeDgrcXA5cSH98TgLbR3dgDfFEwa6": true
-          }
-        }
-      }
-    },
-    "5d8fbbf6f908a4af8c6d072669a462d53e03eb3c1d863bd0359dc818c69ea706": {
-      "tx_count": 187777,
-      "num_instances": 1,
-      "mut_ref_count": 187720,
-      "num_types": 1,
-      "num_resources": 1,
-      "types": {
-        "SupraSValueFeed.OracleHolder": {
-          "tx_count": 187777,
-          "num_instances": 1,
-          "mut_ref_count": 187720,
-          "is_resource": true,
-          "first_touched_at_epoch": 77,
-          "first_touched_at_checkpoint": 6354365,
-          "first_touched_by_txs": {
-            "Fvp5ZYjYTkbcgs3179yxWpsUsyycPcLW2Cyk2Fq5xd1p": true
           }
         }
       }
@@ -656,26 +676,6 @@
           "first_touched_at_checkpoint": 3743616,
           "first_touched_by_txs": {
             "DfyjzhhQDFCZMoPyP8fTGgRL237u699SS3KovhE9r6kQ": true
-          }
-        }
-      }
-    },
-    "000000000000000000000000000000000000000000000000000000000000dee9": {
-      "tx_count": 177250,
-      "num_instances": 5,
-      "mut_ref_count": 177248,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "clob_v2.Pool": {
-          "tx_count": 177250,
-          "num_instances": 5,
-          "mut_ref_count": 177248,
-          "is_resource": false,
-          "first_touched_at_epoch": 74,
-          "first_touched_at_checkpoint": 6065416,
-          "first_touched_by_txs": {
-            "83yB4cbavLC7drB2BfrNWr3wrwecU6hyMGVsSyCTfYCa": true
           }
         }
       }
@@ -723,16 +723,16 @@
       }
     },
     "3164fcf73eb6b41ff3d2129346141bd68469964c2d95a5b1533e8d16e6ea6e13": {
-      "tx_count": 113714,
-      "num_instances": 31692,
-      "mut_ref_count": 84214,
+      "tx_count": 113728,
+      "num_instances": 31697,
+      "mut_ref_count": 84220,
       "num_types": 2,
       "num_resources": 2,
       "types": {
         "Market.Listing": {
-          "tx_count": 59398,
-          "num_instances": 31691,
-          "mut_ref_count": 59398,
+          "tx_count": 59403,
+          "num_instances": 31696,
+          "mut_ref_count": 59403,
           "is_resource": true,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1574527,
@@ -741,9 +741,9 @@
           }
         },
         "marketplace.MarketPlace": {
-          "tx_count": 54316,
+          "tx_count": 54325,
           "num_instances": 1,
-          "mut_ref_count": 24816,
+          "mut_ref_count": 24817,
           "is_resource": true,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1573748,
@@ -754,16 +754,16 @@
       }
     },
     "91bfbc386a41afcfd9b2533058d7e915a1d3829089cc268ff4333d54d6339ca1": {
-      "tx_count": 113452,
+      "tx_count": 113623,
       "num_instances": 19,
-      "mut_ref_count": 65397,
+      "mut_ref_count": 65490,
       "num_types": 5,
       "num_resources": 5,
       "types": {
         "pool.Pool": {
-          "tx_count": 53603,
+          "tx_count": 53687,
           "num_instances": 13,
-          "mut_ref_count": 53603,
+          "mut_ref_count": 53687,
           "is_resource": true,
           "first_touched_at_epoch": 21,
           "first_touched_at_checkpoint": 1664814,
@@ -772,7 +772,7 @@
           }
         },
         "pool.Versioned": {
-          "tx_count": 48700,
+          "tx_count": 48778,
           "num_instances": 1,
           "mut_ref_count": 645,
           "is_resource": true,
@@ -783,9 +783,9 @@
           }
         },
         "position_manager.Positions": {
-          "tx_count": 9284,
+          "tx_count": 9290,
           "num_instances": 1,
-          "mut_ref_count": 9284,
+          "mut_ref_count": 9290,
           "is_resource": true,
           "first_touched_at_epoch": 21,
           "first_touched_at_checkpoint": 1664404,
@@ -794,9 +794,9 @@
           }
         },
         "pool.PoolRewardVault": {
-          "tx_count": 1847,
+          "tx_count": 1850,
           "num_instances": 3,
-          "mut_ref_count": 1847,
+          "mut_ref_count": 1850,
           "is_resource": true,
           "first_touched_at_epoch": 33,
           "first_touched_at_checkpoint": 2574750,
@@ -818,16 +818,16 @@
       }
     },
     "eb294b9401a7b6df0000b9f4cb67322d0fcdd12dd05ef9bd28529d41dbf07d22": {
-      "tx_count": 110879,
+      "tx_count": 110941,
       "num_instances": 2,
-      "mut_ref_count": 110879,
+      "mut_ref_count": 110941,
       "num_types": 2,
       "num_resources": 2,
       "types": {
         "tocen_marketplace.Marketplace": {
-          "tx_count": 110631,
+          "tx_count": 110692,
           "num_instances": 1,
-          "mut_ref_count": 110631,
+          "mut_ref_count": 110692,
           "is_resource": true,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1577846,
@@ -836,9 +836,9 @@
           }
         },
         "tocen_marketplace.CollectionOffer": {
-          "tx_count": 248,
+          "tx_count": 249,
           "num_instances": 1,
-          "mut_ref_count": 248,
+          "mut_ref_count": 249,
           "is_resource": true,
           "first_touched_at_epoch": 26,
           "first_touched_at_checkpoint": 2059953,
@@ -954,14 +954,14 @@
       }
     },
     "56714d6578dafaaec566c1483ac0fc5fb206b506455a8d59b043d67d243243eb": {
-      "tx_count": 96363,
+      "tx_count": 96375,
       "num_instances": 1,
       "mut_ref_count": 14,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "version.Version": {
-          "tx_count": 96363,
+          "tx_count": 96375,
           "num_instances": 1,
           "mut_ref_count": 14,
           "is_resource": false,
@@ -974,16 +974,16 @@
       }
     },
     "57138e18b82cc8ea6e92c3d5737d6078b1304b655f59cf5ae9668cc44aad4ead": {
-      "tx_count": 92015,
+      "tx_count": 96218,
       "num_instances": 3,
-      "mut_ref_count": 92015,
+      "mut_ref_count": 96218,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "profile.Registry": {
-          "tx_count": 92015,
+          "tx_count": 96218,
           "num_instances": 3,
-          "mut_ref_count": 92015,
+          "mut_ref_count": 96218,
           "is_resource": false,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1568954,
@@ -1025,14 +1025,14 @@
       }
     },
     "826915f8ca6d11597dfe6599b8aa02a4c08bd8d39674855254a06ee83fe7220e": {
-      "tx_count": 70423,
+      "tx_count": 70515,
       "num_instances": 59,
-      "mut_ref_count": 54970,
+      "mut_ref_count": 55035,
       "num_types": 15,
       "num_resources": 5,
       "types": {
         "genesis.GovernanceGenesis": {
-          "tx_count": 14742,
+          "tx_count": 14765,
           "num_instances": 1,
           "mut_ref_count": 3,
           "is_resource": false,
@@ -1043,9 +1043,9 @@
           }
         },
         "user_manager.UserManagerInfo": {
-          "tx_count": 14320,
+          "tx_count": 14334,
           "num_instances": 1,
-          "mut_ref_count": 14320,
+          "mut_ref_count": 14334,
           "is_resource": true,
           "first_touched_at_epoch": 46,
           "first_touched_at_checkpoint": 3718515,
@@ -1054,9 +1054,9 @@
           }
         },
         "system_portal.SystemPortal": {
-          "tx_count": 7080,
+          "tx_count": 7081,
           "num_instances": 1,
-          "mut_ref_count": 7080,
+          "mut_ref_count": 7081,
           "is_resource": false,
           "first_touched_at_epoch": 46,
           "first_touched_at_checkpoint": 3725349,
@@ -1065,9 +1065,9 @@
           }
         },
         "oracle.PriceOracle": {
-          "tx_count": 6947,
+          "tx_count": 6965,
           "num_instances": 1,
-          "mut_ref_count": 6947,
+          "mut_ref_count": 6965,
           "is_resource": false,
           "first_touched_at_epoch": 46,
           "first_touched_at_checkpoint": 3718476,
@@ -1076,9 +1076,9 @@
           }
         },
         "pool_manager.PoolManagerInfo": {
-          "tx_count": 6534,
+          "tx_count": 6543,
           "num_instances": 1,
-          "mut_ref_count": 6534,
+          "mut_ref_count": 6543,
           "is_resource": true,
           "first_touched_at_epoch": 46,
           "first_touched_at_checkpoint": 3718505,
@@ -1087,9 +1087,9 @@
           }
         },
         "lending_core_storage.Storage": {
-          "tx_count": 6534,
+          "tx_count": 6543,
           "num_instances": 1,
-          "mut_ref_count": 6534,
+          "mut_ref_count": 6543,
           "is_resource": false,
           "first_touched_at_epoch": 46,
           "first_touched_at_checkpoint": 3718524,
@@ -1098,9 +1098,9 @@
           }
         },
         "lending_portal.LendingPortal": {
-          "tx_count": 6163,
+          "tx_count": 6164,
           "num_instances": 1,
-          "mut_ref_count": 6163,
+          "mut_ref_count": 6164,
           "is_resource": false,
           "first_touched_at_epoch": 46,
           "first_touched_at_checkpoint": 3727677,
@@ -1109,9 +1109,9 @@
           }
         },
         "dola_pool.Pool": {
-          "tx_count": 6158,
+          "tx_count": 6159,
           "num_instances": 1,
-          "mut_ref_count": 6158,
+          "mut_ref_count": 6159,
           "is_resource": true,
           "first_touched_at_epoch": 46,
           "first_touched_at_checkpoint": 3727677,
@@ -1120,9 +1120,9 @@
           }
         },
         "wormhole_adapter_core.CoreState": {
-          "tx_count": 1084,
+          "tx_count": 1096,
           "num_instances": 1,
-          "mut_ref_count": 1084,
+          "mut_ref_count": 1096,
           "is_resource": true,
           "first_touched_at_epoch": 46,
           "first_touched_at_checkpoint": 3721289,
@@ -1131,7 +1131,7 @@
           }
         },
         "system_core_storage.Storage": {
-          "tx_count": 711,
+          "tx_count": 715,
           "num_instances": 1,
           "mut_ref_count": 0,
           "is_resource": false,
@@ -1199,16 +1199,16 @@
       }
     },
     "bc3df36be17f27ac98e3c839b2589db8475fa07b20657b08e8891e3aaf5ee5f9": {
-      "tx_count": 69353,
+      "tx_count": 69551,
       "num_instances": 302,
-      "mut_ref_count": 62421,
+      "mut_ref_count": 62609,
       "num_types": 3,
       "num_resources": 2,
       "types": {
         "royalty_strategy_bps.BpsRoyaltyStrategy": {
-          "tx_count": 51787,
+          "tx_count": 51919,
           "num_instances": 54,
-          "mut_ref_count": 51785,
+          "mut_ref_count": 51917,
           "is_resource": false,
           "first_touched_at_epoch": 21,
           "first_touched_at_checkpoint": 1601028,
@@ -1228,9 +1228,9 @@
           }
         },
         "collection.Collection": {
-          "tx_count": 6416,
+          "tx_count": 6482,
           "num_instances": 242,
-          "mut_ref_count": 3340,
+          "mut_ref_count": 3396,
           "is_resource": true,
           "first_touched_at_epoch": 21,
           "first_touched_at_checkpoint": 1605585,
@@ -1241,16 +1241,16 @@
       }
     },
     "0000000000000000000000000000000000000000000000000000000000000003": {
-      "tx_count": 65440,
+      "tx_count": 65769,
       "num_instances": 1,
-      "mut_ref_count": 65435,
+      "mut_ref_count": 65764,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "sui_system.SuiSystemState": {
-          "tx_count": 65440,
+          "tx_count": 65769,
           "num_instances": 1,
-          "mut_ref_count": 65435,
+          "mut_ref_count": 65764,
           "is_resource": false,
           "first_touched_at_epoch": 1,
           "first_touched_at_checkpoint": 32960,
@@ -1343,16 +1343,16 @@
       }
     },
     "4cb43a298a78ab64a3181305e45cef6b4ecadf35e85c92496aa1590c11af5c70": {
-      "tx_count": 50600,
+      "tx_count": 50618,
       "num_instances": 1,
-      "mut_ref_count": 50600,
+      "mut_ref_count": 50618,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "nft.AdminCap": {
-          "tx_count": 50600,
+          "tx_count": 50618,
           "num_instances": 1,
-          "mut_ref_count": 50600,
+          "mut_ref_count": 50618,
           "is_resource": false,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1578347,
@@ -1363,16 +1363,16 @@
       }
     },
     "70e34fcd390b767edbddaf7573450528698188c84c5395af8c4b12e3e37622fa": {
-      "tx_count": 48449,
+      "tx_count": 48524,
       "num_instances": 28,
-      "mut_ref_count": 3622,
+      "mut_ref_count": 3645,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "allowlist.Allowlist": {
-          "tx_count": 48449,
+          "tx_count": 48524,
           "num_instances": 28,
-          "mut_ref_count": 3622,
+          "mut_ref_count": 3645,
           "is_resource": true,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1571891,
@@ -1383,16 +1383,16 @@
       }
     },
     "ea10b3c9a65427fe13194413ef9844e61acd5636ea8b007c142991f65b0aaf67": {
-      "tx_count": 44467,
+      "tx_count": 44483,
       "num_instances": 5,
-      "mut_ref_count": 44467,
+      "mut_ref_count": 44483,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "campaign.Campaign": {
-          "tx_count": 44467,
+          "tx_count": 44483,
           "num_instances": 5,
-          "mut_ref_count": 44467,
+          "mut_ref_count": 44483,
           "is_resource": true,
           "first_touched_at_epoch": 21,
           "first_touched_at_checkpoint": 1662173,
@@ -1403,16 +1403,16 @@
       }
     },
     "227f865230dd4fc947321619f56fee37dc7ac582eb22e3eab29816f717512d9d": {
-      "tx_count": 43822,
+      "tx_count": 44039,
       "num_instances": 2,
-      "mut_ref_count": 43822,
+      "mut_ref_count": 44039,
       "num_types": 2,
       "num_resources": 0,
       "types": {
         "liquidity_pool.GlobalStorage": {
-          "tx_count": 41249,
+          "tx_count": 41465,
           "num_instances": 1,
-          "mut_ref_count": 41249,
+          "mut_ref_count": 41465,
           "is_resource": false,
           "first_touched_at_epoch": 42,
           "first_touched_at_checkpoint": 3397101,
@@ -1421,14 +1421,65 @@
           }
         },
         "limit_order.GlobalStorage": {
-          "tx_count": 2573,
+          "tx_count": 2574,
           "num_instances": 1,
-          "mut_ref_count": 2573,
+          "mut_ref_count": 2574,
           "is_resource": false,
           "first_touched_at_epoch": 42,
           "first_touched_at_checkpoint": 3400608,
           "first_touched_by_txs": {
             "GLkJPzjPKEWQrZom1UvjNedNojhh9hLjY61F4vBACJo5": true
+          }
+        }
+      }
+    },
+    "62285e6bf9ce841f9bf98b7e3a8e4478e02219135cf2bc1ccaf409ec5883f7b6": {
+      "tx_count": 43324,
+      "num_instances": 1,
+      "mut_ref_count": 43324,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "vault.Vault": {
+          "tx_count": 43324,
+          "num_instances": 1,
+          "mut_ref_count": 43324,
+          "is_resource": false,
+          "first_touched_at_epoch": 28,
+          "first_touched_at_checkpoint": 2236661,
+          "first_touched_by_txs": {
+            "4XNLgEQsZoYA1uSkWt4xpCMfesheDQXBLYxUuCmv5dEh": true
+          }
+        }
+      }
+    },
+    "c51203fb802e09f7bdb87e8433ea2fa4a19068164040f5fac284a032ee433e7a": {
+      "tx_count": 43280,
+      "num_instances": 2,
+      "mut_ref_count": 43280,
+      "num_types": 2,
+      "num_resources": 2,
+      "types": {
+        "kiosk_trade.Market": {
+          "tx_count": 43277,
+          "num_instances": 1,
+          "mut_ref_count": 43277,
+          "is_resource": true,
+          "first_touched_at_epoch": 79,
+          "first_touched_at_checkpoint": 6531503,
+          "first_touched_by_txs": {
+            "4RScqtmy4EPbByLY8tjC4RWuJKnFyTiBYxRkpyup2aTM": true
+          }
+        },
+        "kiosk_offer_collection.CollectionOfferData": {
+          "tx_count": 3,
+          "num_instances": 1,
+          "mut_ref_count": 3,
+          "is_resource": true,
+          "first_touched_at_epoch": 82,
+          "first_touched_at_checkpoint": 6764808,
+          "first_touched_by_txs": {
+            "9tqzgxFCNLoDHUFsCEKJ7xWzgwu9HsEdosDNUweY5D6P": true
           }
         }
       }
@@ -1449,57 +1500,6 @@
           "first_touched_at_checkpoint": 2128663,
           "first_touched_by_txs": {
             "Fe52dKfKgVwkUTZ8Mj9YndwoY6EPL6pVLMzBVfsqDwFM": true
-          }
-        }
-      }
-    },
-    "62285e6bf9ce841f9bf98b7e3a8e4478e02219135cf2bc1ccaf409ec5883f7b6": {
-      "tx_count": 43052,
-      "num_instances": 1,
-      "mut_ref_count": 43052,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "vault.Vault": {
-          "tx_count": 43052,
-          "num_instances": 1,
-          "mut_ref_count": 43052,
-          "is_resource": false,
-          "first_touched_at_epoch": 28,
-          "first_touched_at_checkpoint": 2236661,
-          "first_touched_by_txs": {
-            "4XNLgEQsZoYA1uSkWt4xpCMfesheDQXBLYxUuCmv5dEh": true
-          }
-        }
-      }
-    },
-    "c51203fb802e09f7bdb87e8433ea2fa4a19068164040f5fac284a032ee433e7a": {
-      "tx_count": 42658,
-      "num_instances": 2,
-      "mut_ref_count": 42658,
-      "num_types": 2,
-      "num_resources": 2,
-      "types": {
-        "kiosk_trade.Market": {
-          "tx_count": 42655,
-          "num_instances": 1,
-          "mut_ref_count": 42655,
-          "is_resource": true,
-          "first_touched_at_epoch": 79,
-          "first_touched_at_checkpoint": 6531503,
-          "first_touched_by_txs": {
-            "4RScqtmy4EPbByLY8tjC4RWuJKnFyTiBYxRkpyup2aTM": true
-          }
-        },
-        "kiosk_offer_collection.CollectionOfferData": {
-          "tx_count": 3,
-          "num_instances": 1,
-          "mut_ref_count": 3,
-          "is_resource": true,
-          "first_touched_at_epoch": 82,
-          "first_touched_at_checkpoint": 6764808,
-          "first_touched_by_txs": {
-            "9tqzgxFCNLoDHUFsCEKJ7xWzgwu9HsEdosDNUweY5D6P": true
           }
         }
       }
@@ -1525,16 +1525,16 @@
       }
     },
     "f45f752bc45dadff2ebc867c69af682c7192686d2455f655e2c54c9c75e95cff": {
-      "tx_count": 41355,
-      "num_instances": 5897,
-      "mut_ref_count": 35469,
+      "tx_count": 41657,
+      "num_instances": 5926,
+      "mut_ref_count": 35756,
       "num_types": 4,
       "num_resources": 2,
       "types": {
         "profile.Profile": {
-          "tx_count": 23726,
-          "num_instances": 2622,
-          "mut_ref_count": 17840,
+          "tx_count": 23874,
+          "num_instances": 2624,
+          "mut_ref_count": 17973,
           "is_resource": true,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1569801,
@@ -1543,9 +1543,9 @@
           }
         },
         "post.Post": {
-          "tx_count": 8770,
-          "num_instances": 3273,
-          "mut_ref_count": 8770,
+          "tx_count": 8801,
+          "num_instances": 3300,
+          "mut_ref_count": 8801,
           "is_resource": true,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1573437,
@@ -1554,9 +1554,9 @@
           }
         },
         "releap_social.RecentPosts": {
-          "tx_count": 5687,
+          "tx_count": 5807,
           "num_instances": 1,
-          "mut_ref_count": 5687,
+          "mut_ref_count": 5807,
           "is_resource": false,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1569801,
@@ -1565,9 +1565,9 @@
           }
         },
         "releap_social.Index": {
-          "tx_count": 3172,
+          "tx_count": 3175,
           "num_instances": 1,
-          "mut_ref_count": 3172,
+          "mut_ref_count": 3175,
           "is_resource": false,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1569784,
@@ -1578,16 +1578,16 @@
       }
     },
     "02be8c4a1a3cea4d3255d870d367c87838a8cc2bfe4f216a6b67b153027087a7": {
-      "tx_count": 35859,
+      "tx_count": 35874,
       "num_instances": 290,
-      "mut_ref_count": 25014,
+      "mut_ref_count": 25024,
       "num_types": 5,
       "num_resources": 3,
       "types": {
         "keepsake_marketplace.Marketplace": {
-          "tx_count": 12903,
+          "tx_count": 12911,
           "num_instances": 1,
-          "mut_ref_count": 12903,
+          "mut_ref_count": 12911,
           "is_resource": false,
           "first_touched_at_epoch": 21,
           "first_touched_at_checkpoint": 1598986,
@@ -1596,7 +1596,7 @@
           }
         },
         "transfer_policy.TransferPolicy": {
-          "tx_count": 10804,
+          "tx_count": 10809,
           "num_instances": 202,
           "mut_ref_count": 194,
           "is_resource": true,
@@ -1618,9 +1618,9 @@
           }
         },
         "keepsake_royalties.BpsRoyaltyStrategy": {
-          "tx_count": 3031,
+          "tx_count": 3033,
           "num_instances": 63,
-          "mut_ref_count": 3031,
+          "mut_ref_count": 3033,
           "is_resource": false,
           "first_touched_at_epoch": 21,
           "first_touched_at_checkpoint": 1605965,
@@ -1642,21 +1642,52 @@
       }
     },
     "5c45d10c26c5fb53bfaff819666da6bc7053d2190dfa29fec311cc666ff1f4b0": {
-      "tx_count": 35310,
+      "tx_count": 35437,
       "num_instances": 1,
-      "mut_ref_count": 35310,
+      "mut_ref_count": 35437,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "core.DEXStorage": {
-          "tx_count": 35310,
+          "tx_count": 35437,
           "num_instances": 1,
-          "mut_ref_count": 35310,
+          "mut_ref_count": 35437,
           "is_resource": false,
           "first_touched_at_epoch": 28,
           "first_touched_at_checkpoint": 2192601,
           "first_touched_by_txs": {
             "8AkTGj9V6EGCaFJREXGtmXYLX4EMnDXuhKJLz6Z1fFt8": true
+          }
+        }
+      }
+    },
+    "f0865c67c2bf2dfa10e131f939aea54e06ea7825d2cb66afc4e5652b6b727127": {
+      "tx_count": 34677,
+      "num_instances": 2,
+      "mut_ref_count": 34677,
+      "num_types": 2,
+      "num_resources": 1,
+      "types": {
+        "pool.Pool": {
+          "tx_count": 17340,
+          "num_instances": 1,
+          "mut_ref_count": 17340,
+          "is_resource": false,
+          "first_touched_at_epoch": 79,
+          "first_touched_at_checkpoint": 6514916,
+          "first_touched_by_txs": {
+            "2tjGKrDrpppErtjhdtHSSH7q9CwAXPa9iuM1dMsjvaUE": true
+          }
+        },
+        "pool.AccessList": {
+          "tx_count": 17337,
+          "num_instances": 1,
+          "mut_ref_count": 17337,
+          "is_resource": true,
+          "first_touched_at_epoch": 79,
+          "first_touched_at_checkpoint": 6514742,
+          "first_touched_by_txs": {
+            "42yhrrv5QGRC4ktHTwfEwDyw28yzHZpgUf1XJY11yicA": true
           }
         }
       }
@@ -1704,16 +1735,16 @@
       }
     },
     "fe038ab8e564341ce0601926550d5cfd76573e1d94c4256324c6f5b6a7297b06": {
-      "tx_count": 33831,
+      "tx_count": 33843,
       "num_instances": 4,
-      "mut_ref_count": 33831,
+      "mut_ref_count": 33843,
       "num_types": 4,
       "num_resources": 4,
       "types": {
         "farming.FarmingData": {
-          "tx_count": 8471,
+          "tx_count": 8474,
           "num_instances": 1,
-          "mut_ref_count": 8471,
+          "mut_ref_count": 8474,
           "is_resource": true,
           "first_touched_at_epoch": 22,
           "first_touched_at_checkpoint": 1725925,
@@ -1722,9 +1753,9 @@
           }
         },
         "farming.Reward": {
-          "tx_count": 8466,
+          "tx_count": 8469,
           "num_instances": 1,
-          "mut_ref_count": 8466,
+          "mut_ref_count": 8469,
           "is_resource": true,
           "first_touched_at_epoch": 22,
           "first_touched_at_checkpoint": 1725940,
@@ -1733,9 +1764,9 @@
           }
         },
         "farming.LPLocked": {
-          "tx_count": 8450,
+          "tx_count": 8453,
           "num_instances": 1,
-          "mut_ref_count": 8450,
+          "mut_ref_count": 8453,
           "is_resource": true,
           "first_touched_at_epoch": 22,
           "first_touched_at_checkpoint": 1725925,
@@ -1744,45 +1775,14 @@
           }
         },
         "farming.PoolUsers": {
-          "tx_count": 8444,
+          "tx_count": 8447,
           "num_instances": 1,
-          "mut_ref_count": 8444,
+          "mut_ref_count": 8447,
           "is_resource": true,
           "first_touched_at_epoch": 22,
           "first_touched_at_checkpoint": 1726886,
           "first_touched_by_txs": {
             "YPH1sFyafisppYpyqFQWjRUjchG9emCi9gcLH3XgeDV": true
-          }
-        }
-      }
-    },
-    "f0865c67c2bf2dfa10e131f939aea54e06ea7825d2cb66afc4e5652b6b727127": {
-      "tx_count": 33805,
-      "num_instances": 2,
-      "mut_ref_count": 33805,
-      "num_types": 2,
-      "num_resources": 1,
-      "types": {
-        "pool.Pool": {
-          "tx_count": 16904,
-          "num_instances": 1,
-          "mut_ref_count": 16904,
-          "is_resource": false,
-          "first_touched_at_epoch": 79,
-          "first_touched_at_checkpoint": 6514916,
-          "first_touched_by_txs": {
-            "2tjGKrDrpppErtjhdtHSSH7q9CwAXPa9iuM1dMsjvaUE": true
-          }
-        },
-        "pool.AccessList": {
-          "tx_count": 16901,
-          "num_instances": 1,
-          "mut_ref_count": 16901,
-          "is_resource": true,
-          "first_touched_at_epoch": 79,
-          "first_touched_at_checkpoint": 6514742,
-          "first_touched_by_txs": {
-            "42yhrrv5QGRC4ktHTwfEwDyw28yzHZpgUf1XJY11yicA": true
           }
         }
       }
@@ -1807,6 +1807,37 @@
             "9AjKveD6DJdojESdz6xJzr1ThWxk9LUXN6dSg81QFi2y": true,
             "AeQAYLZwmgNXM9td4J2MsdvFqv98AUYwEPKzQVC8aqQ2": true,
             "F9caZfx3xqCmAXYSFqgnYy7Xu6eWEACk8V5cGXVuYwwD": true
+          }
+        }
+      }
+    },
+    "ee68a4f9a04b177ef65455c89e4c462ed5a4cd486ecac463407dd80e565c7420": {
+      "tx_count": 30194,
+      "num_instances": 2,
+      "mut_ref_count": 30194,
+      "num_types": 2,
+      "num_resources": 2,
+      "types": {
+        "kiosk_offer_collection_v2.BidderBagV2": {
+          "tx_count": 16336,
+          "num_instances": 1,
+          "mut_ref_count": 16336,
+          "is_resource": true,
+          "first_touched_at_epoch": 82,
+          "first_touched_at_checkpoint": 6784259,
+          "first_touched_by_txs": {
+            "CH2dmCueA1caecVU8wUZhaygFBBoPFiwxRWJhTuVRYNF": true
+          }
+        },
+        "kiosk_offer_collection_v2.CollectionOfferDataV2": {
+          "tx_count": 13858,
+          "num_instances": 1,
+          "mut_ref_count": 13858,
+          "is_resource": true,
+          "first_touched_at_epoch": 82,
+          "first_touched_at_checkpoint": 6784259,
+          "first_touched_by_txs": {
+            "CH2dmCueA1caecVU8wUZhaygFBBoPFiwxRWJhTuVRYNF": true
           }
         }
       }
@@ -1843,52 +1874,21 @@
       }
     },
     "a8ddb49a989235f99c1100cad86e79685aca4cde696d1c4f084296917b2d0813": {
-      "tx_count": 29876,
+      "tx_count": 30038,
       "num_instances": 1,
-      "mut_ref_count": 29876,
+      "mut_ref_count": 30038,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "jk.AccessList": {
-          "tx_count": 29876,
+          "tx_count": 30038,
           "num_instances": 1,
-          "mut_ref_count": 29876,
+          "mut_ref_count": 30038,
           "is_resource": true,
           "first_touched_at_epoch": 71,
           "first_touched_at_checkpoint": 5821047,
           "first_touched_by_txs": {
             "4tsTsEARAA7HhzUEuuHvtiuXS6TLRiW8BN1fYvp8JWVo": true
-          }
-        }
-      }
-    },
-    "ee68a4f9a04b177ef65455c89e4c462ed5a4cd486ecac463407dd80e565c7420": {
-      "tx_count": 29605,
-      "num_instances": 2,
-      "mut_ref_count": 29605,
-      "num_types": 2,
-      "num_resources": 2,
-      "types": {
-        "kiosk_offer_collection_v2.BidderBagV2": {
-          "tx_count": 16053,
-          "num_instances": 1,
-          "mut_ref_count": 16053,
-          "is_resource": true,
-          "first_touched_at_epoch": 82,
-          "first_touched_at_checkpoint": 6784259,
-          "first_touched_by_txs": {
-            "CH2dmCueA1caecVU8wUZhaygFBBoPFiwxRWJhTuVRYNF": true
-          }
-        },
-        "kiosk_offer_collection_v2.CollectionOfferDataV2": {
-          "tx_count": 13552,
-          "num_instances": 1,
-          "mut_ref_count": 13552,
-          "is_resource": true,
-          "first_touched_at_epoch": 82,
-          "first_touched_at_checkpoint": 6784259,
-          "first_touched_by_txs": {
-            "CH2dmCueA1caecVU8wUZhaygFBBoPFiwxRWJhTuVRYNF": true
           }
         }
       }
@@ -1914,16 +1914,16 @@
       }
     },
     "81f077d146435758456c9962dffc03425af3c47f0b442869af63bf898b6c3ecf": {
-      "tx_count": 28968,
+      "tx_count": 29212,
       "num_instances": 3,
-      "mut_ref_count": 28968,
+      "mut_ref_count": 29212,
       "num_types": 3,
       "num_resources": 3,
       "types": {
         "vault.Vault": {
-          "tx_count": 13604,
+          "tx_count": 13726,
           "num_instances": 1,
-          "mut_ref_count": 13604,
+          "mut_ref_count": 13726,
           "is_resource": true,
           "first_touched_at_epoch": 40,
           "first_touched_at_checkpoint": 3227604,
@@ -1932,9 +1932,9 @@
           }
         },
         "game_controller.Controller": {
-          "tx_count": 13559,
+          "tx_count": 13681,
           "num_instances": 1,
-          "mut_ref_count": 13559,
+          "mut_ref_count": 13681,
           "is_resource": true,
           "first_touched_at_epoch": 40,
           "first_touched_at_checkpoint": 3230849,
@@ -1955,15 +1955,68 @@
         }
       }
     },
+    "6916b60ae826f14b3e2d7aa9c7eaf491a489379e2357c2819f48dde75a45ab58": {
+      "tx_count": 28071,
+      "num_instances": 7,
+      "mut_ref_count": 28066,
+      "num_types": 4,
+      "num_resources": 3,
+      "types": {
+        "nft.Phaser": {
+          "tx_count": 9621,
+          "num_instances": 2,
+          "mut_ref_count": 9621,
+          "is_resource": true,
+          "first_touched_at_epoch": 53,
+          "first_touched_at_checkpoint": 4325126,
+          "first_touched_by_txs": {
+            "GAPwDggQwnLjtpRkyJq3nHJWvCdUgaBRW2YA5D3FbQkd": true
+          }
+        },
+        "nft.Collection": {
+          "tx_count": 9606,
+          "num_instances": 1,
+          "mut_ref_count": 9601,
+          "is_resource": true,
+          "first_touched_at_epoch": 53,
+          "first_touched_at_checkpoint": 4322585,
+          "first_touched_by_txs": {
+            "Agm5zM6RJik9MEgNVrzSMniawErThLEPXxFX5gVXBkXk": false
+          }
+        },
+        "nft.Registry": {
+          "tx_count": 8786,
+          "num_instances": 3,
+          "mut_ref_count": 8786,
+          "is_resource": false,
+          "first_touched_at_epoch": 61,
+          "first_touched_at_checkpoint": 4979791,
+          "first_touched_by_txs": {
+            "FtZWChThacHs6ohszUvqCZPdiRT1KCY822fuMEiPuTHz": true
+          }
+        },
+        "nft.Wallet": {
+          "tx_count": 58,
+          "num_instances": 1,
+          "mut_ref_count": 58,
+          "is_resource": true,
+          "first_touched_at_epoch": 53,
+          "first_touched_at_checkpoint": 4329688,
+          "first_touched_by_txs": {
+            "8pmnL2TLvFVZFZQXTAVQf5aXWW8By7HSyJRrAd6sjfHj": true
+          }
+        }
+      }
+    },
     "aa2a2cfcbf56c651088854c00b1bebac7ce8d6c81367569fe77a9513a021f9eb": {
-      "tx_count": 27630,
+      "tx_count": 27633,
       "num_instances": 46,
       "mut_ref_count": 620,
       "num_types": 2,
       "num_resources": 0,
       "types": {
         "minter.Config": {
-          "tx_count": 27018,
+          "tx_count": 27021,
           "num_instances": 1,
           "mut_ref_count": 8,
           "is_resource": false,
@@ -2006,70 +2059,17 @@
         }
       }
     },
-    "6916b60ae826f14b3e2d7aa9c7eaf491a489379e2357c2819f48dde75a45ab58": {
-      "tx_count": 26878,
-      "num_instances": 7,
-      "mut_ref_count": 26873,
-      "num_types": 4,
-      "num_resources": 3,
-      "types": {
-        "nft.Phaser": {
-          "tx_count": 9242,
-          "num_instances": 2,
-          "mut_ref_count": 9242,
-          "is_resource": true,
-          "first_touched_at_epoch": 53,
-          "first_touched_at_checkpoint": 4325126,
-          "first_touched_by_txs": {
-            "GAPwDggQwnLjtpRkyJq3nHJWvCdUgaBRW2YA5D3FbQkd": true
-          }
-        },
-        "nft.Collection": {
-          "tx_count": 9228,
-          "num_instances": 1,
-          "mut_ref_count": 9223,
-          "is_resource": true,
-          "first_touched_at_epoch": 53,
-          "first_touched_at_checkpoint": 4322585,
-          "first_touched_by_txs": {
-            "Agm5zM6RJik9MEgNVrzSMniawErThLEPXxFX5gVXBkXk": false
-          }
-        },
-        "nft.Registry": {
-          "tx_count": 8352,
-          "num_instances": 3,
-          "mut_ref_count": 8352,
-          "is_resource": false,
-          "first_touched_at_epoch": 61,
-          "first_touched_at_checkpoint": 4979791,
-          "first_touched_by_txs": {
-            "FtZWChThacHs6ohszUvqCZPdiRT1KCY822fuMEiPuTHz": true
-          }
-        },
-        "nft.Wallet": {
-          "tx_count": 56,
-          "num_instances": 1,
-          "mut_ref_count": 56,
-          "is_resource": true,
-          "first_touched_at_epoch": 53,
-          "first_touched_at_checkpoint": 4329688,
-          "first_touched_by_txs": {
-            "8pmnL2TLvFVZFZQXTAVQf5aXWW8By7HSyJRrAd6sjfHj": true
-          }
-        }
-      }
-    },
     "b888907b2d86fc1c39ee7574777f603a708897c71f0ab815998f50760cccebef": {
-      "tx_count": 24873,
+      "tx_count": 24911,
       "num_instances": 1,
-      "mut_ref_count": 24873,
+      "mut_ref_count": 24911,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "ferret.AccessList": {
-          "tx_count": 24873,
+          "tx_count": 24911,
           "num_instances": 1,
-          "mut_ref_count": 24873,
+          "mut_ref_count": 24911,
           "is_resource": true,
           "first_touched_at_epoch": 30,
           "first_touched_at_checkpoint": 2363648,
@@ -2080,16 +2080,16 @@
       }
     },
     "a0eba10b173538c8fecca1dff298e488402cc9ff374f8a12ca7758eebe830b66": {
-      "tx_count": 23303,
+      "tx_count": 23397,
       "num_instances": 5,
-      "mut_ref_count": 23295,
+      "mut_ref_count": 23389,
       "num_types": 2,
       "num_resources": 0,
       "types": {
         "spot_dex.Pool": {
-          "tx_count": 23291,
+          "tx_count": 23385,
           "num_instances": 4,
-          "mut_ref_count": 23291,
+          "mut_ref_count": 23385,
           "is_resource": false,
           "first_touched_at_epoch": 23,
           "first_touched_at_checkpoint": 1787974,
@@ -2111,16 +2111,16 @@
       }
     },
     "5711036356989c25395de76cacd0abf01dd4d6dd9f84a3e170ef16fd2258d180": {
-      "tx_count": 23076,
+      "tx_count": 23181,
       "num_instances": 9,
-      "mut_ref_count": 23076,
+      "mut_ref_count": 23181,
       "num_types": 2,
       "num_resources": 1,
       "types": {
         "staking_nft.PoolInfo": {
-          "tx_count": 15126,
+          "tx_count": 15208,
           "num_instances": 8,
-          "mut_ref_count": 15126,
+          "mut_ref_count": 15208,
           "is_resource": true,
           "first_touched_at_epoch": 25,
           "first_touched_at_checkpoint": 1964616,
@@ -2129,9 +2129,9 @@
           }
         },
         "staking_nft.NftStakingMetadata": {
-          "tx_count": 7950,
+          "tx_count": 7973,
           "num_instances": 1,
-          "mut_ref_count": 7950,
+          "mut_ref_count": 7973,
           "is_resource": false,
           "first_touched_at_epoch": 25,
           "first_touched_at_checkpoint": 1964520,
@@ -2184,16 +2184,16 @@
       }
     },
     "9e69acc50ca03bc943c4f7c5304c2a6002d507b51c11913b247159c60422c606": {
-      "tx_count": 22126,
+      "tx_count": 22238,
       "num_instances": 2,
-      "mut_ref_count": 22030,
+      "mut_ref_count": 22142,
       "num_types": 2,
       "num_resources": 0,
       "types": {
         "xcetus.XcetusManager": {
-          "tx_count": 11112,
+          "tx_count": 11168,
           "num_instances": 1,
-          "mut_ref_count": 11016,
+          "mut_ref_count": 11072,
           "is_resource": false,
           "first_touched_at_epoch": 27,
           "first_touched_at_checkpoint": 2146075,
@@ -2202,9 +2202,9 @@
           }
         },
         "locking.LockUpManager": {
-          "tx_count": 11014,
+          "tx_count": 11070,
           "num_instances": 1,
-          "mut_ref_count": 11014,
+          "mut_ref_count": 11070,
           "is_resource": false,
           "first_touched_at_epoch": 27,
           "first_touched_at_checkpoint": 2146654,
@@ -2215,16 +2215,16 @@
       }
     },
     "26efee2b51c911237888e5dc6702868abca3c7ac12c53f76ef8eba0697695e3d": {
-      "tx_count": 21863,
+      "tx_count": 21920,
       "num_instances": 1,
-      "mut_ref_count": 21861,
+      "mut_ref_count": 21918,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "state.State": {
-          "tx_count": 21863,
+          "tx_count": 21920,
           "num_instances": 1,
-          "mut_ref_count": 21861,
+          "mut_ref_count": 21918,
           "is_resource": true,
           "first_touched_at_epoch": 19,
           "first_touched_at_checkpoint": 1448801,
@@ -2255,16 +2255,16 @@
       }
     },
     "d22b24490e0bae52676651b4f56660a5ff8022a2576e0089f79b3c88d44e08f0": {
-      "tx_count": 20059,
+      "tx_count": 20112,
       "num_instances": 2,
-      "mut_ref_count": 20059,
+      "mut_ref_count": 20112,
       "num_types": 2,
       "num_resources": 1,
       "types": {
         "auction.AuctionHouse": {
-          "tx_count": 12457,
+          "tx_count": 12484,
           "num_instances": 1,
-          "mut_ref_count": 12457,
+          "mut_ref_count": 12484,
           "is_resource": true,
           "first_touched_at_epoch": 48,
           "first_touched_at_checkpoint": 3873848,
@@ -2273,9 +2273,9 @@
           }
         },
         "suins.SuiNS": {
-          "tx_count": 7602,
+          "tx_count": 7628,
           "num_instances": 1,
-          "mut_ref_count": 7602,
+          "mut_ref_count": 7628,
           "is_resource": false,
           "first_touched_at_epoch": 44,
           "first_touched_at_checkpoint": 3500436,
@@ -2286,16 +2286,16 @@
       }
     },
     "88d362329ede856f5f67867929ed570bba06c975abec2fab7f0601c56f6a8cb1": {
-      "tx_count": 19369,
+      "tx_count": 19374,
       "num_instances": 1,
-      "mut_ref_count": 19369,
+      "mut_ref_count": 19374,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "animeswap.LiquidityPools": {
-          "tx_count": 19369,
+          "tx_count": 19374,
           "num_instances": 1,
-          "mut_ref_count": 19369,
+          "mut_ref_count": 19374,
           "is_resource": false,
           "first_touched_at_epoch": 21,
           "first_touched_at_checkpoint": 1591916,
@@ -2443,16 +2443,16 @@
       }
     },
     "7a30a0db7f20f942f60668db29ab3b522d17eb3473f30b03d873ea8926e281ee": {
-      "tx_count": 15536,
+      "tx_count": 15712,
       "num_instances": 1,
-      "mut_ref_count": 15536,
+      "mut_ref_count": 15712,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "executor.BasePool": {
-          "tx_count": 15536,
+          "tx_count": 15712,
           "num_instances": 1,
-          "mut_ref_count": 15536,
+          "mut_ref_count": 15712,
           "is_resource": false,
           "first_touched_at_epoch": 25,
           "first_touched_at_checkpoint": 1970577,
@@ -2482,6 +2482,37 @@
         }
       }
     },
+    "58156e414780a5a237db71afb0d852674eff8cd98f9572104cb79afeb4ad1e9d": {
+      "tx_count": 14847,
+      "num_instances": 2,
+      "mut_ref_count": 14847,
+      "num_types": 2,
+      "num_resources": 0,
+      "types": {
+        "suinet.MintConfig": {
+          "tx_count": 8546,
+          "num_instances": 1,
+          "mut_ref_count": 8546,
+          "is_resource": false,
+          "first_touched_at_epoch": 38,
+          "first_touched_at_checkpoint": 3024749,
+          "first_touched_by_txs": {
+            "AQ6KnyE9JmW7itsLnHUfeBwBZJq9vwpm8FYjYrm3RYLU": true
+          }
+        },
+        "suibridge.Bridge": {
+          "tx_count": 6301,
+          "num_instances": 1,
+          "mut_ref_count": 6301,
+          "is_resource": false,
+          "first_touched_at_epoch": 38,
+          "first_touched_at_checkpoint": 3018288,
+          "first_touched_by_txs": {
+            "GWS6DMhdeoJ4yb4KLUETFNdTy7b6QVr4qJNZt9oGb4VA": true
+          }
+        }
+      }
+    },
     "c8048e2e780271d475eeeb8f8be1393277b221f0874236e14d963acfec4207b2": {
       "tx_count": 14768,
       "num_instances": 1,
@@ -2502,48 +2533,17 @@
         }
       }
     },
-    "58156e414780a5a237db71afb0d852674eff8cd98f9572104cb79afeb4ad1e9d": {
-      "tx_count": 14628,
-      "num_instances": 2,
-      "mut_ref_count": 14628,
-      "num_types": 2,
-      "num_resources": 0,
-      "types": {
-        "suinet.MintConfig": {
-          "tx_count": 8404,
-          "num_instances": 1,
-          "mut_ref_count": 8404,
-          "is_resource": false,
-          "first_touched_at_epoch": 38,
-          "first_touched_at_checkpoint": 3024749,
-          "first_touched_by_txs": {
-            "AQ6KnyE9JmW7itsLnHUfeBwBZJq9vwpm8FYjYrm3RYLU": true
-          }
-        },
-        "suibridge.Bridge": {
-          "tx_count": 6224,
-          "num_instances": 1,
-          "mut_ref_count": 6224,
-          "is_resource": false,
-          "first_touched_at_epoch": 38,
-          "first_touched_at_checkpoint": 3018288,
-          "first_touched_by_txs": {
-            "GWS6DMhdeoJ4yb4KLUETFNdTy7b6QVr4qJNZt9oGb4VA": true
-          }
-        }
-      }
-    },
     "a0b79c69d5fdc0172b468d070e4636f14ee6e0a820196d306a48c39a600ac5f5": {
-      "tx_count": 14480,
+      "tx_count": 14754,
       "num_instances": 1,
-      "mut_ref_count": 14480,
+      "mut_ref_count": 14754,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "jk.AccessList": {
-          "tx_count": 14480,
+          "tx_count": 14754,
           "num_instances": 1,
-          "mut_ref_count": 14480,
+          "mut_ref_count": 14754,
           "is_resource": true,
           "first_touched_at_epoch": 79,
           "first_touched_at_checkpoint": 6518904,
@@ -2627,16 +2627,16 @@
       }
     },
     "f5dba8346b5084d460f480698ff0305a8e847fdb08090e2e7b56cce738006743": {
-      "tx_count": 13467,
+      "tx_count": 13587,
       "num_instances": 1,
-      "mut_ref_count": 13467,
+      "mut_ref_count": 13587,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "stake.GlobalStorage": {
-          "tx_count": 13467,
+          "tx_count": 13587,
           "num_instances": 1,
-          "mut_ref_count": 13467,
+          "mut_ref_count": 13587,
           "is_resource": false,
           "first_touched_at_epoch": 42,
           "first_touched_at_checkpoint": 3410081,
@@ -2725,16 +2725,16 @@
       }
     },
     "7bffb2b3f6296015dcea7e1dc41c602daff0508230db6360ff6014933ce000c7": {
-      "tx_count": 12872,
+      "tx_count": 13003,
       "num_instances": 1,
-      "mut_ref_count": 12872,
+      "mut_ref_count": 13003,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "s.Vault": {
-          "tx_count": 12872,
+          "tx_count": 13003,
           "num_instances": 1,
-          "mut_ref_count": 12872,
+          "mut_ref_count": 13003,
           "is_resource": false,
           "first_touched_at_epoch": 54,
           "first_touched_at_checkpoint": 4423027,
@@ -2848,16 +2848,16 @@
       }
     },
     "272af1d8e120c671b0c9e8d8aee8d57a117e9fc26bd05e009ad16dcd3a172a96": {
-      "tx_count": 11465,
+      "tx_count": 11578,
       "num_instances": 1,
-      "mut_ref_count": 11465,
+      "mut_ref_count": 11578,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "monks_collection.InfoCollection": {
-          "tx_count": 11465,
+          "tx_count": 11578,
           "num_instances": 1,
-          "mut_ref_count": 11465,
+          "mut_ref_count": 11578,
           "is_resource": true,
           "first_touched_at_epoch": 31,
           "first_touched_at_checkpoint": 2472667,
@@ -2914,6 +2914,37 @@
           "first_touched_at_checkpoint": 1591064,
           "first_touched_by_txs": {
             "3EZBHetLwfJzfpR3KCYbsR6B32XLWdaSKFQDs2zRv1un": true
+          }
+        }
+      }
+    },
+    "dfaf58e1270365cc4dec22e006899575eb66643f72c91d8160f2acedc8fcba56": {
+      "tx_count": 11278,
+      "num_instances": 2,
+      "mut_ref_count": 5637,
+      "num_types": 2,
+      "num_resources": 1,
+      "types": {
+        "navi_aggregator.NaviAggregator": {
+          "tx_count": 5641,
+          "num_instances": 1,
+          "mut_ref_count": 5636,
+          "is_resource": true,
+          "first_touched_at_epoch": 92,
+          "first_touched_at_checkpoint": 7640350,
+          "first_touched_by_txs": {
+            "EgQXrzKD8QZeLS8ZqjEfBxPA2BDX5T4tkPr6124rRRji": true
+          }
+        },
+        "navi_aggregator.NaviAggregatorCap": {
+          "tx_count": 5637,
+          "num_instances": 1,
+          "mut_ref_count": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 92,
+          "first_touched_at_checkpoint": 7640350,
+          "first_touched_by_txs": {
+            "EgQXrzKD8QZeLS8ZqjEfBxPA2BDX5T4tkPr6124rRRji": false
           }
         }
       }
@@ -2992,16 +3023,16 @@
       }
     },
     "3ac5d05edffefeaa7387c234de3a9f25a3a72f6d96b5efb560d81df77899cf74": {
-      "tx_count": 9504,
+      "tx_count": 9524,
       "num_instances": 4,
-      "mut_ref_count": 9504,
+      "mut_ref_count": 9524,
       "num_types": 4,
       "num_resources": 0,
       "types": {
         "master_chef.MasterChefBalanceStorage": {
-          "tx_count": 2425,
+          "tx_count": 2430,
           "num_instances": 1,
-          "mut_ref_count": 2425,
+          "mut_ref_count": 2430,
           "is_resource": false,
           "first_touched_at_epoch": 35,
           "first_touched_at_checkpoint": 2756501,
@@ -3010,9 +3041,9 @@
           }
         },
         "master_chef.MasterChefStorage": {
-          "tx_count": 2387,
+          "tx_count": 2392,
           "num_instances": 1,
-          "mut_ref_count": 2387,
+          "mut_ref_count": 2392,
           "is_resource": false,
           "first_touched_at_epoch": 35,
           "first_touched_at_checkpoint": 2753691,
@@ -3021,9 +3052,9 @@
           }
         },
         "master_chef.AccountStorage": {
-          "tx_count": 2387,
+          "tx_count": 2392,
           "num_instances": 1,
-          "mut_ref_count": 2387,
+          "mut_ref_count": 2392,
           "is_resource": false,
           "first_touched_at_epoch": 35,
           "first_touched_at_checkpoint": 2753691,
@@ -3032,9 +3063,9 @@
           }
         },
         "sip.SIPStorage": {
-          "tx_count": 2305,
+          "tx_count": 2310,
           "num_instances": 1,
-          "mut_ref_count": 2305,
+          "mut_ref_count": 2310,
           "is_resource": false,
           "first_touched_at_epoch": 35,
           "first_touched_at_checkpoint": 2753677,
@@ -3045,16 +3076,16 @@
       }
     },
     "3412f5d7819fddb9d504a422177e3cc62c029f08002a0d51c0f7cfd93cfdfbcc": {
-      "tx_count": 9414,
+      "tx_count": 9438,
       "num_instances": 2,
-      "mut_ref_count": 9414,
+      "mut_ref_count": 9438,
       "num_types": 2,
       "num_resources": 0,
       "types": {
         "staking.StakingPool": {
-          "tx_count": 4861,
+          "tx_count": 4873,
           "num_instances": 1,
-          "mut_ref_count": 4861,
+          "mut_ref_count": 4873,
           "is_resource": false,
           "first_touched_at_epoch": 22,
           "first_touched_at_checkpoint": 1681594,
@@ -3063,9 +3094,9 @@
           }
         },
         "staking.StakingHub": {
-          "tx_count": 4553,
+          "tx_count": 4565,
           "num_instances": 1,
-          "mut_ref_count": 4553,
+          "mut_ref_count": 4565,
           "is_resource": false,
           "first_touched_at_epoch": 22,
           "first_touched_at_checkpoint": 1675948,
@@ -3158,14 +3189,14 @@
       }
     },
     "075a2c16938fba807c6e9ff14069bb55e3b7309d184e61e93f2cda22622a29b9": {
-      "tx_count": 8525,
+      "tx_count": 8531,
       "num_instances": 3,
-      "mut_ref_count": 4125,
+      "mut_ref_count": 4129,
       "num_types": 3,
       "num_resources": 3,
       "types": {
         "utils.Version": {
-          "tx_count": 3971,
+          "tx_count": 3973,
           "num_instances": 1,
           "mut_ref_count": 1,
           "is_resource": true,
@@ -3176,9 +3207,9 @@
           }
         },
         "port.Stake": {
-          "tx_count": 2701,
+          "tx_count": 2703,
           "num_instances": 1,
-          "mut_ref_count": 2271,
+          "mut_ref_count": 2273,
           "is_resource": true,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1576590,
@@ -3187,9 +3218,9 @@
           }
         },
         "port.Plan": {
-          "tx_count": 1853,
+          "tx_count": 1855,
           "num_instances": 1,
-          "mut_ref_count": 1853,
+          "mut_ref_count": 1855,
           "is_resource": true,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1575881,
@@ -3302,14 +3333,14 @@
       }
     },
     "e2c7a6843cb13d9549a9d2dc1c266b572ead0b4b9f090e7c3c46de2714102b43": {
-      "tx_count": 8286,
+      "tx_count": 8297,
       "num_instances": 22,
       "mut_ref_count": 3,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "request.Policy": {
-          "tx_count": 8286,
+          "tx_count": 8297,
           "num_instances": 22,
           "mut_ref_count": 3,
           "is_resource": true,
@@ -3322,16 +3353,16 @@
       }
     },
     "d0954759844416e4f5451a1a4798f6c1d43721e20fbd1c29fe86a20bf7fd2f52": {
-      "tx_count": 8267,
+      "tx_count": 8282,
       "num_instances": 1,
-      "mut_ref_count": 8267,
+      "mut_ref_count": 8282,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "factory.Global": {
-          "tx_count": 8267,
+          "tx_count": 8282,
           "num_instances": 1,
-          "mut_ref_count": 8267,
+          "mut_ref_count": 8282,
           "is_resource": false,
           "first_touched_at_epoch": 28,
           "first_touched_at_checkpoint": 2232658,
@@ -3362,16 +3393,16 @@
       }
     },
     "165f01c1cd0e30b65b43f14f86b947ce28e61cb37b04f2cedffbb806e222d3de": {
-      "tx_count": 8017,
+      "tx_count": 8033,
       "num_instances": 5,
-      "mut_ref_count": 8017,
+      "mut_ref_count": 8033,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "claim.Claim": {
-          "tx_count": 8017,
+          "tx_count": 8033,
           "num_instances": 5,
-          "mut_ref_count": 8017,
+          "mut_ref_count": 8033,
           "is_resource": true,
           "first_touched_at_epoch": 40,
           "first_touched_at_checkpoint": 3202109,
@@ -3382,16 +3413,16 @@
       }
     },
     "7aee872d77cade27e7d9b79bf9c67ac40bfb1b797e8b7438ee73f0af21bb4664": {
-      "tx_count": 7729,
+      "tx_count": 7742,
       "num_instances": 1,
-      "mut_ref_count": 7729,
+      "mut_ref_count": 7742,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "store.AccessoriesStore": {
-          "tx_count": 7729,
+          "tx_count": 7742,
           "num_instances": 1,
-          "mut_ref_count": 7729,
+          "mut_ref_count": 7742,
           "is_resource": false,
           "first_touched_at_epoch": 36,
           "first_touched_at_checkpoint": 2844835,
@@ -3402,14 +3433,14 @@
       }
     },
     "2f6caff123c91121d4cc31f23a284d04a01efd19b09ece313fd172d697657228": {
-      "tx_count": 7685,
+      "tx_count": 7715,
       "num_instances": 1,
       "mut_ref_count": 5136,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "tocen_event_ido.TocenIdoData": {
-          "tx_count": 7685,
+          "tx_count": 7715,
           "num_instances": 1,
           "mut_ref_count": 5136,
           "is_resource": true,
@@ -3424,16 +3455,16 @@
       }
     },
     "0ef3cc840793aae2d62d5930224ec02ce0b0a1e5281abf0a717a31f3a80c4863": {
-      "tx_count": 7592,
+      "tx_count": 7617,
       "num_instances": 134,
-      "mut_ref_count": 7592,
+      "mut_ref_count": 7617,
       "num_types": 2,
       "num_resources": 2,
       "types": {
         "releap_badge.Badge": {
-          "tx_count": 7402,
+          "tx_count": 7427,
           "num_instances": 133,
-          "mut_ref_count": 7402,
+          "mut_ref_count": 7427,
           "is_resource": true,
           "first_touched_at_epoch": 33,
           "first_touched_at_checkpoint": 2621806,
@@ -3455,16 +3486,16 @@
       }
     },
     "6c168cd5e4ba1bea8f0df82c9232d16b1fd9a4f9555d3392c24a3f9e27a10806": {
-      "tx_count": 7527,
+      "tx_count": 7534,
       "num_instances": 3,
-      "mut_ref_count": 7527,
+      "mut_ref_count": 7534,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "claim.Claim": {
-          "tx_count": 7527,
+          "tx_count": 7534,
           "num_instances": 3,
-          "mut_ref_count": 7527,
+          "mut_ref_count": 7534,
           "is_resource": true,
           "first_touched_at_epoch": 40,
           "first_touched_at_checkpoint": 3195759,
@@ -3515,16 +3546,16 @@
       }
     },
     "32c0363c8e9f4b8782dc66aa4acb6a3d885c818de5dec8348c8a206ae2f95c08": {
-      "tx_count": 7393,
+      "tx_count": 7419,
       "num_instances": 2,
-      "mut_ref_count": 5899,
+      "mut_ref_count": 5925,
       "num_types": 2,
       "num_resources": 0,
       "types": {
         "cubi.PublicKey": {
-          "tx_count": 3697,
+          "tx_count": 3710,
           "num_instances": 1,
-          "mut_ref_count": 2203,
+          "mut_ref_count": 2216,
           "is_resource": false,
           "first_touched_at_epoch": 22,
           "first_touched_at_checkpoint": 1719961,
@@ -3533,9 +3564,9 @@
           }
         },
         "cubi.CubiRegistry": {
-          "tx_count": 3696,
+          "tx_count": 3709,
           "num_instances": 1,
-          "mut_ref_count": 3696,
+          "mut_ref_count": 3709,
           "is_resource": false,
           "first_touched_at_epoch": 22,
           "first_touched_at_checkpoint": 1720161,
@@ -3627,6 +3658,68 @@
         }
       }
     },
+    "3cf6e24398c526fd1e0c46e22d4c1f88e3f3c14ba3df6fdaa6dd6d4aab202736": {
+      "tx_count": 7118,
+      "num_instances": 2,
+      "mut_ref_count": 7118,
+      "num_types": 2,
+      "num_resources": 0,
+      "types": {
+        "staking.StakingVault": {
+          "tx_count": 4862,
+          "num_instances": 1,
+          "mut_ref_count": 4862,
+          "is_resource": false,
+          "first_touched_at_epoch": 77,
+          "first_touched_at_checkpoint": 6342705,
+          "first_touched_by_txs": {
+            "9dohGWKWwLszFjQMbPRYQo5eX9fjmZPcVbEtQVngXG8r": true
+          }
+        },
+        "storktoken.ProtocolTreasury": {
+          "tx_count": 2256,
+          "num_instances": 1,
+          "mut_ref_count": 2256,
+          "is_resource": false,
+          "first_touched_at_epoch": 77,
+          "first_touched_at_checkpoint": 6342715,
+          "first_touched_by_txs": {
+            "F7gtAehCJ9oouYTGGi1UsK7C4itwc1YLJgpJeLuD72zn": true
+          }
+        }
+      }
+    },
+    "e9c2eaa56289b9d2132066e5f59e5164ccb01f64edba90fb63a36ffb63ff1387": {
+      "tx_count": 7034,
+      "num_instances": 2,
+      "mut_ref_count": 7034,
+      "num_types": 2,
+      "num_resources": 0,
+      "types": {
+        "wsui.SupplyBag": {
+          "tx_count": 3669,
+          "num_instances": 1,
+          "mut_ref_count": 3669,
+          "is_resource": false,
+          "first_touched_at_epoch": 32,
+          "first_touched_at_checkpoint": 2532618,
+          "first_touched_by_txs": {
+            "7jCD54NxfJLYHVAFPoAAomQGJWg3fervn8vJwAsBfhXj": true
+          }
+        },
+        "implements.Global": {
+          "tx_count": 3365,
+          "num_instances": 1,
+          "mut_ref_count": 3365,
+          "is_resource": false,
+          "first_touched_at_epoch": 32,
+          "first_touched_at_checkpoint": 2532618,
+          "first_touched_by_txs": {
+            "7jCD54NxfJLYHVAFPoAAomQGJWg3fervn8vJwAsBfhXj": true
+          }
+        }
+      }
+    },
     "e4cab1cf7ddbc822989488cc23c8614935dffe3c45d96c72239e3f6116656c8a": {
       "tx_count": 7025,
       "num_instances": 1,
@@ -3643,68 +3736,6 @@
           "first_touched_at_checkpoint": 1667819,
           "first_touched_by_txs": {
             "FfsxJ3tJ2GuUQkPq1rNCKSR79isBKQSUxAUDFGQBMhP6": true
-          }
-        }
-      }
-    },
-    "e9c2eaa56289b9d2132066e5f59e5164ccb01f64edba90fb63a36ffb63ff1387": {
-      "tx_count": 7012,
-      "num_instances": 2,
-      "mut_ref_count": 7012,
-      "num_types": 2,
-      "num_resources": 0,
-      "types": {
-        "wsui.SupplyBag": {
-          "tx_count": 3657,
-          "num_instances": 1,
-          "mut_ref_count": 3657,
-          "is_resource": false,
-          "first_touched_at_epoch": 32,
-          "first_touched_at_checkpoint": 2532618,
-          "first_touched_by_txs": {
-            "7jCD54NxfJLYHVAFPoAAomQGJWg3fervn8vJwAsBfhXj": true
-          }
-        },
-        "implements.Global": {
-          "tx_count": 3355,
-          "num_instances": 1,
-          "mut_ref_count": 3355,
-          "is_resource": false,
-          "first_touched_at_epoch": 32,
-          "first_touched_at_checkpoint": 2532618,
-          "first_touched_by_txs": {
-            "7jCD54NxfJLYHVAFPoAAomQGJWg3fervn8vJwAsBfhXj": true
-          }
-        }
-      }
-    },
-    "3cf6e24398c526fd1e0c46e22d4c1f88e3f3c14ba3df6fdaa6dd6d4aab202736": {
-      "tx_count": 6934,
-      "num_instances": 2,
-      "mut_ref_count": 6934,
-      "num_types": 2,
-      "num_resources": 0,
-      "types": {
-        "staking.StakingVault": {
-          "tx_count": 4766,
-          "num_instances": 1,
-          "mut_ref_count": 4766,
-          "is_resource": false,
-          "first_touched_at_epoch": 77,
-          "first_touched_at_checkpoint": 6342705,
-          "first_touched_by_txs": {
-            "9dohGWKWwLszFjQMbPRYQo5eX9fjmZPcVbEtQVngXG8r": true
-          }
-        },
-        "storktoken.ProtocolTreasury": {
-          "tx_count": 2168,
-          "num_instances": 1,
-          "mut_ref_count": 2168,
-          "is_resource": false,
-          "first_touched_at_epoch": 77,
-          "first_touched_at_checkpoint": 6342715,
-          "first_touched_by_txs": {
-            "F7gtAehCJ9oouYTGGi1UsK7C4itwc1YLJgpJeLuD72zn": true
           }
         }
       }
@@ -3729,48 +3760,17 @@
         }
       }
     },
-    "dfaf58e1270365cc4dec22e006899575eb66643f72c91d8160f2acedc8fcba56": {
-      "tx_count": 6638,
-      "num_instances": 2,
-      "mut_ref_count": 3317,
-      "num_types": 2,
-      "num_resources": 1,
-      "types": {
-        "navi_aggregator.NaviAggregator": {
-          "tx_count": 3321,
-          "num_instances": 1,
-          "mut_ref_count": 3316,
-          "is_resource": true,
-          "first_touched_at_epoch": 92,
-          "first_touched_at_checkpoint": 7640350,
-          "first_touched_by_txs": {
-            "EgQXrzKD8QZeLS8ZqjEfBxPA2BDX5T4tkPr6124rRRji": true
-          }
-        },
-        "navi_aggregator.NaviAggregatorCap": {
-          "tx_count": 3317,
-          "num_instances": 1,
-          "mut_ref_count": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 92,
-          "first_touched_at_checkpoint": 7640350,
-          "first_touched_by_txs": {
-            "EgQXrzKD8QZeLS8ZqjEfBxPA2BDX5T4tkPr6124rRRji": false
-          }
-        }
-      }
-    },
     "fd2e0f4383df3ec9106326dcd9a20510cdce72146754296deed15403fcd3df8b": {
-      "tx_count": 6200,
+      "tx_count": 6268,
       "num_instances": 4,
-      "mut_ref_count": 6200,
+      "mut_ref_count": 6268,
       "num_types": 2,
       "num_resources": 0,
       "types": {
         "oracle_queue.OracleQueue": {
-          "tx_count": 3109,
+          "tx_count": 3143,
           "num_instances": 2,
-          "mut_ref_count": 3109,
+          "mut_ref_count": 3143,
           "is_resource": false,
           "first_touched_at_epoch": 21,
           "first_touched_at_checkpoint": 1602234,
@@ -3779,9 +3779,9 @@
           }
         },
         "oracle.Oracle": {
-          "tx_count": 3091,
+          "tx_count": 3125,
           "num_instances": 2,
-          "mut_ref_count": 3091,
+          "mut_ref_count": 3125,
           "is_resource": false,
           "first_touched_at_epoch": 21,
           "first_touched_at_checkpoint": 1605164,
@@ -3792,16 +3792,16 @@
       }
     },
     "bb96386e0846c3375de22c6918c0ba7019c5ae42589ec9c841cc92041272b5eb": {
-      "tx_count": 6113,
+      "tx_count": 6114,
       "num_instances": 1,
-      "mut_ref_count": 6113,
+      "mut_ref_count": 6114,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "tocen_stake_nft.ShareObjectStake": {
-          "tx_count": 6113,
+          "tx_count": 6114,
           "num_instances": 1,
-          "mut_ref_count": 6113,
+          "mut_ref_count": 6114,
           "is_resource": false,
           "first_touched_at_epoch": 21,
           "first_touched_at_checkpoint": 1660820,
@@ -3851,17 +3851,37 @@
         }
       }
     },
-    "694fddcdf757db2ddc951ba5c8c3076f9d0e48c6895ff57f6c0888896814ccf2": {
-      "tx_count": 5878,
+    "da691d321641786d758d7435d0e230a7125777566c75b34c5742591163a252c3": {
+      "tx_count": 5927,
       "num_instances": 1,
-      "mut_ref_count": 5878,
+      "mut_ref_count": 5636,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "oracle.PriceOracle": {
+          "tx_count": 5927,
+          "num_instances": 1,
+          "mut_ref_count": 5636,
+          "is_resource": false,
+          "first_touched_at_epoch": 88,
+          "first_touched_at_checkpoint": 7269828,
+          "first_touched_by_txs": {
+            "Ht5sjvoSMnpwDG9oX3JxihsTX4ajSwknxBqmsqujPsqa": true
+          }
+        }
+      }
+    },
+    "694fddcdf757db2ddc951ba5c8c3076f9d0e48c6895ff57f6c0888896814ccf2": {
+      "tx_count": 5920,
+      "num_instances": 1,
+      "mut_ref_count": 5920,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "claim.Claim": {
-          "tx_count": 5878,
+          "tx_count": 5920,
           "num_instances": 1,
-          "mut_ref_count": 5878,
+          "mut_ref_count": 5920,
           "is_resource": true,
           "first_touched_at_epoch": 78,
           "first_touched_at_checkpoint": 6426158,
@@ -3871,17 +3891,37 @@
         }
       }
     },
+    "ba153169476e8c3114962261d1edc70de5ad9781b83cc617ecc8c1923191cae0": {
+      "tx_count": 5870,
+      "num_instances": 1,
+      "mut_ref_count": 5870,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "factory.Container": {
+          "tx_count": 5870,
+          "num_instances": 1,
+          "mut_ref_count": 5870,
+          "is_resource": false,
+          "first_touched_at_epoch": 78,
+          "first_touched_at_checkpoint": 6426515,
+          "first_touched_by_txs": {
+            "H6s5cDHXpkDWKCoZjrA4WZEAafTUyusjZw6AyBBynwKH": true
+          }
+        }
+      }
+    },
     "2d62336f06432989088ceeac7abe2a35b21ac179871ac5252fcbdf5261e7cb78": {
-      "tx_count": 5796,
+      "tx_count": 5819,
       "num_instances": 5,
-      "mut_ref_count": 5796,
+      "mut_ref_count": 5819,
       "num_types": 4,
       "num_resources": 4,
       "types": {
         "staking.Pool": {
-          "tx_count": 4847,
+          "tx_count": 4862,
           "num_instances": 1,
-          "mut_ref_count": 4847,
+          "mut_ref_count": 4862,
           "is_resource": true,
           "first_touched_at_epoch": 40,
           "first_touched_at_checkpoint": 3223434,
@@ -3890,9 +3930,9 @@
           }
         },
         "luck_vault.Vault": {
-          "tx_count": 606,
+          "tx_count": 612,
           "num_instances": 1,
-          "mut_ref_count": 606,
+          "mut_ref_count": 612,
           "is_resource": true,
           "first_touched_at_epoch": 40,
           "first_touched_at_checkpoint": 3214024,
@@ -3901,9 +3941,9 @@
           }
         },
         "vesting.Pool": {
-          "tx_count": 282,
+          "tx_count": 284,
           "num_instances": 2,
-          "mut_ref_count": 282,
+          "mut_ref_count": 284,
           "is_resource": true,
           "first_touched_at_epoch": 41,
           "first_touched_at_checkpoint": 3249679,
@@ -3924,42 +3964,42 @@
         }
       }
     },
-    "ba153169476e8c3114962261d1edc70de5ad9781b83cc617ecc8c1923191cae0": {
-      "tx_count": 5735,
-      "num_instances": 1,
-      "mut_ref_count": 5735,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "factory.Container": {
-          "tx_count": 5735,
-          "num_instances": 1,
-          "mut_ref_count": 5735,
-          "is_resource": false,
-          "first_touched_at_epoch": 78,
-          "first_touched_at_checkpoint": 6426515,
-          "first_touched_by_txs": {
-            "H6s5cDHXpkDWKCoZjrA4WZEAafTUyusjZw6AyBBynwKH": true
-          }
-        }
-      }
-    },
     "785248249ac457dfd378bdc6d2fbbfec9d1daf65e9d728b820eb4888c8da2c10": {
-      "tx_count": 5652,
+      "tx_count": 5691,
       "num_instances": 1,
-      "mut_ref_count": 5652,
+      "mut_ref_count": 5691,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "dividend.DividendManager": {
-          "tx_count": 5652,
+          "tx_count": 5691,
           "num_instances": 1,
-          "mut_ref_count": 5652,
+          "mut_ref_count": 5691,
           "is_resource": false,
           "first_touched_at_epoch": 27,
           "first_touched_at_checkpoint": 2121120,
           "first_touched_by_txs": {
             "Cydf3ZDEmXfkZwFQ1cnKEvsP8hXrP4EowViGvuEs9RKR": true
+          }
+        }
+      }
+    },
+    "9d9fad6087715ebc61ed247fb41a01eaaec4462e88a80a16994a800de0f22b0f": {
+      "tx_count": 5635,
+      "num_instances": 1,
+      "mut_ref_count": 5,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "adaptor.CenterRegistry": {
+          "tx_count": 5635,
+          "num_instances": 1,
+          "mut_ref_count": 5,
+          "is_resource": false,
+          "first_touched_at_epoch": 92,
+          "first_touched_at_checkpoint": 7640774,
+          "first_touched_by_txs": {
+            "AEkV6t8in7g3vdPQr4D1isH7Xj9WUxExoeUNYxKUDqpn": true
           }
         }
       }
@@ -3985,16 +4025,16 @@
       }
     },
     "bd971c49521f2e144ac79ad4dafcc56ecb3edba77ff34bc620707b9dd0267bdd": {
-      "tx_count": 5359,
+      "tx_count": 5424,
       "num_instances": 1,
-      "mut_ref_count": 5359,
+      "mut_ref_count": 5424,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "xluck_reward.NewReward": {
-          "tx_count": 5359,
+          "tx_count": 5424,
           "num_instances": 1,
-          "mut_ref_count": 5359,
+          "mut_ref_count": 5424,
           "is_resource": true,
           "first_touched_at_epoch": 47,
           "first_touched_at_checkpoint": 3831959,
@@ -4005,21 +4045,52 @@
       }
     },
     "9ec6f17e19c5e64c8872779a635235497fd6c71f7b5c23b07f652b02a240c84a": {
-      "tx_count": 5334,
+      "tx_count": 5357,
       "num_instances": 1,
-      "mut_ref_count": 5334,
+      "mut_ref_count": 5357,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "global_storage.GlobalStorage": {
-          "tx_count": 5334,
+          "tx_count": 5357,
           "num_instances": 1,
-          "mut_ref_count": 5334,
+          "mut_ref_count": 5357,
           "is_resource": false,
           "first_touched_at_epoch": 50,
           "first_touched_at_checkpoint": 4071565,
           "first_touched_by_txs": {
             "ymCgVzuPzjR9dBwgdJjX6395jvdHZkucjrpL9xw8MAT": true
+          }
+        }
+      }
+    },
+    "5ac3e7cc412366ce4476d41ccaf7885eb7b02668b6957ca224cfe4fa21b1afbe": {
+      "tx_count": 5161,
+      "num_instances": 4,
+      "mut_ref_count": 5161,
+      "num_types": 2,
+      "num_resources": 2,
+      "types": {
+        "ido_claim_public.PoolClaim": {
+          "tx_count": 2582,
+          "num_instances": 3,
+          "mut_ref_count": 2582,
+          "is_resource": true,
+          "first_touched_at_epoch": 31,
+          "first_touched_at_checkpoint": 2478815,
+          "first_touched_by_txs": {
+            "21skXJq49WychDQwdzsH15oDrNVQoseoZ4QKpjcAtXBN": true
+          }
+        },
+        "ido_claim_public.TocenIdoDataClaim": {
+          "tx_count": 2579,
+          "num_instances": 1,
+          "mut_ref_count": 2579,
+          "is_resource": true,
+          "first_touched_at_epoch": 31,
+          "first_touched_at_checkpoint": 2488558,
+          "first_touched_by_txs": {
+            "GpiKseomoXcHX6Ffa6CfN75FnMUEKJiPRgi9mUAwrkaw": true
           }
         }
       }
@@ -4045,48 +4116,17 @@
         }
       }
     },
-    "5ac3e7cc412366ce4476d41ccaf7885eb7b02668b6957ca224cfe4fa21b1afbe": {
-      "tx_count": 5101,
-      "num_instances": 4,
-      "mut_ref_count": 5101,
-      "num_types": 2,
-      "num_resources": 2,
-      "types": {
-        "ido_claim_public.PoolClaim": {
-          "tx_count": 2552,
-          "num_instances": 3,
-          "mut_ref_count": 2552,
-          "is_resource": true,
-          "first_touched_at_epoch": 31,
-          "first_touched_at_checkpoint": 2478815,
-          "first_touched_by_txs": {
-            "21skXJq49WychDQwdzsH15oDrNVQoseoZ4QKpjcAtXBN": true
-          }
-        },
-        "ido_claim_public.TocenIdoDataClaim": {
-          "tx_count": 2549,
-          "num_instances": 1,
-          "mut_ref_count": 2549,
-          "is_resource": true,
-          "first_touched_at_epoch": 31,
-          "first_touched_at_checkpoint": 2488558,
-          "first_touched_by_txs": {
-            "GpiKseomoXcHX6Ffa6CfN75FnMUEKJiPRgi9mUAwrkaw": true
-          }
-        }
-      }
-    },
     "55fab02e26a9eb86547661c802ad21516e2ce0b8d83a91824a05ffde8e699942": {
-      "tx_count": 5035,
+      "tx_count": 5036,
       "num_instances": 6,
-      "mut_ref_count": 5035,
+      "mut_ref_count": 5036,
       "num_types": 4,
       "num_resources": 1,
       "types": {
         "marketplace_module.Container": {
-          "tx_count": 2068,
+          "tx_count": 2069,
           "num_instances": 3,
-          "mut_ref_count": 2068,
+          "mut_ref_count": 2069,
           "is_resource": false,
           "first_touched_at_epoch": 21,
           "first_touched_at_checkpoint": 1658192,
@@ -4211,6 +4251,26 @@
         }
       }
     },
+    "a3f091e9aac4747a85469298bb3e91f751a0c3b70a3aec5c1d425ffc2e673bab": {
+      "tx_count": 4353,
+      "num_instances": 1,
+      "mut_ref_count": 4353,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "marketplace.Marketplace": {
+          "tx_count": 4353,
+          "num_instances": 1,
+          "mut_ref_count": 4353,
+          "is_resource": false,
+          "first_touched_at_epoch": 74,
+          "first_touched_at_checkpoint": 6100120,
+          "first_touched_by_txs": {
+            "BFPFg8WgJXUiVSa1K6S661zxjAyBSFxwoEyv9Ns8CXQ7": true
+          }
+        }
+      }
+    },
     "5ad1f0ff5e19834315d4bbcd6425fcf946929c153d5a1680f838f2b343c30d1e": {
       "tx_count": 4325,
       "num_instances": 2,
@@ -4289,26 +4349,6 @@
           "first_touched_at_checkpoint": 2236875,
           "first_touched_by_txs": {
             "ED8aXhMt8U8j578MGDbYpBrGR3vX3zmL6azUAfJNP9Ep": true
-          }
-        }
-      }
-    },
-    "a3f091e9aac4747a85469298bb3e91f751a0c3b70a3aec5c1d425ffc2e673bab": {
-      "tx_count": 4252,
-      "num_instances": 1,
-      "mut_ref_count": 4252,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "marketplace.Marketplace": {
-          "tx_count": 4252,
-          "num_instances": 1,
-          "mut_ref_count": 4252,
-          "is_resource": false,
-          "first_touched_at_epoch": 74,
-          "first_touched_at_checkpoint": 6100120,
-          "first_touched_by_txs": {
-            "BFPFg8WgJXUiVSa1K6S661zxjAyBSFxwoEyv9Ns8CXQ7": true
           }
         }
       }
@@ -4414,16 +4454,16 @@
       }
     },
     "08d79f4d920b03d88faca1e421af023a87fbb1e4a6fd200248e6e9998d09e470": {
-      "tx_count": 3616,
+      "tx_count": 3656,
       "num_instances": 5,
-      "mut_ref_count": 2787,
+      "mut_ref_count": 2819,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "aggregator.Aggregator": {
-          "tx_count": 3616,
+          "tx_count": 3656,
           "num_instances": 5,
-          "mut_ref_count": 2787,
+          "mut_ref_count": 2819,
           "is_resource": false,
           "first_touched_at_epoch": 21,
           "first_touched_at_checkpoint": 1605217,
@@ -4434,16 +4474,16 @@
       }
     },
     "f1e7b4093872df432b2adb50533a1fa6f9e4b20856217657242fe7d9d4ac42e8": {
-      "tx_count": 3595,
+      "tx_count": 3602,
       "num_instances": 1,
-      "mut_ref_count": 3595,
+      "mut_ref_count": 3602,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "ethos_squad.EthosSquadMaintainer": {
-          "tx_count": 3595,
+          "tx_count": 3602,
           "num_instances": 1,
-          "mut_ref_count": 3595,
+          "mut_ref_count": 3602,
           "is_resource": false,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1563884,
@@ -4489,26 +4529,6 @@
           "first_touched_at_checkpoint": 1649348,
           "first_touched_by_txs": {
             "Gy7gpdxw1CLNp8uEaysjGf8qBoALcUbxZYVaT9XKPyAY": true
-          }
-        }
-      }
-    },
-    "da691d321641786d758d7435d0e230a7125777566c75b34c5742591163a252c3": {
-      "tx_count": 3501,
-      "num_instances": 1,
-      "mut_ref_count": 3316,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "oracle.PriceOracle": {
-          "tx_count": 3501,
-          "num_instances": 1,
-          "mut_ref_count": 3316,
-          "is_resource": false,
-          "first_touched_at_epoch": 88,
-          "first_touched_at_checkpoint": 7269828,
-          "first_touched_by_txs": {
-            "Ht5sjvoSMnpwDG9oX3JxihsTX4ajSwknxBqmsqujPsqa": true
           }
         }
       }
@@ -4587,14 +4607,14 @@
       }
     },
     "1bf76666c5e087c5b4b68c7a966e60d22fa3211b27c42c50cf67071930677eb4": {
-      "tx_count": 3323,
+      "tx_count": 3325,
       "num_instances": 1,
       "mut_ref_count": 471,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "state.State": {
-          "tx_count": 3323,
+          "tx_count": 3325,
           "num_instances": 1,
           "mut_ref_count": 471,
           "is_resource": true,
@@ -4602,26 +4622,6 @@
           "first_touched_at_checkpoint": 1541252,
           "first_touched_by_txs": {
             "AUNdBZUcgRSbRrdqVK6bbNKvGmesfEuaip8uJv6MBBFz": true
-          }
-        }
-      }
-    },
-    "9d9fad6087715ebc61ed247fb41a01eaaec4462e88a80a16994a800de0f22b0f": {
-      "tx_count": 3315,
-      "num_instances": 1,
-      "mut_ref_count": 5,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "adaptor.CenterRegistry": {
-          "tx_count": 3315,
-          "num_instances": 1,
-          "mut_ref_count": 5,
-          "is_resource": false,
-          "first_touched_at_epoch": 92,
-          "first_touched_at_checkpoint": 7640774,
-          "first_touched_by_txs": {
-            "AEkV6t8in7g3vdPQr4D1isH7Xj9WUxExoeUNYxKUDqpn": true
           }
         }
       }
@@ -4647,16 +4647,16 @@
       }
     },
     "7fe0ab2ed764705b4b833e14d96ff55130b52dd5a0706dacf06f617fc406bbba": {
-      "tx_count": 3254,
+      "tx_count": 3256,
       "num_instances": 1,
-      "mut_ref_count": 3254,
+      "mut_ref_count": 3256,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "marketplace.Marketplace": {
-          "tx_count": 3254,
+          "tx_count": 3256,
           "num_instances": 1,
-          "mut_ref_count": 3254,
+          "mut_ref_count": 3256,
           "is_resource": false,
           "first_touched_at_epoch": 26,
           "first_touched_at_checkpoint": 2051637,
@@ -4686,6 +4686,26 @@
         }
       }
     },
+    "a76499eda1d37751473de5f30e106f35943ada2f6ea764861243e7f5aa5bcc97": {
+      "tx_count": 3114,
+      "num_instances": 1,
+      "mut_ref_count": 3061,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "typus_dov_single.Registry": {
+          "tx_count": 3114,
+          "num_instances": 1,
+          "mut_ref_count": 3061,
+          "is_resource": false,
+          "first_touched_at_epoch": 21,
+          "first_touched_at_checkpoint": 1653153,
+          "first_touched_by_txs": {
+            "EZeCLyWWk6tqySnsH9TkJJWfmWHXhr8P51F4UDaNcfj6": true
+          }
+        }
+      }
+    },
     "4b88c7385a19a6bd4891af9846c7ce9a51189f804e7a0814f53bf76f850496b2": {
       "tx_count": 3079,
       "num_instances": 1,
@@ -4702,26 +4722,6 @@
           "first_touched_at_checkpoint": 1658032,
           "first_touched_by_txs": {
             "HKUwEBocmCRaos4GbYLA1qHCnRV9tVBxRZVc8qGKJ7Vj": true
-          }
-        }
-      }
-    },
-    "a76499eda1d37751473de5f30e106f35943ada2f6ea764861243e7f5aa5bcc97": {
-      "tx_count": 3057,
-      "num_instances": 1,
-      "mut_ref_count": 3004,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "typus_dov_single.Registry": {
-          "tx_count": 3057,
-          "num_instances": 1,
-          "mut_ref_count": 3004,
-          "is_resource": false,
-          "first_touched_at_epoch": 21,
-          "first_touched_at_checkpoint": 1653153,
-          "first_touched_by_txs": {
-            "EZeCLyWWk6tqySnsH9TkJJWfmWHXhr8P51F4UDaNcfj6": true
           }
         }
       }
@@ -4849,16 +4849,16 @@
       }
     },
     "86fb9a85e3cfcc990f784ec8728bed55736adffea8c3b63f9dfb650957aabb40": {
-      "tx_count": 2849,
+      "tx_count": 2854,
       "num_instances": 1,
-      "mut_ref_count": 2849,
+      "mut_ref_count": 2854,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "staking.HominidsVault": {
-          "tx_count": 2849,
+          "tx_count": 2854,
           "num_instances": 1,
-          "mut_ref_count": 2849,
+          "mut_ref_count": 2854,
           "is_resource": false,
           "first_touched_at_epoch": 30,
           "first_touched_at_checkpoint": 2402587,
@@ -5031,16 +5031,16 @@
       }
     },
     "713970501171e9d23d58857a59660bc6f91cc44919f313df581c3e83cca5d8c6": {
-      "tx_count": 2296,
+      "tx_count": 2302,
       "num_instances": 6,
-      "mut_ref_count": 2296,
+      "mut_ref_count": 2302,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "farm.Pool": {
-          "tx_count": 2296,
+          "tx_count": 2302,
           "num_instances": 6,
-          "mut_ref_count": 2296,
+          "mut_ref_count": 2302,
           "is_resource": false,
           "first_touched_at_epoch": 28,
           "first_touched_at_checkpoint": 2233698,
@@ -5072,14 +5072,14 @@
       }
     },
     "10372c49ca2b98b44fa4d47194305d7bf2903b50256aab421da4dccefa120def": {
-      "tx_count": 2235,
+      "tx_count": 2236,
       "num_instances": 1,
       "mut_ref_count": 3,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "extension.Extension": {
-          "tx_count": 2235,
+          "tx_count": 2236,
           "num_instances": 1,
           "mut_ref_count": 3,
           "is_resource": true,
@@ -5092,16 +5092,16 @@
       }
     },
     "eef01b01854f9e66980acdbc635c90cae3205efa976a34d6a8d864972515c465": {
-      "tx_count": 2150,
+      "tx_count": 2151,
       "num_instances": 1,
-      "mut_ref_count": 2150,
+      "mut_ref_count": 2151,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "gpnid.GID_Minted": {
-          "tx_count": 2150,
+          "tx_count": 2151,
           "num_instances": 1,
-          "mut_ref_count": 2150,
+          "mut_ref_count": 2151,
           "is_resource": true,
           "first_touched_at_epoch": 27,
           "first_touched_at_checkpoint": 2142732,
@@ -5385,16 +5385,16 @@
       }
     },
     "6a11e0f3583b4bb8b22c3263f9c808f53dd12fdf36ebda5be4417a7d9e4a20dd": {
-      "tx_count": 1728,
+      "tx_count": 1743,
       "num_instances": 2,
-      "mut_ref_count": 1314,
+      "mut_ref_count": 1329,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "oracle.Oracle": {
-          "tx_count": 1728,
+          "tx_count": 1743,
           "num_instances": 2,
-          "mut_ref_count": 1314,
+          "mut_ref_count": 1329,
           "is_resource": false,
           "first_touched_at_epoch": 21,
           "first_touched_at_checkpoint": 1658949,
@@ -5405,16 +5405,16 @@
       }
     },
     "47989e1f044f37b797ed052aba94874872b5dfd2d0d2afb1278f967d0d895867": {
-      "tx_count": 1726,
+      "tx_count": 1741,
       "num_instances": 4,
-      "mut_ref_count": 1726,
+      "mut_ref_count": 1741,
       "num_types": 4,
       "num_resources": 0,
       "types": {
         "wormhole_facet.Storage": {
-          "tx_count": 725,
+          "tx_count": 731,
           "num_instances": 1,
-          "mut_ref_count": 725,
+          "mut_ref_count": 731,
           "is_resource": false,
           "first_touched_at_epoch": 25,
           "first_touched_at_checkpoint": 1966822,
@@ -5423,9 +5423,9 @@
           }
         },
         "wormhole_facet.WormholeFee": {
-          "tx_count": 719,
+          "tx_count": 725,
           "num_instances": 1,
-          "mut_ref_count": 719,
+          "mut_ref_count": 725,
           "is_resource": false,
           "first_touched_at_epoch": 25,
           "first_touched_at_checkpoint": 1966819,
@@ -5434,9 +5434,9 @@
           }
         },
         "so_fee_wormhole.PriceManager": {
-          "tx_count": 267,
+          "tx_count": 270,
           "num_instances": 1,
-          "mut_ref_count": 267,
+          "mut_ref_count": 270,
           "is_resource": false,
           "first_touched_at_epoch": 25,
           "first_touched_at_checkpoint": 1973910,
@@ -5478,16 +5478,16 @@
       }
     },
     "7a9967b4baa1c107a357dea6243955a4dfc78386c7f958c4e11e447dd8ea2521": {
-      "tx_count": 1631,
+      "tx_count": 1632,
       "num_instances": 4,
-      "mut_ref_count": 1374,
+      "mut_ref_count": 1375,
       "num_types": 3,
       "num_resources": 3,
       "types": {
         "staking.StakingPool": {
-          "tx_count": 696,
+          "tx_count": 697,
           "num_instances": 1,
-          "mut_ref_count": 439,
+          "mut_ref_count": 440,
           "is_resource": true,
           "first_touched_at_epoch": 42,
           "first_touched_at_checkpoint": 3336688,
@@ -5540,16 +5540,16 @@
       }
     },
     "03f0ca57e129eae63df3703d8eab3f8bad3c2ea276d31a01d790bce33a74f8ca": {
-      "tx_count": 1610,
+      "tx_count": 1612,
       "num_instances": 3,
-      "mut_ref_count": 1610,
+      "mut_ref_count": 1612,
       "num_types": 3,
       "num_resources": 1,
       "types": {
         "fragment.FragmentInfo": {
-          "tx_count": 677,
+          "tx_count": 678,
           "num_instances": 1,
-          "mut_ref_count": 677,
+          "mut_ref_count": 678,
           "is_resource": false,
           "first_touched_at_epoch": 29,
           "first_touched_at_checkpoint": 2306185,
@@ -5558,9 +5558,9 @@
           }
         },
         "ryu_fragment_chef.MasterChefData": {
-          "tx_count": 619,
+          "tx_count": 620,
           "num_instances": 1,
-          "mut_ref_count": 619,
+          "mut_ref_count": 620,
           "is_resource": false,
           "first_touched_at_epoch": 29,
           "first_touched_at_checkpoint": 2304667,
@@ -5582,16 +5582,16 @@
       }
     },
     "62fff363d8919c16c3354e452800afc92cc1815296475bb87b769b5e6468dc38": {
-      "tx_count": 1576,
+      "tx_count": 1602,
       "num_instances": 4,
-      "mut_ref_count": 628,
+      "mut_ref_count": 639,
       "num_types": 4,
       "num_resources": 2,
       "types": {
         "APDomain.GlobalMap": {
-          "tx_count": 580,
+          "tx_count": 590,
           "num_instances": 1,
-          "mut_ref_count": 130,
+          "mut_ref_count": 133,
           "is_resource": true,
           "first_touched_at_epoch": 21,
           "first_touched_at_checkpoint": 1622483,
@@ -5600,7 +5600,7 @@
           }
         },
         "APDomain.BaseConfig": {
-          "tx_count": 498,
+          "tx_count": 506,
           "num_instances": 1,
           "mut_ref_count": 0,
           "is_resource": true,
@@ -5611,9 +5611,9 @@
           }
         },
         "APDomain.MintAPCTable": {
-          "tx_count": 450,
+          "tx_count": 457,
           "num_instances": 1,
-          "mut_ref_count": 450,
+          "mut_ref_count": 457,
           "is_resource": false,
           "first_touched_at_epoch": 21,
           "first_touched_at_checkpoint": 1622535,
@@ -5622,9 +5622,9 @@
           }
         },
         "APDomain.ReferralMap": {
-          "tx_count": 48,
+          "tx_count": 49,
           "num_instances": 1,
-          "mut_ref_count": 48,
+          "mut_ref_count": 49,
           "is_resource": false,
           "first_touched_at_epoch": 21,
           "first_touched_at_checkpoint": 1622483,
@@ -5655,16 +5655,16 @@
       }
     },
     "b067e68932c6199bb0ba6590c97d9c8e8f0672622dcf346aa4dba18cb81c4cf8": {
-      "tx_count": 1537,
+      "tx_count": 1543,
       "num_instances": 1,
-      "mut_ref_count": 1537,
+      "mut_ref_count": 1543,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "sensui_nft.NFTMintData": {
-          "tx_count": 1537,
+          "tx_count": 1543,
           "num_instances": 1,
-          "mut_ref_count": 1537,
+          "mut_ref_count": 1543,
           "is_resource": true,
           "first_touched_at_epoch": 62,
           "first_touched_at_checkpoint": 5104811,
@@ -5926,16 +5926,16 @@
       }
     },
     "8221cc562f8c58c922c6a40ecbc7e2f16b0159fb683470c22e96d21a0dc52beb": {
-      "tx_count": 1364,
-      "num_instances": 744,
-      "mut_ref_count": 1364,
+      "tx_count": 1377,
+      "num_instances": 755,
+      "mut_ref_count": 1377,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "bet.Bet": {
-          "tx_count": 1364,
-          "num_instances": 744,
-          "mut_ref_count": 1364,
+          "tx_count": 1377,
+          "num_instances": 755,
+          "mut_ref_count": 1377,
           "is_resource": true,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1569440,
@@ -6111,16 +6111,16 @@
       }
     },
     "1a75d4df4c66ba0a4629b949dbc94b12c300b72bced2694e28e9eb73684e4461": {
-      "tx_count": 1192,
+      "tx_count": 1195,
       "num_instances": 3,
-      "mut_ref_count": 1192,
+      "mut_ref_count": 1195,
       "num_types": 3,
       "num_resources": 3,
       "types": {
         "lock_lp.LPLocked": {
-          "tx_count": 400,
+          "tx_count": 401,
           "num_instances": 1,
-          "mut_ref_count": 400,
+          "mut_ref_count": 401,
           "is_resource": true,
           "first_touched_at_epoch": 23,
           "first_touched_at_checkpoint": 1831350,
@@ -6129,9 +6129,9 @@
           }
         },
         "lock_lp.LPData": {
-          "tx_count": 400,
+          "tx_count": 401,
           "num_instances": 1,
-          "mut_ref_count": 400,
+          "mut_ref_count": 401,
           "is_resource": true,
           "first_touched_at_epoch": 23,
           "first_touched_at_checkpoint": 1831350,
@@ -6140,14 +6140,34 @@
           }
         },
         "lock_lp.PoolUsers": {
-          "tx_count": 392,
+          "tx_count": 393,
           "num_instances": 1,
-          "mut_ref_count": 392,
+          "mut_ref_count": 393,
           "is_resource": true,
           "first_touched_at_epoch": 23,
           "first_touched_at_checkpoint": 1832216,
           "first_touched_by_txs": {
             "6J8B3zm6Dk4TNBTvyEKfpUNgaSiZSQq4Dj3oWMPeXsLt": true
+          }
+        }
+      }
+    },
+    "38035f4c1e1772d43a3535535ea5b29c1c3ab2c0026d4ad639969831bd1d174d": {
+      "tx_count": 1195,
+      "num_instances": 1,
+      "mut_ref_count": 545,
+      "num_types": 1,
+      "num_resources": 1,
+      "types": {
+        "state.State": {
+          "tx_count": 1195,
+          "num_instances": 1,
+          "mut_ref_count": 545,
+          "is_resource": true,
+          "first_touched_at_epoch": 50,
+          "first_touched_at_checkpoint": 4031146,
+          "first_touched_by_txs": {
+            "8W412kVzKZWQVBCLFHGffV8PdnAyUhYViMNE9HfgGYBu": true
           }
         }
       }
@@ -6168,26 +6188,6 @@
           "first_touched_at_checkpoint": 1666236,
           "first_touched_by_txs": {
             "Am9XypWSpqAgTKuTv1hc1gkrLKgEzxPHpD1FKF9u9JRU": true
-          }
-        }
-      }
-    },
-    "38035f4c1e1772d43a3535535ea5b29c1c3ab2c0026d4ad639969831bd1d174d": {
-      "tx_count": 1180,
-      "num_instances": 1,
-      "mut_ref_count": 536,
-      "num_types": 1,
-      "num_resources": 1,
-      "types": {
-        "state.State": {
-          "tx_count": 1180,
-          "num_instances": 1,
-          "mut_ref_count": 536,
-          "is_resource": true,
-          "first_touched_at_epoch": 50,
-          "first_touched_at_checkpoint": 4031146,
-          "first_touched_by_txs": {
-            "8W412kVzKZWQVBCLFHGffV8PdnAyUhYViMNE9HfgGYBu": true
           }
         }
       }
@@ -6252,6 +6252,37 @@
         }
       }
     },
+    "ecbf025a1651a8ab02053288c006299e659117befb74387b759b302c703ac605": {
+      "tx_count": 1116,
+      "num_instances": 5,
+      "mut_ref_count": 1116,
+      "num_types": 2,
+      "num_resources": 2,
+      "types": {
+        "tocen_stake_token.PoolStake": {
+          "tx_count": 840,
+          "num_instances": 4,
+          "mut_ref_count": 840,
+          "is_resource": true,
+          "first_touched_at_epoch": 48,
+          "first_touched_at_checkpoint": 3909303,
+          "first_touched_by_txs": {
+            "F98FKp8ARX8NSZqr2useEEpRN4XhHD9wsa6CDLPm99w9": true
+          }
+        },
+        "tocen_stake_token.Flexible": {
+          "tx_count": 276,
+          "num_instances": 1,
+          "mut_ref_count": 276,
+          "is_resource": true,
+          "first_touched_at_epoch": 48,
+          "first_touched_at_checkpoint": 3910178,
+          "first_touched_by_txs": {
+            "4erEKQHaZg69xwWNuiFYiaPcz7MffVrUMziRJfzatxmM": true
+          }
+        }
+      }
+    },
     "07b4846a5c698669073c546df3bab1c41fa47bef20b81570eb11c8b17d4ec4a4": {
       "tx_count": 1115,
       "num_instances": 1,
@@ -6272,6 +6303,37 @@
         }
       }
     },
+    "e7de25f46e8038f64314cbec062cf37c37a13bb341bf9992e4549c545fb28d68": {
+      "tx_count": 1112,
+      "num_instances": 2,
+      "mut_ref_count": 555,
+      "num_types": 2,
+      "num_resources": 1,
+      "types": {
+        "navi_aggregator.NaviAggregator": {
+          "tx_count": 557,
+          "num_instances": 1,
+          "mut_ref_count": 554,
+          "is_resource": true,
+          "first_touched_at_epoch": 94,
+          "first_touched_at_checkpoint": 7819937,
+          "first_touched_by_txs": {
+            "8fWGUizcnMzgK6ivf519cx19idnwAHex6PmX1wb8wNk9": true
+          }
+        },
+        "navi_aggregator.NaviAggregatorCap": {
+          "tx_count": 555,
+          "num_instances": 1,
+          "mut_ref_count": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 94,
+          "first_touched_at_checkpoint": 7819937,
+          "first_touched_by_txs": {
+            "8fWGUizcnMzgK6ivf519cx19idnwAHex6PmX1wb8wNk9": false
+          }
+        }
+      }
+    },
     "c8ef09df63ab145cd6bc2b0ca14997cb6a96853c456812fa24e37fa0b5c48caa": {
       "tx_count": 1112,
       "num_instances": 1,
@@ -6288,37 +6350,6 @@
           "first_touched_at_checkpoint": 1578109,
           "first_touched_by_txs": {
             "GHVN49tLFoe9hZicE17mKGkPuFax7awXKWrFoVkWd6gV": true
-          }
-        }
-      }
-    },
-    "ecbf025a1651a8ab02053288c006299e659117befb74387b759b302c703ac605": {
-      "tx_count": 1102,
-      "num_instances": 5,
-      "mut_ref_count": 1102,
-      "num_types": 2,
-      "num_resources": 2,
-      "types": {
-        "tocen_stake_token.PoolStake": {
-          "tx_count": 826,
-          "num_instances": 4,
-          "mut_ref_count": 826,
-          "is_resource": true,
-          "first_touched_at_epoch": 48,
-          "first_touched_at_checkpoint": 3909303,
-          "first_touched_by_txs": {
-            "F98FKp8ARX8NSZqr2useEEpRN4XhHD9wsa6CDLPm99w9": true
-          }
-        },
-        "tocen_stake_token.Flexible": {
-          "tx_count": 276,
-          "num_instances": 1,
-          "mut_ref_count": 276,
-          "is_resource": true,
-          "first_touched_at_epoch": 48,
-          "first_touched_at_checkpoint": 3910178,
-          "first_touched_by_txs": {
-            "4erEKQHaZg69xwWNuiFYiaPcz7MffVrUMziRJfzatxmM": true
           }
         }
       }
@@ -6366,16 +6397,16 @@
       }
     },
     "cee8e9c7bb7ececa8c4097556ee3b5d4023c35ccee2603cf6745ad832461fff2": {
-      "tx_count": 1085,
+      "tx_count": 1087,
       "num_instances": 2,
-      "mut_ref_count": 1085,
+      "mut_ref_count": 1087,
       "num_types": 2,
       "num_resources": 2,
       "types": {
         "gamio_collection_snake_legend.InfoCollection": {
-          "tx_count": 806,
+          "tx_count": 807,
           "num_instances": 1,
-          "mut_ref_count": 806,
+          "mut_ref_count": 807,
           "is_resource": true,
           "first_touched_at_epoch": 26,
           "first_touched_at_checkpoint": 2063660,
@@ -6384,9 +6415,9 @@
           }
         },
         "gamio_collection_snake_legend.EggsBasket": {
-          "tx_count": 279,
+          "tx_count": 280,
           "num_instances": 1,
-          "mut_ref_count": 279,
+          "mut_ref_count": 280,
           "is_resource": true,
           "first_touched_at_epoch": 26,
           "first_touched_at_checkpoint": 2063660,
@@ -6749,6 +6780,59 @@
         }
       }
     },
+    "6cef539ba34b9071f774f866d83dc839e0a87c6de82291d20aa5899b7290f9b2": {
+      "tx_count": 941,
+      "num_instances": 9,
+      "mut_ref_count": 941,
+      "num_types": 4,
+      "num_resources": 4,
+      "types": {
+        "storage.Storage": {
+          "tx_count": 362,
+          "num_instances": 1,
+          "mut_ref_count": 362,
+          "is_resource": true,
+          "first_touched_at_epoch": 88,
+          "first_touched_at_checkpoint": 7270270,
+          "first_touched_by_txs": {
+            "9KZFJYiYx51XNSt38EfwZnnhbBhuYxcvardkhvUDdkbL": true
+          }
+        },
+        "pool.Pool": {
+          "tx_count": 355,
+          "num_instances": 5,
+          "mut_ref_count": 355,
+          "is_resource": true,
+          "first_touched_at_epoch": 88,
+          "first_touched_at_checkpoint": 7271454,
+          "first_touched_by_txs": {
+            "Dfzx1vFLJ5cC5dsyjo2TKVT4bW4R7PvXtGEVwgBYfoU7": true
+          }
+        },
+        "incentive.Incentive": {
+          "tx_count": 216,
+          "num_instances": 1,
+          "mut_ref_count": 216,
+          "is_resource": true,
+          "first_touched_at_epoch": 88,
+          "first_touched_at_checkpoint": 7271454,
+          "first_touched_by_txs": {
+            "Dfzx1vFLJ5cC5dsyjo2TKVT4bW4R7PvXtGEVwgBYfoU7": true
+          }
+        },
+        "incentive.IncentiveBal": {
+          "tx_count": 8,
+          "num_instances": 2,
+          "mut_ref_count": 8,
+          "is_resource": true,
+          "first_touched_at_epoch": 88,
+          "first_touched_at_checkpoint": 7290238,
+          "first_touched_by_txs": {
+            "FXKYfTAZPF9hk4DrEY1u3KQBY3ARAnHhdrRw2yuKgQQx": true
+          }
+        }
+      }
+    },
     "18bea44d07e87a733c429818f82ddaa860372c459cc333cdba88403938cb0de8": {
       "tx_count": 933,
       "num_instances": 6,
@@ -6801,14 +6885,14 @@
       }
     },
     "ae5e7c832b4a97f2473fcf80fdf2e7ef72bb9d23552bd05d7dd8d428dbb879b9": {
-      "tx_count": 918,
-      "num_instances": 50,
-      "mut_ref_count": 407,
+      "tx_count": 923,
+      "num_instances": 51,
+      "mut_ref_count": 409,
       "num_types": 2,
       "num_resources": 0,
       "types": {
         "pause.Pause": {
-          "tx_count": 511,
+          "tx_count": 514,
           "num_instances": 1,
           "mut_ref_count": 0,
           "is_resource": false,
@@ -6819,9 +6903,9 @@
           }
         },
         "maven.Maven": {
-          "tx_count": 407,
-          "num_instances": 49,
-          "mut_ref_count": 407,
+          "tx_count": 409,
+          "num_instances": 50,
+          "mut_ref_count": 409,
           "is_resource": false,
           "first_touched_at_epoch": 21,
           "first_touched_at_checkpoint": 1631379,
@@ -6911,59 +6995,6 @@
         }
       }
     },
-    "6cef539ba34b9071f774f866d83dc839e0a87c6de82291d20aa5899b7290f9b2": {
-      "tx_count": 866,
-      "num_instances": 9,
-      "mut_ref_count": 866,
-      "num_types": 4,
-      "num_resources": 4,
-      "types": {
-        "storage.Storage": {
-          "tx_count": 336,
-          "num_instances": 1,
-          "mut_ref_count": 336,
-          "is_resource": true,
-          "first_touched_at_epoch": 88,
-          "first_touched_at_checkpoint": 7270270,
-          "first_touched_by_txs": {
-            "9KZFJYiYx51XNSt38EfwZnnhbBhuYxcvardkhvUDdkbL": true
-          }
-        },
-        "pool.Pool": {
-          "tx_count": 326,
-          "num_instances": 5,
-          "mut_ref_count": 326,
-          "is_resource": true,
-          "first_touched_at_epoch": 88,
-          "first_touched_at_checkpoint": 7271454,
-          "first_touched_by_txs": {
-            "Dfzx1vFLJ5cC5dsyjo2TKVT4bW4R7PvXtGEVwgBYfoU7": true
-          }
-        },
-        "incentive.Incentive": {
-          "tx_count": 197,
-          "num_instances": 1,
-          "mut_ref_count": 197,
-          "is_resource": true,
-          "first_touched_at_epoch": 88,
-          "first_touched_at_checkpoint": 7271454,
-          "first_touched_by_txs": {
-            "Dfzx1vFLJ5cC5dsyjo2TKVT4bW4R7PvXtGEVwgBYfoU7": true
-          }
-        },
-        "incentive.IncentiveBal": {
-          "tx_count": 7,
-          "num_instances": 2,
-          "mut_ref_count": 7,
-          "is_resource": true,
-          "first_touched_at_epoch": 88,
-          "first_touched_at_checkpoint": 7290238,
-          "first_touched_by_txs": {
-            "FXKYfTAZPF9hk4DrEY1u3KQBY3ARAnHhdrRw2yuKgQQx": true
-          }
-        }
-      }
-    },
     "b06da3f54fa3ad6c924288bac33f85e6276f67c9e2769f4ce655cd7ebd9b025c": {
       "tx_count": 860,
       "num_instances": 1,
@@ -7016,16 +7047,16 @@
       }
     },
     "6d9f9a7be0c37eda7542706bd0c950fd073b3c8b18b01c6414597a9df4f73348": {
-      "tx_count": 827,
+      "tx_count": 835,
       "num_instances": 11,
-      "mut_ref_count": 689,
+      "mut_ref_count": 695,
       "num_types": 3,
       "num_resources": 0,
       "types": {
         "bridge.BridgeSettings": {
-          "tx_count": 347,
+          "tx_count": 350,
           "num_instances": 9,
-          "mut_ref_count": 347,
+          "mut_ref_count": 350,
           "is_resource": false,
           "first_touched_at_epoch": 33,
           "first_touched_at_checkpoint": 2636633,
@@ -7034,9 +7065,9 @@
           }
         },
         "liquidity_pool.LiquidityPool": {
-          "tx_count": 340,
+          "tx_count": 343,
           "num_instances": 1,
-          "mut_ref_count": 340,
+          "mut_ref_count": 343,
           "is_resource": false,
           "first_touched_at_epoch": 34,
           "first_touched_at_checkpoint": 2706831,
@@ -7045,7 +7076,7 @@
           }
         },
         "bridge.RelayersHolder": {
-          "tx_count": 140,
+          "tx_count": 142,
           "num_instances": 1,
           "mut_ref_count": 2,
           "is_resource": false,
@@ -7251,16 +7282,16 @@
       }
     },
     "8e19b4b730e0c47c656f7479047e09776a35d7d3c06bef415fa27eca0c7291ea": {
-      "tx_count": 702,
+      "tx_count": 703,
       "num_instances": 1,
-      "mut_ref_count": 702,
+      "mut_ref_count": 703,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "lucky.MintState": {
-          "tx_count": 702,
+          "tx_count": 703,
           "num_instances": 1,
-          "mut_ref_count": 702,
+          "mut_ref_count": 703,
           "is_resource": true,
           "first_touched_at_epoch": 47,
           "first_touched_at_checkpoint": 3832438,
@@ -7600,6 +7631,26 @@
         }
       }
     },
+    "d7e35e63f6abb21bd6182db8d4d88cbbcad06f4175356fd201dcf435d0cf2306": {
+      "tx_count": 597,
+      "num_instances": 1,
+      "mut_ref_count": 556,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "oracle.PriceOracle": {
+          "tx_count": 597,
+          "num_instances": 1,
+          "mut_ref_count": 556,
+          "is_resource": false,
+          "first_touched_at_epoch": 94,
+          "first_touched_at_checkpoint": 7819030,
+          "first_touched_by_txs": {
+            "8rEJqbWezFLbf3rnSUFEqbqX8uM2PouriEMWXaYZsHvf": true
+          }
+        }
+      }
+    },
     "a9727b4f8e7fb0e246a11fd69d238fad1c3a174d46421ca402c79594796630ca": {
       "tx_count": 595,
       "num_instances": 1,
@@ -7734,6 +7785,37 @@
         }
       }
     },
+    "ce7ff77a83ea0cb6fd39bd8748e2ec89a3f41e8efdc3f4eb123e0ca37b184db2": {
+      "tx_count": 567,
+      "num_instances": 2,
+      "mut_ref_count": 567,
+      "num_types": 2,
+      "num_resources": 0,
+      "types": {
+        "buck.BucketProtocol": {
+          "tx_count": 451,
+          "num_instances": 1,
+          "mut_ref_count": 451,
+          "is_resource": false,
+          "first_touched_at_epoch": 77,
+          "first_touched_at_checkpoint": 6370232,
+          "first_touched_by_txs": {
+            "HSF7abeLWu8fbxKE1A41vn9sZ6RRea6bMUMcHTCN8qwg": true
+          }
+        },
+        "bkt.BktTreasury": {
+          "tx_count": 116,
+          "num_instances": 1,
+          "mut_ref_count": 116,
+          "is_resource": false,
+          "first_touched_at_epoch": 77,
+          "first_touched_at_checkpoint": 6377297,
+          "first_touched_by_txs": {
+            "59qPQqnp5AVmjyH2yBDHwqKXzQjAP1z6HtRZ9LLkmjkY": true
+          }
+        }
+      }
+    },
     "da21bb82cfdd46ffe03586edb830f345a773b4f09a2a794aacbebbc427055351": {
       "tx_count": 555,
       "num_instances": 1,
@@ -7750,6 +7832,26 @@
           "first_touched_at_checkpoint": 4898263,
           "first_touched_by_txs": {
             "89v9EJ9gn4bEeTLsJSaK3mWet3A2bJXWbQj9L72NJhYY": true
+          }
+        }
+      }
+    },
+    "d6997ac3e0f20bbee771c0c341874c9fe5ebfdb2b73ca2479b9fddf74de42a21": {
+      "tx_count": 553,
+      "num_instances": 1,
+      "mut_ref_count": 3,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "adaptor.CenterRegistry": {
+          "tx_count": 553,
+          "num_instances": 1,
+          "mut_ref_count": 3,
+          "is_resource": false,
+          "first_touched_at_epoch": 94,
+          "first_touched_at_checkpoint": 7820129,
+          "first_touched_by_txs": {
+            "CqFNZEN6pga4pERdqbmwp7roc3tstarayERswsx48HfA": true
           }
         }
       }
@@ -7805,37 +7907,6 @@
         }
       }
     },
-    "ce7ff77a83ea0cb6fd39bd8748e2ec89a3f41e8efdc3f4eb123e0ca37b184db2": {
-      "tx_count": 551,
-      "num_instances": 2,
-      "mut_ref_count": 551,
-      "num_types": 2,
-      "num_resources": 0,
-      "types": {
-        "buck.BucketProtocol": {
-          "tx_count": 439,
-          "num_instances": 1,
-          "mut_ref_count": 439,
-          "is_resource": false,
-          "first_touched_at_epoch": 77,
-          "first_touched_at_checkpoint": 6370232,
-          "first_touched_by_txs": {
-            "HSF7abeLWu8fbxKE1A41vn9sZ6RRea6bMUMcHTCN8qwg": true
-          }
-        },
-        "bkt.BktTreasury": {
-          "tx_count": 112,
-          "num_instances": 1,
-          "mut_ref_count": 112,
-          "is_resource": false,
-          "first_touched_at_epoch": 77,
-          "first_touched_at_checkpoint": 6377297,
-          "first_touched_by_txs": {
-            "59qPQqnp5AVmjyH2yBDHwqKXzQjAP1z6HtRZ9LLkmjkY": true
-          }
-        }
-      }
-    },
     "f964124c31906804e1843039f5c4e989d158121d787a495cdc0e387170b3ad15": {
       "tx_count": 539,
       "num_instances": 2,
@@ -7887,6 +7958,48 @@
         }
       }
     },
+    "a9cdb9d8e80465c75dcdad061cf1d462a9cf662da071412ca178d579d8df2855": {
+      "tx_count": 516,
+      "num_instances": 13,
+      "mut_ref_count": 278,
+      "num_types": 3,
+      "num_resources": 3,
+      "types": {
+        "version.Version": {
+          "tx_count": 238,
+          "num_instances": 1,
+          "mut_ref_count": 0,
+          "is_resource": true,
+          "first_touched_at_epoch": 89,
+          "first_touched_at_checkpoint": 7398764,
+          "first_touched_by_txs": {
+            "CpJhr762Kr3S9CCbwB6ymc3akZAhkM2CnRnckGozoc7e": false
+          }
+        },
+        "market.Market": {
+          "tx_count": 234,
+          "num_instances": 1,
+          "mut_ref_count": 234,
+          "is_resource": true,
+          "first_touched_at_epoch": 88,
+          "first_touched_at_checkpoint": 7308548,
+          "first_touched_by_txs": {
+            "BPCMP4ec3fafTZfmxRdEkX4P7JCZBJnwoaBaoZKAmUXQ": true
+          }
+        },
+        "obligation.Obligation": {
+          "tx_count": 44,
+          "num_instances": 11,
+          "mut_ref_count": 44,
+          "is_resource": true,
+          "first_touched_at_epoch": 89,
+          "first_touched_at_checkpoint": 7399870,
+          "first_touched_by_txs": {
+            "5GPBZE3BNQo3DZgQ1YjFSy8SSAudrdCsSAPLzkt7tirG": true
+          }
+        }
+      }
+    },
     "5b680466d7245c4915083965eb2e38186f679d6510350e46e8fa8653ae640739": {
       "tx_count": 515,
       "num_instances": 1,
@@ -7908,44 +8021,22 @@
         }
       }
     },
-    "a9cdb9d8e80465c75dcdad061cf1d462a9cf662da071412ca178d579d8df2855": {
+    "1b6bfd607780bc9307ff21d7891f4331e082bffcf9b369f8286358d827a6d676": {
       "tx_count": 512,
-      "num_instances": 13,
-      "mut_ref_count": 276,
-      "num_types": 3,
-      "num_resources": 3,
+      "num_instances": 1,
+      "mut_ref_count": 512,
+      "num_types": 1,
+      "num_resources": 0,
       "types": {
-        "version.Version": {
-          "tx_count": 236,
+        "ticket.Global": {
+          "tx_count": 512,
           "num_instances": 1,
-          "mut_ref_count": 0,
-          "is_resource": true,
-          "first_touched_at_epoch": 89,
-          "first_touched_at_checkpoint": 7398764,
-          "first_touched_by_txs": {
-            "CpJhr762Kr3S9CCbwB6ymc3akZAhkM2CnRnckGozoc7e": false
-          }
-        },
-        "market.Market": {
-          "tx_count": 232,
-          "num_instances": 1,
-          "mut_ref_count": 232,
-          "is_resource": true,
+          "mut_ref_count": 512,
+          "is_resource": false,
           "first_touched_at_epoch": 88,
-          "first_touched_at_checkpoint": 7308548,
+          "first_touched_at_checkpoint": 7246326,
           "first_touched_by_txs": {
-            "BPCMP4ec3fafTZfmxRdEkX4P7JCZBJnwoaBaoZKAmUXQ": true
-          }
-        },
-        "obligation.Obligation": {
-          "tx_count": 44,
-          "num_instances": 11,
-          "mut_ref_count": 44,
-          "is_resource": true,
-          "first_touched_at_epoch": 89,
-          "first_touched_at_checkpoint": 7399870,
-          "first_touched_by_txs": {
-            "5GPBZE3BNQo3DZgQ1YjFSy8SSAudrdCsSAPLzkt7tirG": true
+            "7nNu92dGWoTj5CWvcDSnLe1yjwur8sGUofqCPokMXqED": true
           }
         }
       }
@@ -7986,26 +8077,6 @@
           "first_touched_at_checkpoint": 2327179,
           "first_touched_by_txs": {
             "Hup3z231Co7hHVKQMrvfwdWQAPxktRqLAx7z7q3icMFx": true
-          }
-        }
-      }
-    },
-    "1b6bfd607780bc9307ff21d7891f4331e082bffcf9b369f8286358d827a6d676": {
-      "tx_count": 507,
-      "num_instances": 1,
-      "mut_ref_count": 507,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "ticket.Global": {
-          "tx_count": 507,
-          "num_instances": 1,
-          "mut_ref_count": 507,
-          "is_resource": false,
-          "first_touched_at_epoch": 88,
-          "first_touched_at_checkpoint": 7246326,
-          "first_touched_by_txs": {
-            "7nNu92dGWoTj5CWvcDSnLe1yjwur8sGUofqCPokMXqED": true
           }
         }
       }
@@ -8142,6 +8213,26 @@
         }
       }
     },
+    "d9f9b0b4f35276eecd1eea6985bfabe2a2bbd5575f9adb9162ccbdb4ddebde7f": {
+      "tx_count": 486,
+      "num_instances": 1,
+      "mut_ref_count": 486,
+      "num_types": 1,
+      "num_resources": 1,
+      "types": {
+        "bridge_sui.BridgeData": {
+          "tx_count": 486,
+          "num_instances": 1,
+          "mut_ref_count": 486,
+          "is_resource": true,
+          "first_touched_at_epoch": 21,
+          "first_touched_at_checkpoint": 1644422,
+          "first_touched_by_txs": {
+            "FvA77vrpuLmqTHnopfnFqdZqyjLKpeM2XGPvAqBAzgKf": true
+          }
+        }
+      }
+    },
     "f9b06a5c963927fcc7e1ef4aca9dae7af140f372f9a968e3218666e2917d96c1": {
       "tx_count": 481,
       "num_instances": 1,
@@ -8198,26 +8289,6 @@
           "first_touched_at_checkpoint": 1958274,
           "first_touched_by_txs": {
             "Ddgu4KyBYkty7aC8r6GKt4ENA1BWwuCfXwaRhqGgsAh6": true
-          }
-        }
-      }
-    },
-    "d9f9b0b4f35276eecd1eea6985bfabe2a2bbd5575f9adb9162ccbdb4ddebde7f": {
-      "tx_count": 475,
-      "num_instances": 1,
-      "mut_ref_count": 475,
-      "num_types": 1,
-      "num_resources": 1,
-      "types": {
-        "bridge_sui.BridgeData": {
-          "tx_count": 475,
-          "num_instances": 1,
-          "mut_ref_count": 475,
-          "is_resource": true,
-          "first_touched_at_epoch": 21,
-          "first_touched_at_checkpoint": 1644422,
-          "first_touched_by_txs": {
-            "FvA77vrpuLmqTHnopfnFqdZqyjLKpeM2XGPvAqBAzgKf": true
           }
         }
       }
@@ -8656,6 +8727,48 @@
         }
       }
     },
+    "4ccb970858a83b7790ed42c745971182d4a6413be17d14926c7a0d655b16ef66": {
+      "tx_count": 382,
+      "num_instances": 5,
+      "mut_ref_count": 382,
+      "num_types": 3,
+      "num_resources": 3,
+      "types": {
+        "pool.Pool": {
+          "tx_count": 161,
+          "num_instances": 3,
+          "mut_ref_count": 161,
+          "is_resource": true,
+          "first_touched_at_epoch": 94,
+          "first_touched_at_checkpoint": 7800707,
+          "first_touched_by_txs": {
+            "CDFwZMxAaiRcKGuJJDcTufDq2bu9hNkYikQEvJvft19u": true
+          }
+        },
+        "storage.Storage": {
+          "tx_count": 130,
+          "num_instances": 1,
+          "mut_ref_count": 130,
+          "is_resource": true,
+          "first_touched_at_epoch": 94,
+          "first_touched_at_checkpoint": 7789880,
+          "first_touched_by_txs": {
+            "2Lsw8KfczkvK6BmtsJnt4GZv4ogridhabJmrsKM3YRCs": true
+          }
+        },
+        "incentive.Incentive": {
+          "tx_count": 91,
+          "num_instances": 1,
+          "mut_ref_count": 91,
+          "is_resource": true,
+          "first_touched_at_epoch": 94,
+          "first_touched_at_checkpoint": 7800707,
+          "first_touched_by_txs": {
+            "CDFwZMxAaiRcKGuJJDcTufDq2bu9hNkYikQEvJvft19u": true
+          }
+        }
+      }
+    },
     "543e6ec3a553a07f8774c400a2e127a6849a95712dbbefdcb93985e8515945fb": {
       "tx_count": 377,
       "num_instances": 1,
@@ -8676,6 +8789,26 @@
         }
       }
     },
+    "193a33b36a30444128353f8cefe2fab8fefac3f918f4c267c763f6adb44ead35": {
+      "tx_count": 373,
+      "num_instances": 1,
+      "mut_ref_count": 373,
+      "num_types": 1,
+      "num_resources": 1,
+      "types": {
+        "avatar.Metadata": {
+          "tx_count": 373,
+          "num_instances": 1,
+          "mut_ref_count": 373,
+          "is_resource": true,
+          "first_touched_at_epoch": 40,
+          "first_touched_at_checkpoint": 3215089,
+          "first_touched_by_txs": {
+            "FSGhWPTH8xRxgup8rgezhujwuaRcSkcbfTuCC2zosFU5": true
+          }
+        }
+      }
+    },
     "305fdc899f4d5d13a1e03ea784eed9bc5bdcb3e3550a32466ff34518aa4627a3": {
       "tx_count": 372,
       "num_instances": 1,
@@ -8692,26 +8825,6 @@
           "first_touched_at_checkpoint": 2625749,
           "first_touched_by_txs": {
             "63c6fyHbcyURHRWB8TLAZXa8Km6Pw5zoobCnQCJSwFm5": true
-          }
-        }
-      }
-    },
-    "193a33b36a30444128353f8cefe2fab8fefac3f918f4c267c763f6adb44ead35": {
-      "tx_count": 361,
-      "num_instances": 1,
-      "mut_ref_count": 361,
-      "num_types": 1,
-      "num_resources": 1,
-      "types": {
-        "avatar.Metadata": {
-          "tx_count": 361,
-          "num_instances": 1,
-          "mut_ref_count": 361,
-          "is_resource": true,
-          "first_touched_at_epoch": 40,
-          "first_touched_at_checkpoint": 3215089,
-          "first_touched_by_txs": {
-            "FSGhWPTH8xRxgup8rgezhujwuaRcSkcbfTuCC2zosFU5": true
           }
         }
       }
@@ -8748,16 +8861,16 @@
       }
     },
     "371a30d40fcc357a37d412c4750a57303d58c9482e5f51886e46f7bf774028f3": {
-      "tx_count": 349,
+      "tx_count": 351,
       "num_instances": 1,
-      "mut_ref_count": 349,
+      "mut_ref_count": 351,
       "num_types": 1,
       "num_resources": 1,
       "types": {
         "MesonStates.GeneralStore": {
-          "tx_count": 349,
+          "tx_count": 351,
           "num_instances": 1,
-          "mut_ref_count": 349,
+          "mut_ref_count": 351,
           "is_resource": true,
           "first_touched_at_epoch": 66,
           "first_touched_at_checkpoint": 5440663,
@@ -8788,21 +8901,41 @@
       }
     },
     "c5af86dab70bf4bd2a59be31fc086e7dfea3202110b8f809f84e3173ff4e3cd1": {
-      "tx_count": 334,
+      "tx_count": 335,
       "num_instances": 1,
-      "mut_ref_count": 334,
+      "mut_ref_count": 335,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "my_minter.Minter": {
-          "tx_count": 334,
+          "tx_count": 335,
           "num_instances": 1,
-          "mut_ref_count": 334,
+          "mut_ref_count": 335,
           "is_resource": false,
           "first_touched_at_epoch": 24,
           "first_touched_at_checkpoint": 1908863,
           "first_touched_by_txs": {
             "ANbmgQc3yRA7ZMXVU47TQAz3CY32vZL21wfgiaFVZFBM": true
+          }
+        }
+      }
+    },
+    "f54081a052d35027191bab1902034c57439e814ce96e3552f3d139585472686f": {
+      "tx_count": 327,
+      "num_instances": 1,
+      "mut_ref_count": 143,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "typus_dov_single.AdditionalConfigRegistry": {
+          "tx_count": 327,
+          "num_instances": 1,
+          "mut_ref_count": 143,
+          "is_resource": false,
+          "first_touched_at_epoch": 68,
+          "first_touched_at_checkpoint": 5577522,
+          "first_touched_by_txs": {
+            "4yYztT7MCoPhjXomrKx5xoAEejLDVh1iapPPaAH9EZqJ": true
           }
         }
       }
@@ -8869,57 +9002,17 @@
         }
       }
     },
-    "f54081a052d35027191bab1902034c57439e814ce96e3552f3d139585472686f": {
-      "tx_count": 317,
-      "num_instances": 1,
-      "mut_ref_count": 138,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "typus_dov_single.AdditionalConfigRegistry": {
-          "tx_count": 317,
-          "num_instances": 1,
-          "mut_ref_count": 138,
-          "is_resource": false,
-          "first_touched_at_epoch": 68,
-          "first_touched_at_checkpoint": 5577522,
-          "first_touched_by_txs": {
-            "4yYztT7MCoPhjXomrKx5xoAEejLDVh1iapPPaAH9EZqJ": true
-          }
-        }
-      }
-    },
-    "6a4aee9f775b5c4e4affc472c98f3e2f2671efada0193f31d5438f648a2276a6": {
-      "tx_count": 295,
-      "num_instances": 4,
-      "mut_ref_count": 295,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "reward_staking.StakingPool": {
-          "tx_count": 295,
-          "num_instances": 4,
-          "mut_ref_count": 295,
-          "is_resource": false,
-          "first_touched_at_epoch": 86,
-          "first_touched_at_checkpoint": 7148023,
-          "first_touched_by_txs": {
-            "FXbiAkX1dqxEYdZBUjd1ou45q5Yq7MimW57sQPN46sKz": true
-          }
-        }
-      }
-    },
     "f145ee6d09aae034924f80672bc76db2415dfd1b1bed863ac289af9d94e2c4fc": {
-      "tx_count": 293,
+      "tx_count": 298,
       "num_instances": 1,
-      "mut_ref_count": 293,
+      "mut_ref_count": 298,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "bucket_oracle.BucketOracle": {
-          "tx_count": 293,
+          "tx_count": 298,
           "num_instances": 1,
-          "mut_ref_count": 293,
+          "mut_ref_count": 298,
           "is_resource": false,
           "first_touched_at_epoch": 77,
           "first_touched_at_checkpoint": 6364081,
@@ -8929,17 +9022,37 @@
         }
       }
     },
+    "6a4aee9f775b5c4e4affc472c98f3e2f2671efada0193f31d5438f648a2276a6": {
+      "tx_count": 297,
+      "num_instances": 4,
+      "mut_ref_count": 297,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "reward_staking.StakingPool": {
+          "tx_count": 297,
+          "num_instances": 4,
+          "mut_ref_count": 297,
+          "is_resource": false,
+          "first_touched_at_epoch": 86,
+          "first_touched_at_checkpoint": 7148023,
+          "first_touched_by_txs": {
+            "FXbiAkX1dqxEYdZBUjd1ou45q5Yq7MimW57sQPN46sKz": true
+          }
+        }
+      }
+    },
     "31c8c7144c9a316c535ce4907a96e63b0b22953aa0bb3cb12365bdabc3c2f3cc": {
-      "tx_count": 288,
+      "tx_count": 290,
       "num_instances": 1,
-      "mut_ref_count": 288,
+      "mut_ref_count": 290,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "battleship.State": {
-          "tx_count": 288,
+          "tx_count": 290,
           "num_instances": 1,
-          "mut_ref_count": 288,
+          "mut_ref_count": 290,
           "is_resource": false,
           "first_touched_at_epoch": 32,
           "first_touched_at_checkpoint": 2553223,
@@ -9408,21 +9521,63 @@
       }
     },
     "6be2e5847e91ca2f18de8cbd711367b87440e6a5ca99c63b1ea1d29d743c8212": {
-      "tx_count": 240,
+      "tx_count": 243,
       "num_instances": 2,
-      "mut_ref_count": 240,
+      "mut_ref_count": 243,
       "num_types": 1,
       "num_resources": 0,
       "types": {
         "farms.FarmInfo": {
-          "tx_count": 240,
+          "tx_count": 243,
           "num_instances": 2,
-          "mut_ref_count": 240,
+          "mut_ref_count": 243,
           "is_resource": false,
           "first_touched_at_epoch": 78,
           "first_touched_at_checkpoint": 6427427,
           "first_touched_by_txs": {
             "CZMHZ5xUTJR2iRphc2aocpTkuspyF2GoVuZ9de4SrztS": true
+          }
+        }
+      }
+    },
+    "8f2d39a6994b80a54f37f3204b1a60393bbb1945470e414117ca0ab439f9df7e": {
+      "tx_count": 240,
+      "num_instances": 3,
+      "mut_ref_count": 240,
+      "num_types": 3,
+      "num_resources": 1,
+      "types": {
+        "nft_sale.Collection": {
+          "tx_count": 130,
+          "num_instances": 1,
+          "mut_ref_count": 130,
+          "is_resource": false,
+          "first_touched_at_epoch": 73,
+          "first_touched_at_checkpoint": 5964516,
+          "first_touched_by_txs": {
+            "83g6mR9XRuBtEJx7yhX5Tn9LEm7eThoVPmj3JrFhSGyY": true
+          }
+        },
+        "nft_stake.Record": {
+          "tx_count": 55,
+          "num_instances": 1,
+          "mut_ref_count": 55,
+          "is_resource": false,
+          "first_touched_at_epoch": 73,
+          "first_touched_at_checkpoint": 5965297,
+          "first_touched_by_txs": {
+            "7i2gXM8bn7UjAHqbBmUPk5ZT6i3Qk38zBdmwakPtG95r": true
+          }
+        },
+        "nft_stake.Collection": {
+          "tx_count": 55,
+          "num_instances": 1,
+          "mut_ref_count": 55,
+          "is_resource": true,
+          "first_touched_at_epoch": 73,
+          "first_touched_at_checkpoint": 5965297,
+          "first_touched_by_txs": {
+            "7i2gXM8bn7UjAHqbBmUPk5ZT6i3Qk38zBdmwakPtG95r": true
           }
         }
       }
@@ -9487,6 +9642,37 @@
         }
       }
     },
+    "b42dbb7413b79394e1a0175af6ae22b69a5c7cc5df259cd78072b6818217c027": {
+      "tx_count": 226,
+      "num_instances": 2,
+      "mut_ref_count": 226,
+      "num_types": 2,
+      "num_resources": 0,
+      "types": {
+        "listings.Store": {
+          "tx_count": 146,
+          "num_instances": 1,
+          "mut_ref_count": 146,
+          "is_resource": false,
+          "first_touched_at_epoch": 88,
+          "first_touched_at_checkpoint": 7312745,
+          "first_touched_by_txs": {
+            "ChTK87gqJDb3TCRvhebuwodrUrEPdpLHjV65Rmhwq1pG": true
+          }
+        },
+        "biddings.Store": {
+          "tx_count": 80,
+          "num_instances": 1,
+          "mut_ref_count": 80,
+          "is_resource": false,
+          "first_touched_at_epoch": 89,
+          "first_touched_at_checkpoint": 7320785,
+          "first_touched_by_txs": {
+            "GbSu4FWR1iU4eHWPt8Mg8DTxZm2VjcuTBsiRs9P2kASf": true
+          }
+        }
+      }
+    },
     "4f9bcd196a7582ac33fa552460489bd97b75ac4a88c46454c72499b0e8ac0c90": {
       "tx_count": 226,
       "num_instances": 1,
@@ -9503,48 +9689,6 @@
           "first_touched_at_checkpoint": 1583055,
           "first_touched_by_txs": {
             "6Kez4EzQe5b4HmKXZMYemGrkCaGrLesEk9DR311HQ7rN": true
-          }
-        }
-      }
-    },
-    "8f2d39a6994b80a54f37f3204b1a60393bbb1945470e414117ca0ab439f9df7e": {
-      "tx_count": 225,
-      "num_instances": 3,
-      "mut_ref_count": 225,
-      "num_types": 3,
-      "num_resources": 1,
-      "types": {
-        "nft_sale.Collection": {
-          "tx_count": 129,
-          "num_instances": 1,
-          "mut_ref_count": 129,
-          "is_resource": false,
-          "first_touched_at_epoch": 73,
-          "first_touched_at_checkpoint": 5964516,
-          "first_touched_by_txs": {
-            "83g6mR9XRuBtEJx7yhX5Tn9LEm7eThoVPmj3JrFhSGyY": true
-          }
-        },
-        "nft_stake.Record": {
-          "tx_count": 48,
-          "num_instances": 1,
-          "mut_ref_count": 48,
-          "is_resource": false,
-          "first_touched_at_epoch": 73,
-          "first_touched_at_checkpoint": 5965297,
-          "first_touched_by_txs": {
-            "7i2gXM8bn7UjAHqbBmUPk5ZT6i3Qk38zBdmwakPtG95r": true
-          }
-        },
-        "nft_stake.Collection": {
-          "tx_count": 48,
-          "num_instances": 1,
-          "mut_ref_count": 48,
-          "is_resource": true,
-          "first_touched_at_epoch": 73,
-          "first_touched_at_checkpoint": 5965297,
-          "first_touched_by_txs": {
-            "7i2gXM8bn7UjAHqbBmUPk5ZT6i3Qk38zBdmwakPtG95r": true
           }
         }
       }
@@ -9589,6 +9733,26 @@
         }
       }
     },
+    "98f57a65905283297803d8089fae221d104316e257a13eaf10791c5082e65bc3": {
+      "tx_count": 213,
+      "num_instances": 1,
+      "mut_ref_count": 213,
+      "num_types": 1,
+      "num_resources": 1,
+      "types": {
+        "stakingmodule.StakingSeason": {
+          "tx_count": 213,
+          "num_instances": 1,
+          "mut_ref_count": 213,
+          "is_resource": true,
+          "first_touched_at_epoch": 75,
+          "first_touched_at_checkpoint": 6196984,
+          "first_touched_by_txs": {
+            "CDjmF1DbW6QBAnHjfmFKTxFMXn1svCUiMLwokhFxCmBk": true
+          }
+        }
+      }
+    },
     "5fc41f12d3510e1eb6c7a41076cedd823b10af695b74b851fe06c42853c06bb9": {
       "tx_count": 211,
       "num_instances": 1,
@@ -9605,26 +9769,6 @@
           "first_touched_at_checkpoint": 1958874,
           "first_touched_by_txs": {
             "CrH2WEkcRidBafAuF24z1Lxq6ar3FXLEASgbtmFtFqNT": true
-          }
-        }
-      }
-    },
-    "98f57a65905283297803d8089fae221d104316e257a13eaf10791c5082e65bc3": {
-      "tx_count": 210,
-      "num_instances": 1,
-      "mut_ref_count": 210,
-      "num_types": 1,
-      "num_resources": 1,
-      "types": {
-        "stakingmodule.StakingSeason": {
-          "tx_count": 210,
-          "num_instances": 1,
-          "mut_ref_count": 210,
-          "is_resource": true,
-          "first_touched_at_epoch": 75,
-          "first_touched_at_checkpoint": 6196984,
-          "first_touched_by_txs": {
-            "CDjmF1DbW6QBAnHjfmFKTxFMXn1svCUiMLwokhFxCmBk": true
           }
         }
       }
@@ -9665,37 +9809,6 @@
           "first_touched_at_checkpoint": 3045984,
           "first_touched_by_txs": {
             "9E9dup2i7SynuCBqwSXAXZcgjKwwYP8svYPCEYu8MMXD": true
-          }
-        }
-      }
-    },
-    "b42dbb7413b79394e1a0175af6ae22b69a5c7cc5df259cd78072b6818217c027": {
-      "tx_count": 205,
-      "num_instances": 2,
-      "mut_ref_count": 205,
-      "num_types": 2,
-      "num_resources": 0,
-      "types": {
-        "listings.Store": {
-          "tx_count": 126,
-          "num_instances": 1,
-          "mut_ref_count": 126,
-          "is_resource": false,
-          "first_touched_at_epoch": 88,
-          "first_touched_at_checkpoint": 7312745,
-          "first_touched_by_txs": {
-            "ChTK87gqJDb3TCRvhebuwodrUrEPdpLHjV65Rmhwq1pG": true
-          }
-        },
-        "biddings.Store": {
-          "tx_count": 79,
-          "num_instances": 1,
-          "mut_ref_count": 79,
-          "is_resource": false,
-          "first_touched_at_epoch": 89,
-          "first_touched_at_checkpoint": 7320785,
-          "first_touched_by_txs": {
-            "GbSu4FWR1iU4eHWPt8Mg8DTxZm2VjcuTBsiRs9P2kASf": true
           }
         }
       }
@@ -10095,6 +10208,48 @@
         }
       }
     },
+    "85e30371a3f9449d9934e016986c450566b21425a07e0846b4cb7db7e4e9c62d": {
+      "tx_count": 177,
+      "num_instances": 5,
+      "mut_ref_count": 177,
+      "num_types": 3,
+      "num_resources": 3,
+      "types": {
+        "pool.Pool": {
+          "tx_count": 75,
+          "num_instances": 3,
+          "mut_ref_count": 75,
+          "is_resource": true,
+          "first_touched_at_epoch": 94,
+          "first_touched_at_checkpoint": 7821230,
+          "first_touched_by_txs": {
+            "5TW8jmpaWQrgCSX4gZVfPE7KWJyMbM3xv3xkjD3z3stK": true
+          }
+        },
+        "storage.Storage": {
+          "tx_count": 62,
+          "num_instances": 1,
+          "mut_ref_count": 62,
+          "is_resource": true,
+          "first_touched_at_epoch": 94,
+          "first_touched_at_checkpoint": 7818489,
+          "first_touched_by_txs": {
+            "HbyqFhDihGaRQ74xSuVSP97CNMSxVXVo4WuQaJDuqJnr": true
+          }
+        },
+        "incentive.Incentive": {
+          "tx_count": 40,
+          "num_instances": 1,
+          "mut_ref_count": 40,
+          "is_resource": true,
+          "first_touched_at_epoch": 94,
+          "first_touched_at_checkpoint": 7821230,
+          "first_touched_by_txs": {
+            "5TW8jmpaWQrgCSX4gZVfPE7KWJyMbM3xv3xkjD3z3stK": true
+          }
+        }
+      }
+    },
     "4bd587c9514224c1a6505066e672d86775575e2228e73ccead72e9d763bb14b8": {
       "tx_count": 177,
       "num_instances": 1,
@@ -10135,6 +10290,26 @@
         }
       }
     },
+    "1454bd0be3db3c4be862104bde964913182de6d380aea24b88320505baba5e46": {
+      "tx_count": 174,
+      "num_instances": 1,
+      "mut_ref_count": 174,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "cetus_clmm_worker.WorkerInfo": {
+          "tx_count": 174,
+          "num_instances": 1,
+          "mut_ref_count": 174,
+          "is_resource": false,
+          "first_touched_at_epoch": 50,
+          "first_touched_at_checkpoint": 4085504,
+          "first_touched_by_txs": {
+            "ERgdTwtzr6bcpKyCUyAKcDEeakrHPJizkQjEA9G6QDTJ": true
+          }
+        }
+      }
+    },
     "24dda47efcabc5ce17261b2785dea97b6dc68267fd818ce7548305a78ab51134": {
       "tx_count": 172,
       "num_instances": 1,
@@ -10151,26 +10326,6 @@
           "first_touched_at_checkpoint": 1801946,
           "first_touched_by_txs": {
             "5AM3hi1RYcSB3VrcDGETt8WsYgfsBuUay5oEG3qptMQz": true
-          }
-        }
-      }
-    },
-    "1454bd0be3db3c4be862104bde964913182de6d380aea24b88320505baba5e46": {
-      "tx_count": 171,
-      "num_instances": 1,
-      "mut_ref_count": 171,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "cetus_clmm_worker.WorkerInfo": {
-          "tx_count": 171,
-          "num_instances": 1,
-          "mut_ref_count": 171,
-          "is_resource": false,
-          "first_touched_at_epoch": 50,
-          "first_touched_at_checkpoint": 4085504,
-          "first_touched_by_txs": {
-            "ERgdTwtzr6bcpKyCUyAKcDEeakrHPJizkQjEA9G6QDTJ": true
           }
         }
       }
@@ -10705,6 +10860,26 @@
         }
       }
     },
+    "1b089c63a8cfe583ba10a11258d5e83960e76a4c64adb37538cd2ac1546651af": {
+      "tx_count": 133,
+      "num_instances": 1,
+      "mut_ref_count": 133,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "fair_launch.Storage": {
+          "tx_count": 133,
+          "num_instances": 1,
+          "mut_ref_count": 133,
+          "is_resource": false,
+          "first_touched_at_epoch": 50,
+          "first_touched_at_checkpoint": 4080675,
+          "first_touched_by_txs": {
+            "DTxWLc3tnNUtPL3hYXWkdK9pyESRSkMu5K3dSFA8RRRg": true
+          }
+        }
+      }
+    },
     "27f4248cd9107569e22f6bf2b7598d30b8ea9d740a02e4fbd7b36270896661d9": {
       "tx_count": 131,
       "num_instances": 1,
@@ -10721,26 +10896,6 @@
           "first_touched_at_checkpoint": 2161419,
           "first_touched_by_txs": {
             "4TUT3wVmfk3BZW72mBD9sLtPTjeRCkqDigQ5b6S7hvpy": true
-          }
-        }
-      }
-    },
-    "1b089c63a8cfe583ba10a11258d5e83960e76a4c64adb37538cd2ac1546651af": {
-      "tx_count": 131,
-      "num_instances": 1,
-      "mut_ref_count": 131,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "fair_launch.Storage": {
-          "tx_count": 131,
-          "num_instances": 1,
-          "mut_ref_count": 131,
-          "is_resource": false,
-          "first_touched_at_epoch": 50,
-          "first_touched_at_checkpoint": 4080675,
-          "first_touched_by_txs": {
-            "DTxWLc3tnNUtPL3hYXWkdK9pyESRSkMu5K3dSFA8RRRg": true
           }
         }
       }
@@ -11413,6 +11568,26 @@
         }
       }
     },
+    "ab9e3559d7c6b9553624c7dd746ab50713ca00539ec71791882e436d11857999": {
+      "tx_count": 109,
+      "num_instances": 1,
+      "mut_ref_count": 109,
+      "num_types": 1,
+      "num_resources": 1,
+      "types": {
+        "presale.Mint": {
+          "tx_count": 109,
+          "num_instances": 1,
+          "mut_ref_count": 109,
+          "is_resource": true,
+          "first_touched_at_epoch": 61,
+          "first_touched_at_checkpoint": 4982932,
+          "first_touched_by_txs": {
+            "8ubggZQqGW1dHrS4WVvdvZJzEtUMRW3JFj3ZJniosHFb": true
+          }
+        }
+      }
+    },
     "bce4fc3a1ee72284c7b321031af596ef9489841a6092eb5caa5bfe6e9257e598": {
       "tx_count": 108,
       "num_instances": 4,
@@ -11429,26 +11604,6 @@
           "first_touched_at_checkpoint": 4022138,
           "first_touched_by_txs": {
             "5az8xbHGSRsVLohVu8ixdbxHA4bUnKnXQ3pHXBZSQsTL": true
-          }
-        }
-      }
-    },
-    "ab9e3559d7c6b9553624c7dd746ab50713ca00539ec71791882e436d11857999": {
-      "tx_count": 105,
-      "num_instances": 1,
-      "mut_ref_count": 105,
-      "num_types": 1,
-      "num_resources": 1,
-      "types": {
-        "presale.Mint": {
-          "tx_count": 105,
-          "num_instances": 1,
-          "mut_ref_count": 105,
-          "is_resource": true,
-          "first_touched_at_epoch": 61,
-          "first_touched_at_checkpoint": 4982932,
-          "first_touched_by_txs": {
-            "8ubggZQqGW1dHrS4WVvdvZJzEtUMRW3JFj3ZJniosHFb": true
           }
         }
       }
@@ -13250,9 +13405,9 @@
       }
     },
     "766989e33e0221ca9a425b04c33885ceafa41b72963625cd426d4b0a52f109c0": {
-      "tx_count": 56,
+      "tx_count": 57,
       "num_instances": 14,
-      "mut_ref_count": 44,
+      "mut_ref_count": 45,
       "num_types": 3,
       "num_resources": 3,
       "types": {
@@ -13268,9 +13423,9 @@
           }
         },
         "staking.StakingPool": {
-          "tx_count": 17,
+          "tx_count": 18,
           "num_instances": 1,
-          "mut_ref_count": 5,
+          "mut_ref_count": 6,
           "is_resource": true,
           "first_touched_at_epoch": 66,
           "first_touched_at_checkpoint": 5423518,
@@ -14111,6 +14266,26 @@
           "first_touched_at_checkpoint": 2679536,
           "first_touched_by_txs": {
             "EZrw4pJDbGoARGxvdeEUFZSJvRacaNeUUFLcSUNJLMJp": true
+          }
+        }
+      }
+    },
+    "583ffc51d8ceb08a5cdd1f681600e4affb4d05773effc4d5cb7c982c9e80d6d9": {
+      "tx_count": 42,
+      "num_instances": 2,
+      "mut_ref_count": 42,
+      "num_types": 1,
+      "num_resources": 1,
+      "types": {
+        "cetus_staking.TokenRegistry": {
+          "tx_count": 42,
+          "num_instances": 2,
+          "mut_ref_count": 42,
+          "is_resource": true,
+          "first_touched_at_epoch": 90,
+          "first_touched_at_checkpoint": 7485300,
+          "first_touched_by_txs": {
+            "C4AorHLaR2Crs1E5usRb4vuNSQKiriG3MLbwQAouPkSn": true
           }
         }
       }
@@ -15361,26 +15536,6 @@
         }
       }
     },
-    "583ffc51d8ceb08a5cdd1f681600e4affb4d05773effc4d5cb7c982c9e80d6d9": {
-      "tx_count": 28,
-      "num_instances": 2,
-      "mut_ref_count": 28,
-      "num_types": 1,
-      "num_resources": 1,
-      "types": {
-        "cetus_staking.TokenRegistry": {
-          "tx_count": 28,
-          "num_instances": 2,
-          "mut_ref_count": 28,
-          "is_resource": true,
-          "first_touched_at_epoch": 90,
-          "first_touched_at_checkpoint": 7485300,
-          "first_touched_by_txs": {
-            "C4AorHLaR2Crs1E5usRb4vuNSQKiriG3MLbwQAouPkSn": true
-          }
-        }
-      }
-    },
     "3c86d96192ddf598e3d5710141a327008da4c72c154438544f9430ec33e6f918": {
       "tx_count": 28,
       "num_instances": 1,
@@ -16368,6 +16523,26 @@
         }
       }
     },
+    "71bd3651e47a7590e607b976a332338e2230e995fa96de430703af537086b643": {
+      "tx_count": 21,
+      "num_instances": 1,
+      "mut_ref_count": 21,
+      "num_types": 1,
+      "num_resources": 1,
+      "types": {
+        "cryptopedia.CryptopediaMetadata": {
+          "tx_count": 21,
+          "num_instances": 1,
+          "mut_ref_count": 21,
+          "is_resource": true,
+          "first_touched_at_epoch": 91,
+          "first_touched_at_checkpoint": 7560145,
+          "first_touched_by_txs": {
+            "Cw48E43L5dZyBGZe7WpF8E3LX46A4HGYkVaiiTNCrgHh": true
+          }
+        }
+      }
+    },
     "2d9316f1f1a95f6d7c85a4e690ef7c359e6649773ef2c37ad7d9857adb6bef06": {
       "tx_count": 21,
       "num_instances": 1,
@@ -16840,26 +17015,6 @@
         }
       }
     },
-    "71bd3651e47a7590e607b976a332338e2230e995fa96de430703af537086b643": {
-      "tx_count": 19,
-      "num_instances": 1,
-      "mut_ref_count": 19,
-      "num_types": 1,
-      "num_resources": 1,
-      "types": {
-        "cryptopedia.CryptopediaMetadata": {
-          "tx_count": 19,
-          "num_instances": 1,
-          "mut_ref_count": 19,
-          "is_resource": true,
-          "first_touched_at_epoch": 91,
-          "first_touched_at_checkpoint": 7560145,
-          "first_touched_by_txs": {
-            "Cw48E43L5dZyBGZe7WpF8E3LX46A4HGYkVaiiTNCrgHh": true
-          }
-        }
-      }
-    },
     "90d86d07fb4cc228351bb1e329e45e856613137b1f81591c51185109c0e4ae27": {
       "tx_count": 19,
       "num_instances": 1,
@@ -16876,6 +17031,26 @@
           "first_touched_at_checkpoint": 3422477,
           "first_touched_by_txs": {
             "7D2yu4XuRPVPd4A6JT8AnjCEjigA4DF3ZucmCJJxJYrB": true
+          }
+        }
+      }
+    },
+    "b7a0d251a9f307b80b1595c87622118e401dc613591b3435786bb7c147599dae": {
+      "tx_count": 19,
+      "num_instances": 1,
+      "mut_ref_count": 19,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "cetus_clmm_worker.WorkerInfo": {
+          "tx_count": 19,
+          "num_instances": 1,
+          "mut_ref_count": 19,
+          "is_resource": false,
+          "first_touched_at_epoch": 50,
+          "first_touched_at_checkpoint": 4085680,
+          "first_touched_by_txs": {
+            "7W5qywdG4xEgFmVX1q8jq7Wrr4GPVueATaq9WuvAEBG7": true
           }
         }
       }
@@ -17038,26 +17213,6 @@
           "first_touched_at_checkpoint": 1774157,
           "first_touched_by_txs": {
             "Cz4nehmU2Yu2svH5wDpYFKrgf7w6QVHH6mcTVMu4Jonq": true
-          }
-        }
-      }
-    },
-    "b7a0d251a9f307b80b1595c87622118e401dc613591b3435786bb7c147599dae": {
-      "tx_count": 18,
-      "num_instances": 1,
-      "mut_ref_count": 18,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "cetus_clmm_worker.WorkerInfo": {
-          "tx_count": 18,
-          "num_instances": 1,
-          "mut_ref_count": 18,
-          "is_resource": false,
-          "first_touched_at_epoch": 50,
-          "first_touched_at_checkpoint": 4085680,
-          "first_touched_by_txs": {
-            "7W5qywdG4xEgFmVX1q8jq7Wrr4GPVueATaq9WuvAEBG7": true
           }
         }
       }
@@ -17732,6 +17887,48 @@
         }
       }
     },
+    "5e3c893794e61cd06a37b7f2f5269ad8a1c60f0722cb1e7810be5d9d1858e664": {
+      "tx_count": 14,
+      "num_instances": 3,
+      "mut_ref_count": 14,
+      "num_types": 3,
+      "num_resources": 0,
+      "types": {
+        "suifren_dao.Dao": {
+          "tx_count": 10,
+          "num_instances": 1,
+          "mut_ref_count": 10,
+          "is_resource": false,
+          "first_touched_at_epoch": 92,
+          "first_touched_at_checkpoint": 7580621,
+          "first_touched_by_txs": {
+            "AY4UUQ8UKqtUaMfhX1HroR7xmVJoVQsBJvaBTtRTwLic": true
+          }
+        },
+        "dao.Dao": {
+          "tx_count": 3,
+          "num_instances": 1,
+          "mut_ref_count": 3,
+          "is_resource": false,
+          "first_touched_at_epoch": 92,
+          "first_touched_at_checkpoint": 7620716,
+          "first_touched_by_txs": {
+            "HZ6aSnKzxft3eeqfGib3zcKR6voctzzuNtQBypKjbBzo": true
+          }
+        },
+        "dao.DaoHub": {
+          "tx_count": 1,
+          "num_instances": 1,
+          "mut_ref_count": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 92,
+          "first_touched_at_checkpoint": 7579523,
+          "first_touched_by_txs": {
+            "9rvXJmfntWtnXKtvpvD7WTwgnuV3yecZ9gMLas8qsV26": true
+          }
+        }
+      }
+    },
     "0be1573b21d400a9ae094c1bb5f1ac9e0837e1348ad47da44b10b84212ae0a9f": {
       "tx_count": 14,
       "num_instances": 1,
@@ -18167,48 +18364,6 @@
         }
       }
     },
-    "5e3c893794e61cd06a37b7f2f5269ad8a1c60f0722cb1e7810be5d9d1858e664": {
-      "tx_count": 13,
-      "num_instances": 3,
-      "mut_ref_count": 13,
-      "num_types": 3,
-      "num_resources": 0,
-      "types": {
-        "suifren_dao.Dao": {
-          "tx_count": 9,
-          "num_instances": 1,
-          "mut_ref_count": 9,
-          "is_resource": false,
-          "first_touched_at_epoch": 92,
-          "first_touched_at_checkpoint": 7580621,
-          "first_touched_by_txs": {
-            "AY4UUQ8UKqtUaMfhX1HroR7xmVJoVQsBJvaBTtRTwLic": true
-          }
-        },
-        "dao.Dao": {
-          "tx_count": 3,
-          "num_instances": 1,
-          "mut_ref_count": 3,
-          "is_resource": false,
-          "first_touched_at_epoch": 92,
-          "first_touched_at_checkpoint": 7620716,
-          "first_touched_by_txs": {
-            "HZ6aSnKzxft3eeqfGib3zcKR6voctzzuNtQBypKjbBzo": true
-          }
-        },
-        "dao.DaoHub": {
-          "tx_count": 1,
-          "num_instances": 1,
-          "mut_ref_count": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 92,
-          "first_touched_at_checkpoint": 7579523,
-          "first_touched_by_txs": {
-            "9rvXJmfntWtnXKtvpvD7WTwgnuV3yecZ9gMLas8qsV26": true
-          }
-        }
-      }
-    },
     "9b6baa49a64db372ffd688476874a1f8aa079688fcc85af4847d82136362944c": {
       "tx_count": 13,
       "num_instances": 1,
@@ -18505,6 +18660,26 @@
           "first_touched_at_checkpoint": 2547646,
           "first_touched_by_txs": {
             "FksaaFCFPEs22WLyEHnrBCV3cZ9gW7wLsxy958ES4Jyk": true
+          }
+        }
+      }
+    },
+    "41c29fff90d9148a70a2fa50379b07ed1d6664345c9f394f2a86cb19130041ce": {
+      "tx_count": 12,
+      "num_instances": 1,
+      "mut_ref_count": 12,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "farm.RewardPool": {
+          "tx_count": 12,
+          "num_instances": 1,
+          "mut_ref_count": 12,
+          "is_resource": false,
+          "first_touched_at_epoch": 93,
+          "first_touched_at_checkpoint": 7750418,
+          "first_touched_by_txs": {
+            "8SXUjZZMGWCJRh4wCpswF3j5V99sq6UnzmMzmCEvHtM7": true
           }
         }
       }
@@ -21919,6 +22094,26 @@
         }
       }
     },
+    "6e809d97c88c103794e0d346bc6819ae00338b4e3a03489e2ca80528bb2a3457": {
+      "tx_count": 6,
+      "num_instances": 1,
+      "mut_ref_count": 6,
+      "num_types": 1,
+      "num_resources": 1,
+      "types": {
+        "kiosk_marketplace.MarketplaceConfig": {
+          "tx_count": 6,
+          "num_instances": 1,
+          "mut_ref_count": 6,
+          "is_resource": true,
+          "first_touched_at_epoch": 94,
+          "first_touched_at_checkpoint": 7799552,
+          "first_touched_by_txs": {
+            "54r7ED1yai7b8Fz12gDsVmRQQpWTDoAua3zSvrQ7mLjE": true
+          }
+        }
+      }
+    },
     "195cb699a20cd398478e97a894b62fbc495f0179d4c8c3195d8ae461b5c95233": {
       "tx_count": 6,
       "num_instances": 1,
@@ -23684,6 +23879,26 @@
           "first_touched_at_checkpoint": 1829831,
           "first_touched_by_txs": {
             "CqhPoysHQA4DdsjQKH2JZBkLHD7nfq1FMnZHCQNugZrk": true
+          }
+        }
+      }
+    },
+    "f4129b2dfd7e6e1563878e1c74059a525213da6af34e33f5f2b7d732a1d78c30": {
+      "tx_count": 5,
+      "num_instances": 1,
+      "mut_ref_count": 5,
+      "num_types": 1,
+      "num_resources": 1,
+      "types": {
+        "kiosk_marketplace.MarketplaceConfig": {
+          "tx_count": 5,
+          "num_instances": 1,
+          "mut_ref_count": 5,
+          "is_resource": true,
+          "first_touched_at_epoch": 94,
+          "first_touched_at_checkpoint": 7785093,
+          "first_touched_by_txs": {
+            "GVrxFSqNSpYPPMK2fF42KqvvHtcawyq4f3uPUUwtX8nM": true
           }
         }
       }
@@ -28536,6 +28751,26 @@
         }
       }
     },
+    "28cacebdf2e5ce3c741ab5a21f421f05680b499ff95c9c1ad60c98a9ecee40b9": {
+      "tx_count": 2,
+      "num_instances": 1,
+      "mut_ref_count": 2,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "my_minter.Minter": {
+          "tx_count": 2,
+          "num_instances": 1,
+          "mut_ref_count": 2,
+          "is_resource": false,
+          "first_touched_at_epoch": 94,
+          "first_touched_at_checkpoint": 7824425,
+          "first_touched_by_txs": {
+            "ETHgHniyfkU9kF3c8UTsCBkNPHJyNN5o78YmR5Y7DMtQ": true
+          }
+        }
+      }
+    },
     "7dd962918f7cd88383e07f2cb8fd1e3c371bdd434b3941bbbf38ffe745d9bc72": {
       "tx_count": 2,
       "num_instances": 1,
@@ -32229,6 +32464,26 @@
         }
       }
     },
+    "c2e3911d5a8d57d515c4c476d74746f510bdf499104208e050d4ed7ac2ee688a": {
+      "tx_count": 1,
+      "num_instances": 1,
+      "mut_ref_count": 1,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "event_registry.Config": {
+          "tx_count": 1,
+          "num_instances": 1,
+          "mut_ref_count": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 94,
+          "first_touched_at_checkpoint": 7795565,
+          "first_touched_by_txs": {
+            "BuanmyfY96MTwaEPoSTL4pRC9i9bBEuTBgA1MD3DW5VW": true
+          }
+        }
+      }
+    },
     "c982f89c5727a9d944a12be88a0f4ffda89d18d383f7c3d980291d7e2064aa7a": {
       "tx_count": 1,
       "num_instances": 1,
@@ -33285,26 +33540,6 @@
           "first_touched_at_checkpoint": 2067782,
           "first_touched_by_txs": {
             "8TCAxPQ553pDpb8dtuJwdXrWxbG5h71dxLW63oEvbtch": true
-          }
-        }
-      }
-    },
-    "41c29fff90d9148a70a2fa50379b07ed1d6664345c9f394f2a86cb19130041ce": {
-      "tx_count": 1,
-      "num_instances": 1,
-      "mut_ref_count": 1,
-      "num_types": 1,
-      "num_resources": 0,
-      "types": {
-        "farm.RewardPool": {
-          "tx_count": 1,
-          "num_instances": 1,
-          "mut_ref_count": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 93,
-          "first_touched_at_checkpoint": 7750418,
-          "first_touched_by_txs": {
-            "8SXUjZZMGWCJRh4wCpswF3j5V99sq6UnzmMzmCEvHtM7": true
           }
         }
       }
@@ -34525,6 +34760,26 @@
           "first_touched_at_checkpoint": 1654265,
           "first_touched_by_txs": {
             "G6Q3z8mdvw1nF8bbHaEkL9pL2rzP3oCaNmt11Ezwwa1q": true
+          }
+        }
+      }
+    },
+    "5b7964cf132015d66a79cfa248789204389e7fa7af0b8c4cb75a6b03c5877ea1": {
+      "tx_count": 1,
+      "num_instances": 1,
+      "mut_ref_count": 1,
+      "num_types": 1,
+      "num_resources": 0,
+      "types": {
+        "sakutaro_poem.SakutaroPoemSupply": {
+          "tx_count": 1,
+          "num_instances": 1,
+          "mut_ref_count": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 94,
+          "first_touched_at_checkpoint": 7836419,
+          "first_touched_by_txs": {
+            "GbxSR9tbCD1cafUMaTHH6jTnVP3LyexuenkFg4Uur15G": true
           }
         }
       }
