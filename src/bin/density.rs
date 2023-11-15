@@ -146,8 +146,8 @@ fn main() {
                     .shared_objects
                     .entry(obj_id.clone())
                     .or_insert(SharedObjectSetData {
-                        tx_count: 0,
-                        mut_ref_count: 0,
+                        num_txs: 0,
+                        num_mut_refs: 0,
                         first_touched_at_epoch: epoch,
                         first_touched_at_checkpoint: checkpoint,
                         first_touched_by_txs: tx_list.clone(),
@@ -158,7 +158,7 @@ fn main() {
                     .shared_objects
                     .get_mut(&obj_id)
                     .unwrap()
-                    .tx_count += tx_list.len();
+                    .num_txs += tx_list.len();
                 //
                 // update the total number of how many times that object
                 // was passed by a mutable reference
@@ -168,7 +168,7 @@ fn main() {
                             .shared_objects
                             .get_mut(&obj_id)
                             .unwrap()
-                            .mut_ref_count += 1;
+                            .num_mut_refs += 1;
                     }
                 } // end of iterating over TX list
             } // end of iterating over objects within a checkpoint

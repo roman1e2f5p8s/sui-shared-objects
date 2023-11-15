@@ -101,8 +101,8 @@ pub struct EpochsData {
 // stores data of interest about a shared object
 #[derive(Debug, Serialize, Deserialize)]
 pub struct SharedObjectSetData {
-    pub tx_count: usize,
-    pub mut_ref_count: usize,
+    pub num_txs: usize,
+    pub num_mut_refs: usize,
     pub first_touched_at_epoch: usize,
     pub first_touched_at_checkpoint: u64,
     pub first_touched_by_txs: BTreeMap<String, bool>,
@@ -120,8 +120,8 @@ pub struct SharedObjectData {
     pub address: String,
     pub type_: String,
     pub is_resource: bool,
-    pub tx_count: usize,
-    pub mut_ref_count: usize,
+    pub num_txs: usize,
+    pub num_mut_refs: usize,
     pub first_touched_at_epoch: usize,
     pub first_touched_at_checkpoint: u64,
     pub first_touched_by_txs: BTreeMap<String, bool>,
@@ -130,8 +130,8 @@ pub struct SharedObjectData {
 // stores data of interest about all shared objects
 #[derive(Debug, Serialize)]
 pub struct SharedObjectsData {
-    pub num_shared_objects: usize,
-    pub num_resources: usize,
+    pub total_num_shared_objects: usize,
+    pub total_num_resources: usize,
     pub shared_objects: IndexMap<String, SharedObjectData>,
 }
 
@@ -139,9 +139,9 @@ pub struct SharedObjectsData {
 // based on their type (i.e., module and name)
 #[derive(Debug, Clone, Serialize)]
 pub struct ModuleAndNameData {
-    pub tx_count: usize,
+    pub num_txs: usize,
     pub num_instances: usize,
-    pub mut_ref_count: usize,
+    pub num_mut_refs: usize,
     pub is_resource: bool,
     pub first_touched_at_epoch: usize,
     pub first_touched_at_checkpoint: u64,
@@ -151,19 +151,19 @@ pub struct ModuleAndNameData {
 // stores data of interest about a package
 #[derive(Debug, Serialize)]
 pub struct PackageData {
-    pub tx_count: usize,
-    pub num_instances: usize,
-    pub mut_ref_count: usize,
-    pub num_types: usize,
-    pub num_resources: usize,
+    pub total_num_txs: usize,
+    pub total_num_instances: usize,
+    pub total_num_mut_refs: usize,
+    pub total_num_types: usize,
+    pub total_num_resources: usize,
     pub types: IndexMap<String, ModuleAndNameData>,
 }
 
 // stores data of interest about all packages
 #[derive(Debug, Serialize)]
 pub struct PackagesData {
-    pub num_packages: usize,
-    pub num_types: usize,
-    pub num_resources: usize,
+    pub total_num_packages: usize,
+    pub total_num_types: usize,
+    pub total_num_resources: usize,
     pub packages: IndexMap<String, PackageData>,
 }

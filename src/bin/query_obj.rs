@@ -60,7 +60,7 @@ async fn main() -> Result<(), anyhow::Error> {
     options.show_content = true;
 
     // store the total number of objects
-    let num_objects = shared_objects_set_data.shared_objects.len();
+    let total_num_objects = shared_objects_set_data.shared_objects.len();
 
     // convert the set of shared object to a vector of shared object IDs
     let shared_objects_ids: Vec<ObjectID> = shared_objects_set_data.shared_objects
@@ -74,8 +74,8 @@ async fn main() -> Result<(), anyhow::Error> {
     // bounds to slice the vector of shared object IDs
     let mut left = 0;
     let mut right = QUERY_MAX_RESULT_LIMIT;
-    if num_objects < QUERY_MAX_RESULT_LIMIT {
-        right = num_objects;
+    if total_num_objects < QUERY_MAX_RESULT_LIMIT {
+        right = total_num_objects;
     }
 
     // If this number exceeds args.retry_number, terminate the program and save data.
@@ -87,16 +87,16 @@ async fn main() -> Result<(), anyhow::Error> {
 
     // map of shared object ID to data about it
     let mut shared_objects_data = SharedObjectsData {
-        num_shared_objects: num_objects,
-        num_resources: 0,
+        total_num_shared_objects: total_num_objects,
+        total_num_resources: 0,
         shared_objects: IndexMap::new()
     };
 
     // map of packages to data about it
     let mut packages_data = PackagesData {
-        num_packages: 0,
-        num_types: 0,
-        num_resources: 0,
+        total_num_packages: 0,
+        total_num_types: 0,
+        total_num_resources: 0,
         packages: IndexMap::new(),
     };
 
@@ -187,16 +187,16 @@ async fn main() -> Result<(), anyhow::Error> {
                     .type_
                     .module
                     .to_string() + &String::from(".") + &sui_parsed_move_object.type_.name.to_string();
-                let tx_count = shared_objects_set_data
+                let num_txs = shared_objects_set_data
                     .shared_objects
                     .get(&object_id)
                     .unwrap()
-                    .tx_count;
-                let mut_ref_count = shared_objects_set_data
+                    .num_txs;
+                let num_mut_refs = shared_objects_set_data
                     .shared_objects
                     .get(&object_id)
                     .unwrap()
-                    .mut_ref_count;
+                    .num_mut_refs;
                 let first_touched_at_epoch = shared_objects_set_data
                     .shared_objects
                     .get(&object_id)
@@ -220,8 +220,8 @@ async fn main() -> Result<(), anyhow::Error> {
                         address: address.clone(),
                         type_: type_.clone(),
                         is_resource: is_resource,
-                        tx_count: tx_count,
-                        mut_ref_count: mut_ref_count,
+                        num_txs: num_txs,
+                        num_mut_refs: num_mut_refs,
                         first_touched_at_epoch: first_touched_at_epoch,
                         first_touched_at_checkpoint: first_touched_at_checkpoint,
                         first_touched_by_txs: first_touched_by_txs.clone(),
@@ -229,7 +229,7 @@ async fn main() -> Result<(), anyhow::Error> {
 
                 // update the number of resources
                 if is_resource {
-                    shared_objects_data.num_resources += 1;
+                    shared_objects_data.total_num_resources += 1;
                 }
 
                 // insert a new entry for package if it does not exist already
@@ -237,11 +237,11 @@ async fn main() -> Result<(), anyhow::Error> {
                     .packages
                     .entry(address.clone())
                     .or_insert(PackageData {
-                        tx_count: 0,
-                        num_instances: 0,
-                        mut_ref_count: 0,
-                        num_types: 0,
-                        num_resources: 0,
+                        total_num_txs: 0,
+                        total_num_instances: 0,
+                        total_num_mut_refs: 0,
+                        total_num_types: 0,
+                        total_num_resources: 0,
                         types: IndexMap::new(),
                     });
 
@@ -253,9 +253,9 @@ async fn main() -> Result<(), anyhow::Error> {
                     .types
                     .entry(type_.clone())
                     .or_insert(ModuleAndNameData {
-                        tx_count: 0,
+                        num_txs: 0,
                         num_instances: 0,
-                        mut_ref_count: 0,
+                        num_mut_refs: 0,
                         is_resource: is_resource,
                         first_touched_at_epoch: first_touched_at_epoch,
                         first_touched_at_checkpoint: first_touched_at_checkpoint,
@@ -278,7 +278,7 @@ async fn main() -> Result<(), anyhow::Error> {
                     .types
                     .get_mut(&type_)
                     .unwrap()
-                    .tx_count += tx_count;
+                    .num_txs += num_txs;
                 packages_data
                     .packages
                     .get_mut(&address)
@@ -286,7 +286,7 @@ async fn main() -> Result<(), anyhow::Error> {
                     .types
                     .get_mut(&type_)
                     .unwrap()
-                    .mut_ref_count += mut_ref_count;
+                    .num_mut_refs += num_mut_refs;
                 if first_touched_at_checkpoint <  packages_data
                         .packages
                         .get(&address)
@@ -331,21 +331,21 @@ async fn main() -> Result<(), anyhow::Error> {
         // update bounds
         left = right;
         right += QUERY_MAX_RESULT_LIMIT;
-        if right > num_objects {
-            right = num_objects;
+        if right > total_num_objects {
+            right = total_num_objects;
         }
         
-        print!("\rNumber of objects analyzed : {}...", format!("{}/{}", scanned_objects_count, num_objects).blue());
+        print!("\rNumber of objects analyzed : {}...", format!("{}/{}", scanned_objects_count, total_num_objects).blue());
         std::io::stdout().flush()?;
 
         // condition to break the loop
-        scanned_objects_count < num_objects
+        scanned_objects_count < total_num_objects
     } { }
     println!();
 
     // number of scanned objects must be equal to the number of objects in datafile
     // TODO: adapt it to handle connection error and read incomplete file
-    assert_eq!(scanned_objects_count, num_objects);
+    assert_eq!(scanned_objects_count, total_num_objects);
 
     // The number of instances across all packages must be equal 
     // the total number of shared objects: check it.
@@ -353,56 +353,56 @@ async fn main() -> Result<(), anyhow::Error> {
     let mut num_instances_total = 0;
     for (_, package) in packages_data.packages.iter_mut() {
         // calculate the total number of shared object types for all packages
-        packages_data.num_types += package.types.len();
+        packages_data.total_num_types += package.types.len();
 
         // calculate the total number of shared object types per package
-        package.num_types = package.types.len();
+        package.total_num_types = package.types.len();
 
         for (_, type_) in &package.types {
             num_instances_total += type_.num_instances;
 
             // calculate the total number of instances per package
-            package.num_instances += type_.num_instances;
+            package.total_num_instances += type_.num_instances;
             // calculate the total number of transactions per package
-            package.tx_count += type_.tx_count;
+            package.total_num_txs += type_.num_txs;
             // calculate the total number of mut refs per package
-            package.mut_ref_count += type_.mut_ref_count;
+            package.total_num_mut_refs += type_.num_mut_refs;
 
             // calculate the total number of resources
             if type_.is_resource {
                 // per package
-                package.num_resources += 1;
+                package.total_num_resources += 1;
                 // for all packages
-                packages_data.num_resources += 1;
+                packages_data.total_num_resources += 1;
             }
         } // end of iterating over types
 
-        // sort types data by tx_count in descending order
+        // sort types data by num_txs in descending order
         if package.types.len() > 1 {
             let mut types_vec = Vec::from_iter(package.types.clone());
-            types_vec.sort_by(|(_, a), (_, b)| b.tx_count.cmp(&a.tx_count));
+            types_vec.sort_by(|(_, a), (_, b)| b.num_txs.cmp(&a.num_txs));
             let sorted_types: IndexMap<String, ModuleAndNameData> = types_vec
                 .into_iter()
                 .collect();
             package.types = sorted_types;
         }
     } // end of iterating over packages
-    assert_eq!(num_instances_total, num_objects);
+    assert_eq!(num_instances_total, total_num_objects);
 
     // calculate the number of packages implementing shared objects
-    packages_data.num_packages = packages_data.packages.len();
+    packages_data.total_num_packages = packages_data.packages.len();
 
-    // sort shared objects data by tx_count in descending order
+    // sort shared objects data by num_txs in descending order
     let mut shared_objects_vec = Vec::from_iter(shared_objects_data.shared_objects);
-    shared_objects_vec.sort_by(|(_, a), (_, b)| b.tx_count.cmp(&a.tx_count));
+    shared_objects_vec.sort_by(|(_, a), (_, b)| b.num_txs.cmp(&a.num_txs));
     let sorted_shared_objects: IndexMap<String, SharedObjectData> = shared_objects_vec
         .into_iter()
         .collect();
     shared_objects_data.shared_objects = sorted_shared_objects;
 
-    // sort packages data by tx_count in descending order
+    // sort packages data by total_num_txs in descending order
     let mut packages_vec = Vec::from_iter(packages_data.packages);
-    packages_vec.sort_by(|(_, a), (_, b)| b.tx_count.cmp(&a.tx_count));
+    packages_vec.sort_by(|(_, a), (_, b)| b.total_num_txs.cmp(&a.total_num_txs));
     let sorted_packages: IndexMap<String, PackageData> = packages_vec
         .into_iter()
         .collect();

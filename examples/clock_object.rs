@@ -6,6 +6,19 @@ use std::path::Path;
 use serde_json;
 use colored::Colorize;
 //use std::process::exit;
+use std::str::FromStr;
+use std::collections::BTreeMap;
+
+use sui_sdk::SuiClientBuilder;
+use sui_sdk::types::base_types::{
+    ObjectID,
+    TransactionDigest,
+};
+use sui_sdk::rpc_types::{
+    TransactionFilter,
+    SuiTransactionBlockResponseQuery,
+    SuiTransactionBlockResponseOptions,
+};
 
 use shared_object_density::args::density::*;
 use shared_object_density::types::*;
@@ -13,9 +26,11 @@ use shared_object_density::consts::{
     DATA_DIR,
     RESULTS_DIR,
 };
+use shared_object_density::utils::print_type_of;
 
 
-fn main() {
+#[tokio::main]
+async fn main() -> Result<(), anyhow::Error> {
     let args = Args::parse();
 
     let workspace_dir = Path::new(DATA_DIR).join(args.workspace.clone());
@@ -45,6 +60,8 @@ fn main() {
     // find epoch that has most TXs touching only Clock shared object
     let mut epoch_has_max_txs_touching_only_clock = 0;
     let mut max_num_txs_touching_clock_per_epoch = 0;
+
+    let mut txs_to_scan: BTreeMap<String, bool> = BTreeMap::new();
 
     println!();
     println!("*** TXs that touch only Clock shared object (and probably some owned objects): ***");
@@ -86,6 +103,7 @@ fn main() {
                     max_num_txs_touching_clock_per_checkpoint = num_txs;
                     checkpoint_has_max_txs_touching_clock = checkpoint;
                     epoch_of_checkpoint_has_max_txs_touching_clock = epoch;
+                    txs_to_scan = txs_touched_clock.unwrap().clone();
                 }
 
                 //
@@ -134,6 +152,40 @@ fn main() {
         epoch_of_checkpoint_has_max_txs_touching_clock,
         max_num_txs_touching_clock_per_checkpoint);
 
+    let txs_to_scan_list: Vec<_> = txs_to_scan
+        .into_keys()
+        .collect::<Vec<_>>()
+        .iter()
+        .map(|x| TransactionDigest::from_str(x).unwrap())
+        .collect();
+    println!("{:?}", txs_to_scan_list);
+    print_type_of(&txs_to_scan_list);
+
+    // get TX blocks for object Clock and checkpoint `checkpoint_has_max_txs_touching_clock`
+    let sui = SuiClientBuilder::default()
+        .build("https://fullnode.mainnet.sui.io:443")
+        .await
+        .unwrap();
+    println!("\n --- Sui mainnet version: {} --- \n", sui.api_version());
+
+    let options = SuiTransactionBlockResponseOptions::new().with_input();
+    let query = SuiTransactionBlockResponseQuery::new(
+        Some(TransactionFilter::InputObject(ObjectID::from_str(&clock_object_id).unwrap())), Some(options));
+        // Some(TransactionFilter::Checkpoint(checkpoint_has_max_txs_touching_clock)), Some(options));
+
+    let tx_block = sui
+        .read_api()
+        .query_transaction_blocks(query, None, None, false)
+        .await?;
+
+    for tx in tx_block.data.iter() {
+        println!("TX: {:>44}, Checkpoint: {}, Timestamp: {}",
+            tx.digest.to_string(),
+            tx.checkpoint.unwrap(),
+            tx.timestamp_ms.unwrap()
+            );
+    }
+
     // save results 
     let results_dir = Path::new(RESULTS_DIR).join(args.workspace);
     if results_dir.exists() {
@@ -150,4 +202,5 @@ fn main() {
     //        unwrap());
 
     println!("{}", "Done!".green());
+    Ok(())
 }
