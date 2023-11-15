@@ -11,12 +11,9 @@ use std::collections::BTreeMap;
 
 use sui_sdk::SuiClientBuilder;
 use sui_sdk::types::base_types::{
-    ObjectID,
     TransactionDigest,
 };
 use sui_sdk::rpc_types::{
-    TransactionFilter,
-    SuiTransactionBlockResponseQuery,
     SuiTransactionBlockResponseOptions,
 };
 
@@ -26,7 +23,6 @@ use shared_object_density::consts::{
     DATA_DIR,
     RESULTS_DIR,
 };
-use shared_object_density::utils::print_type_of;
 
 
 #[tokio::main]
@@ -158,8 +154,6 @@ async fn main() -> Result<(), anyhow::Error> {
         .iter()
         .map(|x| TransactionDigest::from_str(x).unwrap())
         .collect();
-    println!("{:?}", txs_to_scan_list);
-    print_type_of(&txs_to_scan_list);
 
     // get TX blocks for object Clock and checkpoint `checkpoint_has_max_txs_touching_clock`
     let sui = SuiClientBuilder::default()
@@ -169,22 +163,35 @@ async fn main() -> Result<(), anyhow::Error> {
     println!("\n --- Sui mainnet version: {} --- \n", sui.api_version());
 
     let options = SuiTransactionBlockResponseOptions::new().with_input();
-    let query = SuiTransactionBlockResponseQuery::new(
-        Some(TransactionFilter::InputObject(ObjectID::from_str(&clock_object_id).unwrap())), Some(options));
-        // Some(TransactionFilter::Checkpoint(checkpoint_has_max_txs_touching_clock)), Some(options));
 
-    let tx_block = sui
-        .read_api()
-        .query_transaction_blocks(query, None, None, false)
-        .await?;
+    let total_num_txs = txs_to_scan_list.len();
+    let mut num_txs_scanned = 0;
 
-    for tx in tx_block.data.iter() {
-        println!("TX: {:>44}, Checkpoint: {}, Timestamp: {}",
-            tx.digest.to_string(),
-            tx.checkpoint.unwrap(),
-            tx.timestamp_ms.unwrap()
+    while num_txs_scanned < total_num_txs {
+        let left = num_txs_scanned;
+        let right;
+        if left + 50 < total_num_txs {
+            right = left + 50;
+        } else {
+            right = total_num_txs;
+        }
+
+        let tx_blocks = sui
+            .read_api()
+            .multi_get_transactions_with_options((&txs_to_scan_list[left..right]).to_vec(), options.clone())
+            .await?;
+
+        for tx_block in tx_blocks.iter() {
+            println!("TX: {:>44}, Checkpoint: {}, Timestamp: {}",
+                tx_block.digest.to_string(),
+                tx_block.checkpoint.unwrap(),
+                tx_block.timestamp_ms.unwrap()
             );
+        }
+
+        num_txs_scanned += tx_blocks.len();
     }
+    assert_eq!(num_txs_scanned, total_num_txs);
 
     // save results 
     let results_dir = Path::new(RESULTS_DIR).join(args.workspace);
