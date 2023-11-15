@@ -1,2 +1,0 @@
-shared_objects_data.json filter=lfs diff=lfs merge=lfs -text
-shared_objects_set.json filter=lfs diff=lfs merge=lfs -text
