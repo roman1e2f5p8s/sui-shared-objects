@@ -238,8 +238,8 @@ async fn main() -> Result<(), anyhow::Error> {
                     .entry(address.clone())
                     .or_insert(PackageData {
                         total_num_txs: 0,
-                        total_num_instances: 0,
                         total_num_mut_refs: 0,
+                        total_num_instances: 0,
                         total_num_types: 0,
                         total_num_resources: 0,
                         types: IndexMap::new(),
@@ -254,8 +254,8 @@ async fn main() -> Result<(), anyhow::Error> {
                     .entry(type_.clone())
                     .or_insert(ModuleAndNameData {
                         num_txs: 0,
-                        num_instances: 0,
                         num_mut_refs: 0,
+                        num_instances: 0,
                         is_resource: is_resource,
                         first_touched_at_epoch: first_touched_at_epoch,
                         first_touched_at_checkpoint: first_touched_at_checkpoint,

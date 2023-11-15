@@ -119,7 +119,6 @@ pub struct SharedObjectsSetData {
 pub struct SharedObjectData {
     pub address: String,
     pub type_: String,
-    pub is_resource: bool,
     pub num_txs: usize,
     pub num_mut_refs: usize,
     pub first_touched_at_epoch: usize,
@@ -140,8 +139,8 @@ pub struct SharedObjectsData {
 #[derive(Debug, Clone, Serialize)]
 pub struct ModuleAndNameData {
     pub num_txs: usize,
-    pub num_instances: usize,
     pub num_mut_refs: usize,
+    pub num_instances: usize,
     pub is_resource: bool,
     pub first_touched_at_epoch: usize,
     pub first_touched_at_checkpoint: u64,
@@ -152,8 +151,8 @@ pub struct ModuleAndNameData {
 #[derive(Debug, Serialize)]
 pub struct PackageData {
     pub total_num_txs: usize,
-    pub total_num_instances: usize,
     pub total_num_mut_refs: usize,
+    pub total_num_instances: usize,
     pub total_num_types: usize,
     pub total_num_resources: usize,
     pub types: IndexMap<String, ModuleAndNameData>,
