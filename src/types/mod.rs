@@ -119,6 +119,7 @@ pub struct SharedObjectsSetData {
 pub struct SharedObjectData {
     pub address: String,
     pub type_: String,
+    pub is_resource: bool,
     pub num_txs: usize,
     pub num_mut_refs: usize,
     pub first_touched_at_epoch: usize,
