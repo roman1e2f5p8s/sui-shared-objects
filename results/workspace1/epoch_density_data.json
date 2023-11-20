@@ -2879,6 +2879,66 @@
           "obj_touchability": 0.025388720388528952
         }
       }
+    },
+    "96": {
+      "num_txs_total": 27975049,
+      "num_txs_touching_shared_objs": 1028259,
+      "density": 0.0367562895064098,
+      "num_shared_objects_per_epoch": 395624,
+      "num_shared_objects_total": 1724107,
+      "num_checkpoints": 86872,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.5042051364086969,
+          "obj_touchability": 0.2385842258544972
+        },
+        "5": {
+          "contention_degree": 0.862897413256031,
+          "obj_touchability": 0.19610140268448908
+        },
+        "10": {
+          "contention_degree": 0.9600901907713933,
+          "obj_touchability": 0.13932159385514503
+        },
+        "30": {
+          "contention_degree": 1.1427689115311088,
+          "obj_touchability": 0.07444029511778927
+        },
+        "60": {
+          "contention_degree": 1.2249049468474735,
+          "obj_touchability": 0.04579579007700616
+        }
+      }
+    },
+    "97": {
+      "num_txs_total": 30005842,
+      "num_txs_touching_shared_objs": 988215,
+      "density": 0.03293408663552917,
+      "num_shared_objects_per_epoch": 390997,
+      "num_shared_objects_total": 2106693,
+      "num_checkpoints": 86763,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.48467871065895085,
+          "obj_touchability": 0.2365970523913468
+        },
+        "5": {
+          "contention_degree": 0.8257769794186508,
+          "obj_touchability": 0.1958458125863512
+        },
+        "10": {
+          "contention_degree": 0.9506974773810195,
+          "obj_touchability": 0.14649438740861373
+        },
+        "30": {
+          "contention_degree": 1.1188122783120564,
+          "obj_touchability": 0.078466316125574
+        },
+        "60": {
+          "contention_degree": 1.2026864571143725,
+          "obj_touchability": 0.04824339864496884
+        }
+      }
     }
   }
 }
