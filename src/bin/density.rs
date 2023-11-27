@@ -51,7 +51,7 @@ fn main() {
 
     println!();
     for (epoch, epoch_data_file) in epoch_data_files.iter().enumerate() {
-        print!("\rWorking on file {}...", format!("{}/{}", epoch + 1, epoch_data_files.len()).blue());
+        print!("\rWorking on epoch {}...", format!("{}/{}", epoch, epoch_data_files.len() - 1).blue());
         let _ = std::io::stdout().flush();
 
         let file = fs::File::open(epoch_data_file.path())
@@ -62,8 +62,8 @@ fn main() {
 
         // ignore incomplete epoch data files
         if result.num_txs_scanned != result.num_txs_in_epoch {
-            println!("{}", format!("\nIgnoring incomplete epoch data file {:?}\n", epoch_data_file.path()).yellow());
-            continue;
+            println!("{}", format!("\nIgnoring incomplete epoch data files starting from {:?}\n", epoch_data_file.path()).yellow());
+            break;
         }
 
         // insert a new value for key "epoch"
