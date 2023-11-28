@@ -1,18 +1,18 @@
 {
   "total_num_packages": 1544,
-  "total_num_types": 2027,
-  "total_num_resources": 831,
+  "total_num_types": 2028,
+  "total_num_resources": 832,
   "packages": {
     "00b53b0f4174108627fbee72e2498b58d6a2714cded53fac537034c220d26302": {
-      "total_num_txs": 21449293,
-      "total_num_mut_refs": 17676511,
+      "total_num_txs": 22892129,
+      "total_num_mut_refs": 18864206,
       "total_num_instances": 21,
       "total_num_types": 2,
       "total_num_resources": 2,
       "types": {
         "price_info.PriceInfoObject": {
-          "num_txs": 17675673,
-          "num_mut_refs": 17675619,
+          "num_txs": 18863351,
+          "num_mut_refs": 18863297,
           "num_instances": 20,
           "is_resource": true,
           "first_touched_at_epoch": 31,
@@ -22,8 +22,8 @@
           }
         },
         "state.State": {
-          "num_txs": 3773620,
-          "num_mut_refs": 892,
+          "num_txs": 4028778,
+          "num_mut_refs": 909,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 31,
@@ -35,14 +35,14 @@
       }
     },
     "0000000000000000000000000000000000000000000000000000000000000002": {
-      "total_num_txs": 11457880,
-      "total_num_mut_refs": 786950,
-      "total_num_instances": 129645,
+      "total_num_txs": 11874926,
+      "total_num_mut_refs": 792328,
+      "total_num_instances": 129985,
       "total_num_types": 5,
       "total_num_resources": 4,
       "types": {
         "clock.Clock": {
-          "num_txs": 7710301,
+          "num_txs": 8121767,
           "num_mut_refs": 0,
           "num_instances": 1,
           "is_resource": false,
@@ -53,9 +53,9 @@
           }
         },
         "kiosk.Kiosk": {
-          "num_txs": 3474920,
-          "num_mut_refs": 594228,
-          "num_instances": 129293,
+          "num_txs": 3478205,
+          "num_mut_refs": 597512,
+          "num_instances": 129632,
           "is_resource": true,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1574656,
@@ -64,8 +64,8 @@
           }
         },
         "transfer_policy.TransferPolicy": {
-          "num_txs": 268801,
-          "num_mut_refs": 188981,
+          "num_txs": 271052,
+          "num_mut_refs": 191031,
           "num_instances": 158,
           "is_resource": true,
           "first_touched_at_epoch": 20,
@@ -75,8 +75,8 @@
           }
         },
         "coin.TreasuryCap": {
-          "num_txs": 3570,
-          "num_mut_refs": 3570,
+          "num_txs": 3613,
+          "num_mut_refs": 3613,
           "num_instances": 15,
           "is_resource": true,
           "first_touched_at_epoch": 21,
@@ -86,9 +86,9 @@
           }
         },
         "coin.CoinMetadata": {
-          "num_txs": 288,
-          "num_mut_refs": 171,
-          "num_instances": 178,
+          "num_txs": 289,
+          "num_mut_refs": 172,
+          "num_instances": 179,
           "is_resource": true,
           "first_touched_at_epoch": 19,
           "first_touched_at_checkpoint": 1448826,
@@ -99,15 +99,15 @@
       }
     },
     "745a16ea148a7b3d1f6e68d0f16237f954e99197cd0ffb96e70c994c946d60d1": {
-      "total_num_txs": 7806607,
-      "total_num_mut_refs": 7806607,
+      "total_num_txs": 8615558,
+      "total_num_mut_refs": 8615558,
       "total_num_instances": 2701942,
       "total_num_types": 2,
       "total_num_resources": 0,
       "types": {
         "coin_flip.Game": {
-          "num_txs": 4128185,
-          "num_mut_refs": 4128185,
+          "num_txs": 4857835,
+          "num_mut_refs": 4857835,
           "num_instances": 2701941,
           "is_resource": false,
           "first_touched_at_epoch": 86,
@@ -117,8 +117,8 @@
           }
         },
         "coin_flip.HouseData": {
-          "num_txs": 3678422,
-          "num_mut_refs": 3678422,
+          "num_txs": 3757723,
+          "num_mut_refs": 3757723,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 86,
@@ -130,15 +130,15 @@
       }
     },
     "5306f64e312b581766351c07af79c72fcb1cd25147157fdc2f8ad76de9a3fb6a": {
-      "total_num_txs": 3797391,
-      "total_num_mut_refs": 9009,
+      "total_num_txs": 4052631,
+      "total_num_mut_refs": 9081,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 1,
       "types": {
         "state.State": {
-          "num_txs": 3797391,
-          "num_mut_refs": 9009,
+          "num_txs": 4052631,
+          "num_mut_refs": 9081,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 19,
@@ -150,15 +150,15 @@
       }
     },
     "1eabed72c53feb3805120a081dc15963c204dc8d091542592abaf7a35689b2fb": {
-      "total_num_txs": 2692702,
-      "total_num_mut_refs": 1708058,
+      "total_num_txs": 2755424,
+      "total_num_mut_refs": 1745304,
       "total_num_instances": 141,
       "total_num_types": 6,
       "total_num_resources": 5,
       "types": {
         "pool.Pool": {
-          "num_txs": 1426149,
-          "num_mut_refs": 1426143,
+          "num_txs": 1456974,
+          "num_mut_refs": 1456968,
           "num_instances": 134,
           "is_resource": true,
           "first_touched_at_epoch": 21,
@@ -168,8 +168,8 @@
           }
         },
         "config.GlobalConfig": {
-          "num_txs": 1148066,
-          "num_mut_refs": 163509,
+          "num_txs": 1175343,
+          "num_mut_refs": 165310,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 20,
@@ -179,8 +179,8 @@
           }
         },
         "partner.Partner": {
-          "num_txs": 60902,
-          "num_mut_refs": 60902,
+          "num_txs": 61565,
+          "num_mut_refs": 61565,
           "num_instances": 3,
           "is_resource": true,
           "first_touched_at_epoch": 41,
@@ -190,8 +190,8 @@
           }
         },
         "rewarder.RewarderGlobalVault": {
-          "num_txs": 57438,
-          "num_mut_refs": 57359,
+          "num_txs": 61395,
+          "num_mut_refs": 61316,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 21,
@@ -225,15 +225,15 @@
       }
     },
     "72f9c76421170b5a797432ba9e1b3b2e2b7cf6faa26eb955396c773af2479e1e": {
-      "total_num_txs": 994822,
-      "total_num_mut_refs": 994822,
+      "total_num_txs": 1083252,
+      "total_num_mut_refs": 1083252,
       "total_num_instances": 6,
       "total_num_types": 2,
       "total_num_resources": 1,
       "types": {
         "game_8192.Game8192Maintainer": {
-          "num_txs": 950679,
-          "num_mut_refs": 950679,
+          "num_txs": 1039107,
+          "num_mut_refs": 1039107,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 20,
@@ -243,8 +243,8 @@
           }
         },
         "leaderboard_8192.Leaderboard8192": {
-          "num_txs": 44143,
-          "num_mut_refs": 44143,
+          "num_txs": 44145,
+          "num_mut_refs": 44145,
           "num_instances": 5,
           "is_resource": true,
           "first_touched_at_epoch": 20,
@@ -256,15 +256,15 @@
       }
     },
     "000000000000000000000000000000000000000000000000000000000000dee9": {
-      "total_num_txs": 792378,
-      "total_num_mut_refs": 792376,
+      "total_num_txs": 885759,
+      "total_num_mut_refs": 885757,
       "total_num_instances": 5,
       "total_num_types": 1,
       "total_num_resources": 0,
       "types": {
         "clob_v2.Pool": {
-          "num_txs": 792378,
-          "num_mut_refs": 792376,
+          "num_txs": 885759,
+          "num_mut_refs": 885757,
           "num_instances": 5,
           "is_resource": false,
           "first_touched_at_epoch": 74,
@@ -276,15 +276,15 @@
       }
     },
     "d5dd28cc24009752905689b2ba2bf90bfc8de4549b9123f93519bb8ba9bf9981": {
-      "total_num_txs": 633870,
-      "total_num_mut_refs": 633870,
+      "total_num_txs": 635145,
+      "total_num_mut_refs": 635145,
       "total_num_instances": 5,
       "total_num_types": 5,
       "total_num_resources": 5,
       "types": {
         "marketplace.MarketplaceConfig": {
-          "num_txs": 331414,
-          "num_mut_refs": 331414,
+          "num_txs": 331898,
+          "num_mut_refs": 331898,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 20,
@@ -294,8 +294,8 @@
           }
         },
         "marketplace.CreatorConfig": {
-          "num_txs": 102226,
-          "num_mut_refs": 102226,
+          "num_txs": 102440,
+          "num_mut_refs": 102440,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 20,
@@ -305,8 +305,8 @@
           }
         },
         "creator_bluemove_fee.RoyaltyCollection": {
-          "num_txs": 102189,
-          "num_mut_refs": 102189,
+          "num_txs": 102403,
+          "num_mut_refs": 102403,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 20,
@@ -316,8 +316,8 @@
           }
         },
         "offer_collection.OfferCollectionData": {
-          "num_txs": 76252,
-          "num_mut_refs": 76252,
+          "num_txs": 76586,
+          "num_mut_refs": 76586,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 20,
@@ -327,8 +327,8 @@
           }
         },
         "offer_item.OfferData": {
-          "num_txs": 21789,
-          "num_mut_refs": 21789,
+          "num_txs": 21818,
+          "num_mut_refs": 21818,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 20,
@@ -340,15 +340,15 @@
       }
     },
     "51179c2df7466220b513901c52412258942a1e041fccb973e92a53c29e1a09ed": {
-      "total_num_txs": 554968,
-      "total_num_mut_refs": 554968,
+      "total_num_txs": 596880,
+      "total_num_mut_refs": 596880,
       "total_num_instances": 2,
       "total_num_types": 1,
       "total_num_resources": 1,
       "types": {
         "simple_oracle.SimpleOracle": {
-          "num_txs": 554968,
-          "num_mut_refs": 554968,
+          "num_txs": 596880,
+          "num_mut_refs": 596880,
           "num_instances": 2,
           "is_resource": true,
           "first_touched_at_epoch": 84,
@@ -360,15 +360,15 @@
       }
     },
     "361dd589b98e8fcda9a7ee53b85efabef3569d00416640d2faa516e3801d7ffc": {
-      "total_num_txs": 439564,
-      "total_num_mut_refs": 435964,
+      "total_num_txs": 442334,
+      "total_num_mut_refs": 438671,
       "total_num_instances": 23,
       "total_num_types": 4,
       "total_num_resources": 0,
       "types": {
         "pool.Pool": {
-          "num_txs": 402257,
-          "num_mut_refs": 402249,
+          "num_txs": 404793,
+          "num_mut_refs": 404785,
           "num_instances": 20,
           "is_resource": false,
           "first_touched_at_epoch": 28,
@@ -378,8 +378,8 @@
           }
         },
         "TOKEN.TokenFarm": {
-          "num_txs": 19809,
-          "num_mut_refs": 16217,
+          "num_txs": 19968,
+          "num_mut_refs": 16313,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 28,
@@ -389,8 +389,8 @@
           }
         },
         "TOKEN.TokenBank": {
-          "num_txs": 17477,
-          "num_mut_refs": 17477,
+          "num_txs": 17552,
+          "num_mut_refs": 17552,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 28,
@@ -413,15 +413,15 @@
       }
     },
     "bb1531504c9c3235d3cd637ed9573cbe18461255b4175a1cb1e1b07b8aa8e11b": {
-      "total_num_txs": 330304,
-      "total_num_mut_refs": 328924,
+      "total_num_txs": 330350,
+      "total_num_mut_refs": 328970,
       "total_num_instances": 6286,
       "total_num_types": 3,
       "total_num_resources": 3,
       "types": {
         "suia.Medal": {
-          "num_txs": 321394,
-          "num_mut_refs": 321394,
+          "num_txs": 321440,
+          "num_mut_refs": 321440,
           "num_instances": 6284,
           "is_resource": true,
           "first_touched_at_epoch": 20,
@@ -455,15 +455,15 @@
       }
     },
     "8bdc95e99e393fea9b0e010353ef27109ca6b93d96c57090d7ab61fc9ca4d78d": {
-      "total_num_txs": 301900,
-      "total_num_mut_refs": 301900,
+      "total_num_txs": 306783,
+      "total_num_mut_refs": 306783,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 1,
       "types": {
         "utility.Config": {
-          "num_txs": 301900,
-          "num_mut_refs": 301900,
+          "num_txs": 306783,
+          "num_mut_refs": 306783,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 54,
@@ -474,16 +474,36 @@
         }
       }
     },
+    "5d8fbbf6f908a4af8c6d072669a462d53e03eb3c1d863bd0359dc818c69ea706": {
+      "total_num_txs": 305529,
+      "total_num_mut_refs": 305463,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 1,
+      "types": {
+        "SupraSValueFeed.OracleHolder": {
+          "num_txs": 305529,
+          "num_mut_refs": 305463,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 77,
+          "first_touched_at_checkpoint": 6354365,
+          "first_touched_by_txs": {
+            "Fvp5ZYjYTkbcgs3179yxWpsUsyycPcLW2Cyk2Fq5xd1p": true
+          }
+        }
+      }
+    },
     "b24b6789e088b876afabca733bed2299fbc9e2d6369be4d1acfa17d8145454d9": {
-      "total_num_txs": 299435,
-      "total_num_mut_refs": 299435,
+      "total_num_txs": 299751,
+      "total_num_mut_refs": 299751,
       "total_num_instances": 2,
       "total_num_types": 2,
       "total_num_resources": 2,
       "types": {
         "swap.Dex_Info": {
-          "num_txs": 294913,
-          "num_mut_refs": 294913,
+          "num_txs": 295227,
+          "num_mut_refs": 295227,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 21,
@@ -493,34 +513,14 @@
           }
         },
         "stable_swap.Dex_Stable_Info": {
-          "num_txs": 4522,
-          "num_mut_refs": 4522,
+          "num_txs": 4524,
+          "num_mut_refs": 4524,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 21,
           "first_touched_at_checkpoint": 1656703,
           "first_touched_by_txs": {
             "FUyi5t6ZeR2fat6H4JGT11XBixYg2thK8gR1Fy41cdST": true
-          }
-        }
-      }
-    },
-    "5d8fbbf6f908a4af8c6d072669a462d53e03eb3c1d863bd0359dc818c69ea706": {
-      "total_num_txs": 289555,
-      "total_num_mut_refs": 289489,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 1,
-      "types": {
-        "SupraSValueFeed.OracleHolder": {
-          "num_txs": 289555,
-          "num_mut_refs": 289489,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 77,
-          "first_touched_at_checkpoint": 6354365,
-          "first_touched_by_txs": {
-            "Fvp5ZYjYTkbcgs3179yxWpsUsyycPcLW2Cyk2Fq5xd1p": true
           }
         }
       }
@@ -557,15 +557,15 @@
       }
     },
     "6b84da4f5dc051759382e60352377fea9d59bc6ec92dc60e0b6387e05274415f": {
-      "total_num_txs": 234984,
-      "total_num_mut_refs": 234984,
+      "total_num_txs": 234987,
+      "total_num_mut_refs": 234987,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 0,
       "types": {
         "implements.Global": {
-          "num_txs": 234984,
-          "num_mut_refs": 234984,
+          "num_txs": 234987,
+          "num_mut_refs": 234987,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 20,
@@ -607,16 +607,58 @@
         }
       }
     },
+    "d899cf7d2b5db716bd2cf55599fb0d5ee38a3061e7b6bb6eebf73fa5bc4c81ca": {
+      "total_num_txs": 195513,
+      "total_num_mut_refs": 195513,
+      "total_num_instances": 4,
+      "total_num_types": 3,
+      "total_num_resources": 3,
+      "types": {
+        "pool.Pool": {
+          "num_txs": 65330,
+          "num_mut_refs": 65330,
+          "num_instances": 2,
+          "is_resource": true,
+          "first_touched_at_epoch": 95,
+          "first_touched_at_checkpoint": 7885789,
+          "first_touched_by_txs": {
+            "EGsiwMxgiqyySeeZMxsNJAr8Ad2fBmWbReJTje1w6Ryi": true
+          }
+        },
+        "storage.Storage": {
+          "num_txs": 65325,
+          "num_mut_refs": 65325,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 95,
+          "first_touched_at_checkpoint": 7878053,
+          "first_touched_by_txs": {
+            "BKEvzHxqvyoMXu3Kjos9ufUxmo37PcmixpMD8ZT8BTyR": true
+          }
+        },
+        "incentive.Incentive": {
+          "num_txs": 64858,
+          "num_mut_refs": 64858,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 95,
+          "first_touched_at_checkpoint": 7885789,
+          "first_touched_by_txs": {
+            "EGsiwMxgiqyySeeZMxsNJAr8Ad2fBmWbReJTje1w6Ryi": true
+          }
+        }
+      }
+    },
     "4e0629fa51a62b0c1d7c7b9fc89237ec5b6f630d7798ad3f06d820afb93a995a": {
-      "total_num_txs": 192595,
-      "total_num_mut_refs": 192591,
+      "total_num_txs": 192831,
+      "total_num_mut_refs": 192827,
       "total_num_instances": 370,
       "total_num_types": 2,
       "total_num_resources": 0,
       "types": {
         "orderbook.Orderbook": {
-          "num_txs": 192277,
-          "num_mut_refs": 192273,
+          "num_txs": 192513,
+          "num_mut_refs": 192509,
           "num_instances": 68,
           "is_resource": false,
           "first_touched_at_epoch": 21,
@@ -680,58 +722,58 @@
         }
       }
     },
-    "d899cf7d2b5db716bd2cf55599fb0d5ee38a3061e7b6bb6eebf73fa5bc4c81ca": {
-      "total_num_txs": 133685,
-      "total_num_mut_refs": 133685,
-      "total_num_instances": 4,
+    "efe8b36d5b2e43728cc323298626b83177803521d195cfb11e15b910e892fddf": {
+      "total_num_txs": 139698,
+      "total_num_mut_refs": 70306,
+      "total_num_instances": 378,
       "total_num_types": 3,
       "total_num_resources": 3,
       "types": {
-        "pool.Pool": {
-          "num_txs": 44705,
-          "num_mut_refs": 44705,
-          "num_instances": 2,
+        "version.Version": {
+          "num_txs": 69392,
+          "num_mut_refs": 0,
+          "num_instances": 1,
           "is_resource": true,
-          "first_touched_at_epoch": 95,
-          "first_touched_at_checkpoint": 7885789,
+          "first_touched_at_epoch": 96,
+          "first_touched_at_checkpoint": 7975691,
           "first_touched_by_txs": {
-            "EGsiwMxgiqyySeeZMxsNJAr8Ad2fBmWbReJTje1w6Ryi": true
+            "CR9M3xm71Pc5paVL4McqSSwnStGDLkzi5hhDbKx5H1ES": false
           }
         },
-        "storage.Storage": {
-          "num_txs": 44700,
-          "num_mut_refs": 44700,
+        "market.Market": {
+          "num_txs": 69196,
+          "num_mut_refs": 69196,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 95,
-          "first_touched_at_checkpoint": 7878053,
+          "first_touched_at_checkpoint": 7921433,
           "first_touched_by_txs": {
-            "BKEvzHxqvyoMXu3Kjos9ufUxmo37PcmixpMD8ZT8BTyR": true
+            "ERGuqN16dN6JWi1i48RXK1fJwySv8oWoQYJAsk71S2Fj": true
           }
         },
-        "incentive.Incentive": {
-          "num_txs": 44280,
-          "num_mut_refs": 44280,
-          "num_instances": 1,
+        "obligation.Obligation": {
+          "num_txs": 1110,
+          "num_mut_refs": 1110,
+          "num_instances": 376,
           "is_resource": true,
-          "first_touched_at_epoch": 95,
-          "first_touched_at_checkpoint": 7885789,
+          "first_touched_at_epoch": 96,
+          "first_touched_at_checkpoint": 7976674,
           "first_touched_by_txs": {
-            "EGsiwMxgiqyySeeZMxsNJAr8Ad2fBmWbReJTje1w6Ryi": true
+            "9p9CqhfFqQxpj7YoyYpLCVauMEuXYUeZXfS2M1bZBEiu": true
           }
         }
       }
     },
     "80d114c5d474eabc2eb2fcd1a0903f1eb5b5096a8dc4184d72453f7a9be728e4": {
-      "total_num_txs": 124643,
-      "total_num_mut_refs": 62325,
+      "total_num_txs": 124645,
+      "total_num_mut_refs": 62326,
       "total_num_instances": 5,
       "total_num_types": 3,
       "total_num_resources": 3,
       "types": {
         "pool.Pool": {
-          "num_txs": 62322,
-          "num_mut_refs": 62322,
+          "num_txs": 62323,
+          "num_mut_refs": 62323,
           "num_instances": 3,
           "is_resource": true,
           "first_touched_at_epoch": 24,
@@ -741,7 +783,7 @@
           }
         },
         "config.ConfigVersion": {
-          "num_txs": 62318,
+          "num_txs": 62319,
           "num_mut_refs": 0,
           "num_instances": 1,
           "is_resource": true,
@@ -765,15 +807,15 @@
       }
     },
     "57138e18b82cc8ea6e92c3d5737d6078b1304b655f59cf5ae9668cc44aad4ead": {
-      "total_num_txs": 117196,
-      "total_num_mut_refs": 117196,
+      "total_num_txs": 119543,
+      "total_num_mut_refs": 119543,
       "total_num_instances": 4,
       "total_num_types": 1,
       "total_num_resources": 0,
       "types": {
         "profile.Registry": {
-          "num_txs": 117196,
-          "num_mut_refs": 117196,
+          "num_txs": 119543,
+          "num_mut_refs": 119543,
           "num_instances": 4,
           "is_resource": false,
           "first_touched_at_epoch": 20,
@@ -785,15 +827,15 @@
       }
     },
     "91bfbc386a41afcfd9b2533058d7e915a1d3829089cc268ff4333d54d6339ca1": {
-      "total_num_txs": 115490,
-      "total_num_mut_refs": 66446,
+      "total_num_txs": 115578,
+      "total_num_mut_refs": 66491,
       "total_num_instances": 19,
       "total_num_types": 5,
       "total_num_resources": 5,
       "types": {
         "pool.Pool": {
-          "num_txs": 54605,
-          "num_mut_refs": 54605,
+          "num_txs": 54649,
+          "num_mut_refs": 54649,
           "num_instances": 13,
           "is_resource": true,
           "first_touched_at_epoch": 21,
@@ -803,7 +845,7 @@
           }
         },
         "pool.Versioned": {
-          "num_txs": 49689,
+          "num_txs": 49732,
           "num_mut_refs": 645,
           "num_instances": 1,
           "is_resource": true,
@@ -814,8 +856,8 @@
           }
         },
         "position_manager.Positions": {
-          "num_txs": 9319,
-          "num_mut_refs": 9319,
+          "num_txs": 9320,
+          "num_mut_refs": 9320,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 21,
@@ -849,16 +891,16 @@
       }
     },
     "3164fcf73eb6b41ff3d2129346141bd68469964c2d95a5b1533e8d16e6ea6e13": {
-      "total_num_txs": 113824,
-      "total_num_mut_refs": 84267,
-      "total_num_instances": 31718,
+      "total_num_txs": 113849,
+      "total_num_mut_refs": 84277,
+      "total_num_instances": 31723,
       "total_num_types": 2,
       "total_num_resources": 2,
       "types": {
         "Market.Listing": {
-          "num_txs": 59440,
-          "num_mut_refs": 59440,
-          "num_instances": 31717,
+          "num_txs": 59449,
+          "num_mut_refs": 59449,
+          "num_instances": 31722,
           "is_resource": true,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1574527,
@@ -867,8 +909,8 @@
           }
         },
         "marketplace.MarketPlace": {
-          "num_txs": 54384,
-          "num_mut_refs": 24827,
+          "num_txs": 54400,
+          "num_mut_refs": 24828,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 20,
@@ -880,15 +922,15 @@
       }
     },
     "eb294b9401a7b6df0000b9f4cb67322d0fcdd12dd05ef9bd28529d41dbf07d22": {
-      "total_num_txs": 111341,
-      "total_num_mut_refs": 111341,
+      "total_num_txs": 111381,
+      "total_num_mut_refs": 111381,
       "total_num_instances": 2,
       "total_num_types": 2,
       "total_num_resources": 2,
       "types": {
         "tocen_marketplace.Marketplace": {
-          "num_txs": 111088,
-          "num_mut_refs": 111088,
+          "num_txs": 111127,
+          "num_mut_refs": 111127,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 20,
@@ -898,8 +940,8 @@
           }
         },
         "tocen_marketplace.CollectionOffer": {
-          "num_txs": 253,
-          "num_mut_refs": 253,
+          "num_txs": 254,
+          "num_mut_refs": 254,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 26,
@@ -1016,14 +1058,14 @@
       }
     },
     "56714d6578dafaaec566c1483ac0fc5fb206b506455a8d59b043d67d243243eb": {
-      "total_num_txs": 96455,
+      "total_num_txs": 96479,
       "total_num_mut_refs": 14,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 0,
       "types": {
         "version.Version": {
-          "num_txs": 96455,
+          "num_txs": 96479,
           "num_mut_refs": 14,
           "num_instances": 1,
           "is_resource": false,
@@ -1035,44 +1077,22 @@
         }
       }
     },
-    "efe8b36d5b2e43728cc323298626b83177803521d195cfb11e15b910e892fddf": {
-      "total_num_txs": 92181,
-      "total_num_mut_refs": 46492,
-      "total_num_instances": 339,
-      "total_num_types": 3,
-      "total_num_resources": 3,
+    "71bd3651e47a7590e607b976a332338e2230e995fa96de430703af537086b643": {
+      "total_num_txs": 80519,
+      "total_num_mut_refs": 80519,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 1,
       "types": {
-        "version.Version": {
-          "num_txs": 45689,
-          "num_mut_refs": 0,
+        "cryptopedia.CryptopediaMetadata": {
+          "num_txs": 80519,
+          "num_mut_refs": 80519,
           "num_instances": 1,
           "is_resource": true,
-          "first_touched_at_epoch": 96,
-          "first_touched_at_checkpoint": 7975691,
+          "first_touched_at_epoch": 91,
+          "first_touched_at_checkpoint": 7560145,
           "first_touched_by_txs": {
-            "CR9M3xm71Pc5paVL4McqSSwnStGDLkzi5hhDbKx5H1ES": false
-          }
-        },
-        "market.Market": {
-          "num_txs": 45526,
-          "num_mut_refs": 45526,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 95,
-          "first_touched_at_checkpoint": 7921433,
-          "first_touched_by_txs": {
-            "ERGuqN16dN6JWi1i48RXK1fJwySv8oWoQYJAsk71S2Fj": true
-          }
-        },
-        "obligation.Obligation": {
-          "num_txs": 966,
-          "num_mut_refs": 966,
-          "num_instances": 337,
-          "is_resource": true,
-          "first_touched_at_epoch": 96,
-          "first_touched_at_checkpoint": 7976674,
-          "first_touched_by_txs": {
-            "9p9CqhfFqQxpj7YoyYpLCVauMEuXYUeZXfS2M1bZBEiu": true
+            "Cw48E43L5dZyBGZe7WpF8E3LX46A4HGYkVaiiTNCrgHh": true
           }
         }
       }
@@ -1109,15 +1129,15 @@
       }
     },
     "f0865c67c2bf2dfa10e131f939aea54e06ea7825d2cb66afc4e5652b6b727127": {
-      "total_num_txs": 72067,
-      "total_num_mut_refs": 72067,
+      "total_num_txs": 72991,
+      "total_num_mut_refs": 72991,
       "total_num_instances": 2,
       "total_num_types": 2,
       "total_num_resources": 1,
       "types": {
         "pool.Pool": {
-          "num_txs": 36035,
-          "num_mut_refs": 36035,
+          "num_txs": 36497,
+          "num_mut_refs": 36497,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 79,
@@ -1127,8 +1147,8 @@
           }
         },
         "pool.AccessList": {
-          "num_txs": 36032,
-          "num_mut_refs": 36032,
+          "num_txs": 36494,
+          "num_mut_refs": 36494,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 79,
@@ -1140,14 +1160,14 @@
       }
     },
     "826915f8ca6d11597dfe6599b8aa02a4c08bd8d39674855254a06ee83fe7220e": {
-      "total_num_txs": 71493,
-      "total_num_mut_refs": 55714,
+      "total_num_txs": 71708,
+      "total_num_mut_refs": 55862,
       "total_num_instances": 59,
       "total_num_types": 15,
       "total_num_resources": 5,
       "types": {
         "genesis.GovernanceGenesis": {
-          "num_txs": 15011,
+          "num_txs": 15064,
           "num_mut_refs": 3,
           "num_instances": 1,
           "is_resource": false,
@@ -1158,8 +1178,8 @@
           }
         },
         "user_manager.UserManagerInfo": {
-          "num_txs": 14488,
-          "num_mut_refs": 14488,
+          "num_txs": 14524,
+          "num_mut_refs": 14524,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 46,
@@ -1169,8 +1189,8 @@
           }
         },
         "oracle.PriceOracle": {
-          "num_txs": 7145,
-          "num_mut_refs": 7145,
+          "num_txs": 7181,
+          "num_mut_refs": 7181,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 46,
@@ -1180,8 +1200,8 @@
           }
         },
         "system_portal.SystemPortal": {
-          "num_txs": 7094,
-          "num_mut_refs": 7094,
+          "num_txs": 7097,
+          "num_mut_refs": 7097,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 46,
@@ -1191,8 +1211,8 @@
           }
         },
         "pool_manager.PoolManagerInfo": {
-          "num_txs": 6631,
-          "num_mut_refs": 6631,
+          "num_txs": 6650,
+          "num_mut_refs": 6650,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 46,
@@ -1202,8 +1222,8 @@
           }
         },
         "lending_core_storage.Storage": {
-          "num_txs": 6631,
-          "num_mut_refs": 6631,
+          "num_txs": 6650,
+          "num_mut_refs": 6650,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 46,
@@ -1213,8 +1233,8 @@
           }
         },
         "lending_portal.LendingPortal": {
-          "num_txs": 6179,
-          "num_mut_refs": 6179,
+          "num_txs": 6181,
+          "num_mut_refs": 6181,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 46,
@@ -1224,8 +1244,8 @@
           }
         },
         "dola_pool.Pool": {
-          "num_txs": 6174,
-          "num_mut_refs": 6174,
+          "num_txs": 6176,
+          "num_mut_refs": 6176,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 46,
@@ -1235,8 +1255,8 @@
           }
         },
         "wormhole_adapter_core.CoreState": {
-          "num_txs": 1222,
-          "num_mut_refs": 1222,
+          "num_txs": 1253,
+          "num_mut_refs": 1253,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 46,
@@ -1246,7 +1266,7 @@
           }
         },
         "system_core_storage.Storage": {
-          "num_txs": 768,
+          "num_txs": 782,
           "num_mut_refs": 0,
           "num_instances": 1,
           "is_resource": false,
@@ -1314,15 +1334,15 @@
       }
     },
     "bc3df36be17f27ac98e3c839b2589db8475fa07b20657b08e8891e3aaf5ee5f9": {
-      "total_num_txs": 70711,
-      "total_num_mut_refs": 63706,
+      "total_num_txs": 70854,
+      "total_num_mut_refs": 63847,
       "total_num_instances": 304,
       "total_num_types": 3,
       "total_num_resources": 2,
       "types": {
         "royalty_strategy_bps.BpsRoyaltyStrategy": {
-          "num_txs": 52678,
-          "num_mut_refs": 52676,
+          "num_txs": 52763,
+          "num_mut_refs": 52761,
           "num_instances": 54,
           "is_resource": false,
           "first_touched_at_epoch": 21,
@@ -1343,8 +1363,8 @@
           }
         },
         "collection.Collection": {
-          "num_txs": 6883,
-          "num_mut_refs": 3734,
+          "num_txs": 6941,
+          "num_mut_refs": 3790,
           "num_instances": 244,
           "is_resource": true,
           "first_touched_at_epoch": 21,
@@ -1356,15 +1376,15 @@
       }
     },
     "0000000000000000000000000000000000000000000000000000000000000003": {
-      "total_num_txs": 68118,
-      "total_num_mut_refs": 68112,
+      "total_num_txs": 68437,
+      "total_num_mut_refs": 68431,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 0,
       "types": {
         "sui_system.SuiSystemState": {
-          "num_txs": 68118,
-          "num_mut_refs": 68112,
+          "num_txs": 68437,
+          "num_mut_refs": 68431,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 1,
@@ -1375,36 +1395,16 @@
         }
       }
     },
-    "71bd3651e47a7590e607b976a332338e2230e995fa96de430703af537086b643": {
-      "total_num_txs": 59832,
-      "total_num_mut_refs": 59832,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 1,
-      "types": {
-        "cryptopedia.CryptopediaMetadata": {
-          "num_txs": 59832,
-          "num_mut_refs": 59832,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 91,
-          "first_touched_at_checkpoint": 7560145,
-          "first_touched_by_txs": {
-            "Cw48E43L5dZyBGZe7WpF8E3LX46A4HGYkVaiiTNCrgHh": true
-          }
-        }
-      }
-    },
     "227f865230dd4fc947321619f56fee37dc7ac582eb22e3eab29816f717512d9d": {
-      "total_num_txs": 59201,
-      "total_num_mut_refs": 59201,
+      "total_num_txs": 59516,
+      "total_num_mut_refs": 59516,
       "total_num_instances": 2,
       "total_num_types": 2,
       "total_num_resources": 0,
       "types": {
         "liquidity_pool.GlobalStorage": {
-          "num_txs": 56604,
-          "num_mut_refs": 56604,
+          "num_txs": 56915,
+          "num_mut_refs": 56915,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 42,
@@ -1414,8 +1414,8 @@
           }
         },
         "limit_order.GlobalStorage": {
-          "num_txs": 2597,
-          "num_mut_refs": 2597,
+          "num_txs": 2601,
+          "num_mut_refs": 2601,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 42,
@@ -1508,16 +1508,36 @@
         }
       }
     },
+    "a76499eda1d37751473de5f30e106f35943ada2f6ea764861243e7f5aa5bcc97": {
+      "total_num_txs": 51395,
+      "total_num_mut_refs": 51332,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 0,
+      "types": {
+        "typus_dov_single.Registry": {
+          "num_txs": 51395,
+          "num_mut_refs": 51332,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 21,
+          "first_touched_at_checkpoint": 1653153,
+          "first_touched_by_txs": {
+            "EZeCLyWWk6tqySnsH9TkJJWfmWHXhr8P51F4UDaNcfj6": true
+          }
+        }
+      }
+    },
     "4cb43a298a78ab64a3181305e45cef6b4ecadf35e85c92496aa1590c11af5c70": {
-      "total_num_txs": 50696,
-      "total_num_mut_refs": 50696,
+      "total_num_txs": 50711,
+      "total_num_mut_refs": 50711,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 0,
       "types": {
         "nft.AdminCap": {
-          "num_txs": 50696,
-          "num_mut_refs": 50696,
+          "num_txs": 50711,
+          "num_mut_refs": 50711,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 20,
@@ -1528,16 +1548,36 @@
         }
       }
     },
+    "ca441b44943c16be0e6e23c5a955bb971537ea3289ae8016fbf33fffe1fd210f": {
+      "total_num_txs": 49809,
+      "total_num_mut_refs": 17979,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 0,
+      "types": {
+        "oracle.PriceOracle": {
+          "num_txs": 49809,
+          "num_mut_refs": 17979,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 95,
+          "first_touched_at_checkpoint": 7877054,
+          "first_touched_by_txs": {
+            "9Z349MnLaZKqhJxpZY1NR9sKCRBWgxn1N4shM1Exn3w3": true
+          }
+        }
+      }
+    },
     "62285e6bf9ce841f9bf98b7e3a8e4478e02219135cf2bc1ccaf409ec5883f7b6": {
-      "total_num_txs": 49118,
-      "total_num_mut_refs": 49118,
+      "total_num_txs": 49465,
+      "total_num_mut_refs": 49465,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 0,
       "types": {
         "vault.Vault": {
-          "num_txs": 49118,
-          "num_mut_refs": 49118,
+          "num_txs": 49465,
+          "num_mut_refs": 49465,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 28,
@@ -1549,15 +1589,15 @@
       }
     },
     "70e34fcd390b767edbddaf7573450528698188c84c5395af8c4b12e3e37622fa": {
-      "total_num_txs": 48951,
-      "total_num_mut_refs": 3726,
+      "total_num_txs": 48980,
+      "total_num_mut_refs": 3736,
       "total_num_instances": 28,
       "total_num_types": 1,
       "total_num_resources": 1,
       "types": {
         "allowlist.Allowlist": {
-          "num_txs": 48951,
-          "num_mut_refs": 3726,
+          "num_txs": 48980,
+          "num_mut_refs": 3736,
           "num_instances": 28,
           "is_resource": true,
           "first_touched_at_epoch": 20,
@@ -1569,15 +1609,15 @@
       }
     },
     "c51203fb802e09f7bdb87e8433ea2fa4a19068164040f5fac284a032ee433e7a": {
-      "total_num_txs": 47860,
-      "total_num_mut_refs": 47860,
+      "total_num_txs": 48841,
+      "total_num_mut_refs": 48841,
       "total_num_instances": 2,
       "total_num_types": 2,
       "total_num_resources": 2,
       "types": {
         "kiosk_trade.Market": {
-          "num_txs": 47857,
-          "num_mut_refs": 47857,
+          "num_txs": 48838,
+          "num_mut_refs": 48838,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 79,
@@ -1600,16 +1640,16 @@
       }
     },
     "f45f752bc45dadff2ebc867c69af682c7192686d2455f655e2c54c9c75e95cff": {
-      "total_num_txs": 44562,
-      "total_num_mut_refs": 38396,
-      "total_num_instances": 6336,
+      "total_num_txs": 44944,
+      "total_num_mut_refs": 38740,
+      "total_num_instances": 6394,
       "total_num_types": 4,
       "total_num_resources": 2,
       "types": {
         "profile.Profile": {
-          "num_txs": 25419,
-          "num_mut_refs": 19253,
-          "num_instances": 2765,
+          "num_txs": 25614,
+          "num_mut_refs": 19410,
+          "num_instances": 2779,
           "is_resource": true,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1569801,
@@ -1618,9 +1658,9 @@
           }
         },
         "post.Post": {
-          "num_txs": 9287,
-          "num_mut_refs": 9287,
-          "num_instances": 3569,
+          "num_txs": 9348,
+          "num_mut_refs": 9348,
+          "num_instances": 3613,
           "is_resource": true,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1573437,
@@ -1629,8 +1669,8 @@
           }
         },
         "releap_social.RecentPosts": {
-          "num_txs": 6479,
-          "num_mut_refs": 6479,
+          "num_txs": 6587,
+          "num_mut_refs": 6587,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 20,
@@ -1640,8 +1680,8 @@
           }
         },
         "releap_social.Index": {
-          "num_txs": 3377,
-          "num_mut_refs": 3377,
+          "num_txs": 3395,
+          "num_mut_refs": 3395,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 20,
@@ -1653,15 +1693,15 @@
       }
     },
     "ea10b3c9a65427fe13194413ef9844e61acd5636ea8b007c142991f65b0aaf67": {
-      "total_num_txs": 44558,
-      "total_num_mut_refs": 44558,
+      "total_num_txs": 44562,
+      "total_num_mut_refs": 44562,
       "total_num_instances": 5,
       "total_num_types": 1,
       "total_num_resources": 1,
       "types": {
         "campaign.Campaign": {
-          "num_txs": 44558,
-          "num_mut_refs": 44558,
+          "num_txs": 44562,
+          "num_mut_refs": 44562,
           "num_instances": 5,
           "is_resource": true,
           "first_touched_at_epoch": 21,
@@ -1713,15 +1753,15 @@
       }
     },
     "5c45d10c26c5fb53bfaff819666da6bc7053d2190dfa29fec311cc666ff1f4b0": {
-      "total_num_txs": 40809,
-      "total_num_mut_refs": 40809,
+      "total_num_txs": 41120,
+      "total_num_mut_refs": 41120,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 0,
       "types": {
         "core.DEXStorage": {
-          "num_txs": 40809,
-          "num_mut_refs": 40809,
+          "num_txs": 41120,
+          "num_mut_refs": 41120,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 28,
@@ -1732,36 +1772,16 @@
         }
       }
     },
-    "ca441b44943c16be0e6e23c5a955bb971537ea3289ae8016fbf33fffe1fd210f": {
-      "total_num_txs": 37286,
-      "total_num_mut_refs": 15151,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 0,
-      "types": {
-        "oracle.PriceOracle": {
-          "num_txs": 37286,
-          "num_mut_refs": 15151,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 95,
-          "first_touched_at_checkpoint": 7877054,
-          "first_touched_by_txs": {
-            "9Z349MnLaZKqhJxpZY1NR9sKCRBWgxn1N4shM1Exn3w3": true
-          }
-        }
-      }
-    },
     "02be8c4a1a3cea4d3255d870d367c87838a8cc2bfe4f216a6b67b153027087a7": {
-      "total_num_txs": 35952,
-      "total_num_mut_refs": 25074,
+      "total_num_txs": 35956,
+      "total_num_mut_refs": 25076,
       "total_num_instances": 292,
       "total_num_types": 5,
       "total_num_resources": 3,
       "types": {
         "keepsake_marketplace.Marketplace": {
-          "num_txs": 12951,
-          "num_mut_refs": 12951,
+          "num_txs": 12953,
+          "num_mut_refs": 12953,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 21,
@@ -1771,7 +1791,7 @@
           }
         },
         "transfer_policy.TransferPolicy": {
-          "num_txs": 10839,
+          "num_txs": 10841,
           "num_mut_refs": 196,
           "num_instances": 204,
           "is_resource": true,
@@ -1816,36 +1836,47 @@
         }
       }
     },
-    "a8ddb49a989235f99c1100cad86e79685aca4cde696d1c4f084296917b2d0813": {
-      "total_num_txs": 35636,
-      "total_num_mut_refs": 35636,
-      "total_num_instances": 1,
-      "total_num_types": 1,
+    "931636185265b75bd5e78c7ab4e90ba77e78b8bf5d6eff45ac040b2176537a3e": {
+      "total_num_txs": 35956,
+      "total_num_mut_refs": 17977,
+      "total_num_instances": 2,
+      "total_num_types": 2,
       "total_num_resources": 1,
       "types": {
-        "jk.AccessList": {
-          "num_txs": 35636,
-          "num_mut_refs": 35636,
+        "navi_aggregator.NaviAggregator": {
+          "num_txs": 17979,
+          "num_mut_refs": 17976,
           "num_instances": 1,
           "is_resource": true,
-          "first_touched_at_epoch": 71,
-          "first_touched_at_checkpoint": 5821047,
+          "first_touched_at_epoch": 95,
+          "first_touched_at_checkpoint": 7886020,
           "first_touched_by_txs": {
-            "4tsTsEARAA7HhzUEuuHvtiuXS6TLRiW8BN1fYvp8JWVo": true
+            "5HaAet2czucynMS7dsSYSKXyL8J8JnfvHc4quBWvN2Tu": true
+          }
+        },
+        "navi_aggregator.NaviAggregatorCap": {
+          "num_txs": 17977,
+          "num_mut_refs": 1,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 95,
+          "first_touched_at_checkpoint": 7886020,
+          "first_touched_by_txs": {
+            "5HaAet2czucynMS7dsSYSKXyL8J8JnfvHc4quBWvN2Tu": false
           }
         }
       }
     },
     "ee68a4f9a04b177ef65455c89e4c462ed5a4cd486ecac463407dd80e565c7420": {
-      "total_num_txs": 35082,
-      "total_num_mut_refs": 35082,
+      "total_num_txs": 35926,
+      "total_num_mut_refs": 35926,
       "total_num_instances": 2,
       "total_num_types": 2,
       "total_num_resources": 2,
       "types": {
         "kiosk_offer_collection_v2.BidderBagV2": {
-          "num_txs": 18947,
-          "num_mut_refs": 18947,
+          "num_txs": 19347,
+          "num_mut_refs": 19347,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 82,
@@ -1855,14 +1886,34 @@
           }
         },
         "kiosk_offer_collection_v2.CollectionOfferDataV2": {
-          "num_txs": 16135,
-          "num_mut_refs": 16135,
+          "num_txs": 16579,
+          "num_mut_refs": 16579,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 82,
           "first_touched_at_checkpoint": 6784259,
           "first_touched_by_txs": {
             "CH2dmCueA1caecVU8wUZhaygFBBoPFiwxRWJhTuVRYNF": true
+          }
+        }
+      }
+    },
+    "a8ddb49a989235f99c1100cad86e79685aca4cde696d1c4f084296917b2d0813": {
+      "total_num_txs": 35637,
+      "total_num_mut_refs": 35637,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 1,
+      "types": {
+        "jk.AccessList": {
+          "num_txs": 35637,
+          "num_mut_refs": 35637,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 71,
+          "first_touched_at_checkpoint": 5821047,
+          "first_touched_by_txs": {
+            "4tsTsEARAA7HhzUEuuHvtiuXS6TLRiW8BN1fYvp8JWVo": true
           }
         }
       }
@@ -1910,15 +1961,15 @@
       }
     },
     "fe038ab8e564341ce0601926550d5cfd76573e1d94c4256324c6f5b6a7297b06": {
-      "total_num_txs": 34127,
-      "total_num_mut_refs": 34127,
+      "total_num_txs": 34183,
+      "total_num_mut_refs": 34183,
       "total_num_instances": 4,
       "total_num_types": 4,
       "total_num_resources": 4,
       "types": {
         "farming.FarmingData": {
-          "num_txs": 8545,
-          "num_mut_refs": 8545,
+          "num_txs": 8559,
+          "num_mut_refs": 8559,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 22,
@@ -1928,8 +1979,8 @@
           }
         },
         "farming.Reward": {
-          "num_txs": 8540,
-          "num_mut_refs": 8540,
+          "num_txs": 8554,
+          "num_mut_refs": 8554,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 22,
@@ -1939,8 +1990,8 @@
           }
         },
         "farming.LPLocked": {
-          "num_txs": 8524,
-          "num_mut_refs": 8524,
+          "num_txs": 8538,
+          "num_mut_refs": 8538,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 22,
@@ -1950,8 +2001,8 @@
           }
         },
         "farming.PoolUsers": {
-          "num_txs": 8518,
-          "num_mut_refs": 8518,
+          "num_txs": 8532,
+          "num_mut_refs": 8532,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 22,
@@ -1962,78 +2013,16 @@
         }
       }
     },
-    "81f077d146435758456c9962dffc03425af3c47f0b442869af63bf898b6c3ecf": {
-      "total_num_txs": 33718,
-      "total_num_mut_refs": 33718,
-      "total_num_instances": 3,
-      "total_num_types": 3,
-      "total_num_resources": 3,
-      "types": {
-        "vault.Vault": {
-          "num_txs": 15980,
-          "num_mut_refs": 15980,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 40,
-          "first_touched_at_checkpoint": 3227604,
-          "first_touched_by_txs": {
-            "9ZnYiByprU65aTqx4VDVPpDc38Nmqk7ui1xaFUQ7cZ4o": true
-          }
-        },
-        "game_controller.Controller": {
-          "num_txs": 15933,
-          "num_mut_refs": 15933,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 40,
-          "first_touched_at_checkpoint": 3230849,
-          "first_touched_by_txs": {
-            "Fpc2Dr3nZGncZMbTBM98MQ1VgSNrzC73XCPFLQA2hi1n": true
-          }
-        },
-        "xluck_reward.Reward": {
-          "num_txs": 1805,
-          "num_mut_refs": 1805,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 40,
-          "first_touched_at_checkpoint": 3233940,
-          "first_touched_by_txs": {
-            "5UK4athskzp8p8674s8yZsKbjRdHWtTxb4w38udT4XUu": true
-          }
-        }
-      }
-    },
-    "a76499eda1d37751473de5f30e106f35943ada2f6ea764861243e7f5aa5bcc97": {
-      "total_num_txs": 33335,
-      "total_num_mut_refs": 33272,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 0,
-      "types": {
-        "typus_dov_single.Registry": {
-          "num_txs": 33335,
-          "num_mut_refs": 33272,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 21,
-          "first_touched_at_checkpoint": 1653153,
-          "first_touched_by_txs": {
-            "EZeCLyWWk6tqySnsH9TkJJWfmWHXhr8P51F4UDaNcfj6": true
-          }
-        }
-      }
-    },
     "a0eba10b173538c8fecca1dff298e488402cc9ff374f8a12ca7758eebe830b66": {
-      "total_num_txs": 33078,
-      "total_num_mut_refs": 33070,
+      "total_num_txs": 33973,
+      "total_num_mut_refs": 33965,
       "total_num_instances": 5,
       "total_num_types": 2,
       "total_num_resources": 0,
       "types": {
         "spot_dex.Pool": {
-          "num_txs": 33066,
-          "num_mut_refs": 33066,
+          "num_txs": 33961,
+          "num_mut_refs": 33961,
           "num_instances": 4,
           "is_resource": false,
           "first_touched_at_epoch": 23,
@@ -2055,16 +2044,58 @@
         }
       }
     },
+    "81f077d146435758456c9962dffc03425af3c47f0b442869af63bf898b6c3ecf": {
+      "total_num_txs": 33900,
+      "total_num_mut_refs": 33900,
+      "total_num_instances": 3,
+      "total_num_types": 3,
+      "total_num_resources": 3,
+      "types": {
+        "vault.Vault": {
+          "num_txs": 16071,
+          "num_mut_refs": 16071,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 40,
+          "first_touched_at_checkpoint": 3227604,
+          "first_touched_by_txs": {
+            "9ZnYiByprU65aTqx4VDVPpDc38Nmqk7ui1xaFUQ7cZ4o": true
+          }
+        },
+        "game_controller.Controller": {
+          "num_txs": 16024,
+          "num_mut_refs": 16024,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 40,
+          "first_touched_at_checkpoint": 3230849,
+          "first_touched_by_txs": {
+            "Fpc2Dr3nZGncZMbTBM98MQ1VgSNrzC73XCPFLQA2hi1n": true
+          }
+        },
+        "xluck_reward.Reward": {
+          "num_txs": 1805,
+          "num_mut_refs": 1805,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 40,
+          "first_touched_at_checkpoint": 3233940,
+          "first_touched_by_txs": {
+            "5UK4athskzp8p8674s8yZsKbjRdHWtTxb4w38udT4XUu": true
+          }
+        }
+      }
+    },
     "6916b60ae826f14b3e2d7aa9c7eaf491a489379e2357c2819f48dde75a45ab58": {
-      "total_num_txs": 31128,
-      "total_num_mut_refs": 31122,
+      "total_num_txs": 31195,
+      "total_num_mut_refs": 31189,
       "total_num_instances": 8,
       "total_num_types": 4,
       "total_num_resources": 3,
       "types": {
         "nft.Phaser": {
-          "num_txs": 10773,
-          "num_mut_refs": 10773,
+          "num_txs": 10794,
+          "num_mut_refs": 10794,
           "num_instances": 2,
           "is_resource": true,
           "first_touched_at_epoch": 53,
@@ -2074,8 +2105,8 @@
           }
         },
         "nft.Collection": {
-          "num_txs": 10756,
-          "num_mut_refs": 10750,
+          "num_txs": 10777,
+          "num_mut_refs": 10771,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 53,
@@ -2085,8 +2116,8 @@
           }
         },
         "nft.Registry": {
-          "num_txs": 9537,
-          "num_mut_refs": 9537,
+          "num_txs": 9561,
+          "num_mut_refs": 9561,
           "num_instances": 4,
           "is_resource": false,
           "first_touched_at_epoch": 61,
@@ -2096,8 +2127,8 @@
           }
         },
         "nft.Wallet": {
-          "num_txs": 62,
-          "num_mut_refs": 62,
+          "num_txs": 63,
+          "num_mut_refs": 63,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 53,
@@ -2128,37 +2159,6 @@
             "9AjKveD6DJdojESdz6xJzr1ThWxk9LUXN6dSg81QFi2y": true,
             "AeQAYLZwmgNXM9td4J2MsdvFqv98AUYwEPKzQVC8aqQ2": true,
             "F9caZfx3xqCmAXYSFqgnYy7Xu6eWEACk8V5cGXVuYwwD": true
-          }
-        }
-      }
-    },
-    "931636185265b75bd5e78c7ab4e90ba77e78b8bf5d6eff45ac040b2176537a3e": {
-      "total_num_txs": 30300,
-      "total_num_mut_refs": 15149,
-      "total_num_instances": 2,
-      "total_num_types": 2,
-      "total_num_resources": 1,
-      "types": {
-        "navi_aggregator.NaviAggregator": {
-          "num_txs": 15151,
-          "num_mut_refs": 15148,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 95,
-          "first_touched_at_checkpoint": 7886020,
-          "first_touched_by_txs": {
-            "5HaAet2czucynMS7dsSYSKXyL8J8JnfvHc4quBWvN2Tu": true
-          }
-        },
-        "navi_aggregator.NaviAggregatorCap": {
-          "num_txs": 15149,
-          "num_mut_refs": 1,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 95,
-          "first_touched_at_checkpoint": 7886020,
-          "first_touched_by_txs": {
-            "5HaAet2czucynMS7dsSYSKXyL8J8JnfvHc4quBWvN2Tu": false
           }
         }
       }
@@ -2215,14 +2215,14 @@
       }
     },
     "aa2a2cfcbf56c651088854c00b1bebac7ce8d6c81367569fe77a9513a021f9eb": {
-      "total_num_txs": 27658,
+      "total_num_txs": 27660,
       "total_num_mut_refs": 620,
       "total_num_instances": 46,
       "total_num_types": 2,
       "total_num_resources": 0,
       "types": {
         "minter.Config": {
-          "num_txs": 27046,
+          "num_txs": 27048,
           "num_mut_refs": 8,
           "num_instances": 1,
           "is_resource": false,
@@ -2266,15 +2266,15 @@
       }
     },
     "b888907b2d86fc1c39ee7574777f603a708897c71f0ab815998f50760cccebef": {
-      "total_num_txs": 25363,
-      "total_num_mut_refs": 25363,
+      "total_num_txs": 25373,
+      "total_num_mut_refs": 25373,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 1,
       "types": {
         "ferret.AccessList": {
-          "num_txs": 25363,
-          "num_mut_refs": 25363,
+          "num_txs": 25373,
+          "num_mut_refs": 25373,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 30,
@@ -2286,15 +2286,15 @@
       }
     },
     "82eebf11a7d6c13c7b6edf5344cb262f61e4fe36ff3305482dce22f58b212224": {
-      "total_num_txs": 24088,
-      "total_num_mut_refs": 24088,
+      "total_num_txs": 24947,
+      "total_num_mut_refs": 24947,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 1,
       "types": {
         "arena.GemStash": {
-          "num_txs": 24088,
-          "num_mut_refs": 24088,
+          "num_txs": 24947,
+          "num_mut_refs": 24947,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 40,
@@ -2306,15 +2306,15 @@
       }
     },
     "5711036356989c25395de76cacd0abf01dd4d6dd9f84a3e170ef16fd2258d180": {
-      "total_num_txs": 23663,
-      "total_num_mut_refs": 23663,
+      "total_num_txs": 23839,
+      "total_num_mut_refs": 23839,
       "total_num_instances": 9,
       "total_num_types": 2,
       "total_num_resources": 1,
       "types": {
         "staking_nft.PoolInfo": {
-          "num_txs": 15607,
-          "num_mut_refs": 15607,
+          "num_txs": 15731,
+          "num_mut_refs": 15731,
           "num_instances": 8,
           "is_resource": true,
           "first_touched_at_epoch": 25,
@@ -2324,8 +2324,8 @@
           }
         },
         "staking_nft.NftStakingMetadata": {
-          "num_txs": 8056,
-          "num_mut_refs": 8056,
+          "num_txs": 8108,
+          "num_mut_refs": 8108,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 25,
@@ -2337,15 +2337,15 @@
       }
     },
     "9e69acc50ca03bc943c4f7c5304c2a6002d507b51c11913b247159c60422c606": {
-      "total_num_txs": 22912,
-      "total_num_mut_refs": 22804,
+      "total_num_txs": 22998,
+      "total_num_mut_refs": 22890,
       "total_num_instances": 2,
       "total_num_types": 2,
       "total_num_resources": 0,
       "types": {
         "xcetus.XcetusManager": {
-          "num_txs": 11511,
-          "num_mut_refs": 11403,
+          "num_txs": 11554,
+          "num_mut_refs": 11446,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 27,
@@ -2355,8 +2355,8 @@
           }
         },
         "locking.LockUpManager": {
-          "num_txs": 11401,
-          "num_mut_refs": 11401,
+          "num_txs": 11444,
+          "num_mut_refs": 11444,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 27,
@@ -2410,15 +2410,15 @@
       }
     },
     "26efee2b51c911237888e5dc6702868abca3c7ac12c53f76ef8eba0697695e3d": {
-      "total_num_txs": 22485,
-      "total_num_mut_refs": 22483,
+      "total_num_txs": 22536,
+      "total_num_mut_refs": 22534,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 1,
       "types": {
         "state.State": {
-          "num_txs": 22485,
-          "num_mut_refs": 22483,
+          "num_txs": 22536,
+          "num_mut_refs": 22534,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 19,
@@ -2470,15 +2470,15 @@
       }
     },
     "88d362329ede856f5f67867929ed570bba06c975abec2fab7f0601c56f6a8cb1": {
-      "total_num_txs": 20971,
-      "total_num_mut_refs": 20971,
+      "total_num_txs": 21090,
+      "total_num_mut_refs": 21090,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 0,
       "types": {
         "animeswap.LiquidityPools": {
-          "num_txs": 20971,
-          "num_mut_refs": 20971,
+          "num_txs": 21090,
+          "num_mut_refs": 21090,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 21,
@@ -2489,16 +2489,36 @@
         }
       }
     },
+    "7fe0ab2ed764705b4b833e14d96ff55130b52dd5a0706dacf06f617fc406bbba": {
+      "total_num_txs": 20551,
+      "total_num_mut_refs": 20551,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 0,
+      "types": {
+        "marketplace.Marketplace": {
+          "num_txs": 20551,
+          "num_mut_refs": 20551,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 26,
+          "first_touched_at_checkpoint": 2051637,
+          "first_touched_by_txs": {
+            "22HNQwi6XrcsuDEM9r8X7AaLXnWU8XXvFzbncCYfdWEH": true
+          }
+        }
+      }
+    },
     "d22b24490e0bae52676651b4f56660a5ff8022a2576e0089f79b3c88d44e08f0": {
-      "total_num_txs": 20502,
-      "total_num_mut_refs": 20502,
+      "total_num_txs": 20530,
+      "total_num_mut_refs": 20530,
       "total_num_instances": 2,
       "total_num_types": 2,
       "total_num_resources": 1,
       "types": {
         "auction.AuctionHouse": {
-          "num_txs": 12666,
-          "num_mut_refs": 12666,
+          "num_txs": 12677,
+          "num_mut_refs": 12677,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 48,
@@ -2508,8 +2528,8 @@
           }
         },
         "suins.SuiNS": {
-          "num_txs": 7836,
-          "num_mut_refs": 7836,
+          "num_txs": 7853,
+          "num_mut_refs": 7853,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 44,
@@ -2521,41 +2541,21 @@
       }
     },
     "7a30a0db7f20f942f60668db29ab3b522d17eb3473f30b03d873ea8926e281ee": {
-      "total_num_txs": 19544,
-      "total_num_mut_refs": 19544,
+      "total_num_txs": 20169,
+      "total_num_mut_refs": 20169,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 0,
       "types": {
         "executor.BasePool": {
-          "num_txs": 19544,
-          "num_mut_refs": 19544,
+          "num_txs": 20169,
+          "num_mut_refs": 20169,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 25,
           "first_touched_at_checkpoint": 1970577,
           "first_touched_by_txs": {
             "4ETLx8obXQtJLpsNGDwVGhQ6uMeou8o49Z2fZgJhvnyn": true
-          }
-        }
-      }
-    },
-    "7fe0ab2ed764705b4b833e14d96ff55130b52dd5a0706dacf06f617fc406bbba": {
-      "total_num_txs": 19524,
-      "total_num_mut_refs": 19524,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 0,
-      "types": {
-        "marketplace.Marketplace": {
-          "num_txs": 19524,
-          "num_mut_refs": 19524,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 26,
-          "first_touched_at_checkpoint": 2051637,
-          "first_touched_by_txs": {
-            "22HNQwi6XrcsuDEM9r8X7AaLXnWU8XXvFzbncCYfdWEH": true
           }
         }
       }
@@ -2624,16 +2624,36 @@
         }
       }
     },
+    "476550b978024a630d1ef0e95a931f984154cd73a7789e37e0d1e9d7f820dd9a": {
+      "total_num_txs": 17975,
+      "total_num_mut_refs": 3,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 0,
+      "types": {
+        "adaptor.CenterRegistry": {
+          "num_txs": 17975,
+          "num_mut_refs": 3,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 95,
+          "first_touched_at_checkpoint": 7886353,
+          "first_touched_by_txs": {
+            "GLqBQ8CnVXnybuHoeVYJUwdZdkeQU4DUYdvZPhccwBun": true
+          }
+        }
+      }
+    },
     "7bffb2b3f6296015dcea7e1dc41c602daff0508230db6360ff6014933ce000c7": {
-      "total_num_txs": 17738,
-      "total_num_mut_refs": 17738,
+      "total_num_txs": 17810,
+      "total_num_mut_refs": 17810,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 0,
       "types": {
         "s.Vault": {
-          "num_txs": 17738,
-          "num_mut_refs": 17738,
+          "num_txs": 17810,
+          "num_mut_refs": 17810,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 54,
@@ -2697,6 +2717,26 @@
         }
       }
     },
+    "8378b3bd39931aa74a6aa3a820304c1109d327426e4275183ed0b797eb6660a8": {
+      "total_num_txs": 16665,
+      "total_num_mut_refs": 16665,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 0,
+      "types": {
+        "weather.WeatherOracle": {
+          "num_txs": 16665,
+          "num_mut_refs": 16665,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 89,
+          "first_touched_at_checkpoint": 7398034,
+          "first_touched_by_txs": {
+            "EhQsGMxxdzyboUnS5PfXDo7z2PUDioF3Q8HjwquV2hbR": true
+          }
+        }
+      }
+    },
     "58156e414780a5a237db71afb0d852674eff8cd98f9572104cb79afeb4ad1e9d": {
       "total_num_txs": 15265,
       "total_num_mut_refs": 15265,
@@ -2728,26 +2768,6 @@
         }
       }
     },
-    "476550b978024a630d1ef0e95a931f984154cd73a7789e37e0d1e9d7f820dd9a": {
-      "total_num_txs": 15147,
-      "total_num_mut_refs": 3,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 0,
-      "types": {
-        "adaptor.CenterRegistry": {
-          "num_txs": 15147,
-          "num_mut_refs": 3,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 95,
-          "first_touched_at_checkpoint": 7886353,
-          "first_touched_by_txs": {
-            "GLqBQ8CnVXnybuHoeVYJUwdZdkeQU4DUYdvZPhccwBun": true
-          }
-        }
-      }
-    },
     "20dba53805b9bfe1e5351eceb4b360c3d7a8f2cf20e79431d570208befd2fd97": {
       "total_num_txs": 15060,
       "total_num_mut_refs": 15060,
@@ -2764,26 +2784,6 @@
           "first_touched_at_checkpoint": 1650243,
           "first_touched_by_txs": {
             "EcDnER2nDet8ty38WAvFyNRz5YVLS6hdhS7BR35sBQQN": true
-          }
-        }
-      }
-    },
-    "8378b3bd39931aa74a6aa3a820304c1109d327426e4275183ed0b797eb6660a8": {
-      "total_num_txs": 14916,
-      "total_num_mut_refs": 14916,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 0,
-      "types": {
-        "weather.WeatherOracle": {
-          "num_txs": 14916,
-          "num_mut_refs": 14916,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 89,
-          "first_touched_at_checkpoint": 7398034,
-          "first_touched_by_txs": {
-            "EhQsGMxxdzyboUnS5PfXDo7z2PUDioF3Q8HjwquV2hbR": true
           }
         }
       }
@@ -2809,15 +2809,15 @@
       }
     },
     "f5dba8346b5084d460f480698ff0305a8e847fdb08090e2e7b56cce738006743": {
-      "total_num_txs": 14544,
-      "total_num_mut_refs": 14544,
+      "total_num_txs": 14679,
+      "total_num_mut_refs": 14679,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 0,
       "types": {
         "stake.GlobalStorage": {
-          "num_txs": 14544,
-          "num_mut_refs": 14544,
+          "num_txs": 14679,
+          "num_mut_refs": 14679,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 42,
@@ -3258,15 +3258,15 @@
       }
     },
     "3ac5d05edffefeaa7387c234de3a9f25a3a72f6d96b5efb560d81df77899cf74": {
-      "total_num_txs": 9644,
-      "total_num_mut_refs": 9644,
+      "total_num_txs": 9660,
+      "total_num_mut_refs": 9660,
       "total_num_instances": 4,
       "total_num_types": 4,
       "total_num_resources": 0,
       "types": {
         "master_chef.MasterChefBalanceStorage": {
-          "num_txs": 2460,
-          "num_mut_refs": 2460,
+          "num_txs": 2464,
+          "num_mut_refs": 2464,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 35,
@@ -3276,8 +3276,8 @@
           }
         },
         "master_chef.MasterChefStorage": {
-          "num_txs": 2422,
-          "num_mut_refs": 2422,
+          "num_txs": 2426,
+          "num_mut_refs": 2426,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 35,
@@ -3287,8 +3287,8 @@
           }
         },
         "master_chef.AccountStorage": {
-          "num_txs": 2422,
-          "num_mut_refs": 2422,
+          "num_txs": 2426,
+          "num_mut_refs": 2426,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 35,
@@ -3298,8 +3298,8 @@
           }
         },
         "sip.SIPStorage": {
-          "num_txs": 2340,
-          "num_mut_refs": 2340,
+          "num_txs": 2344,
+          "num_mut_refs": 2344,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 35,
@@ -3311,15 +3311,15 @@
       }
     },
     "3412f5d7819fddb9d504a422177e3cc62c029f08002a0d51c0f7cfd93cfdfbcc": {
-      "total_num_txs": 9544,
-      "total_num_mut_refs": 9544,
+      "total_num_txs": 9568,
+      "total_num_mut_refs": 9568,
       "total_num_instances": 2,
       "total_num_types": 2,
       "total_num_resources": 0,
       "types": {
         "staking.StakingPool": {
-          "num_txs": 4926,
-          "num_mut_refs": 4926,
+          "num_txs": 4938,
+          "num_mut_refs": 4938,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 22,
@@ -3329,14 +3329,34 @@
           }
         },
         "staking.StakingHub": {
-          "num_txs": 4618,
-          "num_mut_refs": 4618,
+          "num_txs": 4630,
+          "num_mut_refs": 4630,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 22,
           "first_touched_at_checkpoint": 1675948,
           "first_touched_by_txs": {
             "FcTnTD8pUkdRAktN3J3bCBxpMivQZNc5tMu3HhDvvqTt": true
+          }
+        }
+      }
+    },
+    "ba153169476e8c3114962261d1edc70de5ad9781b83cc617ecc8c1923191cae0": {
+      "total_num_txs": 9559,
+      "total_num_mut_refs": 9559,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 0,
+      "types": {
+        "factory.Container": {
+          "num_txs": 9559,
+          "num_mut_refs": 9559,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 78,
+          "first_touched_at_checkpoint": 6426515,
+          "first_touched_by_txs": {
+            "H6s5cDHXpkDWKCoZjrA4WZEAafTUyusjZw6AyBBynwKH": true
           }
         }
       }
@@ -3423,35 +3443,15 @@
         }
       }
     },
-    "ba153169476e8c3114962261d1edc70de5ad9781b83cc617ecc8c1923191cae0": {
-      "total_num_txs": 8636,
-      "total_num_mut_refs": 8636,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 0,
-      "types": {
-        "factory.Container": {
-          "num_txs": 8636,
-          "num_mut_refs": 8636,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 78,
-          "first_touched_at_checkpoint": 6426515,
-          "first_touched_by_txs": {
-            "H6s5cDHXpkDWKCoZjrA4WZEAafTUyusjZw6AyBBynwKH": true
-          }
-        }
-      }
-    },
     "075a2c16938fba807c6e9ff14069bb55e3b7309d184e61e93f2cda22622a29b9": {
-      "total_num_txs": 8581,
-      "total_num_mut_refs": 4160,
+      "total_num_txs": 8587,
+      "total_num_mut_refs": 4164,
       "total_num_instances": 3,
       "total_num_types": 3,
       "total_num_resources": 3,
       "types": {
         "utils.Version": {
-          "num_txs": 3992,
+          "num_txs": 3994,
           "num_mut_refs": 1,
           "num_instances": 1,
           "is_resource": true,
@@ -3462,8 +3462,8 @@
           }
         },
         "port.Stake": {
-          "num_txs": 2722,
-          "num_mut_refs": 2292,
+          "num_txs": 2724,
+          "num_mut_refs": 2294,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 20,
@@ -3473,8 +3473,8 @@
           }
         },
         "port.Plan": {
-          "num_txs": 1867,
-          "num_mut_refs": 1867,
+          "num_txs": 1869,
+          "num_mut_refs": 1869,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 20,
@@ -3506,14 +3506,14 @@
       }
     },
     "e2c7a6843cb13d9549a9d2dc1c266b572ead0b4b9f090e7c3c46de2714102b43": {
-      "total_num_txs": 8407,
+      "total_num_txs": 8414,
       "total_num_mut_refs": 3,
       "total_num_instances": 24,
       "total_num_types": 1,
       "total_num_resources": 1,
       "types": {
         "request.Policy": {
-          "num_txs": 8407,
+          "num_txs": 8414,
           "num_mut_refs": 3,
           "num_instances": 24,
           "is_resource": true,
@@ -3628,16 +3628,16 @@
       }
     },
     "0ef3cc840793aae2d62d5930224ec02ce0b0a1e5281abf0a717a31f3a80c4863": {
-      "total_num_txs": 8101,
-      "total_num_mut_refs": 8101,
-      "total_num_instances": 140,
+      "total_num_txs": 8208,
+      "total_num_mut_refs": 8208,
+      "total_num_instances": 142,
       "total_num_types": 2,
       "total_num_resources": 2,
       "types": {
         "releap_badge.Badge": {
-          "num_txs": 7891,
-          "num_mut_refs": 7891,
-          "num_instances": 139,
+          "num_txs": 7997,
+          "num_mut_refs": 7997,
+          "num_instances": 141,
           "is_resource": true,
           "first_touched_at_epoch": 33,
           "first_touched_at_checkpoint": 2621806,
@@ -3646,8 +3646,8 @@
           }
         },
         "releap_badge.BadgeStore": {
-          "num_txs": 210,
-          "num_mut_refs": 210,
+          "num_txs": 211,
+          "num_mut_refs": 211,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 33,
@@ -3658,16 +3658,47 @@
         }
       }
     },
+    "3cf6e24398c526fd1e0c46e22d4c1f88e3f3c14ba3df6fdaa6dd6d4aab202736": {
+      "total_num_txs": 8153,
+      "total_num_mut_refs": 8153,
+      "total_num_instances": 2,
+      "total_num_types": 2,
+      "total_num_resources": 0,
+      "types": {
+        "staking.StakingVault": {
+          "num_txs": 5412,
+          "num_mut_refs": 5412,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 77,
+          "first_touched_at_checkpoint": 6342705,
+          "first_touched_by_txs": {
+            "9dohGWKWwLszFjQMbPRYQo5eX9fjmZPcVbEtQVngXG8r": true
+          }
+        },
+        "storktoken.ProtocolTreasury": {
+          "num_txs": 2741,
+          "num_mut_refs": 2741,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 77,
+          "first_touched_at_checkpoint": 6342715,
+          "first_touched_by_txs": {
+            "F7gtAehCJ9oouYTGGi1UsK7C4itwc1YLJgpJeLuD72zn": true
+          }
+        }
+      }
+    },
     "659d0cc6b4e1e640f32daaa5c950c1aa4dae9ea5fc36606f87bb9b579591a45c": {
-      "total_num_txs": 8087,
-      "total_num_mut_refs": 8087,
+      "total_num_txs": 8088,
+      "total_num_mut_refs": 8088,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 0,
       "types": {
         "claim.GlobalStorage": {
-          "num_txs": 8087,
-          "num_mut_refs": 8087,
+          "num_txs": 8088,
+          "num_mut_refs": 8088,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 41,
@@ -3679,15 +3710,15 @@
       }
     },
     "165f01c1cd0e30b65b43f14f86b947ce28e61cb37b04f2cedffbb806e222d3de": {
-      "total_num_txs": 8080,
-      "total_num_mut_refs": 8080,
+      "total_num_txs": 8087,
+      "total_num_mut_refs": 8087,
       "total_num_instances": 5,
       "total_num_types": 1,
       "total_num_resources": 1,
       "types": {
         "claim.Claim": {
-          "num_txs": 8080,
-          "num_mut_refs": 8080,
+          "num_txs": 8087,
+          "num_mut_refs": 8087,
           "num_instances": 5,
           "is_resource": true,
           "first_touched_at_epoch": 40,
@@ -3698,47 +3729,16 @@
         }
       }
     },
-    "3cf6e24398c526fd1e0c46e22d4c1f88e3f3c14ba3df6fdaa6dd6d4aab202736": {
-      "total_num_txs": 8001,
-      "total_num_mut_refs": 8001,
-      "total_num_instances": 2,
-      "total_num_types": 2,
-      "total_num_resources": 0,
-      "types": {
-        "staking.StakingVault": {
-          "num_txs": 5334,
-          "num_mut_refs": 5334,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 77,
-          "first_touched_at_checkpoint": 6342705,
-          "first_touched_by_txs": {
-            "9dohGWKWwLszFjQMbPRYQo5eX9fjmZPcVbEtQVngXG8r": true
-          }
-        },
-        "storktoken.ProtocolTreasury": {
-          "num_txs": 2667,
-          "num_mut_refs": 2667,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 77,
-          "first_touched_at_checkpoint": 6342715,
-          "first_touched_by_txs": {
-            "F7gtAehCJ9oouYTGGi1UsK7C4itwc1YLJgpJeLuD72zn": true
-          }
-        }
-      }
-    },
     "7aee872d77cade27e7d9b79bf9c67ac40bfb1b797e8b7438ee73f0af21bb4664": {
-      "total_num_txs": 7842,
-      "total_num_mut_refs": 7842,
+      "total_num_txs": 7851,
+      "total_num_mut_refs": 7851,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 0,
       "types": {
         "store.AccessoriesStore": {
-          "num_txs": 7842,
-          "num_mut_refs": 7842,
+          "num_txs": 7851,
+          "num_mut_refs": 7851,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 36,
@@ -3750,14 +3750,14 @@
       }
     },
     "2f6caff123c91121d4cc31f23a284d04a01efd19b09ece313fd172d697657228": {
-      "total_num_txs": 7803,
+      "total_num_txs": 7807,
       "total_num_mut_refs": 5136,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 1,
       "types": {
         "tocen_event_ido.TocenIdoData": {
-          "num_txs": 7803,
+          "num_txs": 7807,
           "num_mut_refs": 5136,
           "num_instances": 1,
           "is_resource": true,
@@ -3772,15 +3772,15 @@
       }
     },
     "6c168cd5e4ba1bea8f0df82c9232d16b1fd9a4f9555d3392c24a3f9e27a10806": {
-      "total_num_txs": 7580,
-      "total_num_mut_refs": 7580,
+      "total_num_txs": 7587,
+      "total_num_mut_refs": 7587,
       "total_num_instances": 3,
       "total_num_types": 1,
       "total_num_resources": 1,
       "types": {
         "claim.Claim": {
-          "num_txs": 7580,
-          "num_mut_refs": 7580,
+          "num_txs": 7587,
+          "num_mut_refs": 7587,
           "num_instances": 3,
           "is_resource": true,
           "first_touched_at_epoch": 40,
@@ -3792,15 +3792,15 @@
       }
     },
     "32c0363c8e9f4b8782dc66aa4acb6a3d885c818de5dec8348c8a206ae2f95c08": {
-      "total_num_txs": 7515,
-      "total_num_mut_refs": 6021,
+      "total_num_txs": 7529,
+      "total_num_mut_refs": 6035,
       "total_num_instances": 2,
       "total_num_types": 2,
       "total_num_resources": 0,
       "types": {
         "cubi.PublicKey": {
-          "num_txs": 3758,
-          "num_mut_refs": 2264,
+          "num_txs": 3765,
+          "num_mut_refs": 2271,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 22,
@@ -3810,8 +3810,8 @@
           }
         },
         "cubi.CubiRegistry": {
-          "num_txs": 3757,
-          "num_mut_refs": 3757,
+          "num_txs": 3764,
+          "num_mut_refs": 3764,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 22,
@@ -3903,15 +3903,15 @@
       }
     },
     "1ba8029641e5511d284adcdbda5498ba0987bf75d8e58fac9d7e8b0d39184be7": {
-      "total_num_txs": 7221,
-      "total_num_mut_refs": 7219,
+      "total_num_txs": 7222,
+      "total_num_mut_refs": 7220,
       "total_num_instances": 3,
       "total_num_types": 3,
       "total_num_resources": 2,
       "types": {
         "nft.Registry": {
-          "num_txs": 3211,
-          "num_mut_refs": 3211,
+          "num_txs": 3212,
+          "num_mut_refs": 3212,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 32,
@@ -3945,15 +3945,15 @@
       }
     },
     "e9c2eaa56289b9d2132066e5f59e5164ccb01f64edba90fb63a36ffb63ff1387": {
-      "total_num_txs": 7095,
-      "total_num_mut_refs": 7095,
+      "total_num_txs": 7102,
+      "total_num_mut_refs": 7102,
       "total_num_instances": 2,
       "total_num_types": 2,
       "total_num_resources": 0,
       "types": {
         "wsui.SupplyBag": {
-          "num_txs": 3701,
-          "num_mut_refs": 3701,
+          "num_txs": 3705,
+          "num_mut_refs": 3705,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 32,
@@ -3963,8 +3963,8 @@
           }
         },
         "implements.Global": {
-          "num_txs": 3394,
-          "num_mut_refs": 3394,
+          "num_txs": 3397,
+          "num_mut_refs": 3397,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 32,
@@ -3996,15 +3996,15 @@
       }
     },
     "fd2e0f4383df3ec9106326dcd9a20510cdce72146754296deed15403fcd3df8b": {
-      "total_num_txs": 6774,
-      "total_num_mut_refs": 6774,
+      "total_num_txs": 6830,
+      "total_num_mut_refs": 6830,
       "total_num_instances": 4,
       "total_num_types": 2,
       "total_num_resources": 0,
       "types": {
         "oracle_queue.OracleQueue": {
-          "num_txs": 3396,
-          "num_mut_refs": 3396,
+          "num_txs": 3424,
+          "num_mut_refs": 3424,
           "num_instances": 2,
           "is_resource": false,
           "first_touched_at_epoch": 21,
@@ -4014,8 +4014,8 @@
           }
         },
         "oracle.Oracle": {
-          "num_txs": 3378,
-          "num_mut_refs": 3378,
+          "num_txs": 3406,
+          "num_mut_refs": 3406,
           "num_instances": 2,
           "is_resource": false,
           "first_touched_at_epoch": 21,
@@ -4047,15 +4047,15 @@
       }
     },
     "bd971c49521f2e144ac79ad4dafcc56ecb3edba77ff34bc620707b9dd0267bdd": {
-      "total_num_txs": 6561,
-      "total_num_mut_refs": 6561,
+      "total_num_txs": 6606,
+      "total_num_mut_refs": 6606,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 1,
       "types": {
         "xluck_reward.NewReward": {
-          "num_txs": 6561,
-          "num_mut_refs": 6561,
+          "num_txs": 6606,
+          "num_mut_refs": 6606,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 47,
@@ -4067,15 +4067,15 @@
       }
     },
     "785248249ac457dfd378bdc6d2fbbfec9d1daf65e9d728b820eb4888c8da2c10": {
-      "total_num_txs": 6199,
-      "total_num_mut_refs": 6199,
+      "total_num_txs": 6240,
+      "total_num_mut_refs": 6240,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 0,
       "types": {
         "dividend.DividendManager": {
-          "num_txs": 6199,
-          "num_mut_refs": 6199,
+          "num_txs": 6240,
+          "num_mut_refs": 6240,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 27,
@@ -4087,15 +4087,15 @@
       }
     },
     "694fddcdf757db2ddc951ba5c8c3076f9d0e48c6895ff57f6c0888896814ccf2": {
-      "total_num_txs": 6157,
-      "total_num_mut_refs": 6157,
+      "total_num_txs": 6163,
+      "total_num_mut_refs": 6163,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 1,
       "types": {
         "claim.Claim": {
-          "num_txs": 6157,
-          "num_mut_refs": 6157,
+          "num_txs": 6163,
+          "num_mut_refs": 6163,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 78,
@@ -4106,22 +4106,106 @@
         }
       }
     },
+    "e7de25f46e8038f64314cbec062cf37c37a13bb341bf9992e4549c545fb28d68": {
+      "total_num_txs": 6160,
+      "total_num_mut_refs": 3079,
+      "total_num_instances": 2,
+      "total_num_types": 2,
+      "total_num_resources": 1,
+      "types": {
+        "navi_aggregator.NaviAggregator": {
+          "num_txs": 3081,
+          "num_mut_refs": 3078,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 94,
+          "first_touched_at_checkpoint": 7819937,
+          "first_touched_by_txs": {
+            "8fWGUizcnMzgK6ivf519cx19idnwAHex6PmX1wb8wNk9": true
+          }
+        },
+        "navi_aggregator.NaviAggregatorCap": {
+          "num_txs": 3079,
+          "num_mut_refs": 1,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 94,
+          "first_touched_at_checkpoint": 7819937,
+          "first_touched_by_txs": {
+            "8fWGUizcnMzgK6ivf519cx19idnwAHex6PmX1wb8wNk9": false
+          }
+        }
+      }
+    },
     "bb96386e0846c3375de22c6918c0ba7019c5ae42589ec9c841cc92041272b5eb": {
-      "total_num_txs": 6126,
-      "total_num_mut_refs": 6126,
+      "total_num_txs": 6127,
+      "total_num_mut_refs": 6127,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 0,
       "types": {
         "tocen_stake_nft.ShareObjectStake": {
-          "num_txs": 6126,
-          "num_mut_refs": 6126,
+          "num_txs": 6127,
+          "num_mut_refs": 6127,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 21,
           "first_touched_at_checkpoint": 1660820,
           "first_touched_by_txs": {
             "CKxMBTHWK4RvfNrhNYBoM9SSYTBpJUE5V3SQz4LLtwnW": true
+          }
+        }
+      }
+    },
+    "2d62336f06432989088ceeac7abe2a35b21ac179871ac5252fcbdf5261e7cb78": {
+      "total_num_txs": 6121,
+      "total_num_mut_refs": 6121,
+      "total_num_instances": 5,
+      "total_num_types": 4,
+      "total_num_resources": 4,
+      "types": {
+        "staking.Pool": {
+          "num_txs": 5047,
+          "num_mut_refs": 5047,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 40,
+          "first_touched_at_checkpoint": 3223434,
+          "first_touched_by_txs": {
+            "9uQG2yGnkjvktZDa3eMKen7UC947jCBhmoV1PKBPvpuM": true
+          }
+        },
+        "luck_vault.Vault": {
+          "num_txs": 681,
+          "num_mut_refs": 681,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 40,
+          "first_touched_at_checkpoint": 3214024,
+          "first_touched_by_txs": {
+            "CuCTp2EqLEra1AqT4exG9RCSbHtL576P9cLeLihBwvSe": true
+          }
+        },
+        "vesting.Pool": {
+          "num_txs": 323,
+          "num_mut_refs": 323,
+          "num_instances": 2,
+          "is_resource": true,
+          "first_touched_at_epoch": 41,
+          "first_touched_at_checkpoint": 3249679,
+          "first_touched_by_txs": {
+            "HUwu95LpZ94FzrUwfGAP1aPPNjCiZJGL5kf36xX6QhhM": true
+          }
+        },
+        "stake_lp.Pool": {
+          "num_txs": 70,
+          "num_mut_refs": 70,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 40,
+          "first_touched_at_checkpoint": 3233270,
+          "first_touched_by_txs": {
+            "4G1eQcwUgwsLYE9nQX5raVWCckPbMFot1kYvsYa6FsfX": true
           }
         }
       }
@@ -4146,59 +4230,6 @@
         }
       }
     },
-    "2d62336f06432989088ceeac7abe2a35b21ac179871ac5252fcbdf5261e7cb78": {
-      "total_num_txs": 6064,
-      "total_num_mut_refs": 6064,
-      "total_num_instances": 5,
-      "total_num_types": 4,
-      "total_num_resources": 4,
-      "types": {
-        "staking.Pool": {
-          "num_txs": 5009,
-          "num_mut_refs": 5009,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 40,
-          "first_touched_at_checkpoint": 3223434,
-          "first_touched_by_txs": {
-            "9uQG2yGnkjvktZDa3eMKen7UC947jCBhmoV1PKBPvpuM": true
-          }
-        },
-        "luck_vault.Vault": {
-          "num_txs": 668,
-          "num_mut_refs": 668,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 40,
-          "first_touched_at_checkpoint": 3214024,
-          "first_touched_by_txs": {
-            "CuCTp2EqLEra1AqT4exG9RCSbHtL576P9cLeLihBwvSe": true
-          }
-        },
-        "vesting.Pool": {
-          "num_txs": 318,
-          "num_mut_refs": 318,
-          "num_instances": 2,
-          "is_resource": true,
-          "first_touched_at_epoch": 41,
-          "first_touched_at_checkpoint": 3249679,
-          "first_touched_by_txs": {
-            "HUwu95LpZ94FzrUwfGAP1aPPNjCiZJGL5kf36xX6QhhM": true
-          }
-        },
-        "stake_lp.Pool": {
-          "num_txs": 69,
-          "num_mut_refs": 69,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 40,
-          "first_touched_at_checkpoint": 3233270,
-          "first_touched_by_txs": {
-            "4G1eQcwUgwsLYE9nQX5raVWCckPbMFot1kYvsYa6FsfX": true
-          }
-        }
-      }
-    },
     "da691d321641786d758d7435d0e230a7125777566c75b34c5742591163a252c3": {
       "total_num_txs": 5928,
       "total_num_mut_refs": 5637,
@@ -4215,37 +4246,6 @@
           "first_touched_at_checkpoint": 7269828,
           "first_touched_by_txs": {
             "Ht5sjvoSMnpwDG9oX3JxihsTX4ajSwknxBqmsqujPsqa": true
-          }
-        }
-      }
-    },
-    "e7de25f46e8038f64314cbec062cf37c37a13bb341bf9992e4549c545fb28d68": {
-      "total_num_txs": 5872,
-      "total_num_mut_refs": 2935,
-      "total_num_instances": 2,
-      "total_num_types": 2,
-      "total_num_resources": 1,
-      "types": {
-        "navi_aggregator.NaviAggregator": {
-          "num_txs": 2937,
-          "num_mut_refs": 2934,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 94,
-          "first_touched_at_checkpoint": 7819937,
-          "first_touched_by_txs": {
-            "8fWGUizcnMzgK6ivf519cx19idnwAHex6PmX1wb8wNk9": true
-          }
-        },
-        "navi_aggregator.NaviAggregatorCap": {
-          "num_txs": 2935,
-          "num_mut_refs": 1,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 94,
-          "first_touched_at_checkpoint": 7819937,
-          "first_touched_by_txs": {
-            "8fWGUizcnMzgK6ivf519cx19idnwAHex6PmX1wb8wNk9": false
           }
         }
       }
@@ -4271,15 +4271,15 @@
       }
     },
     "9ec6f17e19c5e64c8872779a635235497fd6c71f7b5c23b07f652b02a240c84a": {
-      "total_num_txs": 5517,
-      "total_num_mut_refs": 5517,
+      "total_num_txs": 5536,
+      "total_num_mut_refs": 5536,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 0,
       "types": {
         "global_storage.GlobalStorage": {
-          "num_txs": 5517,
-          "num_mut_refs": 5517,
+          "num_txs": 5536,
+          "num_mut_refs": 5536,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 50,
@@ -4310,16 +4310,36 @@
         }
       }
     },
+    "a3f091e9aac4747a85469298bb3e91f751a0c3b70a3aec5c1d425ffc2e673bab": {
+      "total_num_txs": 5405,
+      "total_num_mut_refs": 5405,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 0,
+      "types": {
+        "marketplace.Marketplace": {
+          "num_txs": 5405,
+          "num_mut_refs": 5405,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 74,
+          "first_touched_at_checkpoint": 6100120,
+          "first_touched_by_txs": {
+            "BFPFg8WgJXUiVSa1K6S661zxjAyBSFxwoEyv9Ns8CXQ7": true
+          }
+        }
+      }
+    },
     "5ac3e7cc412366ce4476d41ccaf7885eb7b02668b6957ca224cfe4fa21b1afbe": {
-      "total_num_txs": 5337,
-      "total_num_mut_refs": 5337,
+      "total_num_txs": 5345,
+      "total_num_mut_refs": 5345,
       "total_num_instances": 4,
       "total_num_types": 2,
       "total_num_resources": 2,
       "types": {
         "ido_claim_public.PoolClaim": {
-          "num_txs": 2670,
-          "num_mut_refs": 2670,
+          "num_txs": 2674,
+          "num_mut_refs": 2674,
           "num_instances": 3,
           "is_resource": true,
           "first_touched_at_epoch": 31,
@@ -4329,34 +4349,14 @@
           }
         },
         "ido_claim_public.TocenIdoDataClaim": {
-          "num_txs": 2667,
-          "num_mut_refs": 2667,
+          "num_txs": 2671,
+          "num_mut_refs": 2671,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 31,
           "first_touched_at_checkpoint": 2488558,
           "first_touched_by_txs": {
             "GpiKseomoXcHX6Ffa6CfN75FnMUEKJiPRgi9mUAwrkaw": true
-          }
-        }
-      }
-    },
-    "a3f091e9aac4747a85469298bb3e91f751a0c3b70a3aec5c1d425ffc2e673bab": {
-      "total_num_txs": 5327,
-      "total_num_mut_refs": 5327,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 0,
-      "types": {
-        "marketplace.Marketplace": {
-          "num_txs": 5327,
-          "num_mut_refs": 5327,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 74,
-          "first_touched_at_checkpoint": 6100120,
-          "first_touched_by_txs": {
-            "BFPFg8WgJXUiVSa1K6S661zxjAyBSFxwoEyv9Ns8CXQ7": true
           }
         }
       }
@@ -4383,15 +4383,15 @@
       }
     },
     "55fab02e26a9eb86547661c802ad21516e2ce0b8d83a91824a05ffde8e699942": {
-      "total_num_txs": 5056,
-      "total_num_mut_refs": 5056,
+      "total_num_txs": 5062,
+      "total_num_mut_refs": 5062,
       "total_num_instances": 6,
       "total_num_types": 4,
       "total_num_resources": 1,
       "types": {
         "marketplace_module.Container": {
-          "num_txs": 2079,
-          "num_mut_refs": 2079,
+          "num_txs": 2082,
+          "num_mut_refs": 2082,
           "num_instances": 3,
           "is_resource": false,
           "first_touched_at_epoch": 21,
@@ -4401,8 +4401,8 @@
           }
         },
         "marketplace_module.Marketplace": {
-          "num_txs": 1996,
-          "num_mut_refs": 1996,
+          "num_txs": 1999,
+          "num_mut_refs": 1999,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 21,
@@ -4537,6 +4537,26 @@
         }
       }
     },
+    "b4f5fc6de679cd86aad8ba9f94e1c5e9ae6047d2ce79f1de794156f17312b1c3": {
+      "total_num_txs": 4311,
+      "total_num_mut_refs": 4311,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 1,
+      "types": {
+        "jk.AccessList": {
+          "num_txs": 4311,
+          "num_mut_refs": 4311,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 96,
+          "first_touched_at_checkpoint": 7956015,
+          "first_touched_by_txs": {
+            "4zT2Zc4cq5nNcPSArEzXXGZihvRmMscdBuUFHXg7Lg8K": true
+          }
+        }
+      }
+    },
     "9b9596d945958d16422fbf5f82410b02eb0d2df5869b36b75a0667ad9fc16573": {
       "total_num_txs": 4301,
       "total_num_mut_refs": 4301,
@@ -4639,36 +4659,16 @@
         }
       }
     },
-    "b4f5fc6de679cd86aad8ba9f94e1c5e9ae6047d2ce79f1de794156f17312b1c3": {
-      "total_num_txs": 4087,
-      "total_num_mut_refs": 4087,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 1,
-      "types": {
-        "jk.AccessList": {
-          "num_txs": 4087,
-          "num_mut_refs": 4087,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 96,
-          "first_touched_at_checkpoint": 7956015,
-          "first_touched_by_txs": {
-            "4zT2Zc4cq5nNcPSArEzXXGZihvRmMscdBuUFHXg7Lg8K": true
-          }
-        }
-      }
-    },
     "08d79f4d920b03d88faca1e421af023a87fbb1e4a6fd200248e6e9998d09e470": {
-      "total_num_txs": 4031,
-      "total_num_mut_refs": 3060,
+      "total_num_txs": 4066,
+      "total_num_mut_refs": 3086,
       "total_num_instances": 5,
       "total_num_types": 1,
       "total_num_resources": 0,
       "types": {
         "aggregator.Aggregator": {
-          "num_txs": 4031,
-          "num_mut_refs": 3060,
+          "num_txs": 4066,
+          "num_mut_refs": 3086,
           "num_instances": 5,
           "is_resource": false,
           "first_touched_at_epoch": 21,
@@ -4740,15 +4740,15 @@
       }
     },
     "f1e7b4093872df432b2adb50533a1fa6f9e4b20856217657242fe7d9d4ac42e8": {
-      "total_num_txs": 3676,
-      "total_num_mut_refs": 3676,
+      "total_num_txs": 3680,
+      "total_num_mut_refs": 3680,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 0,
       "types": {
         "ethos_squad.EthosSquadMaintainer": {
-          "num_txs": 3676,
-          "num_mut_refs": 3676,
+          "num_txs": 3680,
+          "num_mut_refs": 3680,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 20,
@@ -4912,6 +4912,26 @@
         }
       }
     },
+    "d7e35e63f6abb21bd6182db8d4d88cbbcad06f4175356fd201dcf435d0cf2306": {
+      "total_num_txs": 3216,
+      "total_num_mut_refs": 3080,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 0,
+      "types": {
+        "oracle.PriceOracle": {
+          "num_txs": 3216,
+          "num_mut_refs": 3080,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 94,
+          "first_touched_at_checkpoint": 7819030,
+          "first_touched_by_txs": {
+            "8rEJqbWezFLbf3rnSUFEqbqX8uM2PouriEMWXaYZsHvf": true
+          }
+        }
+      }
+    },
     "e610a4c7fb915bd58ee29fd41ae0f195565f432fb1d7d1e231b29574ff3bcb92": {
       "total_num_txs": 3168,
       "total_num_mut_refs": 3168,
@@ -4952,22 +4972,22 @@
         }
       }
     },
-    "d7e35e63f6abb21bd6182db8d4d88cbbcad06f4175356fd201dcf435d0cf2306": {
-      "total_num_txs": 3072,
-      "total_num_mut_refs": 2936,
+    "d6997ac3e0f20bbee771c0c341874c9fe5ebfdb2b73ca2479b9fddf74de42a21": {
+      "total_num_txs": 3077,
+      "total_num_mut_refs": 3,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 0,
       "types": {
-        "oracle.PriceOracle": {
-          "num_txs": 3072,
-          "num_mut_refs": 2936,
+        "adaptor.CenterRegistry": {
+          "num_txs": 3077,
+          "num_mut_refs": 3,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 94,
-          "first_touched_at_checkpoint": 7819030,
+          "first_touched_at_checkpoint": 7820129,
           "first_touched_by_txs": {
-            "8rEJqbWezFLbf3rnSUFEqbqX8uM2PouriEMWXaYZsHvf": true
+            "CqFNZEN6pga4pERdqbmwp7roc3tstarayERswsx48HfA": true
           }
         }
       }
@@ -5094,36 +5114,16 @@
         }
       }
     },
-    "d6997ac3e0f20bbee771c0c341874c9fe5ebfdb2b73ca2479b9fddf74de42a21": {
-      "total_num_txs": 2933,
-      "total_num_mut_refs": 3,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 0,
-      "types": {
-        "adaptor.CenterRegistry": {
-          "num_txs": 2933,
-          "num_mut_refs": 3,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 94,
-          "first_touched_at_checkpoint": 7820129,
-          "first_touched_by_txs": {
-            "CqFNZEN6pga4pERdqbmwp7roc3tstarayERswsx48HfA": true
-          }
-        }
-      }
-    },
     "86fb9a85e3cfcc990f784ec8728bed55736adffea8c3b63f9dfb650957aabb40": {
-      "total_num_txs": 2900,
-      "total_num_mut_refs": 2900,
+      "total_num_txs": 2907,
+      "total_num_mut_refs": 2907,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 0,
       "types": {
         "staking.HominidsVault": {
-          "num_txs": 2900,
-          "num_mut_refs": 2900,
+          "num_txs": 2907,
+          "num_mut_refs": 2907,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 30,
@@ -5267,6 +5267,26 @@
         }
       }
     },
+    "713970501171e9d23d58857a59660bc6f91cc44919f313df581c3e83cca5d8c6": {
+      "total_num_txs": 2343,
+      "total_num_mut_refs": 2343,
+      "total_num_instances": 6,
+      "total_num_types": 1,
+      "total_num_resources": 0,
+      "types": {
+        "farm.Pool": {
+          "num_txs": 2343,
+          "num_mut_refs": 2343,
+          "num_instances": 6,
+          "is_resource": false,
+          "first_touched_at_epoch": 28,
+          "first_touched_at_checkpoint": 2233698,
+          "first_touched_by_txs": {
+            "EtwQD6nZRvyobby9d6HMwQ3mACsqLoj5jHYG9BFyKpR6": true
+          }
+        }
+      }
+    },
     "5f6d48338bd8b69a5de96a0ddaf71ada72b325d4fe27b073785bf3bdffd2d62c": {
       "total_num_txs": 2342,
       "total_num_mut_refs": 2342,
@@ -5303,26 +5323,6 @@
           "first_touched_at_checkpoint": 3333909,
           "first_touched_by_txs": {
             "FLW9RL6ZmdeWVuxiJFnrwqXnSFnfg39M22JqbZRfeUEQ": true
-          }
-        }
-      }
-    },
-    "713970501171e9d23d58857a59660bc6f91cc44919f313df581c3e83cca5d8c6": {
-      "total_num_txs": 2339,
-      "total_num_mut_refs": 2339,
-      "total_num_instances": 6,
-      "total_num_types": 1,
-      "total_num_resources": 0,
-      "types": {
-        "farm.Pool": {
-          "num_txs": 2339,
-          "num_mut_refs": 2339,
-          "num_instances": 6,
-          "is_resource": false,
-          "first_touched_at_epoch": 28,
-          "first_touched_at_checkpoint": 2233698,
-          "first_touched_by_txs": {
-            "EtwQD6nZRvyobby9d6HMwQ3mACsqLoj5jHYG9BFyKpR6": true
           }
         }
       }
@@ -5369,14 +5369,14 @@
       }
     },
     "10372c49ca2b98b44fa4d47194305d7bf2903b50256aab421da4dccefa120def": {
-      "total_num_txs": 2246,
+      "total_num_txs": 2247,
       "total_num_mut_refs": 3,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 1,
       "types": {
         "extension.Extension": {
-          "num_txs": 2246,
+          "num_txs": 2247,
           "num_mut_refs": 3,
           "num_instances": 1,
           "is_resource": true,
@@ -5464,6 +5464,26 @@
           "first_touched_at_checkpoint": 2618767,
           "first_touched_by_txs": {
             "BzmPu6Z3FbiETSVR5i5XW1WyjDVLW1NNhRS7YVNEvfrM": true
+          }
+        }
+      }
+    },
+    "cad6a1c5af7328579ab26d440d91a034aed839c1a17272e13bbb9e58ff22d6bb": {
+      "total_num_txs": 2045,
+      "total_num_mut_refs": 2045,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 1,
+      "types": {
+        "jk.AccessList": {
+          "num_txs": 2045,
+          "num_mut_refs": 2045,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 97,
+          "first_touched_at_checkpoint": 8047829,
+          "first_touched_by_txs": {
+            "25MFzVaCiX4s89VsweN1xgbuNsZRucGnvWvCPaHh7d2w": true
           }
         }
       }
@@ -5572,15 +5592,15 @@
       }
     },
     "72ad8f46d4fc3bbc24df15f6c62a98044c2649a9a31895a957254b2cf16e0cb9": {
-      "total_num_txs": 2014,
-      "total_num_mut_refs": 2014,
+      "total_num_txs": 2015,
+      "total_num_mut_refs": 2015,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 0,
       "types": {
         "profile.Global": {
-          "num_txs": 2014,
-          "num_mut_refs": 2014,
+          "num_txs": 2015,
+          "num_mut_refs": 2015,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 20,
@@ -5632,15 +5652,15 @@
       }
     },
     "47989e1f044f37b797ed052aba94874872b5dfd2d0d2afb1278f967d0d895867": {
-      "total_num_txs": 1871,
-      "total_num_mut_refs": 1871,
+      "total_num_txs": 1894,
+      "total_num_mut_refs": 1894,
       "total_num_instances": 4,
       "total_num_types": 4,
       "total_num_resources": 0,
       "types": {
         "wormhole_facet.Storage": {
-          "num_txs": 784,
-          "num_mut_refs": 784,
+          "num_txs": 793,
+          "num_mut_refs": 793,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 25,
@@ -5650,8 +5670,8 @@
           }
         },
         "wormhole_facet.WormholeFee": {
-          "num_txs": 778,
-          "num_mut_refs": 778,
+          "num_txs": 787,
+          "num_mut_refs": 787,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 25,
@@ -5661,8 +5681,8 @@
           }
         },
         "so_fee_wormhole.PriceManager": {
-          "num_txs": 294,
-          "num_mut_refs": 294,
+          "num_txs": 299,
+          "num_mut_refs": 299,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 25,
@@ -5684,22 +5704,55 @@
         }
       }
     },
-    "cad6a1c5af7328579ab26d440d91a034aed839c1a17272e13bbb9e58ff22d6bb": {
-      "total_num_txs": 1808,
-      "total_num_mut_refs": 1808,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 1,
+    "62fff363d8919c16c3354e452800afc92cc1815296475bb87b769b5e6468dc38": {
+      "total_num_txs": 1813,
+      "total_num_mut_refs": 712,
+      "total_num_instances": 4,
+      "total_num_types": 4,
+      "total_num_resources": 2,
       "types": {
-        "jk.AccessList": {
-          "num_txs": 1808,
-          "num_mut_refs": 1808,
+        "APDomain.GlobalMap": {
+          "num_txs": 663,
+          "num_mut_refs": 137,
           "num_instances": 1,
           "is_resource": true,
-          "first_touched_at_epoch": 97,
-          "first_touched_at_checkpoint": 8047829,
+          "first_touched_at_epoch": 21,
+          "first_touched_at_checkpoint": 1622483,
           "first_touched_by_txs": {
-            "25MFzVaCiX4s89VsweN1xgbuNsZRucGnvWvCPaHh7d2w": true
+            "5wDJnwYdUQeLYRfngkfTi73diqoaMeFaN9PTFZrBM75k": true
+          }
+        },
+        "APDomain.BaseConfig": {
+          "num_txs": 575,
+          "num_mut_refs": 0,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 21,
+          "first_touched_at_checkpoint": 1622483,
+          "first_touched_by_txs": {
+            "5wDJnwYdUQeLYRfngkfTi73diqoaMeFaN9PTFZrBM75k": false
+          }
+        },
+        "APDomain.MintAPCTable": {
+          "num_txs": 526,
+          "num_mut_refs": 526,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 21,
+          "first_touched_at_checkpoint": 1622535,
+          "first_touched_by_txs": {
+            "9ruKBTGTrM1hA12Bmke6URiyd7XBBWv4LgtNv9ZeHZ1P": true
+          }
+        },
+        "APDomain.ReferralMap": {
+          "num_txs": 49,
+          "num_mut_refs": 49,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 21,
+          "first_touched_at_checkpoint": 1622483,
+          "first_touched_by_txs": {
+            "5wDJnwYdUQeLYRfngkfTi73diqoaMeFaN9PTFZrBM75k": true
           }
         }
       }
@@ -5751,59 +5804,6 @@
           "first_touched_at_checkpoint": 1612786,
           "first_touched_by_txs": {
             "4SB2PrDBNiofRAEM9ddpwC1mr18GWc658Gh6bazYhBfC": true
-          }
-        }
-      }
-    },
-    "62fff363d8919c16c3354e452800afc92cc1815296475bb87b769b5e6468dc38": {
-      "total_num_txs": 1774,
-      "total_num_mut_refs": 699,
-      "total_num_instances": 4,
-      "total_num_types": 4,
-      "total_num_resources": 2,
-      "types": {
-        "APDomain.GlobalMap": {
-          "num_txs": 650,
-          "num_mut_refs": 137,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 21,
-          "first_touched_at_checkpoint": 1622483,
-          "first_touched_by_txs": {
-            "5wDJnwYdUQeLYRfngkfTi73diqoaMeFaN9PTFZrBM75k": true
-          }
-        },
-        "APDomain.BaseConfig": {
-          "num_txs": 562,
-          "num_mut_refs": 0,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 21,
-          "first_touched_at_checkpoint": 1622483,
-          "first_touched_by_txs": {
-            "5wDJnwYdUQeLYRfngkfTi73diqoaMeFaN9PTFZrBM75k": false
-          }
-        },
-        "APDomain.MintAPCTable": {
-          "num_txs": 513,
-          "num_mut_refs": 513,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 21,
-          "first_touched_at_checkpoint": 1622535,
-          "first_touched_by_txs": {
-            "9ruKBTGTrM1hA12Bmke6URiyd7XBBWv4LgtNv9ZeHZ1P": true
-          }
-        },
-        "APDomain.ReferralMap": {
-          "num_txs": 49,
-          "num_mut_refs": 49,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 21,
-          "first_touched_at_checkpoint": 1622483,
-          "first_touched_by_txs": {
-            "5wDJnwYdUQeLYRfngkfTi73diqoaMeFaN9PTFZrBM75k": true
           }
         }
       }
@@ -5860,15 +5860,15 @@
       }
     },
     "7a9967b4baa1c107a357dea6243955a4dfc78386c7f958c4e11e447dd8ea2521": {
-      "total_num_txs": 1662,
-      "total_num_mut_refs": 1405,
+      "total_num_txs": 1663,
+      "total_num_mut_refs": 1406,
       "total_num_instances": 4,
       "total_num_types": 3,
       "total_num_resources": 3,
       "types": {
         "staking.StakingPool": {
-          "num_txs": 725,
-          "num_mut_refs": 468,
+          "num_txs": 726,
+          "num_mut_refs": 469,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 42,
@@ -5964,15 +5964,15 @@
       }
     },
     "b067e68932c6199bb0ba6590c97d9c8e8f0672622dcf346aa4dba18cb81c4cf8": {
-      "total_num_txs": 1602,
-      "total_num_mut_refs": 1602,
+      "total_num_txs": 1605,
+      "total_num_mut_refs": 1605,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 1,
       "types": {
         "sensui_nft.NFTMintData": {
-          "num_txs": 1602,
-          "num_mut_refs": 1602,
+          "num_txs": 1605,
+          "num_mut_refs": 1605,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 62,
@@ -6175,16 +6175,16 @@
       }
     },
     "8221cc562f8c58c922c6a40ecbc7e2f16b0159fb683470c22e96d21a0dc52beb": {
-      "total_num_txs": 1471,
-      "total_num_mut_refs": 1471,
-      "total_num_instances": 824,
+      "total_num_txs": 1477,
+      "total_num_mut_refs": 1477,
+      "total_num_instances": 830,
       "total_num_types": 1,
       "total_num_resources": 1,
       "types": {
         "bet.Bet": {
-          "num_txs": 1471,
-          "num_mut_refs": 1471,
-          "num_instances": 824,
+          "num_txs": 1477,
+          "num_mut_refs": 1477,
+          "num_instances": 830,
           "is_resource": true,
           "first_touched_at_epoch": 20,
           "first_touched_at_checkpoint": 1569440,
@@ -6254,6 +6254,26 @@
         }
       }
     },
+    "38035f4c1e1772d43a3535535ea5b29c1c3ab2c0026d4ad639969831bd1d174d": {
+      "total_num_txs": 1423,
+      "total_num_mut_refs": 681,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 1,
+      "types": {
+        "state.State": {
+          "num_txs": 1423,
+          "num_mut_refs": 681,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 50,
+          "first_touched_at_checkpoint": 4031146,
+          "first_touched_by_txs": {
+            "8W412kVzKZWQVBCLFHGffV8PdnAyUhYViMNE9HfgGYBu": true
+          }
+        }
+      }
+    },
     "7997204ca177ee5a57a3cb55ad1abb4010e3054d0c198eab170714347afefe0f": {
       "total_num_txs": 1423,
       "total_num_mut_refs": 1423,
@@ -6270,26 +6290,6 @@
           "first_touched_at_checkpoint": 1829953,
           "first_touched_by_txs": {
             "FvBJadWESPK8DdtHa9muKBucWUgf9nJdPLVxp8qKV5B4": true
-          }
-        }
-      }
-    },
-    "38035f4c1e1772d43a3535535ea5b29c1c3ab2c0026d4ad639969831bd1d174d": {
-      "total_num_txs": 1408,
-      "total_num_mut_refs": 672,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 1,
-      "types": {
-        "state.State": {
-          "num_txs": 1408,
-          "num_mut_refs": 672,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 50,
-          "first_touched_at_checkpoint": 4031146,
-          "first_touched_by_txs": {
-            "8W412kVzKZWQVBCLFHGffV8PdnAyUhYViMNE9HfgGYBu": true
           }
         }
       }
@@ -6406,15 +6406,15 @@
       }
     },
     "1a75d4df4c66ba0a4629b949dbc94b12c300b72bced2694e28e9eb73684e4461": {
-      "total_num_txs": 1222,
-      "total_num_mut_refs": 1222,
+      "total_num_txs": 1231,
+      "total_num_mut_refs": 1231,
       "total_num_instances": 3,
       "total_num_types": 3,
       "total_num_resources": 3,
       "types": {
         "lock_lp.LPLocked": {
-          "num_txs": 410,
-          "num_mut_refs": 410,
+          "num_txs": 413,
+          "num_mut_refs": 413,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 23,
@@ -6424,8 +6424,8 @@
           }
         },
         "lock_lp.LPData": {
-          "num_txs": 410,
-          "num_mut_refs": 410,
+          "num_txs": 413,
+          "num_mut_refs": 413,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 23,
@@ -6435,8 +6435,8 @@
           }
         },
         "lock_lp.PoolUsers": {
-          "num_txs": 402,
-          "num_mut_refs": 402,
+          "num_txs": 405,
+          "num_mut_refs": 405,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 23,
@@ -6498,6 +6498,26 @@
         }
       }
     },
+    "69bcf8027160e11d8175aa8b27ebb46973fca9f2ee7d037daa82d9e732e0d754": {
+      "total_num_txs": 1177,
+      "total_num_mut_refs": 1177,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 1,
+      "types": {
+        "router_script.Crypto": {
+          "num_txs": 1177,
+          "num_mut_refs": 1177,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 99,
+          "first_touched_at_checkpoint": 8234470,
+          "first_touched_by_txs": {
+            "DmgdTL29LANEkV4RR2WW4rT7pYzLv9mUp4Fpkdnw128C": true
+          }
+        }
+      }
+    },
     "c3fa73e68e5324871e0c9b2e67f61c3a594a62ab4b1128e781c5280f2702d116": {
       "total_num_txs": 1173,
       "total_num_mut_refs": 1173,
@@ -6519,15 +6539,15 @@
       }
     },
     "ecbf025a1651a8ab02053288c006299e659117befb74387b759b302c703ac605": {
-      "total_num_txs": 1168,
-      "total_num_mut_refs": 1168,
+      "total_num_txs": 1172,
+      "total_num_mut_refs": 1172,
       "total_num_instances": 5,
       "total_num_types": 2,
       "total_num_resources": 2,
       "types": {
         "tocen_stake_token.PoolStake": {
-          "num_txs": 873,
-          "num_mut_refs": 873,
+          "num_txs": 876,
+          "num_mut_refs": 876,
           "num_instances": 4,
           "is_resource": true,
           "first_touched_at_epoch": 48,
@@ -6537,8 +6557,8 @@
           }
         },
         "tocen_stake_token.Flexible": {
-          "num_txs": 295,
-          "num_mut_refs": 295,
+          "num_txs": 296,
+          "num_mut_refs": 296,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 48,
@@ -6893,6 +6913,48 @@
         }
       }
     },
+    "6d9f9a7be0c37eda7542706bd0c950fd073b3c8b18b01c6414597a9df4f73348": {
+      "total_num_txs": 1017,
+      "total_num_mut_refs": 841,
+      "total_num_instances": 11,
+      "total_num_types": 3,
+      "total_num_resources": 0,
+      "types": {
+        "bridge.BridgeSettings": {
+          "num_txs": 423,
+          "num_mut_refs": 423,
+          "num_instances": 9,
+          "is_resource": false,
+          "first_touched_at_epoch": 33,
+          "first_touched_at_checkpoint": 2636633,
+          "first_touched_by_txs": {
+            "GECoHAmKA4gqb8BTtMc3HzRuZjE39V9f2GK1vgBVTjxv": true
+          }
+        },
+        "liquidity_pool.LiquidityPool": {
+          "num_txs": 416,
+          "num_mut_refs": 416,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 34,
+          "first_touched_at_checkpoint": 2706831,
+          "first_touched_by_txs": {
+            "C6v36TSRH7xN6BNzGBisro54AhdAPUDdenzCifakg3LU": true
+          }
+        },
+        "bridge.RelayersHolder": {
+          "num_txs": 178,
+          "num_mut_refs": 2,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 34,
+          "first_touched_at_checkpoint": 2706827,
+          "first_touched_by_txs": {
+            "3YconXZ7fsb6v4T7tA3zchhALi4bebiT9CnoQaVqs9wJ": true
+          }
+        }
+      }
+    },
     "2dbb994633395632dd0e1f45a93e137e4e99e5aaa38d3e9129b6ed403a2ae6ad": {
       "total_num_txs": 1012,
       "total_num_mut_refs": 1012,
@@ -6929,48 +6991,6 @@
           "first_touched_at_checkpoint": 4811877,
           "first_touched_by_txs": {
             "6zLJvowJJDptERbt2rB5BqNjozBH3AKdL3fcDeQxndqX": true
-          }
-        }
-      }
-    },
-    "6d9f9a7be0c37eda7542706bd0c950fd073b3c8b18b01c6414597a9df4f73348": {
-      "total_num_txs": 1003,
-      "total_num_mut_refs": 829,
-      "total_num_instances": 11,
-      "total_num_types": 3,
-      "total_num_resources": 0,
-      "types": {
-        "bridge.BridgeSettings": {
-          "num_txs": 417,
-          "num_mut_refs": 417,
-          "num_instances": 9,
-          "is_resource": false,
-          "first_touched_at_epoch": 33,
-          "first_touched_at_checkpoint": 2636633,
-          "first_touched_by_txs": {
-            "GECoHAmKA4gqb8BTtMc3HzRuZjE39V9f2GK1vgBVTjxv": true
-          }
-        },
-        "liquidity_pool.LiquidityPool": {
-          "num_txs": 410,
-          "num_mut_refs": 410,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 34,
-          "first_touched_at_checkpoint": 2706831,
-          "first_touched_by_txs": {
-            "C6v36TSRH7xN6BNzGBisro54AhdAPUDdenzCifakg3LU": true
-          }
-        },
-        "bridge.RelayersHolder": {
-          "num_txs": 176,
-          "num_mut_refs": 2,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 34,
-          "first_touched_at_checkpoint": 2706827,
-          "first_touched_by_txs": {
-            "3YconXZ7fsb6v4T7tA3zchhALi4bebiT9CnoQaVqs9wJ": true
           }
         }
       }
@@ -7343,6 +7363,26 @@
         }
       }
     },
+    "f54081a052d35027191bab1902034c57439e814ce96e3552f3d139585472686f": {
+      "total_num_txs": 841,
+      "total_num_mut_refs": 304,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 0,
+      "types": {
+        "typus_dov_single.AdditionalConfigRegistry": {
+          "num_txs": 841,
+          "num_mut_refs": 304,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 68,
+          "first_touched_at_checkpoint": 5577522,
+          "first_touched_by_txs": {
+            "4yYztT7MCoPhjXomrKx5xoAEejLDVh1iapPPaAH9EZqJ": true
+          }
+        }
+      }
+    },
     "042d3eb2bf467b609bc8f4e1b6b44ffd9fa50b90379416b305777dc3cd56d49d": {
       "total_num_txs": 816,
       "total_num_mut_refs": 816,
@@ -7390,26 +7430,6 @@
           "first_touched_at_checkpoint": 1879338,
           "first_touched_by_txs": {
             "5frjhzj19ERKXXXcVWgCXg7W8qFjWHUVmJ3hnBd29GSt": true
-          }
-        }
-      }
-    },
-    "f54081a052d35027191bab1902034c57439e814ce96e3552f3d139585472686f": {
-      "total_num_txs": 804,
-      "total_num_mut_refs": 277,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 0,
-      "types": {
-        "typus_dov_single.AdditionalConfigRegistry": {
-          "num_txs": 804,
-          "num_mut_refs": 277,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 68,
-          "first_touched_at_checkpoint": 5577522,
-          "first_touched_by_txs": {
-            "4yYztT7MCoPhjXomrKx5xoAEejLDVh1iapPPaAH9EZqJ": true
           }
         }
       }
@@ -7526,15 +7546,15 @@
       }
     },
     "ce7ff77a83ea0cb6fd39bd8748e2ec89a3f41e8efdc3f4eb123e0ca37b184db2": {
-      "total_num_txs": 733,
-      "total_num_mut_refs": 733,
+      "total_num_txs": 745,
+      "total_num_mut_refs": 745,
       "total_num_instances": 2,
       "total_num_types": 2,
       "total_num_resources": 0,
       "types": {
         "buck.BucketProtocol": {
-          "num_txs": 597,
-          "num_mut_refs": 597,
+          "num_txs": 608,
+          "num_mut_refs": 608,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 77,
@@ -7544,8 +7564,8 @@
           }
         },
         "bkt.BktTreasury": {
-          "num_txs": 136,
-          "num_mut_refs": 136,
+          "num_txs": 137,
+          "num_mut_refs": 137,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 77,
@@ -7709,6 +7729,66 @@
         }
       }
     },
+    "ca5a5a62f01c79a104bf4d31669e29daa387f325c241de4edbe30986a9bc8b0d": {
+      "total_num_txs": 669,
+      "total_num_mut_refs": 1,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 1,
+      "types": {
+        "coin_decimals_registry.CoinDecimalsRegistry": {
+          "num_txs": 669,
+          "num_mut_refs": 1,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 95,
+          "first_touched_at_checkpoint": 7921433,
+          "first_touched_by_txs": {
+            "ERGuqN16dN6JWi1i48RXK1fJwySv8oWoQYJAsk71S2Fj": true
+          }
+        }
+      }
+    },
+    "aac1fdb607b884cc256c59dc307bb78b6ba95b97e22d4415fe87ad99689ea462": {
+      "total_num_txs": 669,
+      "total_num_mut_refs": 1,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 0,
+      "types": {
+        "pyth_registry.PythRegistry": {
+          "num_txs": 669,
+          "num_mut_refs": 1,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 95,
+          "first_touched_at_checkpoint": 7921433,
+          "first_touched_by_txs": {
+            "ERGuqN16dN6JWi1i48RXK1fJwySv8oWoQYJAsk71S2Fj": true
+          }
+        }
+      }
+    },
+    "1478a432123e4b3d61878b629f2c692969fdb375644f1251cd278a4b1e7d7cd6": {
+      "total_num_txs": 669,
+      "total_num_mut_refs": 669,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 0,
+      "types": {
+        "x_oracle.XOracle": {
+          "num_txs": 669,
+          "num_mut_refs": 669,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 95,
+          "first_touched_at_checkpoint": 7921433,
+          "first_touched_by_txs": {
+            "ERGuqN16dN6JWi1i48RXK1fJwySv8oWoQYJAsk71S2Fj": true
+          }
+        }
+      }
+    },
     "c1c0041a373a3423dd019116990a35ca62a468801b218c55b132c2d5d2437c7e": {
       "total_num_txs": 663,
       "total_num_mut_refs": 663,
@@ -7791,6 +7871,37 @@
         }
       }
     },
+    "6e80d8698dad095892a8563b9384f6c7dad24ec855323af36882f1db5ddc4d41": {
+      "total_num_txs": 646,
+      "total_num_mut_refs": 438,
+      "total_num_instances": 2,
+      "total_num_types": 2,
+      "total_num_resources": 2,
+      "types": {
+        "launchpad.LaunchpadStorage": {
+          "num_txs": 438,
+          "num_mut_refs": 438,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 98,
+          "first_touched_at_checkpoint": 8150814,
+          "first_touched_by_txs": {
+            "HdzYjrPZjssDXVAdJNDWfks3NGk4AjzQxP9nVUUAhfZm": true
+          }
+        },
+        "admin.AdminStorage": {
+          "num_txs": 208,
+          "num_mut_refs": 0,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 98,
+          "first_touched_at_checkpoint": 8150814,
+          "first_touched_by_txs": {
+            "HdzYjrPZjssDXVAdJNDWfks3NGk4AjzQxP9nVUUAhfZm": false
+          }
+        }
+      }
+    },
     "85e30371a3f9449d9934e016986c450566b21425a07e0846b4cb7db7e4e9c62d": {
       "total_num_txs": 637,
       "total_num_mut_refs": 637,
@@ -7853,6 +7964,66 @@
         }
       }
     },
+    "64213b0e4a52bac468d4ac3f140242f70714381653a1919a6d57cd49c628207a": {
+      "total_num_txs": 628,
+      "total_num_mut_refs": 628,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 0,
+      "types": {
+        "treasury.Treasury": {
+          "num_txs": 628,
+          "num_mut_refs": 628,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 71,
+          "first_touched_at_checkpoint": 5816888,
+          "first_touched_by_txs": {
+            "JC9kfAwnzqDPMzVvM4MhKkv8j9aNZoeYsiHkgUdNoGaU": true
+          }
+        }
+      }
+    },
+    "c66fabf1a9253e43c70f1cc02d40a1d18db183140ecaae2a3f58fa6b66c55acf": {
+      "total_num_txs": 628,
+      "total_num_mut_refs": 13,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 0,
+      "types": {
+        "referral_vault.ReferralVault": {
+          "num_txs": 628,
+          "num_mut_refs": 13,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 71,
+          "first_touched_at_checkpoint": 5816888,
+          "first_touched_by_txs": {
+            "JC9kfAwnzqDPMzVvM4MhKkv8j9aNZoeYsiHkgUdNoGaU": false
+          }
+        }
+      }
+    },
+    "a6baab1e668c7868991c1c3c11e144100f5734c407d020f72a01b9d1a8bcb97f": {
+      "total_num_txs": 628,
+      "total_num_mut_refs": 628,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 0,
+      "types": {
+        "insurance_fund.InsuranceFund": {
+          "num_txs": 628,
+          "num_mut_refs": 628,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 71,
+          "first_touched_at_checkpoint": 5816888,
+          "first_touched_by_txs": {
+            "JC9kfAwnzqDPMzVvM4MhKkv8j9aNZoeYsiHkgUdNoGaU": true
+          }
+        }
+      }
+    },
     "9aad881334dafc53b829fa2cb632b196c0e344235dd5eed659e630da1c5ce00d": {
       "total_num_txs": 627,
       "total_num_mut_refs": 627,
@@ -7869,6 +8040,57 @@
           "first_touched_at_checkpoint": 1577074,
           "first_touched_by_txs": {
             "BnHCTkkMxbE2XPar6zGZuqVJUgT7uTve9CrVmQccasfr": true
+          }
+        }
+      }
+    },
+    "7fec12b654ad1e094e1f2c62d8802cef656eb647779769d2ffac06663c71947d": {
+      "total_num_txs": 622,
+      "total_num_mut_refs": 4,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 1,
+      "types": {
+        "mct_multisend.Config": {
+          "num_txs": 622,
+          "num_mut_refs": 4,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 35,
+          "first_touched_at_checkpoint": 2737887,
+          "first_touched_by_txs": {
+            "DfFx59dnHJBNqSeRyuWR4CXb1mR7SffZgnr1BEe6si7d": false
+          }
+        }
+      }
+    },
+    "efe170ec0be4d762196bedecd7a065816576198a6527c99282a2551aaa7da38c": {
+      "total_num_txs": 619,
+      "total_num_mut_refs": 317,
+      "total_num_instances": 7,
+      "total_num_types": 2,
+      "total_num_resources": 2,
+      "types": {
+        "pool.Pool": {
+          "num_txs": 311,
+          "num_mut_refs": 311,
+          "num_instances": 6,
+          "is_resource": true,
+          "first_touched_at_epoch": 83,
+          "first_touched_at_checkpoint": 6864182,
+          "first_touched_by_txs": {
+            "CR2HK7pCPAT6yUyRAR6xHtTNFiN8jRJEceE1xR3odCYz": true
+          }
+        },
+        "pool_registry.PoolRegistry": {
+          "num_txs": 308,
+          "num_mut_refs": 6,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 83,
+          "first_touched_at_checkpoint": 6829457,
+          "first_touched_by_txs": {
+            "AF7eMaCCk4k2kyQ88Ce1QtT8evhpJd1vAKhEzMxT5Rzp": true
           }
         }
       }
@@ -7959,26 +8181,6 @@
         }
       }
     },
-    "7fec12b654ad1e094e1f2c62d8802cef656eb647779769d2ffac06663c71947d": {
-      "total_num_txs": 610,
-      "total_num_mut_refs": 4,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 1,
-      "types": {
-        "mct_multisend.Config": {
-          "num_txs": 610,
-          "num_mut_refs": 4,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 35,
-          "first_touched_at_checkpoint": 2737887,
-          "first_touched_by_txs": {
-            "DfFx59dnHJBNqSeRyuWR4CXb1mR7SffZgnr1BEe6si7d": false
-          }
-        }
-      }
-    },
     "fb79884be0876aec67833b5181db8dd831b971e2707c33f15f185173a477b1ea": {
       "total_num_txs": 601,
       "total_num_mut_refs": 601,
@@ -7995,6 +8197,26 @@
           "first_touched_at_checkpoint": 6087083,
           "first_touched_by_txs": {
             "4STuL7zQhNJ6WiRBPZYzG7u3qpZbYu2RDHRadUDLWzCf": true
+          }
+        }
+      }
+    },
+    "2d9316f1f1a95f6d7c85a4e690ef7c359e6649773ef2c37ad7d9857adb6bef06": {
+      "total_num_txs": 597,
+      "total_num_mut_refs": 0,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 1,
+      "types": {
+        "vault.ProtocolFeeVault": {
+          "num_txs": 597,
+          "num_mut_refs": 0,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 83,
+          "first_touched_at_checkpoint": 6828955,
+          "first_touched_by_txs": {
+            "8fsaiHKqYCE28zM1bAuauE1pqPkjvMPKRcwwXSMmUJUE": false
           }
         }
       }
@@ -8069,157 +8291,6 @@
           "first_touched_at_checkpoint": 6530809,
           "first_touched_by_txs": {
             "3WL9BGd97yagvhiDUpvA9jZMApfkdjLiPkGaeJqCeyJJ": true
-          }
-        }
-      }
-    },
-    "ca5a5a62f01c79a104bf4d31669e29daa387f325c241de4edbe30986a9bc8b0d": {
-      "total_num_txs": 590,
-      "total_num_mut_refs": 1,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 1,
-      "types": {
-        "coin_decimals_registry.CoinDecimalsRegistry": {
-          "num_txs": 590,
-          "num_mut_refs": 1,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 95,
-          "first_touched_at_checkpoint": 7921433,
-          "first_touched_by_txs": {
-            "ERGuqN16dN6JWi1i48RXK1fJwySv8oWoQYJAsk71S2Fj": true
-          }
-        }
-      }
-    },
-    "aac1fdb607b884cc256c59dc307bb78b6ba95b97e22d4415fe87ad99689ea462": {
-      "total_num_txs": 590,
-      "total_num_mut_refs": 1,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 0,
-      "types": {
-        "pyth_registry.PythRegistry": {
-          "num_txs": 590,
-          "num_mut_refs": 1,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 95,
-          "first_touched_at_checkpoint": 7921433,
-          "first_touched_by_txs": {
-            "ERGuqN16dN6JWi1i48RXK1fJwySv8oWoQYJAsk71S2Fj": true
-          }
-        }
-      }
-    },
-    "1478a432123e4b3d61878b629f2c692969fdb375644f1251cd278a4b1e7d7cd6": {
-      "total_num_txs": 590,
-      "total_num_mut_refs": 590,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 0,
-      "types": {
-        "x_oracle.XOracle": {
-          "num_txs": 590,
-          "num_mut_refs": 590,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 95,
-          "first_touched_at_checkpoint": 7921433,
-          "first_touched_by_txs": {
-            "ERGuqN16dN6JWi1i48RXK1fJwySv8oWoQYJAsk71S2Fj": true
-          }
-        }
-      }
-    },
-    "64213b0e4a52bac468d4ac3f140242f70714381653a1919a6d57cd49c628207a": {
-      "total_num_txs": 586,
-      "total_num_mut_refs": 586,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 0,
-      "types": {
-        "treasury.Treasury": {
-          "num_txs": 586,
-          "num_mut_refs": 586,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 71,
-          "first_touched_at_checkpoint": 5816888,
-          "first_touched_by_txs": {
-            "JC9kfAwnzqDPMzVvM4MhKkv8j9aNZoeYsiHkgUdNoGaU": true
-          }
-        }
-      }
-    },
-    "c66fabf1a9253e43c70f1cc02d40a1d18db183140ecaae2a3f58fa6b66c55acf": {
-      "total_num_txs": 586,
-      "total_num_mut_refs": 0,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 0,
-      "types": {
-        "referral_vault.ReferralVault": {
-          "num_txs": 586,
-          "num_mut_refs": 0,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 71,
-          "first_touched_at_checkpoint": 5816888,
-          "first_touched_by_txs": {
-            "JC9kfAwnzqDPMzVvM4MhKkv8j9aNZoeYsiHkgUdNoGaU": false
-          }
-        }
-      }
-    },
-    "a6baab1e668c7868991c1c3c11e144100f5734c407d020f72a01b9d1a8bcb97f": {
-      "total_num_txs": 586,
-      "total_num_mut_refs": 586,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 0,
-      "types": {
-        "insurance_fund.InsuranceFund": {
-          "num_txs": 586,
-          "num_mut_refs": 586,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 71,
-          "first_touched_at_checkpoint": 5816888,
-          "first_touched_by_txs": {
-            "JC9kfAwnzqDPMzVvM4MhKkv8j9aNZoeYsiHkgUdNoGaU": true
-          }
-        }
-      }
-    },
-    "efe170ec0be4d762196bedecd7a065816576198a6527c99282a2551aaa7da38c": {
-      "total_num_txs": 584,
-      "total_num_mut_refs": 299,
-      "total_num_instances": 6,
-      "total_num_types": 2,
-      "total_num_resources": 2,
-      "types": {
-        "pool.Pool": {
-          "num_txs": 294,
-          "num_mut_refs": 294,
-          "num_instances": 5,
-          "is_resource": true,
-          "first_touched_at_epoch": 83,
-          "first_touched_at_checkpoint": 6864182,
-          "first_touched_by_txs": {
-            "CR2HK7pCPAT6yUyRAR6xHtTNFiN8jRJEceE1xR3odCYz": true
-          }
-        },
-        "pool_registry.PoolRegistry": {
-          "num_txs": 290,
-          "num_mut_refs": 5,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 83,
-          "first_touched_at_checkpoint": 6829457,
-          "first_touched_by_txs": {
-            "AF7eMaCCk4k2kyQ88Ce1QtT8evhpJd1vAKhEzMxT5Rzp": true
           }
         }
       }
@@ -8326,37 +8397,6 @@
         }
       }
     },
-    "6e80d8698dad095892a8563b9384f6c7dad24ec855323af36882f1db5ddc4d41": {
-      "total_num_txs": 560,
-      "total_num_mut_refs": 385,
-      "total_num_instances": 2,
-      "total_num_types": 2,
-      "total_num_resources": 2,
-      "types": {
-        "launchpad.LaunchpadStorage": {
-          "num_txs": 385,
-          "num_mut_refs": 385,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 98,
-          "first_touched_at_checkpoint": 8150814,
-          "first_touched_by_txs": {
-            "HdzYjrPZjssDXVAdJNDWfks3NGk4AjzQxP9nVUUAhfZm": true
-          }
-        },
-        "admin.AdminStorage": {
-          "num_txs": 175,
-          "num_mut_refs": 0,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 98,
-          "first_touched_at_checkpoint": 8150814,
-          "first_touched_by_txs": {
-            "HdzYjrPZjssDXVAdJNDWfks3NGk4AjzQxP9nVUUAhfZm": false
-          }
-        }
-      }
-    },
     "da21bb82cfdd46ffe03586edb830f345a773b4f09a2a794aacbebbc427055351": {
       "total_num_txs": 555,
       "total_num_mut_refs": 555,
@@ -8373,26 +8413,6 @@
           "first_touched_at_checkpoint": 4898263,
           "first_touched_by_txs": {
             "89v9EJ9gn4bEeTLsJSaK3mWet3A2bJXWbQj9L72NJhYY": true
-          }
-        }
-      }
-    },
-    "2d9316f1f1a95f6d7c85a4e690ef7c359e6649773ef2c37ad7d9857adb6bef06": {
-      "total_num_txs": 555,
-      "total_num_mut_refs": 0,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 1,
-      "types": {
-        "vault.ProtocolFeeVault": {
-          "num_txs": 555,
-          "num_mut_refs": 0,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 83,
-          "first_touched_at_checkpoint": 6828955,
-          "first_touched_by_txs": {
-            "8fsaiHKqYCE28zM1bAuauE1pqPkjvMPKRcwwXSMmUJUE": false
           }
         }
       }
@@ -8449,15 +8469,15 @@
       }
     },
     "1b6bfd607780bc9307ff21d7891f4331e082bffcf9b369f8286358d827a6d676": {
-      "total_num_txs": 548,
-      "total_num_mut_refs": 548,
+      "total_num_txs": 550,
+      "total_num_mut_refs": 550,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 0,
       "types": {
         "ticket.Global": {
-          "num_txs": 548,
-          "num_mut_refs": 548,
+          "num_txs": 550,
+          "num_mut_refs": 550,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 88,
@@ -8601,15 +8621,15 @@
       }
     },
     "d9f9b0b4f35276eecd1eea6985bfabe2a2bbd5575f9adb9162ccbdb4ddebde7f": {
-      "total_num_txs": 508,
-      "total_num_mut_refs": 508,
+      "total_num_txs": 509,
+      "total_num_mut_refs": 509,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 1,
       "types": {
         "bridge_sui.BridgeData": {
-          "num_txs": 508,
-          "num_mut_refs": 508,
+          "num_txs": 509,
+          "num_mut_refs": 509,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 21,
@@ -8662,15 +8682,15 @@
       }
     },
     "d269c3b7ce2938849940542386940886e5a755f70cc45a6193fcc508cc52f9fa": {
-      "total_num_txs": 496,
-      "total_num_mut_refs": 496,
+      "total_num_txs": 497,
+      "total_num_mut_refs": 497,
       "total_num_instances": 2,
       "total_num_types": 2,
       "total_num_resources": 1,
       "types": {
         "marketplace.Marketplace": {
-          "num_txs": 460,
-          "num_mut_refs": 460,
+          "num_txs": 461,
+          "num_mut_refs": 461,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 24,
@@ -8713,15 +8733,15 @@
       }
     },
     "abcfb562f26105ca94443d628d8d3d96f7c6dcb8983fb1bebfa5a539d204fcc0": {
-      "total_num_txs": 489,
-      "total_num_mut_refs": 489,
+      "total_num_txs": 490,
+      "total_num_mut_refs": 490,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 0,
       "types": {
         "hominidscradle.MintConfig": {
-          "num_txs": 489,
-          "num_mut_refs": 489,
+          "num_txs": 490,
+          "num_mut_refs": 490,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 39,
@@ -8772,6 +8792,37 @@
         }
       }
     },
+    "ad49775a2df5d6cfb04914c7f5105020ad6d4edcf4115feb0d78dbd3a1f5a1de": {
+      "total_num_txs": 478,
+      "total_num_mut_refs": 478,
+      "total_num_instances": 146,
+      "total_num_types": 2,
+      "total_num_resources": 0,
+      "types": {
+        "mafiadogs_casino.HouseData": {
+          "num_txs": 313,
+          "num_mut_refs": 313,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 55,
+          "first_touched_at_checkpoint": 4442871,
+          "first_touched_by_txs": {
+            "7kTNfQQVcet77N2Hjqyi1FVrF4yHm8QuqBgNgkhuSUiU": true
+          }
+        },
+        "mafiadogs_casino.Game": {
+          "num_txs": 165,
+          "num_mut_refs": 165,
+          "num_instances": 145,
+          "is_resource": false,
+          "first_touched_at_epoch": 55,
+          "first_touched_at_checkpoint": 4443879,
+          "first_touched_by_txs": {
+            "7kjqJzfMjkhxUvr234K3MH6H8EdG5857YwAXxGmKntct": true
+          }
+        }
+      }
+    },
     "193f580fcd9961b259ea22a2514b6aa325dd2b594bfbebb6347482ccce35d98b": {
       "total_num_txs": 477,
       "total_num_mut_refs": 477,
@@ -8788,37 +8839,6 @@
           "first_touched_at_checkpoint": 1958274,
           "first_touched_by_txs": {
             "Ddgu4KyBYkty7aC8r6GKt4ENA1BWwuCfXwaRhqGgsAh6": true
-          }
-        }
-      }
-    },
-    "ad49775a2df5d6cfb04914c7f5105020ad6d4edcf4115feb0d78dbd3a1f5a1de": {
-      "total_num_txs": 472,
-      "total_num_mut_refs": 472,
-      "total_num_instances": 144,
-      "total_num_types": 2,
-      "total_num_resources": 0,
-      "types": {
-        "mafiadogs_casino.HouseData": {
-          "num_txs": 309,
-          "num_mut_refs": 309,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 55,
-          "first_touched_at_checkpoint": 4442871,
-          "first_touched_by_txs": {
-            "7kTNfQQVcet77N2Hjqyi1FVrF4yHm8QuqBgNgkhuSUiU": true
-          }
-        },
-        "mafiadogs_casino.Game": {
-          "num_txs": 163,
-          "num_mut_refs": 163,
-          "num_instances": 143,
-          "is_resource": false,
-          "first_touched_at_epoch": 55,
-          "first_touched_at_checkpoint": 4443879,
-          "first_touched_by_txs": {
-            "7kjqJzfMjkhxUvr234K3MH6H8EdG5857YwAXxGmKntct": true
           }
         }
       }
@@ -9004,6 +9024,26 @@
         }
       }
     },
+    "193a33b36a30444128353f8cefe2fab8fefac3f918f4c267c763f6adb44ead35": {
+      "total_num_txs": 449,
+      "total_num_mut_refs": 449,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 1,
+      "types": {
+        "avatar.Metadata": {
+          "num_txs": 449,
+          "num_mut_refs": 449,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 40,
+          "first_touched_at_checkpoint": 3215089,
+          "first_touched_by_txs": {
+            "FSGhWPTH8xRxgup8rgezhujwuaRcSkcbfTuCC2zosFU5": true
+          }
+        }
+      }
+    },
     "a4cebdf450604dfb142c27cb9a768ca0d6a77b965a6fc435c7d8ccd4bf765e49": {
       "total_num_txs": 433,
       "total_num_mut_refs": 433,
@@ -9024,26 +9064,6 @@
         }
       }
     },
-    "193a33b36a30444128353f8cefe2fab8fefac3f918f4c267c763f6adb44ead35": {
-      "total_num_txs": 432,
-      "total_num_mut_refs": 432,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 1,
-      "types": {
-        "avatar.Metadata": {
-          "num_txs": 432,
-          "num_mut_refs": 432,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 40,
-          "first_touched_at_checkpoint": 3215089,
-          "first_touched_by_txs": {
-            "FSGhWPTH8xRxgup8rgezhujwuaRcSkcbfTuCC2zosFU5": true
-          }
-        }
-      }
-    },
     "f6c246596f8b49a5572085d010215b73242cfc83471d791a73628ffa48f7ab29": {
       "total_num_txs": 429,
       "total_num_mut_refs": 429,
@@ -9060,6 +9080,46 @@
           "first_touched_at_checkpoint": 3964425,
           "first_touched_by_txs": {
             "8so1HHW282Ef1ttZWQXmEwjhdvcnVR4cwcAwUmCPtY7L": true
+          }
+        }
+      }
+    },
+    "371a30d40fcc357a37d412c4750a57303d58c9482e5f51886e46f7bf774028f3": {
+      "total_num_txs": 426,
+      "total_num_mut_refs": 426,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 1,
+      "types": {
+        "MesonStates.GeneralStore": {
+          "num_txs": 426,
+          "num_mut_refs": 426,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 66,
+          "first_touched_at_checkpoint": 5440663,
+          "first_touched_by_txs": {
+            "4H4dTPNTAuqbZ2cKyum9SxR9ffj9NwQK8KpGuYpk6uVt": true
+          }
+        }
+      }
+    },
+    "f145ee6d09aae034924f80672bc76db2415dfd1b1bed863ac289af9d94e2c4fc": {
+      "total_num_txs": 425,
+      "total_num_mut_refs": 425,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 0,
+      "types": {
+        "bucket_oracle.BucketOracle": {
+          "num_txs": 425,
+          "num_mut_refs": 425,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 77,
+          "first_touched_at_checkpoint": 6364081,
+          "first_touched_by_txs": {
+            "7WYy7uVTA5QCzN9KNkaYc1tRqx6vtFDyRjxZsvAZTQYZ": true
           }
         }
       }
@@ -9126,26 +9186,6 @@
         }
       }
     },
-    "371a30d40fcc357a37d412c4750a57303d58c9482e5f51886e46f7bf774028f3": {
-      "total_num_txs": 417,
-      "total_num_mut_refs": 417,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 1,
-      "types": {
-        "MesonStates.GeneralStore": {
-          "num_txs": 417,
-          "num_mut_refs": 417,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 66,
-          "first_touched_at_checkpoint": 5440663,
-          "first_touched_by_txs": {
-            "4H4dTPNTAuqbZ2cKyum9SxR9ffj9NwQK8KpGuYpk6uVt": true
-          }
-        }
-      }
-    },
     "83c600ff2755db6a283e1bc5c177fab20315709510c2f59b00e76408b7607ea2": {
       "total_num_txs": 417,
       "total_num_mut_refs": 417,
@@ -9162,26 +9202,6 @@
           "first_touched_at_checkpoint": 1984232,
           "first_touched_by_txs": {
             "GQy6YEqZRaDnVmioUmmxgL5vrW3gADx6B4i29Xt3SfPD": true
-          }
-        }
-      }
-    },
-    "f145ee6d09aae034924f80672bc76db2415dfd1b1bed863ac289af9d94e2c4fc": {
-      "total_num_txs": 416,
-      "total_num_mut_refs": 416,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 0,
-      "types": {
-        "bucket_oracle.BucketOracle": {
-          "num_txs": 416,
-          "num_mut_refs": 416,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 77,
-          "first_touched_at_checkpoint": 6364081,
-          "first_touched_by_txs": {
-            "7WYy7uVTA5QCzN9KNkaYc1tRqx6vtFDyRjxZsvAZTQYZ": true
           }
         }
       }
@@ -9379,6 +9399,37 @@
         }
       }
     },
+    "b42dbb7413b79394e1a0175af6ae22b69a5c7cc5df259cd78072b6818217c027": {
+      "total_num_txs": 361,
+      "total_num_mut_refs": 361,
+      "total_num_instances": 2,
+      "total_num_types": 2,
+      "total_num_resources": 0,
+      "types": {
+        "listings.Store": {
+          "num_txs": 255,
+          "num_mut_refs": 255,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 88,
+          "first_touched_at_checkpoint": 7312745,
+          "first_touched_by_txs": {
+            "ChTK87gqJDb3TCRvhebuwodrUrEPdpLHjV65Rmhwq1pG": true
+          }
+        },
+        "biddings.Store": {
+          "num_txs": 106,
+          "num_mut_refs": 106,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 89,
+          "first_touched_at_checkpoint": 7320785,
+          "first_touched_by_txs": {
+            "GbSu4FWR1iU4eHWPt8Mg8DTxZm2VjcuTBsiRs9P2kASf": true
+          }
+        }
+      }
+    },
     "8b6a4dcb961d65ffe99fdfe65dcfa734f3cadf2df848c30c04569a8461f41252": {
       "total_num_txs": 353,
       "total_num_mut_refs": 353,
@@ -9406,6 +9457,26 @@
           "first_touched_at_checkpoint": 3911167,
           "first_touched_by_txs": {
             "GLJ7pYGajNpzQbanNoRK8btFeXg4PoPao7JVwREgc257": true
+          }
+        }
+      }
+    },
+    "855eb2d260ee42b898266e6df90bfd3c4ed821ccb253a352c159c223244a4b8a": {
+      "total_num_txs": 347,
+      "total_num_mut_refs": 201,
+      "total_num_instances": 2,
+      "total_num_types": 1,
+      "total_num_resources": 0,
+      "types": {
+        "oracle.Oracle": {
+          "num_txs": 347,
+          "num_mut_refs": 201,
+          "num_instances": 2,
+          "is_resource": false,
+          "first_touched_at_epoch": 95,
+          "first_touched_at_checkpoint": 7898892,
+          "first_touched_by_txs": {
+            "4fq5s1i6tdrTD8ap8DBqMDwARRxWtLx3gcVPhdFQFRPF": true
           }
         }
       }
@@ -9450,47 +9521,16 @@
         }
       }
     },
-    "b42dbb7413b79394e1a0175af6ae22b69a5c7cc5df259cd78072b6818217c027": {
-      "total_num_txs": 340,
-      "total_num_mut_refs": 340,
-      "total_num_instances": 2,
-      "total_num_types": 2,
-      "total_num_resources": 0,
-      "types": {
-        "listings.Store": {
-          "num_txs": 238,
-          "num_mut_refs": 238,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 88,
-          "first_touched_at_checkpoint": 7312745,
-          "first_touched_by_txs": {
-            "ChTK87gqJDb3TCRvhebuwodrUrEPdpLHjV65Rmhwq1pG": true
-          }
-        },
-        "biddings.Store": {
-          "num_txs": 102,
-          "num_mut_refs": 102,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 89,
-          "first_touched_at_checkpoint": 7320785,
-          "first_touched_by_txs": {
-            "GbSu4FWR1iU4eHWPt8Mg8DTxZm2VjcuTBsiRs9P2kASf": true
-          }
-        }
-      }
-    },
     "6a4aee9f775b5c4e4affc472c98f3e2f2671efada0193f31d5438f648a2276a6": {
-      "total_num_txs": 340,
-      "total_num_mut_refs": 340,
+      "total_num_txs": 342,
+      "total_num_mut_refs": 342,
       "total_num_instances": 4,
       "total_num_types": 1,
       "total_num_resources": 0,
       "types": {
         "reward_staking.StakingPool": {
-          "num_txs": 340,
-          "num_mut_refs": 340,
+          "num_txs": 342,
+          "num_mut_refs": 342,
           "num_instances": 4,
           "is_resource": false,
           "first_touched_at_epoch": 86,
@@ -9639,15 +9679,15 @@
       }
     },
     "8f2d39a6994b80a54f37f3204b1a60393bbb1945470e414117ca0ab439f9df7e": {
-      "total_num_txs": 294,
-      "total_num_mut_refs": 294,
+      "total_num_txs": 301,
+      "total_num_mut_refs": 301,
       "total_num_instances": 3,
       "total_num_types": 3,
       "total_num_resources": 1,
       "types": {
         "nft_sale.Collection": {
-          "num_txs": 132,
-          "num_mut_refs": 132,
+          "num_txs": 133,
+          "num_mut_refs": 133,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 73,
@@ -9657,8 +9697,8 @@
           }
         },
         "nft_stake.Record": {
-          "num_txs": 81,
-          "num_mut_refs": 81,
+          "num_txs": 84,
+          "num_mut_refs": 84,
           "num_instances": 1,
           "is_resource": false,
           "first_touched_at_epoch": 73,
@@ -9668,8 +9708,8 @@
           }
         },
         "nft_stake.Collection": {
-          "num_txs": 81,
-          "num_mut_refs": 81,
+          "num_txs": 84,
+          "num_mut_refs": 84,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 73,
@@ -9864,6 +9904,46 @@
         }
       }
     },
+    "3ac8d096a3ee492d40cfe5307f2df364e30b6da6cb515266bca901fc08211d89": {
+      "total_num_txs": 276,
+      "total_num_mut_refs": 276,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 1,
+      "types": {
+        "router.AftermathRouterWrapper": {
+          "num_txs": 276,
+          "num_mut_refs": 276,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 83,
+          "first_touched_at_checkpoint": 6826215,
+          "first_touched_by_txs": {
+            "HvJc7TLi3p72QyYKDs5KVpLPA7XibSL4237afmRF3q9N": true
+          }
+        }
+      }
+    },
+    "8c030db2f932686cc7cebcc2dba154520a7ae73b2377d8803e948cd27edb7d9a": {
+      "total_num_txs": 269,
+      "total_num_mut_refs": 269,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 0,
+      "types": {
+        "farm.RewardPool": {
+          "num_txs": 269,
+          "num_mut_refs": 269,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 97,
+          "first_touched_at_checkpoint": 8019802,
+          "first_touched_by_txs": {
+            "2kzi2fQuZxqma2a4LnHsdhcXLKY5NXG4s9RfUqQnR8HJ": true
+          }
+        }
+      }
+    },
     "6c67d1b78d39518512c84b88ac817bbec57808f00efb99b5b1a6015172a85043": {
       "total_num_txs": 266,
       "total_num_mut_refs": 266,
@@ -9915,46 +9995,6 @@
         }
       }
     },
-    "855eb2d260ee42b898266e6df90bfd3c4ed821ccb253a352c159c223244a4b8a": {
-      "total_num_txs": 264,
-      "total_num_mut_refs": 132,
-      "total_num_instances": 2,
-      "total_num_types": 1,
-      "total_num_resources": 0,
-      "types": {
-        "oracle.Oracle": {
-          "num_txs": 264,
-          "num_mut_refs": 132,
-          "num_instances": 2,
-          "is_resource": false,
-          "first_touched_at_epoch": 95,
-          "first_touched_at_checkpoint": 7898892,
-          "first_touched_by_txs": {
-            "4fq5s1i6tdrTD8ap8DBqMDwARRxWtLx3gcVPhdFQFRPF": true
-          }
-        }
-      }
-    },
-    "3ac8d096a3ee492d40cfe5307f2df364e30b6da6cb515266bca901fc08211d89": {
-      "total_num_txs": 262,
-      "total_num_mut_refs": 262,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 1,
-      "types": {
-        "router.AftermathRouterWrapper": {
-          "num_txs": 262,
-          "num_mut_refs": 262,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 83,
-          "first_touched_at_checkpoint": 6826215,
-          "first_touched_by_txs": {
-            "HvJc7TLi3p72QyYKDs5KVpLPA7XibSL4237afmRF3q9N": true
-          }
-        }
-      }
-    },
     "a34ec46adad168f4a39e12b4fd48a0a48b99f579b74019315b794a991b2c4755": {
       "total_num_txs": 261,
       "total_num_mut_refs": 261,
@@ -9971,6 +10011,26 @@
           "first_touched_at_checkpoint": 1807772,
           "first_touched_by_txs": {
             "3f3A1zt1KvhRUGHDX7WzCpBSZJEq8hBmdBVVHxULJ4op": true
+          }
+        }
+      }
+    },
+    "cc9864d3e331b308875c5fc8da278ee5fdb187ec3923064801e8d2883b80eca1": {
+      "total_num_txs": 260,
+      "total_num_mut_refs": 260,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 1,
+      "types": {
+        "router.KriyaRouterWrapper": {
+          "num_txs": 260,
+          "num_mut_refs": 260,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 83,
+          "first_touched_at_checkpoint": 6826724,
+          "first_touched_by_txs": {
+            "7b2xkUvhLYY8Gs2UtnT7RSdm8Tcanh2Xfdtkm3zSSFHM": true
           }
         }
       }
@@ -9995,36 +10055,16 @@
         }
       }
     },
-    "cc9864d3e331b308875c5fc8da278ee5fdb187ec3923064801e8d2883b80eca1": {
-      "total_num_txs": 256,
-      "total_num_mut_refs": 256,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 1,
-      "types": {
-        "router.KriyaRouterWrapper": {
-          "num_txs": 256,
-          "num_mut_refs": 256,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 83,
-          "first_touched_at_checkpoint": 6826724,
-          "first_touched_by_txs": {
-            "7b2xkUvhLYY8Gs2UtnT7RSdm8Tcanh2Xfdtkm3zSSFHM": true
-          }
-        }
-      }
-    },
     "98f57a65905283297803d8089fae221d104316e257a13eaf10791c5082e65bc3": {
-      "total_num_txs": 255,
-      "total_num_mut_refs": 255,
+      "total_num_txs": 258,
+      "total_num_mut_refs": 258,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 1,
       "types": {
         "stakingmodule.StakingSeason": {
-          "num_txs": 255,
-          "num_mut_refs": 255,
+          "num_txs": 258,
+          "num_mut_refs": 258,
           "num_instances": 1,
           "is_resource": true,
           "first_touched_at_epoch": 75,
@@ -10486,22 +10526,22 @@
         }
       }
     },
-    "8c030db2f932686cc7cebcc2dba154520a7ae73b2377d8803e948cd27edb7d9a": {
-      "total_num_txs": 218,
-      "total_num_mut_refs": 218,
+    "1454bd0be3db3c4be862104bde964913182de6d380aea24b88320505baba5e46": {
+      "total_num_txs": 213,
+      "total_num_mut_refs": 213,
       "total_num_instances": 1,
       "total_num_types": 1,
       "total_num_resources": 0,
       "types": {
-        "farm.RewardPool": {
-          "num_txs": 218,
-          "num_mut_refs": 218,
+        "cetus_clmm_worker.WorkerInfo": {
+          "num_txs": 213,
+          "num_mut_refs": 213,
           "num_instances": 1,
           "is_resource": false,
-          "first_touched_at_epoch": 97,
-          "first_touched_at_checkpoint": 8019802,
+          "first_touched_at_epoch": 50,
+          "first_touched_at_checkpoint": 4085504,
           "first_touched_by_txs": {
-            "2kzi2fQuZxqma2a4LnHsdhcXLKY5NXG4s9RfUqQnR8HJ": true
+            "ERgdTwtzr6bcpKyCUyAKcDEeakrHPJizkQjEA9G6QDTJ": true
           }
         }
       }
@@ -10522,26 +10562,6 @@
           "first_touched_at_checkpoint": 1958874,
           "first_touched_by_txs": {
             "CrH2WEkcRidBafAuF24z1Lxq6ar3FXLEASgbtmFtFqNT": true
-          }
-        }
-      }
-    },
-    "1454bd0be3db3c4be862104bde964913182de6d380aea24b88320505baba5e46": {
-      "total_num_txs": 211,
-      "total_num_mut_refs": 211,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 0,
-      "types": {
-        "cetus_clmm_worker.WorkerInfo": {
-          "num_txs": 211,
-          "num_mut_refs": 211,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 50,
-          "first_touched_at_checkpoint": 4085504,
-          "first_touched_by_txs": {
-            "ERgdTwtzr6bcpKyCUyAKcDEeakrHPJizkQjEA9G6QDTJ": true
           }
         }
       }
@@ -11208,6 +11228,26 @@
         }
       }
     },
+    "1ec6a8c5ac0b8b97c287cd34b9fc6a94b53a07c930a8505952679dc8d4b3780a": {
+      "total_num_txs": 144,
+      "total_num_mut_refs": 144,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 1,
+      "types": {
+        "router.CetusRouterWrapper": {
+          "num_txs": 144,
+          "num_mut_refs": 144,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 83,
+          "first_touched_at_checkpoint": 6826482,
+          "first_touched_by_txs": {
+            "3s3LsBYh76UN6STA11ibtsEAi7GDvv5FEMxnRgkYFzyT": true
+          }
+        }
+      }
+    },
     "993005b486c721b2267c88df835166f3db452732d6125480fde2f89f70715ebd": {
       "total_num_txs": 144,
       "total_num_mut_refs": 144,
@@ -11224,6 +11264,26 @@
           "first_touched_at_checkpoint": 2164202,
           "first_touched_by_txs": {
             "FXEhSpFYgC46XqK54WPJyFWXLUgdsHyKfuC5c3srp2jt": true
+          }
+        }
+      }
+    },
+    "0f460b32bc4aae750e803c6ce1f0e231b47f4209cd0a644990e6ab0491c68e00": {
+      "total_num_txs": 143,
+      "total_num_mut_refs": 143,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 1,
+      "types": {
+        "router.InterestProtocolRouterWrapper": {
+          "num_txs": 143,
+          "num_mut_refs": 143,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 83,
+          "first_touched_at_checkpoint": 6826683,
+          "first_touched_by_txs": {
+            "DNkkHCygbM9SAYiAtd9hMPiLzR1tBHqEH2s89U5bJ6TC": true
           }
         }
       }
@@ -11368,26 +11428,6 @@
           "first_touched_at_checkpoint": 5245183,
           "first_touched_by_txs": {
             "8zdPt2qhYddzcLnm5R5gdKA1bAgUFxFBSmA4Tdb3VFuh": true
-          }
-        }
-      }
-    },
-    "0f460b32bc4aae750e803c6ce1f0e231b47f4209cd0a644990e6ab0491c68e00": {
-      "total_num_txs": 140,
-      "total_num_mut_refs": 140,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 1,
-      "types": {
-        "router.InterestProtocolRouterWrapper": {
-          "num_txs": 140,
-          "num_mut_refs": 140,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 83,
-          "first_touched_at_checkpoint": 6826683,
-          "first_touched_by_txs": {
-            "DNkkHCygbM9SAYiAtd9hMPiLzR1tBHqEH2s89U5bJ6TC": true
           }
         }
       }
@@ -11584,26 +11624,6 @@
         }
       }
     },
-    "69bcf8027160e11d8175aa8b27ebb46973fca9f2ee7d037daa82d9e732e0d754": {
-      "total_num_txs": 129,
-      "total_num_mut_refs": 129,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 1,
-      "types": {
-        "router_script.Crypto": {
-          "num_txs": 129,
-          "num_mut_refs": 129,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 99,
-          "first_touched_at_checkpoint": 8234470,
-          "first_touched_by_txs": {
-            "DmgdTL29LANEkV4RR2WW4rT7pYzLv9mUp4Fpkdnw128C": true
-          }
-        }
-      }
-    },
     "68aac2d6a88bc1e868c48ee99918b71373877308f7e63cb22ac1971cad9d6e67": {
       "total_num_txs": 127,
       "total_num_mut_refs": 60,
@@ -11642,26 +11662,6 @@
           "first_touched_at_checkpoint": 1817020,
           "first_touched_by_txs": {
             "9LYrETVZdMRW4Ne3844478K1y9agEy4hvUjoHMpXfsPh": true
-          }
-        }
-      }
-    },
-    "1ec6a8c5ac0b8b97c287cd34b9fc6a94b53a07c930a8505952679dc8d4b3780a": {
-      "total_num_txs": 126,
-      "total_num_mut_refs": 126,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 1,
-      "types": {
-        "router.CetusRouterWrapper": {
-          "num_txs": 126,
-          "num_mut_refs": 126,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 83,
-          "first_touched_at_checkpoint": 6826482,
-          "first_touched_by_txs": {
-            "3s3LsBYh76UN6STA11ibtsEAi7GDvv5FEMxnRgkYFzyT": true
           }
         }
       }
@@ -12553,6 +12553,26 @@
         }
       }
     },
+    "bbba13281a7b2091a979c81645967604412906dda7fbe5f07e195501a4b2b261": {
+      "total_num_txs": 94,
+      "total_num_mut_refs": 1,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 0,
+      "types": {
+        "insta_management.InstaConfig": {
+          "num_txs": 94,
+          "num_mut_refs": 1,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 99,
+          "first_touched_at_checkpoint": 8237627,
+          "first_touched_by_txs": {
+            "7J4aJzYjsCthnLCjRWsSyNq4ApiuKQhVuMEoYGJvcrCx": true
+          }
+        }
+      }
+    },
     "34bfc0533f41e3412c55c7fe9947bb8097106b9cf2d58bfe95b114c028d7df2b": {
       "total_num_txs": 93,
       "total_num_mut_refs": 77,
@@ -13030,6 +13050,26 @@
         }
       }
     },
+    "583ffc51d8ceb08a5cdd1f681600e4affb4d05773effc4d5cb7c982c9e80d6d9": {
+      "total_num_txs": 76,
+      "total_num_mut_refs": 76,
+      "total_num_instances": 2,
+      "total_num_types": 1,
+      "total_num_resources": 1,
+      "types": {
+        "cetus_staking.TokenRegistry": {
+          "num_txs": 76,
+          "num_mut_refs": 76,
+          "num_instances": 2,
+          "is_resource": true,
+          "first_touched_at_epoch": 90,
+          "first_touched_at_checkpoint": 7485300,
+          "first_touched_by_txs": {
+            "C4AorHLaR2Crs1E5usRb4vuNSQKiriG3MLbwQAouPkSn": true
+          }
+        }
+      }
+    },
     "81ea8e3d4f8bdeac83174028d66b993bf3bc35325583d5283f93bcd46338beff": {
       "total_num_txs": 75,
       "total_num_mut_refs": 75,
@@ -13168,26 +13208,6 @@
           "first_touched_at_checkpoint": 2467486,
           "first_touched_by_txs": {
             "Gn8QJEQe3upUo48e26jVY141WjkvcaGx9URamCkkZnNt": true
-          }
-        }
-      }
-    },
-    "583ffc51d8ceb08a5cdd1f681600e4affb4d05773effc4d5cb7c982c9e80d6d9": {
-      "total_num_txs": 73,
-      "total_num_mut_refs": 73,
-      "total_num_instances": 2,
-      "total_num_types": 1,
-      "total_num_resources": 1,
-      "types": {
-        "cetus_staking.TokenRegistry": {
-          "num_txs": 73,
-          "num_mut_refs": 73,
-          "num_instances": 2,
-          "is_resource": true,
-          "first_touched_at_epoch": 90,
-          "first_touched_at_checkpoint": 7485300,
-          "first_touched_by_txs": {
-            "C4AorHLaR2Crs1E5usRb4vuNSQKiriG3MLbwQAouPkSn": true
           }
         }
       }
@@ -15079,6 +15099,26 @@
         }
       }
     },
+    "2880a6bbbd8636d9e39cd35cebf78154e3843f08cf846cadb920f3f008ce1b89": {
+      "total_num_txs": 42,
+      "total_num_mut_refs": 42,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 1,
+      "types": {
+        "router.TurbosRouterWrapper": {
+          "num_txs": 42,
+          "num_mut_refs": 42,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 83,
+          "first_touched_at_checkpoint": 6826631,
+          "first_touched_by_txs": {
+            "HM1wxVMRJJ46zhDzuLj5PT3kKum6c2Ab46Xkh6NFFxU4": true
+          }
+        }
+      }
+    },
     "f8575cc273f63ef4c7ae09bd0be41c2efa83aabe48127f5fceeac32fea099c06": {
       "total_num_txs": 42,
       "total_num_mut_refs": 42,
@@ -15370,26 +15410,6 @@
           "first_touched_at_checkpoint": 1572836,
           "first_touched_by_txs": {
             "2qGa3JacFRgMHJRzXgmPkFmCKiv5zAgLa8FPHhrNSP2d": false
-          }
-        }
-      }
-    },
-    "2880a6bbbd8636d9e39cd35cebf78154e3843f08cf846cadb920f3f008ce1b89": {
-      "total_num_txs": 38,
-      "total_num_mut_refs": 38,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 1,
-      "types": {
-        "router.TurbosRouterWrapper": {
-          "num_txs": 38,
-          "num_mut_refs": 38,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 83,
-          "first_touched_at_checkpoint": 6826631,
-          "first_touched_by_txs": {
-            "HM1wxVMRJJ46zhDzuLj5PT3kKum6c2Ab46Xkh6NFFxU4": true
           }
         }
       }
@@ -16059,6 +16079,59 @@
         }
       }
     },
+    "5e3c893794e61cd06a37b7f2f5269ad8a1c60f0722cb1e7810be5d9d1858e664": {
+      "total_num_txs": 31,
+      "total_num_mut_refs": 31,
+      "total_num_instances": 6,
+      "total_num_types": 4,
+      "total_num_resources": 0,
+      "types": {
+        "suifren_dao.Dao": {
+          "num_txs": 17,
+          "num_mut_refs": 17,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 92,
+          "first_touched_at_checkpoint": 7580621,
+          "first_touched_by_txs": {
+            "AY4UUQ8UKqtUaMfhX1HroR7xmVJoVQsBJvaBTtRTwLic": true
+          }
+        },
+        "dao.Dao": {
+          "num_txs": 10,
+          "num_mut_refs": 10,
+          "num_instances": 3,
+          "is_resource": false,
+          "first_touched_at_epoch": 92,
+          "first_touched_at_checkpoint": 7620716,
+          "first_touched_by_txs": {
+            "HZ6aSnKzxft3eeqfGib3zcKR6voctzzuNtQBypKjbBzo": true
+          }
+        },
+        "dao.DaoHub": {
+          "num_txs": 3,
+          "num_mut_refs": 3,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 92,
+          "first_touched_at_checkpoint": 7579523,
+          "first_touched_by_txs": {
+            "9rvXJmfntWtnXKtvpvD7WTwgnuV3yecZ9gMLas8qsV26": true
+          }
+        },
+        "suifren_subdao.SubDao": {
+          "num_txs": 1,
+          "num_mut_refs": 1,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 97,
+          "first_touched_at_checkpoint": 8029287,
+          "first_touched_by_txs": {
+            "6vRVoVAapGPX83mhdEQmLBAAHfcZiJsbZBnMJ5AYY7cA": true
+          }
+        }
+      }
+    },
     "ba0311e40e1a18d048a20a0cbd1f5ca50c7b8a3c9b06e9b08f4e76b2489b2830": {
       "total_num_txs": 31,
       "total_num_mut_refs": 31,
@@ -16168,59 +16241,6 @@
           "first_touched_at_checkpoint": 5373357,
           "first_touched_by_txs": {
             "GVES7TkPnieaL3XmdimoMKJNuE1aXmqv6LcJGw7zEPHW": true
-          }
-        }
-      }
-    },
-    "5e3c893794e61cd06a37b7f2f5269ad8a1c60f0722cb1e7810be5d9d1858e664": {
-      "total_num_txs": 30,
-      "total_num_mut_refs": 30,
-      "total_num_instances": 6,
-      "total_num_types": 4,
-      "total_num_resources": 0,
-      "types": {
-        "suifren_dao.Dao": {
-          "num_txs": 16,
-          "num_mut_refs": 16,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 92,
-          "first_touched_at_checkpoint": 7580621,
-          "first_touched_by_txs": {
-            "AY4UUQ8UKqtUaMfhX1HroR7xmVJoVQsBJvaBTtRTwLic": true
-          }
-        },
-        "dao.Dao": {
-          "num_txs": 10,
-          "num_mut_refs": 10,
-          "num_instances": 3,
-          "is_resource": false,
-          "first_touched_at_epoch": 92,
-          "first_touched_at_checkpoint": 7620716,
-          "first_touched_by_txs": {
-            "HZ6aSnKzxft3eeqfGib3zcKR6voctzzuNtQBypKjbBzo": true
-          }
-        },
-        "dao.DaoHub": {
-          "num_txs": 3,
-          "num_mut_refs": 3,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 92,
-          "first_touched_at_checkpoint": 7579523,
-          "first_touched_by_txs": {
-            "9rvXJmfntWtnXKtvpvD7WTwgnuV3yecZ9gMLas8qsV26": true
-          }
-        },
-        "suifren_subdao.SubDao": {
-          "num_txs": 1,
-          "num_mut_refs": 1,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 97,
-          "first_touched_at_checkpoint": 8029287,
-          "first_touched_by_txs": {
-            "6vRVoVAapGPX83mhdEQmLBAAHfcZiJsbZBnMJ5AYY7cA": true
           }
         }
       }
@@ -16611,6 +16631,26 @@
           "first_touched_at_checkpoint": 3211939,
           "first_touched_by_txs": {
             "6vBhge4TEdcRcWgKjM1MiaxDFG1qDLe2RGw5J7WAXX7Q": true
+          }
+        }
+      }
+    },
+    "ca7ba1c8700a67145c4b700c900cb9bb137ef2e2a9e59cb63b7a71136c57ab4b": {
+      "total_num_txs": 27,
+      "total_num_mut_refs": 27,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 0,
+      "types": {
+        "coinflip.GamePool": {
+          "num_txs": 27,
+          "num_mut_refs": 27,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 100,
+          "first_touched_at_checkpoint": 8282966,
+          "first_touched_by_txs": {
+            "8AiMFZJV4ZqWYhffQF51zTosDbSmgtR7GTaTadj57FXS": true
           }
         }
       }
@@ -17598,6 +17638,26 @@
         }
       }
     },
+    "b7a0d251a9f307b80b1595c87622118e401dc613591b3435786bb7c147599dae": {
+      "total_num_txs": 20,
+      "total_num_mut_refs": 20,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 0,
+      "types": {
+        "cetus_clmm_worker.WorkerInfo": {
+          "num_txs": 20,
+          "num_mut_refs": 20,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 50,
+          "first_touched_at_checkpoint": 4085680,
+          "first_touched_by_txs": {
+            "7W5qywdG4xEgFmVX1q8jq7Wrr4GPVueATaq9WuvAEBG7": true
+          }
+        }
+      }
+    },
     "7cd04d8756b4e9e904c7b7ec9510be520d1a3d9342436842b185ba022d0f4451": {
       "total_num_txs": 19,
       "total_num_mut_refs": 19,
@@ -17933,26 +17993,6 @@
           "first_touched_at_checkpoint": 3422477,
           "first_touched_by_txs": {
             "7D2yu4XuRPVPd4A6JT8AnjCEjigA4DF3ZucmCJJxJYrB": true
-          }
-        }
-      }
-    },
-    "b7a0d251a9f307b80b1595c87622118e401dc613591b3435786bb7c147599dae": {
-      "total_num_txs": 19,
-      "total_num_mut_refs": 19,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 0,
-      "types": {
-        "cetus_clmm_worker.WorkerInfo": {
-          "num_txs": 19,
-          "num_mut_refs": 19,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 50,
-          "first_touched_at_checkpoint": 4085680,
-          "first_touched_by_txs": {
-            "7W5qywdG4xEgFmVX1q8jq7Wrr4GPVueATaq9WuvAEBG7": true
           }
         }
       }
@@ -20211,22 +20251,22 @@
         }
       }
     },
-    "ca7ba1c8700a67145c4b700c900cb9bb137ef2e2a9e59cb63b7a71136c57ab4b": {
+    "f63c58d762286cff1ef8eab36a24c836d23ec0ca19eacbafec7a0275a09cd520": {
       "total_num_txs": 10,
       "total_num_mut_refs": 10,
       "total_num_instances": 1,
       "total_num_types": 1,
-      "total_num_resources": 0,
+      "total_num_resources": 1,
       "types": {
-        "coinflip.GamePool": {
+        "router.DeepBookRouterWrapper": {
           "num_txs": 10,
           "num_mut_refs": 10,
           "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 100,
-          "first_touched_at_checkpoint": 8282966,
+          "is_resource": true,
+          "first_touched_at_epoch": 83,
+          "first_touched_at_checkpoint": 6826354,
           "first_touched_by_txs": {
-            "8AiMFZJV4ZqWYhffQF51zTosDbSmgtR7GTaTadj57FXS": true
+            "4FQDVSh5wze384A1ahDhgiyfHyPeaqY9QnHMogxiuDzB": true
           }
         }
       }
@@ -20857,26 +20897,6 @@
           "first_touched_at_checkpoint": 2113172,
           "first_touched_by_txs": {
             "5WBqRsgp5BLRZNNyh1aM4dXSBrW7UJFwzbuYUtag1NwE": true
-          }
-        }
-      }
-    },
-    "f63c58d762286cff1ef8eab36a24c836d23ec0ca19eacbafec7a0275a09cd520": {
-      "total_num_txs": 9,
-      "total_num_mut_refs": 9,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 1,
-      "types": {
-        "router.DeepBookRouterWrapper": {
-          "num_txs": 9,
-          "num_mut_refs": 9,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 83,
-          "first_touched_at_checkpoint": 6826354,
-          "first_touched_by_txs": {
-            "4FQDVSh5wze384A1ahDhgiyfHyPeaqY9QnHMogxiuDzB": true
           }
         }
       }
@@ -21897,6 +21917,26 @@
         }
       }
     },
+    "e2b3f9a40c7bcaee5c8f4c9f8c3e22ee5c9bdde836a85b6e43475d24a21ca248": {
+      "total_num_txs": 8,
+      "total_num_mut_refs": 8,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 0,
+      "types": {
+        "my_minter.Minter": {
+          "num_txs": 8,
+          "num_mut_refs": 8,
+          "num_instances": 1,
+          "is_resource": false,
+          "first_touched_at_epoch": 26,
+          "first_touched_at_checkpoint": 2002703,
+          "first_touched_by_txs": {
+            "6Z4LGhKTgzYJpeCiWhhyK9RFFenpmUF6EWiTFmAphQT": true
+          }
+        }
+      }
+    },
     "313abe6e8b30224a379543b414d9bc032dd055908b3bed87a2cdb5d58dfede08": {
       "total_num_txs": 8,
       "total_num_mut_refs": 8,
@@ -22641,6 +22681,26 @@
         }
       }
     },
+    "7e7503503615f086e4cf7aafe6d047be6b1af70c2e1751ff1ae17731280baa36": {
+      "total_num_txs": 7,
+      "total_num_mut_refs": 7,
+      "total_num_instances": 1,
+      "total_num_types": 1,
+      "total_num_resources": 1,
+      "types": {
+        "kiosk_marketplace.MarketplaceConfig": {
+          "num_txs": 7,
+          "num_mut_refs": 7,
+          "num_instances": 1,
+          "is_resource": true,
+          "first_touched_at_epoch": 98,
+          "first_touched_at_checkpoint": 8169031,
+          "first_touched_by_txs": {
+            "BvNXviSw61HtqxW6FSepHCKQGhU8R7VMZ5wBvmsxC8Gf": true
+          }
+        }
+      }
+    },
     "cdb90cf33b71e8b4f71edc70d1fef178bf0f1e169561c7e2efad18600bd5806a": {
       "total_num_txs": 7,
       "total_num_mut_refs": 7,
@@ -22948,6 +23008,37 @@
           "first_touched_at_checkpoint": 2641720,
           "first_touched_by_txs": {
             "3n4aFFeUb5ZhwSZpPTaj3rAiXLiSqA74KeV3FiLASnVb": true
+          }
+        }
+      }
+    },
+    "7b8368820ad59f241962f0f5890e7de024d1141f38651d055ce9735fe08d7a8a": {
+      "total_num_txs": 6,
+      "total_num_mut_refs": 6,
+      "total_num_instances": 6,
+      "total_num_types": 2,
+      "total_num_resources": 2,
+      "types": {
+        "raffle.Raffle": {
+          "num_txs": 4,
+          "num_mut_refs": 4,
+          "num_instances": 4,
+          "is_resource": true,
+          "first_touched_at_epoch": 98,
+          "first_touched_at_checkpoint": 8155350,
+          "first_touched_by_txs": {
+            "J7Xya3G1rC5xjbUZPjeNdaDgpCbmWuTtAhzmhJPX2aq": true
+          }
+        },
+        "nft_raffle.NFT_Raffle": {
+          "num_txs": 2,
+          "num_mut_refs": 2,
+          "num_instances": 2,
+          "is_resource": true,
+          "first_touched_at_epoch": 101,
+          "first_touched_at_checkpoint": 8384683,
+          "first_touched_by_txs": {
+            "FhX4GRvA1gLAG99LBjHnFSt4qaBvUfnR2em6YGJTpXEV": true
           }
         }
       }
@@ -23856,26 +23947,6 @@
           "first_touched_at_checkpoint": 3465332,
           "first_touched_by_txs": {
             "7QXGe9SgSdv7LqMwqXux6DMnBcXVtxrJBejGR8z48Rxj": true
-          }
-        }
-      }
-    },
-    "e2b3f9a40c7bcaee5c8f4c9f8c3e22ee5c9bdde836a85b6e43475d24a21ca248": {
-      "total_num_txs": 6,
-      "total_num_mut_refs": 6,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 0,
-      "types": {
-        "my_minter.Minter": {
-          "num_txs": 6,
-          "num_mut_refs": 6,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 26,
-          "first_touched_at_checkpoint": 2002703,
-          "first_touched_by_txs": {
-            "6Z4LGhKTgzYJpeCiWhhyK9RFFenpmUF6EWiTFmAphQT": true
           }
         }
       }
@@ -25003,26 +25074,6 @@
         }
       }
     },
-    "bbba13281a7b2091a979c81645967604412906dda7fbe5f07e195501a4b2b261": {
-      "total_num_txs": 5,
-      "total_num_mut_refs": 1,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 0,
-      "types": {
-        "insta_management.InstaConfig": {
-          "num_txs": 5,
-          "num_mut_refs": 1,
-          "num_instances": 1,
-          "is_resource": false,
-          "first_touched_at_epoch": 99,
-          "first_touched_at_checkpoint": 8237627,
-          "first_touched_by_txs": {
-            "7J4aJzYjsCthnLCjRWsSyNq4ApiuKQhVuMEoYGJvcrCx": true
-          }
-        }
-      }
-    },
     "f4129b2dfd7e6e1563878e1c74059a525213da6af34e33f5f2b7d732a1d78c30": {
       "total_num_txs": 5,
       "total_num_mut_refs": 5,
@@ -25379,26 +25430,6 @@
           "first_touched_at_checkpoint": 3475585,
           "first_touched_by_txs": {
             "4U3gXkCwUsD1RqoEA6noXPGWxVo2wvcTtXwMAXUWvc4m": true
-          }
-        }
-      }
-    },
-    "7b8368820ad59f241962f0f5890e7de024d1141f38651d055ce9735fe08d7a8a": {
-      "total_num_txs": 4,
-      "total_num_mut_refs": 4,
-      "total_num_instances": 4,
-      "total_num_types": 1,
-      "total_num_resources": 1,
-      "types": {
-        "raffle.Raffle": {
-          "num_txs": 4,
-          "num_mut_refs": 4,
-          "num_instances": 4,
-          "is_resource": true,
-          "first_touched_at_epoch": 98,
-          "first_touched_at_checkpoint": 8155350,
-          "first_touched_by_txs": {
-            "J7Xya3G1rC5xjbUZPjeNdaDgpCbmWuTtAhzmhJPX2aq": true
           }
         }
       }
@@ -26649,26 +26680,6 @@
           "first_touched_at_checkpoint": 6954605,
           "first_touched_by_txs": {
             "7YwAHScRY9LHDPocJAfedZD6WtLzDyNdDtpAvw4PYSp7": true
-          }
-        }
-      }
-    },
-    "7e7503503615f086e4cf7aafe6d047be6b1af70c2e1751ff1ae17731280baa36": {
-      "total_num_txs": 4,
-      "total_num_mut_refs": 4,
-      "total_num_instances": 1,
-      "total_num_types": 1,
-      "total_num_resources": 1,
-      "types": {
-        "kiosk_marketplace.MarketplaceConfig": {
-          "num_txs": 4,
-          "num_mut_refs": 4,
-          "num_instances": 1,
-          "is_resource": true,
-          "first_touched_at_epoch": 98,
-          "first_touched_at_checkpoint": 8169031,
-          "first_touched_by_txs": {
-            "BvNXviSw61HtqxW6FSepHCKQGhU8R7VMZ5wBvmsxC8Gf": true
           }
         }
       }
