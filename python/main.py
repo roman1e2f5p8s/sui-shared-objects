@@ -16,6 +16,8 @@ plt.rcParams.update({'font.size': 14, 'font.family': 'sans-serif'})
 
 fig, (ax1, ax2, ax3, ax4, ax5, ax6, ax7) = plt.subplots(nrows=NUM_SUBPLOTS, ncols=1, figsize=(10, NUM_SUBPLOTS * 7))
 
+print('Total number of scanned TXs: {}'.format(main_df['num_txs_total'].sum()))
+
 ax1.axhline(y=0, linestyle=':', linewidth=1, color='black')
 ax1.axvline(x=85, linestyle='-.', linewidth=1, color='red', label='Bullshark Quest 1 start')
 ax1.plot(main_df['num_txs_total'], linewidth=2, linestyle='--', marker='o', color='orange')

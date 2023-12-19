@@ -71,3 +71,22 @@ pub fn process_tx_inputs(tx_block: &Option<SuiTransactionBlock>) -> TxInfo {
         shared_objects: Vec::new()
     }
 }
+
+
+pub fn get_imm_or_owned_input_objects(tx_block: &Option<SuiTransactionBlock>) -> Vec<String> {
+    let SuiTransactionBlockData::V1(tx_data_v1) = &tx_block.as_ref().unwrap().data;
+
+    if let SuiTransactionBlockKind::ProgrammableTransaction(prog_tx) = &tx_data_v1.transaction {
+        let mut imm_or_owned_objects: Vec<String> = Vec::new();
+
+        for input in prog_tx.inputs.iter() {
+            if let SuiCallArg::Object(obj) = input {
+                if let SuiObjectArg::ImmOrOwnedObject {object_id, ..} = obj {
+                    imm_or_owned_objects.push(object_id.to_string());
+                }
+            }
+        }
+        return imm_or_owned_objects;
+    }
+    Vec::new()
+}
