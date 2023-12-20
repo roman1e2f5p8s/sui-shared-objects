@@ -97,3 +97,49 @@ ax.indicate_inset_zoom(right_subax)
 fig.tight_layout()
 plt.savefig('./../results/workspace1/tx-number.pdf', format='pdf')
 # transaction number ---------------------------------------------------------
+
+
+# contention degree ---------------------------------------------------------
+fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(9, 6), dpi=300)
+
+ax.axvspan(BULLSHARK_QUEST_1_START, BULLSHARK_QUEST_1_END, alpha=0.3, color='red', label='Bullshark Quest 1')
+ax.axhline(y=0, linestyle=':', linewidth=1, color='black')
+ax.axhline(y=1, linestyle='-.', linewidth=1, color='black')
+
+for col in interval_df:
+    if 'degree' in col:
+        ax.plot(interval_df[col], linewidth=2, label='{} checkpoint{}'.format(col.split('.')[0],
+            's' if not col.split('.')[0] == '1' else ''))
+# ax.set_title('Average number of TXs touching the same shared object within an interval')
+
+ax.set_xlabel('Epoch')
+ax.set_ylabel('Contention degree')
+ax.set_yticks([0, 1, 2, 4, 6, 8, 10, 12, 14, 16, 18])
+ax.minorticks_on()
+ax.legend(loc='upper left')
+
+fig.tight_layout()
+plt.savefig('./../results/workspace1/contention-degree.pdf', format='pdf')
+# contention degree ---------------------------------------------------------
+
+
+# ---------------------------------------------------------
+fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(9, 6), dpi=300)
+
+ax.axvspan(BULLSHARK_QUEST_1_START, BULLSHARK_QUEST_1_END, alpha=0.3, color='red', label='Bullshark Quest 1')
+ax.axhline(y=0, linestyle=':', linewidth=1, color='black')
+
+for col in interval_df:
+    if not 'degree' in col:
+        ax.plot(interval_df[col], linewidth=2, label='{} checkpoint{}'.format(col.split('.')[0],
+            's' if not col.split('.')[0] == '1' else ''))
+
+ax.set_xlabel('Epoch')
+ax.set_ylabel('Contended fraction')
+# ax.set_yticks([0, 1, 2, 4, 6, 8, 10, 12, 14, 16, 18])
+ax.minorticks_on()
+ax.legend(loc='upper left')
+
+fig.tight_layout()
+plt.savefig('./../results/workspace1/contended-fraction.pdf', format='pdf')
+# ---------------------------------------------------------
