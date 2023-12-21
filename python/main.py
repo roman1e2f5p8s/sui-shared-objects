@@ -83,4 +83,5 @@ ax7.set_ylabel('Avg object touchability')
 ax7.minorticks_on()
 ax7.legend()
 
+fig.tight_layout()
 plt.savefig('./../results/workspace1/figure.png', format='png')
