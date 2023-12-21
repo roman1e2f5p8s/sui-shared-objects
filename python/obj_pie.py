@@ -11,17 +11,17 @@ with open(FILE, 'r') as f:
 N_OBJS = 13
 OBJ_ID_NAME_MAP = {
         '00b53b0f4174108627fbee72e2498b58d6a2714cded53fac537034c220d26302.price_info.PriceInfoObject': 'PriceInfoObject @Pyth Network',
-        '0000000000000000000000000000000000000000000000000000000000000002.clock.Clock': 'Clock @Sui Framework',
+        '0000000000000000000000000000000000000000000000000000000000000002.clock.Clock': 'Clock* @Sui Framework',
         '0000000000000000000000000000000000000000000000000000000000000002.kiosk.Kiosk': 'Kiosk @Sui Framework',
-        '5306f64e312b581766351c07af79c72fcb1cd25147157fdc2f8ad76de9a3fb6a.state.State': 'State @Wormhole',
-        '00b53b0f4174108627fbee72e2498b58d6a2714cded53fac537034c220d26302.state.State': 'State @Pyth Network',
+        '5306f64e312b581766351c07af79c72fcb1cd25147157fdc2f8ad76de9a3fb6a.state.State': 'State* @Wormhole',
+        '00b53b0f4174108627fbee72e2498b58d6a2714cded53fac537034c220d26302.state.State': 'State* @Pyth Network',
         'a0eba10b173538c8fecca1dff298e488402cc9ff374f8a12ca7758eebe830b66.spot_dex.Pool': 'Pool @Kriya DEX',
-        'd899cf7d2b5db716bd2cf55599fb0d5ee38a3061e7b6bb6eebf73fa5bc4c81ca.storage.Storage': 'Storage @0xd...1ca',
+        'd899cf7d2b5db716bd2cf55599fb0d5ee38a3061e7b6bb6eebf73fa5bc4c81ca.storage.Storage': 'Storage* @0xd...1ca',
         'd899cf7d2b5db716bd2cf55599fb0d5ee38a3061e7b6bb6eebf73fa5bc4c81ca.pool.Pool': 'Pool @0xd...1ca',
         '1eabed72c53feb3805120a081dc15963c204dc8d091542592abaf7a35689b2fb.pool.Pool': 'Pool @Cetus',
-        '1eabed72c53feb3805120a081dc15963c204dc8d091542592abaf7a35689b2fb.config.GlobalConfig': 'GlobalConfig @Cetus',
+        '1eabed72c53feb3805120a081dc15963c204dc8d091542592abaf7a35689b2fb.config.GlobalConfig': 'GlobalConfigig* @Cetus',
         '745a16ea148a7b3d1f6e68d0f16237f954e99197cd0ffb96e70c994c946d60d1.coin_flip.Game': 'Game @DeSuiLabs Coin Flip',
-        '745a16ea148a7b3d1f6e68d0f16237f954e99197cd0ffb96e70c994c946d60d1.coin_flip.HouseData': 'HouseData @DeSuiLabs Coin Flip',
+        '745a16ea148a7b3d1f6e68d0f16237f954e99197cd0ffb96e70c994c946d60d1.coin_flip.HouseData': 'HouseData* @DeSuiLabs Coin Flip',
         'ceab84acf6bf70f503c3b0627acaff6b3f84cee0f2d7ed53d00fa6c2a168d14f': 'ABEx Core',
         '91bfbc386a41afcfd9b2533058d7e915a1d3829089cc268ff4333d54d6339ca1': 'Turbos Finance',
         'efe8b36d5b2e43728cc323298626b83177803521d195cfb11e15b910e892fddf': 'Scallop',
@@ -113,7 +113,7 @@ for i, patch in enumerate(patches):
             ax.annotate(autotexts[i].get_text(), xy=(x, y), xytext=(0.2*np.sign(x) + 0.33*k, (1.62 - 0.01*k)*y),
                     horizontalalignment=horizontalalignment, **kw)
         else:
-            ax.annotate(autotexts[i].get_text(), xy=(x, y), xytext=(0.2*np.sign(x) + 0.107*k, (1.10 + 0.0*k)*y),
+            ax.annotate(autotexts[i].get_text(), xy=(x, y), xytext=(0.2*np.sign(x) + 0.101*k, (1.08 + 0.0*k)*y),
                     horizontalalignment=horizontalalignment, **kw)
         autotexts[i].set_visible(False)
         k += 1
