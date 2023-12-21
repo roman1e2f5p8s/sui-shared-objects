@@ -9,7 +9,7 @@ with open(FILE, 'r') as f:
     data = json.load(f);
 
 N_APPS = 11
-PKG_ID_NAME_MAP = {
+APP_ID_NAME_MAP = {
         '00b53b0f4174108627fbee72e2498b58d6a2714cded53fac537034c220d26302': 'Pyth Network',
         '0000000000000000000000000000000000000000000000000000000000000002': 'Sui Framework',
         '5306f64e312b581766351c07af79c72fcb1cd25147157fdc2f8ad76de9a3fb6a': 'Wormhole',
@@ -52,9 +52,9 @@ app_tx_num_map = OrderedDict(sorted(app_tx_num_map.items(), key=lambda x: x[1], 
 i = 0
 app_tx_num_map2 = OrderedDict()
 
-for id_, data in app_tx_num_map.items():
+for id_, tx_num in app_tx_num_map.items():
     if i < N_APPS:
-        app_tx_num_map2[id_] = app_tx_num_map[id_]
+        app_tx_num_map2[id_] = tx_num
         i += 1
     else:
         break
@@ -73,7 +73,7 @@ fig, (ax, ax2) = plt.subplots(nrows=1, ncols=2, figsize=(9, 6), width_ratios=[3,
 labels = []
 for k in app_tx_num_map2.keys():
     try:
-        labels.append(PKG_ID_NAME_MAP[k])
+        labels.append(APP_ID_NAME_MAP[k])
     except KeyError:
         pass
 
