@@ -17,7 +17,7 @@ APP_ID_NAME_MAP = {
         'd899cf7d2b5db716bd2cf55599fb0d5ee38a3061e7b6bb6eebf73fa5bc4c81ca': '0xd...1ca',
         '1eabed72c53feb3805120a081dc15963c204dc8d091542592abaf7a35689b2fb': 'Cetus',
         '745a16ea148a7b3d1f6e68d0f16237f954e99197cd0ffb96e70c994c946d60d1': 'DeSuiLabs Coin Flip',
-        'ceab84acf6bf70f503c3b0627acaff6b3f84cee0f2d7ed53d00fa6c2a168d14f': 'ABEx Core',
+        'ceab84acf6bf70f503c3b0627acaff6b3f84cee0f2d7ed53d00fa6c2a168d14f': 'ABEx Finance',
         '91bfbc386a41afcfd9b2533058d7e915a1d3829089cc268ff4333d54d6339ca1': 'Turbos Finance',
         'efe8b36d5b2e43728cc323298626b83177803521d195cfb11e15b910e892fddf': 'Scallop',
         '000000000000000000000000000000000000000000000000000000000000dee9': 'DeepBook',
