@@ -38,6 +38,8 @@ fn main() {
         epochs: BTreeMap::new(),
     };
 
+    let mut txs_touching_at_least_one_shared_obj_by_mut: HashSet<String> = HashSet::new();
+
     // auxiliary variables to calculate contention level
     let mut counts_per_interval: BTreeMap<u64, IntervalCounts> = args
         .intervals
@@ -76,7 +78,9 @@ fn main() {
             .or_insert(EpochData {
                 num_txs_total: 0,
                 num_txs_touching_shared_objs: 0,
+                num_txs_touching_at_least_one_shared_obj_by_mut: 0,
                 density: 0.0,
+                density_mut: 0.0,
                 num_shared_objects_per_epoch: 0,
                 num_shared_objects_total: 0,
                 num_checkpoints: 0,
@@ -162,16 +166,28 @@ fn main() {
                 //
                 // update the total number of how many times that object
                 // was passed by a mutable reference
-                for (_, mut_ref) in tx_list.into_iter() {
+                for (tx_id, mut_ref) in tx_list.into_iter() {
                     if mut_ref {
                         unique_shared_objects_total
                             .shared_objects
                             .get_mut(&obj_id)
                             .unwrap()
                             .num_mut_refs += 1;
+
+                        // collect unique txs that touch at least one shared object by mut ref
+                        txs_touching_at_least_one_shared_obj_by_mut.insert(tx_id);
                     }
                 } // end of iterating over TX list
             } // end of iterating over objects within a checkpoint
+
+            // Update the number of TXs touching at least one shared object by mut ref
+            epochs_data
+                .epochs
+                .get_mut(&epoch)
+                .unwrap()
+                .num_txs_touching_at_least_one_shared_obj_by_mut += txs_touching_at_least_one_shared_obj_by_mut.len();
+            // clear set for the next checkpoint
+            txs_touching_at_least_one_shared_obj_by_mut.clear();
 
             for interval in &args.intervals {
                 // do this every `interval` checkpoints
@@ -236,6 +252,8 @@ fn main() {
         // total number of scanned TXs per epoch must be equal to the sum of TXs from
         // all checkpoints for that epoch
         assert_eq!(epochs_data.epochs.get(&epoch).unwrap().num_txs_total, result.num_txs_scanned); 
+        assert!(epochs_data.epochs.get(&epoch).unwrap().num_txs_touching_at_least_one_shared_obj_by_mut <=
+            epochs_data.epochs.get(&epoch).unwrap().num_txs_touching_shared_objs);
 
         // Calculate metrics per epoch
         //
@@ -243,6 +261,12 @@ fn main() {
         // shared objects to the total number of TXs per epoch
         epochs_data.epochs.get_mut(&epoch).unwrap().density = 
             epochs_data.epochs.get(&epoch).unwrap().num_txs_touching_shared_objs as f64 /
+            epochs_data.epochs.get(&epoch).unwrap().num_txs_total as f64;
+        //
+        // Calculate mut-density as the ratio of the number of TXs touching
+        // at least one shared object by mut ref to the total number of TXs per epoch
+        epochs_data.epochs.get_mut(&epoch).unwrap().density_mut = 
+            epochs_data.epochs.get(&epoch).unwrap().num_txs_touching_at_least_one_shared_obj_by_mut as f64 /
             epochs_data.epochs.get(&epoch).unwrap().num_txs_total as f64;
         //
         for interval in &args.intervals {

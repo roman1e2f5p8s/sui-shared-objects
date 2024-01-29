@@ -3,7 +3,9 @@
     "0": {
       "num_txs_total": 9771,
       "num_txs_touching_shared_objs": 0,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 0,
       "density": 0.0,
+      "density_mut": 0.0,
       "num_shared_objects_per_epoch": 0,
       "num_shared_objects_total": 0,
       "num_checkpoints": 9770,
@@ -33,7 +35,9 @@
     "1": {
       "num_txs_total": 75403,
       "num_txs_touching_shared_objs": 1,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1,
       "density": 0.00001326207180085673,
+      "density_mut": 0.00001326207180085673,
       "num_shared_objects_per_epoch": 1,
       "num_shared_objects_total": 1,
       "num_checkpoints": 75399,
@@ -63,7 +67,9 @@
     "2": {
       "num_txs_total": 76025,
       "num_txs_touching_shared_objs": 1,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1,
       "density": 0.000013153567905294311,
+      "density_mut": 0.000013153567905294311,
       "num_shared_objects_per_epoch": 1,
       "num_shared_objects_total": 1,
       "num_checkpoints": 76023,
@@ -93,7 +99,9 @@
     "3": {
       "num_txs_total": 75885,
       "num_txs_touching_shared_objs": 2,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 2,
       "density": 0.000026355669763457864,
+      "density_mut": 0.000026355669763457864,
       "num_shared_objects_per_epoch": 1,
       "num_shared_objects_total": 1,
       "num_checkpoints": 75882,
@@ -123,7 +131,9 @@
     "4": {
       "num_txs_total": 77087,
       "num_txs_touching_shared_objs": 0,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 0,
       "density": 0.0,
+      "density_mut": 0.0,
       "num_shared_objects_per_epoch": 0,
       "num_shared_objects_total": 1,
       "num_checkpoints": 77086,
@@ -153,7 +163,9 @@
     "5": {
       "num_txs_total": 76948,
       "num_txs_touching_shared_objs": 0,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 0,
       "density": 0.0,
+      "density_mut": 0.0,
       "num_shared_objects_per_epoch": 0,
       "num_shared_objects_total": 1,
       "num_checkpoints": 76947,
@@ -183,7 +195,9 @@
     "6": {
       "num_txs_total": 76611,
       "num_txs_touching_shared_objs": 0,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 0,
       "density": 0.0,
+      "density_mut": 0.0,
       "num_shared_objects_per_epoch": 0,
       "num_shared_objects_total": 1,
       "num_checkpoints": 76609,
@@ -213,7 +227,9 @@
     "7": {
       "num_txs_total": 77264,
       "num_txs_touching_shared_objs": 1,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1,
       "density": 0.000012942638227376268,
+      "density_mut": 0.000012942638227376268,
       "num_shared_objects_per_epoch": 1,
       "num_shared_objects_total": 1,
       "num_checkpoints": 77262,
@@ -243,7 +259,9 @@
     "8": {
       "num_txs_total": 76956,
       "num_txs_touching_shared_objs": 0,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 0,
       "density": 0.0,
+      "density_mut": 0.0,
       "num_shared_objects_per_epoch": 0,
       "num_shared_objects_total": 1,
       "num_checkpoints": 76955,
@@ -273,7 +291,9 @@
     "9": {
       "num_txs_total": 77478,
       "num_txs_touching_shared_objs": 0,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 0,
       "density": 0.0,
+      "density_mut": 0.0,
       "num_shared_objects_per_epoch": 0,
       "num_shared_objects_total": 1,
       "num_checkpoints": 77477,
@@ -303,7 +323,9 @@
     "10": {
       "num_txs_total": 77665,
       "num_txs_touching_shared_objs": 0,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 0,
       "density": 0.0,
+      "density_mut": 0.0,
       "num_shared_objects_per_epoch": 0,
       "num_shared_objects_total": 1,
       "num_checkpoints": 77664,
@@ -333,7 +355,9 @@
     "11": {
       "num_txs_total": 78457,
       "num_txs_touching_shared_objs": 0,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 0,
       "density": 0.0,
+      "density_mut": 0.0,
       "num_shared_objects_per_epoch": 0,
       "num_shared_objects_total": 1,
       "num_checkpoints": 78456,
@@ -363,7 +387,9 @@
     "12": {
       "num_txs_total": 78036,
       "num_txs_touching_shared_objs": 0,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 0,
       "density": 0.0,
+      "density_mut": 0.0,
       "num_shared_objects_per_epoch": 0,
       "num_shared_objects_total": 1,
       "num_checkpoints": 78029,
@@ -393,7 +419,9 @@
     "13": {
       "num_txs_total": 78925,
       "num_txs_touching_shared_objs": 0,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 0,
       "density": 0.0,
+      "density_mut": 0.0,
       "num_shared_objects_per_epoch": 0,
       "num_shared_objects_total": 1,
       "num_checkpoints": 78912,
@@ -423,7 +451,9 @@
     "14": {
       "num_txs_total": 79444,
       "num_txs_touching_shared_objs": 0,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 0,
       "density": 0.0,
+      "density_mut": 0.0,
       "num_shared_objects_per_epoch": 0,
       "num_shared_objects_total": 1,
       "num_checkpoints": 79440,
@@ -453,7 +483,9 @@
     "15": {
       "num_txs_total": 82444,
       "num_txs_touching_shared_objs": 6,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 6,
       "density": 0.00007277667265052642,
+      "density_mut": 0.00007277667265052642,
       "num_shared_objects_per_epoch": 1,
       "num_shared_objects_total": 1,
       "num_checkpoints": 81792,
@@ -483,7 +515,9 @@
     "16": {
       "num_txs_total": 82726,
       "num_txs_touching_shared_objs": 7,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 7,
       "density": 0.00008461668641056016,
+      "density_mut": 0.00008461668641056016,
       "num_shared_objects_per_epoch": 1,
       "num_shared_objects_total": 1,
       "num_checkpoints": 82488,
@@ -513,7 +547,9 @@
     "17": {
       "num_txs_total": 81782,
       "num_txs_touching_shared_objs": 10,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 10,
       "density": 0.000122276295517351,
+      "density_mut": 0.000122276295517351,
       "num_shared_objects_per_epoch": 1,
       "num_shared_objects_total": 1,
       "num_checkpoints": 81683,
@@ -543,7 +579,9 @@
     "18": {
       "num_txs_total": 81490,
       "num_txs_touching_shared_objs": 9,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 9,
       "density": 0.0001104429991409989,
+      "density_mut": 0.0001104429991409989,
       "num_shared_objects_per_epoch": 1,
       "num_shared_objects_total": 1,
       "num_checkpoints": 81380,
@@ -573,7 +611,9 @@
     "19": {
       "num_txs_total": 82121,
       "num_txs_touching_shared_objs": 37,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 35,
       "density": 0.00045055466932940417,
+      "density_mut": 0.0004262003628791661,
       "num_shared_objects_per_epoch": 6,
       "num_shared_objects_total": 6,
       "num_checkpoints": 81760,
@@ -603,7 +643,9 @@
     "20": {
       "num_txs_total": 196074,
       "num_txs_touching_shared_objs": 39073,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 38998,
       "density": 0.1992768036557626,
+      "density_mut": 0.19889429501106726,
       "num_shared_objects_per_epoch": 304,
       "num_shared_objects_total": 306,
       "num_checkpoints": 83183,
@@ -633,7 +675,9 @@
     "21": {
       "num_txs_total": 675133,
       "num_txs_touching_shared_objs": 325364,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 318933,
       "density": 0.4819257835122857,
+      "density_mut": 0.4724002529871892,
       "num_shared_objects_per_epoch": 8701,
       "num_shared_objects_total": 8888,
       "num_checkpoints": 83913,
@@ -663,7 +707,9 @@
     "22": {
       "num_txs_total": 623550,
       "num_txs_touching_shared_objs": 337503,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 330354,
       "density": 0.5412605244166466,
+      "density_mut": 0.5297955256194371,
       "num_shared_objects_per_epoch": 13499,
       "num_shared_objects_total": 20961,
       "num_checkpoints": 83765,
@@ -693,7 +739,9 @@
     "23": {
       "num_txs_total": 459187,
       "num_txs_touching_shared_objs": 229644,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 227073,
       "density": 0.5001099769810556,
+      "density_mut": 0.49451095087622254,
       "num_shared_objects_per_epoch": 4949,
       "num_shared_objects_total": 24198,
       "num_checkpoints": 82716,
@@ -723,7 +771,9 @@
     "24": {
       "num_txs_total": 350499,
       "num_txs_touching_shared_objs": 147358,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 144809,
       "density": 0.42042345341926796,
+      "density_mut": 0.4131509647673745,
       "num_shared_objects_per_epoch": 3327,
       "num_shared_objects_total": 26104,
       "num_checkpoints": 81707,
@@ -753,7 +803,9 @@
     "25": {
       "num_txs_total": 370408,
       "num_txs_touching_shared_objs": 168844,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 167124,
       "density": 0.4558324874192782,
+      "density_mut": 0.4511889592017451,
       "num_shared_objects_per_epoch": 3655,
       "num_shared_objects_total": 28334,
       "num_checkpoints": 83878,
@@ -783,7 +835,9 @@
     "26": {
       "num_txs_total": 300492,
       "num_txs_touching_shared_objs": 134041,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 132265,
       "density": 0.4460717756213144,
+      "density_mut": 0.4401614685249524,
       "num_shared_objects_per_epoch": 4514,
       "num_shared_objects_total": 31277,
       "num_checkpoints": 83874,
@@ -813,7 +867,9 @@
     "27": {
       "num_txs_total": 368586,
       "num_txs_touching_shared_objs": 202754,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 200996,
       "density": 0.5500860043517659,
+      "density_mut": 0.5453164254746518,
       "num_shared_objects_per_epoch": 4091,
       "num_shared_objects_total": 33642,
       "num_checkpoints": 83956,
@@ -843,7 +899,9 @@
     "28": {
       "num_txs_total": 337073,
       "num_txs_touching_shared_objs": 121024,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 117907,
       "density": 0.3590438866358326,
+      "density_mut": 0.34979663159018964,
       "num_shared_objects_per_epoch": 3993,
       "num_shared_objects_total": 36429,
       "num_checkpoints": 82898,
@@ -873,7 +931,9 @@
     "29": {
       "num_txs_total": 255470,
       "num_txs_touching_shared_objs": 123749,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 119812,
       "density": 0.48439738521157083,
+      "density_mut": 0.46898657376599995,
       "num_shared_objects_per_epoch": 3781,
       "num_shared_objects_total": 39107,
       "num_checkpoints": 83265,
@@ -903,7 +963,9 @@
     "30": {
       "num_txs_total": 220519,
       "num_txs_touching_shared_objs": 95246,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 94357,
       "density": 0.4319174311510573,
+      "density_mut": 0.4278860324960661,
       "num_shared_objects_per_epoch": 2507,
       "num_shared_objects_total": 40579,
       "num_checkpoints": 83253,
@@ -933,7 +995,9 @@
     "31": {
       "num_txs_total": 212741,
       "num_txs_touching_shared_objs": 94392,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 93699,
       "density": 0.44369444535844055,
+      "density_mut": 0.4404369632557899,
       "num_shared_objects_per_epoch": 3545,
       "num_shared_objects_total": 42793,
       "num_checkpoints": 77707,
@@ -963,7 +1027,9 @@
     "32": {
       "num_txs_total": 330775,
       "num_txs_touching_shared_objs": 191461,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 190616,
       "density": 0.5788254856019953,
+      "density_mut": 0.5762708789962966,
       "num_shared_objects_per_epoch": 2858,
       "num_shared_objects_total": 44064,
       "num_checkpoints": 74906,
@@ -993,7 +1059,9 @@
     "33": {
       "num_txs_total": 242422,
       "num_txs_touching_shared_objs": 116335,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 115494,
       "density": 0.47988631394840403,
+      "density_mut": 0.47641715685870095,
       "num_shared_objects_per_epoch": 2502,
       "num_shared_objects_total": 45190,
       "num_checkpoints": 82504,
@@ -1023,7 +1091,9 @@
     "34": {
       "num_txs_total": 170140,
       "num_txs_touching_shared_objs": 63461,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 63012,
       "density": 0.3729928294345833,
+      "density_mut": 0.37035382626072644,
       "num_shared_objects_per_epoch": 2893,
       "num_shared_objects_total": 46460,
       "num_checkpoints": 83246,
@@ -1053,7 +1123,9 @@
     "35": {
       "num_txs_total": 170143,
       "num_txs_touching_shared_objs": 52306,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 51892,
       "density": 0.3074237553117084,
+      "density_mut": 0.30499050798446015,
       "num_shared_objects_per_epoch": 2843,
       "num_shared_objects_total": 47810,
       "num_checkpoints": 84101,
@@ -1083,7 +1155,9 @@
     "36": {
       "num_txs_total": 408941,
       "num_txs_touching_shared_objs": 190795,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 190412,
       "density": 0.46655874563812383,
+      "density_mut": 0.4656221802167061,
       "num_shared_objects_per_epoch": 2022,
       "num_shared_objects_total": 48447,
       "num_checkpoints": 84730,
@@ -1113,7 +1187,9 @@
     "37": {
       "num_txs_total": 355631,
       "num_txs_touching_shared_objs": 159062,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 158770,
       "density": 0.4472669705396886,
+      "density_mut": 0.44644589476170526,
       "num_shared_objects_per_epoch": 1912,
       "num_shared_objects_total": 49042,
       "num_checkpoints": 85235,
@@ -1143,7 +1219,9 @@
     "38": {
       "num_txs_total": 233269,
       "num_txs_touching_shared_objs": 101588,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 101354,
       "density": 0.43549721566088934,
+      "density_mut": 0.4344940819397348,
       "num_shared_objects_per_epoch": 1879,
       "num_shared_objects_total": 49735,
       "num_checkpoints": 85313,
@@ -1173,7 +1251,9 @@
     "39": {
       "num_txs_total": 168025,
       "num_txs_touching_shared_objs": 48896,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 48602,
       "density": 0.29100431483410205,
+      "density_mut": 0.289254575212022,
       "num_shared_objects_per_epoch": 4238,
       "num_shared_objects_total": 51824,
       "num_checkpoints": 84724,
@@ -1203,7 +1283,9 @@
     "40": {
       "num_txs_total": 172621,
       "num_txs_touching_shared_objs": 44632,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 44297,
       "density": 0.25855486875872574,
+      "density_mut": 0.2566142010531743,
       "num_shared_objects_per_epoch": 2712,
       "num_shared_objects_total": 53052,
       "num_checkpoints": 83045,
@@ -1233,7 +1315,9 @@
     "41": {
       "num_txs_total": 168324,
       "num_txs_touching_shared_objs": 46351,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 45920,
       "density": 0.2753677431619971,
+      "density_mut": 0.2728072051519688,
       "num_shared_objects_per_epoch": 1959,
       "num_shared_objects_total": 53556,
       "num_checkpoints": 83697,
@@ -1263,7 +1347,9 @@
     "42": {
       "num_txs_total": 159507,
       "num_txs_touching_shared_objs": 45271,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 45053,
       "density": 0.283818265029121,
+      "density_mut": 0.28245155385030124,
       "num_shared_objects_per_epoch": 2171,
       "num_shared_objects_total": 54253,
       "num_checkpoints": 84810,
@@ -1293,7 +1379,9 @@
     "43": {
       "num_txs_total": 149936,
       "num_txs_touching_shared_objs": 39764,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 39482,
       "density": 0.26520648810159003,
+      "density_mut": 0.26332568562586706,
       "num_shared_objects_per_epoch": 2201,
       "num_shared_objects_total": 54776,
       "num_checkpoints": 86108,
@@ -1323,7 +1411,9 @@
     "44": {
       "num_txs_total": 137107,
       "num_txs_touching_shared_objs": 34469,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 34260,
       "density": 0.2514021895308044,
+      "density_mut": 0.24987783264165944,
       "num_shared_objects_per_epoch": 1858,
       "num_shared_objects_total": 55248,
       "num_checkpoints": 86241,
@@ -1353,7 +1443,9 @@
     "45": {
       "num_txs_total": 131174,
       "num_txs_touching_shared_objs": 25353,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 25212,
       "density": 0.19327763123789776,
+      "density_mut": 0.19220272310061445,
       "num_shared_objects_per_epoch": 1491,
       "num_shared_objects_total": 55552,
       "num_checkpoints": 86244,
@@ -1383,7 +1475,9 @@
     "46": {
       "num_txs_total": 174477,
       "num_txs_touching_shared_objs": 51498,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 50912,
       "density": 0.2951563816434258,
+      "density_mut": 0.2917977727723425,
       "num_shared_objects_per_epoch": 1527,
       "num_shared_objects_total": 55898,
       "num_checkpoints": 86349,
@@ -1413,7 +1507,9 @@
     "47": {
       "num_txs_total": 150664,
       "num_txs_touching_shared_objs": 27397,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 27260,
       "density": 0.18184171401263738,
+      "density_mut": 0.18093240588328996,
       "num_shared_objects_per_epoch": 1569,
       "num_shared_objects_total": 56272,
       "num_checkpoints": 86138,
@@ -1443,7 +1539,9 @@
     "48": {
       "num_txs_total": 170065,
       "num_txs_touching_shared_objs": 45559,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 45298,
       "density": 0.2678916884720548,
+      "density_mut": 0.26635698115426454,
       "num_shared_objects_per_epoch": 3613,
       "num_shared_objects_total": 57914,
       "num_checkpoints": 86337,
@@ -1473,7 +1571,9 @@
     "49": {
       "num_txs_total": 192897,
       "num_txs_touching_shared_objs": 54035,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 53817,
       "density": 0.2801235892730317,
+      "density_mut": 0.2789934524642685,
       "num_shared_objects_per_epoch": 5507,
       "num_shared_objects_total": 60839,
       "num_checkpoints": 84809,
@@ -1503,7 +1603,9 @@
     "50": {
       "num_txs_total": 169454,
       "num_txs_touching_shared_objs": 39815,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 38502,
       "density": 0.23496052025918537,
+      "density_mut": 0.22721210475999387,
       "num_shared_objects_per_epoch": 2105,
       "num_shared_objects_total": 61643,
       "num_checkpoints": 84040,
@@ -1533,7 +1635,9 @@
     "51": {
       "num_txs_total": 201738,
       "num_txs_touching_shared_objs": 44864,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 44049,
       "density": 0.222387453033142,
+      "density_mut": 0.21834755970615352,
       "num_shared_objects_per_epoch": 1406,
       "num_shared_objects_total": 61905,
       "num_checkpoints": 84143,
@@ -1563,7 +1667,9 @@
     "52": {
       "num_txs_total": 277686,
       "num_txs_touching_shared_objs": 108353,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 108021,
       "density": 0.3901997219881449,
+      "density_mut": 0.38900412696354875,
       "num_shared_objects_per_epoch": 1154,
       "num_shared_objects_total": 62118,
       "num_checkpoints": 83444,
@@ -1593,7 +1699,9 @@
     "53": {
       "num_txs_total": 232500,
       "num_txs_touching_shared_objs": 80302,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 80077,
       "density": 0.34538494623655913,
+      "density_mut": 0.34441720430107525,
       "num_shared_objects_per_epoch": 1561,
       "num_shared_objects_total": 62409,
       "num_checkpoints": 84058,
@@ -1623,7 +1731,9 @@
     "54": {
       "num_txs_total": 231913,
       "num_txs_touching_shared_objs": 79753,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 79566,
       "density": 0.3438918904934178,
+      "density_mut": 0.343085553634337,
       "num_shared_objects_per_epoch": 1422,
       "num_shared_objects_total": 62777,
       "num_checkpoints": 85221,
@@ -1653,7 +1763,9 @@
     "55": {
       "num_txs_total": 227946,
       "num_txs_touching_shared_objs": 83334,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 82898,
       "density": 0.3655865862967545,
+      "density_mut": 0.3636738525791196,
       "num_shared_objects_per_epoch": 2948,
       "num_shared_objects_total": 63870,
       "num_checkpoints": 85482,
@@ -1683,7 +1795,9 @@
     "56": {
       "num_txs_total": 290410,
       "num_txs_touching_shared_objs": 124771,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 124510,
       "density": 0.42963740918012466,
+      "density_mut": 0.4287386797975276,
       "num_shared_objects_per_epoch": 1246,
       "num_shared_objects_total": 64111,
       "num_checkpoints": 84573,
@@ -1713,7 +1827,9 @@
     "57": {
       "num_txs_total": 180546,
       "num_txs_touching_shared_objs": 29488,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 29346,
       "density": 0.16332679760282698,
+      "density_mut": 0.16254029444019807,
       "num_shared_objects_per_epoch": 1107,
       "num_shared_objects_total": 64371,
       "num_checkpoints": 85660,
@@ -1743,7 +1859,9 @@
     "58": {
       "num_txs_total": 180169,
       "num_txs_touching_shared_objs": 31777,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 31522,
       "density": 0.1763732939628904,
+      "density_mut": 0.17495795614117857,
       "num_shared_objects_per_epoch": 1190,
       "num_shared_objects_total": 64741,
       "num_checkpoints": 85670,
@@ -1773,7 +1891,9 @@
     "59": {
       "num_txs_total": 145516,
       "num_txs_touching_shared_objs": 23333,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 22930,
       "density": 0.16034662854943788,
+      "density_mut": 0.15757717364413534,
       "num_shared_objects_per_epoch": 1026,
       "num_shared_objects_total": 64958,
       "num_checkpoints": 85587,
@@ -1803,7 +1923,9 @@
     "60": {
       "num_txs_total": 351013,
       "num_txs_touching_shared_objs": 45413,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 45245,
       "density": 0.12937697464196482,
+      "density_mut": 0.12889835988980466,
       "num_shared_objects_per_epoch": 1325,
       "num_shared_objects_total": 65331,
       "num_checkpoints": 85652,
@@ -1833,7 +1955,9 @@
     "61": {
       "num_txs_total": 195392,
       "num_txs_touching_shared_objs": 37765,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 37661,
       "density": 0.1932781280707501,
+      "density_mut": 0.19274586472322305,
       "num_shared_objects_per_epoch": 1348,
       "num_shared_objects_total": 65627,
       "num_checkpoints": 85625,
@@ -1863,7 +1987,9 @@
     "62": {
       "num_txs_total": 141073,
       "num_txs_touching_shared_objs": 27525,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 27449,
       "density": 0.19511175065391675,
+      "density_mut": 0.1945730224777243,
       "num_shared_objects_per_epoch": 1158,
       "num_shared_objects_total": 65885,
       "num_checkpoints": 85422,
@@ -1893,7 +2019,9 @@
     "63": {
       "num_txs_total": 137527,
       "num_txs_touching_shared_objs": 29664,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 29545,
       "density": 0.2156958270012434,
+      "density_mut": 0.21483054236622626,
       "num_shared_objects_per_epoch": 1009,
       "num_shared_objects_total": 66066,
       "num_checkpoints": 84483,
@@ -1923,7 +2051,9 @@
     "64": {
       "num_txs_total": 148703,
       "num_txs_touching_shared_objs": 25573,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 25478,
       "density": 0.17197366562880373,
+      "density_mut": 0.17133480830918005,
       "num_shared_objects_per_epoch": 1323,
       "num_shared_objects_total": 66483,
       "num_checkpoints": 85884,
@@ -1953,7 +2083,9 @@
     "65": {
       "num_txs_total": 144582,
       "num_txs_touching_shared_objs": 25262,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 25138,
       "density": 0.17472437786169787,
+      "density_mut": 0.17386673306497352,
       "num_shared_objects_per_epoch": 927,
       "num_shared_objects_total": 66686,
       "num_checkpoints": 84312,
@@ -1983,7 +2115,9 @@
     "66": {
       "num_txs_total": 129411,
       "num_txs_touching_shared_objs": 18954,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 18870,
       "density": 0.14646359273941165,
+      "density_mut": 0.14581449799476087,
       "num_shared_objects_per_epoch": 914,
       "num_shared_objects_total": 66858,
       "num_checkpoints": 84739,
@@ -2013,7 +2147,9 @@
     "67": {
       "num_txs_total": 132169,
       "num_txs_touching_shared_objs": 23104,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 22998,
       "density": 0.1748064977415279,
+      "density_mut": 0.17400449424600323,
       "num_shared_objects_per_epoch": 968,
       "num_shared_objects_total": 67065,
       "num_checkpoints": 84772,
@@ -2043,7 +2179,9 @@
     "68": {
       "num_txs_total": 134618,
       "num_txs_touching_shared_objs": 21761,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 21662,
       "density": 0.16165000222852813,
+      "density_mut": 0.16091458794514849,
       "num_shared_objects_per_epoch": 980,
       "num_shared_objects_total": 67222,
       "num_checkpoints": 84328,
@@ -2073,7 +2211,9 @@
     "69": {
       "num_txs_total": 270536,
       "num_txs_touching_shared_objs": 27658,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 27580,
       "density": 0.10223408344915279,
+      "density_mut": 0.10194576692196233,
       "num_shared_objects_per_epoch": 1091,
       "num_shared_objects_total": 67462,
       "num_checkpoints": 84610,
@@ -2103,7 +2243,9 @@
     "70": {
       "num_txs_total": 237382,
       "num_txs_touching_shared_objs": 31740,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 31615,
       "density": 0.13370853729431886,
+      "density_mut": 0.13318195987901357,
       "num_shared_objects_per_epoch": 1175,
       "num_shared_objects_total": 67728,
       "num_checkpoints": 86003,
@@ -2133,7 +2275,9 @@
     "71": {
       "num_txs_total": 252178,
       "num_txs_touching_shared_objs": 50125,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 50063,
       "density": 0.1987683303063709,
+      "density_mut": 0.19852247222200192,
       "num_shared_objects_per_epoch": 2440,
       "num_shared_objects_total": 69087,
       "num_checkpoints": 82201,
@@ -2163,7 +2307,9 @@
     "72": {
       "num_txs_total": 250956,
       "num_txs_touching_shared_objs": 47225,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 47150,
       "density": 0.18818039815744592,
+      "density_mut": 0.1878815409872647,
       "num_shared_objects_per_epoch": 1367,
       "num_shared_objects_total": 69490,
       "num_checkpoints": 83459,
@@ -2193,7 +2339,9 @@
     "73": {
       "num_txs_total": 281325,
       "num_txs_touching_shared_objs": 46075,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 46029,
       "density": 0.16377854794277083,
+      "density_mut": 0.16361503599040256,
       "num_shared_objects_per_epoch": 1057,
       "num_shared_objects_total": 69659,
       "num_checkpoints": 83710,
@@ -2223,7 +2371,9 @@
     "74": {
       "num_txs_total": 374112,
       "num_txs_touching_shared_objs": 69123,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 69047,
       "density": 0.18476552476263794,
+      "density_mut": 0.18456237704216918,
       "num_shared_objects_per_epoch": 3337,
       "num_shared_objects_total": 72154,
       "num_checkpoints": 84319,
@@ -2253,7 +2403,9 @@
     "75": {
       "num_txs_total": 402594,
       "num_txs_touching_shared_objs": 58170,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 58099,
       "density": 0.14448799535015425,
+      "density_mut": 0.14431163902094915,
       "num_shared_objects_per_epoch": 8365,
       "num_shared_objects_total": 79667,
       "num_checkpoints": 83764,
@@ -2283,7 +2435,9 @@
     "76": {
       "num_txs_total": 156894,
       "num_txs_touching_shared_objs": 45134,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 45014,
       "density": 0.287671931367675,
+      "density_mut": 0.2869070837635601,
       "num_shared_objects_per_epoch": 5875,
       "num_shared_objects_total": 84639,
       "num_checkpoints": 84394,
@@ -2313,7 +2467,9 @@
     "77": {
       "num_txs_total": 240810,
       "num_txs_touching_shared_objs": 138157,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 138081,
       "density": 0.5737178688592667,
+      "density_mut": 0.5734022673477015,
       "num_shared_objects_per_epoch": 6091,
       "num_shared_objects_total": 88755,
       "num_checkpoints": 85478,
@@ -2343,7 +2499,9 @@
     "78": {
       "num_txs_total": 324958,
       "num_txs_touching_shared_objs": 191954,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 191663,
       "density": 0.5907040294438051,
+      "density_mut": 0.5898085291022225,
       "num_shared_objects_per_epoch": 18444,
       "num_shared_objects_total": 105624,
       "num_checkpoints": 85478,
@@ -2373,7 +2531,9 @@
     "79": {
       "num_txs_total": 413556,
       "num_txs_touching_shared_objs": 298403,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 298332,
       "density": 0.7215540337946977,
+      "density_mut": 0.7213823520877463,
       "num_shared_objects_per_epoch": 9822,
       "num_shared_objects_total": 111988,
       "num_checkpoints": 85612,
@@ -2403,7 +2563,9 @@
     "80": {
       "num_txs_total": 416268,
       "num_txs_touching_shared_objs": 310269,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 310233,
       "density": 0.7453587592608608,
+      "density_mut": 0.7452722765141687,
       "num_shared_objects_per_epoch": 6679,
       "num_shared_objects_total": 115810,
       "num_checkpoints": 85973,
@@ -2433,7 +2595,9 @@
     "81": {
       "num_txs_total": 433567,
       "num_txs_touching_shared_objs": 312776,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 312735,
       "density": 0.7214017672009171,
+      "density_mut": 0.7213072028083318,
       "num_shared_objects_per_epoch": 5875,
       "num_shared_objects_total": 119250,
       "num_checkpoints": 85981,
@@ -2463,7 +2627,9 @@
     "82": {
       "num_txs_total": 428122,
       "num_txs_touching_shared_objs": 311834,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 311781,
       "density": 0.7283764908133663,
+      "density_mut": 0.7282526943254493,
       "num_shared_objects_per_epoch": 4643,
       "num_shared_objects_total": 122013,
       "num_checkpoints": 85924,
@@ -2493,7 +2659,9 @@
     "83": {
       "num_txs_total": 415160,
       "num_txs_touching_shared_objs": 307713,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 307668,
       "density": 0.7411913479140573,
+      "density_mut": 0.7410829559687832,
       "num_shared_objects_per_epoch": 4405,
       "num_shared_objects_total": 124634,
       "num_checkpoints": 85677,
@@ -2523,7 +2691,9 @@
     "84": {
       "num_txs_total": 466091,
       "num_txs_touching_shared_objs": 343056,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 342940,
       "density": 0.7360279430411658,
+      "density_mut": 0.7357790646032641,
       "num_shared_objects_per_epoch": 10498,
       "num_shared_objects_total": 130070,
       "num_checkpoints": 86237,
@@ -2553,7 +2723,9 @@
     "85": {
       "num_txs_total": 4811595,
       "num_txs_touching_shared_objs": 555391,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 555155,
       "density": 0.11542762846831456,
+      "density_mut": 0.11537858028366893,
       "num_shared_objects_per_epoch": 60789,
       "num_shared_objects_total": 185299,
       "num_checkpoints": 85663,
@@ -2583,7 +2755,9 @@
     "86": {
       "num_txs_total": 12221676,
       "num_txs_touching_shared_objs": 377207,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 377084,
       "density": 0.030863770239040866,
+      "density_mut": 0.03085370615290407,
       "num_shared_objects_per_epoch": 93803,
       "num_shared_objects_total": 275189,
       "num_checkpoints": 86329,
@@ -2613,7 +2787,9 @@
     "87": {
       "num_txs_total": 11372456,
       "num_txs_touching_shared_objs": 345889,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 345817,
       "density": 0.03041462635687489,
+      "density_mut": 0.030408295270608215,
       "num_shared_objects_per_epoch": 3959,
       "num_shared_objects_total": 276945,
       "num_checkpoints": 79283,
@@ -2643,7 +2819,9 @@
     "88": {
       "num_txs_total": 12580959,
       "num_txs_touching_shared_objs": 241671,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 241625,
       "density": 0.019209266956517385,
+      "density_mut": 0.019205610637472073,
       "num_shared_objects_per_epoch": 5314,
       "num_shared_objects_total": 280286,
       "num_checkpoints": 83779,
@@ -2673,7 +2851,9 @@
     "89": {
       "num_txs_total": 13899010,
       "num_txs_touching_shared_objs": 261329,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 261286,
       "density": 0.01880198661631296,
+      "density_mut": 0.0187988928707872,
       "num_shared_objects_per_epoch": 36861,
       "num_shared_objects_total": 311431,
       "num_checkpoints": 85133,
@@ -2703,7 +2883,9 @@
     "90": {
       "num_txs_total": 15112085,
       "num_txs_touching_shared_objs": 192347,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 192303,
       "density": 0.012728025285723314,
+      "density_mut": 0.01272511370866429,
       "num_shared_objects_per_epoch": 8347,
       "num_shared_objects_total": 315940,
       "num_checkpoints": 86325,
@@ -2733,7 +2915,9 @@
     "91": {
       "num_txs_total": 18447116,
       "num_txs_touching_shared_objs": 272458,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 272426,
       "density": 0.014769679986833715,
+      "density_mut": 0.014767945298332813,
       "num_shared_objects_per_epoch": 34032,
       "num_shared_objects_total": 347942,
       "num_checkpoints": 86439,
@@ -2763,7 +2947,9 @@
     "92": {
       "num_txs_total": 22232211,
       "num_txs_touching_shared_objs": 367798,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 367767,
       "density": 0.016543473791248202,
+      "density_mut": 0.016542079418012,
       "num_shared_objects_per_epoch": 97027,
       "num_shared_objects_total": 443146,
       "num_checkpoints": 85995,
@@ -2793,7 +2979,9 @@
     "93": {
       "num_txs_total": 22404419,
       "num_txs_touching_shared_objs": 407880,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 407841,
       "density": 0.018205337081046376,
+      "density_mut": 0.018203596353023037,
       "num_shared_objects_per_epoch": 172814,
       "num_shared_objects_total": 613420,
       "num_checkpoints": 86318,
@@ -2823,7 +3011,9 @@
     "94": {
       "num_txs_total": 25915639,
       "num_txs_touching_shared_objs": 591569,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 591557,
       "density": 0.022826718646605626,
+      "density_mut": 0.022826255605736753,
       "num_shared_objects_per_epoch": 355436,
       "num_shared_objects_total": 966035,
       "num_checkpoints": 86659,
@@ -2853,7 +3043,9 @@
     "95": {
       "num_txs_total": 25672686,
       "num_txs_touching_shared_objs": 733406,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 733379,
       "density": 0.028567560090907513,
+      "density_mut": 0.02856650838950003,
       "num_shared_objects_per_epoch": 370752,
       "num_shared_objects_total": 1333051,
       "num_checkpoints": 86507,
@@ -2883,7 +3075,9 @@
     "96": {
       "num_txs_total": 27975049,
       "num_txs_touching_shared_objs": 1028259,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1028218,
       "density": 0.0367562895064098,
+      "density_mut": 0.03675482391469627,
       "num_shared_objects_per_epoch": 395624,
       "num_shared_objects_total": 1724107,
       "num_checkpoints": 86872,
@@ -2913,7 +3107,9 @@
     "97": {
       "num_txs_total": 30005842,
       "num_txs_touching_shared_objs": 988215,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 987988,
       "density": 0.03293408663552917,
+      "density_mut": 0.03292652144205785,
       "num_shared_objects_per_epoch": 390997,
       "num_shared_objects_total": 2106693,
       "num_checkpoints": 86763,
@@ -2943,7 +3139,9 @@
     "98": {
       "num_txs_total": 40494301,
       "num_txs_touching_shared_objs": 919409,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 919353,
       "density": 0.022704651699013152,
+      "density_mut": 0.022703268788366048,
       "num_shared_objects_per_epoch": 253404,
       "num_shared_objects_total": 2357255,
       "num_checkpoints": 85749,
@@ -2973,7 +3171,9 @@
     "99": {
       "num_txs_total": 41600087,
       "num_txs_touching_shared_objs": 1262053,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1261979,
       "density": 0.030337749053265202,
+      "density_mut": 0.03033597021083153,
       "num_shared_objects_per_epoch": 562657,
       "num_shared_objects_total": 2854225,
       "num_checkpoints": 83877,
@@ -3003,7 +3203,9 @@
     "100": {
       "num_txs_total": 43017385,
       "num_txs_touching_shared_objs": 851459,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 851398,
       "density": 0.01979336958766787,
+      "density_mut": 0.019791951556330074,
       "num_shared_objects_per_epoch": 896407,
       "num_shared_objects_total": 2959528,
       "num_checkpoints": 85419,
@@ -3033,7 +3235,9 @@
     "101": {
       "num_txs_total": 47488627,
       "num_txs_touching_shared_objs": 702017,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 701859,
       "density": 0.01478284474301605,
+      "density_mut": 0.014779517630610799,
       "num_shared_objects_per_epoch": 673348,
       "num_shared_objects_total": 2959983,
       "num_checkpoints": 85557,
@@ -3063,7 +3267,9 @@
     "102": {
       "num_txs_total": 54859197,
       "num_txs_touching_shared_objs": 1018089,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1018019,
       "density": 0.018558219144184703,
+      "density_mut": 0.018556943150298027,
       "num_shared_objects_per_epoch": 143846,
       "num_shared_objects_total": 3102439,
       "num_checkpoints": 84643,
@@ -3093,7 +3299,9 @@
     "103": {
       "num_txs_total": 64614127,
       "num_txs_touching_shared_objs": 1071213,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1071175,
       "density": 0.016578619099813886,
+      "density_mut": 0.016578030993129413,
       "num_shared_objects_per_epoch": 144261,
       "num_shared_objects_total": 3245082,
       "num_checkpoints": 84947,
@@ -3123,7 +3331,9 @@
     "104": {
       "num_txs_total": 60599925,
       "num_txs_touching_shared_objs": 1301664,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1301522,
       "density": 0.021479630544097208,
+      "density_mut": 0.02147728730687373,
       "num_shared_objects_per_epoch": 192599,
       "num_shared_objects_total": 3435618,
       "num_checkpoints": 84907,
@@ -3153,7 +3363,9 @@
     "105": {
       "num_txs_total": 65103934,
       "num_txs_touching_shared_objs": 1282975,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1282927,
       "density": 0.019706566426538834,
+      "density_mut": 0.019705829143903963,
       "num_shared_objects_per_epoch": 200480,
       "num_shared_objects_total": 3633407,
       "num_checkpoints": 86115,
@@ -3183,7 +3395,9 @@
     "106": {
       "num_txs_total": 39578614,
       "num_txs_touching_shared_objs": 1476193,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1476087,
       "density": 0.03729774367541016,
+      "density_mut": 0.03729506546136254,
       "num_shared_objects_per_epoch": 179678,
       "num_shared_objects_total": 3809777,
       "num_checkpoints": 87075,
@@ -3213,7 +3427,9 @@
     "107": {
       "num_txs_total": 2296443,
       "num_txs_touching_shared_objs": 1713817,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1713319,
       "density": 0.7462919828621917,
+      "density_mut": 0.7460751257488211,
       "num_shared_objects_per_epoch": 17434,
       "num_shared_objects_total": 3823138,
       "num_checkpoints": 86895,
@@ -3243,7 +3459,9 @@
     "108": {
       "num_txs_total": 2285902,
       "num_txs_touching_shared_objs": 1820104,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1819818,
       "density": 0.7962301096022489,
+      "density_mut": 0.7961049948772957,
       "num_shared_objects_per_epoch": 5958,
       "num_shared_objects_total": 3826256,
       "num_checkpoints": 87006,
@@ -3273,7 +3491,9 @@
     "109": {
       "num_txs_total": 2589687,
       "num_txs_touching_shared_objs": 2075990,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 2075755,
       "density": 0.8016374179582321,
+      "density_mut": 0.8015466734010712,
       "num_shared_objects_per_epoch": 9132,
       "num_shared_objects_total": 3833224,
       "num_checkpoints": 87229,
@@ -3303,7 +3523,9 @@
     "110": {
       "num_txs_total": 1922618,
       "num_txs_touching_shared_objs": 1624004,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1623712,
       "density": 0.8446836553075026,
+      "density_mut": 0.8445317790637558,
       "num_shared_objects_per_epoch": 16130,
       "num_shared_objects_total": 3837895,
       "num_checkpoints": 87004,
@@ -3333,7 +3555,9 @@
     "111": {
       "num_txs_total": 1499516,
       "num_txs_touching_shared_objs": 1315170,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1314944,
       "density": 0.8770629989943421,
+      "density_mut": 0.8769122836968729,
       "num_shared_objects_per_epoch": 103671,
       "num_shared_objects_total": 3845636,
       "num_checkpoints": 86602,
@@ -3363,7 +3587,9 @@
     "112": {
       "num_txs_total": 1428387,
       "num_txs_touching_shared_objs": 1242268,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1242121,
       "density": 0.8696998782542826,
+      "density_mut": 0.8695969649681774,
       "num_shared_objects_per_epoch": 9274,
       "num_shared_objects_total": 3852967,
       "num_checkpoints": 86439,
@@ -3393,7 +3619,9 @@
     "113": {
       "num_txs_total": 1386292,
       "num_txs_touching_shared_objs": 1196060,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1195959,
       "density": 0.8627763847731935,
+      "density_mut": 0.8627035285495408,
       "num_shared_objects_per_epoch": 8477,
       "num_shared_objects_total": 3859471,
       "num_checkpoints": 87043,
@@ -3423,7 +3651,9 @@
     "114": {
       "num_txs_total": 1289748,
       "num_txs_touching_shared_objs": 1137687,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1137170,
       "density": 0.8821002242298496,
+      "density_mut": 0.881699370729786,
       "num_shared_objects_per_epoch": 16493,
       "num_shared_objects_total": 3873537,
       "num_checkpoints": 87117,
@@ -3453,7 +3683,9 @@
     "115": {
       "num_txs_total": 865281,
       "num_txs_touching_shared_objs": 711337,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 710682,
       "density": 0.8220878535412196,
+      "density_mut": 0.821330874016649,
       "num_shared_objects_per_epoch": 16570,
       "num_shared_objects_total": 3888137,
       "num_checkpoints": 87022,
@@ -3483,7 +3715,9 @@
     "116": {
       "num_txs_total": 1004159,
       "num_txs_touching_shared_objs": 809070,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 808648,
       "density": 0.8057190146182029,
+      "density_mut": 0.805298762446983,
       "num_shared_objects_per_epoch": 13549,
       "num_shared_objects_total": 3898692,
       "num_checkpoints": 87061,
@@ -3513,7 +3747,9 @@
     "117": {
       "num_txs_total": 1136018,
       "num_txs_touching_shared_objs": 939174,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 938695,
       "density": 0.8267245765472025,
+      "density_mut": 0.8263029282986714,
       "num_shared_objects_per_epoch": 11200,
       "num_shared_objects_total": 3907758,
       "num_checkpoints": 86815,
@@ -3543,7 +3779,9 @@
     "118": {
       "num_txs_total": 1355460,
       "num_txs_touching_shared_objs": 923733,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 923302,
       "density": 0.6814904165375592,
+      "density_mut": 0.6811724433033804,
       "num_shared_objects_per_epoch": 9191,
       "num_shared_objects_total": 3914863,
       "num_checkpoints": 86769,
@@ -3573,7 +3811,9 @@
     "119": {
       "num_txs_total": 1430268,
       "num_txs_touching_shared_objs": 874412,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 874188,
       "density": 0.611362346077798,
+      "density_mut": 0.6112057320725905,
       "num_shared_objects_per_epoch": 7285,
       "num_shared_objects_total": 3920348,
       "num_checkpoints": 86043,
@@ -3603,7 +3843,9 @@
     "120": {
       "num_txs_total": 1267048,
       "num_txs_touching_shared_objs": 894561,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 894306,
       "density": 0.7060198192965065,
+      "density_mut": 0.7058185640954407,
       "num_shared_objects_per_epoch": 14038,
       "num_shared_objects_total": 3929336,
       "num_checkpoints": 86696,
@@ -3633,7 +3875,9 @@
     "121": {
       "num_txs_total": 1508040,
       "num_txs_touching_shared_objs": 1146610,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1146453,
       "density": 0.7603312909471898,
+      "density_mut": 0.7602271823028567,
       "num_shared_objects_per_epoch": 12004,
       "num_shared_objects_total": 3933171,
       "num_checkpoints": 85958,
@@ -3663,7 +3907,9 @@
     "122": {
       "num_txs_total": 1625533,
       "num_txs_touching_shared_objs": 1269196,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1268860,
       "density": 0.7807875939768679,
+      "density_mut": 0.7805808925441686,
       "num_shared_objects_per_epoch": 8556,
       "num_shared_objects_total": 3939455,
       "num_checkpoints": 86854,
@@ -3693,7 +3939,9 @@
     "123": {
       "num_txs_total": 1612636,
       "num_txs_touching_shared_objs": 1232319,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1232081,
       "density": 0.7641643867555976,
+      "density_mut": 0.7640168023038056,
       "num_shared_objects_per_epoch": 7633,
       "num_shared_objects_total": 3945244,
       "num_checkpoints": 86996,
@@ -3723,7 +3971,9 @@
     "124": {
       "num_txs_total": 1540116,
       "num_txs_touching_shared_objs": 1157960,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1157734,
       "density": 0.7518654439016282,
+      "density_mut": 0.751718701708183,
       "num_shared_objects_per_epoch": 7342,
       "num_shared_objects_total": 3950672,
       "num_checkpoints": 86529,
@@ -3753,7 +4003,9 @@
     "125": {
       "num_txs_total": 1723059,
       "num_txs_touching_shared_objs": 1217487,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1217287,
       "density": 0.7065846265275885,
+      "density_mut": 0.7064685538916543,
       "num_shared_objects_per_epoch": 12963,
       "num_shared_objects_total": 3960727,
       "num_checkpoints": 85341,
@@ -3783,7 +4035,9 @@
     "126": {
       "num_txs_total": 2013050,
       "num_txs_touching_shared_objs": 1399168,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1398931,
       "density": 0.6950488065373438,
+      "density_mut": 0.6949310747373388,
       "num_shared_objects_per_epoch": 7385,
       "num_shared_objects_total": 3965882,
       "num_checkpoints": 84662,
@@ -3813,7 +4067,9 @@
     "127": {
       "num_txs_total": 2224649,
       "num_txs_touching_shared_objs": 1525609,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1524942,
       "density": 0.6857751492482634,
+      "density_mut": 0.6854753266695106,
       "num_shared_objects_per_epoch": 13348,
       "num_shared_objects_total": 3975206,
       "num_checkpoints": 84537,
@@ -3843,7 +4099,9 @@
     "128": {
       "num_txs_total": 2300258,
       "num_txs_touching_shared_objs": 1568483,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1568060,
       "density": 0.6818726421123196,
+      "density_mut": 0.6816887496967732,
       "num_shared_objects_per_epoch": 11665,
       "num_shared_objects_total": 3983244,
       "num_checkpoints": 85871,
@@ -3873,7 +4131,9 @@
     "129": {
       "num_txs_total": 2406973,
       "num_txs_touching_shared_objs": 1386952,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1386588,
       "density": 0.5762225002108458,
+      "density_mut": 0.5760712729224632,
       "num_shared_objects_per_epoch": 8603,
       "num_shared_objects_total": 3988956,
       "num_checkpoints": 85881,
@@ -3903,7 +4163,9 @@
     "130": {
       "num_txs_total": 1656716,
       "num_txs_touching_shared_objs": 1086086,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1085647,
       "density": 0.6555655887913197,
+      "density_mut": 0.6553006067424954,
       "num_shared_objects_per_epoch": 8054,
       "num_shared_objects_total": 3994471,
       "num_checkpoints": 85936,
@@ -3933,7 +4195,9 @@
     "131": {
       "num_txs_total": 1611236,
       "num_txs_touching_shared_objs": 1143041,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1141757,
       "density": 0.7094187319548471,
+      "density_mut": 0.7086218282113855,
       "num_shared_objects_per_epoch": 10985,
       "num_shared_objects_total": 4001902,
       "num_checkpoints": 84893,
@@ -3963,7 +4227,9 @@
     "132": {
       "num_txs_total": 1737013,
       "num_txs_touching_shared_objs": 1295874,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1294119,
       "density": 0.746035867319358,
+      "density_mut": 0.7450255121867252,
       "num_shared_objects_per_epoch": 12256,
       "num_shared_objects_total": 4010861,
       "num_checkpoints": 84970,
@@ -3993,7 +4259,9 @@
     "133": {
       "num_txs_total": 1744461,
       "num_txs_touching_shared_objs": 1257805,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1256435,
       "density": 0.7210278704998277,
+      "density_mut": 0.7202425276346104,
       "num_shared_objects_per_epoch": 9129,
       "num_shared_objects_total": 4017113,
       "num_checkpoints": 84681,
@@ -4023,7 +4291,9 @@
     "134": {
       "num_txs_total": 1753904,
       "num_txs_touching_shared_objs": 1313377,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1312183,
       "density": 0.7488306087448344,
+      "density_mut": 0.7481498417245186,
       "num_shared_objects_per_epoch": 8960,
       "num_shared_objects_total": 4024012,
       "num_checkpoints": 85057,
@@ -4053,7 +4323,9 @@
     "135": {
       "num_txs_total": 1801540,
       "num_txs_touching_shared_objs": 1326515,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1325683,
       "density": 0.736322812704686,
+      "density_mut": 0.7358609856012078,
       "num_shared_objects_per_epoch": 8667,
       "num_shared_objects_total": 4030429,
       "num_checkpoints": 85680,
@@ -4083,7 +4355,9 @@
     "136": {
       "num_txs_total": 2258125,
       "num_txs_touching_shared_objs": 1538647,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1538431,
       "density": 0.6813825629670633,
+      "density_mut": 0.6812869083863825,
       "num_shared_objects_per_epoch": 7328,
       "num_shared_objects_total": 4035902,
       "num_checkpoints": 84128,
@@ -4113,7 +4387,9 @@
     "137": {
       "num_txs_total": 2403549,
       "num_txs_touching_shared_objs": 1716206,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1715987,
       "density": 0.7140299615277242,
+      "density_mut": 0.7139388462644198,
       "num_shared_objects_per_epoch": 6863,
       "num_shared_objects_total": 4040739,
       "num_checkpoints": 84602,
@@ -4143,7 +4419,9 @@
     "138": {
       "num_txs_total": 2253154,
       "num_txs_touching_shared_objs": 1519613,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1519120,
       "density": 0.6744381431539965,
+      "density_mut": 0.6742193387580254,
       "num_shared_objects_per_epoch": 4732,
       "num_shared_objects_total": 4042927,
       "num_checkpoints": 83679,
@@ -4173,7 +4451,9 @@
     "139": {
       "num_txs_total": 1749356,
       "num_txs_touching_shared_objs": 1212705,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1212223,
       "density": 0.693229394131326,
+      "density_mut": 0.6929538641648698,
       "num_shared_objects_per_epoch": 4969,
       "num_shared_objects_total": 4045855,
       "num_checkpoints": 85160,
@@ -4203,7 +4483,9 @@
     "140": {
       "num_txs_total": 1722575,
       "num_txs_touching_shared_objs": 964866,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 964578,
       "density": 0.5601300378793376,
+      "density_mut": 0.5599628463201892,
       "num_shared_objects_per_epoch": 3250,
       "num_shared_objects_total": 4047276,
       "num_checkpoints": 85489,
@@ -4233,7 +4515,9 @@
     "141": {
       "num_txs_total": 1526163,
       "num_txs_touching_shared_objs": 961297,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 960529,
       "density": 0.6298783288547816,
+      "density_mut": 0.6293751060666521,
       "num_shared_objects_per_epoch": 3188,
       "num_shared_objects_total": 4048903,
       "num_checkpoints": 83692,
@@ -4263,7 +4547,9 @@
     "142": {
       "num_txs_total": 1261591,
       "num_txs_touching_shared_objs": 930696,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 930113,
       "density": 0.7377161060914353,
+      "density_mut": 0.7372539911904888,
       "num_shared_objects_per_epoch": 2753,
       "num_shared_objects_total": 4050275,
       "num_checkpoints": 82069,
@@ -4293,7 +4579,9 @@
     "143": {
       "num_txs_total": 1138431,
       "num_txs_touching_shared_objs": 808800,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 808640,
       "density": 0.710451489813612,
+      "density_mut": 0.7103109455030652,
       "num_shared_objects_per_epoch": 2349,
       "num_shared_objects_total": 4051188,
       "num_checkpoints": 81943,
@@ -4323,7 +4611,9 @@
     "144": {
       "num_txs_total": 2018635,
       "num_txs_touching_shared_objs": 1721017,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1720520,
       "density": 0.8525647281455042,
+      "density_mut": 0.852318522169684,
       "num_shared_objects_per_epoch": 3617,
       "num_shared_objects_total": 4052985,
       "num_checkpoints": 82584,
@@ -4353,7 +4643,9 @@
     "145": {
       "num_txs_total": 2012276,
       "num_txs_touching_shared_objs": 1751582,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1750278,
       "density": 0.8704481890158209,
+      "density_mut": 0.869800166577547,
       "num_shared_objects_per_epoch": 4223,
       "num_shared_objects_total": 4055550,
       "num_checkpoints": 84843,
@@ -4383,7 +4675,9 @@
     "146": {
       "num_txs_total": 1223688,
       "num_txs_touching_shared_objs": 951861,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 951772,
       "density": 0.7778624943613078,
+      "density_mut": 0.7777897634037434,
       "num_shared_objects_per_epoch": 5836,
       "num_shared_objects_total": 4057742,
       "num_checkpoints": 84991,
@@ -4413,7 +4707,9 @@
     "147": {
       "num_txs_total": 1296634,
       "num_txs_touching_shared_objs": 985026,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 984977,
       "density": 0.7596792926916925,
+      "density_mut": 0.7596415025365678,
       "num_shared_objects_per_epoch": 18659,
       "num_shared_objects_total": 4066020,
       "num_checkpoints": 82355,
@@ -4443,7 +4739,9 @@
     "148": {
       "num_txs_total": 893483,
       "num_txs_touching_shared_objs": 649736,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 649718,
       "density": 0.7271945856832195,
+      "density_mut": 0.7271744398046746,
       "num_shared_objects_per_epoch": 8511,
       "num_shared_objects_total": 4069925,
       "num_checkpoints": 84186,
@@ -4473,7 +4771,9 @@
     "149": {
       "num_txs_total": 750827,
       "num_txs_touching_shared_objs": 504353,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 504340,
       "density": 0.6717299724170814,
+      "density_mut": 0.671712658175585,
       "num_shared_objects_per_epoch": 4256,
       "num_shared_objects_total": 4071301,
       "num_checkpoints": 82994,
@@ -4503,7 +4803,9 @@
     "150": {
       "num_txs_total": 761616,
       "num_txs_touching_shared_objs": 501930,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 501918,
       "density": 0.6590328984685195,
+      "density_mut": 0.6590171424970064,
       "num_shared_objects_per_epoch": 5401,
       "num_shared_objects_total": 4073779,
       "num_checkpoints": 83971,
@@ -4533,7 +4835,9 @@
     "151": {
       "num_txs_total": 812887,
       "num_txs_touching_shared_objs": 571806,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 571778,
       "density": 0.7034261834670748,
+      "density_mut": 0.7033917383350945,
       "num_shared_objects_per_epoch": 5736,
       "num_shared_objects_total": 4076930,
       "num_checkpoints": 84938,
@@ -4563,7 +4867,9 @@
     "152": {
       "num_txs_total": 847334,
       "num_txs_touching_shared_objs": 576357,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 576349,
       "density": 0.6802004876471379,
+      "density_mut": 0.6801910462698298,
       "num_shared_objects_per_epoch": 3630,
       "num_shared_objects_total": 4078571,
       "num_checkpoints": 85794,
@@ -4593,7 +4899,9 @@
     "153": {
       "num_txs_total": 802103,
       "num_txs_touching_shared_objs": 503089,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 503070,
       "density": 0.6272124652320213,
+      "density_mut": 0.6271887775011439,
       "num_shared_objects_per_epoch": 4169,
       "num_shared_objects_total": 4080010,
       "num_checkpoints": 85600,
@@ -4623,7 +4931,9 @@
     "154": {
       "num_txs_total": 777814,
       "num_txs_touching_shared_objs": 486213,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 486180,
       "density": 0.6251018881120679,
+      "density_mut": 0.6250594615165065,
       "num_shared_objects_per_epoch": 4229,
       "num_shared_objects_total": 4082465,
       "num_checkpoints": 85478,
@@ -4653,7 +4963,9 @@
     "155": {
       "num_txs_total": 705028,
       "num_txs_touching_shared_objs": 460990,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 460977,
       "density": 0.6538605558928156,
+      "density_mut": 0.653842116908832,
       "num_shared_objects_per_epoch": 4244,
       "num_shared_objects_total": 4084742,
       "num_checkpoints": 87083,
@@ -4683,7 +4995,9 @@
     "156": {
       "num_txs_total": 708735,
       "num_txs_touching_shared_objs": 449226,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 449222,
       "density": 0.6338419860737793,
+      "density_mut": 0.6338363422153556,
       "num_shared_objects_per_epoch": 4127,
       "num_shared_objects_total": 4087337,
       "num_checkpoints": 86843,
@@ -4713,7 +5027,9 @@
     "157": {
       "num_txs_total": 678243,
       "num_txs_touching_shared_objs": 439996,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 439989,
       "density": 0.6487291427998519,
+      "density_mut": 0.6487188220151184,
       "num_shared_objects_per_epoch": 3973,
       "num_shared_objects_total": 4089812,
       "num_checkpoints": 87168,
@@ -4743,7 +5059,9 @@
     "158": {
       "num_txs_total": 710284,
       "num_txs_touching_shared_objs": 488546,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 488538,
       "density": 0.6878178306142332,
+      "density_mut": 0.6878065675138395,
       "num_shared_objects_per_epoch": 3829,
       "num_shared_objects_total": 4092183,
       "num_checkpoints": 87092,
@@ -4773,7 +5091,9 @@
     "159": {
       "num_txs_total": 720245,
       "num_txs_touching_shared_objs": 501812,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 501795,
       "density": 0.6967240314059799,
+      "density_mut": 0.6967004283264723,
       "num_shared_objects_per_epoch": 3662,
       "num_shared_objects_total": 4093925,
       "num_checkpoints": 87181,
@@ -4803,7 +5123,9 @@
     "160": {
       "num_txs_total": 678049,
       "num_txs_touching_shared_objs": 472641,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 472618,
       "density": 0.6970602419589145,
+      "density_mut": 0.6970263211065867,
       "num_shared_objects_per_epoch": 5811,
       "num_shared_objects_total": 4098383,
       "num_checkpoints": 87085,
@@ -4833,7 +5155,9 @@
     "161": {
       "num_txs_total": 488011,
       "num_txs_touching_shared_objs": 320984,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 320970,
       "density": 0.6577392722705021,
+      "density_mut": 0.6577105843925649,
       "num_shared_objects_per_epoch": 6769,
       "num_shared_objects_total": 4102418,
       "num_checkpoints": 87132,
@@ -4863,7 +5187,9 @@
     "162": {
       "num_txs_total": 632400,
       "num_txs_touching_shared_objs": 450853,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 450841,
       "density": 0.7129237824161923,
+      "density_mut": 0.712904807084124,
       "num_shared_objects_per_epoch": 3673,
       "num_shared_objects_total": 4104550,
       "num_checkpoints": 87178,
@@ -4893,7 +5219,9 @@
     "163": {
       "num_txs_total": 615966,
       "num_txs_touching_shared_objs": 423425,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 423399,
       "density": 0.6874161885558618,
+      "density_mut": 0.6873739784338746,
       "num_shared_objects_per_epoch": 3554,
       "num_shared_objects_total": 4106891,
       "num_checkpoints": 86973,
@@ -4923,7 +5251,9 @@
     "164": {
       "num_txs_total": 586551,
       "num_txs_touching_shared_objs": 412497,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 412488,
       "density": 0.703258540178092,
+      "density_mut": 0.7032431962438049,
       "num_shared_objects_per_epoch": 3876,
       "num_shared_objects_total": 4109181,
       "num_checkpoints": 86991,
@@ -4953,7 +5283,9 @@
     "165": {
       "num_txs_total": 645368,
       "num_txs_touching_shared_objs": 455905,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 455892,
       "density": 0.7064264109779227,
+      "density_mut": 0.7064062674319148,
       "num_shared_objects_per_epoch": 4024,
       "num_shared_objects_total": 4111247,
       "num_checkpoints": 87144,
@@ -4983,7 +5315,9 @@
     "166": {
       "num_txs_total": 632462,
       "num_txs_touching_shared_objs": 445476,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 445461,
       "density": 0.7043521982348346,
+      "density_mut": 0.7043284813949297,
       "num_shared_objects_per_epoch": 3564,
       "num_shared_objects_total": 4113408,
       "num_checkpoints": 87109,
@@ -5013,7 +5347,9 @@
     "167": {
       "num_txs_total": 571645,
       "num_txs_touching_shared_objs": 397136,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 397120,
       "density": 0.6947248729543686,
+      "density_mut": 0.6946968835553534,
       "num_shared_objects_per_epoch": 3565,
       "num_shared_objects_total": 4115424,
       "num_checkpoints": 87058,
@@ -5043,7 +5379,9 @@
     "168": {
       "num_txs_total": 753418,
       "num_txs_touching_shared_objs": 566414,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 566273,
       "density": 0.7517924976573429,
+      "density_mut": 0.7516053505490976,
       "num_shared_objects_per_epoch": 6297,
       "num_shared_objects_total": 4120405,
       "num_checkpoints": 86935,
@@ -5073,7 +5411,9 @@
     "169": {
       "num_txs_total": 691254,
       "num_txs_touching_shared_objs": 499601,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 499569,
       "density": 0.7227459081611101,
+      "density_mut": 0.7226996154814294,
       "num_shared_objects_per_epoch": 8882,
       "num_shared_objects_total": 4128001,
       "num_checkpoints": 86921,
@@ -5103,7 +5443,9 @@
     "170": {
       "num_txs_total": 595255,
       "num_txs_touching_shared_objs": 425692,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 425685,
       "density": 0.7151422499601011,
+      "density_mut": 0.7151304902940756,
       "num_shared_objects_per_epoch": 3670,
       "num_shared_objects_total": 4130657,
       "num_checkpoints": 86908,
@@ -5133,7 +5475,9 @@
     "171": {
       "num_txs_total": 599326,
       "num_txs_touching_shared_objs": 422754,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 422749,
       "density": 0.7053823795396829,
+      "density_mut": 0.705374036834711,
       "num_shared_objects_per_epoch": 4401,
       "num_shared_objects_total": 4133920,
       "num_checkpoints": 86943,
@@ -5163,7 +5507,9 @@
     "172": {
       "num_txs_total": 680095,
       "num_txs_touching_shared_objs": 509709,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 509686,
       "density": 0.7494673538255685,
+      "density_mut": 0.7494335350208426,
       "num_shared_objects_per_epoch": 5034,
       "num_shared_objects_total": 4137275,
       "num_checkpoints": 86939,
@@ -5193,7 +5539,9 @@
     "173": {
       "num_txs_total": 683686,
       "num_txs_touching_shared_objs": 501164,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 501158,
       "density": 0.7330324154655792,
+      "density_mut": 0.7330236395070252,
       "num_shared_objects_per_epoch": 4571,
       "num_shared_objects_total": 4140538,
       "num_checkpoints": 86358,
@@ -5223,7 +5571,9 @@
     "174": {
       "num_txs_total": 653213,
       "num_txs_touching_shared_objs": 490509,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 490456,
       "density": 0.7509173883557124,
+      "density_mut": 0.7508362509625497,
       "num_shared_objects_per_epoch": 4660,
       "num_shared_objects_total": 4143925,
       "num_checkpoints": 86145,
@@ -5253,7 +5603,9 @@
     "175": {
       "num_txs_total": 715182,
       "num_txs_touching_shared_objs": 532692,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 532674,
       "density": 0.7448341820683406,
+      "density_mut": 0.7448090136496723,
       "num_shared_objects_per_epoch": 4468,
       "num_shared_objects_total": 4147396,
       "num_checkpoints": 86950,
@@ -5283,7 +5635,9 @@
     "176": {
       "num_txs_total": 873109,
       "num_txs_touching_shared_objs": 731515,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 731472,
       "density": 0.8378278084408705,
+      "density_mut": 0.8377785591489723,
       "num_shared_objects_per_epoch": 4741,
       "num_shared_objects_total": 4151071,
       "num_checkpoints": 86860,
@@ -5313,7 +5667,9 @@
     "177": {
       "num_txs_total": 824678,
       "num_txs_touching_shared_objs": 682535,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 682533,
       "density": 0.8276381812052704,
+      "density_mut": 0.8276357560162876,
       "num_shared_objects_per_epoch": 4124,
       "num_shared_objects_total": 4154312,
       "num_checkpoints": 86991,
@@ -5343,7 +5699,9 @@
     "178": {
       "num_txs_total": 858686,
       "num_txs_touching_shared_objs": 680307,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 680295,
       "density": 0.7922651586260868,
+      "density_mut": 0.7922511837854582,
       "num_shared_objects_per_epoch": 4290,
       "num_shared_objects_total": 4157687,
       "num_checkpoints": 86984,
@@ -5373,7 +5731,9 @@
     "179": {
       "num_txs_total": 894333,
       "num_txs_touching_shared_objs": 730307,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 730290,
       "density": 0.8165940427111602,
+      "density_mut": 0.8165750341315818,
       "num_shared_objects_per_epoch": 1700,
       "num_shared_objects_total": 4158332,
       "num_checkpoints": 86725,
@@ -5403,7 +5763,9 @@
     "180": {
       "num_txs_total": 886123,
       "num_txs_touching_shared_objs": 720888,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 720868,
       "density": 0.8135304015356785,
+      "density_mut": 0.8135078313055862,
       "num_shared_objects_per_epoch": 1608,
       "num_shared_objects_total": 4158623,
       "num_checkpoints": 86100,
@@ -5433,7 +5795,9 @@
     "181": {
       "num_txs_total": 905909,
       "num_txs_touching_shared_objs": 733283,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 733273,
       "density": 0.809444436472096,
+      "density_mut": 0.809433397835765,
       "num_shared_objects_per_epoch": 1606,
       "num_shared_objects_total": 4158886,
       "num_checkpoints": 86297,
@@ -5463,7 +5827,9 @@
     "182": {
       "num_txs_total": 872243,
       "num_txs_touching_shared_objs": 718190,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 718116,
       "density": 0.8233829334256624,
+      "density_mut": 0.8232980946823305,
       "num_shared_objects_per_epoch": 1852,
       "num_shared_objects_total": 4159245,
       "num_checkpoints": 86670,
@@ -5493,7 +5859,9 @@
     "183": {
       "num_txs_total": 1022789,
       "num_txs_touching_shared_objs": 855728,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 855673,
       "density": 0.8366613250631362,
+      "density_mut": 0.8366075505309502,
       "num_shared_objects_per_epoch": 26566,
       "num_shared_objects_total": 4177371,
       "num_checkpoints": 86880,
@@ -5523,7 +5891,9 @@
     "184": {
       "num_txs_total": 1576115,
       "num_txs_touching_shared_objs": 1383395,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1383377,
       "density": 0.8777246584164227,
+      "density_mut": 0.8777132379299734,
       "num_shared_objects_per_epoch": 55428,
       "num_shared_objects_total": 4213100,
       "num_checkpoints": 86725,
@@ -5553,7 +5923,9 @@
     "185": {
       "num_txs_total": 1293827,
       "num_txs_touching_shared_objs": 1066365,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1066350,
       "density": 0.824194424756942,
+      "density_mut": 0.8241828312440534,
       "num_shared_objects_per_epoch": 22748,
       "num_shared_objects_total": 4229738,
       "num_checkpoints": 86898,
@@ -5583,7 +5955,9 @@
     "186": {
       "num_txs_total": 1364320,
       "num_txs_touching_shared_objs": 1097386,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1097228,
       "density": 0.804346487627536,
+      "density_mut": 0.8042306790195849,
       "num_shared_objects_per_epoch": 23996,
       "num_shared_objects_total": 4247869,
       "num_checkpoints": 86921,
@@ -5613,7 +5987,9 @@
     "187": {
       "num_txs_total": 1551998,
       "num_txs_touching_shared_objs": 1253053,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1252915,
       "density": 0.8073805507481324,
+      "density_mut": 0.8072916331077746,
       "num_shared_objects_per_epoch": 23927,
       "num_shared_objects_total": 4266620,
       "num_checkpoints": 87022,
@@ -5643,7 +6019,9 @@
     "188": {
       "num_txs_total": 1586342,
       "num_txs_touching_shared_objs": 1239682,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1239599,
       "density": 0.7814720911379766,
+      "density_mut": 0.7814197695074581,
       "num_shared_objects_per_epoch": 33253,
       "num_shared_objects_total": 4289386,
       "num_checkpoints": 87038,
@@ -5673,7 +6051,9 @@
     "189": {
       "num_txs_total": 1611541,
       "num_txs_touching_shared_objs": 1151901,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1151814,
       "density": 0.7147823108440927,
+      "density_mut": 0.7147283252489387,
       "num_shared_objects_per_epoch": 42391,
       "num_shared_objects_total": 4324300,
       "num_checkpoints": 86798,
@@ -5703,7 +6083,9 @@
     "190": {
       "num_txs_total": 1760035,
       "num_txs_touching_shared_objs": 1281969,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1281947,
       "density": 0.72837699250299,
+      "density_mut": 0.7283644927515646,
       "num_shared_objects_per_epoch": 4102,
       "num_shared_objects_total": 4325729,
       "num_checkpoints": 86553,
@@ -5733,7 +6115,9 @@
     "191": {
       "num_txs_total": 2008311,
       "num_txs_touching_shared_objs": 1509996,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1509975,
       "density": 0.7518735892996652,
+      "density_mut": 0.7518631327518497,
       "num_shared_objects_per_epoch": 3611,
       "num_shared_objects_total": 4326883,
       "num_checkpoints": 86867,
@@ -5763,7 +6147,9 @@
     "192": {
       "num_txs_total": 2072702,
       "num_txs_touching_shared_objs": 1545888,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1545814,
       "density": 0.7458322518142985,
+      "density_mut": 0.7457965496245963,
       "num_shared_objects_per_epoch": 4061,
       "num_shared_objects_total": 4327885,
       "num_checkpoints": 87115,
@@ -5793,7 +6179,9 @@
     "193": {
       "num_txs_total": 2206750,
       "num_txs_touching_shared_objs": 1652876,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1651430,
       "density": 0.7490091763906197,
+      "density_mut": 0.74835391412711,
       "num_shared_objects_per_epoch": 5219,
       "num_shared_objects_total": 4329806,
       "num_checkpoints": 86754,
@@ -5823,7 +6211,9 @@
     "194": {
       "num_txs_total": 2358360,
       "num_txs_touching_shared_objs": 1776722,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1771860,
       "density": 0.7533718346647671,
+      "density_mut": 0.7513102325344732,
       "num_shared_objects_per_epoch": 6493,
       "num_shared_objects_total": 4332252,
       "num_checkpoints": 86615,
@@ -5853,7 +6243,9 @@
     "195": {
       "num_txs_total": 2317000,
       "num_txs_touching_shared_objs": 1686769,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1682693,
       "density": 0.7279969788519638,
+      "density_mut": 0.7262378075097108,
       "num_shared_objects_per_epoch": 3944,
       "num_shared_objects_total": 4333584,
       "num_checkpoints": 85819,
@@ -5883,7 +6275,9 @@
     "196": {
       "num_txs_total": 2455538,
       "num_txs_touching_shared_objs": 1670524,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1653766,
       "density": 0.6803087551485663,
+      "density_mut": 0.6734841814706186,
       "num_shared_objects_per_epoch": 5640,
       "num_shared_objects_total": 4335603,
       "num_checkpoints": 86670,
@@ -5913,7 +6307,9 @@
     "197": {
       "num_txs_total": 2213019,
       "num_txs_touching_shared_objs": 1356494,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1339475,
       "density": 0.6129608466985598,
+      "density_mut": 0.6052704472939455,
       "num_shared_objects_per_epoch": 5796,
       "num_shared_objects_total": 4338053,
       "num_checkpoints": 86701,
@@ -5943,7 +6339,9 @@
     "198": {
       "num_txs_total": 2455697,
       "num_txs_touching_shared_objs": 1189037,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1171232,
       "density": 0.48419532214275623,
+      "density_mut": 0.4769448348065743,
       "num_shared_objects_per_epoch": 6812,
       "num_shared_objects_total": 4341312,
       "num_checkpoints": 86649,
@@ -5973,7 +6371,9 @@
     "199": {
       "num_txs_total": 2892635,
       "num_txs_touching_shared_objs": 1378083,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1360741,
       "density": 0.4764109540263462,
+      "density_mut": 0.4704157282201176,
       "num_shared_objects_per_epoch": 7167,
       "num_shared_objects_total": 4343567,
       "num_checkpoints": 86485,
@@ -6003,7 +6403,9 @@
     "200": {
       "num_txs_total": 3456935,
       "num_txs_touching_shared_objs": 1775366,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1757922,
       "density": 0.5135664974898284,
+      "density_mut": 0.5085204089750024,
       "num_shared_objects_per_epoch": 7718,
       "num_shared_objects_total": 4345748,
       "num_checkpoints": 86518,
@@ -6033,7 +6435,9 @@
     "201": {
       "num_txs_total": 3362422,
       "num_txs_touching_shared_objs": 1561770,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1543898,
       "density": 0.46447768899917974,
+      "density_mut": 0.4591624727651675,
       "num_shared_objects_per_epoch": 6430,
       "num_shared_objects_total": 4349322,
       "num_checkpoints": 86450,
@@ -6063,7 +6467,9 @@
     "202": {
       "num_txs_total": 3629164,
       "num_txs_touching_shared_objs": 1663495,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1645919,
       "density": 0.45836864908832997,
+      "density_mut": 0.45352566045513515,
       "num_shared_objects_per_epoch": 6457,
       "num_shared_objects_total": 4351490,
       "num_checkpoints": 87090,
@@ -6093,7 +6499,9 @@
     "203": {
       "num_txs_total": 4632820,
       "num_txs_touching_shared_objs": 2022064,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 2001920,
       "density": 0.43646504720666895,
+      "density_mut": 0.43211693957460034,
       "num_shared_objects_per_epoch": 6132,
       "num_shared_objects_total": 4355200,
       "num_checkpoints": 87103,
@@ -6123,7 +6531,9 @@
     "204": {
       "num_txs_total": 4992459,
       "num_txs_touching_shared_objs": 2392583,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 2374817,
       "density": 0.47923938884625794,
+      "density_mut": 0.47568082181546206,
       "num_shared_objects_per_epoch": 6020,
       "num_shared_objects_total": 4358285,
       "num_checkpoints": 87106,
@@ -6153,7 +6563,9 @@
     "205": {
       "num_txs_total": 5854202,
       "num_txs_touching_shared_objs": 2520868,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 2503480,
       "density": 0.43060830494062213,
+      "density_mut": 0.42763813069654927,
       "num_shared_objects_per_epoch": 8221,
       "num_shared_objects_total": 4363012,
       "num_checkpoints": 86948,
@@ -6183,7 +6595,9 @@
     "206": {
       "num_txs_total": 5504039,
       "num_txs_touching_shared_objs": 2122803,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 2104520,
       "density": 0.38568095175197703,
+      "density_mut": 0.38235920930066086,
       "num_shared_objects_per_epoch": 12111,
       "num_shared_objects_total": 4369362,
       "num_checkpoints": 87117,
@@ -6213,7 +6627,9 @@
     "207": {
       "num_txs_total": 5109772,
       "num_txs_touching_shared_objs": 1749461,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1731707,
       "density": 0.3423755502202447,
+      "density_mut": 0.3389010312006093,
       "num_shared_objects_per_epoch": 10798,
       "num_shared_objects_total": 4377202,
       "num_checkpoints": 87043,
@@ -6243,7 +6659,9 @@
     "208": {
       "num_txs_total": 4905166,
       "num_txs_touching_shared_objs": 1944501,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1926931,
       "density": 0.39641899988705787,
+      "density_mut": 0.39283706198730073,
       "num_shared_objects_per_epoch": 9823,
       "num_shared_objects_total": 4383146,
       "num_checkpoints": 86910,
@@ -6273,7 +6691,9 @@
     "209": {
       "num_txs_total": 4494415,
       "num_txs_touching_shared_objs": 1688225,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1671831,
       "density": 0.37562730633463975,
+      "density_mut": 0.3719796680991853,
       "num_shared_objects_per_epoch": 11704,
       "num_shared_objects_total": 4390135,
       "num_checkpoints": 86966,
@@ -6303,7 +6723,9 @@
     "210": {
       "num_txs_total": 4454182,
       "num_txs_touching_shared_objs": 1649229,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1647283,
       "density": 0.3702652922579275,
+      "density_mut": 0.3698283994681852,
       "num_shared_objects_per_epoch": 9208,
       "num_shared_objects_total": 4395644,
       "num_checkpoints": 86780,
@@ -6333,7 +6755,9 @@
     "211": {
       "num_txs_total": 3953112,
       "num_txs_touching_shared_objs": 1711701,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1705400,
       "density": 0.4330008863902667,
+      "density_mut": 0.43140695229479964,
       "num_shared_objects_per_epoch": 6755,
       "num_shared_objects_total": 4399216,
       "num_checkpoints": 86963,
@@ -6363,7 +6787,9 @@
     "212": {
       "num_txs_total": 1756871,
       "num_txs_touching_shared_objs": 1528701,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1517594,
       "density": 0.8701270611217329,
+      "density_mut": 0.8638050260946877,
       "num_shared_objects_per_epoch": 2154,
       "num_shared_objects_total": 4399536,
       "num_checkpoints": 87011,
@@ -6393,7 +6819,9 @@
     "213": {
       "num_txs_total": 1664900,
       "num_txs_touching_shared_objs": 1471843,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1471832,
       "density": 0.8840428854585861,
+      "density_mut": 0.8840362784551625,
       "num_shared_objects_per_epoch": 2064,
       "num_shared_objects_total": 4399806,
       "num_checkpoints": 87045,
@@ -6423,7 +6851,9 @@
     "214": {
       "num_txs_total": 1655791,
       "num_txs_touching_shared_objs": 1481222,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1481201,
       "density": 0.8945706311968117,
+      "density_mut": 0.894557948436729,
       "num_shared_objects_per_epoch": 1358,
       "num_shared_objects_total": 4399905,
       "num_checkpoints": 86940,
@@ -6453,7 +6883,9 @@
     "215": {
       "num_txs_total": 1677520,
       "num_txs_touching_shared_objs": 1484277,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1484249,
       "density": 0.8848043540464495,
+      "density_mut": 0.8847876627402356,
       "num_shared_objects_per_epoch": 1478,
       "num_shared_objects_total": 4400129,
       "num_checkpoints": 86925,
@@ -6483,7 +6915,9 @@
     "216": {
       "num_txs_total": 1689379,
       "num_txs_touching_shared_objs": 1518612,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1518588,
       "density": 0.898917294461456,
+      "density_mut": 0.8989030880578012,
       "num_shared_objects_per_epoch": 1177,
       "num_shared_objects_total": 4400270,
       "num_checkpoints": 86963,
@@ -6513,7 +6947,9 @@
     "217": {
       "num_txs_total": 1726552,
       "num_txs_touching_shared_objs": 1554236,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1554204,
       "density": 0.9001964609232737,
+      "density_mut": 0.9001779268739082,
       "num_shared_objects_per_epoch": 1216,
       "num_shared_objects_total": 4400411,
       "num_checkpoints": 86776,
@@ -6543,7 +6979,9 @@
     "218": {
       "num_txs_total": 1789404,
       "num_txs_touching_shared_objs": 1581370,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1581347,
       "density": 0.8837411786270736,
+      "density_mut": 0.883728325185369,
       "num_shared_objects_per_epoch": 1352,
       "num_shared_objects_total": 4400583,
       "num_checkpoints": 86710,
@@ -6573,7 +7011,9 @@
     "219": {
       "num_txs_total": 1727092,
       "num_txs_touching_shared_objs": 1528056,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1528043,
       "density": 0.884756573477267,
+      "density_mut": 0.8847490463739048,
       "num_shared_objects_per_epoch": 926,
       "num_shared_objects_total": 4400631,
       "num_checkpoints": 87002,
@@ -6603,7 +7043,9 @@
     "220": {
       "num_txs_total": 1664244,
       "num_txs_touching_shared_objs": 1485765,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1485744,
       "density": 0.8927567111553354,
+      "density_mut": 0.8927440928133135,
       "num_shared_objects_per_epoch": 1052,
       "num_shared_objects_total": 4400708,
       "num_checkpoints": 87002,
@@ -6633,7 +7075,9 @@
     "221": {
       "num_txs_total": 1668202,
       "num_txs_touching_shared_objs": 1504898,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1504874,
       "density": 0.9021077783146165,
+      "density_mut": 0.9020933915676879,
       "num_shared_objects_per_epoch": 1090,
       "num_shared_objects_total": 4400822,
       "num_checkpoints": 87105,
@@ -6663,7 +7107,9 @@
     "222": {
       "num_txs_total": 1672617,
       "num_txs_touching_shared_objs": 1527043,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1527009,
       "density": 0.9129663276171412,
+      "density_mut": 0.9129460001901212,
       "num_shared_objects_per_epoch": 1302,
       "num_shared_objects_total": 4401023,
       "num_checkpoints": 87132,
@@ -6693,7 +7139,9 @@
     "223": {
       "num_txs_total": 1656342,
       "num_txs_touching_shared_objs": 1499973,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1499945,
       "density": 0.9055937723006481,
+      "density_mut": 0.9055768675792801,
       "num_shared_objects_per_epoch": 1405,
       "num_shared_objects_total": 4401284,
       "num_checkpoints": 86967,
@@ -6723,7 +7171,9 @@
     "224": {
       "num_txs_total": 1666993,
       "num_txs_touching_shared_objs": 1524623,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1524613,
       "density": 0.9145947223533633,
+      "density_mut": 0.9145887235279332,
       "num_shared_objects_per_epoch": 2043,
       "num_shared_objects_total": 4401563,
       "num_checkpoints": 86966,
@@ -6753,7 +7203,9 @@
     "225": {
       "num_txs_total": 1681424,
       "num_txs_touching_shared_objs": 1530446,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1530433,
       "density": 0.9102082520530217,
+      "density_mut": 0.9102005205111857,
       "num_shared_objects_per_epoch": 1413,
       "num_shared_objects_total": 4401773,
       "num_checkpoints": 87080,
@@ -6783,7 +7235,9 @@
     "226": {
       "num_txs_total": 1619984,
       "num_txs_touching_shared_objs": 1482612,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1482596,
       "density": 0.9152016316210531,
+      "density_mut": 0.9151917549802961,
       "num_shared_objects_per_epoch": 1709,
       "num_shared_objects_total": 4401981,
       "num_checkpoints": 87164,
@@ -6813,7 +7267,9 @@
     "227": {
       "num_txs_total": 1616298,
       "num_txs_touching_shared_objs": 1464143,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1464114,
       "density": 0.9058620378172837,
+      "density_mut": 0.9058440955813841,
       "num_shared_objects_per_epoch": 1344,
       "num_shared_objects_total": 4402134,
       "num_checkpoints": 87194,
@@ -6843,7 +7299,9 @@
     "228": {
       "num_txs_total": 1636682,
       "num_txs_touching_shared_objs": 1494293,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1494267,
       "density": 0.9130014260558862,
+      "density_mut": 0.9129855402576676,
       "num_shared_objects_per_epoch": 1441,
       "num_shared_objects_total": 4402335,
       "num_checkpoints": 87019,
@@ -6873,7 +7331,9 @@
     "229": {
       "num_txs_total": 1639344,
       "num_txs_touching_shared_objs": 1498141,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1498121,
       "density": 0.913866156218585,
+      "density_mut": 0.913853956216633,
       "num_shared_objects_per_epoch": 1247,
       "num_shared_objects_total": 4402443,
       "num_checkpoints": 87111,
@@ -6903,7 +7363,9 @@
     "230": {
       "num_txs_total": 1669274,
       "num_txs_touching_shared_objs": 1528192,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1528169,
       "density": 0.9154830183660682,
+      "density_mut": 0.9154692399210674,
       "num_shared_objects_per_epoch": 1316,
       "num_shared_objects_total": 4402626,
       "num_checkpoints": 87005,
@@ -6933,7 +7395,9 @@
     "231": {
       "num_txs_total": 1805624,
       "num_txs_touching_shared_objs": 1659689,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1659634,
       "density": 0.9191775253319628,
+      "density_mut": 0.9191470649481841,
       "num_shared_objects_per_epoch": 1641,
       "num_shared_objects_total": 4402837,
       "num_checkpoints": 87007,
@@ -6963,7 +7427,9 @@
     "232": {
       "num_txs_total": 1993971,
       "num_txs_touching_shared_objs": 1649301,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1649264,
       "density": 0.8271439253630067,
+      "density_mut": 0.8271253694261351,
       "num_shared_objects_per_epoch": 2586,
       "num_shared_objects_total": 4403194,
       "num_checkpoints": 87109,
@@ -6993,7 +7459,9 @@
     "233": {
       "num_txs_total": 1722928,
       "num_txs_touching_shared_objs": 1508632,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1508621,
       "density": 0.8756210358180957,
+      "density_mut": 0.8756146513377228,
       "num_shared_objects_per_epoch": 1602,
       "num_shared_objects_total": 4403357,
       "num_checkpoints": 87121,
@@ -7023,7 +7491,9 @@
     "234": {
       "num_txs_total": 1659219,
       "num_txs_touching_shared_objs": 1493750,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1493737,
       "density": 0.9002729597479296,
+      "density_mut": 0.9002651247363971,
       "num_shared_objects_per_epoch": 2142,
       "num_shared_objects_total": 4403593,
       "num_checkpoints": 87091,
@@ -7053,7 +7523,9 @@
     "235": {
       "num_txs_total": 1713069,
       "num_txs_touching_shared_objs": 1568798,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1568758,
       "density": 0.9157821430426912,
+      "density_mut": 0.9157587931367621,
       "num_shared_objects_per_epoch": 1926,
       "num_shared_objects_total": 4403804,
       "num_checkpoints": 87121,
@@ -7083,7 +7555,9 @@
     "236": {
       "num_txs_total": 1727366,
       "num_txs_touching_shared_objs": 1589055,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1589006,
       "density": 0.9199295343314619,
+      "density_mut": 0.9199011674422213,
       "num_shared_objects_per_epoch": 1880,
       "num_shared_objects_total": 4404044,
       "num_checkpoints": 87104,
@@ -7113,7 +7587,9 @@
     "237": {
       "num_txs_total": 1728768,
       "num_txs_touching_shared_objs": 1594276,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1594252,
       "density": 0.922203557678069,
+      "density_mut": 0.9221896749592774,
       "num_shared_objects_per_epoch": 1942,
       "num_shared_objects_total": 4404370,
       "num_checkpoints": 87067,
@@ -7143,7 +7619,9 @@
     "238": {
       "num_txs_total": 1796859,
       "num_txs_touching_shared_objs": 1654203,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1654172,
       "density": 0.9206081278497645,
+      "density_mut": 0.9205908755222307,
       "num_shared_objects_per_epoch": 2131,
       "num_shared_objects_total": 4404776,
       "num_checkpoints": 87080,
@@ -7173,7 +7651,9 @@
     "239": {
       "num_txs_total": 1708277,
       "num_txs_touching_shared_objs": 1558136,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1558104,
       "density": 0.912109687129195,
+      "density_mut": 0.9120909548041681,
       "num_shared_objects_per_epoch": 2661,
       "num_shared_objects_total": 4405235,
       "num_checkpoints": 87059,
@@ -7203,7 +7683,9 @@
     "240": {
       "num_txs_total": 1627731,
       "num_txs_touching_shared_objs": 1491458,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1491414,
       "density": 0.916280392767601,
+      "density_mut": 0.916253361274068,
       "num_shared_objects_per_epoch": 2295,
       "num_shared_objects_total": 4405587,
       "num_checkpoints": 87099,
@@ -7233,7 +7715,9 @@
     "241": {
       "num_txs_total": 1617461,
       "num_txs_touching_shared_objs": 1497922,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1497898,
       "density": 0.9260946631788958,
+      "density_mut": 0.9260798251086115,
       "num_shared_objects_per_epoch": 1846,
       "num_shared_objects_total": 4405831,
       "num_checkpoints": 87147,
@@ -7263,7 +7747,9 @@
     "242": {
       "num_txs_total": 1710954,
       "num_txs_touching_shared_objs": 1591724,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1591671,
       "density": 0.9303137314036497,
+      "density_mut": 0.9302827545334358,
       "num_shared_objects_per_epoch": 3403,
       "num_shared_objects_total": 4406311,
       "num_checkpoints": 86764,
@@ -7293,7 +7779,9 @@
     "243": {
       "num_txs_total": 1738046,
       "num_txs_touching_shared_objs": 1592317,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1592276,
       "density": 0.9161535425414518,
+      "density_mut": 0.9161299528320884,
       "num_shared_objects_per_epoch": 3852,
       "num_shared_objects_total": 4407085,
       "num_checkpoints": 87092,
@@ -7323,7 +7811,9 @@
     "244": {
       "num_txs_total": 1735659,
       "num_txs_touching_shared_objs": 1602440,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1602385,
       "density": 0.9232458679959601,
+      "density_mut": 0.9232141797438321,
       "num_shared_objects_per_epoch": 3219,
       "num_shared_objects_total": 4407773,
       "num_checkpoints": 87058,
@@ -7353,7 +7843,9 @@
     "245": {
       "num_txs_total": 1879999,
       "num_txs_touching_shared_objs": 1742390,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1742323,
       "density": 0.9268036844700449,
+      "density_mut": 0.9267680461532161,
       "num_shared_objects_per_epoch": 2776,
       "num_shared_objects_total": 4408344,
       "num_checkpoints": 87009,
@@ -7383,7 +7875,9 @@
     "246": {
       "num_txs_total": 1836226,
       "num_txs_touching_shared_objs": 1624237,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1624190,
       "density": 0.8845517926442605,
+      "density_mut": 0.8845261966664234,
       "num_shared_objects_per_epoch": 3546,
       "num_shared_objects_total": 4409355,
       "num_checkpoints": 86859,
@@ -7413,7 +7907,9 @@
     "247": {
       "num_txs_total": 10495977,
       "num_txs_touching_shared_objs": 1555203,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1555084,
       "density": 0.14817134221997627,
+      "density_mut": 0.14816000454269287,
       "num_shared_objects_per_epoch": 3623,
       "num_shared_objects_total": 4410284,
       "num_checkpoints": 87150,
@@ -7443,7 +7939,9 @@
     "248": {
       "num_txs_total": 6229491,
       "num_txs_touching_shared_objs": 1535545,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1535481,
       "density": 0.24649606203781335,
+      "density_mut": 0.24648578832524198,
       "num_shared_objects_per_epoch": 2548,
       "num_shared_objects_total": 4410824,
       "num_checkpoints": 87145,
@@ -7473,7 +7971,9 @@
     "249": {
       "num_txs_total": 2729873,
       "num_txs_touching_shared_objs": 1555390,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1555296,
       "density": 0.5697664323578423,
+      "density_mut": 0.569731998521543,
       "num_shared_objects_per_epoch": 2728,
       "num_shared_objects_total": 4411186,
       "num_checkpoints": 87128,
@@ -7503,7 +8003,9 @@
     "250": {
       "num_txs_total": 3027726,
       "num_txs_touching_shared_objs": 1560082,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1559992,
       "density": 0.5152652518755,
+      "density_mut": 0.5152355265965283,
       "num_shared_objects_per_epoch": 6343,
       "num_shared_objects_total": 4412387,
       "num_checkpoints": 87134,
@@ -7533,7 +8035,9 @@
     "251": {
       "num_txs_total": 2686807,
       "num_txs_touching_shared_objs": 1676896,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1676377,
       "density": 0.6241222387763616,
+      "density_mut": 0.6239290726873944,
       "num_shared_objects_per_epoch": 8099,
       "num_shared_objects_total": 4414438,
       "num_checkpoints": 87099,
@@ -7563,7 +8067,9 @@
     "252": {
       "num_txs_total": 1892378,
       "num_txs_touching_shared_objs": 1678329,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1678186,
       "density": 0.8868888773807347,
+      "density_mut": 0.8868133110826695,
       "num_shared_objects_per_epoch": 6465,
       "num_shared_objects_total": 4415126,
       "num_checkpoints": 86705,
@@ -7587,6 +8093,1126 @@
         "60": {
           "contention_degree": 9.221618080575363,
           "obj_touchability": 0.4857698856948263
+        }
+      }
+    },
+    "253": {
+      "num_txs_total": 2032402,
+      "num_txs_touching_shared_objs": 1787623,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1787577,
+      "density": 0.8795617205651244,
+      "density_mut": 0.8795390872475032,
+      "num_shared_objects_per_epoch": 3734,
+      "num_shared_objects_total": 4415748,
+      "num_checkpoints": 84939,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.49487336090151385,
+          "obj_touchability": 0.3418988003056195
+        },
+        "5": {
+          "contention_degree": 1.5673374561870805,
+          "obj_touchability": 0.638171389713101
+        },
+        "10": {
+          "contention_degree": 2.7180787878704855,
+          "obj_touchability": 0.6647490129533091
+        },
+        "30": {
+          "contention_degree": 6.1307310145995615,
+          "obj_touchability": 0.5610377356699884
+        },
+        "60": {
+          "contention_degree": 10.108783532079135,
+          "obj_touchability": 0.5036225259254056
+        }
+      }
+    },
+    "254": {
+      "num_txs_total": 13917005,
+      "num_txs_touching_shared_objs": 1845420,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1845370,
+      "density": 0.1326018062075856,
+      "density_mut": 0.1325982134805585,
+      "num_shared_objects_per_epoch": 3670,
+      "num_shared_objects_total": 4416399,
+      "num_checkpoints": 85265,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.5184549453959433,
+          "obj_touchability": 0.34466090936177746
+        },
+        "5": {
+          "contention_degree": 1.6747980464248677,
+          "obj_touchability": 0.6535253329137183
+        },
+        "10": {
+          "contention_degree": 2.916246407707004,
+          "obj_touchability": 0.6824441080241732
+        },
+        "30": {
+          "contention_degree": 6.534009263955226,
+          "obj_touchability": 0.5677154805606208
+        },
+        "60": {
+          "contention_degree": 10.675785541573736,
+          "obj_touchability": 0.5039827230656628
+        }
+      }
+    },
+    "255": {
+      "num_txs_total": 1945649,
+      "num_txs_touching_shared_objs": 1778452,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1778353,
+      "density": 0.9140662061862135,
+      "density_mut": 0.9140153234216449,
+      "num_shared_objects_per_epoch": 3294,
+      "num_shared_objects_total": 4417052,
+      "num_checkpoints": 85094,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.502982792932957,
+          "obj_touchability": 0.3416460735585178
+        },
+        "5": {
+          "contention_degree": 1.602720273764456,
+          "obj_touchability": 0.6410139659561717
+        },
+        "10": {
+          "contention_degree": 2.7616590677221664,
+          "obj_touchability": 0.6622367161839352
+        },
+        "30": {
+          "contention_degree": 6.190266769826563,
+          "obj_touchability": 0.5466369806083246
+        },
+        "60": {
+          "contention_degree": 10.100324121819028,
+          "obj_touchability": 0.4810805414563298
+        }
+      }
+    },
+    "256": {
+      "num_txs_total": 2033999,
+      "num_txs_touching_shared_objs": 1860539,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1860452,
+      "density": 0.9147197220844258,
+      "density_mut": 0.9146769492020399,
+      "num_shared_objects_per_epoch": 3222,
+      "num_shared_objects_total": 4417678,
+      "num_checkpoints": 84811,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.5159287669703114,
+          "obj_touchability": 0.34206642445290075
+        },
+        "5": {
+          "contention_degree": 1.6205111382235882,
+          "obj_touchability": 0.6304796110921567
+        },
+        "10": {
+          "contention_degree": 2.786116956995326,
+          "obj_touchability": 0.6466912431024674
+        },
+        "30": {
+          "contention_degree": 6.3121256132732535,
+          "obj_touchability": 0.538529479203839
+        },
+        "60": {
+          "contention_degree": 10.39504691346355,
+          "obj_touchability": 0.47710415927109956
+        }
+      }
+    },
+    "257": {
+      "num_txs_total": 2035283,
+      "num_txs_touching_shared_objs": 1867532,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1867340,
+      "density": 0.9175785382180267,
+      "density_mut": 0.9174842024426088,
+      "num_shared_objects_per_epoch": 4013,
+      "num_shared_objects_total": 4418304,
+      "num_checkpoints": 84531,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.5173323484684452,
+          "obj_touchability": 0.347608179287474
+        },
+        "5": {
+          "contention_degree": 1.6267456099049706,
+          "obj_touchability": 0.6419846434188472
+        },
+        "10": {
+          "contention_degree": 2.7679064841770673,
+          "obj_touchability": 0.6568275079346191
+        },
+        "30": {
+          "contention_degree": 5.909672001462373,
+          "obj_touchability": 0.5321975902537937
+        },
+        "60": {
+          "contention_degree": 9.402137066707725,
+          "obj_touchability": 0.4692020619349246
+        }
+      }
+    },
+    "258": {
+      "num_txs_total": 2856762,
+      "num_txs_touching_shared_objs": 2702030,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 2701935,
+      "density": 0.9458365800161161,
+      "density_mut": 0.9458033255833003,
+      "num_shared_objects_per_epoch": 2991,
+      "num_shared_objects_total": 4418743,
+      "num_checkpoints": 84773,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.731227224396665,
+          "obj_touchability": 0.34553705192850587
+        },
+        "5": {
+          "contention_degree": 2.428575156372516,
+          "obj_touchability": 0.6522151938334806
+        },
+        "10": {
+          "contention_degree": 4.226074932876355,
+          "obj_touchability": 0.6859624789369906
+        },
+        "30": {
+          "contention_degree": 9.42049534629559,
+          "obj_touchability": 0.5790763487172332
+        },
+        "60": {
+          "contention_degree": 15.19014621700839,
+          "obj_touchability": 0.5132490961275236
+        }
+      }
+    },
+    "259": {
+      "num_txs_total": 1835859,
+      "num_txs_touching_shared_objs": 1684369,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1684188,
+      "density": 0.9174827696462527,
+      "density_mut": 0.9173841781966916,
+      "num_shared_objects_per_epoch": 2521,
+      "num_shared_objects_total": 4419235,
+      "num_checkpoints": 83481,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.47745363231879645,
+          "obj_touchability": 0.3511107244514615
+        },
+        "5": {
+          "contention_degree": 1.562855220041348,
+          "obj_touchability": 0.67036648449817
+        },
+        "10": {
+          "contention_degree": 2.737099710569299,
+          "obj_touchability": 0.7036738209994001
+        },
+        "30": {
+          "contention_degree": 6.233287948138258,
+          "obj_touchability": 0.5974609872391792
+        },
+        "60": {
+          "contention_degree": 10.246003698191116,
+          "obj_touchability": 0.5328235027310356
+        }
+      }
+    },
+    "260": {
+      "num_txs_total": 1879041,
+      "num_txs_touching_shared_objs": 1741263,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1741167,
+      "density": 0.9266764269646058,
+      "density_mut": 0.9266253370735391,
+      "num_shared_objects_per_epoch": 2140,
+      "num_shared_objects_total": 4419587,
+      "num_checkpoints": 85197,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.48101784309166323,
+          "obj_touchability": 0.34457903686642716
+        },
+        "5": {
+          "contention_degree": 1.587064036221538,
+          "obj_touchability": 0.670369398468586
+        },
+        "10": {
+          "contention_degree": 2.803487059656021,
+          "obj_touchability": 0.7143868320665482
+        },
+        "30": {
+          "contention_degree": 6.436428094235178,
+          "obj_touchability": 0.6129746197053456
+        },
+        "60": {
+          "contention_degree": 10.651170399695358,
+          "obj_touchability": 0.5481770496439694
+        }
+      }
+    },
+    "261": {
+      "num_txs_total": 1745769,
+      "num_txs_touching_shared_objs": 1605875,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1605817,
+      "density": 0.9198668323243224,
+      "density_mut": 0.9198336091430195,
+      "num_shared_objects_per_epoch": 1835,
+      "num_shared_objects_total": 4419948,
+      "num_checkpoints": 87108,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.45173219080878657,
+          "obj_touchability": 0.33011790215828957
+        },
+        "5": {
+          "contention_degree": 1.4809878212389207,
+          "obj_touchability": 0.6553659593092007
+        },
+        "10": {
+          "contention_degree": 2.6044213421326825,
+          "obj_touchability": 0.6978003670255413
+        },
+        "30": {
+          "contention_degree": 5.980188135085654,
+          "obj_touchability": 0.5921882497365959
+        },
+        "60": {
+          "contention_degree": 9.960272270964357,
+          "obj_touchability": 0.5278141600506306
+        }
+      }
+    },
+    "262": {
+      "num_txs_total": 1713988,
+      "num_txs_touching_shared_objs": 1575596,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1575534,
+      "density": 0.9192573110196804,
+      "density_mut": 0.9192211380709783,
+      "num_shared_objects_per_epoch": 1774,
+      "num_shared_objects_total": 4420301,
+      "num_checkpoints": 87066,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.44053740292050864,
+          "obj_touchability": 0.33915930740966976
+        },
+        "5": {
+          "contention_degree": 1.4860304272702136,
+          "obj_touchability": 0.6753182284658079
+        },
+        "10": {
+          "contention_degree": 2.6489063019718486,
+          "obj_touchability": 0.7243375499697159
+        },
+        "30": {
+          "contention_degree": 6.1746644298438795,
+          "obj_touchability": 0.6175214023004156
+        },
+        "60": {
+          "contention_degree": 10.275783285895395,
+          "obj_touchability": 0.5453612407611873
+        }
+      }
+    },
+    "263": {
+      "num_txs_total": 1841638,
+      "num_txs_touching_shared_objs": 1708271,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1707851,
+      "density": 0.9275824021876178,
+      "density_mut": 0.9273543443391155,
+      "num_shared_objects_per_epoch": 2125,
+      "num_shared_objects_total": 4421064,
+      "num_checkpoints": 87032,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.47111675294399014,
+          "obj_touchability": 0.33451420230556267
+        },
+        "5": {
+          "contention_degree": 1.5729102801035435,
+          "obj_touchability": 0.6693102983051613
+        },
+        "10": {
+          "contention_degree": 2.821728377244084,
+          "obj_touchability": 0.7255940680693364
+        },
+        "30": {
+          "contention_degree": 6.627851644970613,
+          "obj_touchability": 0.6238119515879691
+        },
+        "60": {
+          "contention_degree": 11.047161032711482,
+          "obj_touchability": 0.551304403151385
+        }
+      }
+    },
+    "264": {
+      "num_txs_total": 2250098,
+      "num_txs_touching_shared_objs": 2121950,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 2110947,
+      "density": 0.9430478139174383,
+      "density_mut": 0.9381578046822849,
+      "num_shared_objects_per_epoch": 3013,
+      "num_shared_objects_total": 4422102,
+      "num_checkpoints": 86998,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.5713178155779917,
+          "obj_touchability": 0.3270770363794349
+        },
+        "5": {
+          "contention_degree": 1.818071123893577,
+          "obj_touchability": 0.6219844189574166
+        },
+        "10": {
+          "contention_degree": 3.1682878273630224,
+          "obj_touchability": 0.6699152524487305
+        },
+        "30": {
+          "contention_degree": 7.082294722464212,
+          "obj_touchability": 0.5613983312178304
+        },
+        "60": {
+          "contention_degree": 11.484412813858382,
+          "obj_touchability": 0.4890781025433044
+        }
+      }
+    },
+    "265": {
+      "num_txs_total": 11961294,
+      "num_txs_touching_shared_objs": 11799687,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 11790298,
+      "density": 0.9864891708204815,
+      "density_mut": 0.9857042223023696,
+      "num_shared_objects_per_epoch": 2686,
+      "num_shared_objects_total": 4422809,
+      "num_checkpoints": 87014,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 3.0260877569722875,
+          "obj_touchability": 0.3139130172115158
+        },
+        "5": {
+          "contention_degree": 10.118256285329792,
+          "obj_touchability": 0.5998852298315717
+        },
+        "10": {
+          "contention_degree": 17.80023664067701,
+          "obj_touchability": 0.66049874352684
+        },
+        "30": {
+          "contention_degree": 40.46420115536303,
+          "obj_touchability": 0.5815264117764033
+        },
+        "60": {
+          "contention_degree": 66.56304184597003,
+          "obj_touchability": 0.5117434581637997
+        }
+      }
+    },
+    "266": {
+      "num_txs_total": 1995683,
+      "num_txs_touching_shared_objs": 1862490,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1853845,
+      "density": 0.9332594405023242,
+      "density_mut": 0.9289275902034542,
+      "num_shared_objects_per_epoch": 2174,
+      "num_shared_objects_total": 4423317,
+      "num_checkpoints": 86969,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.682192521258636,
+          "obj_touchability": 0.32876507589961196
+        },
+        "5": {
+          "contention_degree": 2.1186909095639557,
+          "obj_touchability": 0.5234007635919915
+        },
+        "10": {
+          "contention_degree": 3.4735592119725713,
+          "obj_touchability": 0.5485215505014969
+        },
+        "30": {
+          "contention_degree": 7.201847020984744,
+          "obj_touchability": 0.4751765729475527
+        },
+        "60": {
+          "contention_degree": 11.429390696015464,
+          "obj_touchability": 0.42872876755358874
+        }
+      }
+    },
+    "267": {
+      "num_txs_total": 1859301,
+      "num_txs_touching_shared_objs": 1666248,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1664550,
+      "density": 0.8961690441730521,
+      "density_mut": 0.8952557977433455,
+      "num_shared_objects_per_epoch": 2033,
+      "num_shared_objects_total": 4423764,
+      "num_checkpoints": 86954,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.6521065497531173,
+          "obj_touchability": 0.3260792782873676
+        },
+        "5": {
+          "contention_degree": 1.9611096796767673,
+          "obj_touchability": 0.4859316055489508
+        },
+        "10": {
+          "contention_degree": 3.2019040835674546,
+          "obj_touchability": 0.52036141015656
+        },
+        "30": {
+          "contention_degree": 6.510079697625852,
+          "obj_touchability": 0.45883352375296993
+        },
+        "60": {
+          "contention_degree": 10.244539649205612,
+          "obj_touchability": 0.41386071342555947
+        }
+      }
+    },
+    "268": {
+      "num_txs_total": 2550694,
+      "num_txs_touching_shared_objs": 2307044,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 2304436,
+      "density": 0.9044769776382428,
+      "density_mut": 0.9034545108115674,
+      "num_shared_objects_per_epoch": 2027,
+      "num_shared_objects_total": 4424267,
+      "num_checkpoints": 86897,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.8782570266930937,
+          "obj_touchability": 0.33414071338653206
+        },
+        "5": {
+          "contention_degree": 2.640396587766213,
+          "obj_touchability": 0.4870121334930261
+        },
+        "10": {
+          "contention_degree": 4.282761052583542,
+          "obj_touchability": 0.5113129503412857
+        },
+        "30": {
+          "contention_degree": 8.651519350285433,
+          "obj_touchability": 0.4500302978369415
+        },
+        "60": {
+          "contention_degree": 13.502313765478775,
+          "obj_touchability": 0.4095995830346461
+        }
+      }
+    },
+    "269": {
+      "num_txs_total": 1962769,
+      "num_txs_touching_shared_objs": 1814820,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1813049,
+      "density": 0.9246223065475356,
+      "density_mut": 0.9237200098432368,
+      "num_shared_objects_per_epoch": 2171,
+      "num_shared_objects_total": 4424722,
+      "num_checkpoints": 86999,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.7259340140838534,
+          "obj_touchability": 0.33730578480903817
+        },
+        "5": {
+          "contention_degree": 2.216228428067049,
+          "obj_touchability": 0.5115964365104361
+        },
+        "10": {
+          "contention_degree": 3.6287679477811623,
+          "obj_touchability": 0.5341092169602428
+        },
+        "30": {
+          "contention_degree": 7.3370823994100105,
+          "obj_touchability": 0.4418748970227254
+        },
+        "60": {
+          "contention_degree": 11.463513491787193,
+          "obj_touchability": 0.38728830421226085
+        }
+      }
+    },
+    "270": {
+      "num_txs_total": 1889020,
+      "num_txs_touching_shared_objs": 1745929,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1745660,
+      "density": 0.92425119903442,
+      "density_mut": 0.9241087971540799,
+      "num_shared_objects_per_epoch": 2382,
+      "num_shared_objects_total": 4425266,
+      "num_checkpoints": 86841,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.6374543214469838,
+          "obj_touchability": 0.3521824868604686
+        },
+        "5": {
+          "contention_degree": 1.9385057694174979,
+          "obj_touchability": 0.5418725605922073
+        },
+        "10": {
+          "contention_degree": 3.176192162108386,
+          "obj_touchability": 0.558574156518205
+        },
+        "30": {
+          "contention_degree": 6.474204616252249,
+          "obj_touchability": 0.46519225484534366
+        },
+        "60": {
+          "contention_degree": 10.174428063495998,
+          "obj_touchability": 0.41368450700421644
+        }
+      }
+    },
+    "271": {
+      "num_txs_total": 1260175,
+      "num_txs_touching_shared_objs": 1127222,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1123818,
+      "density": 0.8944963993096197,
+      "density_mut": 0.8917951871763843,
+      "num_shared_objects_per_epoch": 1933,
+      "num_shared_objects_total": 4425653,
+      "num_checkpoints": 86914,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 1.087639080957184,
+          "obj_touchability": 0.39885182740159103
+        },
+        "5": {
+          "contention_degree": 1.364504134833309,
+          "obj_touchability": 0.24648224065690127
+        },
+        "10": {
+          "contention_degree": 2.189883317764685,
+          "obj_touchability": 0.24632581467072648
+        },
+        "30": {
+          "contention_degree": 4.442023251453959,
+          "obj_touchability": 0.23771854145134388
+        },
+        "60": {
+          "contention_degree": 6.898863095934949,
+          "obj_touchability": 0.2378425204690569
+        }
+      }
+    },
+    "272": {
+      "num_txs_total": 1224322,
+      "num_txs_touching_shared_objs": 1099071,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1098055,
+      "density": 0.8976976645032925,
+      "density_mut": 0.8968678174532517,
+      "num_shared_objects_per_epoch": 1831,
+      "num_shared_objects_total": 4426041,
+      "num_checkpoints": 86916,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.6662271995747613,
+          "obj_touchability": 0.26225702057401246
+        },
+        "5": {
+          "contention_degree": 1.2955487770618832,
+          "obj_touchability": 0.19769627074327387
+        },
+        "10": {
+          "contention_degree": 2.115993854342961,
+          "obj_touchability": 0.2114773014622584
+        },
+        "30": {
+          "contention_degree": 4.347801262579351,
+          "obj_touchability": 0.23378663001391445
+        },
+        "60": {
+          "contention_degree": 6.833276377807617,
+          "obj_touchability": 0.2535687519580791
+        }
+      }
+    },
+    "273": {
+      "num_txs_total": 1129277,
+      "num_txs_touching_shared_objs": 991836,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 990711,
+      "density": 0.8782929254735552,
+      "density_mut": 0.8772967128525596,
+      "num_shared_objects_per_epoch": 2221,
+      "num_shared_objects_total": 4426416,
+      "num_checkpoints": 86874,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.5328797414512014,
+          "obj_touchability": 0.23499633940399808
+        },
+        "5": {
+          "contention_degree": 1.0276129111099412,
+          "obj_touchability": 0.2005853706468062
+        },
+        "10": {
+          "contention_degree": 1.6480434902037373,
+          "obj_touchability": 0.22398836413568324
+        },
+        "30": {
+          "contention_degree": 3.3393785131694282,
+          "obj_touchability": 0.2555360383923788
+        },
+        "60": {
+          "contention_degree": 5.259563325716327,
+          "obj_touchability": 0.2755227084914839
+        }
+      }
+    },
+    "274": {
+      "num_txs_total": 1223692,
+      "num_txs_touching_shared_objs": 1080672,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1077603,
+      "density": 0.8831241848438987,
+      "density_mut": 0.8806162008087002,
+      "num_shared_objects_per_epoch": 2920,
+      "num_shared_objects_total": 4427229,
+      "num_checkpoints": 87020,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.5895199475702607,
+          "obj_touchability": 0.24935563377427972
+        },
+        "5": {
+          "contention_degree": 1.1207555725779523,
+          "obj_touchability": 0.18624937853931534
+        },
+        "10": {
+          "contention_degree": 1.7858274213866185,
+          "obj_touchability": 0.2029129812979035
+        },
+        "30": {
+          "contention_degree": 3.5790915558547747,
+          "obj_touchability": 0.23418373064719739
+        },
+        "60": {
+          "contention_degree": 5.607061184202594,
+          "obj_touchability": 0.25651544549917527
+        }
+      }
+    },
+    "275": {
+      "num_txs_total": 1323317,
+      "num_txs_touching_shared_objs": 1156101,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1155753,
+      "density": 0.8736387426444306,
+      "density_mut": 0.8733757671064454,
+      "num_shared_objects_per_epoch": 3060,
+      "num_shared_objects_total": 4427837,
+      "num_checkpoints": 87028,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.57691379866235,
+          "obj_touchability": 0.259671639897154
+        },
+        "5": {
+          "contention_degree": 1.1917722825156318,
+          "obj_touchability": 0.25331053476199855
+        },
+        "10": {
+          "contention_degree": 1.8903878026582486,
+          "obj_touchability": 0.2726306457447943
+        },
+        "30": {
+          "contention_degree": 3.7515197152063005,
+          "obj_touchability": 0.28649463072395787
+        },
+        "60": {
+          "contention_degree": 5.837966452578173,
+          "obj_touchability": 0.29639857425606964
+        }
+      }
+    },
+    "276": {
+      "num_txs_total": 1336385,
+      "num_txs_touching_shared_objs": 1193971,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1193684,
+      "density": 0.8934334042959177,
+      "density_mut": 0.8932186458243695,
+      "num_shared_objects_per_epoch": 2335,
+      "num_shared_objects_total": 4428300,
+      "num_checkpoints": 86754,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.48092832842837785,
+          "obj_touchability": 0.3112100296853406
+        },
+        "5": {
+          "contention_degree": 1.3200563876035294,
+          "obj_touchability": 0.4446131361925399
+        },
+        "10": {
+          "contention_degree": 2.110100200108263,
+          "obj_touchability": 0.4630863760688356
+        },
+        "30": {
+          "contention_degree": 4.185723295556996,
+          "obj_touchability": 0.4081409239516603
+        },
+        "60": {
+          "contention_degree": 6.481982085268237,
+          "obj_touchability": 0.37645341947187216
+        }
+      }
+    },
+    "277": {
+      "num_txs_total": 1395049,
+      "num_txs_touching_shared_objs": 1260530,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1260189,
+      "density": 0.9035739963255771,
+      "density_mut": 0.9033295604670517,
+      "num_shared_objects_per_epoch": 3660,
+      "num_shared_objects_total": 4429597,
+      "num_checkpoints": 86809,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.49819561569593795,
+          "obj_touchability": 0.3150473201581552
+        },
+        "5": {
+          "contention_degree": 1.3617931691966585,
+          "obj_touchability": 0.4445020658458616
+        },
+        "10": {
+          "contention_degree": 2.165350233781421,
+          "obj_touchability": 0.45774158552529953
+        },
+        "30": {
+          "contention_degree": 4.251321118543446,
+          "obj_touchability": 0.3958925254429019
+        },
+        "60": {
+          "contention_degree": 6.534719026949162,
+          "obj_touchability": 0.36285885158057946
+        }
+      }
+    },
+    "278": {
+      "num_txs_total": 1293449,
+      "num_txs_touching_shared_objs": 1160884,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1159664,
+      "density": 0.8975104546062505,
+      "density_mut": 0.8965672399916812,
+      "num_shared_objects_per_epoch": 3461,
+      "num_shared_objects_total": 4430838,
+      "num_checkpoints": 85054,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.4778408023852024,
+          "obj_touchability": 0.33517390429044674
+        },
+        "5": {
+          "contention_degree": 1.3106352918664106,
+          "obj_touchability": 0.47300582500192684
+        },
+        "10": {
+          "contention_degree": 2.0952337762905606,
+          "obj_touchability": 0.47593828772870306
+        },
+        "30": {
+          "contention_degree": 4.13250883575214,
+          "obj_touchability": 0.3947107623180251
+        },
+        "60": {
+          "contention_degree": 6.340942555164563,
+          "obj_touchability": 0.3528458798003775
+        }
+      }
+    },
+    "279": {
+      "num_txs_total": 1305128,
+      "num_txs_touching_shared_objs": 1182797,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1181530,
+      "density": 0.9062689636572046,
+      "density_mut": 0.9052981776500083,
+      "num_shared_objects_per_epoch": 3209,
+      "num_shared_objects_total": 4431881,
+      "num_checkpoints": 86551,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.46206215883699986,
+          "obj_touchability": 0.3327839869030737
+        },
+        "5": {
+          "contention_degree": 1.2974011657975513,
+          "obj_touchability": 0.4744177562903462
+        },
+        "10": {
+          "contention_degree": 2.0920515869622083,
+          "obj_touchability": 0.48451952178561364
+        },
+        "30": {
+          "contention_degree": 4.148274045536973,
+          "obj_touchability": 0.40411215097282616
+        },
+        "60": {
+          "contention_degree": 6.37915181530345,
+          "obj_touchability": 0.36057615823087896
+        }
+      }
+    },
+    "280": {
+      "num_txs_total": 1265499,
+      "num_txs_touching_shared_objs": 1147647,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1146026,
+      "density": 0.9068730990700111,
+      "density_mut": 0.9055921814240865,
+      "num_shared_objects_per_epoch": 2836,
+      "num_shared_objects_total": 4432692,
+      "num_checkpoints": 86702,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.48984504668287027,
+          "obj_touchability": 0.3288748561458322
+        },
+        "5": {
+          "contention_degree": 1.3410285268192754,
+          "obj_touchability": 0.4651666136388685
+        },
+        "10": {
+          "contention_degree": 2.126231281019482,
+          "obj_touchability": 0.46716850838279256
+        },
+        "30": {
+          "contention_degree": 4.177733217179824,
+          "obj_touchability": 0.39442229743205703
+        },
+        "60": {
+          "contention_degree": 6.400215285931997,
+          "obj_touchability": 0.3606815330312577
+        }
+      }
+    },
+    "281": {
+      "num_txs_total": 1256572,
+      "num_txs_touching_shared_objs": 1139529,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1138433,
+      "density": 0.9068553174828025,
+      "density_mut": 0.9059831032364242,
+      "num_shared_objects_per_epoch": 4669,
+      "num_shared_objects_total": 4435407,
+      "num_checkpoints": 86776,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.4739513708134665,
+          "obj_touchability": 0.3125520912665146
+        },
+        "5": {
+          "contention_degree": 1.3145650458465086,
+          "obj_touchability": 0.4479324938030183
+        },
+        "10": {
+          "contention_degree": 2.1024291679431024,
+          "obj_touchability": 0.46240283826162143
+        },
+        "30": {
+          "contention_degree": 4.17382772776476,
+          "obj_touchability": 0.39951954338184553
+        },
+        "60": {
+          "contention_degree": 6.410137861243619,
+          "obj_touchability": 0.36401913705924077
+        }
+      }
+    },
+    "282": {
+      "num_txs_total": 1162645,
+      "num_txs_touching_shared_objs": 1060472,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1060000,
+      "density": 0.9121202086621454,
+      "density_mut": 0.9117142377939956,
+      "num_shared_objects_per_epoch": 3389,
+      "num_shared_objects_total": 4436959,
+      "num_checkpoints": 86618,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.4555361648015244,
+          "obj_touchability": 0.31315738531301857
+        },
+        "5": {
+          "contention_degree": 1.2843074271230026,
+          "obj_touchability": 0.45658578209298906
+        },
+        "10": {
+          "contention_degree": 2.0648344975534365,
+          "obj_touchability": 0.4719522774430164
+        },
+        "30": {
+          "contention_degree": 4.094828263273576,
+          "obj_touchability": 0.4014090267254776
+        },
+        "60": {
+          "contention_degree": 6.287874592587646,
+          "obj_touchability": 0.36453336748512644
+        }
+      }
+    },
+    "283": {
+      "num_txs_total": 1088194,
+      "num_txs_touching_shared_objs": 985330,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 984755,
+      "density": 0.9054727373979272,
+      "density_mut": 0.9049443389689706,
+      "num_shared_objects_per_epoch": 4056,
+      "num_shared_objects_total": 4438507,
+      "num_checkpoints": 86694,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.44096628784190817,
+          "obj_touchability": 0.3170674568060614
+        },
+        "5": {
+          "contention_degree": 1.251428042271464,
+          "obj_touchability": 0.4662001199270119
+        },
+        "10": {
+          "contention_degree": 2.0132241674260967,
+          "obj_touchability": 0.47428716029182894
+        },
+        "30": {
+          "contention_degree": 4.027808650681791,
+          "obj_touchability": 0.3947844410647069
+        },
+        "60": {
+          "contention_degree": 6.1696447972149375,
+          "obj_touchability": 0.3538211221166303
+        }
+      }
+    },
+    "284": {
+      "num_txs_total": 1232493,
+      "num_txs_touching_shared_objs": 1126493,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1126379,
+      "density": 0.9139954547409194,
+      "density_mut": 0.9139029592865842,
+      "num_shared_objects_per_epoch": 2466,
+      "num_shared_objects_total": 4439215,
+      "num_checkpoints": 86785,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.4690601348492465,
+          "obj_touchability": 0.3202893186286266
+        },
+        "5": {
+          "contention_degree": 1.2802147360064677,
+          "obj_touchability": 0.45571962839270747
+        },
+        "10": {
+          "contention_degree": 2.060653556771119,
+          "obj_touchability": 0.46756082899148166
+        },
+        "30": {
+          "contention_degree": 4.163911015450907,
+          "obj_touchability": 0.40211905372869405
+        },
+        "60": {
+          "contention_degree": 6.475601661262006,
+          "obj_touchability": 0.36723562526027165
+        }
+      }
+    },
+    "285": {
+      "num_txs_total": 1300443,
+      "num_txs_touching_shared_objs": 1194085,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1193991,
+      "density": 0.9182140239902864,
+      "density_mut": 0.9181417409298216,
+      "num_shared_objects_per_epoch": 3796,
+      "num_shared_objects_total": 4441016,
+      "num_checkpoints": 86946,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.4866416111162275,
+          "obj_touchability": 0.3368941360482096
+        },
+        "5": {
+          "contention_degree": 1.2899217673686472,
+          "obj_touchability": 0.4671966381509943
+        },
+        "10": {
+          "contention_degree": 2.0555909528288074,
+          "obj_touchability": 0.467694107123695
+        },
+        "30": {
+          "contention_degree": 4.107234731762897,
+          "obj_touchability": 0.39940275841895967
+        },
+        "60": {
+          "contention_degree": 6.362552119336492,
+          "obj_touchability": 0.3682376510824418
+        }
+      }
+    },
+    "286": {
+      "num_txs_total": 1330300,
+      "num_txs_touching_shared_objs": 1220294,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1220180,
+      "density": 0.917307374276479,
+      "density_mut": 0.9172216793204541,
+      "num_shared_objects_per_epoch": 4900,
+      "num_shared_objects_total": 4443463,
+      "num_checkpoints": 86814,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.5069807177251546,
+          "obj_touchability": 0.32763546505813396
+        },
+        "5": {
+          "contention_degree": 1.3387853472148772,
+          "obj_touchability": 0.4463133827936874
+        },
+        "10": {
+          "contention_degree": 2.1134526317411337,
+          "obj_touchability": 0.4509424923720819
+        },
+        "30": {
+          "contention_degree": 4.135478276105702,
+          "obj_touchability": 0.38591705954473254
+        },
+        "60": {
+          "contention_degree": 6.326377600148816,
+          "obj_touchability": 0.3565245152138025
+        }
+      }
+    },
+    "287": {
+      "num_txs_total": 1214363,
+      "num_txs_touching_shared_objs": 1108278,
+      "num_txs_touching_at_least_one_shared_obj_by_mut": 1108177,
+      "density": 0.9126414424681911,
+      "density_mut": 0.9125582712912037,
+      "num_shared_objects_per_epoch": 4937,
+      "num_shared_objects_total": 4445160,
+      "num_checkpoints": 86885,
+      "avg_interval_data": {
+        "1": {
+          "contention_degree": 0.49654275265517267,
+          "obj_touchability": 0.3191052953263023
+        },
+        "5": {
+          "contention_degree": 1.291554964469671,
+          "obj_touchability": 0.425585486647806
+        },
+        "10": {
+          "contention_degree": 2.0324818795021606,
+          "obj_touchability": 0.43148665925396734
+        },
+        "30": {
+          "contention_degree": 3.9681201710087057,
+          "obj_touchability": 0.3743382368401317
+        },
+        "60": {
+          "contention_degree": 6.081012703749394,
+          "obj_touchability": 0.3473129360404097
         }
       }
     }
