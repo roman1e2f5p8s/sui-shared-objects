@@ -3,7 +3,7 @@ import json
 import pandas as pd
 import matplotlib.pyplot as plt
 
-NUM_SUBPLOTS = 6
+NUM_SUBPLOTS = 7
 FILE = './../results/workspace1/epoch_density_data.json'
 with open(FILE, 'r') as f:
     json_ = json.load(f);
@@ -15,7 +15,7 @@ BULLSHARK_QUEST_2_END = 146
 BULLSHARK_QUEST_3_START = 183
 BULLSHARK_QUEST_3_END = 211
 WINTER_QUEST_START = 250
-WINTER_QUEST_END = list(json_['epochs'].keys())[-1] # TODO
+WINTER_QUEST_END = 258
 
 MARKER_EVERY = 5
 
@@ -96,7 +96,7 @@ print('Total number of scanned TXs: {}'.format(main_df['num_txs_total'].sum()))
 
 plt.rcParams.update({'font.size': 14, 'font.family': 'sans-serif'})
 
-fig, (ax1, ax2, ax3, ax4, ax6, ax7) = plt.subplots(nrows=NUM_SUBPLOTS, ncols=1, figsize=(10, NUM_SUBPLOTS * 7))
+fig, (ax1, ax2, ax3, ax4, ax5, ax6, ax7) = plt.subplots(nrows=NUM_SUBPLOTS, ncols=1, figsize=(10, NUM_SUBPLOTS * 7))
 
 
 # Plot the total number of TXs and number of TXs touching shared objects -----
@@ -161,7 +161,7 @@ plot_fig(
         quests=True,
         add_y1_line=True,
         xlabel='Epoch',
-        title='Ratio of TX number touching >= 1 by &mut to shared-object TX number',
+        title='Ratio of TX num. touching >=1 shared obj. by &mut to shared-object TX num.',
         minorticks=True,
         logscale=False,
         legend=True,
@@ -222,29 +222,52 @@ plot_fig(
 # ------------------------------------------------------------------------------
 
 
-ax6.axhline(y=0, linestyle=':', linewidth=1, color='black')
-ax6.axhline(y=1, linestyle='-.', linewidth=1, color='black')
+# Plot the average contention degree
+ax5.axhline(y=0, linestyle=':', linewidth=1, color='black')
+ax5.axhline(y=1, linestyle='-.', linewidth=1, color='black')
 for col in interval_df:
     if 'degree' in col:
-        ax6.plot(interval_df[col][20:], linewidth=2, label='Interval: {} checkpoints'.format(col.split('.')[0]))
-ax6.set_title('Average number of TXs touching the same shared object within an interval')
-ax6.set_ylabel('Avg contention degree')
-ax6.minorticks_on()
-ax6.set_yscale('log')
-plot_quests(ax=ax6, label=False)
-ax6.legend()
+        ax5.plot(interval_df[col][20:], linewidth=2, label='Interval: {} checkpoints'.format(col.split('.')[0]))
+ax5.set_title('Ratio of shared-obj. TX num. to shared obj. num. touched within interval')
+ax5.set_ylabel('Avg contention degree')
+ax5.minorticks_on()
+ax5.set_yscale('log')
+plot_quests(ax=ax5, label=False)
+ax5.legend()
+# ------------------------------------------------------------------------------
 
-ax7.axhline(y=0, linestyle=':', linewidth=1, color='black')
+
+# Plot the average contended fraction
+ax6.axhline(y=0, linestyle=':', linewidth=1, color='black')
 for col in interval_df:
     if not 'degree' in col:
-        ax7.plot(interval_df[col][20:], linewidth=2, label='Interval: {} checkpoints'.format(col.split('.')[0]))
-ax7.set_title('Average number of shared objects touched by more than one TX within an interval')
-ax7.set_xlabel('Epoch')
-ax7.set_ylabel('Avg object touchability')
-ax7.minorticks_on()
-# ax7.set_yscale('log')
-plot_quests(ax=ax7, label=False)
-ax7.legend()
+        ax6.plot(interval_df[col][20:], linewidth=2, label='Interval: {} checkpoints'.format(col.split('.')[0]))
+ax6.set_title('Ratio of shared obj. num. touched by >1 TX to shared obj. num. within interval')
+ax6.set_xlabel('Epoch')
+ax6.set_ylabel('Avg contended fraction')
+ax6.minorticks_on()
+# ax6.set_yscale('log')
+plot_quests(ax=ax6, label=False)
+ax6.legend()
+# ------------------------------------------------------------------------------
+
+
+# Plot the average number of shared objects per TX
+plot_fig(
+        ax=ax7,
+        y=main_df['num_shared_objects_per_tx'],
+        start_from=20,
+        quests=True,
+        add_y1_line=True,
+        xlabel='Epoch',
+        ylabel='Avg shared obj. number',
+        title='Number of shared objects touched by one TX on average',
+        minorticks=True,
+        logscale=False,
+        legend=True,
+)
+# ------------------------------------------------------------------------------
+
 
 fig.tight_layout()
 plt.savefig('./../results/workspace1/figure.png', format='png')

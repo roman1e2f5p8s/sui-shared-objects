@@ -9,7 +9,7 @@ use std::collections::{
 };
 use serde_json;
 use colored::Colorize;
-//use std::process::exit;
+use std::process::exit;
 
 use shared_object_density::args::density::*;
 use shared_object_density::types::*;
@@ -39,6 +39,7 @@ fn main() {
     };
 
     let mut txs_touching_at_least_one_shared_obj_by_mut: HashSet<String> = HashSet::new();
+    let mut tx_shared_obj_count_per_checkpoint: BTreeMap<String, u64> = BTreeMap::new();
 
     // auxiliary variables to calculate contention level
     let mut counts_per_interval: BTreeMap<u64, IntervalCounts> = args
@@ -79,6 +80,7 @@ fn main() {
                 num_txs_total: 0,
                 num_txs_touching_shared_objs: 0,
                 num_txs_touching_at_least_one_shared_obj_by_mut: 0,
+                num_shared_objects_per_tx: 0.0,
                 density: 0.0,
                 density_mut: 0.0,
                 num_shared_objects_per_epoch: 0,
@@ -175,10 +177,28 @@ fn main() {
                             .num_mut_refs += 1;
 
                         // collect unique txs that touch at least one shared object by mut ref
-                        txs_touching_at_least_one_shared_obj_by_mut.insert(tx_id);
+                        txs_touching_at_least_one_shared_obj_by_mut.insert(tx_id.clone());
                     }
+                    // insert new entry with TX ID and set count to 0
+                    tx_shared_obj_count_per_checkpoint
+                        .entry(tx_id.clone())
+                        .or_insert(0);
+                    *tx_shared_obj_count_per_checkpoint
+                        .get_mut(&tx_id.clone())
+                        .unwrap() += 1;
                 } // end of iterating over TX list
             } // end of iterating over objects within a checkpoint
+
+            // Update the average (accumulative) number of per TX
+            if tx_shared_obj_count_per_checkpoint.len() > 0 {
+                epochs_data
+                    .epochs
+                    .get_mut(&epoch)
+                    .unwrap()
+                    .num_shared_objects_per_tx += tx_shared_obj_count_per_checkpoint.values().sum::<u64>() as f64 / tx_shared_obj_count_per_checkpoint.len() as f64;
+            }
+            // clear the map for the next checkpoint
+            tx_shared_obj_count_per_checkpoint.clear();
 
             // Update the number of TXs touching at least one shared object by mut ref
             epochs_data
@@ -257,6 +277,12 @@ fn main() {
 
         // Calculate metrics per epoch
         //
+        // average number of shared objects per transaction
+        epochs_data
+            .epochs
+            .get_mut(&epoch)
+            .unwrap()
+            .num_shared_objects_per_tx /= epochs_data.epochs.get(&epoch).unwrap().num_checkpoints as f64;
         // Calculate density as the ratio of the number of TXs touching
         // shared objects to the total number of TXs per epoch
         epochs_data.epochs.get_mut(&epoch).unwrap().density = 
