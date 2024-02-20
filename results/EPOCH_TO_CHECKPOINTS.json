@@ -1559,6 +1559,11 @@
       "start_checkpoint": 26503771,
       "end_checkpoint": 26590631,
       "tx_number": 1187154
+    },
+    "312": {
+      "start_checkpoint": 26590632,
+      "end_checkpoint": 26677494,
+      "tx_number": 1262381
     }
   }
 }
