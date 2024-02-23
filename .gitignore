@@ -1,8 +1,7 @@
 target
 data/*
 !data/README.md
-python/.pyenv
+**/.pyenv
 json_rpc_api
 **/shared_objects_set.json
 **/shared_objects_data.json
-bytecode
