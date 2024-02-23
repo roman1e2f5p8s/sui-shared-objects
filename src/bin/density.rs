@@ -52,9 +52,11 @@ fn main() {
         }))
         .collect();
 
-    println!();
-    for (epoch, epoch_data_file) in epoch_data_files.iter().enumerate() {
-        print!("\rWorking on epoch {}...", format!("{}/{}", epoch, epoch_data_files.len() - 1).blue());
+    println!("{}", "\n --- Calculating epoch data --- \n".green());
+    for (k, epoch_data_file) in epoch_data_files.iter().enumerate() {
+        let epoch: usize = epoch_data_file.path().to_str().unwrap().split("=").collect::<Vec<_>>()[1][..3].parse().unwrap();
+
+        print!("\rWorking on epoch {}...", format!("{}: {}/{}", epoch, k, epoch_data_files.len() - 1).blue());
         let _ = std::io::stdout().flush();
 
         let file = fs::File::open(epoch_data_file.path())

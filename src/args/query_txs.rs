@@ -23,7 +23,7 @@ pub struct Args {
     pub retry_number: usize,
 
     /// Sleep time between reties in whole seconds, >= 0
-    #[arg(short, long, default_value_t = 10)]
+    #[arg(short = 's', long, default_value_t = 10)]
     pub retry_sleep: u64,
 
     /// Print detailed output
