@@ -9,6 +9,22 @@ with open(FILE, 'r') as f:
 
 BULLSHARK_QUEST_1_START = 85
 BULLSHARK_QUEST_1_END = 106
+BULLSHARK_QUEST_2_START = 107
+BULLSHARK_QUEST_2_END = 146
+BULLSHARK_QUEST_3_START = 183
+BULLSHARK_QUEST_3_END = 211
+WINTER_QUEST_START = 250
+WINTER_QUEST_END = 258
+
+START_FROM_EPOCH = 20
+
+
+def plot_quests(ax, alpha=0.3, zorder=0, label=True):
+    ax.axvspan(BULLSHARK_QUEST_1_START, BULLSHARK_QUEST_1_END, alpha=alpha, color='red', label='Bullshark Quest 1' if label else None, zorder=0)
+    ax.axvspan(BULLSHARK_QUEST_2_START, BULLSHARK_QUEST_2_END, alpha=alpha, color='green', label='Bullshark Quest 2' if label else None, zorder=0)
+    ax.axvspan(BULLSHARK_QUEST_3_START, BULLSHARK_QUEST_3_END, alpha=alpha, color='blue', label='Bullshark Quest 3' if label else None, zorder=0)
+    ax.axvspan(WINTER_QUEST_START, WINTER_QUEST_END, alpha=alpha, color='cyan', label='Winter Quest' if label else None, zorder=0)
+
 
 main_df = pd.DataFrame.from_dict(json_['epochs'], orient='index')
 main_df.index = main_df.index.astype(int);
@@ -21,38 +37,23 @@ plt.rcParams.update({
     'font.serif': ['Times']
 })
 
+
 # density -----------------------------------------------------------------------
 fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(9, 6), dpi=300)
 
-ax.axvspan(BULLSHARK_QUEST_1_START, BULLSHARK_QUEST_1_END, alpha=0.3, color='red', label='Bullshark Quest 1')
-ax.axhline(y=0, linestyle=':', linewidth=1, color='black')
+plt.grid(which='minor', linewidth=0.5, linestyle=':', zorder=0)
+plt.grid(which='major', linewidth=0.5, linestyle='-', zorder=0)
 
-ax.plot(main_df['density'], linewidth=2, linestyle='--', marker='o', color='blue')
+plot_quests(ax)
+ax.axhline(y=0, linestyle=':', linewidth=1, color='black')
+ax.axhline(y=1, linestyle=':', linewidth=1, color='black')
+
+ax.plot(main_df['density'][START_FROM_EPOCH:], linewidth=2, linestyle='-', marker='', color='black')
 
 ax.set_ylabel('Density')
 ax.set_xlabel('Epoch')
 ax.minorticks_on()
 ax.legend()
-
-left_subax = ax.inset_axes([0.27, 0.665, 0.24, 0.19])
-left_subax.axhline(y=0, linestyle=':', linewidth=1, color='black')
-left_subax.plot(main_df['density'][:19], linewidth=2, linestyle='--', marker='o', color='blue')
-left_subax.set_ylabel('Density')
-left_subax.set_xlabel('Epoch')
-left_subax.ticklabel_format(style='sci', axis='y', scilimits=(0, 0))
-# left_subax.set_yticks([0, 2e5, 4e5, 6e5])
-#left_subax.set_yticklabels([0, 2, 4, 6])
-left_subax.minorticks_on()
-ax.indicate_inset_zoom(left_subax)
-
-right_subax = ax.inset_axes([0.77, 0.35, 0.20, 0.20])
-# right_subax.axhline(y=0, linestyle=':', linewidth=1, color='black')
-right_subax.plot(main_df['density'][BULLSHARK_QUEST_1_START+1:BULLSHARK_QUEST_1_END], linewidth=2, linestyle='--', marker='o', color='blue')
-right_subax.ticklabel_format(style='sci', axis='y', scilimits=(0, 0))
-right_subax.set_ylabel('Density')
-right_subax.set_xlabel('Epoch')
-right_subax.minorticks_on()
-ax.indicate_inset_zoom(right_subax)
 
 fig.tight_layout()
 plt.savefig(os.path.join(os.pardir, 'density.pdf'), format='pdf')
@@ -62,37 +63,20 @@ plt.savefig(os.path.join(os.pardir, 'density.pdf'), format='pdf')
 # transaction number ---------------------------------------------------------
 fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(9, 6), dpi=300)
 
-ax.axvspan(BULLSHARK_QUEST_1_START, BULLSHARK_QUEST_1_END, alpha=0.3, color='red', label='Bullshark Quest 1')
+plt.grid(which='minor', linewidth=0.5, linestyle=':', zorder=0)
+plt.grid(which='major', linewidth=0.5, linestyle='-', zorder=0)
+
+plot_quests(ax)
+
 ax.axhline(y=0, linestyle=':', linewidth=1, color='black')
 
-ax.plot(main_df['num_txs_total'], linewidth=2, linestyle='--', marker='o', color='blue')
+ax.plot(main_df['num_txs_total'][START_FROM_EPOCH:], linewidth=2, linestyle='-', marker='', color='black')
 
 ax.set_ylabel('Number of transactions')
 ax.set_xlabel('Epoch')
 ax.minorticks_on()
-ax.legend(loc='upper left')
-# ax.set_yscale('log')
-
-left_subax = ax.inset_axes([0.14, 0.35, 0.35, 0.35])
-left_subax.axhline(y=0, linestyle=':', linewidth=1, color='black')
-left_subax.plot(main_df['num_txs_total'][:BULLSHARK_QUEST_1_START], linewidth=2, linestyle='--', marker='o', color='blue')
-left_subax.set_ylabel('Number of TXs')
-left_subax.set_xlabel('Epoch')
-left_subax.ticklabel_format(style='sci', axis='y', scilimits=(0, 0))
-left_subax.set_yticks([0, 2e5, 4e5, 6e5])
-#left_subax.set_yticklabels([0, 2, 4, 6])
-left_subax.minorticks_on()
-ax.indicate_inset_zoom(left_subax)
-
-right_subax = ax.inset_axes([0.74, 0.35, 0.20, 0.35])
-# right_subax.axhline(y=0, linestyle=':', linewidth=1, color='black')
-right_subax.plot(main_df['num_txs_total'][BULLSHARK_QUEST_1_END+1:], linewidth=2, linestyle='--', marker='o', color='blue')
-# right_subax.set_ylabel('Number of TXs')
-right_subax.set_xlabel('Epoch')
-right_subax.ticklabel_format(style='sci', axis='y', scilimits=(0, 0))
-right_subax.set_xticks([110, 130, 150])
-right_subax.minorticks_on()
-ax.indicate_inset_zoom(right_subax)
+ax.legend()
+ax.set_yscale('log')
 
 fig.tight_layout()
 plt.savefig(os.path.join(os.pardir, 'tx-number.pdf'), format='pdf')
@@ -102,44 +86,73 @@ plt.savefig(os.path.join(os.pardir, 'tx-number.pdf'), format='pdf')
 # contention degree ---------------------------------------------------------
 fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(9, 6), dpi=300)
 
-ax.axvspan(BULLSHARK_QUEST_1_START, BULLSHARK_QUEST_1_END, alpha=0.3, color='red', label='Bullshark Quest 1')
-ax.axhline(y=0, linestyle=':', linewidth=1, color='black')
-ax.axhline(y=1, linestyle='-.', linewidth=1, color='black')
+plt.grid(which='minor', linewidth=0.5, linestyle=':', zorder=0)
+plt.grid(which='major', linewidth=0.5, linestyle='-', zorder=0)
+
+plot_quests(ax, label=False)
+
+ax.axhline(y=1, linestyle=':', linewidth=1, color='black')
 
 for col in interval_df:
     if 'degree' in col:
-        ax.plot(interval_df[col], linewidth=2, label='{} checkpoint{}'.format(col.split('.')[0],
+        ax.plot(interval_df[col][START_FROM_EPOCH:], linewidth=2, label='{} checkpoint{}'.format(col.split('.')[0],
             's' if not col.split('.')[0] == '1' else ''))
 # ax.set_title('Average number of TXs touching the same shared object within an interval')
 
 ax.set_xlabel('Epoch')
 ax.set_ylabel('Contention degree')
-ax.set_yticks([0, 1, 2, 4, 6, 8, 10, 12, 14, 16, 18])
+# ax.set_yticks([0, 1, 2, 4, 6, 8, 10, 12, 14, 16, 18])
 ax.minorticks_on()
-ax.legend(loc='upper left')
+ax.legend()
+ax.set_yscale('log')
 
 fig.tight_layout()
 plt.savefig(os.path.join(os.pardir, 'contention-degree.pdf'), format='pdf')
 # contention degree ---------------------------------------------------------
 
 
-# ---------------------------------------------------------
+# contended fraction ---------------------------------------------------------
 fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(9, 6), dpi=300)
 
-ax.axvspan(BULLSHARK_QUEST_1_START, BULLSHARK_QUEST_1_END, alpha=0.3, color='red', label='Bullshark Quest 1')
+plt.grid(which='minor', linewidth=0.5, linestyle=':', zorder=0)
+plt.grid(which='major', linewidth=0.5, linestyle='-', zorder=0)
+
+plot_quests(ax, label=False)
+
 ax.axhline(y=0, linestyle=':', linewidth=1, color='black')
 
 for col in interval_df:
     if not 'degree' in col:
-        ax.plot(interval_df[col], linewidth=2, label='{} checkpoint{}'.format(col.split('.')[0],
+        ax.plot(interval_df[col][START_FROM_EPOCH:], linewidth=2, label='{} checkpoint{}'.format(col.split('.')[0],
             's' if not col.split('.')[0] == '1' else ''))
 
 ax.set_xlabel('Epoch')
 ax.set_ylabel('Contended fraction')
-# ax.set_yticks([0, 1, 2, 4, 6, 8, 10, 12, 14, 16, 18])
 ax.minorticks_on()
-ax.legend(loc='upper left')
+ax.legend()
 
 fig.tight_layout()
 plt.savefig(os.path.join(os.pardir, 'contended-fraction.pdf'), format='pdf')
-# ---------------------------------------------------------
+# contended fraction ---------------------------------------------------------
+
+
+# object number per tx ---------------------------------------------------------
+fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(9, 6), dpi=300)
+
+plt.grid(which='minor', linewidth=0.5, linestyle=':', zorder=0)
+plt.grid(which='major', linewidth=0.5, linestyle='-', zorder=0)
+
+plot_quests(ax)
+
+ax.axhline(y=1, linestyle=':', linewidth=1, color='black')
+
+ax.plot(main_df['num_shared_objects_per_tx'][START_FROM_EPOCH:], linewidth=2, linestyle='-', marker='', color='black')
+
+ax.set_ylabel('Number of shared objects')
+ax.set_xlabel('Epoch')
+ax.minorticks_on()
+ax.legend()
+
+fig.tight_layout()
+plt.savefig(os.path.join(os.pardir, 'obj-number.pdf'), format='pdf')
+# object number per tx ---------------------------------------------------------
