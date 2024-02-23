@@ -1,8 +1,9 @@
+import os
 import json
 import pandas as pd
 import matplotlib.pyplot as plt
 
-FILE = './../results/workspace1/epoch_density_data.json'
+FILE = os.path.join(os.pardir, 'epoch_density_data.json')
 with open(FILE, 'r') as f:
     json_ = json.load(f);
 
@@ -54,7 +55,7 @@ right_subax.minorticks_on()
 ax.indicate_inset_zoom(right_subax)
 
 fig.tight_layout()
-plt.savefig('./../results/workspace1/density.pdf', format='pdf')
+plt.savefig(os.path.join(os.pardir, 'density.pdf'), format='pdf')
 # density -----------------------------------------------------------------------
 
 
@@ -94,7 +95,7 @@ right_subax.minorticks_on()
 ax.indicate_inset_zoom(right_subax)
 
 fig.tight_layout()
-plt.savefig('./../results/workspace1/tx-number.pdf', format='pdf')
+plt.savefig(os.path.join(os.pardir, 'tx-number.pdf'), format='pdf')
 # transaction number ---------------------------------------------------------
 
 
@@ -118,7 +119,7 @@ ax.minorticks_on()
 ax.legend(loc='upper left')
 
 fig.tight_layout()
-plt.savefig('./../results/workspace1/contention-degree.pdf', format='pdf')
+plt.savefig(os.path.join(os.pardir, 'contention-degree.pdf'), format='pdf')
 # contention degree ---------------------------------------------------------
 
 
@@ -140,5 +141,5 @@ ax.minorticks_on()
 ax.legend(loc='upper left')
 
 fig.tight_layout()
-plt.savefig('./../results/workspace1/contended-fraction.pdf', format='pdf')
+plt.savefig(os.path.join(os.pardir, 'contended-fraction.pdf'), format='pdf')
 # ---------------------------------------------------------

@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 NUM_SUBPLOTS = 7
-FILE = './../results/workspace1/epoch_density_data.json'
+FILE = os.path.join(os.pardir, 'epoch_density_data.json')
 with open(FILE, 'r') as f:
     json_ = json.load(f);
 
@@ -270,4 +270,4 @@ plot_fig(
 
 
 fig.tight_layout()
-plt.savefig('./../results/workspace1/figure.png', format='png')
+plt.savefig(os.path.join(os.pardir, 'figure.png'), format='png')
