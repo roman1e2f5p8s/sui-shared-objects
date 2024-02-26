@@ -68,7 +68,7 @@ app_tx_num_map2['Others'] = total_num_txs - sum(app_tx_num_map2.values())
 # pprint(app_tx_num_map2)
 
 plt.rcParams.update({
-    'font.size': 16,
+    'font.size': 18,
     'text.usetex': True,
     'font.family': 'serif',
     'font.serif': ['Times']
@@ -101,10 +101,10 @@ for i, patch in enumerate(patches):
         connectionstyle = f"angle,angleA=0,angleB={ang}"
         kw["arrowprops"].update({"connectionstyle": connectionstyle})
         if k < 4:
-            ax.annotate(autotexts[i].get_text(), xy=(x, y), xytext=(-1.1*np.sign(x) + 0.27*k, +1.03*y - 0.115*k),
+            ax.annotate(autotexts[i].get_text(), xy=(x, y), xytext=(-1.1*np.sign(x) + 0.30*k, +1.02*y - 0.118*k),
                     horizontalalignment=horizontalalignment, **kw)
         else:
-            ax.annotate(autotexts[i].get_text(), xy=(x, y), xytext=(-0.1*np.sign(x) + 0.29*k, (1.74 - 0.07*k)*y),
+            ax.annotate(autotexts[i].get_text(), xy=(x, y), xytext=(-0.07*np.sign(x) + 0.29*k, (1.74 - 0.07*k)*y),
                     horizontalalignment=horizontalalignment, **kw)
         autotexts[i].set_visible(False)
         k += 1
@@ -112,7 +112,7 @@ for i, patch in enumerate(patches):
 ax2.set_frame_on(False)
 ax2.get_xaxis().set_visible(False)
 ax2.get_yaxis().set_visible(False)
-fig.legend(title='Applications:', labels=labels)
+fig.legend(title='Applications:', labels=labels, fontsize=16)
 
 fig.tight_layout()
 ax.set_position([-0.18, 0.05, 1.0, 1.0])

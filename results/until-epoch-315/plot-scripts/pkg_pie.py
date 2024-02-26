@@ -46,7 +46,7 @@ pkg_tx_num_map['Others'] = total_num_txs - sum(pkg_tx_num_map.values())
 # pprint(pkg_tx_num_map)
 
 plt.rcParams.update({
-    'font.size': 16,
+    'font.size': 18,
     'text.usetex': True,
     'font.family': 'serif',
     'font.serif': ['Times']
@@ -80,7 +80,7 @@ for i, patch in enumerate(patches):
             ax.annotate(autotexts[i].get_text(), xy=(x, y), xytext=(-0.3*np.sign(x) - 0.3*k, (1.09 + 0.12*k)*y),
                     horizontalalignment=horizontalalignment, **kw)
         else:
-            ax.annotate(autotexts[i].get_text(), xy=(x, y), xytext=(0.1*np.sign(x) + 0.3*k, (1.59 - 0.08*k)*y),
+            ax.annotate(autotexts[i].get_text(), xy=(x, y), xytext=(0.1*np.sign(x) + 0.3*k, (1.60 - 0.08*k)*y),
                     horizontalalignment=horizontalalignment, **kw)
         autotexts[i].set_visible(False)
         k += 1
@@ -88,7 +88,7 @@ for i, patch in enumerate(patches):
 ax2.set_frame_on(False)
 ax2.get_xaxis().set_visible(False)
 ax2.get_yaxis().set_visible(False)
-fig.legend(title='Packages:', labels=labels)
+fig.legend(title='Packages:', labels=labels, fontsize=16)
 
 fig.tight_layout()
 ax.set_position([-0.18, 0.05, 1.0, 1.0])

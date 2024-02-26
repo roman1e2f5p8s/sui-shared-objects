@@ -76,7 +76,7 @@ obj_tx_num_map2['Others'] = total_num_txs - sum(obj_tx_num_map2.values())
 # pprint(obj_tx_num_map2)
 
 plt.rcParams.update({
-    'font.size': 16,
+    'font.size': 18,
     'text.usetex': True,
     'font.family': 'serif',
     'font.serif': ['Times']
@@ -118,7 +118,7 @@ for i, patch in enumerate(patches):
 ax2.set_frame_on(False)
 ax2.get_xaxis().set_visible(False)
 ax2.get_yaxis().set_visible(False)
-fig.legend(title='Shared object types:', labels=labels)
+fig.legend(title='Shared object types:', labels=labels, fontsize=16)
 
 fig.tight_layout()
 ax.set_position([-0.23, 0.05, 1.0, 1.0])

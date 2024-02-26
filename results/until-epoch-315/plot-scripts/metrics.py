@@ -31,7 +31,7 @@ main_df.index = main_df.index.astype(int);
 interval_df = pd.json_normalize(main_df['avg_interval_data'])
 
 plt.rcParams.update({
-    'font.size': 16,
+    'font.size': 22,
     'text.usetex': True,
     'font.family': 'serif',
     'font.serif': ['Times']
@@ -53,7 +53,7 @@ ax.plot(main_df['density'][START_FROM_EPOCH:], linewidth=2, linestyle='-', marke
 ax.set_ylabel('Density')
 ax.set_xlabel('Epoch')
 ax.minorticks_on()
-ax.legend()
+ax.legend(fontsize=18)
 
 fig.tight_layout()
 plt.savefig(os.path.join(os.pardir, 'density.pdf'), format='pdf')
@@ -75,7 +75,7 @@ ax.plot(main_df['num_txs_total'][START_FROM_EPOCH:], linewidth=2, linestyle='-',
 ax.set_ylabel('Number of transactions')
 ax.set_xlabel('Epoch')
 ax.minorticks_on()
-ax.legend()
+ax.legend(fontsize=18)
 ax.set_yscale('log')
 
 fig.tight_layout()
@@ -103,7 +103,7 @@ ax.set_xlabel('Epoch')
 ax.set_ylabel('Contention degree')
 # ax.set_yticks([0, 1, 2, 4, 6, 8, 10, 12, 14, 16, 18])
 ax.minorticks_on()
-ax.legend()
+ax.legend(fontsize=16)
 ax.set_yscale('log')
 
 fig.tight_layout()
@@ -129,7 +129,7 @@ for col in interval_df:
 ax.set_xlabel('Epoch')
 ax.set_ylabel('Contended fraction')
 ax.minorticks_on()
-ax.legend()
+ax.legend(fontsize=16)
 
 fig.tight_layout()
 plt.savefig(os.path.join(os.pardir, 'contended-fraction.pdf'), format='pdf')
@@ -151,7 +151,7 @@ ax.plot(main_df['num_shared_objects_per_tx'][START_FROM_EPOCH:], linewidth=2, li
 ax.set_ylabel('Number of shared objects')
 ax.set_xlabel('Epoch')
 ax.minorticks_on()
-ax.legend()
+ax.legend(fontsize=18)
 
 fig.tight_layout()
 plt.savefig(os.path.join(os.pardir, 'obj-number.pdf'), format='pdf')
