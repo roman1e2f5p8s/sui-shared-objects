@@ -31,7 +31,7 @@ main_df.index = main_df.index.astype(int);
 interval_df = pd.json_normalize(main_df['avg_interval_data'])
 
 plt.rcParams.update({
-    'font.size': 22,
+    'font.size': 19,
     'text.usetex': True,
     'font.family': 'serif',
     'font.serif': ['Times']
