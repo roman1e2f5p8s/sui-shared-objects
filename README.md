@@ -1,11 +1,11 @@
-# Sui Shared Object Density
+# Sui Shared Objects
 
-The [sui-shared-object-density](https://github.com/roman1e2f5p8s/sui-shared-object-density) 
-is a Rust-based project that provides convenient tools to estimate and visualize the density 
-of transactions involving shared objects (and other metrics) on the 
-[Sui network](https://sui.io/) using the [Sui Rust SDK](https://docs.sui.io/build/rust-sdk). 
-Hereafter, the **density** means the ratio of the number of transactions touching shared 
-objects to the total number of transactions for a given time interval.
+[sui-shared-objects](https://github.com/roman1e2f5p8s/sui-shared-objects) 
+is a Rust-based project that provides convenient tools to estimate and 
+visualize how often transactions operate on shared objects on the [Sui 
+network](https://sui.io/), using the [Sui Rust 
+SDK](https://docs.sui.io/references/rust-sdk). We also list popular dApps 
+that utilize shared objects on Sui.
 
 ## Table of Contents
 
@@ -21,27 +21,39 @@ objects to the total number of transactions for a given time interval.
 
 ## Background
 
-Sui is a layer-1 smart contract platform utilizing an object-centric data model: the basic unit 
-of storage in Sui is an **object**. The Sui ledger, therefore, stores a collection of 
-programmable objects, each with a globally unique ID.
+[Sui](https://docs.sui.io/paper/sui.pdf) is a layer-1 smart contract platform 
+that utilizes an [object-centric data 
+model](https://docs.sui.io/concepts/object-model): the basic unit 
+of storage in Sui is an **object**. The Sui ledger, therefore, stores a 
+collection of programmable objects, each with a globally unique ID.
 
-From the ownership point of view, there are two types of Sui objects:
-- **Owned objects**: owned by an address and can be used only by transactions signed by that 
-owner address at a time. 
-- **Shared objects**: no specific owner; anyone can read or write this object. 
+From the ownership point of view, there are two types of objects in Sui:
+- [**Owned 
+objects**](https://docs.sui.io/concepts/object-ownership/address-owned): owned 
+by an address and can only be used by transactions signed by that owner 
+address at a time. 
+- [**Shared objects**](https://docs.sui.io/concepts/object-ownership/shared): 
+do not have a specific owner; anyone can read or write these objects.
 
-Mutable owned objects are **single-writers**, and thus, transactions involving only owned objects 
-may bypass the consensus protocols in Sui. Mutable shared objects (**multi-writers**), however, 
-require consensus to sequence (order) reads and writes.
+Mutable owned objects are **single-writers**, and thus, transactions involving 
+only owned objects may bypass consensus on sequencing in Sui. Mutable shared 
+objects (**multi-writers**), however, require consensus to sequence (order) 
+reads and writes. See [Sui Lutris](https://arxiv.org/abs/2310.18042) for 
+detail.
 
 ### Motivation
 
-Owned objects are the most common case in Sui. Additionally, according to the 
-[Sui documentation](https://docs.sui.io/learn/how-sui-works#transactions-on-single-owner-objects), 
-many transactions (e.g., asset transfers, NFT minting, smart contract publishing) 
-can be realized involving only owned objects. See this 
-[list](https://docs.sui.io/learn/single-writer-apps), provided by Sui, of potential 
-single-writer real-world applications.
+Owned objects are the most common case in Sui. According to the (*old*) [Sui 
+documentation](https://github.com/MystenLabs/sui/blob/21dad3ec1f2caf03ac4310e8e033fd6987c392bf/doc/src/learn/single-writer-apps.md), 
+many transactions (e.g., asset transfers, NFT minting, smart contract 
+publishing) can be realized involving only owned objects.
+
+> [!CAUTION]
+> This list of single-writer applications was once provided on the Sui 
+> documentation at https://docs.sui.io/learn/single-writer-apps but removed 
+> later at some point. If it cannot be found in the [`21dad3e` 
+> commit](https://github.com/MystenLabs/sui/blob/21dad3ec1f2caf03ac4310e8e033fd6987c392bf/doc/src/learn/single-writer-apps.md) 
+> on the Sui repo, we archived it [here]().
 
 However, 
 [Sui documentation](https://docs.sui.io/learn/how-sui-works#transactions-on-shared-objects) 
