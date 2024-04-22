@@ -51,9 +51,9 @@ publishing) can be realized involving only owned objects.
 > [!WARNING]
 > This list of single-writer applications was once provided on the Sui 
 > documentation at https://docs.sui.io/learn/single-writer-apps but removed 
-> later at some point. If it cannot be found in the [`21dad3e` 
+> at some point later. If it cannot be found in the [`21dad3e` 
 > commit](https://github.com/MystenLabs/sui/blob/21dad3ec1f2caf03ac4310e8e033fd6987c392bf/doc/src/learn/single-writer-apps.md) 
-> on the Sui repo, we archived it [here]().
+> on the Sui repo, we archived it [here](./single-writer-apps.md).
 
 However, 
 [Sui documentation](https://docs.sui.io/learn/how-sui-works#transactions-on-shared-objects) 
