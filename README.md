@@ -55,46 +55,22 @@ publishing) can be realized involving only owned objects.
 > commit](https://github.com/MystenLabs/sui/blob/21dad3ec1f2caf03ac4310e8e033fd6987c392bf/doc/src/learn/single-writer-apps.md) 
 > on the Sui repo, we archived it [here](./single-writer-apps.md).
 
-However, 
-[Sui documentation](https://docs.sui.io/learn/how-sui-works#transactions-on-shared-objects) 
-also claims that many use cases require shared objects that can be manipulated by two or 
-more addresses at once (e.g., an auction with open bidding). Therefore, it is not clear how 
-often Sui transactions actually touch shared objects, i.e., what the value of the density is. 
+On the other hand, the (*old*) [Sui documentation](
+https://github.com/MystenLabs/sui/blob/21dad3ec1f2caf03ac4310e8e033fd6987c392bf/doc/src/learn/how-sui-works.md#transactions-on-shared-objects) 
+also claims that many use cases require shared objects that can be manipulated 
+by two or more addresses at once (e.g., an auction with open bidding, a 
+central limit order book that accepts arbitrary trades). Thus, it is 
+reasonable to investigate how often Sui transactions actually operate on 
+shared objects. 
 
-Estimating the density in the Sui network would give one an insight into how frequently the use
-cases that require shared objects appear on the Sui smart contract platform. The interest in 
-knowing the density stems from the fact that transactions with shared object inputs 
-require sequencing via the consensus protocol. Therefore, understanding how many apps require
-operating with shared objects and what those use cases are is one of the first key steps in 
-designing an efficient smart contract architecture.
-
-## Shared Object Analysis Rationale
-
-To analyse a given Sui shared object, different object data options might be used, as specified in
-[SuiObjectDataOptions](https://github.com/MystenLabs/sui/blob/2456e2888c15fd843be3370d395f18cafb753563/crates/sui-json-rpc-types/src/sui_object.rs#L326).
-With the `show_content` option, a query returns the module name, the object name, the 
-`has_public_transfer` field (which indicates whether the object is shared outside 
-of its module), among others.
-
-When an object is turned into a mutable shared object, 
-there are two possibilities for the scope of the shared object:
-(1) it can be shared only within its module, or 
-(2) it can be publicly shared outside of its module. The object must have the 
-[`store`](https://github.com/MystenLabs/sui/blob/284bf584b46bc3704d0c48cf478923987749a665/sui-execution/latest/sui-adapter/src/programmable_transactions/context.rs#L119)
-ability in order to be shared outside of its module. See `shared_object` and
-`public_share_object` functions in the 
-[`transfer` module](https://suiexplorer.com/object/0x0000000000000000000000000000000000000000000000000000000000000002?module=transfer&network=mainnet)
-for more detail.
-
-The module name and the object name can be used to determine the type of the shared object
-and which applications use Sui shared objects.
-The `has_public_transfer` field can be used to determine which shared objects are shared
-outside of their modules and whether they are *resources* or not. 
-Recall that a [resource in Move](https://move-book.com/resources/what-is-resource.html) 
-is a struct that has only `key` and `store` abilities. Therefore, a shared object with 
-`has_public_transfer: true` is a shared resource (publicly shared outside of its module),
-while shared objects with `has_public_transfer: false` are not resources 
-(they are shared only inside of its module and they might be Sui system/"protocol" shared objects).
+This analysis of the Sui network may give insights into how 
+frequently the use cases that require shared objects appear on the Sui smart 
+contract platform. The interest in this analysis stems from the fact that 
+transactions with shared object inputs require sequencing via the consensus 
+protocol. Therefore, understanding how often apps involve shared objects and 
+what those use cases are is one of the first key steps in improving the 
+efficiency of object-based smart contract architectures. This analysis is 
+relevant for smart contract platform designers and smart contract developers.
 
 ## Getting Started
 
