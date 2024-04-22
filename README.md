@@ -48,7 +48,7 @@ documentation](https://github.com/MystenLabs/sui/blob/21dad3ec1f2caf03ac4310e8e0
 many transactions (e.g., asset transfers, NFT minting, smart contract 
 publishing) can be realized involving only owned objects.
 
-> [!CAUTION]
+> [!WARNING]
 > This list of single-writer applications was once provided on the Sui 
 > documentation at https://docs.sui.io/learn/single-writer-apps but removed 
 > later at some point. If it cannot be found in the [`21dad3e` 
