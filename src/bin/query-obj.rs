@@ -18,15 +18,15 @@ use sui_sdk::types::base_types::ObjectID;
 use sui_sdk::rpc_types::SuiObjectDataOptions;
 use sui_sdk::rpc_types::SuiParsedData;
 
-use shared_object_density::args::query_obj::Args;
-use shared_object_density::consts::{
+use sui_shared_objects::args::query_obj::Args;
+use sui_shared_objects::consts::{
     RESULTS_DIR,
     QUERY_MAX_RESULT_LIMIT,
     SHARED_OBJECTS_SET_FILENAME,
     SHARED_OBJECTS_DATA_FILENAME,
     PACKAGES_DATA_FILENAME,
 };
-use shared_object_density::types::{
+use sui_shared_objects::types::{
     SharedObjectsSetData,
     SharedObjectData,
     SharedObjectsData,

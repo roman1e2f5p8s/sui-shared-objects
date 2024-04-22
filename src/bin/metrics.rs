@@ -9,11 +9,11 @@ use std::collections::{
 };
 use serde_json;
 use colored::Colorize;
-use std::process::exit;
+// use std::process::exit;
 
-use shared_object_density::args::density::*;
-use shared_object_density::types::*;
-use shared_object_density::consts::{
+use sui_shared_objects::args::metrics::*;
+use sui_shared_objects::types::*;
+use sui_shared_objects::consts::{
     DATA_DIR,
     RESULTS_DIR,
     PLOT_FILENAME,

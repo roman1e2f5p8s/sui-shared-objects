@@ -27,6 +27,7 @@ pub struct Args {
     pub verbose: bool,
 }
 
+/// Sui network type: mainnet, testnet, devnet
 #[derive(ValueEnum, Debug, Clone, Display)]
 pub enum NetworkType {
     Mainnet,

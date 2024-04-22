@@ -3,7 +3,7 @@ use std::path::Path;
 use std::str::FromStr;
 use clap::Parser;
 use serde_json;
-use memmap;
+// use memmap;
 use std::io::Write;
 use colored::Colorize;
 use std::collections::{
@@ -14,11 +14,11 @@ use tokio::time::{
     sleep,
     Duration,
 };
-use std::process::exit;
+// use std::process::exit;
 
 use sui_sdk::SuiClientBuilder;
 use sui_sdk::types::base_types::{
-    TransactionDigest,
+    // TransactionDigest,
     ObjectID,
 };
 use sui_sdk::rpc_types::{
@@ -27,18 +27,18 @@ use sui_sdk::rpc_types::{
     SuiTransactionBlockResponseOptions,
 };
 
-use shared_object_density::args::query_txs::Args;
-use shared_object_density::utils::{
-    process_tx_inputs,
+use sui_shared_objects::args::query_txs::Args;
+use sui_shared_objects::utils::{
+    // process_tx_inputs,
     get_imm_or_owned_input_objects,
 };
-use shared_object_density::consts::{
+use sui_shared_objects::consts::{
     RESULTS_DIR,
     EPOCH_TO_CHECKPOINTS_FILENAME,
 };
-use shared_object_density::types::{
+use sui_shared_objects::types::{
     EpochToCheckpointData,
-    CheckpointData,
+    // CheckpointData,
     ResultData,
 };
 
@@ -99,7 +99,7 @@ async fn main() -> Result<(), anyhow::Error> {
         Some(TransactionFilter::Checkpoint(epoch_data.start_checkpoint as u64)), Some(txs_options));
 
     // number of TXs left to scan
-    let mut tx_to_scan = epoch_data.tx_number;
+    let tx_to_scan = epoch_data.tx_number;
 
     // create workspace if it does not exist yet
     let workspace_dir = Path::new("data").join(args.workspace);

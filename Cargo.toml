@@ -1,22 +1,22 @@
 [package]
-name = "shared_object_density"
+name = "sui-shared-objects"
 version = "0.1.0"
 edition = "2021"
 
 [[bin]]
-name = "query_txs"
+name = "query-txs"
 path = "src/main.rs"
 
 [[bin]]
-name = "density"
-path = "src/bin/density.rs"
+name = "metrics"
+path = "src/bin/metrics.rs"
 
 [[bin]]
-name = "query_obj"
-path = "src/bin/query_obj.rs"
+name = "query-obj"
+path = "src/bin/query-obj.rs"
 
 [lib]
-name = "shared_object_density"
+name = "sui_shared_objects"
 path = "src/lib.rs"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html

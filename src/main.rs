@@ -24,13 +24,13 @@ use sui_sdk::rpc_types::{
     SuiTransactionBlockResponseOptions,
 };
 
-use shared_object_density::args::query_txs::Args;
-use shared_object_density::utils::process_tx_inputs;
-use shared_object_density::consts::{
+use sui_shared_objects::args::query_txs::Args;
+use sui_shared_objects::utils::process_tx_inputs;
+use sui_shared_objects::consts::{
     RESULTS_DIR,
     EPOCH_TO_CHECKPOINTS_FILENAME,
 };
-use shared_object_density::types::{
+use sui_shared_objects::types::{
     EpochToCheckpointData,
     CheckpointData,
     ResultData,
