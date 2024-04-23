@@ -1,20 +1,25 @@
-use clap::{Parser, ValueEnum};
+use clap::{
+    Parser,
+    ValueEnum
+};
 use strum_macros::Display;
 
-/// Sui shared objects analysis: query TXs touching shared objects
+/// Query all the transactions (i.e., programmable transaction blocks) for a 
+/// given epoch, and pre-process them to save only the relevant data we need 
+/// for this analysis.
 #[derive(Parser, Debug)]
 #[command(author = "Roman Overko", version, about, long_about = None)]
 pub struct Args {
+    /// Epoch to scan all TXs from, >= 0
+    #[arg(short, long)]
+    pub epoch: usize,
+
     /// Which network to use
     #[arg(short, long, value_enum, default_value_t = NetworkType::Mainnet)]
     pub network: NetworkType,
 
-    /// Epoch to scan all TXs from it >= 0
-    #[arg(short, long)]
-    pub epoch: usize,
-
-    /// Where to store data files.
-    /// This should be a directory in the "data" folder
+    /// Where to store data files. This should be a directory in the 
+    /// "data" folder
     #[arg(short, long, default_value_t = String::from("workspace1"))]
     pub workspace: String,
 
@@ -22,7 +27,7 @@ pub struct Args {
     #[arg(short, long, default_value_t = 10)]
     pub retry_number: usize,
 
-    /// Sleep time between reties in whole seconds, >= 0
+    /// Sleep time between retries in whole seconds, >= 0
     #[arg(short = 's', long, default_value_t = 10)]
     pub retry_sleep: u64,
 

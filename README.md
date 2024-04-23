@@ -100,39 +100,47 @@ cargo build --release
 
 ## Usage
 Building the project shall create three executable files:
-- `query_txs`;
-- `density`;
-- `query_obj`.
+- `query-txs`;
+- `metrcis`;
+- `query-obj`.
 
-On UNIX-like systems they can be executed using `./target/release/<NAME>`, and
-on Windows - `.\target\release\<NAME>.exe`, where `<NAME>` is one of the three executables 
-listed above.
+> [!TIP]
+> On UNIX-like systems, these can be executed using `./target/release/<NAME>`,
+where `<NAME>` is one of the three executables listed above.
 
-A more detailed description of how to use these executables and what they do are given in the next sub-sections.
+> [!TIP]
+On Windows, these can be executed using `.\target\release\<NAME>.exe`, 
+where `<NAME>` is one of the three executables listed above.
 
-### `query_txs`
-Use `query_txs` to query all the transactions for a given epoch, and pre-process them.
+A more detailed description of how to use these executables and what they do 
+are given in the next sub-sections.
+
+### `query-txs`
+Use `query-txs` to query all the transactions (i.e., programmable transaction
+blocks) for a given epoch, and pre-process them to save only the relevant
+data we need for this analysis.
 
 For example,
 ```bash
-./target/release/query_txs --epoch=0
+./target/release/query-txs --epoch=0
 ```
-will query all transactions from epoch `0` and pre-process them according to the data
-structure specified in TODO.
+will query all transactions for epoch `0` and pre-process them to collect
+only the relevant data for this analysis, as specified in [here](
+./data/README.md).
 
-By default, the requested and processed data will be saved in `data/workspace1/`, one file 
-per epoch. You can create another workspace using the `--workspace` command line
-argument for `query_txs`.
+By default, the processed data will be saved in `data/workspace1/`, one file 
+per epoch. You can create another workspace using the `--workspace` command i
+line argument for `query-txs`.
 
-See `./target/release/query_txs --help` for more information and all arguments.
+See `./target/release/query-txs --help` for more information and all arguments.
 
-See TODO for the description and explanation of which data about Sui transactions `query_txs`
-collects.
+See [here](./data/README.md) for the description and explanation of which data 
+about Sui transactions `query-txs` collects and stores.
 
-### `density`
+### `metrics`
 TODO
 
-### `query_obj`
+### `query-obj`
 TODO
 
 ## Results
