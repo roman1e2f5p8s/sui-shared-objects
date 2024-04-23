@@ -125,16 +125,19 @@ For example,
 ./target/release/query-txs --epoch=0
 ```
 will query all transactions for epoch `0` and pre-process them to collect
-only the relevant data for this analysis, as specified in [here](
+only the relevant data for this analysis, as specified [here](
 ./data/README.md).
 
 By default, the processed data will be saved in `data/workspace1/`, one file 
 per epoch. You can create another workspace using the `--workspace` command i
 line argument for `query-txs`.
 
-See `./target/release/query-txs --help` for more information and all arguments.
+For more information and all command line arguments, use `--help`:
+```bash
+./target/release/query-txs --help
+```
 
-See [here](./data/README.md) for the description and explanation of which data 
+See [this specication](./data/README.md) for the description and explanation of which data 
 about Sui transactions `query-txs` collects and stores.
 
 ### `metrics`
