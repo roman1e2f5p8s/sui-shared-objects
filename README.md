@@ -137,13 +137,13 @@ For more information and all command line arguments, use `--help`:
 ./target/release/query-txs --help
 ```
 
-See [this specication](./data/README.md) for the description and explanation of which data 
-about Sui transactions `query-txs` collects and stores.
+See [this specification](./data/README.md) for the description and explanation 
+of which data about Sui transactions `query-txs` collects and stores.
 
-### `metrics`
+### 2. `metrics`
 TODO
 
-### `query-obj`
+### 3. `query-obj`
 TODO
 
 ## Results
