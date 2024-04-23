@@ -100,9 +100,9 @@ cargo build --release
 
 ## Usage
 Building the project shall create three executable files:
-- `query-txs`;
-- `metrcis`;
-- `query-obj`.
+1. `query-txs`;
+2. `metrcis`;
+3. `query-obj`.
 
 > [!TIP]
 > On UNIX-like systems, these can be executed using `./target/release/<NAME>`,
@@ -115,7 +115,7 @@ where `<NAME>` is one of the three executables listed above.
 A more detailed description of how to use these executables and what they do 
 are given in the next sub-sections.
 
-### `query-txs`
+### 1. `query-txs`
 Use `query-txs` to query all the transactions (i.e., programmable transaction
 blocks) for a given epoch, and pre-process them to save only the relevant
 data we need for this analysis.
