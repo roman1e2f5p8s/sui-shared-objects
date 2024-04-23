@@ -58,18 +58,18 @@ data includes:
   - `shared_objects`: (*map*) maps from shared object ID (*string*) to a set 
   of transactions that have that shared object in their inputs; this map has
   the following structure:
-  ```
-  SHARED_OBJ_ID: {TX_DIGEST: MUT}
-  ```
-  where:
-      - `SHARED_OBJ_ID`: (*string*) ID of shared object; for example,
-      `"0x0000000000000000000000000000000000000000000000000000000000000006"`;
-      - `TX_DIGEST`: (*string*) indicates the digest of a transaction that
-      touched that shared object; for example, 
-      `"DKQDGLoTsY97gbv2mADmiFz8r7mApncKYn1hCqatKeSR"`;
-      - `MUT`: (*boolean*) indicates whether the shared object was passed by 
-      a mutable or immutable reference in that transaction; for example,
-      `false`.
+    ```
+    SHARED_OBJ_ID: {TX_DIGEST: MUT},
+    ```
+    where:
+    - `SHARED_OBJ_ID`: (*string*) ID of shared object; for example,
+    `"0x0000000000000000000000000000000000000000000000000000000000000006"`;
+    - `TX_DIGEST`: (*string*) indicates the digest of a transaction that
+    touched that shared object; for example, 
+    `"DKQDGLoTsY97gbv2mADmiFz8r7mApncKYn1hCqatKeSR"`;
+    - `MUT`: (*boolean*) indicates whether the shared object was passed by 
+    a mutable or immutable reference in that transaction; for example,
+    `false`.
 
 A snippet of this data file structure looks as follows:
 ```json
