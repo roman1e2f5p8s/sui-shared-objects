@@ -15,7 +15,7 @@ that utilize shared objects on Sui.
     - [Install](#install)
 - [Usage](#usage)
 - [Examples](#examples)
-- [Results](#results)
+- [Metrics](#metrics)
 - [Contribute](#contribute)
 - [License](#license)
 
@@ -129,7 +129,7 @@ only the relevant data for this analysis, as specified [here](
 ./data/README.md).
 
 By default, the processed data will be saved in `data/workspace1/`, one file 
-per epoch. You can create another workspace using the `--workspace` command i
+per epoch. You can create another workspace using the `--workspace` command 
 line argument for `query-txs`.
 
 For more information and all command line arguments, use `--help`:
@@ -141,13 +141,32 @@ See [this specification](./data/README.md) for the description and explanation
 of which data about Sui transactions `query-txs` collects and stores.
 
 ### 2. `metrics`
-TODO
+Use `metrics` to calculate [metrics](#metrics) of interest and obtain a set
+of all shared object IDs for further analysis.
+
+Specifically, executing
+```bash
+./target/release/metrics
+```
+will calculate metrics for all epochs the data is collected for using 
+`query-txs`, collect IDs of all shared objects, and store them in `json` files 
+whose structures are described [here](./results/README.md)
+
+By default, the metrics and shared object IDs will be saved in 
+`results/workspace1/`. The workspace must be the same as specified in 
+`query-txs` and can be set using `--workspace` command line argument 
+for `metrics`.
+
+For more information and other command line arguments, use `--help`:
+```bash
+./target/release/metrics --help
+```
 
 ### 3. `query-obj`
 TODO
 
-## Results
-We plot the following characteristics:
+## Metrics
+The following metrics are defined and calculated:
 - **Total number of transactions** is the total number of Sui transactions per epoch.
 - **Number of transactions touching shared objects** is the number (per epoch) of Sui transactions 
 that have at least one shared object in their inputs.
