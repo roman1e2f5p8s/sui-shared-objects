@@ -168,7 +168,7 @@ For more information and other command line arguments, use `--help`:
 ### 3. `query-obj`
 > [!IMPORTANT]
 > Use `query-obj` to obtain information about a set of collected shared objects
-> (returned by [`metrics`](#metrics)) and packages that implement them:
+> (returned by [`metrics`](#2-metrics)) and packages that implement them:
 
 ```bash
 ./target/release/query-obj
