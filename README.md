@@ -17,7 +17,6 @@ that utilize shared objects on Sui.
 - [Examples](#examples)
 - [Metrics](#metrics)
 - [Contribute](#contribute)
-- [License](#license)
 
 ## Background
 
@@ -229,7 +228,4 @@ We also calculate and plot the following simple metrics:
 - **Number of shared objects** (touched per epoch).
 
 ## Contribute
-TODO
-
-## License
 TODO
