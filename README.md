@@ -116,9 +116,10 @@ A more detailed description of how to use these executables and what they do
 are given in the next sub-sections.
 
 ### 1. `query-txs`
-Use `query-txs` to query all the transactions (i.e., programmable transaction
-blocks) for a given epoch, and pre-process them to save only the relevant
-data we need for this analysis.
+> [!IMPORTANT]
+> Use `query-txs` to query all the transactions (i.e., programmable transaction
+> blocks) for a given epoch, and pre-process them to save only the relevant
+> data we need for this analysis.
 
 For example,
 ```bash
@@ -141,8 +142,9 @@ See [this specification](./data/README.md) for the description and explanation
 of which data about Sui transactions `query-txs` collects and stores.
 
 ### 2. `metrics`
-Use `metrics` to calculate [metrics](#metrics) of interest and obtain a set
-of all shared object IDs for further analysis.
+> [!IMPORTANT]
+> Use `metrics` to calculate [metrics](#metrics) of interest and obtain a set
+> of all shared object IDs for further analysis.
 
 Specifically, executing
 ```bash
@@ -150,12 +152,13 @@ Specifically, executing
 ```
 will calculate metrics for all epochs the data is collected for using 
 `query-txs`, collect IDs of all shared objects, and store them in `json` files 
-whose structures are described [here](./results/README.md)
+whose structures are described [here](./results/README.md).
 
-By default, the metrics and shared object IDs will be saved in 
-`results/workspace1/`. The workspace must be the same as specified in 
-`query-txs` and can be set using `--workspace` command line argument 
-for `metrics`.
+> [!NOTE]
+> By default, the metrics and shared object IDs will be saved in 
+> `results/workspace1/`. The workspace must be the same as specified in 
+> `query-txs` and can be changed using `--workspace` command line argument 
+> for `metrics`.
 
 For more information and other command line arguments, use `--help`:
 ```bash
@@ -163,21 +166,70 @@ For more information and other command line arguments, use `--help`:
 ```
 
 ### 3. `query-obj`
-TODO
+> [!IMPORTANT]
+> Use `query-obj` to obtain information about a set of collected shared objects
+> (returned by [`metrics`](#metrics)) and packages that implement them:
+
+```bash
+./target/release/query-obj
+```
+
+> [!NOTE]
+> By default, the data shared objects and packages will be saved in 
+> `results/workspace1/`. The workspace must be the same as specified in 
+> `metrics` and can be changed using `--workspace` command line argument 
+> for `query-obj`.
+
+For more information and all command line arguments, use `--help`:
+```bash
+./target/release/query-obj --help
+```
+
+See [this specification](./results/README.md) for the description and 
+explanation data about shared objects and packages `query-obj` collects and 
+stores.
 
 ## Metrics
+Recall the following concepts from Sui:
+- **Epoch**: In Sui, each epoch takes approximately 24 hours.
+- **Checkpoint**: A checkpoint (also called sequence number) in Sui changes 
+approximately every 2-3 second.
+
+We also need to define auxiliary concepts:
+- **Interval**: An interval is a period of time expressed in the number of 
+checkpoints.
+- **Contention**: Contention is a situation when multiple transactions touch
+the same shared object at the same time, i.e., concurrently access that shared 
+object.
+- **Shared-object transaction**: A shared-object transaction has at least one 
+shared object in its inputs.
+
 The following metrics are defined and calculated:
-- **Total number of transactions** is the total number of Sui transactions per epoch.
-- **Number of transactions touching shared objects** is the number (per epoch) of Sui transactions 
-that have at least one shared object in their inputs.
-- **Density** is the percentage of Sui transactions that touch shared objects, i.e.,
-the ratio (multiplied by 100%) of the number of transactions touching shared objects 
-(per epoch) to the total number of transactions on Sui (per epoch).
-- **Number of shared objects** is the number of shared objects with unique IDs within an epoch.
-- **Average contention degree** is the ratio (averaged over intervals within an epoch) of 
-the number of transactions touching shared objects to the number of unique shared objects
-touched by those transactions within an interval. In other words, this metrics 
-tells us how many transactions touch the same shared object on average.
-- **Object touchability** is the ratio (averaged over intervals within an epoch) of
-the number of shared objects touched by more than one transaction to
-the number of unique shared objects. 
+- **Density**: The density is the ratio of the number of shared-object 
+transactions to the number of all transactions. The density is a number 
+between 0 and 1; the higher the density, the more transactions operate on 
+shared objects.
+- **Contention degree**: The contention degree is the ratio of the number of 
+shared-object transactions (within some interval) to the number of shared 
+objects touched by those transactions (within the same interval). The 
+contention degree is a number between 0 and ∞. A contention degree of 1 means 
+that each shared-object transaction operates on a single different object, 
+on average; values larger than 1 indicate multiple shared-object transactions 
+contending for the same shared object; values smaller than 1 mean a transaction 
+touches multiple shared objects, on average.
+- **Contended fraction**: The contended fraction is the ratio of the number 
+of shared objects (within some interval) touched by more than one transaction 
+to the total number of shared objects (within the same interval). The 
+contended fraction is a number between 0 and 1. The higher the contended 
+fraction, the more shared objects are touched by more than one transaction.
+
+We also calculate and plot the following simple metrics:
+- **The total number of transactions** (per epoch).
+- **Number of shared-objects transactions** (per epoch). 
+- **Number of shared objects** (touched per epoch).
+
+## Contribute
+TODO
+
+## License
+TODO
