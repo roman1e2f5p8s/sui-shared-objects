@@ -1,3 +1,6 @@
+[//]: # (Copyright (c) Roman Overko)
+[//]: # (SPDX-License-Identifier: Apache-2.0)
+
 # Sui Shared Objects
 
 [sui-shared-objects](https://github.com/roman1e2f5p8s/sui-shared-objects) 
