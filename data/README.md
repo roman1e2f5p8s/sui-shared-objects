@@ -1,61 +1,61 @@
-After running `query-txs` for a given (entire) epoch, this folder will contain 
-a workspace folder with data files, one file per epoch, containing information 
-of interest about Sui transactions for that epoch. The default workspace name 
-is `workspace1` and it can be changed by using the command line argument 
+After running `query-txs` for a given (entire) epoch, this folder will contain
+a workspace folder with data files, one file per epoch, containing information
+of interest about Sui transactions for that epoch. The default workspace name
+is `workspace1` and it can be changed by using the command line argument
 `--workspace` for `query-txs`.
 
 > [!NOTE]
 > If you a member of [iotaledger](
-> https://github.com/iotaledger?view_as=public), you should have access to the 
-> data produced by `query-txs` for several epochs on the organization's shared 
+> https://github.com/iotaledger?view_as=public), you should have access to the
+> data produced by `query-txs` for several epochs on the organization's shared
 > Google Drive [(link)](
-> https://drive.google.com/drive/folders/12c8A6cLCQCqKLvCPSDLeuPcb2LC-35FT), 
-> from where it can be downloaded and placed into the `workspace1` directory 
+> https://drive.google.com/drive/folders/12c8A6cLCQCqKLvCPSDLeuPcb2LC-35FT),
+> from where it can be downloaded and placed into the `workspace1` directory
 > in this folder.
 
-A data file will have the name indicating the epoch number and its boundaries 
-expressed in checkpoints (for example, `epoch=021_1584197-1668109.json`) and 
+A data file will have the name indicating the epoch number and its boundaries
+expressed in checkpoints (for example, `epoch=021_1584197-1668109.json`) and
 contain the following information:
-- `network`: (*string*) indicates which Sui network type (one of `"Mainnet"`, 
+- `network`: (*string*) indicates which Sui network type (one of `"Mainnet"`,
 `"Devnet"`, `"Testnet"`) was used to query transactions by `query-txs`;
-- `version`: (*string*) indicates the version of the Sui `network` used to 
+- `version`: (*string*) indicates the version of the Sui `network` used to
 query transactions by `query-txs`; for example, `"1.12.2"`;
-- `epoch`: (*unsigned integer*) indicates i for which epoch transactions were 
+- `epoch`: (*unsigned integer*) indicates i for which epoch transactions were
 queried; for example, `21`;
-- `start_checkpoint`: (*unsigned integer*) indicates the checkpoint at which 
+- `start_checkpoint`: (*unsigned integer*) indicates the checkpoint at which
 the epoch started; for example, `1584197`;
-- `end_checkpoint`: (*unsigned integer*) indicates the checkpoint at which the 
+- `end_checkpoint`: (*unsigned integer*) indicates the checkpoint at which the
 epoch ended; for example, `1668109`;
-- `last_cursor`: (*string*) indicates the digest of a transaction at which the 
-query ended; for example, `"52WSZ3EmWq9v8TmcSKhTdJgdG1ZrHB7YMmvSyvshywDN"`; 
-this may be the last transaction in the epoch, like in this example, or 
-transaction at which the query stopped due to dropped connection, in which 
-case, this digest is used to continue the query of the rest of transactions 
+- `last_cursor`: (*string*) indicates the digest of a transaction at which the
+query ended; for example, `"52WSZ3EmWq9v8TmcSKhTdJgdG1ZrHB7YMmvSyvshywDN"`;
+this may be the last transaction in the epoch, like in this example, or
+transaction at which the query stopped due to dropped connection, in which
+case, this digest is used to continue the query of the rest of transactions
 for the epoch;
-- `num_txs_in_epoch`: (*unsigned integer*) indicates the number of 
-transactions in the epoch; for example, ` 675133`; this number is taken from 
-the [Sui Explorer](https://suivision.xyz/) and it is saved in the 
+- `num_txs_in_epoch`: (*unsigned integer*) indicates the number of
+transactions in the epoch; for example, `675133`; this number is taken from
+the [Sui Explorer](https://suivision.xyz/) and it is saved in the
 [EPOCH_TO_CHECKPOINTS.json](../results/EPOCH_TO_CHECKPOINTS.json) data file;
-- `num_txs_scanned`: (*unsigned integer*) indicates the number of scanned 
-transactions in the epoch; for example, `675133`; this number must match with 
-`num_txs_in_epoch` meaning that indeed all transactions in the epoch were 
-scanned, otherwise (in the case of dropped connection), the query must be 
+- `num_txs_scanned`: (*unsigned integer*) indicates the number of scanned
+transactions in the epoch; for example, `675133`; this number must match with
+`num_txs_in_epoch` meaning that indeed all transactions in the epoch were
+scanned, otherwise (in the case of dropped connection), the query must be
 continued to scan the rest of transactions in the epoch;
-- `num_txs_touching_0_shared_objs`: (*unsigned integer*) indicates the number 
-of transactions in the epoch that have no shared objects in their inputs; 
+- `num_txs_touching_0_shared_objs`: (*unsigned integer*) indicates the number
+of transactions in the epoch that have no shared objects in their inputs;
 for example, `349769`;
-- `num_txs_touching_0_objs`: (*unsigned integer*) indicates the number of 
-transactions in the epoch that have no objects in their inputs; 
+- `num_txs_touching_0_objs`: (*unsigned integer*) indicates the number of
+transactions in the epoch that have no objects in their inputs;
 for example, `85406`;
-- `checkpoints`: (*map*) maps from checkpoint (also knowns as sequence number 
-in Sui) being a string to the data (of interest) about that checkpoint; this 
+- `checkpoints`: (*map*) maps from checkpoint (also knowns as sequence number
+in Sui) being a string to the data (of interest) about that checkpoint; this
 data includes:
-  - `num_txs_total`: (*unsigned integer*) indicates the total number of 
+  - `num_txs_total`: (*unsigned integer*) indicates the total number of
   transactions in that checkpoint; for example, `15`;
-  - `num_txs_touching_shared_objs`: (*unsigned integer*) indicates the total 
-  number of transactions that have at least one shared object in their inputs 
+  - `num_txs_touching_shared_objs`: (*unsigned integer*) indicates the total
+  number of transactions that have at least one shared object in their inputs
   in that checkpoint; for example, `8`;
-  - `shared_objects`: (*map*) maps from shared object ID (*string*) to a set 
+  - `shared_objects`: (*map*) maps from shared object ID (*string*) to a set
   of transactions that have that shared object in their inputs; this map has
   the following structure:
     ```
@@ -65,9 +65,9 @@ data includes:
     - `SHARED_OBJ_ID`: (*string*) ID of shared object; for example,
     `"0x0000000000000000000000000000000000000000000000000000000000000006"`;
     - `TX_DIGEST`: (*string*) indicates the digest of a transaction that
-    touched that shared object; for example, 
+    touched that shared object; for example,
     `"DKQDGLoTsY97gbv2mADmiFz8r7mApncKYn1hCqatKeSR"`;
-    - `MUT`: (*boolean*) indicates whether the shared object was passed by 
+    - `MUT`: (*boolean*) indicates whether the shared object was passed by
     a mutable or immutable reference in that transaction; for example,
     `false`.
 
