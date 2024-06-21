@@ -1,5 +1,7 @@
-[//]: # (Copyright (c) Roman Overko)
-[//]: # (SPDX-License-Identifier: Apache-2.0)
+<!--
+Copyright (c) Roman Overko
+SPDX-License-Identifier: Apache-2.0
+-->
 
 After running `query-txs` for a given (entire) epoch, this folder will contain
 a workspace folder with data files, one file per epoch, containing information

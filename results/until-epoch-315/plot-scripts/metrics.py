@@ -18,6 +18,8 @@ WINTER_QUEST_END = 258
 
 START_FROM_EPOCH = 20
 
+FORMAT = 'png'
+
 
 def plot_quests(ax, alpha=0.3, zorder=0, label=True):
     ax.axvspan(BULLSHARK_QUEST_1_START, BULLSHARK_QUEST_1_END, alpha=alpha, color='red', label='Bullshark Quest 1' if label else None, zorder=0)
@@ -56,7 +58,7 @@ ax.minorticks_on()
 ax.legend(fontsize=18)
 
 fig.tight_layout()
-plt.savefig(os.path.join(os.pardir, 'density.pdf'), format='pdf')
+plt.savefig(os.path.join(os.pardir, 'density.{}'.format(FORMAT)), format='{}'.format(FORMAT))
 # density -----------------------------------------------------------------------
 
 
@@ -79,7 +81,7 @@ ax.legend(fontsize=18)
 ax.set_yscale('log')
 
 fig.tight_layout()
-plt.savefig(os.path.join(os.pardir, 'tx-number.pdf'), format='pdf')
+plt.savefig(os.path.join(os.pardir, 'tx-number.{}'.format(FORMAT)), format='{}'.format(FORMAT))
 # transaction number ---------------------------------------------------------
 
 
@@ -107,7 +109,7 @@ ax.legend(fontsize=16)
 ax.set_yscale('log')
 
 fig.tight_layout()
-plt.savefig(os.path.join(os.pardir, 'contention-degree.pdf'), format='pdf')
+plt.savefig(os.path.join(os.pardir, 'contention-degree.{}'.format(FORMAT)), format='{}'.format(FORMAT))
 # contention degree ---------------------------------------------------------
 
 
@@ -132,7 +134,7 @@ ax.minorticks_on()
 ax.legend(fontsize=16)
 
 fig.tight_layout()
-plt.savefig(os.path.join(os.pardir, 'contended-fraction.pdf'), format='pdf')
+plt.savefig(os.path.join(os.pardir, 'contended-fraction.{}'.format(FORMAT)), format='{}'.format(FORMAT))
 # contended fraction ---------------------------------------------------------
 
 
@@ -154,5 +156,5 @@ ax.minorticks_on()
 ax.legend(fontsize=18)
 
 fig.tight_layout()
-plt.savefig(os.path.join(os.pardir, 'obj-number.pdf'), format='pdf')
+plt.savefig(os.path.join(os.pardir, 'obj-number.{}'.format(FORMAT)), format='{}'.format(FORMAT))
 # object number per tx ---------------------------------------------------------

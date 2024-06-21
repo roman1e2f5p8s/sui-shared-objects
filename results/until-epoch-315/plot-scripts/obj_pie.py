@@ -9,6 +9,8 @@ FILE = os.path.join(os.pardir, 'packages_data.json')
 with open(FILE, 'r') as f:
     data = json.load(f);
 
+FORMAT = 'png'
+
 N_OBJS = 12
 OBJ_ID_NAME_MAP = {
         '8d97f1cd6ac663735be08d1d2b6d02a159e711586461306ce60a2b7a6a565a9e.price_info.PriceInfoObject': 'PriceInfoObject @Pyth Network',
@@ -122,4 +124,4 @@ fig.legend(title='Shared object types:', labels=labels, fontsize=16)
 
 fig.tight_layout()
 ax.set_position([-0.23, 0.05, 1.0, 1.0])
-plt.savefig(os.path.join(os.pardir, 'obj_pie.pdf'), format='pdf')
+plt.savefig(os.path.join(os.pardir, 'obj_pie.{}'.format(FORMAT)), format='{}'.format(FORMAT))
